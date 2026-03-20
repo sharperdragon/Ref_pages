@@ -1,8 +1,19 @@
 {
   "primaryClass": "Cardiovascular Agents",
   "slug": "cardiovascular-agents",
-  "stem": "cardiovascular",
   "subclasses": [
-    "Cardiovascular Agents"
+    "Antianginal Agents",
+    "Antihypertensive Agents",
+    "Calcium Channel Agonists",
+    "Calcium Channel Blockers",
+    "Cardiotonic Agents",
+    "Cardiovascular Agents",
+    "Dihydropyridines",
+    "Endothelium-Dependent Relaxing Factors",
+    "Natriuretic Agents",
+    "Nitric Oxide Donors",
+    "Potassium Channel Blockers",
+    "Vasoconstrictor Agents",
+    "Vasodilator Agents"
   ]
 }

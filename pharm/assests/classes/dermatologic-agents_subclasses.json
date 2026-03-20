@@ -1,8 +1,11 @@
 {
   "primaryClass": "Dermatologic Agents",
   "slug": "dermatologic-agents",
-  "stem": "dermatologic",
   "subclasses": [
-    "Dermatologic Agents"
+    "Antipruritics",
+    "Antipsoriatic Agents",
+    "Keratolytic Agents",
+    "Skin and Mucous Membrane Agents",
+    "Sunscreening Agents"
   ]
 }

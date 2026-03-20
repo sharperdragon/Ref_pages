@@ -1,0 +1,584 @@
+{
+  "drug_classes": {
+    "cardiovascular": {
+      "antihypertensives": {
+        "renin_angiotensin_system_agents": {
+          "ace_inhibitors": {},
+          "angiotensin_ii_receptor_blockers": {},
+          "direct_renin_inhibitors": {}
+        },
+        "beta_blockers": {
+          "nonselective_beta_blockers": {},
+          "beta-1_selective_blockers": {},
+          "sympathomimetic_agents": {},
+          "alpha_beta_blockers": {},
+          "vasodilating_beta_blockers": {}
+        },
+        "calcium_channel_blockers": {
+          "dihydropyridines": {},
+          "non_dihydropyridines": {
+            "phenylalkylamines": {},
+            "benzothiazepines": {}
+          }
+        },
+        "diuretics": {
+          "loop_diuretics": {},
+          "thiazide_and_thiazide_like_diuretics": {},
+          "potassium_sparing_diuretics": {
+            "aldosterone_antagonists": {},
+            "enac_channel_blockers": {}
+          },
+          "carbonic_anhydrase_inhibitors": {},
+          "osmotic_diuretics": {}
+        },
+        "vasodilators": {
+          "direct_arteriolar_vasodilators": {},
+          "organic_nitrates": {
+            "short_acting": {},
+            "long_acting": {}
+          },
+          "nitric_oxide_donors": {}
+        },
+        "central_sympatholytics": {
+          "alpha2_agonists": {},
+          "imidazoline_receptor_agonists": {}
+        },
+        "alpha_blockers": {
+          "nonselective_alpha_blockers": {},
+          "alpha1_selective_blockers": {}
+        }
+      },
+      "antiarrhythmics": {
+        "class_i_sodium_channel_blockers": {
+          "class_ia": {},
+          "class_ib": {},
+          "class_ic": {}
+        },
+        "class_ii_beta_blockers": {},
+        "class_iii_potassium_channel_blockers": {},
+        "class_iv_calcium_channel_blockers": {},
+        "miscellaneous_antiarrhythmics": {
+          "adenosine": {},
+          "magnesium": {},
+          "cardiac_glycosides": {},
+          "late_sodium_current_inhibitors": {}
+        }
+      },
+      "lipid_lowering_agents": {
+        "statins": {},
+        "cholesterol_absorption_inhibitors": {},
+        "pcsk9_inhibitors": {},
+        "bempedoic_acid": {},
+        "bile_acid_sequestrants": {},
+        "fibrates": {},
+        "omega3_fatty_acids": {
+          "epa_products": {},
+          "epa_dha_products": {}
+        },
+        "antisense_and_rnai_agents": {
+          "apob_antisense": {},
+          "pcsk9_sirna": {}
+        },
+        "mtp_inhibitors": {},
+        "thyroid_hormone_analogs": {}
+      },
+      "anticoagulants": {
+        "heparins": {
+          "unfractionated_heparin": {},
+          "low_molecular_weight_heparins": {}
+        },
+        "direct_thrombin_inhibitors": {
+          "parenteral": {},
+          "oral": {}
+        },
+        "factor_xa_inhibitors": {
+          "oral": {},
+          "parenteral": {}
+        },
+        "vitamin_k_antagonists": {}
+      },
+      "antiplatelets": {
+        "cox_inhibitors": {
+          "irreversible_cox1_inhibitors": {}
+        },
+        "p2y12_receptor_antagonists": {
+          "thienopyridines": {},
+          "cyclopentyl_triazolo_pyrimidines": {}
+        },
+        "gp_iib_iiia_inhibitors": {},
+        "phosphodiesterase_inhibitors": {},
+        "par1_antagonists": {}
+      },
+      "thrombolytics": {
+        "tpa_analogs": {},
+        "plasminogen_activators": {}
+      }
+    },
+
+    "central_nervous_system": {
+      "antidepressants": {
+        "monoamine_reuptake_inhibitors": {
+          "ssris": {},
+          "snris": {},
+          "nris": {},
+          "tricyclic_antidepressants": {}
+        },
+        "monoamine_oxidase_inhibitors": {
+          "nonselective_irreversible_maoi": {},
+          "maob_selective_inhibitors": {}
+        },
+        "atypical_antidepressants": {
+          "dopamine_norepinephrine_reuptake_inhibitors": {},
+          "serotonin_antagonist_reuptake_inhibitors": {},
+          "noradrenergic_specific_serotonergic_agents": {},
+          "melatonergic_antidepressants": {}
+        }
+      },
+      "antipsychotics": {
+        "typical_antipsychotics": {
+          "low_potency": {},
+          "high_potency": {}
+        },
+        "atypical_antipsychotics": {
+          "serotonin_dopamine_antagonists": {},
+          "dopamine_partial_agonists": {}
+        }
+      },
+      "antiepileptics": {
+        "sodium_channel_blockers": {},
+        "calcium_channel_modulators": {
+          "t_type_calcium_channel_agents": {},
+          "alpha2delta_ligands": {}
+        },
+        "gabaergic_agents": {
+          "gaba_a_positive_allosteric_modulators": {},
+          "gaba_reuptake_inhibitors": {},
+          "gaba_transaminase_inhibitors": {}
+        },
+        "sv2a_ligands": {},
+        "glutamate_modulators": {
+          "ampa_antagonists": {},
+          "nmda_antagonists": {}
+        }
+      },
+      "analgesics": {
+        "nonopioid_analgesics": {
+          "nsaids": {
+            "nonselective_cox_inhibitors": {},
+            "cox2_selective_inhibitors": {}
+          },
+          "acetaminophen": {}
+        },
+        "opioid_analgesics": {
+          "full_mu_agonists": {},
+          "partial_mu_agonists": {},
+          "mixed_agonist_antagonists": {}
+        },
+        "migraine_agents": {
+          "triptans": {},
+          "cgrp_receptor_antagonists": {},
+          "ditans": {},
+          "ergot_derivatives": {}
+        }
+      }
+    },
+
+    "gastrointestinal": {
+      "acid_related_disorders": {
+        "proton_pump_inhibitors": {},
+        "h2_receptor_antagonists": {},
+        "antacids": {},
+        "mucosal_protective_agents": {},
+        "prostaglandin_analogs": {}
+      },
+      "antiemetics": {
+        "5ht3_antagonists": {},
+        "dopamine_antagonists": {},
+        "nk1_antagonists": {},
+        "antihistamines": {},
+        "anticholinergics": {},
+        "cannabinoids": {}
+      },
+      "prokinetic_agents": {},
+      "laxatives": {
+        "bulk_forming": {},
+        "osmotic": {},
+        "stimulant": {},
+        "stool_softeners": {},
+        "secretagogues": {},
+        "peripherally_acting_mu_opioid_antagonists": {}
+      },
+      "antidiarrheals": {
+        "peripheral_opioid_agonists": {},
+        "bismuth_agents": {},
+        "somatostatin_analogs": {}
+      },
+      "inflammatory_bowel_disease_agents": {
+        "5_aminosalicylates": {},
+        "corticosteroids": {},
+        "immunomodulators": {},
+        "biologics": {
+          "anti_tnf_agents": {},
+          "anti_integrin_agents": {},
+          "anti_il12_il23_agents": {}
+        },
+        "jak_inhibitors": {}
+      }
+    },
+
+    "endocrine": {
+      "antidiabetic_agents": {
+        "insulins": {
+          "rapid_acting": {},
+          "short_acting": {},
+          "intermediate_acting": {},
+          "long_acting": {},
+          "ultra_long_acting": {}
+        },
+        "non_insulin_agents": {
+          "biguanides": {},
+          "sulfonylureas": {},
+          "meglitinides": {},
+          "thiazolidinediones": {},
+          "dpp4_inhibitors": {},
+          "glp1_receptor_agonists": {},
+          "sglt2_inhibitors": {},
+          "alpha_glucosidase_inhibitors": {},
+          "amylin_analogs": {}
+        }
+      },
+      "thyroid_agents": {
+        "thyroid_hormones": {},
+        "antithyroid_agents": {
+          "thionamides": {},
+          "iodine_agents": {},
+          "radioactive_iodine": {}
+        }
+      },
+      "sex_hormones_and_modulators": {
+        "estrogens": {},
+        "progestins": {},
+        "androgens": {},
+        "serms": {},
+        "sarms": {},
+        "aromatase_inhibitors": {},
+        "antiandrogens": {},
+        "gnrh_agents": {
+          "gnrh_agonists": {},
+          "gnrh_antagonists": {}
+        }
+      },
+      "corticosteroids": {
+        "glucocorticoids": {},
+        "mineralocorticoids": {}
+      }
+    },
+
+    "anti_infectives": {
+      "antibacterials": {
+        "beta_lactams": {
+          "penicillins": {
+            "natural_penicillins": {},
+            "aminopenicillins": {},
+            "penicillinase_resistant": {},
+            "antipseudomonal": {},
+            "beta_lactamase_inhibitor_combinations": {}
+          },
+          "cephalosporins": {
+            "first_generation": {},
+            "second_generation": {},
+            "third_generation": {},
+            "fourth_generation": {},
+            "fifth_generation": {}
+          },
+          "carbapenems": {},
+          "monobactams": {}
+        },
+        "glycopeptides": {},
+        "lipoglycopeptides": {},
+        "protein_synthesis_inhibitors": {
+          "aminoglycosides": {},
+          "tetracyclines": {
+            "traditional_tetracyclines": {},
+            "glycylcyclines": {}
+          },
+          "macrolides": {},
+          "lincosamides": {},
+          "oxazolidinones": {},
+          "chloramphenicol": {},
+          "streptogramins": {}
+        },
+        "nucleic_acid_synthesis_inhibitors": {
+          "fluoroquinolones": {},
+          "rifamycins": {},
+          "nitroimidazoles": {}
+        },
+        "antimetabolites": {
+          "folate_synthesis_inhibitors": {
+            "sulfonamides": {},
+            "dhfr_inhibitors": {}
+          }
+        },
+        "cell_membrane_disruptors": {
+          "lipopeptides": {},
+          "polymyxins": {}
+        }
+      },
+
+      "antivirals": {
+        "herpesvirus_agents": {
+          "nucleoside_polymerase_inhibitors": {},
+          "pyrophosphate_analogs": {}
+        },
+        "hiv_agents": {
+          "nrtis": {},
+          "nnrtis": {},
+          "protease_inhibitors": {},
+          "integrase_inhibitors": {},
+          "entry_inhibitors": {}
+        },
+        "hepatitis_agents": {
+          "direct_acting_antivirals": {
+            "ns3_protease_inhibitors": {},
+            "ns5a_inhibitors": {},
+            "ns5b_polymerase_inhibitors": {}
+          }
+        },
+        "influenza_agents": {
+          "neuraminidase_inhibitors": {},
+          "endonuclease_inhibitors": {}
+        }
+      },
+
+      "antifungals": {
+        "polyenes": {},
+        "azoles": {
+          "imidazoles": {},
+          "triazoles": {}
+        },
+        "echinocandins": {},
+        "allylamines": {},
+        "antimetabolites": {}
+      },
+
+      "antiparasitics": {
+        "antimalarials": {
+          "quinoline_derivatives": {},
+          "artemisinin_derivatives": {}
+        },
+        "antihelminthics": {
+          "benzimidazoles": {},
+          "avermectins": {},
+          "nicotinic_agonists": {}
+        },
+        "antiprotozoals": {
+          "nitroimidazoles": {},
+          "antifolates": {}
+        }
+      }
+    },
+
+    "rheumatology_and_immunology": {
+      "dmards": {
+        "conventional_synthetic_dmards": {},
+        "biologic_dmards": {
+          "anti_tnf_agents": {},
+          "anti_il6_agents": {},
+          "anti_cd20_agents": {},
+          "t_cell_costimulation_modulators": {}
+        },
+        "targeted_synthetic_dmards": {
+          "jak_inhibitors": {}
+        }
+      },
+      "gout_agents": {
+        "xanthine_oxidase_inhibitors": {},
+        "uricosurics": {},
+        "uricase_agents": {},
+        "anti_inflammatory_gout_agents": {
+          "nsaids": {},
+          "colchicine": {},
+          "corticosteroids": {}
+        }
+      },
+      "immunosuppressants": {
+        "calcineurin_inhibitors": {},
+        "mtor_inhibitors": {},
+        "antimetabolites": {},
+        "biologic_immunosuppressants": {}
+      }
+    },
+
+    "respiratory": {
+      "bronchodilators": {
+        "beta2_agonists": {
+          "short_acting": {},
+          "long_acting": {}
+        },
+        "anticholinergics": {
+          "short_acting_muscarinic_antagonists": {},
+          "long_acting_muscarinic_antagonists": {}
+        },
+        "methylxanthines": {}
+      },
+      "anti_inflammatory_agents": {
+        "inhaled_corticosteroids": {},
+        "leukotriene_modifiers": {
+          "leukotriene_receptor_antagonists": {},
+          "5_lipoxygenase_inhibitors": {}
+        },
+        "mast_cell_stabilizers": {}
+      },
+      "biologics_for_asthma": {
+        "anti_ige_antibodies": {},
+        "anti_il5_agents": {},
+        "anti_il4_il13_agents": {}
+      }
+    },
+
+    "genitourinary_and_reproductive": {
+      "benign_prostatic_hyperplasia_agents": {
+        "alpha1_blockers": {},
+        "5_alpha_reductase_inhibitors": {}
+      },
+      "overactive_bladder_agents": {
+        "antimuscarinics": {},
+        "beta3_agonists": {}
+      },
+      "erectile_dysfunction_agents": {
+        "pde5_inhibitors": {},
+        "prostaglandin_analogs": {}
+      },
+      "contraceptives": {
+        "combined_hormonal_contraceptives": {},
+        "progestin_only_contraceptives": {},
+        "emergency_contraceptives": {}
+      },
+      "uterotonics_and_tocolytics": {
+        "oxytocics": {},
+        "prostaglandins": {},
+        "beta2_agonists": {},
+        "calcium_channel_blockers": {}
+      }
+    },
+
+    "bone_and_mineral": {
+      "osteoporosis_agents": {
+        "bisphosphonates": {},
+        "rankl_inhibitors": {},
+        "parathyroid_hormone_analogs": {},
+        "sclerostin_inhibitors": {},
+        "serms": {},
+        "calcitonin": {}
+      },
+      "calcium_and_vitamin_d_agents": {},
+      "phosphate_binders": {},
+      "calcimimetics": {}
+    },
+
+    "dermatologic": {
+      "topical_anti_inflammatory_agents": {
+        "topical_corticosteroids": {},
+        "topical_calcineurin_inhibitors": {},
+        "pde4_inhibitors": {}
+      },
+      "acne_agents": {
+        "topical_retinoids": {},
+        "systemic_retinoids": {},
+        "benzoyl_peroxide": {},
+        "topical_antibiotics": {},
+        "oral_antibiotics": {},
+        "antiandrogens": {}
+      },
+      "psoriasis_agents": {
+        "topical_agents": {
+          "corticosteroids": {},
+          "vitamin_d_analogs": {}
+        },
+        "systemic_agents": {
+          "methotrexate": {},
+          "retinoids": {},
+          "biologics": {
+            "anti_tnf_agents": {},
+            "anti_il17_agents": {},
+            "anti_il23_agents": {}
+          }
+        }
+      }
+    },
+
+    "ophthalmic_and_otic": {
+      "glaucoma_agents": {
+        "prostaglandin_analogs": {},
+        "beta_blockers": {},
+        "alpha2_agonists": {},
+        "carbonic_anhydrase_inhibitors": {},
+        "cholinergic_agents": {},
+        "rho_kinase_inhibitors": {}
+      },
+      "ophthalmic_anti_infectives": {},
+      "ophthalmic_anti_inflammatory_agents": {},
+      "mydriatics_and_cycloplegics": {}
+    },
+
+    "hematology": {
+      "hematopoietic_growth_factors": {
+        "erythropoiesis_stimulating_agents": {},
+        "granulocyte_colony_stimulating_factors": {},
+        "thrombopoietin_receptor_agonists": {}
+      },
+      "hemostatic_agents": {
+        "antifibrinolytics": {},
+        "factor_replacement_products": {},
+        "desmopressin": {}
+      },
+      "iron_agents": {
+        "oral_iron": {},
+        "parenteral_iron": {}
+      }
+    },
+
+    "anesthetics": {
+      "general_anesthetics": {
+        "inhaled_anesthetics": {},
+        "intravenous_anesthetics": {}
+      },
+      "local_anesthetics": {
+        "amide_local_anesthetics": {},
+        "ester_local_anesthetics": {}
+      },
+      "neuromuscular_blocking_agents": {
+        "depolarizing": {},
+        "nondepolarizing": {}
+      }
+    },
+
+    "allergy_and_ent": {
+      "antihistamines": {
+        "first_generation_h1_antihistamines": {},
+        "second_generation_h1_antihistamines": {}
+      },
+      "decongestants": {
+        "alpha_agonists": {}
+      },
+      "intranasal_agents": {
+        "intranasal_corticosteroids": {},
+        "intranasal_antihistamines": {},
+        "intranasal_anticholinergics": {}
+      }
+    },
+
+    "oncology": {
+      "cytotoxic_agents": {
+        "antimetabolites": {}
+      }
+    },
+
+    "unclassified_source_labels": {
+      "source_status_labels": {},
+      "source_domain_labels": {},
+      "broad_therapeutic_labels": {},
+      "review_required_labels": {}
+    }
+  }
+}

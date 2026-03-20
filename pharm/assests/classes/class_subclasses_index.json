@@ -1,135 +1,18 @@
 {
-  "version": "1",
-  "generatedAt": "2026-03-09T21:02:45Z",
+  "version": "2",
+  "generatedAt": "2026-03-11T03:06:40Z",
   "sourceFiles": {
     "classesSimple": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes_simple.json",
-    "enrichedData": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_drugbank_enriched.json"
+    "enrichedData": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_drugbank_enriched.json",
+    "familySource": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/drug_class_families.json",
+    "removeList": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes_remove.txt"
+  },
+  "fallback": {
+    "primaryClass": "Other Classes",
+    "slug": "other-classes",
+    "subclass": "Unmapped"
   },
   "primaries": [
-    {
-      "primaryClass": "14-alpha Demethylase Inhibitors",
-      "slug": "14-alpha-demethylase-inhibitors",
-      "file": "classes/14-alpha-demethylase-inhibitors_subclasses.json",
-      "subclasses": [
-        "14-alpha Demethylase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "5-alpha Reductase Inhibitors",
-      "slug": "5-alpha-reductase-inhibitors",
-      "file": "classes/5-alpha-reductase-inhibitors_subclasses.json",
-      "subclasses": [
-        "5-alpha Reductase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Abortifacient Agents, Nonsteroidal",
-      "slug": "abortifacient-agents-nonsteroidal",
-      "file": "classes/abortifacient-agents-nonsteroidal_subclasses.json",
-      "subclasses": [
-        "Abortifacient Agents",
-        "Abortifacient Agents, Nonsteroidal",
-        "Abortifacient Agents, Steroidal"
-      ]
-    },
-    {
-      "primaryClass": "Abortifacient Agents, Steroidal",
-      "slug": "abortifacient-agents-steroidal",
-      "file": "classes/abortifacient-agents-steroidal_subclasses.json",
-      "subclasses": [
-        "Abortifacient Agents",
-        "Abortifacient Agents, Nonsteroidal",
-        "Abortifacient Agents, Steroidal"
-      ]
-    },
-    {
-      "primaryClass": "Abortifacient Agents",
-      "slug": "abortifacient-agents",
-      "file": "classes/abortifacient-agents_subclasses.json",
-      "subclasses": [
-        "Abortifacient Agents",
-        "Abortifacient Agents, Nonsteroidal",
-        "Abortifacient Agents, Steroidal"
-      ]
-    },
-    {
-      "primaryClass": "Acaricides",
-      "slug": "acaricides",
-      "file": "classes/acaricides_subclasses.json",
-      "subclasses": [
-        "Acaricides"
-      ]
-    },
-    {
-      "primaryClass": "Acid Sensing Ion Channel Blockers",
-      "slug": "acid-sensing-ion-channel-blockers",
-      "file": "classes/acid-sensing-ion-channel-blockers_subclasses.json",
-      "subclasses": [
-        "Acid Sensing Ion Channel Blockers"
-      ]
-    },
-    {
-      "primaryClass": "Adenosine A2 Receptor Antagonists",
-      "slug": "adenosine-a2-receptor-antagonists",
-      "file": "classes/adenosine-a2-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Adenosine A2 Receptor Antagonists",
-        "Adenosine Deaminase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adenosine Deaminase Inhibitors",
-      "slug": "adenosine-deaminase-inhibitors",
-      "file": "classes/adenosine-deaminase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Adenosine A2 Receptor Antagonists",
-        "Adenosine Deaminase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adjuvants, Anesthesia",
-      "slug": "adjuvants-anesthesia",
-      "file": "classes/adjuvants-anesthesia_subclasses.json",
-      "subclasses": [
-        "Adjuvants",
-        "Adjuvants, Anesthesia",
-        "Adjuvants, Immunologic",
-        "Adjuvants, Pharmaceutic"
-      ]
-    },
-    {
-      "primaryClass": "Adjuvants, Immunologic",
-      "slug": "adjuvants-immunologic",
-      "file": "classes/adjuvants-immunologic_subclasses.json",
-      "subclasses": [
-        "Adjuvants",
-        "Adjuvants, Anesthesia",
-        "Adjuvants, Immunologic",
-        "Adjuvants, Pharmaceutic"
-      ]
-    },
-    {
-      "primaryClass": "Adjuvants, Pharmaceutic",
-      "slug": "adjuvants-pharmaceutic",
-      "file": "classes/adjuvants-pharmaceutic_subclasses.json",
-      "subclasses": [
-        "Adjuvants",
-        "Adjuvants, Anesthesia",
-        "Adjuvants, Immunologic",
-        "Adjuvants, Pharmaceutic"
-      ]
-    },
-    {
-      "primaryClass": "Adjuvants",
-      "slug": "adjuvants",
-      "file": "classes/adjuvants_subclasses.json",
-      "subclasses": [
-        "Adjuvants",
-        "Adjuvants, Anesthesia",
-        "Adjuvants, Immunologic",
-        "Adjuvants, Pharmaceutic"
-      ]
-    },
     {
       "primaryClass": "Adrenergic Agents",
       "slug": "adrenergic-agents",
@@ -149,2420 +32,11 @@
         "Adrenergic beta-2 Receptor Agonists",
         "Adrenergic beta-Agonists",
         "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic Agonists",
-      "slug": "adrenergic-agonists",
-      "file": "classes/adrenergic-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic alpha-1 Receptor Agonists",
-      "slug": "adrenergic-alpha-1-receptor-agonists",
-      "file": "classes/adrenergic-alpha-1-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic alpha-1 Receptor Antagonists",
-      "slug": "adrenergic-alpha-1-receptor-antagonists",
-      "file": "classes/adrenergic-alpha-1-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic alpha-2 Receptor Agonists",
-      "slug": "adrenergic-alpha-2-receptor-agonists",
-      "file": "classes/adrenergic-alpha-2-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic alpha-2 Receptor Antagonists",
-      "slug": "adrenergic-alpha-2-receptor-antagonists",
-      "file": "classes/adrenergic-alpha-2-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic alpha-Agonists",
-      "slug": "adrenergic-alpha-agonists",
-      "file": "classes/adrenergic-alpha-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic alpha-Antagonists",
-      "slug": "adrenergic-alpha-antagonists",
-      "file": "classes/adrenergic-alpha-antagonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic Antagonists",
-      "slug": "adrenergic-antagonists",
-      "file": "classes/adrenergic-antagonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic beta-1 Receptor Agonists",
-      "slug": "adrenergic-beta-1-receptor-agonists",
-      "file": "classes/adrenergic-beta-1-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic beta-1 Receptor Antagonists",
-      "slug": "adrenergic-beta-1-receptor-antagonists",
-      "file": "classes/adrenergic-beta-1-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic beta-2 Receptor Agonists",
-      "slug": "adrenergic-beta-2-receptor-agonists",
-      "file": "classes/adrenergic-beta-2-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic beta-Agonists",
-      "slug": "adrenergic-beta-agonists",
-      "file": "classes/adrenergic-beta-agonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic beta-Antagonists",
-      "slug": "adrenergic-beta-antagonists",
-      "file": "classes/adrenergic-beta-antagonists_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Adrenergic Uptake Inhibitors",
-      "slug": "adrenergic-uptake-inhibitors",
-      "file": "classes/adrenergic-uptake-inhibitors_subclasses.json",
-      "subclasses": [
-        "Adrenergic Agents",
-        "Adrenergic Agonists",
-        "Adrenergic alpha-1 Receptor Agonists",
-        "Adrenergic alpha-1 Receptor Antagonists",
-        "Adrenergic alpha-2 Receptor Agonists",
-        "Adrenergic alpha-2 Receptor Antagonists",
-        "Adrenergic alpha-Agonists",
-        "Adrenergic alpha-Antagonists",
-        "Adrenergic Antagonists",
-        "Adrenergic beta-1 Receptor Agonists",
-        "Adrenergic beta-1 Receptor Antagonists",
-        "Adrenergic beta-2 Receptor Agonists",
-        "Adrenergic beta-Agonists",
-        "Adrenergic beta-Antagonists",
-        "Adrenergic Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Alcohol Antagonists",
-      "slug": "alcohol-antagonists",
-      "file": "classes/alcohol-antagonists_subclasses.json",
-      "subclasses": [
-        "Alcohol Antagonists",
-        "Alcohol Deterrents"
-      ]
-    },
-    {
-      "primaryClass": "Alcohol Deterrents",
-      "slug": "alcohol-deterrents",
-      "file": "classes/alcohol-deterrents_subclasses.json",
-      "subclasses": [
-        "Alcohol Antagonists",
-        "Alcohol Deterrents"
-      ]
-    },
-    {
-      "primaryClass": "Alkylating Agents",
-      "slug": "alkylating-agents",
-      "file": "classes/alkylating-agents_subclasses.json",
-      "subclasses": [
-        "Alkylating Agents"
-      ]
-    },
-    {
-      "primaryClass": "Amebicides",
-      "slug": "amebicides",
-      "file": "classes/amebicides_subclasses.json",
-      "subclasses": [
-        "Amebicides"
-      ]
-    },
-    {
-      "primaryClass": "Amino Acids, Essential",
-      "slug": "amino-acids-essential",
-      "file": "classes/amino-acids-essential_subclasses.json",
-      "subclasses": [
-        "Amino Acids, Essential"
-      ]
-    },
-    {
-      "primaryClass": "Aminoglycosides",
-      "slug": "aminoglycosides",
-      "file": "classes/aminoglycosides_subclasses.json",
-      "subclasses": [
-        "Aminoglycosides"
-      ]
-    },
-    {
-      "primaryClass": "Ammonia Detoxicants",
-      "slug": "ammonia-detoxicants",
-      "file": "classes/ammonia-detoxicants_subclasses.json",
-      "subclasses": [
-        "Ammonia Detoxicants"
-      ]
-    },
-    {
-      "primaryClass": "Amphetamines",
-      "slug": "amphetamines",
-      "file": "classes/amphetamines_subclasses.json",
-      "subclasses": [
-        "Amphetamines"
-      ]
-    },
-    {
-      "primaryClass": "Anabolic Agents",
-      "slug": "anabolic-agents",
-      "file": "classes/anabolic-agents_subclasses.json",
-      "subclasses": [
-        "Anabolic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Analgesics",
-      "slug": "analgesics",
-      "file": "classes/analgesics_subclasses.json",
-      "subclasses": [
-        "Analgesics"
-      ]
-    },
-    {
-      "primaryClass": "Androgen Antagonists",
-      "slug": "androgen-antagonists",
-      "file": "classes/androgen-antagonists_subclasses.json",
-      "subclasses": [
-        "Androgen Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Androgens",
-      "slug": "androgens",
-      "file": "classes/androgens_subclasses.json",
-      "subclasses": [
-        "Androgens"
-      ]
-    },
-    {
-      "primaryClass": "Anesthetics, Dissociative",
-      "slug": "anesthetics-dissociative",
-      "file": "classes/anesthetics-dissociative_subclasses.json",
-      "subclasses": [
-        "Anesthetics",
-        "Anesthetics, Dissociative",
-        "Anesthetics, Inhalation",
-        "Anesthetics, Intravenous",
-        "Anesthetics, Local"
-      ]
-    },
-    {
-      "primaryClass": "Anesthetics, Inhalation",
-      "slug": "anesthetics-inhalation",
-      "file": "classes/anesthetics-inhalation_subclasses.json",
-      "subclasses": [
-        "Anesthetics",
-        "Anesthetics, Dissociative",
-        "Anesthetics, Inhalation",
-        "Anesthetics, Intravenous",
-        "Anesthetics, Local"
-      ]
-    },
-    {
-      "primaryClass": "Anesthetics, Intravenous",
-      "slug": "anesthetics-intravenous",
-      "file": "classes/anesthetics-intravenous_subclasses.json",
-      "subclasses": [
-        "Anesthetics",
-        "Anesthetics, Dissociative",
-        "Anesthetics, Inhalation",
-        "Anesthetics, Intravenous",
-        "Anesthetics, Local"
-      ]
-    },
-    {
-      "primaryClass": "Anesthetics, Local",
-      "slug": "anesthetics-local",
-      "file": "classes/anesthetics-local_subclasses.json",
-      "subclasses": [
-        "Anesthetics",
-        "Anesthetics, Dissociative",
-        "Anesthetics, Inhalation",
-        "Anesthetics, Intravenous",
-        "Anesthetics, Local"
-      ]
-    },
-    {
-      "primaryClass": "Anesthetics",
-      "slug": "anesthetics",
-      "file": "classes/anesthetics_subclasses.json",
-      "subclasses": [
-        "Anesthetics",
-        "Anesthetics, Dissociative",
-        "Anesthetics, Inhalation",
-        "Anesthetics, Intravenous",
-        "Anesthetics, Local"
-      ]
-    },
-    {
-      "primaryClass": "Angiogenesis Inducing Agents",
-      "slug": "angiogenesis-inducing-agents",
-      "file": "classes/angiogenesis-inducing-agents_subclasses.json",
-      "subclasses": [
-        "Angiogenesis Inducing Agents",
-        "Angiogenesis Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Angiogenesis Inhibitors",
-      "slug": "angiogenesis-inhibitors",
-      "file": "classes/angiogenesis-inhibitors_subclasses.json",
-      "subclasses": [
-        "Angiogenesis Inducing Agents",
-        "Angiogenesis Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Angiography",
-      "slug": "angiography",
-      "file": "classes/angiography_subclasses.json",
-      "subclasses": [
-        "Angiography"
-      ]
-    },
-    {
-      "primaryClass": "Angiotensin II Type 1 Receptor Blockers",
-      "slug": "angiotensin-ii-type-1-receptor-blockers",
-      "file": "classes/angiotensin-ii-type-1-receptor-blockers_subclasses.json",
-      "subclasses": [
-        "Angiotensin II Type 1 Receptor Blockers",
-        "Angiotensin Receptor Antagonists",
-        "Angiotensin-Converting Enzyme Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Angiotensin Receptor Antagonists",
-      "slug": "angiotensin-receptor-antagonists",
-      "file": "classes/angiotensin-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Angiotensin II Type 1 Receptor Blockers",
-        "Angiotensin Receptor Antagonists",
-        "Angiotensin-Converting Enzyme Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Angiotensin-Converting Enzyme Inhibitors",
-      "slug": "angiotensin-converting-enzyme-inhibitors",
-      "file": "classes/angiotensin-converting-enzyme-inhibitors_subclasses.json",
-      "subclasses": [
-        "Angiotensin II Type 1 Receptor Blockers",
-        "Angiotensin Receptor Antagonists",
-        "Angiotensin-Converting Enzyme Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Anion Exchange Resins",
-      "slug": "anion-exchange-resins",
-      "file": "classes/anion-exchange-resins_subclasses.json",
-      "subclasses": [
-        "Anion Exchange Resins"
-      ]
-    },
-    {
-      "primaryClass": "Antacids",
-      "slug": "antacids",
-      "file": "classes/antacids_subclasses.json",
-      "subclasses": [
-        "Antacids"
-      ]
-    },
-    {
-      "primaryClass": "Anthelmintics",
-      "slug": "anthelmintics",
-      "file": "classes/anthelmintics_subclasses.json",
-      "subclasses": [
-        "Anthelmintics"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Acne Preparations",
-      "slug": "anti-acne-preparations",
-      "file": "classes/anti-acne-preparations_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-adrenal Agents",
-      "slug": "anti-adrenal-agents",
-      "file": "classes/anti-adrenal-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Allergic Agents",
-      "slug": "anti-allergic-agents",
-      "file": "classes/anti-allergic-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-anemic Agents",
-      "slug": "anti-anemic-agents",
-      "file": "classes/anti-anemic-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Anxiety Agents",
-      "slug": "anti-anxiety-agents",
-      "file": "classes/anti-anxiety-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Arrhythmia Agents",
-      "slug": "anti-arrhythmia-agents",
-      "file": "classes/anti-arrhythmia-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Asthmatic Agents",
-      "slug": "anti-asthmatic-agents",
-      "file": "classes/anti-asthmatic-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Bacterial Agents",
-      "slug": "anti-bacterial-agents",
-      "file": "classes/anti-bacterial-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Dyskinesia Agents",
-      "slug": "anti-dyskinesia-agents",
-      "file": "classes/anti-dyskinesia-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-glaucoma Agents",
-      "slug": "anti-glaucoma-agents",
-      "file": "classes/anti-glaucoma-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-HIV Agents",
-      "slug": "anti-hiv-agents",
-      "file": "classes/anti-hiv-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Impotence Agents",
-      "slug": "anti-impotence-agents",
-      "file": "classes/anti-impotence-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Incontinence Agents",
-      "slug": "anti-incontinence-agents",
-      "file": "classes/anti-incontinence-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Infective Agents, Local",
-      "slug": "anti-infective-agents-local",
-      "file": "classes/anti-infective-agents-local_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Infective Agents, Urinary",
-      "slug": "anti-infective-agents-urinary",
-      "file": "classes/anti-infective-agents-urinary_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Infective Agents",
-      "slug": "anti-infective-agents",
-      "file": "classes/anti-infective-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Inflammatory Agents, Non-Steroidal",
-      "slug": "anti-inflammatory-agents-non-steroidal",
-      "file": "classes/anti-inflammatory-agents-non-steroidal_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Inflammatory Agents",
-      "slug": "anti-inflammatory-agents",
-      "file": "classes/anti-inflammatory-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-menopausal Agents",
-      "slug": "anti-menopausal-agents",
-      "file": "classes/anti-menopausal-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-migraine Agents",
-      "slug": "anti-migraine-agents",
-      "file": "classes/anti-migraine-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Mucositis Agents",
-      "slug": "anti-mucositis-agents",
-      "file": "classes/anti-mucositis-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Obesity Agents",
-      "slug": "anti-obesity-agents",
-      "file": "classes/anti-obesity-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Osteporotic Agents",
-      "slug": "anti-osteporotic-agents",
-      "file": "classes/anti-osteporotic-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-seborrheic Agents",
-      "slug": "anti-seborrheic-agents",
-      "file": "classes/anti-seborrheic-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Testosterone Agents",
-      "slug": "anti-testosterone-agents",
-      "file": "classes/anti-testosterone-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-tocolytic Agents",
-      "slug": "anti-tocolytic-agents",
-      "file": "classes/anti-tocolytic-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-trypanosomal Agents",
-      "slug": "anti-trypanosomal-agents",
-      "file": "classes/anti-trypanosomal-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Ulcer Agents",
-      "slug": "anti-ulcer-agents",
-      "file": "classes/anti-ulcer-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anti-Wrinkle Agents",
-      "slug": "anti-wrinkle-agents",
-      "file": "classes/anti-wrinkle-agents_subclasses.json",
-      "subclasses": [
-        "Anti-Acne Preparations",
-        "Anti-adrenal Agents",
-        "Anti-Allergic Agents",
-        "Anti-anemic Agents",
-        "Anti-Anxiety Agents",
-        "Anti-Arrhythmia Agents",
-        "Anti-Asthmatic Agents",
-        "Anti-Bacterial Agents",
-        "Anti-Dyskinesia Agents",
-        "Anti-glaucoma Agents",
-        "Anti-HIV Agents",
-        "Anti-Impotence Agents",
-        "Anti-Incontinence Agents",
-        "Anti-Infective Agents",
-        "Anti-Infective Agents, Local",
-        "Anti-Infective Agents, Urinary",
-        "Anti-Inflammatory Agents",
-        "Anti-Inflammatory Agents, Non-Steroidal",
-        "Anti-menopausal Agents",
-        "Anti-migraine Agents",
-        "Anti-Mucositis Agents",
-        "Anti-Obesity Agents",
-        "Anti-Osteporotic Agents",
-        "Anti-seborrheic Agents",
-        "Anti-Testosterone Agents",
-        "Anti-tocolytic Agents",
-        "Anti-trypanosomal Agents",
-        "Anti-Ulcer Agents",
-        "Anti-Wrinkle Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antianginal Agents",
-      "slug": "antianginal-agents",
-      "file": "classes/antianginal-agents_subclasses.json",
-      "subclasses": [
-        "Antianginal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antibiotics, Antineoplastic",
-      "slug": "antibiotics-antineoplastic",
-      "file": "classes/antibiotics-antineoplastic_subclasses.json",
-      "subclasses": [
-        "Antibiotics",
-        "Antibiotics, Antineoplastic",
-        "Antibiotics, Antitubercular",
-        "Antibiotics, Topical"
-      ]
-    },
-    {
-      "primaryClass": "Antibiotics, Antitubercular",
-      "slug": "antibiotics-antitubercular",
-      "file": "classes/antibiotics-antitubercular_subclasses.json",
-      "subclasses": [
-        "Antibiotics",
-        "Antibiotics, Antineoplastic",
-        "Antibiotics, Antitubercular",
-        "Antibiotics, Topical"
-      ]
-    },
-    {
-      "primaryClass": "Antibiotics, Topical",
-      "slug": "antibiotics-topical",
-      "file": "classes/antibiotics-topical_subclasses.json",
-      "subclasses": [
-        "Antibiotics",
-        "Antibiotics, Antineoplastic",
-        "Antibiotics, Antitubercular",
-        "Antibiotics, Topical"
-      ]
-    },
-    {
-      "primaryClass": "Antibiotics",
-      "slug": "antibiotics",
-      "file": "classes/antibiotics_subclasses.json",
-      "subclasses": [
-        "Antibiotics",
-        "Antibiotics, Antineoplastic",
-        "Antibiotics, Antitubercular",
-        "Antibiotics, Topical"
-      ]
-    },
-    {
-      "primaryClass": "Anticestodal Agents",
-      "slug": "anticestodal-agents",
-      "file": "classes/anticestodal-agents_subclasses.json",
-      "subclasses": [
-        "Anticestodal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anticholesteremic Agents",
-      "slug": "anticholesteremic-agents",
-      "file": "classes/anticholesteremic-agents_subclasses.json",
-      "subclasses": [
-        "Anticholesteremic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Anticoagulants",
-      "slug": "anticoagulants",
-      "file": "classes/anticoagulants_subclasses.json",
-      "subclasses": [
-        "Anticoagulants"
-      ]
-    },
-    {
-      "primaryClass": "Anticonvulsants",
-      "slug": "anticonvulsants",
-      "file": "classes/anticonvulsants_subclasses.json",
-      "subclasses": [
-        "Anticonvulsants"
-      ]
-    },
-    {
-      "primaryClass": "Anticorticosteroid",
-      "slug": "anticorticosteroid",
-      "file": "classes/anticorticosteroid_subclasses.json",
-      "subclasses": [
-        "Anticorticosteroid"
-      ]
-    },
-    {
-      "primaryClass": "Antidepressive Agents, Second-Generation",
-      "slug": "antidepressive-agents-second-generation",
-      "file": "classes/antidepressive-agents-second-generation_subclasses.json",
-      "subclasses": [
-        "Antidepressive Agents",
-        "Antidepressive Agents, Second-Generation",
-        "Antidepressive Agents, Tricyclic"
-      ]
-    },
-    {
-      "primaryClass": "Antidepressive Agents, Tricyclic",
-      "slug": "antidepressive-agents-tricyclic",
-      "file": "classes/antidepressive-agents-tricyclic_subclasses.json",
-      "subclasses": [
-        "Antidepressive Agents",
-        "Antidepressive Agents, Second-Generation",
-        "Antidepressive Agents, Tricyclic"
-      ]
-    },
-    {
-      "primaryClass": "Antidepressive Agents",
-      "slug": "antidepressive-agents",
-      "file": "classes/antidepressive-agents_subclasses.json",
-      "subclasses": [
-        "Antidepressive Agents",
-        "Antidepressive Agents, Second-Generation",
-        "Antidepressive Agents, Tricyclic"
-      ]
-    },
-    {
-      "primaryClass": "Antidiabetic Agents",
-      "slug": "antidiabetic-agents",
-      "file": "classes/antidiabetic-agents_subclasses.json",
-      "subclasses": [
-        "Antidiabetic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antidiarrheals",
-      "slug": "antidiarrheals",
-      "file": "classes/antidiarrheals_subclasses.json",
-      "subclasses": [
-        "Antidiarrheals"
-      ]
-    },
-    {
-      "primaryClass": "Antidiuretic Agents",
-      "slug": "antidiuretic-agents",
-      "file": "classes/antidiuretic-agents_subclasses.json",
-      "subclasses": [
-        "Antidiuretic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antidotes",
-      "slug": "antidotes",
-      "file": "classes/antidotes_subclasses.json",
-      "subclasses": [
-        "Antidotes"
-      ]
-    },
-    {
-      "primaryClass": "Antidyskinetics",
-      "slug": "antidyskinetics",
-      "file": "classes/antidyskinetics_subclasses.json",
-      "subclasses": [
-        "Antidyskinetics"
-      ]
-    },
-    {
-      "primaryClass": "Antidystonic Agents",
-      "slug": "antidystonic-agents",
-      "file": "classes/antidystonic-agents_subclasses.json",
-      "subclasses": [
-        "Antidystonic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antiemetics",
-      "slug": "antiemetics",
-      "file": "classes/antiemetics_subclasses.json",
-      "subclasses": [
-        "Antiemetics"
-      ]
-    },
-    {
-      "primaryClass": "Antiendometriotic agent",
-      "slug": "antiendometriotic-agent",
-      "file": "classes/antiendometriotic-agent_subclasses.json",
-      "subclasses": [
-        "Antiendometriotic agent"
-      ]
-    },
-    {
-      "primaryClass": "Antifibrinolytic Agents",
-      "slug": "antifibrinolytic-agents",
-      "file": "classes/antifibrinolytic-agents_subclasses.json",
-      "subclasses": [
-        "Antifibrinolytic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antifungal Agents",
-      "slug": "antifungal-agents",
-      "file": "classes/antifungal-agents_subclasses.json",
-      "subclasses": [
-        "Antifungal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antihypercalcemic Agents",
-      "slug": "antihypercalcemic-agents",
-      "file": "classes/antihypercalcemic-agents_subclasses.json",
-      "subclasses": [
-        "Antihypercalcemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antihypermagnesemic Agents",
-      "slug": "antihypermagnesemic-agents",
-      "file": "classes/antihypermagnesemic-agents_subclasses.json",
-      "subclasses": [
-        "Antihypermagnesemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antihyperphosphatemic Agents",
-      "slug": "antihyperphosphatemic-agents",
-      "file": "classes/antihyperphosphatemic-agents_subclasses.json",
-      "subclasses": [
-        "Antihyperphosphatemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antihypertensive Agents",
-      "slug": "antihypertensive-agents",
-      "file": "classes/antihypertensive-agents_subclasses.json",
-      "subclasses": [
-        "Antihypertensive Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antihyperuricemic Agents",
-      "slug": "antihyperuricemic-agents",
-      "file": "classes/antihyperuricemic-agents_subclasses.json",
-      "subclasses": [
-        "Antihyperuricemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antihypocalcemic Agents",
-      "slug": "antihypocalcemic-agents",
-      "file": "classes/antihypocalcemic-agents_subclasses.json",
-      "subclasses": [
-        "Antihypocalcemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antimalarials",
-      "slug": "antimalarials",
-      "file": "classes/antimalarials_subclasses.json",
-      "subclasses": [
-        "Antimalarials"
-      ]
-    },
-    {
-      "primaryClass": "Antimanic Agents",
-      "slug": "antimanic-agents",
-      "file": "classes/antimanic-agents_subclasses.json",
-      "subclasses": [
-        "Antimanic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antimetabolites, Antineoplastic",
-      "slug": "antimetabolites-antineoplastic",
-      "file": "classes/antimetabolites-antineoplastic_subclasses.json",
-      "subclasses": [
-        "Antimetabolites",
-        "Antimetabolites, Antineoplastic"
-      ]
-    },
-    {
-      "primaryClass": "Antimetabolites",
-      "slug": "antimetabolites",
-      "file": "classes/antimetabolites_subclasses.json",
-      "subclasses": [
-        "Antimetabolites",
-        "Antimetabolites, Antineoplastic"
-      ]
-    },
-    {
-      "primaryClass": "Antimitotic Agents",
-      "slug": "antimitotic-agents",
-      "file": "classes/antimitotic-agents_subclasses.json",
-      "subclasses": [
-        "Antimitotic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antimyasthenic Agents",
-      "slug": "antimyasthenic-agents",
-      "file": "classes/antimyasthenic-agents_subclasses.json",
-      "subclasses": [
-        "Antimyasthenic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antimycobacterials",
-      "slug": "antimycobacterials",
-      "file": "classes/antimycobacterials_subclasses.json",
-      "subclasses": [
-        "Antimycobacterials"
-      ]
-    },
-    {
-      "primaryClass": "Antimycotic Agents",
-      "slug": "antimycotic-agents",
-      "file": "classes/antimycotic-agents_subclasses.json",
-      "subclasses": [
-        "Antimycotic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antimydriatic Agents",
-      "slug": "antimydriatic-agents",
-      "file": "classes/antimydriatic-agents_subclasses.json",
-      "subclasses": [
-        "Antimydriatic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antinematodal Agents",
-      "slug": "antinematodal-agents",
-      "file": "classes/antinematodal-agents_subclasses.json",
-      "subclasses": [
-        "Antinematodal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antineoplastic Agents, Alkylating",
-      "slug": "antineoplastic-agents-alkylating",
-      "file": "classes/antineoplastic-agents-alkylating_subclasses.json",
-      "subclasses": [
-        "Antineoplastic Agents",
-        "Antineoplastic Agents, Alkylating",
-        "Antineoplastic Agents, Hormonal",
-        "Antineoplastic Agents, Phytogenic"
-      ]
-    },
-    {
-      "primaryClass": "Antineoplastic Agents, Hormonal",
-      "slug": "antineoplastic-agents-hormonal",
-      "file": "classes/antineoplastic-agents-hormonal_subclasses.json",
-      "subclasses": [
-        "Antineoplastic Agents",
-        "Antineoplastic Agents, Alkylating",
-        "Antineoplastic Agents, Hormonal",
-        "Antineoplastic Agents, Phytogenic"
-      ]
-    },
-    {
-      "primaryClass": "Antineoplastic Agents, Phytogenic",
-      "slug": "antineoplastic-agents-phytogenic",
-      "file": "classes/antineoplastic-agents-phytogenic_subclasses.json",
-      "subclasses": [
-        "Antineoplastic Agents",
-        "Antineoplastic Agents, Alkylating",
-        "Antineoplastic Agents, Hormonal",
-        "Antineoplastic Agents, Phytogenic"
-      ]
-    },
-    {
-      "primaryClass": "Antineoplastic Agents",
-      "slug": "antineoplastic-agents",
-      "file": "classes/antineoplastic-agents_subclasses.json",
-      "subclasses": [
-        "Antineoplastic Agents",
-        "Antineoplastic Agents, Alkylating",
-        "Antineoplastic Agents, Hormonal",
-        "Antineoplastic Agents, Phytogenic"
-      ]
-    },
-    {
-      "primaryClass": "Antineoplastics, Adjuncts",
-      "slug": "antineoplastics-adjuncts",
-      "file": "classes/antineoplastics-adjuncts_subclasses.json",
-      "subclasses": [
-        "Antineoplastics, Adjuncts"
-      ]
-    },
-    {
-      "primaryClass": "Antineovascularisation Agents",
-      "slug": "antineovascularisation-agents",
-      "file": "classes/antineovascularisation-agents_subclasses.json",
-      "subclasses": [
-        "Antineovascularisation Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antineutropenic Agents",
-      "slug": "antineutropenic-agents",
-      "file": "classes/antineutropenic-agents_subclasses.json",
-      "subclasses": [
-        "Antineutropenic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antioxidants",
-      "slug": "antioxidants",
-      "file": "classes/antioxidants_subclasses.json",
-      "subclasses": [
-        "Antioxidants"
-      ]
-    },
-    {
-      "primaryClass": "Antiparasitic Agents",
-      "slug": "antiparasitic-agents",
-      "file": "classes/antiparasitic-agents_subclasses.json",
-      "subclasses": [
-        "Antiparasitic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antiparkinson Agents",
-      "slug": "antiparkinson-agents",
-      "file": "classes/antiparkinson-agents_subclasses.json",
-      "subclasses": [
-        "Antiparkinson Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antiperistaltic Agents",
-      "slug": "antiperistaltic-agents",
-      "file": "classes/antiperistaltic-agents_subclasses.json",
-      "subclasses": [
-        "Antiperistaltic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antiprotozoal Agents",
-      "slug": "antiprotozoal-agents",
-      "file": "classes/antiprotozoal-agents_subclasses.json",
-      "subclasses": [
-        "Antiprotozoal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antipruritics",
-      "slug": "antipruritics",
-      "file": "classes/antipruritics_subclasses.json",
-      "subclasses": [
-        "Antipruritics"
-      ]
-    },
-    {
-      "primaryClass": "Antipsoriatic Agents",
-      "slug": "antipsoriatic-agents",
-      "file": "classes/antipsoriatic-agents_subclasses.json",
-      "subclasses": [
-        "Antipsoriatic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antipsychotic Agents",
-      "slug": "antipsychotic-agents",
-      "file": "classes/antipsychotic-agents_subclasses.json",
-      "subclasses": [
-        "Antipsychotic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antipyretics",
-      "slug": "antipyretics",
-      "file": "classes/antipyretics_subclasses.json",
-      "subclasses": [
-        "Antipyretics"
-      ]
-    },
-    {
-      "primaryClass": "Antiresorptives",
-      "slug": "antiresorptives",
-      "file": "classes/antiresorptives_subclasses.json",
-      "subclasses": [
-        "Antiresorptives"
-      ]
-    },
-    {
-      "primaryClass": "Antirheumatic Agents",
-      "slug": "antirheumatic-agents",
-      "file": "classes/antirheumatic-agents_subclasses.json",
-      "subclasses": [
-        "Antirheumatic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antiscabies Agents",
-      "slug": "antiscabies-agents",
-      "file": "classes/antiscabies-agents_subclasses.json",
-      "subclasses": [
-        "Antiscabies Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antisepsis",
-      "slug": "antisepsis",
-      "file": "classes/antisepsis_subclasses.json",
-      "subclasses": [
-        "Antisepsis"
-      ]
-    },
-    {
-      "primaryClass": "Antisickling Agents",
-      "slug": "antisickling-agents",
-      "file": "classes/antisickling-agents_subclasses.json",
-      "subclasses": [
-        "Antisickling Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antispasmodic Agents",
-      "slug": "antispasmodic-agents",
-      "file": "classes/antispasmodic-agents_subclasses.json",
-      "subclasses": [
-        "Antispasmodic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antispasmodics",
-      "slug": "antispasmodics",
-      "file": "classes/antispasmodics_subclasses.json",
-      "subclasses": [
-        "Antispasmodics"
-      ]
-    },
-    {
-      "primaryClass": "Antithrombins",
-      "slug": "antithrombins",
-      "file": "classes/antithrombins_subclasses.json",
-      "subclasses": [
-        "Antithrombins"
-      ]
-    },
-    {
-      "primaryClass": "Antithyroid Agents",
-      "slug": "antithyroid-agents",
-      "file": "classes/antithyroid-agents_subclasses.json",
-      "subclasses": [
-        "Antithyroid Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antitrichomonal Agents",
-      "slug": "antitrichomonal-agents",
-      "file": "classes/antitrichomonal-agents_subclasses.json",
-      "subclasses": [
-        "Antitrichomonal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antitubercular Agents",
-      "slug": "antitubercular-agents",
-      "file": "classes/antitubercular-agents_subclasses.json",
-      "subclasses": [
-        "Antitubercular Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antitussive Agents",
-      "slug": "antitussive-agents",
-      "file": "classes/antitussive-agents_subclasses.json",
-      "subclasses": [
-        "Antitussive Agents"
-      ]
-    },
-    {
-      "primaryClass": "Antiviral Agents",
-      "slug": "antiviral-agents",
-      "file": "classes/antiviral-agents_subclasses.json",
-      "subclasses": [
-        "Antiviral Agents"
-      ]
-    },
-    {
-      "primaryClass": "Appetite Depressants",
-      "slug": "appetite-depressants",
-      "file": "classes/appetite-depressants_subclasses.json",
-      "subclasses": [
-        "Appetite Depressants",
-        "Appetite Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Appetite Stimulants",
-      "slug": "appetite-stimulants",
-      "file": "classes/appetite-stimulants_subclasses.json",
-      "subclasses": [
-        "Appetite Depressants",
-        "Appetite Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Aromatase Inhibitors",
-      "slug": "aromatase-inhibitors",
-      "file": "classes/aromatase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Aromatase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Artificial Tears",
-      "slug": "artificial-tears",
-      "file": "classes/artificial-tears_subclasses.json",
-      "subclasses": [
-        "Artificial Tears"
-      ]
-    },
-    {
-      "primaryClass": "Ascorbic Acid",
-      "slug": "ascorbic-acid",
-      "file": "classes/ascorbic-acid_subclasses.json",
-      "subclasses": [
-        "Ascorbic Acid"
-      ]
-    },
-    {
-      "primaryClass": "Autonomic Agents",
-      "slug": "autonomic-agents",
-      "file": "classes/autonomic-agents_subclasses.json",
-      "subclasses": [
-        "Autonomic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Barbiturates",
-      "slug": "barbiturates",
-      "file": "classes/barbiturates_subclasses.json",
-      "subclasses": [
-        "Barbiturates"
-      ]
-    },
-    {
-      "primaryClass": "Benzodiazepines",
-      "slug": "benzodiazepines",
-      "file": "classes/benzodiazepines_subclasses.json",
-      "subclasses": [
-        "Benzodiazepines"
-      ]
-    },
-    {
-      "primaryClass": "Bile acid sequestrants",
-      "slug": "bile-acid-sequestrants",
-      "file": "classes/bile-acid-sequestrants_subclasses.json",
-      "subclasses": [
-        "Bile acid sequestrants"
-      ]
-    },
-    {
-      "primaryClass": "Bisphosphonates",
-      "slug": "bisphosphonates",
-      "file": "classes/bisphosphonates_subclasses.json",
-      "subclasses": [
-        "Bisphosphonates"
-      ]
-    },
-    {
-      "primaryClass": "Bone Density Conservation Agents",
-      "slug": "bone-density-conservation-agents",
-      "file": "classes/bone-density-conservation-agents_subclasses.json",
-      "subclasses": [
-        "Bone Density Conservation Agents"
-      ]
-    },
-    {
-      "primaryClass": "Bronchodilator Agents",
-      "slug": "bronchodilator-agents",
-      "file": "classes/bronchodilator-agents_subclasses.json",
-      "subclasses": [
-        "Bronchodilator Agents"
-      ]
-    },
-    {
-      "primaryClass": "Butyrophenones",
-      "slug": "butyrophenones",
-      "file": "classes/butyrophenones_subclasses.json",
-      "subclasses": [
-        "Butyrophenones"
-      ]
-    },
-    {
-      "primaryClass": "Calcimimetics",
-      "slug": "calcimimetics",
-      "file": "classes/calcimimetics_subclasses.json",
-      "subclasses": [
-        "Calcimimetics"
-      ]
-    },
-    {
-      "primaryClass": "Calcium Channel Agonists",
-      "slug": "calcium-channel-agonists",
-      "file": "classes/calcium-channel-agonists_subclasses.json",
-      "subclasses": [
-        "Calcium Channel Agonists",
-        "Calcium Channel Blockers"
-      ]
-    },
-    {
-      "primaryClass": "Calcium Channel Blockers",
-      "slug": "calcium-channel-blockers",
-      "file": "classes/calcium-channel-blockers_subclasses.json",
-      "subclasses": [
-        "Calcium Channel Agonists",
-        "Calcium Channel Blockers"
-      ]
-    },
-    {
-      "primaryClass": "Cannabinoid Receptor Agonists",
-      "slug": "cannabinoid-receptor-agonists",
-      "file": "classes/cannabinoid-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "Cannabinoid Receptor Agonists"
-      ]
-    },
-    {
-      "primaryClass": "Carbonic Anhydrase Inhibitors",
-      "slug": "carbonic-anhydrase-inhibitors",
-      "file": "classes/carbonic-anhydrase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Carbonic Anhydrase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Carcinogens",
-      "slug": "carcinogens",
-      "file": "classes/carcinogens_subclasses.json",
-      "subclasses": [
-        "Carcinogens"
-      ]
-    },
-    {
-      "primaryClass": "Cardiotonic Agents",
-      "slug": "cardiotonic-agents",
-      "file": "classes/cardiotonic-agents_subclasses.json",
-      "subclasses": [
-        "Cardiotonic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Cardiovascular Agents",
-      "slug": "cardiovascular-agents",
-      "file": "classes/cardiovascular-agents_subclasses.json",
-      "subclasses": [
-        "Cardiovascular Agents"
-      ]
-    },
-    {
-      "primaryClass": "Cathartics",
-      "slug": "cathartics",
-      "file": "classes/cathartics_subclasses.json",
-      "subclasses": [
-        "Cathartics"
-      ]
-    },
-    {
-      "primaryClass": "Central Nervous System Agents",
-      "slug": "central-nervous-system-agents",
-      "file": "classes/central-nervous-system-agents_subclasses.json",
-      "subclasses": [
-        "Central Nervous System Depressants",
-        "Central Nervous System Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Central Nervous System Depressants",
-      "slug": "central-nervous-system-depressants",
-      "file": "classes/central-nervous-system-depressants_subclasses.json",
-      "subclasses": [
-        "Central Nervous System Depressants",
-        "Central Nervous System Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Central Nervous System Stimulants",
-      "slug": "central-nervous-system-stimulants",
-      "file": "classes/central-nervous-system-stimulants_subclasses.json",
-      "subclasses": [
-        "Central Nervous System Depressants",
-        "Central Nervous System Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Cephalosporins",
-      "slug": "cephalosporins",
-      "file": "classes/cephalosporins_subclasses.json",
-      "subclasses": [
-        "Cephalosporins"
-      ]
-    },
-    {
-      "primaryClass": "Chelating Agents",
-      "slug": "chelating-agents",
-      "file": "classes/chelating-agents_subclasses.json",
-      "subclasses": [
-        "Chelating Agents"
-      ]
-    },
-    {
-      "primaryClass": "Chemical Warfare Agents",
-      "slug": "chemical-warfare-agents",
-      "file": "classes/chemical-warfare-agents_subclasses.json",
-      "subclasses": [
-        "Chemical Warfare Agents"
-      ]
-    },
-    {
-      "primaryClass": "Cholagogues and Choleretics",
-      "slug": "cholagogues-and-choleretics",
-      "file": "classes/cholagogues-and-choleretics_subclasses.json",
-      "subclasses": [
-        "Cholagogues and Choleretics"
-      ]
-    },
-    {
-      "primaryClass": "Cholesterol Absorption Inhibitors",
-      "slug": "cholesterol-absorption-inhibitors",
-      "file": "classes/cholesterol-absorption-inhibitors_subclasses.json",
-      "subclasses": [
-        "Cholesterol Absorption Inhibitors"
+        "Adrenergic Uptake Inhibitors",
+        "Parasympatholytics",
+        "Parasympathomimetics",
+        "Sympatholytics",
+        "Sympathomimetics"
       ]
     },
     {
@@ -2570,309 +44,18 @@
       "slug": "cholinergic-agents",
       "file": "classes/cholinergic-agents_subclasses.json",
       "subclasses": [
+        "Antimyasthenic Agents",
         "Cholinergic Agents",
         "Cholinergic Agonists",
-        "Cholinergic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Cholinergic Agonists",
-      "slug": "cholinergic-agonists",
-      "file": "classes/cholinergic-agonists_subclasses.json",
-      "subclasses": [
-        "Cholinergic Agents",
-        "Cholinergic Agonists",
-        "Cholinergic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Cholinergic Antagonists",
-      "slug": "cholinergic-antagonists",
-      "file": "classes/cholinergic-antagonists_subclasses.json",
-      "subclasses": [
-        "Cholinergic Agents",
-        "Cholinergic Agonists",
-        "Cholinergic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Cholinesterase Inhibitors",
-      "slug": "cholinesterase-inhibitors",
-      "file": "classes/cholinesterase-inhibitors_subclasses.json",
-      "subclasses": [
+        "Cholinergic Antagonists",
         "Cholinesterase Inhibitors",
-        "Cholinesterase Reactivators"
-      ]
-    },
-    {
-      "primaryClass": "Cholinesterase Reactivators",
-      "slug": "cholinesterase-reactivators",
-      "file": "classes/cholinesterase-reactivators_subclasses.json",
-      "subclasses": [
-        "Cholinesterase Inhibitors",
-        "Cholinesterase Reactivators"
-      ]
-    },
-    {
-      "primaryClass": "Coagulants",
-      "slug": "coagulants",
-      "file": "classes/coagulants_subclasses.json",
-      "subclasses": [
-        "Coagulants"
-      ]
-    },
-    {
-      "primaryClass": "Coccidiostats",
-      "slug": "coccidiostats",
-      "file": "classes/coccidiostats_subclasses.json",
-      "subclasses": [
-        "Coccidiostats"
-      ]
-    },
-    {
-      "primaryClass": "Colony-Stimulating Factors",
-      "slug": "colony-stimulating-factors",
-      "file": "classes/colony-stimulating-factors_subclasses.json",
-      "subclasses": [
-        "Colony-Stimulating Factors"
-      ]
-    },
-    {
-      "primaryClass": "Coloring Agents",
-      "slug": "coloring-agents",
-      "file": "classes/coloring-agents_subclasses.json",
-      "subclasses": [
-        "Coloring Agents"
-      ]
-    },
-    {
-      "primaryClass": "Conditionally Essential Amino Acids",
-      "slug": "conditionally-essential-amino-acids",
-      "file": "classes/conditionally-essential-amino-acids_subclasses.json",
-      "subclasses": [
-        "Conditionally Essential Amino Acids"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptive Agents, Female",
-      "slug": "contraceptive-agents-female",
-      "file": "classes/contraceptive-agents-female_subclasses.json",
-      "subclasses": [
-        "Contraceptive Agents",
-        "Contraceptive Agents, Female",
-        "Contraceptive Agents, Male"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptive Agents, Male",
-      "slug": "contraceptive-agents-male",
-      "file": "classes/contraceptive-agents-male_subclasses.json",
-      "subclasses": [
-        "Contraceptive Agents",
-        "Contraceptive Agents, Female",
-        "Contraceptive Agents, Male"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptive Agents",
-      "slug": "contraceptive-agents",
-      "file": "classes/contraceptive-agents_subclasses.json",
-      "subclasses": [
-        "Contraceptive Agents",
-        "Contraceptive Agents, Female",
-        "Contraceptive Agents, Male"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptives, Oral, Combined",
-      "slug": "contraceptives-oral-combined",
-      "file": "classes/contraceptives-oral-combined_subclasses.json",
-      "subclasses": [
-        "Contraceptives, Oral, Combined",
-        "Contraceptives, Oral, Synthetic",
-        "Contraceptives, Postcoital, Synthetic"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptives, Oral, Synthetic",
-      "slug": "contraceptives-oral-synthetic",
-      "file": "classes/contraceptives-oral-synthetic_subclasses.json",
-      "subclasses": [
-        "Contraceptives, Oral, Combined",
-        "Contraceptives, Oral, Synthetic",
-        "Contraceptives, Postcoital, Synthetic"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptives, Postcoital, Hormonal",
-      "slug": "contraceptives-postcoital-hormonal",
-      "file": "classes/contraceptives-postcoital-hormonal_subclasses.json",
-      "subclasses": [
-        "Contraceptives, Oral, Combined",
-        "Contraceptives, Oral, Synthetic",
-        "Contraceptives, Postcoital, Synthetic"
-      ]
-    },
-    {
-      "primaryClass": "Contraceptives, Postcoital, Synthetic",
-      "slug": "contraceptives-postcoital-synthetic",
-      "file": "classes/contraceptives-postcoital-synthetic_subclasses.json",
-      "subclasses": [
-        "Contraceptives, Oral, Combined",
-        "Contraceptives, Oral, Synthetic",
-        "Contraceptives, Postcoital, Synthetic"
-      ]
-    },
-    {
-      "primaryClass": "Contrast Media",
-      "slug": "contrast-media",
-      "file": "classes/contrast-media_subclasses.json",
-      "subclasses": [
-        "Contrast Media"
-      ]
-    },
-    {
-      "primaryClass": "Corticosteroids",
-      "slug": "corticosteroids",
-      "file": "classes/corticosteroids_subclasses.json",
-      "subclasses": [
-        "Corticosteroids"
-      ]
-    },
-    {
-      "primaryClass": "Cross-Linking Reagents",
-      "slug": "cross-linking-reagents",
-      "file": "classes/cross-linking-reagents_subclasses.json",
-      "subclasses": [
-        "Cross-Linking Reagents"
-      ]
-    },
-    {
-      "primaryClass": "Cryoprotective Agents",
-      "slug": "cryoprotective-agents",
-      "file": "classes/cryoprotective-agents_subclasses.json",
-      "subclasses": [
-        "Cryoprotective Agents"
-      ]
-    },
-    {
-      "primaryClass": "Cyclooxygenase 2 Inhibitors",
-      "slug": "cyclooxygenase-2-inhibitors",
-      "file": "classes/cyclooxygenase-2-inhibitors_subclasses.json",
-      "subclasses": [
-        "Cyclooxygenase 2 Inhibitors",
-        "Cyclooxygenase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Cyclooxygenase Inhibitors",
-      "slug": "cyclooxygenase-inhibitors",
-      "file": "classes/cyclooxygenase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Cyclooxygenase 2 Inhibitors",
-        "Cyclooxygenase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Delayed-Action Preparations",
-      "slug": "delayed-action-preparations",
-      "file": "classes/delayed-action-preparations_subclasses.json",
-      "subclasses": [
-        "Delayed-Action Preparations"
-      ]
-    },
-    {
-      "primaryClass": "Dermatologic Agents",
-      "slug": "dermatologic-agents",
-      "file": "classes/dermatologic-agents_subclasses.json",
-      "subclasses": [
-        "Dermatologic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Detergents",
-      "slug": "detergents",
-      "file": "classes/detergents_subclasses.json",
-      "subclasses": [
-        "Detergents"
-      ]
-    },
-    {
-      "primaryClass": "Diagnostic Agents",
-      "slug": "diagnostic-agents",
-      "file": "classes/diagnostic-agents_subclasses.json",
-      "subclasses": [
-        "Diagnostic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Dialysis Solutions",
-      "slug": "dialysis-solutions",
-      "file": "classes/dialysis-solutions_subclasses.json",
-      "subclasses": [
-        "Dialysis Solutions"
-      ]
-    },
-    {
-      "primaryClass": "Dietary Supplements",
-      "slug": "dietary-supplements",
-      "file": "classes/dietary-supplements_subclasses.json",
-      "subclasses": [
-        "Dietary Supplements"
-      ]
-    },
-    {
-      "primaryClass": "Dihydropyridines",
-      "slug": "dihydropyridines",
-      "file": "classes/dihydropyridines_subclasses.json",
-      "subclasses": [
-        "Dihydropyridines"
-      ]
-    },
-    {
-      "primaryClass": "Dipeptidyl-Peptidase IV Inhibitors",
-      "slug": "dipeptidyl-peptidase-iv-inhibitors",
-      "file": "classes/dipeptidyl-peptidase-iv-inhibitors_subclasses.json",
-      "subclasses": [
-        "Dipeptidyl-Peptidase IV Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Disinfectants",
-      "slug": "disinfectants",
-      "file": "classes/disinfectants_subclasses.json",
-      "subclasses": [
-        "Disinfectants"
-      ]
-    },
-    {
-      "primaryClass": "Diuretics, Mercurial",
-      "slug": "diuretics-mercurial",
-      "file": "classes/diuretics-mercurial_subclasses.json",
-      "subclasses": [
-        "Diuretics",
-        "Diuretics, Mercurial",
-        "Diuretics, Osmotic"
-      ]
-    },
-    {
-      "primaryClass": "Diuretics, Osmotic",
-      "slug": "diuretics-osmotic",
-      "file": "classes/diuretics-osmotic_subclasses.json",
-      "subclasses": [
-        "Diuretics",
-        "Diuretics, Mercurial",
-        "Diuretics, Osmotic"
-      ]
-    },
-    {
-      "primaryClass": "Diuretics",
-      "slug": "diuretics",
-      "file": "classes/diuretics_subclasses.json",
-      "subclasses": [
-        "Diuretics",
-        "Diuretics, Mercurial",
-        "Diuretics, Osmotic"
+        "Cholinesterase Reactivators",
+        "Ganglionic Blockers",
+        "Ganglionic Stimulants",
+        "Muscarinic Agonists",
+        "Muscarinic Antagonists",
+        "Nicotinic Agonists",
+        "Nicotinic Antagonists"
       ]
     },
     {
@@ -2883,1498 +66,8 @@
         "Dopamine Agents",
         "Dopamine Agonists",
         "Dopamine Antagonists",
-        "Dopamine Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Dopamine Agonists",
-      "slug": "dopamine-agonists",
-      "file": "classes/dopamine-agonists_subclasses.json",
-      "subclasses": [
-        "Dopamine Agents",
-        "Dopamine Agonists",
-        "Dopamine Antagonists",
-        "Dopamine Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Dopamine Antagonists",
-      "slug": "dopamine-antagonists",
-      "file": "classes/dopamine-antagonists_subclasses.json",
-      "subclasses": [
-        "Dopamine Agents",
-        "Dopamine Agonists",
-        "Dopamine Antagonists",
-        "Dopamine Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Dopamine Uptake Inhibitors",
-      "slug": "dopamine-uptake-inhibitors",
-      "file": "classes/dopamine-uptake-inhibitors_subclasses.json",
-      "subclasses": [
-        "Dopamine Agents",
-        "Dopamine Agonists",
-        "Dopamine Antagonists",
-        "Dopamine Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Dopaminergics",
-      "slug": "dopaminergics",
-      "file": "classes/dopaminergics_subclasses.json",
-      "subclasses": [
+        "Dopamine Uptake Inhibitors",
         "Dopaminergics"
-      ]
-    },
-    {
-      "primaryClass": "Dyes",
-      "slug": "dyes",
-      "file": "classes/dyes_subclasses.json",
-      "subclasses": [
-        "Dyes"
-      ]
-    },
-    {
-      "primaryClass": "EENT Preparations",
-      "slug": "eent-preparations",
-      "file": "classes/eent-preparations_subclasses.json",
-      "subclasses": [
-        "EENT Preparations"
-      ]
-    },
-    {
-      "primaryClass": "Electrolyte replenisher",
-      "slug": "electrolyte-replenisher",
-      "file": "classes/electrolyte-replenisher_subclasses.json",
-      "subclasses": [
-        "Electrolyte replenisher"
-      ]
-    },
-    {
-      "primaryClass": "Endothelium-Dependent Relaxing Factors",
-      "slug": "endothelium-dependent-relaxing-factors",
-      "file": "classes/endothelium-dependent-relaxing-factors_subclasses.json",
-      "subclasses": [
-        "Endothelium-Dependent Relaxing Factors"
-      ]
-    },
-    {
-      "primaryClass": "Enzyme Inhibitors",
-      "slug": "enzyme-inhibitors",
-      "file": "classes/enzyme-inhibitors_subclasses.json",
-      "subclasses": [
-        "Enzyme Inhibitors",
-        "Enzyme Replacement Agents"
-      ]
-    },
-    {
-      "primaryClass": "Enzyme Replacement Agents",
-      "slug": "enzyme-replacement-agents",
-      "file": "classes/enzyme-replacement-agents_subclasses.json",
-      "subclasses": [
-        "Enzyme Inhibitors",
-        "Enzyme Replacement Agents"
-      ]
-    },
-    {
-      "primaryClass": "Enzymes",
-      "slug": "enzymes",
-      "file": "classes/enzymes_subclasses.json",
-      "subclasses": [
-        "Enzymes"
-      ]
-    },
-    {
-      "primaryClass": "Epithelial Sodium Channel Blockers",
-      "slug": "epithelial-sodium-channel-blockers",
-      "file": "classes/epithelial-sodium-channel-blockers_subclasses.json",
-      "subclasses": [
-        "Epithelial Sodium Channel Blockers"
-      ]
-    },
-    {
-      "primaryClass": "Estrogen Antagonists",
-      "slug": "estrogen-antagonists",
-      "file": "classes/estrogen-antagonists_subclasses.json",
-      "subclasses": [
-        "Estrogen Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Estrogens, Non-Steroidal",
-      "slug": "estrogens-non-steroidal",
-      "file": "classes/estrogens-non-steroidal_subclasses.json",
-      "subclasses": [
-        "Estrogens",
-        "Estrogens, Non-Steroidal"
-      ]
-    },
-    {
-      "primaryClass": "Estrogens",
-      "slug": "estrogens",
-      "file": "classes/estrogens_subclasses.json",
-      "subclasses": [
-        "Estrogens",
-        "Estrogens, Non-Steroidal"
-      ]
-    },
-    {
-      "primaryClass": "Excitatory Amino Acid Antagonists",
-      "slug": "excitatory-amino-acid-antagonists",
-      "file": "classes/excitatory-amino-acid-antagonists_subclasses.json",
-      "subclasses": [
-        "Excitatory Amino Acid Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Expectorants",
-      "slug": "expectorants",
-      "file": "classes/expectorants_subclasses.json",
-      "subclasses": [
-        "Expectorants"
-      ]
-    },
-    {
-      "primaryClass": "Explosive Agents",
-      "slug": "explosive-agents",
-      "file": "classes/explosive-agents_subclasses.json",
-      "subclasses": [
-        "Explosive Agents"
-      ]
-    },
-    {
-      "primaryClass": "Fatty Acid Synthesis Inhibitors",
-      "slug": "fatty-acid-synthesis-inhibitors",
-      "file": "classes/fatty-acid-synthesis-inhibitors_subclasses.json",
-      "subclasses": [
-        "Fatty Acid Synthesis Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Fertility Agents, Female",
-      "slug": "fertility-agents-female",
-      "file": "classes/fertility-agents-female_subclasses.json",
-      "subclasses": [
-        "Fertility Agents",
-        "Fertility Agents, Female"
-      ]
-    },
-    {
-      "primaryClass": "Fertility Agents",
-      "slug": "fertility-agents",
-      "file": "classes/fertility-agents_subclasses.json",
-      "subclasses": [
-        "Fertility Agents",
-        "Fertility Agents, Female"
-      ]
-    },
-    {
-      "primaryClass": "Fibrinolytic Agents",
-      "slug": "fibrinolytic-agents",
-      "file": "classes/fibrinolytic-agents_subclasses.json",
-      "subclasses": [
-        "Fibrinolytic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Filaricides",
-      "slug": "filaricides",
-      "file": "classes/filaricides_subclasses.json",
-      "subclasses": [
-        "Filaricides"
-      ]
-    },
-    {
-      "primaryClass": "Fluorescent Dyes",
-      "slug": "fluorescent-dyes",
-      "file": "classes/fluorescent-dyes_subclasses.json",
-      "subclasses": [
-        "Fluorescent Dyes"
-      ]
-    },
-    {
-      "primaryClass": "Fluoroquinolones",
-      "slug": "fluoroquinolones",
-      "file": "classes/fluoroquinolones_subclasses.json",
-      "subclasses": [
-        "Fluoroquinolones"
-      ]
-    },
-    {
-      "primaryClass": "Folic Acid Antagonists",
-      "slug": "folic-acid-antagonists",
-      "file": "classes/folic-acid-antagonists_subclasses.json",
-      "subclasses": [
-        "Folic Acid Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Food Additives",
-      "slug": "food-additives",
-      "file": "classes/food-additives_subclasses.json",
-      "subclasses": [
-        "Food Additives"
-      ]
-    },
-    {
-      "primaryClass": "Free Radical Scavengers",
-      "slug": "free-radical-scavengers",
-      "file": "classes/free-radical-scavengers_subclasses.json",
-      "subclasses": [
-        "Free Radical Scavengers"
-      ]
-    },
-    {
-      "primaryClass": "GABA Agents",
-      "slug": "gaba-agents",
-      "file": "classes/gaba-agents_subclasses.json",
-      "subclasses": [
-        "GABA Agents",
-        "GABA Agonists",
-        "GABA Antagonists",
-        "GABA Modulators",
-        "GABA-A Receptor Agonists"
-      ]
-    },
-    {
-      "primaryClass": "GABA Agonists",
-      "slug": "gaba-agonists",
-      "file": "classes/gaba-agonists_subclasses.json",
-      "subclasses": [
-        "GABA Agents",
-        "GABA Agonists",
-        "GABA Antagonists",
-        "GABA Modulators",
-        "GABA-A Receptor Agonists"
-      ]
-    },
-    {
-      "primaryClass": "GABA Antagonists",
-      "slug": "gaba-antagonists",
-      "file": "classes/gaba-antagonists_subclasses.json",
-      "subclasses": [
-        "GABA Agents",
-        "GABA Agonists",
-        "GABA Antagonists",
-        "GABA Modulators",
-        "GABA-A Receptor Agonists"
-      ]
-    },
-    {
-      "primaryClass": "GABA Modulators",
-      "slug": "gaba-modulators",
-      "file": "classes/gaba-modulators_subclasses.json",
-      "subclasses": [
-        "GABA Agents",
-        "GABA Agonists",
-        "GABA Antagonists",
-        "GABA Modulators",
-        "GABA-A Receptor Agonists"
-      ]
-    },
-    {
-      "primaryClass": "GABA-A Receptor Agonists",
-      "slug": "gaba-a-receptor-agonists",
-      "file": "classes/gaba-a-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "GABA Agents",
-        "GABA Agonists",
-        "GABA Antagonists",
-        "GABA Modulators",
-        "GABA-A Receptor Agonists"
-      ]
-    },
-    {
-      "primaryClass": "Ganglionic Blockers",
-      "slug": "ganglionic-blockers",
-      "file": "classes/ganglionic-blockers_subclasses.json",
-      "subclasses": [
-        "Ganglionic Blockers",
-        "Ganglionic Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Ganglionic Stimulants",
-      "slug": "ganglionic-stimulants",
-      "file": "classes/ganglionic-stimulants_subclasses.json",
-      "subclasses": [
-        "Ganglionic Blockers",
-        "Ganglionic Stimulants"
-      ]
-    },
-    {
-      "primaryClass": "Gastrointestinal Agents",
-      "slug": "gastrointestinal-agents",
-      "file": "classes/gastrointestinal-agents_subclasses.json",
-      "subclasses": [
-        "Gastrointestinal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Glucocorticoids",
-      "slug": "glucocorticoids",
-      "file": "classes/glucocorticoids_subclasses.json",
-      "subclasses": [
-        "Glucocorticoids"
-      ]
-    },
-    {
-      "primaryClass": "Glycine Agents",
-      "slug": "glycine-agents",
-      "file": "classes/glycine-agents_subclasses.json",
-      "subclasses": [
-        "Glycine Agents"
-      ]
-    },
-    {
-      "primaryClass": "Gonadotropin-releasing hormone agonist",
-      "slug": "gonadotropin-releasing-hormone-agonist",
-      "file": "classes/gonadotropin-releasing-hormone-agonist_subclasses.json",
-      "subclasses": [
-        "Gonadotropin-releasing hormone agonist",
-        "Gonadotropin-releasing hormone antagonist"
-      ]
-    },
-    {
-      "primaryClass": "Gonadotropin-releasing hormone antagonist",
-      "slug": "gonadotropin-releasing-hormone-antagonist",
-      "file": "classes/gonadotropin-releasing-hormone-antagonist_subclasses.json",
-      "subclasses": [
-        "Gonadotropin-releasing hormone agonist",
-        "Gonadotropin-releasing hormone antagonist"
-      ]
-    },
-    {
-      "primaryClass": "Gonadotropins",
-      "slug": "gonadotropins",
-      "file": "classes/gonadotropins_subclasses.json",
-      "subclasses": [
-        "Gonadotropins"
-      ]
-    },
-    {
-      "primaryClass": "Gout Suppressants",
-      "slug": "gout-suppressants",
-      "file": "classes/gout-suppressants_subclasses.json",
-      "subclasses": [
-        "Gout Suppressants"
-      ]
-    },
-    {
-      "primaryClass": "Hallucinogens",
-      "slug": "hallucinogens",
-      "file": "classes/hallucinogens_subclasses.json",
-      "subclasses": [
-        "Hallucinogens"
-      ]
-    },
-    {
-      "primaryClass": "Hematinics",
-      "slug": "hematinics",
-      "file": "classes/hematinics_subclasses.json",
-      "subclasses": [
-        "Hematinics"
-      ]
-    },
-    {
-      "primaryClass": "Hematologic Agents",
-      "slug": "hematologic-agents",
-      "file": "classes/hematologic-agents_subclasses.json",
-      "subclasses": [
-        "Hematologic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hematopoietic Agents",
-      "slug": "hematopoietic-agents",
-      "file": "classes/hematopoietic-agents_subclasses.json",
-      "subclasses": [
-        "Hematopoietic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hemorrheologic Agents",
-      "slug": "hemorrheologic-agents",
-      "file": "classes/hemorrheologic-agents_subclasses.json",
-      "subclasses": [
-        "Hemorrheologic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hemostatics",
-      "slug": "hemostatics",
-      "file": "classes/hemostatics_subclasses.json",
-      "subclasses": [
-        "Hemostatics"
-      ]
-    },
-    {
-      "primaryClass": "Heparins",
-      "slug": "heparins",
-      "file": "classes/heparins_subclasses.json",
-      "subclasses": [
-        "Heparins"
-      ]
-    },
-    {
-      "primaryClass": "Histamine Agents",
-      "slug": "histamine-agents",
-      "file": "classes/histamine-agents_subclasses.json",
-      "subclasses": [
-        "Histamine Agents",
-        "Histamine Agonists",
-        "Histamine Antagonists",
-        "Histamine H1 Antagonists",
-        "Histamine H1 Antagonists, Non-Sedating",
-        "Histamine H2 Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Histamine Agonists",
-      "slug": "histamine-agonists",
-      "file": "classes/histamine-agonists_subclasses.json",
-      "subclasses": [
-        "Histamine Agents",
-        "Histamine Agonists",
-        "Histamine Antagonists",
-        "Histamine H1 Antagonists",
-        "Histamine H1 Antagonists, Non-Sedating",
-        "Histamine H2 Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Histamine Antagonists",
-      "slug": "histamine-antagonists",
-      "file": "classes/histamine-antagonists_subclasses.json",
-      "subclasses": [
-        "Histamine Agents",
-        "Histamine Agonists",
-        "Histamine Antagonists",
-        "Histamine H1 Antagonists",
-        "Histamine H1 Antagonists, Non-Sedating",
-        "Histamine H2 Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Histamine H1 Antagonists, Non-Sedating",
-      "slug": "histamine-h1-antagonists-non-sedating",
-      "file": "classes/histamine-h1-antagonists-non-sedating_subclasses.json",
-      "subclasses": [
-        "Histamine Agents",
-        "Histamine Agonists",
-        "Histamine Antagonists",
-        "Histamine H1 Antagonists",
-        "Histamine H1 Antagonists, Non-Sedating",
-        "Histamine H2 Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Histamine H1 Antagonists",
-      "slug": "histamine-h1-antagonists",
-      "file": "classes/histamine-h1-antagonists_subclasses.json",
-      "subclasses": [
-        "Histamine Agents",
-        "Histamine Agonists",
-        "Histamine Antagonists",
-        "Histamine H1 Antagonists",
-        "Histamine H1 Antagonists, Non-Sedating",
-        "Histamine H2 Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Histamine H2 Antagonists",
-      "slug": "histamine-h2-antagonists",
-      "file": "classes/histamine-h2-antagonists_subclasses.json",
-      "subclasses": [
-        "Histamine Agents",
-        "Histamine Agonists",
-        "Histamine Antagonists",
-        "Histamine H1 Antagonists",
-        "Histamine H1 Antagonists, Non-Sedating",
-        "Histamine H2 Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Histone Deacetylase Inhibitors",
-      "slug": "histone-deacetylase-inhibitors",
-      "file": "classes/histone-deacetylase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Histone Deacetylase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "HIV Fusion Inhibitors",
-      "slug": "hiv-fusion-inhibitors",
-      "file": "classes/hiv-fusion-inhibitors_subclasses.json",
-      "subclasses": [
-        "HIV Fusion Inhibitors",
-        "HIV Protease Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "HIV Protease Inhibitors",
-      "slug": "hiv-protease-inhibitors",
-      "file": "classes/hiv-protease-inhibitors_subclasses.json",
-      "subclasses": [
-        "HIV Fusion Inhibitors",
-        "HIV Protease Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Homeopathic Agents",
-      "slug": "homeopathic-agents",
-      "file": "classes/homeopathic-agents_subclasses.json",
-      "subclasses": [
-        "Homeopathic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hormone Antagonists",
-      "slug": "hormone-antagonists",
-      "file": "classes/hormone-antagonists_subclasses.json",
-      "subclasses": [
-        "Hormone Antagonists",
-        "Hormone Replacement Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hormone Replacement Agents",
-      "slug": "hormone-replacement-agents",
-      "file": "classes/hormone-replacement-agents_subclasses.json",
-      "subclasses": [
-        "Hormone Antagonists",
-        "Hormone Replacement Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hormones",
-      "slug": "hormones",
-      "file": "classes/hormones_subclasses.json",
-      "subclasses": [
-        "Hormones"
-      ]
-    },
-    {
-      "primaryClass": "Hydroxymethylglutaryl-CoA Reductase Inhibitors",
-      "slug": "hydroxymethylglutaryl-coa-reductase-inhibitors",
-      "file": "classes/hydroxymethylglutaryl-coa-reductase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Hydroxymethylglutaryl-CoA Reductase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Hypnotics and Sedatives",
-      "slug": "hypnotics-and-sedatives",
-      "file": "classes/hypnotics-and-sedatives_subclasses.json",
-      "subclasses": [
-        "Hypnotics and Sedatives"
-      ]
-    },
-    {
-      "primaryClass": "Hypoglycemic Agents",
-      "slug": "hypoglycemic-agents",
-      "file": "classes/hypoglycemic-agents_subclasses.json",
-      "subclasses": [
-        "Hypoglycemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Hypolipidemic Agents",
-      "slug": "hypolipidemic-agents",
-      "file": "classes/hypolipidemic-agents_subclasses.json",
-      "subclasses": [
-        "Hypolipidemic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Immunologic Factors",
-      "slug": "immunologic-factors",
-      "file": "classes/immunologic-factors_subclasses.json",
-      "subclasses": [
-        "Immunologic Factors"
-      ]
-    },
-    {
-      "primaryClass": "Immunosuppressive Agents",
-      "slug": "immunosuppressive-agents",
-      "file": "classes/immunosuppressive-agents_subclasses.json",
-      "subclasses": [
-        "Immunosuppressive Agents"
-      ]
-    },
-    {
-      "primaryClass": "Immunotoxins",
-      "slug": "immunotoxins",
-      "file": "classes/immunotoxins_subclasses.json",
-      "subclasses": [
-        "Immunotoxins"
-      ]
-    },
-    {
-      "primaryClass": "Indicators and Reagents",
-      "slug": "indicators-and-reagents",
-      "file": "classes/indicators-and-reagents_subclasses.json",
-      "subclasses": [
-        "Indicators and Reagents"
-      ]
-    },
-    {
-      "primaryClass": "Insecticides",
-      "slug": "insecticides",
-      "file": "classes/insecticides_subclasses.json",
-      "subclasses": [
-        "Insecticides"
-      ]
-    },
-    {
-      "primaryClass": "Intercalating Agents",
-      "slug": "intercalating-agents",
-      "file": "classes/intercalating-agents_subclasses.json",
-      "subclasses": [
-        "Intercalating Agents"
-      ]
-    },
-    {
-      "primaryClass": "Interferon Inducers",
-      "slug": "interferon-inducers",
-      "file": "classes/interferon-inducers_subclasses.json",
-      "subclasses": [
-        "Interferon Inducers"
-      ]
-    },
-    {
-      "primaryClass": "Ionophores",
-      "slug": "ionophores",
-      "file": "classes/ionophores_subclasses.json",
-      "subclasses": [
-        "Ionophores"
-      ]
-    },
-    {
-      "primaryClass": "Iron Chelating Agents",
-      "slug": "iron-chelating-agents",
-      "file": "classes/iron-chelating-agents_subclasses.json",
-      "subclasses": [
-        "Iron Chelating Agents",
-        "Iron Preparations"
-      ]
-    },
-    {
-      "primaryClass": "Iron Preparations",
-      "slug": "iron-preparations",
-      "file": "classes/iron-preparations_subclasses.json",
-      "subclasses": [
-        "Iron Chelating Agents",
-        "Iron Preparations"
-      ]
-    },
-    {
-      "primaryClass": "Irritants",
-      "slug": "irritants",
-      "file": "classes/irritants_subclasses.json",
-      "subclasses": [
-        "Irritants"
-      ]
-    },
-    {
-      "primaryClass": "Keratolytic Agents",
-      "slug": "keratolytic-agents",
-      "file": "classes/keratolytic-agents_subclasses.json",
-      "subclasses": [
-        "Keratolytic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Ketolides",
-      "slug": "ketolides",
-      "file": "classes/ketolides_subclasses.json",
-      "subclasses": [
-        "Ketolides"
-      ]
-    },
-    {
-      "primaryClass": "Labor Induction Agents",
-      "slug": "labor-induction-agents",
-      "file": "classes/labor-induction-agents_subclasses.json",
-      "subclasses": [
-        "Labor Induction Agents"
-      ]
-    },
-    {
-      "primaryClass": "Laxatives",
-      "slug": "laxatives",
-      "file": "classes/laxatives_subclasses.json",
-      "subclasses": [
-        "Laxatives"
-      ]
-    },
-    {
-      "primaryClass": "Leprostatic Agents",
-      "slug": "leprostatic-agents",
-      "file": "classes/leprostatic-agents_subclasses.json",
-      "subclasses": [
-        "Leprostatic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Leukotriene Antagonists",
-      "slug": "leukotriene-antagonists",
-      "file": "classes/leukotriene-antagonists_subclasses.json",
-      "subclasses": [
-        "Leukotriene Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Lipotropic Agents",
-      "slug": "lipotropic-agents",
-      "file": "classes/lipotropic-agents_subclasses.json",
-      "subclasses": [
-        "Lipotropic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Lipoxygenase Inhibitors",
-      "slug": "lipoxygenase-inhibitors",
-      "file": "classes/lipoxygenase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Lipoxygenase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Luteolytic Agents",
-      "slug": "luteolytic-agents",
-      "file": "classes/luteolytic-agents_subclasses.json",
-      "subclasses": [
-        "Luteolytic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Macrolides",
-      "slug": "macrolides",
-      "file": "classes/macrolides_subclasses.json",
-      "subclasses": [
-        "Macrolides"
-      ]
-    },
-    {
-      "primaryClass": "Mast Cell Stabilizers",
-      "slug": "mast-cell-stabilizers",
-      "file": "classes/mast-cell-stabilizers_subclasses.json",
-      "subclasses": [
-        "Mast Cell Stabilizers"
-      ]
-    },
-    {
-      "primaryClass": "Meglitinides",
-      "slug": "meglitinides",
-      "file": "classes/meglitinides_subclasses.json",
-      "subclasses": [
-        "Meglitinides"
-      ]
-    },
-    {
-      "primaryClass": "Menstruation-Inducing Agents",
-      "slug": "menstruation-inducing-agents",
-      "file": "classes/menstruation-inducing-agents_subclasses.json",
-      "subclasses": [
-        "Menstruation-Inducing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Micronutrients",
-      "slug": "micronutrients",
-      "file": "classes/micronutrients_subclasses.json",
-      "subclasses": [
-        "Micronutrients"
-      ]
-    },
-    {
-      "primaryClass": "Microtubule Inhibitors",
-      "slug": "microtubule-inhibitors",
-      "file": "classes/microtubule-inhibitors_subclasses.json",
-      "subclasses": [
-        "Microtubule Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Mineralocorticoid Receptor Antagonists",
-      "slug": "mineralocorticoid-receptor-antagonists",
-      "file": "classes/mineralocorticoid-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Mineralocorticoid Receptor Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Miotics",
-      "slug": "miotics",
-      "file": "classes/miotics_subclasses.json",
-      "subclasses": [
-        "Miotics"
-      ]
-    },
-    {
-      "primaryClass": "Monoamine Oxidase Inhibitors",
-      "slug": "monoamine-oxidase-inhibitors",
-      "file": "classes/monoamine-oxidase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Monoamine Oxidase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Monoclonal antibodies",
-      "slug": "monoclonal-antibodies",
-      "file": "classes/monoclonal-antibodies_subclasses.json",
-      "subclasses": [
-        "Monoclonal antibodies"
-      ]
-    },
-    {
-      "primaryClass": "Mouthwashes",
-      "slug": "mouthwashes",
-      "file": "classes/mouthwashes_subclasses.json",
-      "subclasses": [
-        "Mouthwashes"
-      ]
-    },
-    {
-      "primaryClass": "Muscarinic Agonists",
-      "slug": "muscarinic-agonists",
-      "file": "classes/muscarinic-agonists_subclasses.json",
-      "subclasses": [
-        "Muscarinic Agonists",
-        "Muscarinic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Muscarinic Antagonists",
-      "slug": "muscarinic-antagonists",
-      "file": "classes/muscarinic-antagonists_subclasses.json",
-      "subclasses": [
-        "Muscarinic Agonists",
-        "Muscarinic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Muscle Relaxants, Central",
-      "slug": "muscle-relaxants-central",
-      "file": "classes/muscle-relaxants-central_subclasses.json",
-      "subclasses": [
-        "Muscle Relaxants, Central",
-        "Muscle Relaxants, Genitourinary",
-        "Muscle Relaxants, Respiratory",
-        "Muscle Relaxants, Skeletal"
-      ]
-    },
-    {
-      "primaryClass": "Muscle Relaxants, Genitourinary",
-      "slug": "muscle-relaxants-genitourinary",
-      "file": "classes/muscle-relaxants-genitourinary_subclasses.json",
-      "subclasses": [
-        "Muscle Relaxants, Central",
-        "Muscle Relaxants, Genitourinary",
-        "Muscle Relaxants, Respiratory",
-        "Muscle Relaxants, Skeletal"
-      ]
-    },
-    {
-      "primaryClass": "Muscle Relaxants, Respiratory",
-      "slug": "muscle-relaxants-respiratory",
-      "file": "classes/muscle-relaxants-respiratory_subclasses.json",
-      "subclasses": [
-        "Muscle Relaxants, Central",
-        "Muscle Relaxants, Genitourinary",
-        "Muscle Relaxants, Respiratory",
-        "Muscle Relaxants, Skeletal"
-      ]
-    },
-    {
-      "primaryClass": "Muscle Relaxants, Skeletal",
-      "slug": "muscle-relaxants-skeletal",
-      "file": "classes/muscle-relaxants-skeletal_subclasses.json",
-      "subclasses": [
-        "Muscle Relaxants, Central",
-        "Muscle Relaxants, Genitourinary",
-        "Muscle Relaxants, Respiratory",
-        "Muscle Relaxants, Skeletal"
-      ]
-    },
-    {
-      "primaryClass": "Mutagens",
-      "slug": "mutagens",
-      "file": "classes/mutagens_subclasses.json",
-      "subclasses": [
-        "Mutagens"
-      ]
-    },
-    {
-      "primaryClass": "Mydriatics",
-      "slug": "mydriatics",
-      "file": "classes/mydriatics_subclasses.json",
-      "subclasses": [
-        "Mydriatics"
-      ]
-    },
-    {
-      "primaryClass": "Myeloablative Agonists",
-      "slug": "myeloablative-agonists",
-      "file": "classes/myeloablative-agonists_subclasses.json",
-      "subclasses": [
-        "Myeloablative Agonists"
-      ]
-    },
-    {
-      "primaryClass": "Narcotic Antagonists",
-      "slug": "narcotic-antagonists",
-      "file": "classes/narcotic-antagonists_subclasses.json",
-      "subclasses": [
-        "Narcotic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Narcotics",
-      "slug": "narcotics",
-      "file": "classes/narcotics_subclasses.json",
-      "subclasses": [
-        "Narcotics"
-      ]
-    },
-    {
-      "primaryClass": "Nasal Decongestants",
-      "slug": "nasal-decongestants",
-      "file": "classes/nasal-decongestants_subclasses.json",
-      "subclasses": [
-        "Nasal Decongestants"
-      ]
-    },
-    {
-      "primaryClass": "Natriuretic Agents",
-      "slug": "natriuretic-agents",
-      "file": "classes/natriuretic-agents_subclasses.json",
-      "subclasses": [
-        "Natriuretic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Neuromuscular Agents",
-      "slug": "neuromuscular-agents",
-      "file": "classes/neuromuscular-agents_subclasses.json",
-      "subclasses": [
-        "Neuromuscular Agents",
-        "Neuromuscular Blocking Agents",
-        "Neuromuscular Depolarizing Agents",
-        "Neuromuscular Nondepolarizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Neuromuscular Blocking Agents",
-      "slug": "neuromuscular-blocking-agents",
-      "file": "classes/neuromuscular-blocking-agents_subclasses.json",
-      "subclasses": [
-        "Neuromuscular Agents",
-        "Neuromuscular Blocking Agents",
-        "Neuromuscular Depolarizing Agents",
-        "Neuromuscular Nondepolarizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Neuromuscular Depolarizing Agents",
-      "slug": "neuromuscular-depolarizing-agents",
-      "file": "classes/neuromuscular-depolarizing-agents_subclasses.json",
-      "subclasses": [
-        "Neuromuscular Agents",
-        "Neuromuscular Blocking Agents",
-        "Neuromuscular Depolarizing Agents",
-        "Neuromuscular Nondepolarizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Neuromuscular Nondepolarizing Agents",
-      "slug": "neuromuscular-nondepolarizing-agents",
-      "file": "classes/neuromuscular-nondepolarizing-agents_subclasses.json",
-      "subclasses": [
-        "Neuromuscular Agents",
-        "Neuromuscular Blocking Agents",
-        "Neuromuscular Depolarizing Agents",
-        "Neuromuscular Nondepolarizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Neuroprotective Agents",
-      "slug": "neuroprotective-agents",
-      "file": "classes/neuroprotective-agents_subclasses.json",
-      "subclasses": [
-        "Neuroprotective Agents"
-      ]
-    },
-    {
-      "primaryClass": "Neurotransmitter Agents",
-      "slug": "neurotransmitter-agents",
-      "file": "classes/neurotransmitter-agents_subclasses.json",
-      "subclasses": [
-        "Neurotransmitter Agents",
-        "Neurotransmitter Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Neurotransmitter Uptake Inhibitors",
-      "slug": "neurotransmitter-uptake-inhibitors",
-      "file": "classes/neurotransmitter-uptake-inhibitors_subclasses.json",
-      "subclasses": [
-        "Neurotransmitter Agents",
-        "Neurotransmitter Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Nicotinic Agonists",
-      "slug": "nicotinic-agonists",
-      "file": "classes/nicotinic-agonists_subclasses.json",
-      "subclasses": [
-        "Nicotinic Agonists",
-        "Nicotinic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Nicotinic Antagonists",
-      "slug": "nicotinic-antagonists",
-      "file": "classes/nicotinic-antagonists_subclasses.json",
-      "subclasses": [
-        "Nicotinic Agonists",
-        "Nicotinic Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Nitric Oxide Donors",
-      "slug": "nitric-oxide-donors",
-      "file": "classes/nitric-oxide-donors_subclasses.json",
-      "subclasses": [
-        "Nitric Oxide Donors"
-      ]
-    },
-    {
-      "primaryClass": "Non-Essential Amino Acids",
-      "slug": "non-essential-amino-acids",
-      "file": "classes/non-essential-amino-acids_subclasses.json",
-      "subclasses": [
-        "Non-Essential Amino Acids"
-      ]
-    },
-    {
-      "primaryClass": "Non-Narcotic Analgesics",
-      "slug": "non-narcotic-analgesics",
-      "file": "classes/non-narcotic-analgesics_subclasses.json",
-      "subclasses": [
-        "Non-Essential Amino Acids"
-      ]
-    },
-    {
-      "primaryClass": "Nootropic Agents",
-      "slug": "nootropic-agents",
-      "file": "classes/nootropic-agents_subclasses.json",
-      "subclasses": [
-        "Nootropic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Nucleic Acid Synthesis Inhibitors",
-      "slug": "nucleic-acid-synthesis-inhibitors",
-      "file": "classes/nucleic-acid-synthesis-inhibitors_subclasses.json",
-      "subclasses": [
-        "Nucleic Acid Synthesis Inhibitors",
-        "Nucleic Acids, Nucleotides, and Nucleosides"
-      ]
-    },
-    {
-      "primaryClass": "Nucleic Acids, Nucleotides, and Nucleosides",
-      "slug": "nucleic-acids-nucleotides-and-nucleosides",
-      "file": "classes/nucleic-acids-nucleotides-and-nucleosides_subclasses.json",
-      "subclasses": [
-        "Nucleic Acid Synthesis Inhibitors",
-        "Nucleic Acids, Nucleotides, and Nucleosides"
-      ]
-    },
-    {
-      "primaryClass": "Nutritional Support",
-      "slug": "nutritional-support",
-      "file": "classes/nutritional-support_subclasses.json",
-      "subclasses": [
-        "Nutritional Support"
-      ]
-    },
-    {
-      "primaryClass": "Oligodeoxyribonucleotides, Antisense",
-      "slug": "oligodeoxyribonucleotides-antisense",
-      "file": "classes/oligodeoxyribonucleotides-antisense_subclasses.json",
-      "subclasses": [
-        "Oligodeoxyribonucleotides, Antisense"
-      ]
-    },
-    {
-      "primaryClass": "Ophthalmics",
-      "slug": "ophthalmics",
-      "file": "classes/ophthalmics_subclasses.json",
-      "subclasses": [
-        "Ophthalmics"
-      ]
-    },
-    {
-      "primaryClass": "Oxytocics",
-      "slug": "oxytocics",
-      "file": "classes/oxytocics_subclasses.json",
-      "subclasses": [
-        "Oxytocics"
-      ]
-    },
-    {
-      "primaryClass": "Parasympatholytics",
-      "slug": "parasympatholytics",
-      "file": "classes/parasympatholytics_subclasses.json",
-      "subclasses": [
-        "Parasympatholytics"
-      ]
-    },
-    {
-      "primaryClass": "Parasympathomimetics",
-      "slug": "parasympathomimetics",
-      "file": "classes/parasympathomimetics_subclasses.json",
-      "subclasses": [
-        "Parasympathomimetics"
-      ]
-    },
-    {
-      "primaryClass": "Pediculicides",
-      "slug": "pediculicides",
-      "file": "classes/pediculicides_subclasses.json",
-      "subclasses": [
-        "Pediculicides"
-      ]
-    },
-    {
-      "primaryClass": "Penicillins",
-      "slug": "penicillins",
-      "file": "classes/penicillins_subclasses.json",
-      "subclasses": [
-        "Penicillins"
-      ]
-    },
-    {
-      "primaryClass": "Permeabilizing Agents",
-      "slug": "permeabilizing-agents",
-      "file": "classes/permeabilizing-agents_subclasses.json",
-      "subclasses": [
-        "Permeabilizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Pesticides",
-      "slug": "pesticides",
-      "file": "classes/pesticides_subclasses.json",
-      "subclasses": [
-        "Pesticides"
-      ]
-    },
-    {
-      "primaryClass": "Phenothiazines",
-      "slug": "phenothiazines",
-      "file": "classes/phenothiazines_subclasses.json",
-      "subclasses": [
-        "Phenothiazines"
-      ]
-    },
-    {
-      "primaryClass": "Phosphodiesterase 3 Inhibitors",
-      "slug": "phosphodiesterase-3-inhibitors",
-      "file": "classes/phosphodiesterase-3-inhibitors_subclasses.json",
-      "subclasses": [
-        "Phosphodiesterase 3 Inhibitors",
-        "Phosphodiesterase 5 Inhibitors",
-        "Phosphodiesterase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Phosphodiesterase 5 Inhibitors",
-      "slug": "phosphodiesterase-5-inhibitors",
-      "file": "classes/phosphodiesterase-5-inhibitors_subclasses.json",
-      "subclasses": [
-        "Phosphodiesterase 3 Inhibitors",
-        "Phosphodiesterase 5 Inhibitors",
-        "Phosphodiesterase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Phosphodiesterase Inhibitors",
-      "slug": "phosphodiesterase-inhibitors",
-      "file": "classes/phosphodiesterase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Phosphodiesterase 3 Inhibitors",
-        "Phosphodiesterase 5 Inhibitors",
-        "Phosphodiesterase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Photosensitizing Agents",
-      "slug": "photosensitizing-agents",
-      "file": "classes/photosensitizing-agents_subclasses.json",
-      "subclasses": [
-        "Photosensitizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Pigmenting Agents",
-      "slug": "pigmenting-agents",
-      "file": "classes/pigmenting-agents_subclasses.json",
-      "subclasses": [
-        "Pigmenting Agents"
-      ]
-    },
-    {
-      "primaryClass": "Platelet Aggregation Inhibitors",
-      "slug": "platelet-aggregation-inhibitors",
-      "file": "classes/platelet-aggregation-inhibitors_subclasses.json",
-      "subclasses": [
-        "Platelet Aggregation Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Potassium Channel Blockers",
-      "slug": "potassium-channel-blockers",
-      "file": "classes/potassium-channel-blockers_subclasses.json",
-      "subclasses": [
-        "Potassium Channel Blockers"
-      ]
-    },
-    {
-      "primaryClass": "Prodrugs",
-      "slug": "prodrugs",
-      "file": "classes/prodrugs_subclasses.json",
-      "subclasses": [
-        "Prodrugs"
-      ]
-    },
-    {
-      "primaryClass": "Progesterones",
-      "slug": "progesterones",
-      "file": "classes/progesterones_subclasses.json",
-      "subclasses": [
-        "Progesterones"
-      ]
-    },
-    {
-      "primaryClass": "Progestins",
-      "slug": "progestins",
-      "file": "classes/progestins_subclasses.json",
-      "subclasses": [
-        "Progestins"
-      ]
-    },
-    {
-      "primaryClass": "Prokinetic Agents",
-      "slug": "prokinetic-agents",
-      "file": "classes/prokinetic-agents_subclasses.json",
-      "subclasses": [
-        "Prokinetic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Propionates",
-      "slug": "propionates",
-      "file": "classes/propionates_subclasses.json",
-      "subclasses": [
-        "Propionates"
-      ]
-    },
-    {
-      "primaryClass": "Prostaglandins, Synthetic",
-      "slug": "prostaglandins-synthetic",
-      "file": "classes/prostaglandins-synthetic_subclasses.json",
-      "subclasses": [
-        "Prostaglandins",
-        "Prostaglandins, Synthetic"
-      ]
-    },
-    {
-      "primaryClass": "Prostaglandins",
-      "slug": "prostaglandins",
-      "file": "classes/prostaglandins_subclasses.json",
-      "subclasses": [
-        "Prostaglandins",
-        "Prostaglandins, Synthetic"
-      ]
-    },
-    {
-      "primaryClass": "Protease Inhibitors",
-      "slug": "protease-inhibitors",
-      "file": "classes/protease-inhibitors_subclasses.json",
-      "subclasses": [
-        "Protease Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Protein Kinase Inhibitors",
-      "slug": "protein-kinase-inhibitors",
-      "file": "classes/protein-kinase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Protein Kinase Inhibitors",
-        "Protein Synthesis Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Protein Synthesis Inhibitors",
-      "slug": "protein-synthesis-inhibitors",
-      "file": "classes/protein-synthesis-inhibitors_subclasses.json",
-      "subclasses": [
-        "Protein Kinase Inhibitors",
-        "Protein Synthesis Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Proton Pump Inhibitors",
-      "slug": "proton-pump-inhibitors",
-      "file": "classes/proton-pump-inhibitors_subclasses.json",
-      "subclasses": [
-        "Proton Pump Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Psychotropic Drugs",
-      "slug": "psychotropic-drugs",
-      "file": "classes/psychotropic-drugs_subclasses.json",
-      "subclasses": [
-        "Psychotropic Drugs"
-      ]
-    },
-    {
-      "primaryClass": "Pulmonary Surfactants",
-      "slug": "pulmonary-surfactants",
-      "file": "classes/pulmonary-surfactants_subclasses.json",
-      "subclasses": [
-        "Pulmonary Surfactants"
-      ]
-    },
-    {
-      "primaryClass": "Purine analogues",
-      "slug": "purine-analogues",
-      "file": "classes/purine-analogues_subclasses.json",
-      "subclasses": [
-        "Purine analogues"
-      ]
-    },
-    {
-      "primaryClass": "Purinergic P1 Receptor Antagonists",
-      "slug": "purinergic-p1-receptor-antagonists",
-      "file": "classes/purinergic-p1-receptor-antagonists_subclasses.json",
-      "subclasses": [
-        "Purinergic P1 Receptor Antagonists"
-      ]
-    },
-    {
-      "primaryClass": "Pyrazolones",
-      "slug": "pyrazolones",
-      "file": "classes/pyrazolones_subclasses.json",
-      "subclasses": [
-        "Pyrazolones"
-      ]
-    },
-    {
-      "primaryClass": "Quinolones",
-      "slug": "quinolones",
-      "file": "classes/quinolones_subclasses.json",
-      "subclasses": [
-        "Quinolones"
-      ]
-    },
-    {
-      "primaryClass": "Radiation-Protective Agents",
-      "slug": "radiation-protective-agents",
-      "file": "classes/radiation-protective-agents_subclasses.json",
-      "subclasses": [
-        "Radiation-Protective Agents",
-        "Radiation-Sensitizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Radiation-Sensitizing Agents",
-      "slug": "radiation-sensitizing-agents",
-      "file": "classes/radiation-sensitizing-agents_subclasses.json",
-      "subclasses": [
-        "Radiation-Protective Agents",
-        "Radiation-Sensitizing Agents"
-      ]
-    },
-    {
-      "primaryClass": "Renal Agents",
-      "slug": "renal-agents",
-      "file": "classes/renal-agents_subclasses.json",
-      "subclasses": [
-        "Renal Agents"
-      ]
-    },
-    {
-      "primaryClass": "Respiratory System Agents",
-      "slug": "respiratory-system-agents",
-      "file": "classes/respiratory-system-agents_subclasses.json",
-      "subclasses": [
-        "Respiratory System Agents"
-      ]
-    },
-    {
-      "primaryClass": "Reverse Transcriptase Inhibitors",
-      "slug": "reverse-transcriptase-inhibitors",
-      "file": "classes/reverse-transcriptase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Reverse Transcriptase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Salicylates",
-      "slug": "salicylates",
-      "file": "classes/salicylates_subclasses.json",
-      "subclasses": [
-        "Salicylates"
-      ]
-    },
-    {
-      "primaryClass": "Schistosomicides",
-      "slug": "schistosomicides",
-      "file": "classes/schistosomicides_subclasses.json",
-      "subclasses": [
-        "Schistosomicides"
-      ]
-    },
-    {
-      "primaryClass": "Sclerosing Solutions",
-      "slug": "sclerosing-solutions",
-      "file": "classes/sclerosing-solutions_subclasses.json",
-      "subclasses": [
-        "Sclerosing Solutions"
-      ]
-    },
-    {
-      "primaryClass": "Selective Estrogen Receptor Modulators",
-      "slug": "selective-estrogen-receptor-modulators",
-      "file": "classes/selective-estrogen-receptor-modulators_subclasses.json",
-      "subclasses": [
-        "Selective Estrogen Receptor Modulators"
-      ]
-    },
-    {
-      "primaryClass": "Serine Proteinase Inhibitors",
-      "slug": "serine-proteinase-inhibitors",
-      "file": "classes/serine-proteinase-inhibitors_subclasses.json",
-      "subclasses": [
-        "Serine Proteinase Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Serotonin 5-HT1 Receptor Agonists",
-      "slug": "serotonin-5-ht1-receptor-agonists",
-      "file": "classes/serotonin-5-ht1-receptor-agonists_subclasses.json",
-      "subclasses": [
-        "Serotonin 5-HT1 Receptor Agonists",
-        "Serotonin Agents",
-        "Serotonin Antagonists",
-        "Serotonin Receptor Agonists",
-        "Serotonin Uptake Inhibitors"
       ]
     },
     {
@@ -4390,441 +83,544 @@
       ]
     },
     {
-      "primaryClass": "Serotonin Antagonists",
-      "slug": "serotonin-antagonists",
-      "file": "classes/serotonin-antagonists_subclasses.json",
+      "primaryClass": "GABA and Neurotransmitter Agents",
+      "slug": "gaba-and-neurotransmitter-agents",
+      "file": "classes/gaba-and-neurotransmitter-agents_subclasses.json",
       "subclasses": [
-        "Serotonin 5-HT1 Receptor Agonists",
-        "Serotonin Agents",
-        "Serotonin Antagonists",
-        "Serotonin Receptor Agonists",
-        "Serotonin Uptake Inhibitors"
+        "GABA Agents",
+        "GABA Agonists",
+        "GABA Antagonists",
+        "GABA Modulators",
+        "GABA-A Receptor Agonists",
+        "Neurotransmitter Agents",
+        "Neurotransmitter Uptake Inhibitors"
       ]
     },
     {
-      "primaryClass": "Serotonin Receptor Agonists",
-      "slug": "serotonin-receptor-agonists",
-      "file": "classes/serotonin-receptor-agonists_subclasses.json",
+      "primaryClass": "Histamine and Allergy Agents",
+      "slug": "histamine-and-allergy-agents",
+      "file": "classes/histamine-and-allergy-agents_subclasses.json",
       "subclasses": [
-        "Serotonin 5-HT1 Receptor Agonists",
-        "Serotonin Agents",
-        "Serotonin Antagonists",
-        "Serotonin Receptor Agonists",
-        "Serotonin Uptake Inhibitors"
+        "Histamine Agents",
+        "Histamine Agonists",
+        "Histamine Antagonists",
+        "Histamine H1 Antagonists",
+        "Histamine H1 Antagonists, Non-Sedating",
+        "Histamine H2 Antagonists",
+        "Mast Cell Stabilizers"
       ]
     },
     {
-      "primaryClass": "Serotonin Uptake Inhibitors",
-      "slug": "serotonin-uptake-inhibitors",
-      "file": "classes/serotonin-uptake-inhibitors_subclasses.json",
+      "primaryClass": "Psychiatric Agents",
+      "slug": "psychiatric-agents",
+      "file": "classes/psychiatric-agents_subclasses.json",
       "subclasses": [
-        "Serotonin 5-HT1 Receptor Agonists",
-        "Serotonin Agents",
-        "Serotonin Antagonists",
-        "Serotonin Receptor Agonists",
-        "Serotonin Uptake Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Serum substitutes",
-      "slug": "serum-substitutes",
-      "file": "classes/serum-substitutes_subclasses.json",
-      "subclasses": [
-        "Serum substitutes"
-      ]
-    },
-    {
-      "primaryClass": "Siderophores",
-      "slug": "siderophores",
-      "file": "classes/siderophores_subclasses.json",
-      "subclasses": [
-        "Siderophores"
-      ]
-    },
-    {
-      "primaryClass": "Skin and Mucous Membrane Agents",
-      "slug": "skin-and-mucous-membrane-agents",
-      "file": "classes/skin-and-mucous-membrane-agents_subclasses.json",
-      "subclasses": [
-        "Skin and Mucous Membrane Agents"
-      ]
-    },
-    {
-      "primaryClass": "Sodium Channel Blockers",
-      "slug": "sodium-channel-blockers",
-      "file": "classes/sodium-channel-blockers_subclasses.json",
-      "subclasses": [
-        "Sodium Channel Blockers",
-        "Sodium Chloride Symporter Inhibitors",
-        "Sodium Potassium Chloride Symporter Inhibitors",
-        "Sodium-glucose cotransporter 2 inhibitor"
-      ]
-    },
-    {
-      "primaryClass": "Sodium Chloride Symporter Inhibitors",
-      "slug": "sodium-chloride-symporter-inhibitors",
-      "file": "classes/sodium-chloride-symporter-inhibitors_subclasses.json",
-      "subclasses": [
-        "Sodium Channel Blockers",
-        "Sodium Chloride Symporter Inhibitors",
-        "Sodium Potassium Chloride Symporter Inhibitors",
-        "Sodium-glucose cotransporter 2 inhibitor"
-      ]
-    },
-    {
-      "primaryClass": "Sodium Potassium Chloride Symporter Inhibitors",
-      "slug": "sodium-potassium-chloride-symporter-inhibitors",
-      "file": "classes/sodium-potassium-chloride-symporter-inhibitors_subclasses.json",
-      "subclasses": [
-        "Sodium Channel Blockers",
-        "Sodium Chloride Symporter Inhibitors",
-        "Sodium Potassium Chloride Symporter Inhibitors",
-        "Sodium-glucose cotransporter 2 inhibitor"
-      ]
-    },
-    {
-      "primaryClass": "Sodium-glucose cotransporter 2 inhibitor",
-      "slug": "sodium-glucose-cotransporter-2-inhibitor",
-      "file": "classes/sodium-glucose-cotransporter-2-inhibitor_subclasses.json",
-      "subclasses": [
-        "Sodium Channel Blockers",
-        "Sodium Chloride Symporter Inhibitors",
-        "Sodium Potassium Chloride Symporter Inhibitors",
-        "Sodium-glucose cotransporter 2 inhibitor"
-      ]
-    },
-    {
-      "primaryClass": "Solvents",
-      "slug": "solvents",
-      "file": "classes/solvents_subclasses.json",
-      "subclasses": [
-        "Solvents"
-      ]
-    },
-    {
-      "primaryClass": "Steroids",
-      "slug": "steroids",
-      "file": "classes/steroids_subclasses.json",
-      "subclasses": [
-        "Steroids"
-      ]
-    },
-    {
-      "primaryClass": "Stimulants, Uterine",
-      "slug": "stimulants-uterine",
-      "file": "classes/stimulants-uterine_subclasses.json",
-      "subclasses": [
+        "Alcohol Antagonists",
+        "Alcohol Deterrents",
+        "Amphetamines",
+        "Antidepressive Agents",
+        "Antidepressive Agents, Second-Generation",
+        "Antidepressive Agents, Tricyclic",
+        "Antimanic Agents",
+        "Antipsychotic Agents",
+        "Appetite Depressants",
+        "Appetite Stimulants",
+        "Butyrophenones",
+        "Central Nervous System Stimulants",
+        "Monoamine Oxidase Inhibitors",
+        "Phenothiazines",
+        "Psychotropic Drugs",
         "Stimulants",
-        "Stimulants, Uterine"
-      ]
-    },
-    {
-      "primaryClass": "Stimulants",
-      "slug": "stimulants",
-      "file": "classes/stimulants_subclasses.json",
-      "subclasses": [
-        "Stimulants",
-        "Stimulants, Uterine"
-      ]
-    },
-    {
-      "primaryClass": "Succinimides",
-      "slug": "succinimides",
-      "file": "classes/succinimides_subclasses.json",
-      "subclasses": [
-        "Succinimides"
-      ]
-    },
-    {
-      "primaryClass": "Sulfonamides",
-      "slug": "sulfonamides",
-      "file": "classes/sulfonamides_subclasses.json",
-      "subclasses": [
-        "Sulfonamides"
-      ]
-    },
-    {
-      "primaryClass": "Sunscreening Agents",
-      "slug": "sunscreening-agents",
-      "file": "classes/sunscreening-agents_subclasses.json",
-      "subclasses": [
-        "Sunscreening Agents"
-      ]
-    },
-    {
-      "primaryClass": "Supplements",
-      "slug": "supplements",
-      "file": "classes/supplements_subclasses.json",
-      "subclasses": [
-        "Supplements"
-      ]
-    },
-    {
-      "primaryClass": "Surface-Active Agents",
-      "slug": "surface-active-agents",
-      "file": "classes/surface-active-agents_subclasses.json",
-      "subclasses": [
-        "Surface-Active Agents"
-      ]
-    },
-    {
-      "primaryClass": "Sweetening Agents",
-      "slug": "sweetening-agents",
-      "file": "classes/sweetening-agents_subclasses.json",
-      "subclasses": [
-        "Sweetening Agents"
-      ]
-    },
-    {
-      "primaryClass": "Sympatholytics",
-      "slug": "sympatholytics",
-      "file": "classes/sympatholytics_subclasses.json",
-      "subclasses": [
-        "Sympatholytics"
-      ]
-    },
-    {
-      "primaryClass": "Sympathomimetics",
-      "slug": "sympathomimetics",
-      "file": "classes/sympathomimetics_subclasses.json",
-      "subclasses": [
-        "Sympathomimetics"
-      ]
-    },
-    {
-      "primaryClass": "Teratogens",
-      "slug": "teratogens",
-      "file": "classes/teratogens_subclasses.json",
-      "subclasses": [
-        "Teratogens"
-      ]
-    },
-    {
-      "primaryClass": "Tetracyclines",
-      "slug": "tetracyclines",
-      "file": "classes/tetracyclines_subclasses.json",
-      "subclasses": [
-        "Tetracyclines"
-      ]
-    },
-    {
-      "primaryClass": "Thioxanthenes",
-      "slug": "thioxanthenes",
-      "file": "classes/thioxanthenes_subclasses.json",
-      "subclasses": [
-        "Thioxanthenes"
-      ]
-    },
-    {
-      "primaryClass": "Thrombolytic Agents",
-      "slug": "thrombolytic-agents",
-      "file": "classes/thrombolytic-agents_subclasses.json",
-      "subclasses": [
-        "Thrombolytic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Thrombopoietic Agents",
-      "slug": "thrombopoietic-agents",
-      "file": "classes/thrombopoietic-agents_subclasses.json",
-      "subclasses": [
-        "Thrombopoietic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Thrombotic Agents",
-      "slug": "thrombotic-agents",
-      "file": "classes/thrombotic-agents_subclasses.json",
-      "subclasses": [
-        "Thrombotic Agents"
-      ]
-    },
-    {
-      "primaryClass": "TNF inhibitor",
-      "slug": "tnf-inhibitor",
-      "file": "classes/tnf-inhibitor_subclasses.json",
-      "subclasses": [
-        "TNF inhibitor"
-      ]
-    },
-    {
-      "primaryClass": "Tocolytic Agents",
-      "slug": "tocolytic-agents",
-      "file": "classes/tocolytic-agents_subclasses.json",
-      "subclasses": [
-        "Tocolytic Agents"
-      ]
-    },
-    {
-      "primaryClass": "Topoisomerase I Inhibitors",
-      "slug": "topoisomerase-i-inhibitors",
-      "file": "classes/topoisomerase-i-inhibitors_subclasses.json",
-      "subclasses": [
-        "Topoisomerase I Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Topoisomerase II Inhibitors",
-      "slug": "topoisomerase-ii-inhibitors",
-      "file": "classes/topoisomerase-ii-inhibitors_subclasses.json",
-      "subclasses": [
-        "Topoisomerase I Inhibitors"
-      ]
-    },
-    {
-      "primaryClass": "Trace Elements",
-      "slug": "trace-elements",
-      "file": "classes/trace-elements_subclasses.json",
-      "subclasses": [
-        "Trace Elements"
-      ]
-    },
-    {
-      "primaryClass": "Tranquilizing Agents",
-      "slug": "tranquilizing-agents",
-      "file": "classes/tranquilizing-agents_subclasses.json",
-      "subclasses": [
+        "Stimulants, Uterine",
+        "Thioxanthenes",
         "Tranquilizing Agents"
       ]
     },
     {
-      "primaryClass": "Trypanocidal Agents",
-      "slug": "trypanocidal-agents",
-      "file": "classes/trypanocidal-agents_subclasses.json",
+      "primaryClass": "Neurologic Agents",
+      "slug": "neurologic-agents",
+      "file": "classes/neurologic-agents_subclasses.json",
       "subclasses": [
-        "Trypanocidal Agents"
+        "Acid Sensing Ion Channel Blockers",
+        "Anticonvulsants",
+        "Antidyskinetics",
+        "Antidystonic Agents",
+        "Antiparkinson Agents",
+        "Cannabinoid Receptor Agonists",
+        "Central Nervous System Depressants",
+        "Epithelial Sodium Channel Blockers",
+        "Glycine Agents",
+        "Hallucinogens",
+        "Neuroprotective Agents",
+        "Nootropic Agents",
+        "Purinergic P1 Receptor Antagonists",
+        "Sodium Channel Blockers",
+        "Succinimides",
+        "Voltage-Gated Sodium Channel Blockers"
       ]
     },
     {
-      "primaryClass": "Trypsin Inhibitors",
-      "slug": "trypsin-inhibitors",
-      "file": "classes/trypsin-inhibitors_subclasses.json",
+      "primaryClass": "Analgesic and Anti-inflammatory Agents",
+      "slug": "analgesic-and-anti-inflammatory-agents",
+      "file": "classes/analgesic-and-anti-inflammatory-agents_subclasses.json",
       "subclasses": [
-        "Trypsin Inhibitors"
+        "Analgesics",
+        "Antipyretics",
+        "Cyclooxygenase 2 Inhibitors",
+        "Cyclooxygenase Inhibitors",
+        "Narcotic Antagonists",
+        "Narcotics",
+        "Pyrazolones",
+        "Salicylates"
       ]
     },
     {
-      "primaryClass": "Tubulin Modulators",
-      "slug": "tubulin-modulators",
-      "file": "classes/tubulin-modulators_subclasses.json",
+      "primaryClass": "Anesthetic and Sedative Agents",
+      "slug": "anesthetic-and-sedative-agents",
+      "file": "classes/anesthetic-and-sedative-agents_subclasses.json",
       "subclasses": [
-        "Tubulin Modulators"
+        "Anesthetics",
+        "Anesthetics, Dissociative",
+        "Anesthetics, Inhalation",
+        "Anesthetics, Intravenous",
+        "Anesthetics, Local",
+        "Barbiturates",
+        "Benzodiazepines",
+        "Hypnotics and Sedatives"
       ]
     },
     {
-      "primaryClass": "Uncoupling Agents",
-      "slug": "uncoupling-agents",
-      "file": "classes/uncoupling-agents_subclasses.json",
+      "primaryClass": "Neuromuscular and Muscle Relaxant Agents",
+      "slug": "neuromuscular-and-muscle-relaxant-agents",
+      "file": "classes/neuromuscular-and-muscle-relaxant-agents_subclasses.json",
       "subclasses": [
-        "Uncoupling Agents"
+        "Muscle Relaxants, Central",
+        "Muscle Relaxants, Genitourinary",
+        "Muscle Relaxants, Respiratory",
+        "Muscle Relaxants, Skeletal",
+        "Neuromuscular Agents",
+        "Neuromuscular Blocking Agents",
+        "Neuromuscular Depolarizing Agents",
+        "Neuromuscular Nondepolarizing Agents"
       ]
     },
     {
-      "primaryClass": "Uricosuric Agents",
-      "slug": "uricosuric-agents",
-      "file": "classes/uricosuric-agents_subclasses.json",
+      "primaryClass": "Cardiovascular Agents",
+      "slug": "cardiovascular-agents",
+      "file": "classes/cardiovascular-agents_subclasses.json",
       "subclasses": [
-        "Uricosuric Agents"
-      ]
-    },
-    {
-      "primaryClass": "Vaccines",
-      "slug": "vaccines",
-      "file": "classes/vaccines_subclasses.json",
-      "subclasses": [
-        "Vaccines"
-      ]
-    },
-    {
-      "primaryClass": "Vasoconstrictor Agents",
-      "slug": "vasoconstrictor-agents",
-      "file": "classes/vasoconstrictor-agents_subclasses.json",
-      "subclasses": [
-        "Vasoconstrictor Agents"
-      ]
-    },
-    {
-      "primaryClass": "Vasodilator Agents",
-      "slug": "vasodilator-agents",
-      "file": "classes/vasodilator-agents_subclasses.json",
-      "subclasses": [
+        "Antianginal Agents",
+        "Antihypertensive Agents",
+        "Calcium Channel Agonists",
+        "Calcium Channel Blockers",
+        "Cardiotonic Agents",
+        "Cardiovascular Agents",
+        "Dihydropyridines",
+        "Endothelium-Dependent Relaxing Factors",
+        "Natriuretic Agents",
+        "Nitric Oxide Donors",
+        "Potassium Channel Blockers",
+        "Vasoconstrictor Agents",
         "Vasodilator Agents"
       ]
     },
     {
-      "primaryClass": "Vasopressin receptor antagonists",
-      "slug": "vasopressin-receptor-antagonists",
-      "file": "classes/vasopressin-receptor-antagonists_subclasses.json",
+      "primaryClass": "Renin-Angiotensin and Diuretic Agents",
+      "slug": "renin-angiotensin-and-diuretic-agents",
+      "file": "classes/renin-angiotensin-and-diuretic-agents_subclasses.json",
       "subclasses": [
+        "Angiotensin II Type 1 Receptor Blockers",
+        "Angiotensin Receptor Antagonists",
+        "Angiotensin-Converting Enzyme Inhibitors",
+        "Antidiuretic Agents",
+        "Carbonic Anhydrase Inhibitors",
+        "Diuretics",
+        "Diuretics, Mercurial",
+        "Diuretics, Osmotic",
+        "Mineralocorticoid Receptor Antagonists",
+        "Sodium Chloride Symporter Inhibitors",
+        "Sodium Potassium Chloride Symporter Inhibitors",
         "Vasopressin receptor antagonists"
       ]
     },
     {
-      "primaryClass": "Viscosupplements",
-      "slug": "viscosupplements",
-      "file": "classes/viscosupplements_subclasses.json",
+      "primaryClass": "Anticoagulant and Hematologic Agents",
+      "slug": "anticoagulant-and-hematologic-agents",
+      "file": "classes/anticoagulant-and-hematologic-agents_subclasses.json",
       "subclasses": [
-        "Viscosupplements"
+        "Anticoagulants",
+        "Antifibrinolytic Agents",
+        "Antineutropenic Agents",
+        "Antisickling Agents",
+        "Antithrombins",
+        "Chelating Agents",
+        "Coagulants",
+        "Fibrinolytic Agents",
+        "Hematinics",
+        "Hematologic Agents",
+        "Hematopoietic Agents",
+        "Hemostatics",
+        "Heparins",
+        "Iron Chelating Agents",
+        "Iron Preparations",
+        "Platelet Aggregation Inhibitors",
+        "Thrombolytic Agents",
+        "Thrombopoietic Agents",
+        "Thrombotic Agents"
       ]
     },
     {
-      "primaryClass": "Vitamin A",
-      "slug": "vitamin-a",
-      "file": "classes/vitamin-a_subclasses.json",
+      "primaryClass": "Lipid-Lowering Agents",
+      "slug": "lipid-lowering-agents",
+      "file": "classes/lipid-lowering-agents_subclasses.json",
       "subclasses": [
+        "Anticholesteremic Agents",
+        "Bile acid sequestrants",
+        "Cholesterol Absorption Inhibitors",
+        "Hypolipidemic Agents",
+        "Lipotropic Agents"
+      ]
+    },
+    {
+      "primaryClass": "Diabetes Agents",
+      "slug": "diabetes-agents",
+      "file": "classes/diabetes-agents_subclasses.json",
+      "subclasses": [
+        "Antidiabetic Agents",
+        "Dipeptidyl-Peptidase IV Inhibitors",
+        "Hypoglycemic Agents",
+        "Meglitinides",
+        "Sodium-glucose cotransporter 2 inhibitor"
+      ]
+    },
+    {
+      "primaryClass": "Endocrine and Hormonal Agents",
+      "slug": "endocrine-and-hormonal-agents",
+      "file": "classes/endocrine-and-hormonal-agents_subclasses.json",
+      "subclasses": [
+        "5-alpha Reductase Inhibitors",
+        "Anabolic Agents",
+        "Androgen Antagonists",
+        "Androgens",
+        "Anticorticosteroid",
+        "Antihypercalcemic Agents",
+        "Antihypermagnesemic Agents",
+        "Antihyperphosphatemic Agents",
+        "Antihypocalcemic Agents",
+        "Antithyroid Agents",
+        "Aromatase Inhibitors",
+        "Calcimimetics",
+        "Corticosteroids",
+        "Estrogen Antagonists",
+        "Estrogens",
+        "Estrogens, Non-Steroidal",
+        "Glucocorticoids",
+        "Gonadotropin-releasing hormone agonist",
+        "Gonadotropin-releasing hormone antagonist",
+        "Hormone Antagonists",
+        "Hormone Replacement Agents",
+        "Hormones",
+        "Progesterones",
+        "Progestins",
+        "Selective Estrogen Receptor Modulators",
+        "Steroids"
+      ]
+    },
+    {
+      "primaryClass": "Reproductive and Contraceptive Agents",
+      "slug": "reproductive-and-contraceptive-agents",
+      "file": "classes/reproductive-and-contraceptive-agents_subclasses.json",
+      "subclasses": [
+        "Abortifacient Agents",
+        "Abortifacient Agents, Nonsteroidal",
+        "Abortifacient Agents, Steroidal",
+        "Antiendometriotic agent",
+        "Contraceptive Agents",
+        "Contraceptive Agents, Female",
+        "Contraceptive Agents, Male",
+        "Contraceptives, Oral, Combined",
+        "Contraceptives, Oral, Synthetic",
+        "Contraceptives, Postcoital, Synthetic",
+        "Fertility Agents",
+        "Fertility Agents, Female",
+        "Gonadotropins",
+        "Labor Induction Agents",
+        "Luteolytic Agents",
+        "Menstruation-Inducing Agents",
+        "Oxytocics",
+        "Prostaglandins",
+        "Prostaglandins, Synthetic",
+        "Tocolytic Agents"
+      ]
+    },
+    {
+      "primaryClass": "Anti-infective Agents",
+      "slug": "anti-infective-agents",
+      "file": "classes/anti-infective-agents_subclasses.json",
+      "subclasses": [
+        "Aminoglycosides",
+        "Antibiotics",
+        "Antibiotics, Antineoplastic",
+        "Antibiotics, Antitubercular",
+        "Antibiotics, Topical",
+        "Anticestodal Agents",
+        "Antiscabies Agents",
+        "Antisepsis",
+        "Cephalosporins",
+        "Fatty Acid Synthesis Inhibitors",
+        "Fluoroquinolones",
+        "Ketolides",
+        "Macrolides",
+        "Nucleic Acid Synthesis Inhibitors",
+        "Penicillins",
+        "Permeabilizing Agents",
+        "Protein Synthesis Inhibitors",
+        "Quinolones",
+        "Serine Proteinase Inhibitors",
+        "Siderophores",
+        "Sulfonamides",
+        "Tetracyclines",
+        "Trypsin Inhibitors"
+      ]
+    },
+    {
+      "primaryClass": "Molecular Target and Enzyme Agents",
+      "slug": "molecular-target-and-enzyme-agents",
+      "file": "classes/molecular-target-and-enzyme-agents_subclasses.json",
+      "subclasses": [
+        "Adenosine A2 Receptor Antagonists",
+        "Adenosine Deaminase Inhibitors",
+        "Enzyme Inhibitors",
+        "Enzyme Replacement Agents",
+        "Enzymes",
+        "Lipoxygenase Inhibitors",
+        "Phosphodiesterase 3 Inhibitors",
+        "Phosphodiesterase 5 Inhibitors",
+        "Phosphodiesterase Inhibitors",
+        "Prodrugs",
+        "Protein Kinase Inhibitors",
+        "Uncoupling Agents"
+      ]
+    },
+    {
+      "primaryClass": "Antiviral and HIV Agents",
+      "slug": "antiviral-and-hiv-agents",
+      "file": "classes/antiviral-and-hiv-agents_subclasses.json",
+      "subclasses": [
+        "Antiviral Agents",
+        "HIV Fusion Inhibitors",
+        "HIV Protease Inhibitors",
+        "Protease Inhibitors",
+        "Reverse Transcriptase Inhibitors"
+      ]
+    },
+    {
+      "primaryClass": "Antifungal and Antimycobacterial Agents",
+      "slug": "antifungal-and-antimycobacterial-agents",
+      "file": "classes/antifungal-and-antimycobacterial-agents_subclasses.json",
+      "subclasses": [
+        "14-alpha Demethylase Inhibitors",
+        "Antifungal Agents",
+        "Antimycobacterials",
+        "Antimycotic Agents",
+        "Antitubercular Agents"
+      ]
+    },
+    {
+      "primaryClass": "Antiparasitic Agents",
+      "slug": "antiparasitic-agents",
+      "file": "classes/antiparasitic-agents_subclasses.json",
+      "subclasses": [
+        "Acaricides",
+        "Amebicides",
+        "Anthelmintics",
+        "Antimalarials",
+        "Antinematodal Agents",
+        "Antiparasitic Agents",
+        "Antiprotozoal Agents",
+        "Antitrichomonal Agents",
+        "Coccidiostats",
+        "Filaricides",
+        "Leprostatic Agents",
+        "Pediculicides",
+        "Schistosomicides",
+        "Trypanocidal Agents"
+      ]
+    },
+    {
+      "primaryClass": "Oncology Agents",
+      "slug": "oncology-agents",
+      "file": "classes/oncology-agents_subclasses.json",
+      "subclasses": [
+        "Alkylating Agents",
+        "Angiogenesis Inducing Agents",
+        "Angiogenesis Inhibitors",
+        "Antimetabolites",
+        "Antimetabolites, Antineoplastic",
+        "Antimitotic Agents",
+        "Antineoplastic Agents",
+        "Antineoplastic Agents, Alkylating",
+        "Antineoplastic Agents, Hormonal",
+        "Antineoplastic Agents, Phytogenic",
+        "Antineoplastics, Adjuncts",
+        "Antineovascularisation Agents",
+        "Folic Acid Antagonists",
+        "Histone Deacetylase Inhibitors",
+        "Intercalating Agents",
+        "Microtubule Inhibitors",
+        "Myeloablative Agonists",
+        "Nucleic Acids, Nucleotides, and Nucleosides",
+        "Purine analogues",
+        "Radiation-Sensitizing Agents",
+        "Topoisomerase I Inhibitors",
+        "Tubulin Modulators"
+      ]
+    },
+    {
+      "primaryClass": "Immunology and Biologic Agents",
+      "slug": "immunology-and-biologic-agents",
+      "file": "classes/immunology-and-biologic-agents_subclasses.json",
+      "subclasses": [
+        "Adjuvants",
+        "Adjuvants, Anesthesia",
+        "Adjuvants, Immunologic",
+        "Adjuvants, Pharmaceutic",
+        "Colony-Stimulating Factors",
+        "Immunologic Factors",
+        "Immunosuppressive Agents",
+        "Immunotoxins",
+        "Interferon Inducers",
+        "Monoclonal antibodies",
+        "TNF inhibitor",
+        "Vaccines"
+      ]
+    },
+    {
+      "primaryClass": "Gastrointestinal Agents",
+      "slug": "gastrointestinal-agents",
+      "file": "classes/gastrointestinal-agents_subclasses.json",
+      "subclasses": [
+        "Antacids",
+        "Antidiarrheals",
+        "Antiemetics",
+        "Antiperistaltic Agents",
+        "Antispasmodic Agents",
+        "Antispasmodics",
+        "Cathartics",
+        "Cholagogues and Choleretics",
+        "Gastrointestinal Agents",
+        "Laxatives",
+        "Prokinetic Agents",
+        "Proton Pump Inhibitors"
+      ]
+    },
+    {
+      "primaryClass": "Respiratory Agents",
+      "slug": "respiratory-agents",
+      "file": "classes/respiratory-agents_subclasses.json",
+      "subclasses": [
+        "Antitussive Agents",
+        "Bronchodilator Agents",
+        "Expectorants",
+        "Leukotriene Antagonists",
+        "Nasal Decongestants",
+        "Pulmonary Surfactants",
+        "Respiratory System Agents"
+      ]
+    },
+    {
+      "primaryClass": "Dermatologic Agents",
+      "slug": "dermatologic-agents",
+      "file": "classes/dermatologic-agents_subclasses.json",
+      "subclasses": [
+        "Antipruritics",
+        "Antipsoriatic Agents",
+        "Keratolytic Agents",
+        "Skin and Mucous Membrane Agents",
+        "Sunscreening Agents"
+      ]
+    },
+    {
+      "primaryClass": "Ophthalmic and ENT Agents",
+      "slug": "ophthalmic-and-ent-agents",
+      "file": "classes/ophthalmic-and-ent-agents_subclasses.json",
+      "subclasses": [
+        "Antimydriatic Agents",
+        "Artificial Tears",
+        "EENT Preparations",
+        "Miotics",
+        "Mydriatics",
+        "Ophthalmics"
+      ]
+    },
+    {
+      "primaryClass": "Renal and Urologic Agents",
+      "slug": "renal-and-urologic-agents",
+      "file": "classes/renal-and-urologic-agents_subclasses.json",
+      "subclasses": [
+        "Antihyperuricemic Agents",
+        "Electrolyte replenisher",
+        "Gout Suppressants",
+        "Renal Agents",
+        "Uricosuric Agents"
+      ]
+    },
+    {
+      "primaryClass": "Rheumatology and Bone Agents",
+      "slug": "rheumatology-and-bone-agents",
+      "file": "classes/rheumatology-and-bone-agents_subclasses.json",
+      "subclasses": [
+        "Antiresorptives",
+        "Antirheumatic Agents",
+        "Bisphosphonates",
+        "Bone Density Conservation Agents"
+      ]
+    },
+    {
+      "primaryClass": "Vitamins and Nutritional Agents",
+      "slug": "vitamins-and-nutritional-agents",
+      "file": "classes/vitamins-and-nutritional-agents_subclasses.json",
+      "subclasses": [
+        "Amino Acids, Essential",
+        "Antioxidants",
+        "Ascorbic Acid",
+        "Conditionally Essential Amino Acids",
+        "Dietary Supplements",
+        "Excitatory Amino Acid Antagonists",
+        "Free Radical Scavengers",
+        "Micronutrients",
+        "Non-Essential Amino Acids",
+        "Nutritional Support",
+        "Supplements",
+        "Trace Elements",
+        "Viscosupplements",
         "Vitamin A",
         "Vitamin B Complex",
         "Vitamin D",
-        "Vitamin K"
-      ]
-    },
-    {
-      "primaryClass": "Vitamin B Complex",
-      "slug": "vitamin-b-complex",
-      "file": "classes/vitamin-b-complex_subclasses.json",
-      "subclasses": [
-        "Vitamin A",
-        "Vitamin B Complex",
-        "Vitamin D",
-        "Vitamin K"
-      ]
-    },
-    {
-      "primaryClass": "Vitamin D",
-      "slug": "vitamin-d",
-      "file": "classes/vitamin-d_subclasses.json",
-      "subclasses": [
-        "Vitamin A",
-        "Vitamin B Complex",
-        "Vitamin D",
-        "Vitamin K"
-      ]
-    },
-    {
-      "primaryClass": "Vitamin K",
-      "slug": "vitamin-k",
-      "file": "classes/vitamin-k_subclasses.json",
-      "subclasses": [
-        "Vitamin A",
-        "Vitamin B Complex",
-        "Vitamin D",
-        "Vitamin K"
-      ]
-    },
-    {
-      "primaryClass": "Vitamins",
-      "slug": "vitamins",
-      "file": "classes/vitamins_subclasses.json",
-      "subclasses": [
+        "Vitamin K",
         "Vitamins"
       ]
     },
     {
-      "primaryClass": "Voltage-Gated Sodium Channel Blockers",
-      "slug": "voltage-gated-sodium-channel-blockers",
-      "file": "classes/voltage-gated-sodium-channel-blockers_subclasses.json",
+      "primaryClass": "Diagnostic and Miscellaneous Agents",
+      "slug": "diagnostic-and-miscellaneous-agents",
+      "file": "classes/diagnostic-and-miscellaneous-agents_subclasses.json",
       "subclasses": [
-        "Voltage-Gated Sodium Channel Blockers"
+        "Angiography",
+        "Anion Exchange Resins",
+        "Antidotes",
+        "Contrast Media",
+        "Diagnostic Agents",
+        "Disinfectants",
+        "Fluorescent Dyes",
+        "Homeopathic Agents",
+        "Photosensitizing Agents",
+        "Radiation-Protective Agents",
+        "Sclerosing Solutions",
+        "Serum substitutes",
+        "Solvents",
+        "Surface-Active Agents",
+        "Sweetening Agents"
       ]
     }
   ]

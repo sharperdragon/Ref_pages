@@ -1,8 +1,20 @@
 {
   "primaryClass": "Antiparasitic Agents",
   "slug": "antiparasitic-agents",
-  "stem": "antiparasitic",
   "subclasses": [
-    "Antiparasitic Agents"
+    "Acaricides",
+    "Amebicides",
+    "Anthelmintics",
+    "Antimalarials",
+    "Antinematodal Agents",
+    "Antiparasitic Agents",
+    "Antiprotozoal Agents",
+    "Antitrichomonal Agents",
+    "Coccidiostats",
+    "Filaricides",
+    "Leprostatic Agents",
+    "Pediculicides",
+    "Schistosomicides",
+    "Trypanocidal Agents"
   ]
 }

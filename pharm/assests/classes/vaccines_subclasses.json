@@ -1,8 +1,0 @@
-{
-  "primaryClass": "Vaccines",
-  "slug": "vaccines",
-  "stem": "vaccines",
-  "subclasses": [
-    "Vaccines"
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "primaryClass": "Hormone Replacement Agents",
-  "slug": "hormone-replacement-agents",
-  "stem": "hormone",
-  "subclasses": [
-    "Hormone Antagonists",
-    "Hormone Replacement Agents"
-  ]
-}

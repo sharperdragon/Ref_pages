@@ -1,8 +1,0 @@
-{
-  "primaryClass": "Electrolyte replenisher",
-  "slug": "electrolyte-replenisher",
-  "stem": "electrolyte",
-  "subclasses": [
-    "Electrolyte replenisher"
-  ]
-}

@@ -1,0 +1,72 @@
+{
+  "antimicrobials": {
+    "antivirals": {
+      "herpesvirus_agents": {
+        "nucleoside_polymerase_inhibitors": [
+          "acyclovir",
+          "famciclovir",
+          "ganciclovir",
+          "penciclovir",
+          "valacyclovir",
+          "valganciclovir"
+        ],
+        "pyrophosphate_analogs": ["foscarnet"],
+        "cmv_terminase_inhibitors": ["letermovir"]
+      },
+
+      "hiv_agents": {
+        "nrtis": [
+          "abacavir",
+          "didanosine",
+          "emtricitabine",
+          "lamivudine",
+          "stavudine",
+          "tenofovir alafenamide",
+          "tenofovir disoproxil fumarate",
+          "zidovudine"
+        ],
+        "nnrtis": ["delavirdine", "doravirine", "efavirenz", "etravirine", "nevirapine", "rilpivirine"],
+        "protease_inhibitors": [
+          "atazanavir",
+          "darunavir",
+          "fosamprenavir",
+          "indinavir",
+          "lopinavir",
+          "nelfinavir",
+          "ritonavir",
+          "saquinavir",
+          "tipranavir"
+        ],
+        "integrase_inhibitors": ["bictegravir", "cabotegravir", "dolutegravir", "elvitegravir", "raltegravir"],
+        "entry_inhibitors": ["enfuvirtide", "fostemsavir", "ibalizumab", "maraviroc"]
+      },
+
+      "hepatitis_agents": {
+        "hepatitis_b_agents": [
+          "adefovir",
+          "entecavir",
+          "lamivudine",
+          "telbivudine",
+          "tenofovir alafenamide",
+          "tenofovir disoproxil fumarate"
+        ],
+        "direct_acting_antivirals": {
+          "ns3_protease_inhibitors": ["glecaprevir", "grazoprevir", "paritaprevir", "simeprevir", "voxilaprevir"],
+          "ns5a_inhibitors": ["daclatasvir", "elbasvir", "ledipasvir", "ombitasvir", "pibrentasvir", "velpatasvir"],
+          "ns5b_polymerase_inhibitors": ["dasabuvir", "sofosbuvir"]
+        }
+      },
+
+      "influenza_agents": {
+        "neuraminidase_inhibitors": ["oseltamivir", "peramivir", "zanamivir"],
+        "endonuclease_inhibitors": ["baloxavir marboxil"],
+        "m2_inhibitors": ["amantadine", "rimantadine"]
+      },
+
+      "other_antivirals": {
+        "covid19_agents": ["nirmatrelvir-ritonavir", "remdesivir", "molnupiravir"],
+        "rsv_agents": ["ribavirin", "palivizumab", "nirsevimab"]
+      }
+    }
+  }
+}

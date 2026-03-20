@@ -1,0 +1,153 @@
+{
+  "endocrine": {
+    "antidiabetic_agents": {
+      "insulins": {
+        "rapid_acting": [
+          "insulin aspart",
+          "insulin glulisine",
+          "insulin lispro"
+        ],
+        "short_acting": [
+          "regular insulin"
+        ],
+        "intermediate_acting": [
+          "insulin nph"
+        ],
+        "long_acting": [
+          "insulin detemir",
+          "insulin glargine"
+        ],
+        "ultra_long_acting": [
+          "insulin degludec"
+        ]
+      },
+      "non_insulin_agents": {
+        "biguanides": [
+          "metformin"
+        ],
+        "sulfonylureas": [
+          "glimepiride",
+          "glipizide",
+          "glyburide"
+        ],
+        "meglitinides": [
+          "nateglinide",
+          "repaglinide"
+        ],
+        "thiazolidinediones": [
+          "pioglitazone",
+          "rosiglitazone"
+        ],
+        "dpp4_inhibitors": [
+          "alogliptin",
+          "linagliptin",
+          "saxagliptin",
+          "sitagliptin"
+        ],
+        "glp1_receptor_agonists": [
+          "albiglutide",
+          "dulaglutide",
+          "exenatide",
+          "liraglutide",
+          "semaglutide"
+        ],
+        "sglt2_inhibitors": [
+          "canagliflozin",
+          "dapagliflozin",
+          "empagliflozin",
+          "ertugliflozin"
+        ],
+        "alpha_glucosidase_inhibitors": [
+          "acarbose",
+          "miglitol"
+        ],
+        "amylin_analogs": [
+          "pramlintide"
+        ]
+      }
+    },
+
+    "thyroid_agents": {
+      "thyroid_hormones": [
+        "levothyroxine",
+        "liothyronine",
+        "liotrix",
+        "thyroid desiccated"
+      ],
+      "antithyroid_agents": {
+        "thionamides": [
+          "methimazole",
+          "propylthiouracil"
+        ],
+        "iodine_agents": [
+          "potassium iodide",
+          "lugols iodine"
+        ],
+        "radioactive_iodine": [
+          "iodine-131"
+        ]
+      }
+    },
+
+    "sex_hormones_and_modulators": {
+      "estrogens": [
+        "estradiol",
+        "estriol",
+        "estrone",
+        "ethinyl estradiol"
+      ],
+      "progestins": [
+        "levonorgestrel",
+        "medroxyprogesterone",
+        "norethindrone"
+      ],
+      "androgens": [
+        "testosterone",
+        "methyltestosterone"
+      ],
+      "serms": [
+        "clomiphene",
+        "raloxifene",
+        "tamoxifen"
+      ],
+      "aromatase_inhibitors": [
+        "anastrozole",
+        "exemestane",
+        "letrozole"
+      ],
+      "antiandrogens": [
+        "bicalutamide",
+        "flutamide",
+        "nilutamide"
+      ],
+      "gnrh_agents": {
+        "gnrh_agonists": [
+          "goserelin",
+          "leuprolide",
+          "nafarelin"
+        ],
+        "gnrh_antagonists": [
+          "degarelix",
+          "elagolix"
+        ]
+      }
+    },
+
+    "corticosteroids": {
+      "glucocorticoids": [
+        "beclomethasone",
+        "betamethasone",
+        "budesonide",
+        "dexamethasone",
+        "hydrocortisone",
+        "methylprednisolone",
+        "prednisone",
+        "prednisolone",
+        "triamcinolone"
+      ],
+      "mineralocorticoids": [
+        "fludrocortisone"
+      ]
+    }
+  }
+}

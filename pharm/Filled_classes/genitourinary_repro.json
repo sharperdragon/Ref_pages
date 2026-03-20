@@ -1,0 +1,127 @@
+{
+  "genitourinary_and_reproductive": {
+    "benign_prostatic_hyperplasia_agents": {
+      "alpha1_blockers": [
+        "alfuzosin",
+        "doxazosin",
+        "prazosin",
+        "silodosin",
+        "tamsulosin",
+        "terazosin"
+      ],
+      "5_alpha_reductase_inhibitors": [
+        "dutasteride",
+        "finasteride"
+      ],
+      "combination_products": [
+        "dutasteride-tamsulosin"
+      ]
+    },
+
+    "overactive_bladder_agents": {
+      "antimuscarinics": [
+        "darifenacin",
+        "fesoterodine",
+        "oxybutynin",
+        "solifenacin",
+        "tolterodine",
+        "trospium"
+      ],
+      "beta3_agonists": [
+        "mirabegron",
+        "vibegron"
+      ]
+    },
+
+    "erectile_dysfunction_agents": {
+      "pde5_inhibitors": [
+        "avanafil",
+        "sildenafil",
+        "tadalafil",
+        "vardenafil"
+      ],
+      "prostaglandin_analogs": [
+        "alprostadil"
+      ]
+    },
+
+    "contraceptives": {
+      "combined_hormonal_contraceptives": [
+        "ethinyl estradiol-norethindrone",
+        "ethinyl estradiol-levonorgestrel",
+        "ethinyl estradiol-desogestrel",
+        "ethinyl estradiol-drospirenone",
+        "ethinyl estradiol-norelgestromin",
+        "ethinyl estradiol-etonogestrel"
+      ],
+      "progestin_only_contraceptives": [
+        "drospirenone",
+        "etonogestrel",
+        "levonorgestrel",
+        "medroxyprogesterone",
+        "norethindrone"
+      ],
+      "emergency_contraceptives": [
+        "levonorgestrel",
+        "ulipristal"
+      ]
+    },
+
+    "uterotonics_and_tocolytics": {
+      "oxytocics": [
+        "oxytocin"
+      ],
+      "prostaglandins": [
+        "carboprost",
+        "dinoprostone",
+        "misoprostol"
+      ],
+      "beta2_agonists": [
+        "terbutaline"
+      ],
+      "calcium_channel_blockers": [
+        "nifedipine"
+      ],
+      "other_tocolytics": [
+        "indomethacin",
+        "magnesium sulfate"
+      ]
+    },
+
+    "male_reproductive_agents": {
+      "testosterone_replacement": [
+        "testosterone"
+      ],
+      "fertility_agents": [
+        "clomiphene",
+        "hcg",
+        "menotropins"
+      ]
+    },
+
+    "female_reproductive_agents": {
+      "ovulation_induction_agents": [
+        "clomiphene",
+        "letrozole"
+      ],
+      "gonadotropins": [
+        "follitropin alfa",
+        "follitropin beta",
+        "menotropins",
+        "urofollitropin"
+      ],
+      "progesterone_support_agents": [
+        "progesterone"
+      ]
+    },
+
+    "urologic_miscellaneous": {
+      "urinary_analgesics": [
+        "phenazopyridine"
+      ],
+      "cystinuria_agents": [
+        "tiopronin"
+      ]
+    }
+  }
+}

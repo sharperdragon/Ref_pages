@@ -1,9 +1,0 @@
-{
-  "primaryClass": "Radiation-Sensitizing Agents",
-  "slug": "radiation-sensitizing-agents",
-  "stem": "radiation",
-  "subclasses": [
-    "Radiation-Protective Agents",
-    "Radiation-Sensitizing Agents"
-  ]
-}

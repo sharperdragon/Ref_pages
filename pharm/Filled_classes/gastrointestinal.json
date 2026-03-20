@@ -1,0 +1,155 @@
+{
+  "gastrointestinal": {
+    "acid_related_disorders": {
+      "proton_pump_inhibitors": [
+        "dexlansoprazole",
+        "esomeprazole",
+        "lansoprazole",
+        "omeprazole",
+        "pantoprazole",
+        "rabeprazole"
+      ],
+      "h2_receptor_antagonists": [
+        "cimetidine",
+        "famotidine",
+        "nizatidine",
+        "ranitidine"
+      ],
+      "antacids": [
+        "aluminum hydroxide",
+        "calcium carbonate",
+        "magnesium carbonate",
+        "magnesium hydroxide",
+        "magnesium trisilicate",
+        "sodium bicarbonate"
+      ],
+      "mucosal_protective_agents": [
+        "sucralfate",
+        "bismuth subsalicylate"
+      ],
+      "prostaglandin_analogs": [
+        "misoprostol"
+      ]
+    },
+
+    "antiemetics": {
+      "5ht3_antagonists": [
+        "alosetron",
+        "dolasetron",
+        "granisetron",
+        "ondansetron",
+        "palonosetron"
+      ],
+      "dopamine_antagonists": [
+        "droperidol",
+        "metoclopramide",
+        "prochlorperazine",
+        "promethazine"
+      ],
+      "nk1_antagonists": [
+        "aprepitant",
+        "fosaprepitant",
+        "netupitant",
+        "rolapitant"
+      ],
+      "antihistamines": [
+        "dimenhydrinate",
+        "diphenhydramine",
+        "meclizine"
+      ],
+      "anticholinergics": [
+        "scopolamine"
+      ],
+      "cannabinoids": [
+        "dronabinol",
+        "nabilone"
+      ]
+    },
+
+    "laxatives": {
+      "bulk_forming": [
+        "methylcellulose",
+        "polycarbophil",
+        "psyllium"
+      ],
+      "osmotic": [
+        "glycerin",
+        "lactulose",
+        "magnesium citrate",
+        "magnesium hydroxide",
+        "polyethylene glycol",
+        "sorbitol"
+      ],
+      "stimulant": [
+        "bisacodyl",
+        "senna",
+        "castor oil"
+      ],
+      "stool_softeners": [
+        "docusate"
+      ],
+      "secretagogues": [
+        "linaclotide",
+        "lubiprostone",
+        "plecanatide"
+      ],
+      "peripherally_acting_mu_opioid_antagonists": [
+        "alvimopan",
+        "methylnaltrexone",
+        "naloxegol",
+        "naldemedine"
+      ]
+    },
+
+    "antidiarrheals": {
+      "peripheral_opioid_agonists": [
+        "diphenoxylate",
+        "loperamide"
+      ],
+      "bismuth_agents": [
+        "bismuth subsalicylate"
+      ],
+      "somatostatin_analogs": [
+        "octreotide"
+      ]
+    },
+
+    "inflammatory_bowel_disease_agents": {
+      "5_aminosalicylates": [
+        "balsalazide",
+        "mesalamine",
+        "olsalazine",
+        "sulfasalazine"
+      ],
+      "corticosteroids": [
+        "budesonide",
+        "hydrocortisone",
+        "prednisone"
+      ],
+      "immunomodulators": [
+        "azathioprine",
+        "mercaptopurine",
+        "methotrexate"
+      ],
+      "biologics": {
+        "anti_tnf_agents": [
+          "adalimumab",
+          "certolizumab",
+          "golimumab",
+          "infliximab"
+        ],
+        "anti_integrin_agents": [
+          "natalizumab",
+          "vedolizumab"
+        ],
+        "anti_il12_il23_agents": [
+          "ustekinumab"
+        ]
+      },
+      "jak_inhibitors": [
+        "tofacitinib",
+        "upadacitinib"
+      ]
+    }
+  }
+}

@@ -45,7 +45,30 @@
 
     <section class="controls controls--secondary" aria-label="Medication filters">
       <div id="classTreeControl" class="control control--class-tree">
-        <span class="control__label">Drug Class</span>
+        <span id="classTreeControlLabel" class="control__label">Drug Class</span>
+        <div id="classTypeControl" class="class-type-toggle" role="radiogroup" aria-label="Class filter type">
+          <button
+            type="button"
+            class="class-type-btn is-active"
+            data-class-filter-type="drug-class"
+            aria-pressed="true"
+          >
+            Drug Class
+          </button>
+          <button
+            type="button"
+            class="class-type-btn"
+            data-class-filter-type="use-category"
+            aria-pressed="false"
+          >
+            Use Category
+          </button>
+        </div>
+        <label class="visually-hidden" for="classTypeSelect">Class filter type</label>
+        <select id="classTypeSelect" class="select class-type-select" aria-label="Class filter type">
+          <option value="drug-class">Drug Class</option>
+          <option value="use-category">Use Category</option>
+        </select>
         <button
           id="classTreeTrigger"
           class="class-tree-trigger"
@@ -54,7 +77,7 @@
           aria-expanded="false"
           aria-controls="classTreeMenu"
         >
-          <span id="classTreeTriggerText">All classes</span>
+          <span id="classTreeTriggerText" class="class-tree-trigger__text">All classes</span>
           <span class="class-tree-trigger__caret" aria-hidden="true">▸</span>
         </button>
         <div id="classTreeMenu" class="class-tree-menu" hidden>
@@ -74,13 +97,11 @@
         <div class="view-mode-toggle" role="radiogroup" aria-label="Medication grouping view mode">
           <button type="button" class="view-mode-btn" data-view-mode="compact" aria-pressed="true">Compact</button>
           <button type="button" class="view-mode-btn" data-view-mode="structured" aria-pressed="false">Structured</button>
-          <button type="button" class="view-mode-btn" data-view-mode="tree" aria-pressed="false">Tree</button>
         </div>
         <label class="visually-hidden" for="viewModeSelect">Medication grouping view mode</label>
         <select id="viewModeSelect" class="select view-mode-select" aria-label="Medication grouping view mode">
           <option value="compact">Compact</option>
           <option value="structured">Structured</option>
-          <option value="tree">Tree</option>
         </select>
       </div>
 

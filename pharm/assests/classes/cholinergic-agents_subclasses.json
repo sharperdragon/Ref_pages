@@ -1,10 +1,18 @@
 {
   "primaryClass": "Cholinergic Agents",
   "slug": "cholinergic-agents",
-  "stem": "cholinergic",
   "subclasses": [
+    "Antimyasthenic Agents",
     "Cholinergic Agents",
     "Cholinergic Agonists",
-    "Cholinergic Antagonists"
+    "Cholinergic Antagonists",
+    "Cholinesterase Inhibitors",
+    "Cholinesterase Reactivators",
+    "Ganglionic Blockers",
+    "Ganglionic Stimulants",
+    "Muscarinic Agonists",
+    "Muscarinic Antagonists",
+    "Nicotinic Agonists",
+    "Nicotinic Antagonists"
   ]
 }

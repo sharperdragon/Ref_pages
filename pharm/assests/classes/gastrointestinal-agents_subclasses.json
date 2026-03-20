@@ -1,8 +1,18 @@
 {
   "primaryClass": "Gastrointestinal Agents",
   "slug": "gastrointestinal-agents",
-  "stem": "gastrointestinal",
   "subclasses": [
-    "Gastrointestinal Agents"
+    "Antacids",
+    "Antidiarrheals",
+    "Antiemetics",
+    "Antiperistaltic Agents",
+    "Antispasmodic Agents",
+    "Antispasmodics",
+    "Cathartics",
+    "Cholagogues and Choleretics",
+    "Gastrointestinal Agents",
+    "Laxatives",
+    "Prokinetic Agents",
+    "Proton Pump Inhibitors"
   ]
 }

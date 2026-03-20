@@ -1533,6 +1533,9 @@ async function renderCompleteNote(){
   if (!box) return;
   const modes = Object.keys(MODE_FILES || {});
   const parts = [];
+  state.globals ??= {};
+  // Reset per-render guard before we potentially prepend subjective header items.
+  state.globals._emittedSubjHeaderOnce = false;
   // Prepend headerItems from subjective:General (Visit Note, Chief Complaint) above subjective heading
   try {
     const subjTpl = await loadTemplatesForMode("subjective");
@@ -1552,7 +1555,7 @@ async function renderCompleteNote(){
       });
       if (headerLines.length) {
         parts.push(headerLines.join("\n"));
-        parts.push("<br>"); // explicit line break before subjective heading
+        parts.push(""); // plain-text blank line before subjective heading
         // Global guard so we don't re-emit during per-section build
         state.globals._emittedSubjHeaderOnce = true;
       }
@@ -1660,9 +1663,25 @@ function _completeTextToHTML(txt){
     const sec = t.match(/^([A-Za-z ]{2,30}):$/);
     if (sec) {
       const label = sec[1];
-      const isH1 = (label === 'subjective' || label === 'Objective');
-      if (label === 'subjective' || label === 'Objective' || label === 'Physical Exam' || label === 'MSE' || label === 'HPI' || label === 'PE' || label === 'ROS') {
-        const shown = (label === 'PE') ? 'Physical Exam' : label;
+      const normLabel = label.toLowerCase();
+      const isKnownHeader =
+        normLabel === "subjective" ||
+        normLabel === "objective" ||
+        normLabel === "physical exam" ||
+        normLabel === "mse" ||
+        normLabel === "hpi" ||
+        normLabel === "pe" ||
+        normLabel === "ros";
+      const isH1 = normLabel === "subjective" || normLabel === "objective";
+      if (isKnownHeader) {
+        const shown =
+          normLabel === "pe" ? "Physical Exam" :
+          normLabel === "subjective" ? "Subjective" :
+          normLabel === "objective" ? "Objective" :
+          normLabel === "physical exam" ? "Physical Exam" :
+          normLabel === "mse" ? "MSE" :
+          normLabel === "hpi" ? "HPI" :
+          "ROS";
         const cls = isH1 ? 'section-head head-h1' : 'section-head';
         out.push(`<div class="cn-line"><span class="${cls}">${shown}</span></div>`);
         // entering a section header ends any PMH block
@@ -1927,6 +1946,7 @@ function chip(def, value, onMouse){
     e.stopPropagation();
     setChipPos(def.id);
     renderGrid(); renderOutput();
+    renderCompleteSoon();
   };
 
   const label = document.createElement("span");
@@ -1939,9 +1959,10 @@ function chip(def, value, onMouse){
   affMinus.textContent = "–";
   affMinus.onclick = (e) => {
     e.stopPropagation();
-    setChipPos(def.id); // minus now sets ABNORMAL (critical), same as right-click
+    setChipNeg(def.id); // minus sets normal/absent state
     renderGrid();
     renderOutput();
+    renderCompleteSoon();
   };
 
   d.append(affPlus, label, affMinus);
@@ -2169,13 +2190,13 @@ function wireHeader(){
     state.sections[`${state.mode}:${state.activeSection}`] = {checkboxes:{}, chips:{}, fields:{}};
     saveStateSoon();
     renderGrid(); renderOutput();
-    clearCompleteNoteBox();
+    renderCompleteSoon();
   };
   document.getElementById("clearAllBtn").onclick = ()=>{
     Object.keys(state.sections).forEach(k=> state.sections[k]={checkboxes:{},chips:{},fields:{}});
     saveStateSoon();
     renderGrid(); renderOutput();
-    clearCompleteNoteBox();
+    renderCompleteSoon();
   };
   // Add a Clear patients button
   const toolsBar = document.querySelector(".tools");

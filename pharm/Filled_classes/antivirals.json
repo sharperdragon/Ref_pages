@@ -1,0 +1,117 @@
+{
+  "antivirals": {
+    "herpesvirus_agents": {
+      "guanosine_nucleoside_analogs": [
+        "acyclovir",
+        "valacyclovir",
+        "penciclovir",
+        "famciclovir",
+        "ganciclovir",
+        "valganciclovir"
+      ],
+      "acyclic_nucleoside_phosphonate_analogs": ["cidofovir", "brincidofovir"],
+      "pyrophosphate_analogs": ["foscarnet"],
+      "cmv_terminase_inhibitors": ["letermovir"],
+      "cmv_ul97_kinase_inhibitors": ["maribavir"],
+      "topical_or_ophthalmic_antiherpes_agents": ["docosanol", "trifluridine"],
+      "legacy_or_rare_antiherpes_agents": ["idoxuridine", "vidarabine"]
+    },
+
+    "hiv_agents": {
+      "nrtis": [
+        "abacavir",
+        "didanosine",
+        "emtricitabine",
+        "lamivudine",
+        "stavudine",
+        "tenofovir alafenamide",
+        "tenofovir disoproxil fumarate",
+        "zalcitabine",
+        "zidovudine"
+      ],
+      "nnrtis": ["delavirdine", "doravirine", "efavirenz", "etravirine", "nevirapine", "rilpivirine"],
+      "protease_inhibitors": [
+        "amprenavir",
+        "atazanavir",
+        "darunavir",
+        "fosamprenavir",
+        "indinavir",
+        "lopinavir",
+        "nelfinavir",
+        "ritonavir",
+        "saquinavir",
+        "tipranavir"
+      ],
+      "integrase_strand_transfer_inhibitors": [
+        "bictegravir",
+        "cabotegravir",
+        "dolutegravir",
+        "elvitegravir",
+        "raltegravir"
+      ],
+      "entry_and_fusion_inhibitors": {
+        "fusion_inhibitors": ["enfuvirtide"],
+        "ccr5_antagonists": ["maraviroc"],
+        "post_attachment_inhibitors": ["ibalizumab"],
+        "gp120_attachment_inhibitors": ["fostemsavir"]
+      },
+      "capsid_inhibitors": ["lenacapavir"],
+      "pharmacokinetic_enhancers": ["cobicistat", "ritonavir"]
+    },
+
+    "hepatitis_agents": {
+      "hepatitis_b_agents": {
+        "nucleoside_nucleotide_analogs": [
+          "adefovir",
+          "entecavir",
+          "lamivudine",
+          "telbivudine",
+          "tenofovir alafenamide",
+          "tenofovir disoproxil fumarate"
+        ],
+        "interferons": ["interferon alfa-2b", "peginterferon alfa-2a"]
+      },
+      "hepatitis_c_agents": {
+        "ns3_4a_protease_inhibitors": [
+          "boceprevir",
+          "glecaprevir",
+          "grazoprevir",
+          "paritaprevir",
+          "simeprevir",
+          "telaprevir",
+          "voxilaprevir"
+        ],
+        "ns5a_inhibitors": ["daclatasvir", "elbasvir", "ledipasvir", "ombitasvir", "pibrentasvir", "velpatasvir"],
+        "ns5b_polymerase_inhibitors": {
+          "nucleoside_nucleotide_polymerase_inhibitors": ["sofosbuvir"],
+          "non_nucleoside_polymerase_inhibitors": ["dasabuvir"]
+        },
+        "other_hcv_agents": ["ribavirin", "peginterferon alfa-2a", "peginterferon alfa-2b"]
+      },
+      "hepatitis_d_agents": ["bulevirtide", "peginterferon alfa-2a"]
+    },
+
+    "influenza_agents": {
+      "neuraminidase_inhibitors": ["oseltamivir", "peramivir", "zanamivir"],
+      "cap_dependent_endonuclease_inhibitors": ["baloxavir marboxil"],
+      "m2_ion_channel_inhibitors": ["amantadine", "rimantadine"]
+    },
+
+    "respiratory_syncytial_virus_agents": {
+      "fusion_inhibiting_monoclonal_antibodies": ["palivizumab", "nirsevimab"],
+      "other_rsv_agents": ["ribavirin"]
+    },
+
+    "coronavirus_agents": {
+      "sars_cov_2_main_protease_inhibitors": ["nirmatrelvir"],
+      "rna_polymerase_inhibitors": ["remdesivir", "molnupiravir"],
+      "pharmacokinetic_enhancers": ["ritonavir"],
+      "fixed_combinations": ["nirmatrelvir-ritonavir"]
+    },
+
+    "broad_spectrum_or_miscellaneous_antivirals": {
+      "nucleoside_analogs": ["ribavirin"],
+      "interferons": ["interferon alfa-2b", "peginterferon alfa-2a", "peginterferon alfa-2b"]
+    }
+  }
+}

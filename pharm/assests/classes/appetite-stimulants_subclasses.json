@@ -1,9 +1,0 @@
-{
-  "primaryClass": "Appetite Stimulants",
-  "slug": "appetite-stimulants",
-  "stem": "appetite",
-  "subclasses": [
-    "Appetite Depressants",
-    "Appetite Stimulants"
-  ]
-}

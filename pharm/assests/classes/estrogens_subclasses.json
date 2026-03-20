@@ -1,9 +1,0 @@
-{
-  "primaryClass": "Estrogens",
-  "slug": "estrogens",
-  "stem": "estrogens",
-  "subclasses": [
-    "Estrogens",
-    "Estrogens, Non-Steroidal"
-  ]
-}

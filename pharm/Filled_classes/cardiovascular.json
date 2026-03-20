@@ -1,0 +1,173 @@
+{
+  "cardiovascular": {
+    "antihypertensives": {
+      "renin_angiotensin_system_agents": {
+        "ace_inhibitors": [
+          "benazepril",
+          "captopril",
+          "enalapril",
+          "fosinopril",
+          "lisinopril",
+          "moexipril",
+          "perindopril",
+          "quinapril",
+          "ramipril",
+          "trandolapril"
+        ],
+        "angiotensin_ii_receptor_blockers": [
+          "azilsartan",
+          "candesartan",
+          "eprosartan",
+          "irbesartan",
+          "losartan",
+          "olmesartan",
+          "telmisartan",
+          "valsartan"
+        ],
+        "direct_renin_inhibitors": ["aliskiren"]
+      },
+      "beta_blockers": {
+        "nonselective_beta_blockers": ["nadolol", "pindolol", "propranolol", "sotalol", "timolol"],
+        "beta1_selective_blockers": [
+          "acebutolol",
+          "atenolol",
+          "betaxolol",
+          "bisoprolol",
+          "esmolol",
+          "metoprolol",
+          "nebivolol"
+        ],
+        "intrinsic_sympathomimetic_activity_agents": ["acebutolol", "penbutolol", "pindolol", "carteolol"],
+        "alpha_beta_blockers": ["carvedilol", "labetalol"],
+        "vasodilating_beta_blockers": ["carvedilol", "labetalol", "nebivolol"]
+      },
+      "calcium_channel_blockers": {
+        "dihydropyridines": [
+          "amlodipine",
+          "clevidipine",
+          "felodipine",
+          "isradipine",
+          "nicardipine",
+          "nifedipine",
+          "nimodipine",
+          "nisoldipine"
+        ],
+        "non_dihydropyridines": {
+          "phenylalkylamines": ["verapamil"],
+          "benzothiazepines": ["diltiazem"]
+        }
+      },
+      "diuretics": {
+        "loop_diuretics": ["bumetanide", "ethacrynic acid", "furosemide", "torsemide"],
+        "thiazide_and_thiazide_like_diuretics": [
+          "bendroflumethiazide",
+          "chlorothiazide",
+          "chlorthalidone",
+          "hydrochlorothiazide",
+          "indapamide",
+          "metolazone"
+        ],
+        "potassium_sparing_diuretics": {
+          "aldosterone_antagonists": ["eplerenone", "spironolactone", "finerenone"],
+          "enac_channel_blockers": ["amiloride", "triamterene"]
+        },
+        "carbonic_anhydrase_inhibitors": ["acetazolamide", "dichlorphenamide", "methazolamide"],
+        "osmotic_diuretics": ["mannitol", "urea", "glycerin", "isosorbide"]
+      },
+      "vasodilators": {
+        "direct_arteriolar_vasodilators": ["hydralazine", "minoxidil"],
+        "organic_nitrates": {
+          "short_acting": ["nitroglycerin", "amyl nitrite"],
+          "long_acting": ["isosorbide dinitrate", "isosorbide mononitrate", "nitroglycerin"]
+        },
+        "nitric_oxide_donors": ["nitroprusside"]
+      },
+      "central_sympatholytics": {
+        "alpha2_agonists": ["clonidine", "guanfacine", "methyldopa"],
+        "imidazoline_receptor_agonists": ["clonidine", "moxonidine"]
+      },
+      "alpha_blockers": {
+        "nonselective_alpha_blockers": ["phenoxybenzamine", "phentolamine"],
+        "alpha1_selective_blockers": ["alfuzosin", "doxazosin", "prazosin", "silodosin", "tamsulosin", "terazosin"]
+      }
+    },
+
+    "antiarrhythmics": {
+      "class_i_sodium_channel_blockers": {
+        "class_ia": ["disopyramide", "procainamide", "quinidine"],
+        "class_ib": ["lidocaine", "mexiletine"],
+        "class_ic": ["flecainide", "propafenone"]
+      },
+      "class_ii_beta_blockers": ["acebutolol", "atenolol", "esmolol", "metoprolol", "propranolol"],
+      "class_iii_potassium_channel_blockers": ["amiodarone", "dofetilide", "dronedarone", "ibutilide", "sotalol"],
+      "class_iv_calcium_channel_blockers": ["diltiazem", "verapamil"],
+      "miscellaneous_antiarrhythmics": {
+        "adenosine": ["adenosine"],
+        "magnesium": ["magnesium sulfate"],
+        "cardiac_glycosides": ["digoxin", "digitoxin"],
+        "late_sodium_current_inhibitors": ["ranolazine"]
+      }
+    },
+
+    "lipid_lowering_agents": {
+      "statins": [
+        "atorvastatin",
+        "fluvastatin",
+        "lovastatin",
+        "pitavastatin",
+        "pravastatin",
+        "rosuvastatin",
+        "simvastatin"
+      ],
+      "cholesterol_absorption_inhibitors": ["ezetimibe"],
+      "pcsk9_inhibitors": ["alirocumab", "evolocumab"],
+      "bempedoic_acid": ["bempedoic acid"],
+      "bile_acid_sequestrants": ["cholestyramine", "colesevelam", "colestipol"],
+      "fibrates": ["fenofibrate", "fenofibric acid", "gemfibrozil"],
+      "omega3_fatty_acids": {
+        "epa_products": ["icosapent ethyl"],
+        "epa_dha_products": ["omega-3-acid ethyl esters", "omega-3-carboxylic acids"]
+      },
+      "antisense_and_rnai_agents": {
+        "apob_antisense": ["mipomersen"],
+        "pcsk9_sirna": ["inclisiran"]
+      },
+      "mtp_inhibitors": ["lomitapide"],
+      "thyroid_hormone_analogs": ["eprotirome"]
+    },
+
+    "anticoagulants": {
+      "heparins": {
+        "unfractionated_heparin": ["heparin"],
+        "low_molecular_weight_heparins": ["dalteparin", "enoxaparin", "tinzaparin"]
+      },
+      "direct_thrombin_inhibitors": {
+        "parenteral": ["argatroban", "bivalirudin", "desirudin"],
+        "oral": ["dabigatran"]
+      },
+      "factor_xa_inhibitors": {
+        "oral": ["apixaban", "betrixaban", "edoxaban", "rivaroxaban"],
+        "parenteral": ["fondaparinux"]
+      },
+      "vitamin_k_antagonists": ["warfarin"]
+    },
+
+    "antiplatelets": {
+      "cox_inhibitors": {
+        "irreversible_cox1_inhibitors": ["aspirin"]
+      },
+      "p2y12_receptor_antagonists": {
+        "thienopyridines": ["clopidogrel", "prasugrel", "ticlopidine"],
+        "cyclopentyl_triazolo_pyrimidines": ["ticagrelor"]
+      },
+      "gp_iib_iiia_inhibitors": ["abciximab", "eptifibatide", "tirofiban"],
+      "phosphodiesterase_inhibitors": ["cilostazol", "dipyridamole"],
+      "par1_antagonists": ["vorapaxar"]
+    },
+
+    "thrombolytics": {
+      "tpa_analogs": ["alteplase", "reteplase", "tenecteplase"],
+      "plasminogen_activators": ["alteplase", "urokinase"]
+    }
+  }
+}

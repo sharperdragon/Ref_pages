@@ -1,0 +1,231 @@
+{
+  "antibiotics": {
+    "beta_lactams": {
+      "penicillins": {
+        "natural_penicillins": [
+          "penicillin g",
+          "penicillin v",
+          "benzathine penicillin g",
+          "procaine penicillin g"
+        ],
+        "aminopenicillins": [
+          "ampicillin",
+          "amoxicillin"
+        ],
+        "penicillinase_resistant": [
+          "dicloxacillin",
+          "nafcillin",
+          "oxacillin"
+        ],
+        "antipseudomonal": [
+          "piperacillin",
+          "ticarcillin"
+        ],
+        "beta_lactamase_inhibitor_combinations": [
+          "amoxicillin-clavulanate",
+          "ampicillin-sulbactam",
+          "piperacillin-tazobactam",
+          "ticarcillin-clavulanate"
+        ]
+      },
+
+      "cephalosporins": {
+        "first_generation": [
+          "cefadroxil",
+          "cefazolin",
+          "cephalexin"
+        ],
+        "second_generation": [
+          "cefaclor",
+          "cefotetan",
+          "cefoxitin",
+          "cefprozil",
+          "cefuroxime"
+        ],
+        "third_generation": [
+          "cefdinir",
+          "cefditoren",
+          "cefixime",
+          "cefpodoxime",
+          "ceftazidime",
+          "ceftibuten",
+          "cefotaxime",
+          "ceftriaxone"
+        ],
+        "fourth_generation": [
+          "cefepime"
+        ],
+        "fifth_generation": [
+          "ceftaroline",
+          "ceftobiprole"
+        ]
+      },
+
+      "carbapenems": [
+        "doripenem",
+        "ertapenem",
+        "imipenem-cilastatin",
+        "meropenem"
+      ],
+
+      "monobactams": [
+        "aztreonam"
+      ]
+    },
+
+    "glycopeptides": [
+      "vancomycin"
+    ],
+
+    "lipoglycopeptides": [
+      "dalbavancin",
+      "oritavancin",
+      "telavancin"
+    ],
+
+    "aminoglycosides": [
+      "amikacin",
+      "gentamicin",
+      "neomycin",
+      "plazomicin",
+      "streptomycin",
+      "tobramycin"
+    ],
+
+    "tetracyclines": [
+      "demeclocycline",
+      "doxycycline",
+      "minocycline",
+      "tetracycline"
+    ],
+
+    "glycylcyclines": [
+      "tigecycline"
+    ],
+
+    "macrolides": [
+      "azithromycin",
+      "clarithromycin",
+      "erythromycin"
+    ],
+
+    "lincosamides": [
+      "clindamycin",
+      "lincomycin"
+    ],
+
+    "oxazolidinones": [
+      "linezolid",
+      "tedizolid"
+    ],
+
+    "streptogramins": [
+      "quinupristin-dalfopristin"
+    ],
+
+    "chloramphenicol": [
+      "chloramphenicol"
+    ],
+
+    "fluoroquinolones": [
+      "ciprofloxacin",
+      "delafloxacin",
+      "gemifloxacin",
+      "levofloxacin",
+      "moxifloxacin",
+      "norfloxacin",
+      "ofloxacin"
+    ],
+
+    "rifamycins": [
+      "rifabutin",
+      "rifampin",
+      "rifapentine",
+      "rifaximin"
+    ],
+
+    "nitroimidazoles": [
+      "metronidazole",
+      "tinidazole",
+      "secnidazole"
+    ],
+
+    "sulfonamides": [
+      "sulfadiazine",
+      "sulfamethoxazole",
+      "sulfisoxazole"
+    ],
+
+    "dhfr_inhibitors": [
+      "trimethoprim"
+    ],
+
+    "lipopeptides": [
+      "daptomycin"
+    ],
+
+    "polymyxins": [
+      "colistin",
+      "polymyxin b"
+    ],
+
+    "nitrofurans": [
+      "nitrofurantoin"
+    ],
+
+    "phosphonic_acid_derivatives": [
+      "fosfomycin"
+    ],
+
+    "pleuromutilins": [
+      "lefamulin",
+      "retapamulin"
+    ],
+
+    "antimycobacterials": {
+      "tuberculosis_agents": {
+        "first_line_agents": [
+          "isoniazid",
+          "rifampin",
+          "rifabutin",
+          "rifapentine",
+          "ethambutol",
+          "pyrazinamide"
+        ],
+        "second_line_agents": [
+          "amikacin",
+          "capreomycin",
+          "cycloserine",
+          "ethionamide",
+          "kanamycin",
+          "para-aminosalicylic acid",
+          "streptomycin"
+        ],
+        "fluoroquinolones_for_tb": [
+          "levofloxacin",
+          "moxifloxacin",
+          "ofloxacin"
+        ],
+        "newer_tb_agents": [
+          "bedaquiline",
+          "delamanid",
+          "pretomanid"
+        ]
+      },
+
+      "leprosy_agents": [
+        "clofazimine",
+        "dapsone",
+        "rifampin"
+      ],
+
+      "nontuberculous_mycobacteria_agents": [
+        "azithromycin",
+        "clarithromycin",
+        "ethambutol",
+        "rifabutin",
+        "rifampin"
+      ]
+    }
+  }
+}

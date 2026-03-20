@@ -1,7 +1,6 @@
 {
   "primaryClass": "Adrenergic Agents",
   "slug": "adrenergic-agents",
-  "stem": "adrenergic",
   "subclasses": [
     "Adrenergic Agents",
     "Adrenergic Agonists",
@@ -17,6 +16,10 @@
     "Adrenergic beta-2 Receptor Agonists",
     "Adrenergic beta-Agonists",
     "Adrenergic beta-Antagonists",
-    "Adrenergic Uptake Inhibitors"
+    "Adrenergic Uptake Inhibitors",
+    "Parasympatholytics",
+    "Parasympathomimetics",
+    "Sympatholytics",
+    "Sympathomimetics"
   ]
 }

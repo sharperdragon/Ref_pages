@@ -1,0 +1,155 @@
+{
+  "central_nervous_system": {
+    "antidepressants": {
+      "monoamine_reuptake_inhibitors": {
+        "ssris": ["citalopram", "escitalopram", "fluoxetine", "fluvoxamine", "paroxetine", "sertraline"],
+        "snris": ["desvenlafaxine", "duloxetine", "levomilnacipran", "milnacipran", "venlafaxine"],
+        "nris": ["reboxetine", "atomoxetine"],
+        "tricyclic_antidepressants": [
+          "amitriptyline",
+          "amoxapine",
+          "clomipramine",
+          "desipramine",
+          "doxepin",
+          "imipramine",
+          "maprotiline",
+          "nortriptyline",
+          "protriptyline",
+          "trimipramine"
+        ]
+      },
+      "monoamine_oxidase_inhibitors": {
+        "nonselective_irreversible_maoi": ["isocarboxazid", "phenelzine", "tranylcypromine"],
+        "maob_selective_inhibitors": ["rasagiline", "safinamide", "selegiline"]
+      },
+      "atypical_antidepressants": {
+        "dopamine_norepinephrine_reuptake_inhibitors": ["bupropion"],
+        "serotonin_antagonist_reuptake_inhibitors": ["nefazodone", "trazodone"],
+        "noradrenergic_specific_serotonergic_agents": ["mirtazapine", "mianserin"],
+        "melatonergic_antidepressants": ["agomelatine"]
+      }
+    },
+
+    "antipsychotics": {
+      "typical_antipsychotics": {
+        "low_potency": ["chlorpromazine", "thioridazine"],
+        "high_potency": [
+          "fluphenazine",
+          "haloperidol",
+          "loxapine",
+          "perphenazine",
+          "pimozide",
+          "thiothixene",
+          "trifluoperazine"
+        ]
+      },
+      "atypical_antipsychotics": {
+        "serotonin_dopamine_antagonists": [
+          "asenapine",
+          "clozapine",
+          "iloperidone",
+          "lurasidone",
+          "olanzapine",
+          "paliperidone",
+          "quetiapine",
+          "risperidone",
+          "ziprasidone"
+        ],
+        "dopamine_partial_agonists": ["aripiprazole", "brexpiprazole", "cariprazine"]
+      }
+    },
+
+    "antiepileptics": {
+      "sodium_channel_blockers": [
+        "carbamazepine",
+        "eslicarbazepine",
+        "fosphenytoin",
+        "lacosamide",
+        "lamotrigine",
+        "oxcarbazepine",
+        "phenytoin",
+        "rufinamide",
+        "zonisamide"
+      ],
+      "calcium_channel_modulators": {
+        "t_type_calcium_channel_agents": ["ethosuximide", "valproic acid"],
+        "alpha2delta_ligands": ["gabapentin", "pregabalin"]
+      },
+      "gabaergic_agents": {
+        "gaba_a_positive_allosteric_modulators": [
+          "clobazam",
+          "clonazepam",
+          "diazepam",
+          "lorazepam",
+          "midazolam",
+          "phenobarbital",
+          "primidone"
+        ],
+        "gaba_reuptake_inhibitors": ["tiagabine"],
+        "gaba_transaminase_inhibitors": ["vigabatrin"]
+      },
+      "sv2a_ligands": ["brivaracetam", "levetiracetam"],
+      "glutamate_modulators": {
+        "ampa_antagonists": ["perampanel"],
+        "nmda_antagonists": ["felbamate"]
+      }
+    },
+
+    "analgesics": {
+      "nonopioid_analgesics": {
+        "nsaids": {
+          "nonselective_cox_inhibitors": [
+            "diclofenac",
+            "diflunisal",
+            "etodolac",
+            "ibuprofen",
+            "indomethacin",
+            "ketoprofen",
+            "ketorolac",
+            "meclofenamate",
+            "mefenamic acid",
+            "meloxicam",
+            "nabumetone",
+            "naproxen",
+            "oxaprozin",
+            "piroxicam",
+            "sulindac",
+            "tolmetin"
+          ],
+          "cox2_selective_inhibitors": ["celecoxib"]
+        },
+        "acetaminophen": ["acetaminophen"]
+      },
+      "opioid_analgesics": {
+        "full_mu_agonists": [
+          "codeine",
+          "fentanyl",
+          "hydrocodone",
+          "hydromorphone",
+          "meperidine",
+          "methadone",
+          "morphine",
+          "oxycodone",
+          "oxymorphone",
+          "tapentadol"
+        ],
+        "partial_mu_agonists": ["buprenorphine"],
+        "mixed_agonist_antagonists": ["butorphanol", "nalbuphine", "pentazocine"]
+      },
+      "migraine_agents": {
+        "triptans": [
+          "almotriptan",
+          "eletriptan",
+          "frovatriptan",
+          "naratriptan",
+          "rizatriptan",
+          "sumatriptan",
+          "zolmitriptan"
+        ],
+        "cgrp_receptor_antagonists": ["atogepant", "rimegepant", "ubrogepant", "zavegepant"],
+        "ditans": ["lasmiditan"],
+        "ergot_derivatives": ["dihydroergotamine", "ergotamine"]
+      }
+    }
+  }
+}

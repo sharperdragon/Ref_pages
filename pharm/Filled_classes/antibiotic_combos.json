@@ -1,0 +1,20 @@
+{
+  "antimicrobials": {
+    "antibiotic_combinations": {
+      "beta_lactam_beta_lactamase_inhibitor_combinations": [
+        "amoxicillin-clavulanate",
+        "ampicillin-sulbactam",
+        "piperacillin-tazobactam",
+        "ticarcillin-clavulanate"
+      ],
+
+      "carbapenem_combinations": ["imipenem-cilastatin", "meropenem-vaborbactam", "imipenem-cilastatin-relebactam"],
+
+      "cephalosporin_inhibitor_combinations": ["ceftazidime-avibactam", "ceftolozane-tazobactam"],
+
+      "antifolate_combinations": ["trimethoprim-sulfamethoxazole", "pyrimethamine-sulfadoxine"],
+
+      "antimalarial_combinations": ["artemether-lumefantrine", "atovaquone-proguanil"]
+    }
+  }
+}

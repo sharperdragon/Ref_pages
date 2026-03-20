@@ -106,6 +106,13 @@ def load_json(path: Path) -> Dict[str, object]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def get_drugbank_id(item: Dict[str, object]) -> str:
+    raw_drugbank = item.get("drugbank")
+    if not isinstance(raw_drugbank, dict):
+        return ""
+    return clean_text(raw_drugbank.get("drugbank_id", ""))
+
+
 def load_tsv_rows(path: Path) -> List[Dict[str, str]]:
     if not path.exists():
         raise FileNotFoundError(f"DrugBank TSV not found: {path}")
@@ -561,7 +568,7 @@ def run() -> Dict[str, object]:
                 "name": clean_text(item.get("name", "")),
                 "drugClass": clean_text(item.get("drugClass", "")),
                 "routes": item.get("routes", []),
-                "drugbank_id": clean_text((item.get("drugbank", {}) or {}).get("drugbank_id", "")),
+                "drugbank_id": get_drugbank_id(item),
             }
             for item in additions[:MAX_EXAMPLE_COUNT]
         ],
@@ -577,12 +584,13 @@ def run() -> Dict[str, object]:
 
 def main() -> None:
     report = run()
-    summary = report["summary"]
+    summary_raw = report.get("summary")
+    summary = summary_raw if isinstance(summary_raw, dict) else {}
     print("DrugBank catalog expansion completed.")
-    print(f"Existing records: {summary['existing_records']}")
-    print(f"Added records: {summary['added_records']}")
-    print(f"Final records: {summary['final_records']}")
-    print(f"Invalid records: {summary['invalid_records']}")
+    print(f"Existing records: {summary.get('existing_records', 0)}")
+    print(f"Added records: {summary.get('added_records', 0)}")
+    print(f"Final records: {summary.get('final_records', 0)}")
+    print(f"Invalid records: {summary.get('invalid_records', 0)}")
     print(f"Output: {OUTPUT_ENRICHED_JSON_PATH}")
     print(f"Report: {OUTPUT_REPORT_PATH}")
 

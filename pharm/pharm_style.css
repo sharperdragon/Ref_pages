@@ -211,34 +211,45 @@ body {
 .class-tree-trigger {
   width: 100%;
   min-height: 44px;
-  border: 1px solid color-mix(in oklab, var(--border), var(--surface) 10%);
+  border: 1px solid color-mix(in oklab, var(--border), var(--surface) 8%);
   border-radius: var(--radius-md);
-  padding: 10px 12px;
+  padding: 9px 12px;
   background:
     linear-gradient(
       180deg,
-      color-mix(in oklab, var(--surface), var(--brand-soft) 12%) 0%,
+      color-mix(in oklab, var(--surface), var(--brand-soft) 10%) 0%,
       var(--surface) 100%
     );
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 650;
+  font-size: 14px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   cursor: pointer;
-  box-shadow: inset 0 1px 0 color-mix(in oklab, var(--surface), transparent 30%);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, var(--surface), transparent 24%),
+    0 1px 2px color-mix(in oklab, var(--text), transparent 92%);
   transition:
     border-color var(--motion-fast) ease,
     background-color var(--motion-fast) ease,
-    box-shadow var(--motion-fast) ease;
+    box-shadow var(--motion-fast) ease,
+    transform var(--motion-fast) ease;
+}
+
+.class-tree-trigger__text {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .class-tree-trigger:hover {
   border-color: color-mix(in oklab, var(--brand), var(--border) 45%);
-  box-shadow: 0 3px 14px color-mix(in oklab, var(--brand), transparent 90%);
+  box-shadow: 0 4px 16px color-mix(in oklab, var(--brand), transparent 90%);
 }
 
 .class-tree-trigger.is-filtered {
@@ -251,13 +262,24 @@ body {
     );
 }
 
+.control--class-tree.is-open .class-tree-trigger {
+  border-color: color-mix(in oklab, var(--brand), var(--border) 32%);
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, var(--brand), transparent 82%),
+    0 8px 20px color-mix(in oklab, var(--brand), transparent 90%);
+  transform: translateY(-1px);
+}
+
 .class-tree-trigger__caret {
   color: var(--text-muted);
   font-size: 14px;
-  transition: transform var(--motion-fast) ease;
+  transition:
+    transform var(--motion-fast) ease,
+    color var(--motion-fast) ease;
 }
 
 .control--class-tree.is-open .class-tree-trigger__caret {
+  color: var(--brand-strong);
   transform: rotate(90deg);
 }
 
@@ -266,40 +288,90 @@ body {
   top: calc(100% + 6px);
   left: 0;
   z-index: 80;
-  width: clamp(360px, 58vw, 920px);
-  max-height: min(64vh, 560px);
-  border: 1px solid color-mix(in oklab, var(--brand), var(--border) 58%);
-  border-radius: 12px;
-  background: color-mix(in oklab, var(--surface), transparent 2%);
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
+  width: fit-content;
+  max-width: calc(100vw - 24px);
+  max-height: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .class-tree-columns {
-  display: flex;
-  align-items: stretch;
-  min-width: max-content;
-  max-width: 100%;
-  max-height: inherit;
-  overflow: auto;
+  position: relative;
+  display: block;
+  padding: 0;
+  min-width: 0;
+  max-width: none;
+  max-height: none;
+  overflow-x: visible;
+  overflow-y: visible;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
-  background: color-mix(in oklab, var(--surface-muted), transparent 12%);
+  background: transparent;
 }
 
 .class-tree-column {
-  min-width: 248px;
-  max-width: 312px;
-  border-right: 1px solid color-mix(in oklab, var(--border), transparent 10%);
-  padding: 10px 11px;
+  width: clamp(320px, 34vw, 500px);
+  max-width: min(500px, calc(100vw - 40px));
+  max-height: min(64vh, 560px);
+  border: 1px solid color-mix(in oklab, var(--brand), var(--border) 74%);
+  border-radius: 14px;
+  padding: 12px;
   display: grid;
   gap: 8px;
   align-content: start;
-  background: color-mix(in oklab, var(--surface), var(--surface-muted) 16%);
+  background: color-mix(in oklab, var(--surface), var(--surface-muted) 10%);
+  position: relative;
+  top: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  box-shadow: var(--shadow-md);
 }
 
-.class-tree-column:last-child {
-  border-right: 0;
+.class-tree-column[data-depth="0"] {
+  z-index: 2;
+  border-color: color-mix(in oklab, var(--brand), var(--border) 74%);
+  background: color-mix(in oklab, var(--surface), var(--surface-muted) 10%);
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"]) {
+  position: absolute;
+  left: var(--tree-column-left, calc(100% + 12px));
+  top: var(--tree-column-offset, 0px);
+  width: clamp(290px, 30vw, 420px);
+  max-width: min(420px, calc(100vw - 28px));
+  max-height: min(52vh, 390px);
+  margin-left: 0;
+  border-color: color-mix(in oklab, var(--brand), var(--border) 68%);
+  background: color-mix(in oklab, var(--surface), transparent 1%);
+  box-shadow: var(--shadow-lg);
+  z-index: 6;
+  animation: class-tree-branch-in var(--motion-fast) ease;
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"])::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 24px;
+  width: 10px;
+  height: 2px;
+  border-radius: 99px;
+  background: color-mix(in oklab, var(--brand), var(--border) 64%);
+}
+
+@keyframes class-tree-branch-in {
+  from {
+    opacity: 0.72;
+    transform: translateX(-6px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
 
 .class-tree-column__title {
@@ -319,14 +391,30 @@ body {
   align-content: start;
 }
 
+.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-list {
+  position: relative;
+  padding-left: 12px;
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-list::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 2px;
+  width: 1px;
+  background: color-mix(in oklab, var(--brand), var(--border) 72%);
+  opacity: 0.9;
+}
+
 .class-tree-option {
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 9px;
   background: transparent;
   color: var(--text);
   text-align: left;
-  padding: 8px 10px;
+  padding: 7px 9px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -335,7 +423,8 @@ body {
   transition:
     border-color var(--motion-fast) ease,
     background-color var(--motion-fast) ease,
-    color var(--motion-fast) ease;
+    color var(--motion-fast) ease,
+    transform var(--motion-fast) ease;
 }
 
 .class-tree-option:hover {
@@ -348,6 +437,31 @@ body {
   border-color: color-mix(in oklab, var(--brand), var(--border) 76%);
 }
 
+.class-tree-option.is-primary.is-branch {
+  background: transparent;
+  border-color: transparent;
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option {
+  position: relative;
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  width: 9px;
+  height: 1px;
+  background: color-mix(in oklab, var(--brand), var(--border) 68%);
+  transform: translateY(-50%);
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option.is-active,
+.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option.is-branch {
+  transform: translateX(2px);
+}
+
 .class-tree-option.is-active {
   background: color-mix(in oklab, var(--brand-soft), var(--surface) 66%);
   border-color: color-mix(in oklab, var(--brand), var(--border) 44%);
@@ -355,7 +469,7 @@ body {
 }
 
 .class-tree-option__label {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -387,6 +501,10 @@ body {
   color: var(--text-muted);
   font-size: 14px;
   font-weight: 700;
+}
+
+.class-tree-column[data-depth="0"] .class-tree-option__caret {
+  display: none;
 }
 
 .class-tree-option:hover .class-tree-option__caret,
@@ -442,6 +560,42 @@ body {
 
 .control--view-mode {
   min-width: 0;
+}
+
+.class-type-toggle {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.class-type-btn {
+  min-height: 34px;
+  border: 0;
+  border-right: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.class-type-btn:last-child {
+  border-right: 0;
+}
+
+.class-type-btn.is-active {
+  background: color-mix(in oklab, var(--brand-soft), var(--surface) 65%);
+  color: var(--brand-strong);
+}
+
+.class-type-select {
+  display: none;
 }
 
 .view-mode-toggle {
@@ -700,39 +854,6 @@ body {
 
 .results-grid[data-view-mode="structured"] .class-block {
   overflow: hidden;
-}
-
-.results-grid[data-view-mode="tree"] .class-block {
-  overflow: hidden;
-}
-
-.tree-branch {
-  display: grid;
-  gap: var(--space-2);
-  padding-left: calc(var(--space-3) + 2px);
-  border-left: 2px solid color-mix(in oklab, var(--brand), var(--border) 60%);
-}
-
-.tree-branch + .tree-branch {
-  margin-top: var(--space-2);
-}
-
-.tree-branch__label {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-soft);
-}
-
-.tree-children {
-  display: grid;
-  gap: var(--space-2);
-}
-
-.tree-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
-  gap: var(--space-3);
 }
 
 .med-card {
@@ -1036,20 +1157,40 @@ body.detail-open {
 
   .class-tree-menu {
     width: 100%;
-    max-height: min(56vh, 460px);
+    max-width: 100%;
   }
 
   .class-tree-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px;
     min-width: max-content;
+    overflow-x: auto;
   }
 
-  .class-tree-column {
+  .class-tree-column,
+  .class-tree-column[data-depth]:not([data-depth="0"]) {
+    position: relative;
+    left: auto;
+    top: 0;
+    width: auto;
     min-width: 228px;
     max-width: 86vw;
+    max-height: min(52vh, 420px);
+    animation: none;
   }
 
   .control--result-meta {
     min-width: 0;
+  }
+
+  .class-type-toggle {
+    display: none;
+  }
+
+  .class-type-select {
+    display: block;
   }
 
   .view-mode-toggle {
@@ -1060,8 +1201,7 @@ body.detail-open {
     display: block;
   }
 
-  .cards-grid,
-  .tree-cards {
+  .cards-grid {
     grid-template-columns: 1fr;
   }
 

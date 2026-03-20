@@ -12,6 +12,8 @@ const RESULTS_CARDS = "#results .med-card";
 const SEARCH_INPUT = "#searchInput";
 const CLASS_TREE_TRIGGER = "#classTreeTrigger";
 const CLASS_TREE_COLUMNS = "#classTreeColumns";
+const CLASS_TYPE_CONTROL = "#classTypeControl";
+const CLASS_TYPE_SELECT = "#classTypeSelect";
 const ROUTE_FILTER = "#routeFilter";
 const CLEAR_FILTERS_BUTTON = "#btnClearFilters";
 const RESULT_COUNT = "#resultCount";
@@ -23,6 +25,7 @@ const DETAIL_CLOSE_BUTTON = "#btnCloseDetail";
 const THEME_TOGGLE = "#btnThemeToggle";
 const THEME_STORAGE_KEY = "ui-theme";
 const VIEW_MODE_KEY = "pharm-view-mode";
+const CLASS_FILTER_TYPE_KEY = "pharm-class-filter-type";
 const VIEW_MODE_CONTROL = "#viewModeControl";
 const RESULTS_GRID = "#results";
 const FOOTER_DISCLAIMER = "footer #disclaimerBanner";
@@ -30,7 +33,6 @@ const CLASS_BLOCKS = "#results .class-block";
 const CLASS_TOGGLES = "#results .class-toggle";
 const SUBCLASS_CHIPS = "#results .subclass-chip";
 const SUBCLASS_HEADINGS = "#results .subclass-heading";
-const TREE_BRANCHES = "#results .tree-branch";
 const RXNORM_PROXY_ROUTE = "**/api/rxnorm/**";
 const RXNORM_SECTION = '#detailBody [data-section="rxnorm"]';
 const RXNORM_LOADING = `${RXNORM_SECTION} [data-rxnorm-state="loading"]`;
@@ -42,7 +44,6 @@ const RXNORM_INGREDIENTS_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="ingredie
 const RXNORM_CLASSES_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="classes"]`;
 const VIEW_MODE_COMPACT = `${VIEW_MODE_CONTROL} [data-view-mode="compact"]`;
 const VIEW_MODE_STRUCTURED = `${VIEW_MODE_CONTROL} [data-view-mode="structured"]`;
-const VIEW_MODE_TREE = `${VIEW_MODE_CONTROL} [data-view-mode="tree"]`;
 const PHARM_MEDICATIONS = Array.isArray(pharmData) ? pharmData : (pharmData.medications || []);
 const EXPECTED_TOTAL_MEDICATIONS = PHARM_MEDICATIONS.length;
 const MOBILE_WIDTH = 900;
@@ -259,6 +260,15 @@ async function waitForCards(page, expectedMinimum = 1) {
   await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThanOrEqual(expectedMinimum);
 }
 
+async function uniqueVisibleMedicationIds(page) {
+  const ids = await page.locator(RESULTS_CARDS).evaluateAll((cards) =>
+    cards
+      .map((card) => card.getAttribute("data-id") || "")
+      .filter(Boolean)
+  );
+  return Array.from(new Set(ids));
+}
+
 test.describe("Pharm reference smoke", () => {
   test("page loads with compact mode default, disclaimer, cards, and no default selection", async ({ page }) => {
     await page.goto(PHARM_PATH);
@@ -282,28 +292,42 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
 
     await page.locator(SEARCH_INPUT).fill("albuterol");
-    await expect(page.locator(RESULTS_CARDS)).toHaveCount(2);
-    await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).nth(0)).toHaveText("Albuterol");
+    await expect(page.locator(RESULT_COUNT)).toHaveText("2 medications");
+    const albuterolIds = await uniqueVisibleMedicationIds(page);
+    expect(albuterolIds.length).toBe(2);
+    const albuterolTitles = await page.locator(`${RESULTS_CARDS} .med-card__title`).allInnerTexts();
+    const uniqueAlbuterolTitles = Array.from(new Set(albuterolTitles));
+    expect(uniqueAlbuterolTitles).toContain("Albuterol");
+    expect(uniqueAlbuterolTitles).toContain("Ipratropium-Albuterol");
+    await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).first()).toHaveText("Albuterol");
+  });
 
-    await page.locator(SEARCH_INPUT).fill("amoxi");
-    await expect(page.locator(RESULTS_CARDS)).toHaveCount(2);
-    await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).nth(0)).toHaveText("Amoxicillin");
-    await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).nth(1)).toHaveText("Amoxicillin-Clavulanate");
+  test("amiloride card shows specific ENaC class instead of broad diuretics label", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(SEARCH_INPUT).fill("amiloride");
+    const amilorideCard = page.getByRole("button", { name: /^Amiloride details$/ });
+    await expect(amilorideCard).toBeVisible();
+
+    const classLabel = amilorideCard.locator(".med-card__class");
+    await expect(classLabel).toContainText(/ENaC Channel Blockers/i);
+    await expect(classLabel).not.toHaveText(/^Diuretics$/i);
   });
 
   test("compact mode keeps grouped display without deep nested containers", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    await page.locator(SEARCH_INPUT).fill("amoxi");
+    await page.locator(SEARCH_INPUT).fill("albuterol");
+    await expect(page.locator(RESULT_COUNT)).toHaveText("2 medications");
     const titles = await page.locator(`${RESULTS_CARDS} .med-card__title`).allInnerTexts();
     expect(titles.length).toBeGreaterThanOrEqual(1);
-    const hasExpectedMatch = titles.some((title) => title.toLowerCase().includes("amoxi"));
+    const hasExpectedMatch = titles.some((title) => /albuterol/i.test(title));
     expect(hasExpectedMatch).toBeTruthy();
     await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "compact");
-    await expect(page.locator(SUBCLASS_CHIPS).first()).toBeVisible();
+    await expect(page.locator(RESULTS_CARDS).first()).toBeVisible();
     await expect(page.locator(CLASS_TOGGLES)).toHaveCount(0);
-    await expect(page.locator(TREE_BRANCHES)).toHaveCount(0);
   });
 
   test("structured mode shows accordion classes and subclass headings", async ({ page }) => {
@@ -317,16 +341,59 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(SUBCLASS_HEADINGS).first()).toBeVisible();
   });
 
-  test("tree mode renders full hierarchy branches", async ({ page }) => {
+  test("tree mode controls are absent from toggle and select", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    await page.locator(VIEW_MODE_TREE).click();
-    await page.locator(SEARCH_INPUT).fill("amoxi");
+    await expect(page.locator(VIEW_MODE_CONTROL).locator("[data-view-mode='tree']")).toHaveCount(0);
+    await expect(page.locator("#viewModeSelect option[value='tree']")).toHaveCount(0);
+  });
 
-    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "tree");
-    await expect(page.locator(CLASS_TOGGLES).first()).toBeVisible();
-    await expect(page.locator(TREE_BRANCHES).first()).toBeVisible();
+  test("class filter type supports drug class and use category modes", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await expect(page.locator(CLASS_TYPE_CONTROL).locator("[data-class-filter-type='drug-class']")).toHaveCount(1);
+    await expect(page.locator(CLASS_TYPE_CONTROL).locator("[data-class-filter-type='use-category']")).toHaveCount(1);
+    await expect(page.locator(`${CLASS_TYPE_SELECT} option[value='drug-class']`)).toHaveCount(1);
+    await expect(page.locator(`${CLASS_TYPE_SELECT} option[value='use-category']`)).toHaveCount(1);
+  });
+
+  test("use category class filter mode narrows results with broad clinical buckets", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    const initialVisibleCardCount = await page.locator(RESULTS_CARDS).count();
+    await page.locator(`${CLASS_TYPE_CONTROL} [data-class-filter-type='use-category']`).click();
+    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(/All use categories/i);
+
+    const storedType = await page.evaluate((storageKey) => localStorage.getItem(storageKey), CLASS_FILTER_TYPE_KEY);
+    expect(storedType).toBe("use-category");
+
+    await page.locator(CLASS_TREE_TRIGGER).click();
+    const broadOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="0"][data-action="node"]`);
+    await expect(broadOptions.first()).toBeVisible();
+
+    const candidateIndex = await broadOptions.evaluateAll((nodes, totalCount) => {
+      for (let index = 0; index < nodes.length; index += 1) {
+        const countText = nodes[index].querySelector(".class-tree-option__count")?.textContent || "";
+        const count = Number.parseInt(countText, 10);
+        if (Number.isFinite(count) && count > 0 && count < totalCount) {
+          return index;
+        }
+      }
+      return -1;
+    }, initialVisibleCardCount);
+
+    expect(candidateIndex).toBeGreaterThanOrEqual(0);
+    const selectedOption = broadOptions.nth(candidateIndex);
+    const selectedLabel = await selectedOption.locator(".class-tree-option__label").innerText();
+    await selectedOption.click();
+
+    const filteredCount = await page.locator(RESULTS_CARDS).count();
+    expect(filteredCount).toBeGreaterThan(0);
+    expect(filteredCount).toBeLessThan(initialVisibleCardCount);
+    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(selectedLabel);
   });
 
   test("view mode persists across reload", async ({ page }) => {
@@ -345,36 +412,157 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(VIEW_MODE_STRUCTURED)).toHaveAttribute("aria-pressed", "true");
   });
 
+  test("legacy stored tree mode migrates to structured", async ({ page }) => {
+    await page.addInitScript(([storageKey, value]) => {
+      localStorage.setItem(storageKey, value);
+    }, [VIEW_MODE_KEY, "tree"]);
+
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
+    await expect(page.locator(VIEW_MODE_STRUCTURED)).toHaveAttribute("aria-pressed", "true");
+
+    const migratedMode = await page.evaluate((storageKey) => localStorage.getItem(storageKey), VIEW_MODE_KEY);
+    expect(migratedMode).toBe("structured");
+  });
+
   test("class tree taxonomy applies primary then subclass narrowing and clear resets", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    const { primaryClass, subclass } = CLASS_TREE_DATASET.candidate;
     const initialVisibleCardCount = await page.locator(RESULTS_CARDS).count();
 
     await page.locator(CLASS_TREE_TRIGGER).click();
     const primaryOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth=\"0\"][data-action=\"node\"]`);
-    const primaryOption = primaryOptions.filter({ hasText: primaryClass }).first();
-    await expect(primaryOption).toBeVisible();
-    await primaryOption.evaluate((el) => el.click());
+    await expect(primaryOptions.first()).toBeVisible();
 
-    const primaryFilteredCount = await page.locator(RESULTS_CARDS).count();
+    const primaryOptionCount = await primaryOptions.count();
+    let primaryFilteredCount = 0;
+    let subclassCandidateIndex = -1;
+
+    for (let primaryIndex = 0; primaryIndex < primaryOptionCount; primaryIndex += 1) {
+      await primaryOptions.nth(primaryIndex).evaluate((el) => el.click());
+
+      primaryFilteredCount = await page.locator(RESULTS_CARDS).count();
+      const subclassOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth=\"1\"][data-action=\"node\"]`);
+      const subclassCount = await subclassOptions.count();
+      if (subclassCount <= 0) {
+        await primaryOptions.nth(primaryIndex).evaluate((el) => el.click());
+        continue;
+      }
+
+      subclassCandidateIndex = await subclassOptions.evaluateAll((nodes, parentCount) => {
+        for (let index = 0; index < nodes.length; index += 1) {
+          const countText = nodes[index].querySelector(".class-tree-option__count")?.textContent || "";
+          const count = Number.parseInt(countText, 10);
+          if (Number.isFinite(count) && count > 0 && count < parentCount) {
+            return index;
+          }
+        }
+        return -1;
+      }, primaryFilteredCount);
+
+      if (subclassCandidateIndex >= 0) {
+        break;
+      }
+
+      await primaryOptions.nth(primaryIndex).evaluate((el) => el.click());
+    }
+
+    expect(subclassCandidateIndex).toBeGreaterThanOrEqual(0);
     expect(primaryFilteredCount).toBeGreaterThan(0);
     expect(primaryFilteredCount).toBeLessThan(initialVisibleCardCount);
 
     const subclassOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth=\"1\"][data-action=\"node\"]`);
-    const subclassOption = subclassOptions.filter({ hasText: subclass }).first();
-    await subclassOption.evaluate((el) => el.click());
+    await expect.poll(async () => subclassOptions.count()).toBeGreaterThan(0);
+    await subclassOptions.nth(subclassCandidateIndex).evaluate((el) => el.click());
     const subclassFilteredCount = await page.locator(RESULTS_CARDS).count();
     expect(subclassFilteredCount).toBeGreaterThan(0);
     expect(subclassFilteredCount).toBeLessThan(primaryFilteredCount);
 
     await page.locator(CLEAR_FILTERS_BUTTON).click();
     await expect(page.locator(SEARCH_INPUT)).toHaveValue("");
-    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText("All classes");
+    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(/All (primary )?classes/i);
     await expect(page.locator(ROUTE_FILTER)).toHaveValue("");
-    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThan(subclassFilteredCount);
-    await expect.poll(async () => page.locator(RESULTS_CARDS).count()).toBeGreaterThanOrEqual(initialVisibleCardCount);
+    await expect(page.locator(RESULT_COUNT)).toContainText(`${EXPECTED_TOTAL_MEDICATIONS} medications`);
+  });
+
+  test("class tree switching between sibling subclass options is stable", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(CLASS_TREE_TRIGGER).click();
+    const primaryOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="0"][data-action="node"]`);
+    await expect(primaryOptions.first()).toBeVisible();
+
+    const primaryOptionCount = await primaryOptions.count();
+    let subclassLabels = [];
+
+    for (let primaryIndex = 0; primaryIndex < primaryOptionCount; primaryIndex += 1) {
+      await primaryOptions.nth(primaryIndex).evaluate((el) => el.click());
+      const subclassOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="1"][data-action="node"]`);
+      const labels = await subclassOptions.evaluateAll((nodes) => {
+        return nodes
+          .map((node) => {
+            const label = (node.querySelector(".class-tree-option__label")?.textContent || "").trim();
+            const countText = node.querySelector(".class-tree-option__count")?.textContent || "";
+            const count = Number.parseInt(countText, 10);
+            return { label, count };
+          })
+          .filter((entry) => entry.label && Number.isFinite(entry.count) && entry.count > 0)
+          .map((entry) => entry.label);
+      });
+
+      if (labels.length >= 2) {
+        subclassLabels = labels.slice(0, 2);
+        break;
+      }
+    }
+
+    expect(subclassLabels.length).toBe(2);
+    const [firstSubclassLabel, secondSubclassLabel] = subclassLabels;
+
+    const clickSubclassByLabel = async (label) => {
+      return page.locator(CLASS_TREE_COLUMNS).evaluate((root, wantedLabel) => {
+        const options = Array.from(
+          root.querySelectorAll('.class-tree-option[data-depth="1"][data-action="node"]')
+        );
+        const target = options.find((option) => {
+          const optionLabel = (option.querySelector(".class-tree-option__label")?.textContent || "").trim();
+          return optionLabel === wantedLabel;
+        });
+        if (!target) return false;
+        target.click();
+        return true;
+      }, label);
+    };
+
+    expect(await clickSubclassByLabel(firstSubclassLabel)).toBeTruthy();
+
+    const firstCount = await page.locator(RESULTS_CARDS).count();
+    expect(firstCount).toBeGreaterThan(0);
+    const expandedAfterFirst = await page.locator(CLASS_TREE_TRIGGER).getAttribute("aria-expanded");
+    if (expandedAfterFirst !== "true") {
+      await page.locator(CLASS_TREE_TRIGGER).click();
+    }
+
+    expect(await clickSubclassByLabel(secondSubclassLabel)).toBeTruthy();
+    const secondCount = await page.locator(RESULTS_CARDS).count();
+    expect(secondCount).toBeGreaterThan(0);
+    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(secondSubclassLabel);
+  });
+
+  test("drug class taxonomy condenses top-level class count and exposes subclass depth", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(CLASS_TREE_TRIGGER).click();
+    const primaryOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="0"][data-action="node"]`);
+    const primaryCount = await primaryOptions.count();
+    expect(primaryCount).toBeGreaterThan(0);
+    expect(primaryCount).toBeLessThanOrEqual(90);
+
   });
 
   test("class tree excludes DrugBank status-only classes", async ({ page }) => {
@@ -386,6 +574,32 @@ test.describe("Pharm reference smoke", () => {
       .getByRole("treeitem")
       .filter({ hasText: /DrugBank (Experimental|Investigational|Illicit|Withdrawn|Nutraceutical)/i });
     await expect(statusOnlyOption).toHaveCount(0);
+  });
+
+  test("class tree scrolling collapses stale branch panels without resetting primary scroll", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(CLASS_TREE_TRIGGER).click();
+    const primaryColumn = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-column[data-depth="0"]`);
+    await expect(primaryColumn).toBeVisible();
+
+    const branchableOption = page
+      .locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="0"][data-action="node"][data-has-children="true"]`)
+      .first();
+    await expect(branchableOption).toBeVisible();
+    await branchableOption.hover();
+    await expect(page.locator(`${CLASS_TREE_COLUMNS} .class-tree-column[data-depth="1"]`)).toHaveCount(1);
+
+    const beforeScrollTop = await primaryColumn.evaluate((el) => el.scrollTop);
+    await primaryColumn.evaluate((el) => {
+      el.scrollTop = Math.min(el.scrollHeight, el.scrollTop + 320);
+    });
+
+    await expect
+      .poll(async () => primaryColumn.evaluate((el) => el.scrollTop))
+      .toBeGreaterThan(beforeScrollTop);
+    await expect(page.locator(`${CLASS_TREE_COLUMNS} .class-tree-column[data-depth="1"]`)).toHaveCount(0);
   });
 
   test("keyboard navigation supports arrow movement and enter selection", async ({ page }) => {
@@ -428,8 +642,7 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page);
 
     await page.locator(SEARCH_INPUT).fill("albuterol");
-    await page.getByRole("button", { name: "Short-acting beta-2 agonist", exact: true }).click();
-    const albuterolCard = page.getByRole("button", { name: /^Albuterol details$/ });
+    const albuterolCard = page.getByRole("button", { name: /^Albuterol details$/ }).first();
     await expect(albuterolCard).toBeVisible();
     await albuterolCard.click();
 
@@ -446,8 +659,7 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page);
 
     await page.locator(SEARCH_INPUT).fill("albuterol");
-    await page.getByRole("button", { name: "Short-acting beta-2 agonist", exact: true }).click();
-    const albuterolCard = page.getByRole("button", { name: /^Albuterol details$/ });
+    const albuterolCard = page.getByRole("button", { name: /^Albuterol details$/ }).first();
     await expect(albuterolCard).toBeVisible();
 
     await albuterolCard.click();
@@ -466,8 +678,10 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page);
 
     await page.locator(SEARCH_INPUT).fill("albuterol");
-    await expect(page.locator(RESULT_COUNT)).toContainText("2 medications");
-    await page.locator(RESULTS_CARDS).first().click();
+    await expect(page.locator(RESULT_COUNT)).toHaveText("2 medications");
+    const albuterolCard = page.getByRole("button", { name: /^Albuterol details$/ }).first();
+    await expect(albuterolCard).toBeVisible();
+    await albuterolCard.click();
 
     await expect(page.locator(RXNORM_EMPTY)).toBeVisible();
     await expect(page.locator(RXNORM_EMPTY)).toContainText("No RxNorm match found.");
@@ -479,8 +693,10 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page);
 
     await page.locator(SEARCH_INPUT).fill("albuterol");
-    await expect(page.locator(RESULT_COUNT)).toContainText("2 medications");
-    await page.locator(RESULTS_CARDS).first().click();
+    await expect(page.locator(RESULT_COUNT)).toHaveText("2 medications");
+    const albuterolCard = page.getByRole("button", { name: /^Albuterol details$/ }).first();
+    await expect(albuterolCard).toBeVisible();
+    await albuterolCard.click();
 
     await expect(page.locator(RXNORM_ERROR)).toBeVisible();
     await expect(page.locator(RXNORM_ERROR)).toContainText("RxNorm unavailable right now.");

@@ -1,0 +1,58 @@
+{
+  "antifungals": {
+    "polyenes": ["amphotericin b", "nystatin", "natamycin"],
+
+    "azoles": {
+      "imidazoles": ["clotrimazole", "econazole", "ketoconazole", "miconazole", "tioconazole"],
+      "triazoles": ["fluconazole", "isavuconazonium", "itraconazole", "posaconazole", "terconazole", "voriconazole"]
+    },
+
+    "echinocandins": ["anidulafungin", "caspofungin", "micafungin"],
+
+    "allylamines": ["naftifine", "terbinafine"],
+
+    "antimetabolites": ["flucytosine"],
+
+    "mitosis_inhibitors": ["griseofulvin"],
+
+    "other_topical_antifungals": ["ciclopirox", "tavaborole", "tolnaftate"]
+  },
+  "antiparasitics": {
+    "antimalarials": [
+      "chloroquine",
+      "hydroxychloroquine",
+      "mefloquine",
+      "primaquine",
+      "quinine",
+      "tafenoquine",
+      "artemether-lumefantrine",
+      "artesunate",
+      "atovaquone-proguanil"
+    ],
+
+    "antihelminthics": {
+      "benzimidazoles": ["albendazole", "mebendazole", "thiabendazole"],
+      "avermectins": ["ivermectin"],
+      "nicotinic_agonists": ["pyrantel pamoate"],
+      "other_antihelminthics": ["diethylcarbamazine", "praziquantel", "triclabendazole"]
+    },
+
+    "antiprotozoals": [
+      "metronidazole",
+      "tinidazole",
+      "nitazoxanide",
+      "paromomycin",
+      "pentamidine",
+      "suramin"
+    ],
+
+    "ectoparasiticides": [
+      "benzyl alcohol",
+      "ivermectin",
+      "lindane",
+      "malathion",
+      "permethrin",
+      "spinosad"
+    ]
+  }
+}

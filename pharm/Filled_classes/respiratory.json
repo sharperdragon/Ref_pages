@@ -1,0 +1,73 @@
+{
+  "respiratory": {
+    "bronchodilators": {
+      "beta2_agonists": {
+        "short_acting": [
+          "albuterol",
+          "levalbuterol",
+          "terbutaline"
+        ],
+        "long_acting": [
+          "arformoterol",
+          "formoterol",
+          "indacaterol",
+          "olodaterol",
+          "salmeterol",
+          "vilanterol"
+        ]
+      },
+      "anticholinergics": {
+        "short_acting_muscarinic_antagonists": [
+          "ipratropium"
+        ],
+        "long_acting_muscarinic_antagonists": [
+          "aclidinium",
+          "glycopyrrolate",
+          "revefenacin",
+          "tiotropium",
+          "umeclidinium"
+        ]
+      },
+      "methylxanthines": [
+        "aminophylline",
+        "theophylline"
+      ]
+    },
+
+    "anti_inflammatory_agents": {
+      "inhaled_corticosteroids": [
+        "beclomethasone",
+        "budesonide",
+        "ciclesonide",
+        "fluticasone",
+        "mometasone"
+      ],
+      "leukotriene_modifiers": {
+        "leukotriene_receptor_antagonists": [
+          "montelukast",
+          "zafirlukast"
+        ],
+        "5_lipoxygenase_inhibitors": [
+          "zileuton"
+        ]
+      },
+      "mast_cell_stabilizers": [
+        "cromolyn"
+      ]
+    },
+
+    "biologics_for_asthma": {
+      "anti_ige_antibodies": [
+        "omalizumab"
+      ],
+      "anti_il5_agents": [
+        "benralizumab",
+        "mepolizumab",
+        "reslizumab"
+      ],
+      "anti_il4_il13_agents": [
+        "dupilumab"
+      ]
+    }
+  }
+}

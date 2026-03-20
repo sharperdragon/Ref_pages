@@ -1,9 +1,0 @@
-{
-  "primaryClass": "Protein Synthesis Inhibitors",
-  "slug": "protein-synthesis-inhibitors",
-  "stem": "protein",
-  "subclasses": [
-    "Protein Kinase Inhibitors",
-    "Protein Synthesis Inhibitors"
-  ]
-}

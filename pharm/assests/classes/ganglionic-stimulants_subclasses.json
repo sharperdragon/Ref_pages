@@ -1,9 +1,0 @@
-{
-  "primaryClass": "Ganglionic Stimulants",
-  "slug": "ganglionic-stimulants",
-  "stem": "ganglionic",
-  "subclasses": [
-    "Ganglionic Blockers",
-    "Ganglionic Stimulants"
-  ]
-}

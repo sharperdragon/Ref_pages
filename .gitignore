@@ -19,3 +19,7 @@ folder/
 node_modules/
 playwright-report/
 test-results/
+
+# Local sensitive data and quarantine workspace
+assets/KEYS/
+pharm/possible_delete/
