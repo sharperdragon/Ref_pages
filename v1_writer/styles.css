@@ -138,6 +138,12 @@
   padding: 5px;
 }
 
+.section-grid.MSE {
+  column-count: 2;
+  column-gap: 4px;
+  padding: 5px;
+}
+
 .section-grid .panel {
   display: inline-block;
   width: 100%;
@@ -169,6 +175,12 @@
 @media (max-width: 670px) {
   .section-grid.ROS {
     column-count: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-grid.MSE {
+    column-count: 1;
   }
 }
 
