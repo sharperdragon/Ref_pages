@@ -38,6 +38,16 @@
 
   --detail-width: 400px;
   --card-min-width: 248px;
+
+  --tree-branch-line: color-mix(in oklab, var(--brand), var(--border) 62%);
+  --tree-branch-line-strong: color-mix(in oklab, var(--brand), var(--border) 38%);
+  --tree-column-root-surface: color-mix(in oklab, var(--surface), var(--surface-muted) 10%);
+  --tree-column-active-surface: color-mix(in oklab, var(--surface), var(--brand-soft) 8%);
+  --tree-column-sibling-surface: color-mix(in oklab, var(--surface), var(--surface-muted) 14%);
+  --tree-backdrop-fill: color-mix(in oklab, var(--bg-page), #0b1f35 14%);
+  --tree-backdrop-opacity: 0.26;
+  --tree-branch-gap: 14px;
+  --tree-branch-rail-width: 2px;
 }
 
 [data-theme="dark"] {
@@ -59,6 +69,8 @@
   --shadow-sm: 0 8px 18px rgba(1, 8, 18, 0.42);
   --shadow-md: 0 12px 26px rgba(1, 8, 18, 0.5);
   --shadow-lg: 0 22px 44px rgba(0, 0, 0, 0.55);
+
+  --tree-backdrop-opacity: 0.34;
 }
 
 * {
@@ -283,6 +295,19 @@ body {
   transform: rotate(90deg);
 }
 
+.class-tree-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: var(--tree-backdrop-fill);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.class-tree-open .class-tree-backdrop {
+  opacity: var(--tree-backdrop-opacity);
+}
+
 .class-tree-menu {
   position: absolute;
   top: calc(100% + 6px);
@@ -322,7 +347,7 @@ body {
   display: grid;
   gap: 8px;
   align-content: start;
-  background: color-mix(in oklab, var(--surface), var(--surface-muted) 10%);
+  background: var(--tree-column-root-surface);
   position: relative;
   top: 0;
   overflow-y: auto;
@@ -334,19 +359,29 @@ body {
 .class-tree-column[data-depth="0"] {
   z-index: 2;
   border-color: color-mix(in oklab, var(--brand), var(--border) 74%);
-  background: color-mix(in oklab, var(--surface), var(--surface-muted) 10%);
+  background: var(--tree-column-root-surface);
+}
+
+.class-tree-column[data-column-state="active-path"] {
+  border-color: color-mix(in oklab, var(--brand), var(--border) 58%);
+  background: var(--tree-column-active-surface);
+}
+
+.class-tree-column[data-column-state="sibling"] {
+  border-color: color-mix(in oklab, var(--brand), var(--border) 72%);
+  background: var(--tree-column-sibling-surface);
 }
 
 .class-tree-column[data-depth]:not([data-depth="0"]) {
   position: absolute;
-  left: var(--tree-column-left, calc(100% + 12px));
+  left: var(--tree-column-left, calc(100% + var(--tree-branch-gap)));
   top: var(--tree-column-offset, 0px);
   width: clamp(290px, 30vw, 420px);
   max-width: min(420px, calc(100vw - 28px));
   max-height: min(52vh, 390px);
   margin-left: 0;
   border-color: color-mix(in oklab, var(--brand), var(--border) 68%);
-  background: color-mix(in oklab, var(--surface), transparent 1%);
+  background: var(--tree-column-active-surface);
   box-shadow: var(--shadow-lg);
   z-index: 6;
   animation: class-tree-branch-in var(--motion-fast) ease;
@@ -355,12 +390,23 @@ body {
 .class-tree-column[data-depth]:not([data-depth="0"])::before {
   content: "";
   position: absolute;
-  left: -10px;
-  top: 24px;
-  width: 10px;
-  height: 2px;
-  border-radius: 99px;
-  background: color-mix(in oklab, var(--brand), var(--border) 64%);
+  left: calc(-1 * var(--tree-branch-gap));
+  top: var(--tree-connector-top, 24px);
+  width: calc(var(--tree-branch-gap) - 2px);
+  border-top: var(--tree-branch-rail-width) solid var(--tree-branch-line-strong);
+  transform: translateY(-50%);
+}
+
+.class-tree-column[data-depth]:not([data-depth="0"])::after {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--tree-branch-gap));
+  top: 9px;
+  bottom: 9px;
+  width: var(--tree-branch-rail-width);
+  border-radius: 999px;
+  background: var(--tree-branch-line);
+  opacity: 0.82;
 }
 
 @keyframes class-tree-branch-in {
@@ -402,9 +448,9 @@ body {
   top: 4px;
   bottom: 4px;
   left: 2px;
-  width: 1px;
-  background: color-mix(in oklab, var(--brand), var(--border) 72%);
-  opacity: 0.9;
+  width: var(--tree-branch-rail-width);
+  background: var(--tree-branch-line);
+  opacity: 0.85;
 }
 
 .class-tree-option {
@@ -414,12 +460,13 @@ body {
   background: transparent;
   color: var(--text);
   text-align: left;
-  padding: 7px 9px;
+  padding: 8px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 9px;
   cursor: pointer;
+  position: relative;
   transition:
     border-color var(--motion-fast) ease,
     background-color var(--motion-fast) ease,
@@ -442,18 +489,14 @@ body {
   border-color: transparent;
 }
 
-.class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option {
-  position: relative;
-}
-
 .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option::before {
   content: "";
   position: absolute;
   left: -11px;
   top: 50%;
   width: 9px;
-  height: 1px;
-  background: color-mix(in oklab, var(--brand), var(--border) 68%);
+  height: var(--tree-branch-rail-width);
+  background: var(--tree-branch-line);
   transform: translateY(-50%);
 }
 
@@ -466,6 +509,23 @@ body {
   background: color-mix(in oklab, var(--brand-soft), var(--surface) 66%);
   border-color: color-mix(in oklab, var(--brand), var(--border) 44%);
   color: var(--brand-strong);
+}
+
+.class-tree-option[data-branch-parent="true"]:not(.is-active) {
+  background: color-mix(in oklab, var(--brand-soft), var(--surface) 76%);
+  border-color: color-mix(in oklab, var(--brand), var(--border) 66%);
+  padding-left: 12px;
+}
+
+.class-tree-option[data-branch-parent="true"]::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--brand), var(--border) 32%);
 }
 
 .class-tree-option__label {
@@ -482,19 +542,23 @@ body {
 }
 
 .class-tree-option__count {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
-  color: var(--text-muted);
-  border: 1px solid color-mix(in oklab, var(--border), transparent 10%);
+  color: color-mix(in oklab, var(--text), var(--text-muted) 42%);
+  border: 1px solid color-mix(in oklab, var(--brand), var(--border) 72%);
   border-radius: var(--radius-pill);
   padding: 1px 6px;
-  background: color-mix(in oklab, var(--surface-muted), transparent 4%);
+  background: color-mix(in oklab, var(--surface-muted), var(--surface) 35%);
 }
 
 .class-tree-option.is-active .class-tree-option__count {
   color: var(--brand-strong);
   border-color: color-mix(in oklab, var(--brand), var(--border) 46%);
   background: color-mix(in oklab, var(--brand-soft), var(--surface) 72%);
+}
+
+.class-tree-option[data-branch-parent="true"] .class-tree-option__count {
+  color: var(--brand-strong);
 }
 
 .class-tree-option__caret {
@@ -1160,6 +1224,10 @@ body.detail-open {
     max-width: 100%;
   }
 
+  .class-tree-backdrop {
+    display: none !important;
+  }
+
   .class-tree-columns {
     display: flex;
     align-items: flex-start;
@@ -1179,6 +1247,14 @@ body.detail-open {
     max-width: 86vw;
     max-height: min(52vh, 420px);
     animation: none;
+  }
+
+  .class-tree-column[data-depth]:not([data-depth="0"])::before,
+  .class-tree-column[data-depth]:not([data-depth="0"])::after,
+  .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-list::before,
+  .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option::before,
+  .class-tree-option[data-branch-parent="true"]::after {
+    display: none;
   }
 
   .control--result-meta {

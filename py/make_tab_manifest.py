@@ -10,19 +10,22 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Tuple
 
 # =======================
-# ! Configuration (edit)
+# USER SETTINGS (edit)
 # =======================
-# $ Project root containing template_*.json files
-PROJECT_DIR = Path("/Users/claytongoddard/Git dub/Clerkship_tools_v2")
+# Repository root.
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
-# $ Where to write the manifest (your preference: Desktop by default)
-OUTPUT_PATH = Path("/Users/claytongoddard/Desktop/tabs.json")
+# Directory containing template_*.json files.
+TEMPLATE_DIR = REPO_ROOT / "v1_writer" / "templates"
 
-# $ Preferred number of columns for your UI
+# Where to write the manifest.
+OUTPUT_PATH = REPO_ROOT / "v1_writer" / "tabs.json"
+
+# Preferred number of columns for your UI.
 DEFAULT_COLUMNS = 3
 
-# $ Optional explicit map from MODE key -> html partial path
-# ? Add/adjust as you add new modes/partials
+# Optional explicit map from MODE key -> html partial path.
+# Add or adjust this map as you add new modes or partials.
 HTML_PATH_MAP = {
     "SUBJECTIVE": "note_writer/subjective.html",
     "ROS":        "note_writer/ROS.html",
@@ -31,7 +34,7 @@ HTML_PATH_MAP = {
     # "PHYSICAL": "note_writer/physical.html",  # alias example
 }
 
-# $ Manifest version so your runtime can evolve safely
+# Manifest version so your runtime can evolve safely.
 MANIFEST_VERSION = 1
 
 # =======================
@@ -142,14 +145,18 @@ def infer_mode_from_filename(path: Path) -> str:
 # =======================
 
 def main():
-    # ? Collect templates
+    # Collect templates.
+    if not TEMPLATE_DIR.exists():
+        print(f"ERROR: Template directory not found: {TEMPLATE_DIR}")
+        return
+
     templates: List[Path] = sorted(
-        p for p in PROJECT_DIR.iterdir()
-        if p.is_file() and p.name.startswith("template_") and p.suffix == ".json"
+        p for p in TEMPLATE_DIR.glob("template_*.json")
+        if p.is_file()
     )
 
     if not templates:
-        print("⚠️  No template_*.json files found.")
+        print(f"WARNING: No template_*.json files found under {TEMPLATE_DIR}")
         return
 
     tabs: List[Dict[str, Any]] = []
@@ -162,7 +169,7 @@ def main():
         try:
             data = read_template(tpath)
         except Exception as e:
-            print(f"  ⛔ JSON load failed for {tpath.name}: {e}")
+            print(f"  ERROR: JSON load failed for {tpath.name}: {e}")
             continue
 
         modes_raw = safe_get(data, "modes", [])
@@ -171,7 +178,7 @@ def main():
 
         if not modes:
             inferred = infer_mode_from_filename(tpath)
-            print(f"  ⚠️  No valid 'modes' found; using filename-inferred mode: {inferred}")
+            print(f"  WARNING: No valid 'modes' found; using filename-inferred mode: {inferred}")
             modes = [inferred]
 
         # Use the first mode as the tab key
@@ -207,7 +214,7 @@ def main():
         })
 
     if not tabs:
-        print("⚠️  No valid templates after parsing.")
+        print("WARNING: No valid templates after parsing.")
         return
 
     # Ensure a stable order: SUBJECTIVE, ROS, PE, then alpha for everything else
@@ -227,7 +234,8 @@ def main():
         "generatedAt": generated_at,
         "generator": {
             "name": "make_tab_manifest.py",
-            "projectRoot": str(PROJECT_DIR),
+            "projectRoot": str(REPO_ROOT),
+            "templateDirectory": str(TEMPLATE_DIR),
             "fileCount": len(templates),
         },
         "tabs": tabs,
@@ -245,7 +253,7 @@ def main():
     with OUTPUT_PATH.open("w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Wrote {OUTPUT_PATH} with {len(tabs)} tabs")
+    print(f"Wrote {OUTPUT_PATH} with {len(tabs)} tabs")
 
 if __name__ == "__main__":
     main()

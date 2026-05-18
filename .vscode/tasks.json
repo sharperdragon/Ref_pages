@@ -29,18 +29,9 @@
       "problemMatcher": []
     },
     {
-      "label": "Pharm: Import DrugBank TSV",
+      "label": "Pharm: Build RxClass Catalog",
       "type": "shell",
-      "command": "python3 ${workspaceFolder}/pharm/scripts/import_drugbank_tsv.py",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "Pharm: Build Class Subclass Taxonomy",
-      "type": "shell",
-      "command": "python3 ${workspaceFolder}/pharm/scripts/build_class_subclasses.py",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/build_rxclass_medication_catalog.py",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -65,30 +56,13 @@
       "problemMatcher": []
     },
     {
-      "label": "Pharm: Build ATC Reference Index",
-      "type": "shell",
-      "command": "python3 ${workspaceFolder}/pharm/scripts/build_atc_reference_index.py",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "Pharm: Build Ingredient Class Dataset (UMLS-First)",
-      "type": "shell",
-      "command": "python3 ${workspaceFolder}/pharm/scripts/build_ingredient_class_dataset.py",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "API: Health Check (UMLS/USPSTF/NCBI)",
-      "type": "shell",
-      "command": "python3 ${workspaceFolder}/py/test_api_keys.py",
-      "options": {
-        "cwd": "${workspaceFolder}"
-      },
+      "label": "Pharm: Full Pharm Rebuild",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Pharm: Build RxClass Catalog",
+        "Pharm: Compile Main Class Hierarchy",
+        "Pharm: Build Main Class Mapping"
+      ],
       "problemMatcher": []
     },
     {
@@ -97,6 +71,37 @@
       "command": "npx playwright test tests/smoke/pharm.spec.js",
       "options": {
         "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Writer: Build Tabs Manifest",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/py/make_tab_manifest.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Differentials: Fill Clinical Todo From PDF",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/differentials/fill_clinical_todo_from_pdf.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Daily Run: Pharm Rebuild + Smoke",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Pharm: Full Pharm Rebuild",
+        "Pharm: Smoke Tests"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       },
       "problemMatcher": []
     }

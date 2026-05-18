@@ -3,7 +3,7 @@
   // Configurable values (change here)
   // ================================================================
   const CONFIG = {
-    dataPath: "./assests/pharm_data_drugbank_enriched.json",
+    dataPath: "./assests/pharm_data_rxclass_enriched.json",
     classTaxonomyPath: "./assests/classes/class_subclasses_index.json",
     mainHierarchyIndexPath: "./assests/classes/main_hierarchy_index.json",
     mainHierarchyMappingPath: "./assests/classes/main_class_mapping.json",
@@ -19,6 +19,10 @@
     classTreeHoverResumeDelayMs: 180,
     classTreeColumnAnchorOffsetPx: 6,
     classTreeColumnMinVisibleHeightPx: 180,
+    classTreeColumnGapPx: 14,
+    classTreeViewportPaddingPx: 12,
+    classTreeColumnMinTopPx: 12,
+    classTreeColumnMinBottomPx: 12,
     classTreeBranchStartDepth: 1,
     classTreeShowPrimaryCarets: false,
     mobileBreakpointPx: 1080,
@@ -36,7 +40,7 @@
     themeChangedEvent: "core-theme-changed",
     themeToggleLightLabel: "Light mode",
     themeToggleDarkLabel: "Dark mode",
-    cardSnippetExcludedIndicationPrefixes: ["DrugBank categories:"],
+    cardSnippetExcludedIndicationPrefixes: [],
     relevanceWeights: {
       exactName: 100,
       namePrefix: 80,
@@ -74,6 +78,7 @@
     classTreeTriggerText: "#classTreeTriggerText",
     classTreeMenu: "#classTreeMenu",
     classTreeColumns: "#classTreeColumns",
+    classTreeBackdrop: "#classTreeBackdrop",
     routeFilter: "#routeFilter",
     clearFiltersButton: "#btnClearFilters",
     resultCount: "#resultCount",
@@ -510,6 +515,7 @@
 
   function init() {
     cacheElements();
+    setClassTreeMenuVisualState(false);
     syncThemeFromStorage();
     syncViewModeFromStorage();
     syncClassFilterTypeFromStorage();
@@ -523,6 +529,15 @@
     Object.entries(SELECTORS).forEach(([key, selector]) => {
       EL[key] = document.querySelector(selector);
     });
+  }
+
+  function setClassTreeMenuVisualState(isOpen) {
+    const open = Boolean(isOpen);
+    document.body.classList.toggle("class-tree-open", open);
+    if (EL.classTreeBackdrop) {
+      EL.classTreeBackdrop.hidden = !open;
+      EL.classTreeBackdrop.setAttribute("aria-hidden", String(!open));
+    }
   }
 
   function bindEvents() {
@@ -626,6 +641,7 @@
       EL.classTreeColumns.addEventListener("click", (event) => {
         const option = event.target.closest(".class-tree-option");
         if (!option) return;
+        event.stopPropagation();
         cancelClassTreeClose();
         STATE.classTreeHoverGuardUntilMs = Date.now() + CONFIG.classTreeHoverResumeDelayMs;
 
@@ -1026,9 +1042,10 @@
       drugClass,
       moa,
       indications,
-      categories: toTextArray(record?.drugbank?.categories),
-      atcCodes: toTextArray(record?.drugbank?.atc_codes),
-      descriptionFirstSentence: cleanText(record?.drugbank?.description_first_sentence),
+      categories: toTextArray(record?.classCandidates),
+      classTags: toTextArray(record?.classTags),
+      atcCodes: toTextArray(record?.atcCodes),
+      descriptionFirstSentence: cleanText(record?.descriptionFirstSentence),
       displayClassLabel: cleanText(activeClassModel.displayClassLabel),
       fallbackLabel: cleanText(activeClassModel.displayClassLabel) || drugClass,
       mainHierarchyIndex,
@@ -1304,11 +1321,9 @@
     const classValue = sanitizeClassLabel(drugClass);
     if (classValue) raw.push(classValue);
 
-    const drugbankMeta = record && typeof record === "object"
-      ? record.drugbank
-      : null;
-    if (drugbankMeta && typeof drugbankMeta === "object") {
-      raw.push(...toTextArray(drugbankMeta.categories).map(sanitizeClassLabel));
+    if (record && typeof record === "object") {
+      raw.push(...toTextArray(record.classCandidates).map(sanitizeClassLabel));
+      raw.push(...toTextArray(record.classTags).map(sanitizeClassLabel));
     }
 
     const deduped = uniq(raw.map((item) => sanitizeClassLabel(item)).filter(Boolean));
@@ -1803,15 +1818,10 @@
     const overrideLabel = sanitizeClassLabel(SPECIFIC_CLASS_OVERRIDES_BY_DRUG[nameKey]);
     if (overrideLabel) return overrideLabel;
 
-    const drugbankMeta = record?.drugbank && typeof record.drugbank === "object"
-      ? record.drugbank
-      : null;
-
     const mechanismContext = [
       cleanText(normalizedContext?.moa),
       ...toTextArray(normalizedContext?.indications),
       cleanText(normalizedContext?.descriptionFirstSentence),
-      cleanText(drugbankMeta?.description_first_sentence),
     ]
       .filter(Boolean)
       .join(" ");
@@ -1819,7 +1829,6 @@
     const atcCodes = uniq(
       [
         ...toTextArray(normalizedContext?.atcCodes),
-        ...toTextArray(drugbankMeta?.atc_codes),
       ]
         .map(normalizeAtcCode)
         .filter(Boolean)
@@ -1831,7 +1840,9 @@
       atc4: collectAtcClassCandidates(atcCodes, ATC_LEVEL4_CLASS_MAP, 5),
       category: collectCategoryClassCandidates([
         ...toTextArray(normalizedContext?.categories),
-        ...toTextArray(drugbankMeta?.categories),
+        ...toTextArray(normalizedContext?.classTags),
+        ...toTextArray(record?.classCandidates),
+        ...toTextArray(record?.classTags),
         cleanText(normalizedContext?.drugClass),
       ], normalizedContext?.mainHierarchyIndex),
       legacy: [fallbackLabel],
@@ -2967,6 +2978,7 @@
     STATE.classTreeMenuOpen = true;
     STATE.classTreeOpenedByHover = source === "hover";
     EL.classTreeMenu.hidden = false;
+    setClassTreeMenuVisualState(true);
     EL.classTreeTrigger.setAttribute("aria-expanded", "true");
     if (EL.classTreeControl) {
       EL.classTreeControl.classList.add("is-open");
@@ -2980,6 +2992,7 @@
     STATE.classTreeMenuOpen = false;
     STATE.classTreeOpenedByHover = false;
     EL.classTreeMenu.hidden = true;
+    setClassTreeMenuVisualState(false);
     EL.classTreeTrigger.setAttribute("aria-expanded", "false");
     if (EL.classTreeControl) {
       EL.classTreeControl.classList.remove("is-open");
@@ -3036,7 +3049,9 @@
       columnEl.className = "class-tree-column";
       columnEl.dataset.depth = String(column.depth);
       columnEl.dataset.parentId = cleanText(column.parent.id);
+      columnEl.dataset.columnState = getClassTreeColumnState(column, validPath);
       columnEl.style.setProperty("--tree-column-offset", "0px");
+      columnEl.style.setProperty("--tree-connector-top", "24px");
 
       const title = document.createElement("p");
       title.className = "class-tree-column__title";
@@ -3052,6 +3067,8 @@
         allOption.className = `class-tree-option${STATE.classFilterNodeId ? "" : " is-active"}`;
         allOption.dataset.action = "all";
         allOption.dataset.depth = "0";
+        allOption.dataset.hasChildren = "false";
+        allOption.dataset.branchParent = "false";
         allOption.setAttribute("role", "treeitem");
         allOption.setAttribute("aria-selected", String(!STATE.classFilterNodeId));
 
@@ -3078,10 +3095,13 @@
         option.setAttribute("aria-selected", String(node.id === STATE.classFilterNodeId));
 
         const isActive = node.id === STATE.classFilterNodeId;
+        const hasChildren = Array.isArray(node.children) && node.children.length > 0;
         const supportsBranchStyling = column.depth >= CONFIG.classTreeBranchStartDepth;
-        const isBranch = supportsBranchStyling && activePathIds.has(node.id);
+        const isBranchParent = hasChildren && activePathIds.has(node.id);
+        const isBranch = supportsBranchStyling && isBranchParent;
         option.className = `class-tree-option${isActive ? " is-active" : ""}${isBranch && !isActive ? " is-branch" : ""}${column.depth === 0 ? " is-primary" : " is-subclass"}`;
-        option.dataset.hasChildren = (node.children && node.children.length > 0) ? "true" : "false";
+        option.dataset.hasChildren = hasChildren ? "true" : "false";
+        option.dataset.branchParent = isBranchParent ? "true" : "false";
 
         const label = document.createElement("span");
         label.className = "class-tree-option__label";
@@ -3097,8 +3117,7 @@
         meta.appendChild(count);
 
         const shouldShowCaret = (
-          node.children
-          && node.children.length > 0
+          hasChildren
           && (
             CONFIG.classTreeShowPrimaryCarets
             || column.depth >= CONFIG.classTreeBranchStartDepth
@@ -3143,6 +3162,7 @@
     columnElements.forEach((columnEl) => {
       columnEl.style.setProperty("--tree-column-offset", "0px");
       columnEl.style.setProperty("--tree-column-left", "0px");
+      columnEl.style.setProperty("--tree-connector-top", "24px");
     });
 
     if (!Array.isArray(validPath) || validPath.length === 0) return;
@@ -3157,7 +3177,10 @@
     const maxOffset = canAnchorToRow
       ? Math.max(0, containerRect.height - CONFIG.classTreeColumnMinVisibleHeightPx)
       : 0;
-    const branchGapPx = 12;
+    const branchGapPx = Math.max(8, Number(CONFIG.classTreeColumnGapPx) || 12);
+    const viewportPaddingPx = Math.max(0, Number(CONFIG.classTreeViewportPaddingPx) || 12);
+    const minTopViewport = Math.max(0, Number(CONFIG.classTreeColumnMinTopPx) || viewportPaddingPx);
+    const minBottomViewport = Math.max(0, Number(CONFIG.classTreeColumnMinBottomPx) || viewportPaddingPx);
 
     for (let depth = 1; depth < columnElements.length; depth += 1) {
       const parentNodeId = cleanText(validPath[depth - 1]);
@@ -3167,7 +3190,6 @@
       const currentColumn = columnElements[depth];
       const desiredLeft = parentColumn.offsetLeft + parentColumn.offsetWidth + branchGapPx;
       const currentWidth = currentColumn.offsetWidth || 320;
-      const viewportPaddingPx = 12;
       const maxLeft = Math.max(
         0,
         window.innerWidth - currentWidth - containerRect.left - viewportPaddingPx
@@ -3186,19 +3208,49 @@
       if (!parentOption) continue;
 
       const parentRect = parentOption.getBoundingClientRect();
-      const rawOffset = (
+      const parentCenterOffset = (
         parentRect.top
         - containerRect.top
         + parentColumn.scrollTop
-        - CONFIG.classTreeColumnAnchorOffsetPx
+        + (parentRect.height / 2)
       );
-      const clampedOffset = Math.max(0, Math.min(maxOffset, rawOffset));
+      const rawOffset = parentCenterOffset - CONFIG.classTreeColumnAnchorOffsetPx;
+      const currentHeight = currentColumn.offsetHeight || CONFIG.classTreeColumnMinVisibleHeightPx;
+      const desiredTopViewport = containerRect.top + rawOffset;
+      const maxTopViewport = Math.max(
+        minTopViewport,
+        window.innerHeight - currentHeight - minBottomViewport
+      );
+      const clampedTopViewport = Math.min(maxTopViewport, Math.max(minTopViewport, desiredTopViewport));
+      const clampedOffset = Math.max(0, Math.min(maxOffset, clampedTopViewport - containerRect.top));
 
-      columnElements[depth].style.setProperty(
+      currentColumn.style.setProperty(
         "--tree-column-offset",
         `${Math.round(clampedOffset)}px`
       );
+      const connectorTop = Math.max(
+        14,
+        Math.min(currentHeight - 14, parentCenterOffset - clampedOffset)
+      );
+      currentColumn.style.setProperty(
+        "--tree-connector-top",
+        `${Math.round(connectorTop)}px`
+      );
     }
+  }
+
+  function getClassTreeColumnState(column, validPath) {
+    const depth = Number(column?.depth);
+    const safeDepth = Number.isFinite(depth) && depth >= 0 ? depth : 0;
+    if (safeDepth === 0) return "root";
+
+    const parentId = cleanText(column?.parent?.id);
+    const activeParentId = cleanText(validPath?.[safeDepth - 1]);
+    if (parentId && activeParentId && parentId === activeParentId) {
+      return "active-path";
+    }
+
+    return "sibling";
   }
 
   function getClassTreeColumnKey(depth, parentId) {

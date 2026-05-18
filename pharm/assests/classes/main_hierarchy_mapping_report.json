@@ -1,0 +1,141 @@
+{
+  "generatedAt": "2026-03-21T15:58:04Z",
+  "counts": {
+    "medicationsTotal": 2228,
+    "medicationsMapped": 1025,
+    "medicationsUnmapped": 1203,
+    "unmappedMedicationRatio": 0.5399
+  },
+  "warnings": {
+    "unmappedMedicationRatioExceeded": true,
+    "topUnmappedLabelFrequencyExceeded": true
+  },
+  "topUnmappedSourceLabels": [
+    {
+      "label": "Non-Standardized Pollen Allergenic Extract",
+      "count": 233
+    },
+    {
+      "label": "Non-Standardized Food Allergenic Extract",
+      "count": 167
+    },
+    {
+      "label": "Epidermal and Animal Specific Allergenic Extract",
+      "count": 141
+    },
+    {
+      "label": "Non-Standardized Fungal Allergenic Extract",
+      "count": 98
+    },
+    {
+      "label": "Physical or Chemical Agent",
+      "count": 58
+    },
+    {
+      "label": "Standardized Chemical Allergen",
+      "count": 48
+    },
+    {
+      "label": "Inactivated Pneumococcal Vaccine",
+      "count": 36
+    },
+    {
+      "label": "Antibody or Antibody Fragment",
+      "count": 30
+    },
+    {
+      "label": "Nucleic Acid Related Agent",
+      "count": 27
+    },
+    {
+      "label": "Nonsteroidal Anti-inflammatory Drug",
+      "count": 19
+    },
+    {
+      "label": "Chemical Structure",
+      "count": 16
+    },
+    {
+      "label": "Benzodiazepine",
+      "count": 15
+    },
+    {
+      "label": "Selective serotonin reuptake inhibitor",
+      "count": 13
+    },
+    {
+      "label": "Receptor Interaction",
+      "count": 13
+    },
+    {
+      "label": "Enzyme Interaction",
+      "count": 11
+    },
+    {
+      "label": "Inactivated Meningococcal Vaccine",
+      "count": 9
+    },
+    {
+      "label": "Illicit psychoactive substance",
+      "count": 8
+    },
+    {
+      "label": "Standardized Pollen Allergenic Extract",
+      "count": 8
+    },
+    {
+      "label": "Programmed Death Receptor-1 Blocking Antibody",
+      "count": 7
+    },
+    {
+      "label": "Vitamin or Mineral",
+      "count": 6
+    },
+    {
+      "label": "Muscle Relaxant",
+      "count": 6
+    },
+    {
+      "label": "Mood Stabilizer",
+      "count": 5
+    },
+    {
+      "label": "Unclassified EPC Ingredient",
+      "count": 5
+    },
+    {
+      "label": "Live Rotavirus Vaccine",
+      "count": 5
+    },
+    {
+      "label": "Barbiturate",
+      "count": 4
+    },
+    {
+      "label": "Phosphodiesterase 4 Inhibitor",
+      "count": 4
+    },
+    {
+      "label": "Phosphodiesterase 5 Inhibitor",
+      "count": 4
+    },
+    {
+      "label": "Sodium-Glucose Cotransporter 2 Inhibitor",
+      "count": 4
+    },
+    {
+      "label": "Antimanic Agent",
+      "count": 4
+    },
+    {
+      "label": "Hydrolytic Lysosomal Glycosaminoglycan-specific Enzyme",
+      "count": 4
+    }
+  ],
+  "sourceFiles": {
+    "medications": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_rxclass_enriched.json",
+    "hierarchyIndex": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_index.json",
+    "hierarchyPaths": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_paths.json",
+    "aliases": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_aliases.json"
+  }
+}

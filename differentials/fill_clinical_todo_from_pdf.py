@@ -23,17 +23,26 @@ from typing import Dict, Iterable, List, Sequence, Set, Tuple
 
 
 # -----------------------------
-# Config (likely to change)
+# USER SETTINGS (edit)
 # -----------------------------
-PDF_PATH = Path(
-    "/Users/claytongoddard/ OFF ☁️ /                /Pocketbook of Differential Diagnosis (2021).pdf"
-)
-PDF_SEARCH_GLOB_ROOT = Path("/Users/claytongoddard")
-PDF_SEARCH_GLOB_NAME = "Pocketbook of Differential Diagnosis (2021).pdf"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+PDF_FILENAME = "Pocketbook of Differential Diagnosis (2021).pdf"
 
-TODO_DIR = Path(
-    "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/todo"
+# Direct candidate paths checked first (fast path).
+PDF_PATH_CANDIDATES: Sequence[Path] = (
+    REPO_ROOT / "differentials" / "source" / PDF_FILENAME,
+    Path.home() / "Downloads" / PDF_FILENAME,
+    Path.home() / PDF_FILENAME,
 )
+
+# Optional recursive search roots checked if none of the direct candidates exist.
+PDF_SEARCH_ROOTS: Sequence[Path] = (
+    REPO_ROOT,
+    Path.home(),
+)
+ENABLE_RECURSIVE_PDF_SEARCH = True
+
+TODO_DIR = REPO_ROOT / "differentials" / "data" / "presentations" / "clinical" / "todo"
 TEXT_CACHE_PATH = Path("/tmp/pocketbook_differential_text.txt")
 
 WRITE_CHANGES = True
@@ -137,14 +146,26 @@ def dedupe(values: Iterable[str]) -> List[str]:
 
 
 def discover_pdf_path() -> Path:
-    if PDF_PATH.exists():
-        return PDF_PATH
-    matches = list(PDF_SEARCH_GLOB_ROOT.rglob(PDF_SEARCH_GLOB_NAME))
-    if not matches:
-        raise FileNotFoundError(
-            f"Could not find '{PDF_SEARCH_GLOB_NAME}' under {PDF_SEARCH_GLOB_ROOT}"
-        )
-    return matches[0]
+    for candidate in PDF_PATH_CANDIDATES:
+        if candidate.exists():
+            return candidate
+
+    if ENABLE_RECURSIVE_PDF_SEARCH:
+        for search_root in PDF_SEARCH_ROOTS:
+            if not search_root.exists():
+                continue
+            matches = sorted(search_root.rglob(PDF_FILENAME))
+            if matches:
+                return matches[0]
+
+    candidate_paths = "\n  - ".join(str(path) for path in PDF_PATH_CANDIDATES)
+    search_roots = "\n  - ".join(str(path) for path in PDF_SEARCH_ROOTS)
+    raise FileNotFoundError(
+        "Could not find the source PDF.\n"
+        f"Checked candidate paths:\n  - {candidate_paths}\n"
+        f"Recursive search roots:\n  - {search_roots}\n"
+        "Set PDF_PATH_CANDIDATES in USER SETTINGS to your local PDF path."
+    )
 
 
 def load_pdf_text(pdf_path: Path) -> str:
@@ -874,6 +895,9 @@ def validate_no_blanks(todo_dir: Path) -> List[str]:
 
 
 def main() -> None:
+    if not TODO_DIR.exists():
+        raise FileNotFoundError(f"TODO_DIR does not exist: {TODO_DIR}")
+
     pdf_path = discover_pdf_path()
     text = load_pdf_text(pdf_path)
     pages = text.split("\f")

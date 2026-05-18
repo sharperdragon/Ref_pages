@@ -405,6 +405,39 @@
   gap: 2px;
 }
 
+/* Compact MSE layout: denser rows and two checkbox columns per panel */
+.section-grid.MSE .panel {
+  margin: 0 0 5px;
+}
+
+.section-grid.MSE .panel-header {
+  padding: 6px 10px;
+  font-size: 1rem;
+}
+
+.section-grid.MSE .panel .row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px 12px;
+  padding: 2px 8px 4px;
+}
+
+.section-grid.MSE .panel .row .cb {
+  min-height: 24px;
+  padding: 1px 2px;
+  line-height: 1.2;
+}
+
+.section-grid.MSE .panel .row .cb input {
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  .section-grid.MSE .panel .row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
 /* Allow row children to shrink within the grid cell */
 .panel .row>* {
   min-width: 0;

@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2026-03-20-a";          // bump to invalidate everything
+const APP_VERSION = "2026-03-20-c";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -31,6 +31,14 @@ function debounce(fn, ms=100){
 const REMEMBER_STATE = false;
 // Debounce for the full-note builder
 const COMPLETE_NOTE_MS = 150;
+// MSE should render as checkbox-only, even if old cached templates contain chips.
+const ENFORCE_MSE_CHECKBOX_ONLY = true;
+// When converting legacy chip templates, include both positive and negative chip text as checkboxes.
+const CONVERT_LEGACY_MSE_CHIP_NEG_TEXT = true;
+const LEGACY_MSE_NEG_SUFFIX = "_neg";
+// Checkbox output combination style controls
+const CHECKBOX_COMBINE_PREPOSITIONS = new Set(["to", "for", "with", "in", "on", "at", "from", "of"]);
+const CHECKBOX_COMBINE_SINGLE_WORD_PREDICATES = new Set(["denies", "impaired", "normal"]);
 
 const CLASS_CRITICAL = "critical"; // applied when abnormal/present (right-click)
 const CLASS_NORMAL   = "normal";   // applied when good/absent (left-click)
@@ -102,6 +110,68 @@ function templatesLookValid(tpl) {
   return !!(tpl && typeof tpl === "object" && tpl.sectionsByMode && tpl.sectionDefs);
 }
 
+function _templateHasChips(tpl){
+  if (!tpl?.sectionDefs) return false;
+  return Object.values(tpl.sectionDefs).some(def =>
+    (def?.panels || []).some(panel =>
+      (Array.isArray(panel?.chips) && panel.chips.length > 0) ||
+      (panel?.subsections || []).some(ss => Array.isArray(ss?.chips) && ss.chips.length > 0)
+    )
+  );
+}
+
+function _normMSELabel(s){
+  return String(s || "").trim().replace(/\s+/g, " ").toLowerCase();
+}
+
+function _addLegacyChipAsCheckbox(checkboxes, id, label){
+  const lbl = String(label || "").trim();
+  if (!id || !lbl) return;
+  const idSet = new Set((checkboxes || []).map(cb => cb?.id).filter(Boolean));
+  const labelSet = new Set((checkboxes || []).map(cb => _normMSELabel(cb?.label)).filter(Boolean));
+  if (idSet.has(id)) return;
+  if (labelSet.has(_normMSELabel(lbl))) return;
+  checkboxes.push({ id, label: lbl });
+}
+
+function _convertLegacyMSEChipsToCheckboxes(node){
+  const checkboxes = Array.isArray(node?.checkboxes) ? node.checkboxes : [];
+  node.checkboxes = checkboxes;
+  const chips = Array.isArray(node?.chips) ? node.chips : [];
+  if (!chips.length) {
+    node.chips = [];
+    return;
+  }
+
+  chips.forEach(chip => {
+    if (!chip || !chip.id) return;
+    const posLabel = String(chip.abnText || chip.label || "").trim();
+    _addLegacyChipAsCheckbox(checkboxes, chip.id, posLabel);
+    if (CONVERT_LEGACY_MSE_CHIP_NEG_TEXT) {
+      const negLabel = String(chip.negText || "").trim();
+      _addLegacyChipAsCheckbox(checkboxes, `${chip.id}${LEGACY_MSE_NEG_SUFFIX}`, negLabel);
+    }
+  });
+
+  node.chips = [];
+}
+
+function _sanitizeMSETemplateCheckboxOnly(tpl){
+  if (!ENFORCE_MSE_CHECKBOX_ONLY || !tpl || typeof tpl !== "object") return tpl;
+  if (!_templateHasChips(tpl)) return tpl;
+
+  const out = JSON.parse(JSON.stringify(tpl));
+  Object.values(out.sectionDefs || {}).forEach(def => {
+    (def?.panels || []).forEach(panel => {
+      _convertLegacyMSEChipsToCheckboxes(panel);
+      (panel?.subsections || []).forEach(ss => {
+        _convertLegacyMSEChipsToCheckboxes(ss);
+      });
+    });
+  });
+  return out;
+}
+
 // ===== Tiny cache helper (localStorage + TTL) =====
 function cacheSet(key, value, ttlMs = 0) {
   if (!CACHE_ENABLED) return;
@@ -140,6 +210,15 @@ async function loadTemplatesForMode(mode){
   // 1) Try cached bucket
   let bucket = cacheGet(CK.TEMPLATES) || {};
   if (bucket && bucket[mode] && templatesLookValid(bucket[mode])) {
+    if (mode === "MSE" && ENFORCE_MSE_CHECKBOX_ONLY) {
+      const sanitized = _sanitizeMSETemplateCheckboxOnly(bucket[mode]);
+      if (sanitized !== bucket[mode]) {
+        bucket[mode] = sanitized;
+        cacheSet(CK.TEMPLATES, bucket, CACHE_TTL_MS);
+      }
+      console.debug("[NoteWriter] Using cached templates for", mode);
+      return sanitized;
+    }
     console.debug("[NoteWriter] Using cached templates for", mode);
     return bucket[mode];
   }
@@ -147,7 +226,10 @@ async function loadTemplatesForMode(mode){
   // 2) Fetch fresh
   const r = await fetch(file, { cache: "no-store" });
   if (!r.ok) throw new Error(`HTTP ${r.status} fetching ${file}`);
-  const tpl = await r.json();
+  let tpl = await r.json();
+  if (mode === "MSE" && ENFORCE_MSE_CHECKBOX_ONLY) {
+    tpl = _sanitizeMSETemplateCheckboxOnly(tpl);
+  }
 
   // 3) Validate fetched; if bad, clear and throw
   if (!templatesLookValid(tpl)) {
@@ -1353,10 +1435,11 @@ function buildSectionLines(secKey, mode, tpl, options = {}){
       if (sec.checkboxes?.[h.id]) checkParts.push(formatPECheckLabel(h.label || h.id));
     }
   });
+  const combinedHeaderChecks = combineCheckboxPhraseParts(checkParts);
   if (textParts.length) lines.push(...textParts);
-  if (!_emittedVitals && checkParts.length) {
+  if (!_emittedVitals && combinedHeaderChecks.length) {
     const sectionName = secKey.split(":")[1] || "";
-    lines.push(`${sectionName}: ${checkParts.join('. ')}.`);
+    lines.push(`${sectionName}: ${combinedHeaderChecks.join('. ')}.`);
   }
   })();
 
@@ -1415,25 +1498,31 @@ function buildSectionLines(secKey, mode, tpl, options = {}){
         lines.push(...panelLines);
       }
       // Also include any checked panel checkboxes (PMH, Allergies, etc.)
-      const cbParts = (pd.checkboxes || []).filter(c => !!sec.checkboxes?.[c.id])
-                        .map(c => formatPECheckLabel(c.label || c.id));
+      const cbParts = combineCheckboxPhraseParts(
+        (pd.checkboxes || []).filter(c => !!sec.checkboxes?.[c.id])
+          .map(c => formatPECheckLabel(c.label || c.id))
+      );
       if (cbParts.length) {
         lines.push(`${pd.title}: ${cbParts.join('. ')}.`);
       }
       // Emit field-level checkboxes (e.g., PMH, Allergies)
       pd.fields.forEach(f => {
         if (!Array.isArray(f.checkboxes) || !f.checkboxes.length) return;
-        const picked = f.checkboxes
-          .filter(c => !!sec.checkboxes?.[c.id])
-          .map(c => formatPECheckLabel(c.label || c.id));
+        const picked = combineCheckboxPhraseParts(
+          f.checkboxes
+            .filter(c => !!sec.checkboxes?.[c.id])
+            .map(c => formatPECheckLabel(c.label || c.id))
+        );
         if (picked.length) lines.push(`${f.label}: ${picked.join('. ')}.`);
       });
       return; // next panel
     }
 
-    const cbParts = _cbs
-      .filter(c => !!sec.checkboxes?.[c.id])
-      .map(c => formatPECheckLabel(labelFor(secKey, c.id)));
+    const cbParts = combineCheckboxPhraseParts(
+      _cbs
+        .filter(c => !!sec.checkboxes?.[c.id])
+        .map(c => formatPECheckLabel(labelFor(secKey, c.id)))
+    );
 
     const negParts = _chips
       .filter(d => isNeg(sec.chips?.[d.id]))
@@ -2227,6 +2316,85 @@ function joinWithOxford(list, conj="or"){
   if (list.length === 1) return list[0];
   if (list.length === 2) return `${list[0]} ${conj} ${list[1]}`;
   return `${list.slice(0, -1).join(", ")}, ${conj} ${list[list.length - 1]}`;
+}
+
+function trimSentencePunctuation(s){
+  return String(s || "").trim().replace(/[.;:!?]+$/g, "").trim();
+}
+
+function parseCheckboxPredicatePhrase(phrase){
+  const clean = trimSentencePunctuation(phrase);
+  if (!clean) return null;
+  const words = clean.split(/\s+/).filter(Boolean);
+  if (words.length < 2) return null;
+
+  // Prefer predicate phrases ending in a preposition (e.g., "oriented to person").
+  for (let i = words.length - 2; i >= 0; i--) {
+    const token = words[i].toLowerCase();
+    if (!CHECKBOX_COMBINE_PREPOSITIONS.has(token)) continue;
+    const predicate = words.slice(0, i + 1).join(" ");
+    const object = words.slice(i + 1).join(" ");
+    if (predicate && object) {
+      return { key: `prep:${predicate.toLowerCase()}`, predicate, object };
+    }
+  }
+
+  // Handle safe one-word predicates (e.g., "impaired attention").
+  const lead = words[0].toLowerCase();
+  if (CHECKBOX_COMBINE_SINGLE_WORD_PREDICATES.has(lead)) {
+    const predicate = words[0];
+    const object = words.slice(1).join(" ");
+    if (object) return { key: `lead:${lead}`, predicate, object };
+  }
+
+  return null;
+}
+
+function combineCheckboxPhraseParts(parts){
+  const cleaned = (parts || []).map(trimSentencePunctuation).filter(Boolean);
+  if (cleaned.length < 2) return cleaned;
+
+  const parsed = cleaned.map(parseCheckboxPredicatePhrase);
+  const groupedIdx = new Map();
+  parsed.forEach((p, idx) => {
+    if (!p) return;
+    const list = groupedIdx.get(p.key) || [];
+    list.push(idx);
+    groupedIdx.set(p.key, list);
+  });
+
+  const consumed = new Set();
+  const out = [];
+  for (let i = 0; i < cleaned.length; i++) {
+    if (consumed.has(i)) continue;
+    const p = parsed[i];
+
+    if (p) {
+      const memberIdx = (groupedIdx.get(p.key) || []).filter(idx => !consumed.has(idx));
+      if (memberIdx.length >= 2) {
+        const tails = [];
+        const seen = new Set();
+        memberIdx.forEach(idx => {
+          const tail = lcFirst(trimSentencePunctuation(parsed[idx]?.object || ""));
+          const key = tail.toLowerCase();
+          if (tail && !seen.has(key)) {
+            seen.add(key);
+            tails.push(tail);
+          }
+        });
+        if (tails.length >= 2) {
+          memberIdx.forEach(idx => consumed.add(idx));
+          out.push(`${capFirst(p.predicate)} ${joinWithOxford(tails, "and")}`);
+          continue;
+        }
+      }
+    }
+
+    consumed.add(i);
+    out.push(capFirst(cleaned[i]));
+  }
+
+  return out;
 }
 
 // Make PE checkbox labels read naturally.

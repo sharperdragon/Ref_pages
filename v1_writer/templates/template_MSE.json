@@ -1,121 +1,984 @@
 {
-  "modes": ["MSE"],
+  "modes": [
+    "MSE"
+  ],
   "sectionsByMode": {
-    "MSE": ["General"]
+    "MSE": [
+      "General"
+    ]
   },
   "sectionDefs": {
     "MSE:General": {
       "headerItems": [],
       "panels": [
         {
-          "title": "Appearance & Behavior",
+          "title": "Appearance",
           "checkboxes": [
-            { "id": "mse_well_groomed", "label": "well-groomed" },
-            { "id": "mse_cooperative", "label": "cooperative" },
-            { "id": "mse_good_eye_contact", "label": "good eye contact" },
-            { "id": "mse_calm", "label": "calm" }
-          ],
-          "chips": [
-            { "id": "mse_disheveled", "label": "disheveled", "abnText": "disheveled appearance", "negText": "well-groomed appearance" },
-            { "id": "mse_agitated", "label": "agitated", "abnText": "agitated", "negText": "no psychomotor agitation" },
-            { "id": "mse_withdrawn", "label": "withdrawn", "abnText": "withdrawn behavior", "negText": "engaged behavior" },
-            { "id": "mse_psychomotor_retardation", "label": "psychomotor retardation", "abnText": "psychomotor retardation", "negText": "no psychomotor retardation" }
+            {
+              "id": "mse_well_groomed",
+              "label": "well-groomed"
+            },
+            {
+              "id": "mse_disheveled",
+              "label": "disheveled appearance"
+            },
+            {
+              "id": "mse_disheveled_neg",
+              "label": "well-groomed appearance"
+            },
+            {
+              "id": "mse_appearance_appropriate_dress",
+              "label": "appropriately dressed"
+            },
+            {
+              "id": "mse_appearance_hygiene_intact",
+              "label": "hygiene intact"
+            },
+            {
+              "id": "mse_appearance_unkempt",
+              "label": "unkempt appearance"
+            },
+            {
+              "id": "mse_appearance_malodorous",
+              "label": "malodorous"
+            },
+            {
+              "id": "mse_appearance_bizarre_attire",
+              "label": "bizarre attire"
+            }
           ]
         },
         {
-          "title": "Speech",
+          "title": "Interpersonal & Demeanor",
           "checkboxes": [
-            { "id": "mse_speech_clear", "label": "clear speech" },
-            { "id": "mse_speech_normal_rate", "label": "normal rate" },
-            { "id": "mse_speech_normal_volume", "label": "normal volume" }
-          ],
-          "chips": [
-            { "id": "mse_pressured_speech", "label": "pressured speech", "abnText": "pressured speech", "negText": "no pressured speech" },
-            { "id": "mse_slow_speech", "label": "slow speech", "abnText": "slow speech", "negText": "normal speech rate" },
-            { "id": "mse_slurred_speech", "label": "slurred speech", "abnText": "slurred speech", "negText": "speech not slurred" },
-            { "id": "mse_mutism", "label": "mutism", "abnText": "mutism", "negText": "speaking spontaneously" }
+            {
+              "id": "mse_cooperative",
+              "label": "cooperative"
+            },
+            {
+              "id": "mse_good_eye_contact",
+              "label": "good eye contact"
+            },
+            {
+              "id": "mse_eye_contact_poor",
+              "label": "poor eye contact"
+            },
+            {
+              "id": "mse_withdrawn",
+              "label": "social withdrawal"
+            },
+            {
+              "id": "mse_withdrawn_neg",
+              "label": "engaged behavior"
+            },
+            {
+              "id": "mse_withdrawn_behavior",
+              "label": "withdrawn behavior"
+            },
+            {
+              "id": "mse_calm",
+              "label": "calm behavior"
+            },
+            {
+              "id": "mse_behavior_guarded",
+              "label": "guarded behavior"
+            },
+            {
+              "id": "mse_behavior_tearful",
+              "label": "tearful behavior"
+            },
+            {
+              "id": "mse_behavior_hypervigilant",
+              "label": "hypervigilant behavior"
+            },
+            {
+              "id": "mse_behavior_hostile",
+              "label": "hostile behavior"
+            },
+            {
+              "id": "mse_behavior_disinhibited",
+              "label": "disinhibited behavior"
+            }
           ]
         },
         {
-          "title": "Mood & Affect",
+          "title": "Psychomotor Activity",
           "checkboxes": [
-            { "id": "mse_mood_euthymic", "label": "euthymic mood" },
-            { "id": "mse_affect_appropriate", "label": "affect appropriate to context" },
-            { "id": "mse_affect_full_range", "label": "full affective range" }
-          ],
-          "chips": [
-            { "id": "mse_mood_depressed", "label": "depressed", "abnText": "depressed mood", "negText": "no depressed mood" },
-            { "id": "mse_mood_anxious", "label": "anxious", "abnText": "anxious mood", "negText": "no anxious mood" },
-            { "id": "mse_mood_irritable", "label": "irritable", "abnText": "irritable mood", "negText": "no irritability" },
-            { "id": "mse_affect_flat", "label": "flat affect", "abnText": "flat affect", "negText": "affect not flat" },
-            { "id": "mse_affect_blunted", "label": "blunted affect", "abnText": "blunted affect", "negText": "affect not blunted" },
-            { "id": "mse_affect_labile", "label": "labile affect", "abnText": "labile affect", "negText": "affect not labile" }
+            {
+              "id": "mse_agitated",
+              "label": "psychomotor agitation"
+            },
+            {
+              "id": "mse_agitated_legacy",
+              "label": "agitated"
+            },
+            {
+              "id": "mse_agitated_neg",
+              "label": "no psychomotor agitation"
+            },
+            {
+              "id": "mse_psychomotor_retardation",
+              "label": "psychomotor retardation"
+            },
+            {
+              "id": "mse_psychomotor_retardation_neg",
+              "label": "no psychomotor retardation"
+            },
+            {
+              "id": "mse_behavior_restless",
+              "label": "restless behavior"
+            },
+            {
+              "id": "mse_behavior_sedated",
+              "label": "sedated behavior"
+            },
+            {
+              "id": "mse_behavior_pacing",
+              "label": "pacing behavior"
+            },
+            {
+              "id": "mse_behavior_pacing_neg",
+              "label": "no pacing behavior"
+            },
+            {
+              "id": "mse_behavior_tremulous",
+              "label": "tremulous behavior"
+            }
           ]
         },
         {
-          "title": "Thought Process",
+          "title": "Speech Clarity & Production",
           "checkboxes": [
-            { "id": "mse_tp_linear", "label": "linear thought process" },
-            { "id": "mse_tp_goal_directed", "label": "goal-directed thought process" }
-          ],
-          "chips": [
-            { "id": "mse_tp_tangential", "label": "tangential", "abnText": "tangential thought process", "negText": "thought process not tangential" },
-            { "id": "mse_tp_circumstantial", "label": "circumstantial", "abnText": "circumstantial thought process", "negText": "thought process not circumstantial" },
-            { "id": "mse_tp_foi", "label": "flight of ideas", "abnText": "flight of ideas", "negText": "no flight of ideas" },
-            { "id": "mse_tp_blocking", "label": "thought blocking", "abnText": "thought blocking", "negText": "no thought blocking" }
+            {
+              "id": "mse_speech_clear",
+              "label": "clear speech"
+            },
+            {
+              "id": "mse_slurred_speech",
+              "label": "slurred speech"
+            },
+            {
+              "id": "mse_slurred_speech_neg",
+              "label": "speech not slurred"
+            },
+            {
+              "id": "mse_speech_dysarthric",
+              "label": "dysarthric speech"
+            },
+            {
+              "id": "mse_mutism",
+              "label": "mutism"
+            },
+            {
+              "id": "mse_mutism_neg",
+              "label": "speaking spontaneously"
+            },
+            {
+              "id": "mse_speech_spontaneous",
+              "label": "spontaneous speech"
+            },
+            {
+              "id": "mse_speech_latency",
+              "label": "increased speech latency"
+            },
+            {
+              "id": "mse_speech_poverty",
+              "label": "poverty of speech"
+            },
+            {
+              "id": "mse_speech_verbose",
+              "label": "verbose speech"
+            },
+            {
+              "id": "mse_speech_interruptible",
+              "label": "speech interruptible"
+            },
+            {
+              "id": "mse_speech_echolalia",
+              "label": "echolalia"
+            }
           ]
         },
         {
-          "title": "Thought Content & Safety",
+          "title": "Speech Rate, Volume & Prosody",
           "checkboxes": [
-            { "id": "mse_tc_reality_based", "label": "reality-based thought content" }
-          ],
-          "chips": [
-            { "id": "mse_si", "label": "suicidal ideation", "abnText": "suicidal ideation present", "negText": "denies suicidal ideation" },
-            { "id": "mse_hi", "label": "homicidal ideation", "abnText": "homicidal ideation present", "negText": "denies homicidal ideation" },
-            { "id": "mse_delusions", "label": "delusions", "abnText": "delusional content", "negText": "no delusional content" },
-            { "id": "mse_obsessions", "label": "obsessions", "abnText": "obsessional content", "negText": "no obsessional content" },
-            { "id": "mse_paranoia", "label": "paranoia", "abnText": "paranoid thought content", "negText": "no paranoid thought content" }
+            {
+              "id": "mse_speech_normal_rate",
+              "label": "normal rate"
+            },
+            {
+              "id": "mse_slow_speech",
+              "label": "slowed speech"
+            },
+            {
+              "id": "mse_slow_speech_legacy",
+              "label": "slow speech"
+            },
+            {
+              "id": "mse_slow_speech_neg",
+              "label": "normal speech rate"
+            },
+            {
+              "id": "mse_pressured_speech",
+              "label": "pressured speech"
+            },
+            {
+              "id": "mse_pressured_speech_neg",
+              "label": "no pressured speech"
+            },
+            {
+              "id": "mse_speech_rapid",
+              "label": "rapid speech"
+            },
+            {
+              "id": "mse_speech_rapid_neg",
+              "label": "speech not rapid"
+            },
+            {
+              "id": "mse_speech_normal_volume",
+              "label": "normal volume"
+            },
+            {
+              "id": "mse_speech_soft",
+              "label": "soft speech"
+            },
+            {
+              "id": "mse_speech_soft_neg",
+              "label": "speech volume not reduced"
+            },
+            {
+              "id": "mse_speech_loud",
+              "label": "loud speech"
+            },
+            {
+              "id": "mse_speech_monotone",
+              "label": "monotone speech"
+            }
           ]
         },
         {
-          "title": "Perception",
+          "title": "Mood: Depressive-Anxious",
           "checkboxes": [
-            { "id": "mse_perception_intact", "label": "perception intact" }
-          ],
-          "chips": [
-            { "id": "mse_ah", "label": "auditory hallucinations", "abnText": "auditory hallucinations", "negText": "denies auditory hallucinations" },
-            { "id": "mse_vh", "label": "visual hallucinations", "abnText": "visual hallucinations", "negText": "denies visual hallucinations" },
-            { "id": "mse_internal_stimuli", "label": "responding to internal stimuli", "abnText": "responding to internal stimuli", "negText": "not responding to internal stimuli" }
+            {
+              "id": "mse_mood_euthymic",
+              "label": "euthymic mood"
+            },
+            {
+              "id": "mse_mood_stable",
+              "label": "stable mood"
+            },
+            {
+              "id": "mse_mood_depressed",
+              "label": "depressed mood"
+            },
+            {
+              "id": "mse_mood_depressed_neg",
+              "label": "no depressed mood"
+            },
+            {
+              "id": "mse_mood_anxious",
+              "label": "anxious mood"
+            },
+            {
+              "id": "mse_mood_anxious_neg",
+              "label": "no anxious mood"
+            },
+            {
+              "id": "mse_mood_dysphoric",
+              "label": "dysphoric mood"
+            },
+            {
+              "id": "mse_mood_apathetic",
+              "label": "apathetic mood"
+            },
+            {
+              "id": "mse_mood_anhedonia",
+              "label": "anhedonia"
+            },
+            {
+              "id": "mse_mood_anhedonia_neg",
+              "label": "no anhedonia"
+            },
+            {
+              "id": "mse_mood_fearful",
+              "label": "fearful mood"
+            }
           ]
         },
         {
-          "title": "Cognition & Orientation",
+          "title": "Mood: Activation-Irritability",
           "checkboxes": [
-            { "id": "mse_oriented_person", "label": "oriented to person" },
-            { "id": "mse_oriented_place", "label": "oriented to place" },
-            { "id": "mse_oriented_time", "label": "oriented to time" },
-            { "id": "mse_oriented_situation", "label": "oriented to situation" },
-            { "id": "mse_attention_intact", "label": "attention intact" },
-            { "id": "mse_memory_grossly_intact", "label": "memory grossly intact" }
-          ],
-          "chips": [
-            { "id": "mse_disoriented", "label": "disoriented", "abnText": "disoriented", "negText": "oriented x4" },
-            { "id": "mse_poor_attention", "label": "poor attention", "abnText": "impaired attention", "negText": "attention intact" },
-            { "id": "mse_memory_impaired", "label": "impaired memory", "abnText": "impaired memory", "negText": "memory intact" },
-            { "id": "mse_poor_concentration", "label": "poor concentration", "abnText": "poor concentration", "negText": "concentration intact" }
+            {
+              "id": "mse_mood_irritable",
+              "label": "irritable mood"
+            },
+            {
+              "id": "mse_mood_irritable_neg",
+              "label": "no irritability"
+            },
+            {
+              "id": "mse_mood_angry",
+              "label": "angry mood"
+            },
+            {
+              "id": "mse_mood_elevated",
+              "label": "elevated mood"
+            },
+            {
+              "id": "mse_mood_expansive",
+              "label": "expansive mood"
+            }
           ]
         },
         {
-          "title": "Insight & Judgment",
+          "title": "Affect: Range & Stability",
           "checkboxes": [
-            { "id": "mse_insight_good", "label": "insight good" },
-            { "id": "mse_judgment_intact", "label": "judgment intact" }
-          ],
-          "chips": [
-            { "id": "mse_insight_poor", "label": "poor insight", "abnText": "poor insight", "negText": "insight not impaired" },
-            { "id": "mse_judgment_poor", "label": "poor judgment", "abnText": "poor judgment", "negText": "judgment not impaired" },
-            { "id": "mse_impulsive", "label": "impulsive", "abnText": "impulsivity", "negText": "no impulsivity" }
+            {
+              "id": "mse_affect_full_range",
+              "label": "full affective range"
+            },
+            {
+              "id": "mse_affect_flat",
+              "label": "flat affect"
+            },
+            {
+              "id": "mse_affect_flat_neg",
+              "label": "affect not flat"
+            },
+            {
+              "id": "mse_affect_blunted",
+              "label": "blunted affect"
+            },
+            {
+              "id": "mse_affect_blunted_neg",
+              "label": "affect not blunted"
+            },
+            {
+              "id": "mse_affect_restricted",
+              "label": "restricted affect"
+            },
+            {
+              "id": "mse_affect_constricted",
+              "label": "constricted affect"
+            },
+            {
+              "id": "mse_affect_labile",
+              "label": "labile affect"
+            },
+            {
+              "id": "mse_affect_labile_neg",
+              "label": "affect not labile"
+            },
+            {
+              "id": "mse_affect_bright",
+              "label": "bright affect"
+            }
+          ]
+        },
+        {
+          "title": "Affect: Congruence & Reactivity",
+          "checkboxes": [
+            {
+              "id": "mse_affect_appropriate",
+              "label": "affect appropriate to context"
+            },
+            {
+              "id": "mse_affect_congruent",
+              "label": "affect congruent with mood"
+            },
+            {
+              "id": "mse_affect_incongruent",
+              "label": "affect incongruent with mood"
+            },
+            {
+              "id": "mse_affect_tearful",
+              "label": "tearful affect"
+            },
+            {
+              "id": "mse_affect_reactive",
+              "label": "reactive affect"
+            },
+            {
+              "id": "mse_affect_nonreactive",
+              "label": "nonreactive affect"
+            }
+          ]
+        },
+        {
+          "title": "Thought Process: Organization",
+          "checkboxes": [
+            {
+              "id": "mse_tp_linear",
+              "label": "linear thought process"
+            },
+            {
+              "id": "mse_tp_goal_directed",
+              "label": "goal-directed thought process"
+            },
+            {
+              "id": "mse_tp_logical",
+              "label": "logical thought process"
+            },
+            {
+              "id": "mse_tp_organized",
+              "label": "organized thought process"
+            },
+            {
+              "id": "mse_tp_coherent",
+              "label": "coherent thought process"
+            },
+            {
+              "id": "mse_tp_concrete",
+              "label": "concrete thought process"
+            },
+            {
+              "id": "mse_tp_disorganized",
+              "label": "disorganized thought process"
+            },
+            {
+              "id": "mse_tp_incoherent",
+              "label": "incoherent thought process"
+            }
+          ]
+        },
+        {
+          "title": "Thought Process: Associations",
+          "checkboxes": [
+            {
+              "id": "mse_tp_tangential",
+              "label": "tangential thought process"
+            },
+            {
+              "id": "mse_tp_tangential_neg",
+              "label": "thought process not tangential"
+            },
+            {
+              "id": "mse_tp_circumstantial",
+              "label": "circumstantial thought process"
+            },
+            {
+              "id": "mse_tp_circumstantial_neg",
+              "label": "thought process not circumstantial"
+            },
+            {
+              "id": "mse_tp_perseverative",
+              "label": "perseverative thought process"
+            },
+            {
+              "id": "mse_tp_circuitous",
+              "label": "circuitous thought process"
+            },
+            {
+              "id": "mse_tp_loose_associations",
+              "label": "loose associations"
+            },
+            {
+              "id": "mse_tp_loose_associations_neg",
+              "label": "no loose associations"
+            },
+            {
+              "id": "mse_tp_derailment",
+              "label": "derailment"
+            },
+            {
+              "id": "mse_tp_clang_associations",
+              "label": "clang associations"
+            }
+          ]
+        },
+        {
+          "title": "Thought Process: Flow Disturbance",
+          "checkboxes": [
+            {
+              "id": "mse_tp_foi",
+              "label": "flight of ideas"
+            },
+            {
+              "id": "mse_tp_foi_neg",
+              "label": "no flight of ideas"
+            },
+            {
+              "id": "mse_tp_blocking",
+              "label": "thought blocking"
+            },
+            {
+              "id": "mse_tp_blocking_neg",
+              "label": "no thought blocking"
+            },
+            {
+              "id": "mse_tp_racing_thoughts",
+              "label": "racing thoughts"
+            },
+            {
+              "id": "mse_tp_neologisms",
+              "label": "neologisms"
+            },
+            {
+              "id": "mse_tp_word_salad",
+              "label": "word salad"
+            }
+          ]
+        },
+        {
+          "title": "Thought Content: Safety & Themes",
+          "checkboxes": [
+            {
+              "id": "mse_si_denies",
+              "label": "denies suicidal ideation"
+            },
+            {
+              "id": "mse_si_present",
+              "label": "suicidal ideation present"
+            },
+            {
+              "id": "mse_si_passive_death_wish",
+              "label": "passive death wish"
+            },
+            {
+              "id": "mse_hi_denies",
+              "label": "denies homicidal ideation"
+            },
+            {
+              "id": "mse_hi_present",
+              "label": "homicidal ideation present"
+            },
+            {
+              "id": "mse_tc_reality_based",
+              "label": "reality-based thought content"
+            },
+            {
+              "id": "mse_tc_future_oriented",
+              "label": "future-oriented thought content"
+            },
+            {
+              "id": "mse_tc_hopelessness",
+              "label": "hopelessness"
+            },
+            {
+              "id": "mse_tc_hopelessness_neg",
+              "label": "no hopelessness"
+            },
+            {
+              "id": "mse_tc_helplessness",
+              "label": "helplessness"
+            },
+            {
+              "id": "mse_tc_helplessness_neg",
+              "label": "no helplessness"
+            },
+            {
+              "id": "mse_tc_excessive_guilt",
+              "label": "excessive guilt"
+            },
+            {
+              "id": "mse_tc_rumination",
+              "label": "ruminative thought content"
+            },
+            {
+              "id": "mse_tc_preoccupied",
+              "label": "preoccupied thought content"
+            },
+            {
+              "id": "mse_tc_overvalued_ideas",
+              "label": "overvalued ideas"
+            }
+          ]
+        },
+        {
+          "title": "Thought Content: Delusions/Obsessions",
+          "checkboxes": [
+            {
+              "id": "mse_delusions",
+              "label": "delusional content"
+            },
+            {
+              "id": "mse_delusions_neg",
+              "label": "no delusional content"
+            },
+            {
+              "id": "mse_paranoia",
+              "label": "paranoid thought content"
+            },
+            {
+              "id": "mse_paranoia_neg",
+              "label": "no paranoid thought content"
+            },
+            {
+              "id": "mse_obsessions",
+              "label": "obsessional content"
+            },
+            {
+              "id": "mse_obsessions_neg",
+              "label": "no obsessional content"
+            },
+            {
+              "id": "mse_tc_grandiosity",
+              "label": "grandiose thought content"
+            },
+            {
+              "id": "mse_tc_ideas_reference",
+              "label": "ideas of reference"
+            },
+            {
+              "id": "mse_tc_persecutory_delusions",
+              "label": "persecutory delusions"
+            },
+            {
+              "id": "mse_tc_grandiose_delusions",
+              "label": "grandiose delusions"
+            },
+            {
+              "id": "mse_tc_somatic_delusions",
+              "label": "somatic delusions"
+            },
+            {
+              "id": "mse_tc_nihilistic_delusions",
+              "label": "nihilistic delusions"
+            },
+            {
+              "id": "mse_tc_thought_insertion",
+              "label": "thought insertion"
+            },
+            {
+              "id": "mse_tc_thought_withdrawal",
+              "label": "thought withdrawal"
+            },
+            {
+              "id": "mse_tc_thought_broadcasting",
+              "label": "thought broadcasting"
+            }
+          ]
+        },
+        {
+          "title": "Perception: Auditory & Visual",
+          "checkboxes": [
+            {
+              "id": "mse_ah_denies",
+              "label": "denies auditory hallucinations"
+            },
+            {
+              "id": "mse_ah_present",
+              "label": "auditory hallucinations"
+            },
+            {
+              "id": "mse_vh_denies",
+              "label": "denies visual hallucinations"
+            },
+            {
+              "id": "mse_vh_present",
+              "label": "visual hallucinations"
+            },
+            {
+              "id": "mse_perception_no_auditory_hallucinations",
+              "label": "no auditory hallucinations"
+            },
+            {
+              "id": "mse_perception_no_visual_hallucinations",
+              "label": "no visual hallucinations"
+            },
+            {
+              "id": "mse_perception_command_ah",
+              "label": "command auditory hallucinations"
+            }
+          ]
+        },
+        {
+          "title": "Perception: Other & Reality Contact",
+          "checkboxes": [
+            {
+              "id": "mse_perception_tactile_hallucinations",
+              "label": "tactile hallucinations"
+            },
+            {
+              "id": "mse_perception_olfactory_hallucinations",
+              "label": "olfactory hallucinations"
+            },
+            {
+              "id": "mse_perception_gustatory_hallucinations",
+              "label": "gustatory hallucinations"
+            },
+            {
+              "id": "mse_perception_hypnagogic",
+              "label": "hypnagogic hallucinations"
+            },
+            {
+              "id": "mse_perception_hypnopompic",
+              "label": "hypnopompic hallucinations"
+            },
+            {
+              "id": "mse_perception_illusions",
+              "label": "illusions"
+            },
+            {
+              "id": "mse_perception_derealization",
+              "label": "derealization"
+            },
+            {
+              "id": "mse_perception_depersonalization",
+              "label": "depersonalization"
+            },
+            {
+              "id": "mse_internal_stimuli",
+              "label": "responding to internal stimuli"
+            },
+            {
+              "id": "mse_internal_stimuli_neg",
+              "label": "not responding to internal stimuli"
+            },
+            {
+              "id": "mse_perception_intact",
+              "label": "perception intact"
+            },
+            {
+              "id": "mse_perception_no_disturbances",
+              "label": "no perceptual disturbances reported"
+            }
+          ]
+        },
+        {
+          "title": "Orientation",
+          "checkboxes": [
+            {
+              "id": "mse_oriented_person",
+              "label": "oriented to person"
+            },
+            {
+              "id": "mse_oriented_place",
+              "label": "oriented to place"
+            },
+            {
+              "id": "mse_oriented_time",
+              "label": "oriented to time"
+            },
+            {
+              "id": "mse_oriented_situation",
+              "label": "oriented to situation"
+            },
+            {
+              "id": "mse_oriented_x3",
+              "label": "oriented x3"
+            },
+            {
+              "id": "mse_oriented_x2",
+              "label": "oriented x2"
+            },
+            {
+              "id": "mse_disoriented",
+              "label": "disorientation"
+            },
+            {
+              "id": "mse_disoriented_legacy",
+              "label": "disoriented"
+            },
+            {
+              "id": "mse_disoriented_neg",
+              "label": "oriented x4"
+            }
+          ]
+        },
+        {
+          "title": "Attention & Concentration",
+          "checkboxes": [
+            {
+              "id": "mse_attention_intact",
+              "label": "attention intact"
+            },
+            {
+              "id": "mse_poor_attention",
+              "label": "impaired attention"
+            },
+            {
+              "id": "mse_poor_concentration",
+              "label": "impaired concentration"
+            },
+            {
+              "id": "mse_poor_concentration_legacy",
+              "label": "poor concentration"
+            },
+            {
+              "id": "mse_poor_concentration_neg",
+              "label": "concentration intact"
+            },
+            {
+              "id": "mse_cognition_alert_attentive",
+              "label": "alert and attentive"
+            }
+          ]
+        },
+        {
+          "title": "Memory & Higher Cognition",
+          "checkboxes": [
+            {
+              "id": "mse_memory_grossly_intact",
+              "label": "memory grossly intact"
+            },
+            {
+              "id": "mse_memory_impaired",
+              "label": "impaired memory"
+            },
+            {
+              "id": "mse_memory_impaired_neg",
+              "label": "memory intact"
+            },
+            {
+              "id": "mse_memory_recent_impaired",
+              "label": "recent memory impaired"
+            },
+            {
+              "id": "mse_memory_remote_impaired",
+              "label": "remote memory impaired"
+            },
+            {
+              "id": "mse_memory_recent_intact",
+              "label": "recent memory intact"
+            },
+            {
+              "id": "mse_memory_remote_intact",
+              "label": "remote memory intact"
+            },
+            {
+              "id": "mse_cognition_fund_knowledge_appropriate",
+              "label": "fund of knowledge appropriate"
+            },
+            {
+              "id": "mse_cognition_abstract_reasoning_intact",
+              "label": "abstract reasoning intact"
+            },
+            {
+              "id": "mse_cognition_calculation_intact",
+              "label": "calculation intact"
+            },
+            {
+              "id": "mse_cognition_calculation_impaired",
+              "label": "calculation impaired"
+            },
+            {
+              "id": "mse_cognition_executive_intact",
+              "label": "executive function intact"
+            },
+            {
+              "id": "mse_cognition_executive_impaired",
+              "label": "executive function impaired"
+            },
+            {
+              "id": "mse_cognition_clouded",
+              "label": "clouded consciousness"
+            },
+            {
+              "id": "mse_cognition_sensorium_clear",
+              "label": "sensorium clear"
+            }
+          ]
+        },
+        {
+          "title": "Insight",
+          "checkboxes": [
+            {
+              "id": "mse_insight_good",
+              "label": "good insight"
+            },
+            {
+              "id": "mse_insight_poor",
+              "label": "impaired insight"
+            },
+            {
+              "id": "mse_insight_poor_legacy",
+              "label": "poor insight"
+            },
+            {
+              "id": "mse_insight_poor_neg",
+              "label": "insight not impaired"
+            },
+            {
+              "id": "mse_insight_fair",
+              "label": "fair insight"
+            },
+            {
+              "id": "mse_insight_limited",
+              "label": "limited insight"
+            },
+            {
+              "id": "mse_insight_absent",
+              "label": "absent insight"
+            }
+          ]
+        },
+        {
+          "title": "Judgment",
+          "checkboxes": [
+            {
+              "id": "mse_judgment_intact",
+              "label": "judgment intact"
+            },
+            {
+              "id": "mse_judgment_poor",
+              "label": "impaired judgment"
+            },
+            {
+              "id": "mse_judgment_poor_legacy",
+              "label": "poor judgment"
+            },
+            {
+              "id": "mse_judgment_poor_neg",
+              "label": "judgment not impaired"
+            },
+            {
+              "id": "mse_judgment_fair",
+              "label": "fair judgment"
+            },
+            {
+              "id": "mse_judgment_compromised",
+              "label": "compromised judgment"
+            },
+            {
+              "id": "mse_judgment_severely_impaired",
+              "label": "severely impaired judgment"
+            },
+            {
+              "id": "mse_judgment_good",
+              "label": "good judgment"
+            }
+          ]
+        },
+        {
+          "title": "Impulse Control, Decision-Making & Engagement",
+          "checkboxes": [
+            {
+              "id": "mse_impulsive",
+              "label": "impulsivity"
+            },
+            {
+              "id": "mse_impulsive_neg",
+              "label": "no impulsivity"
+            },
+            {
+              "id": "mse_impulsivity_high",
+              "label": "high impulsivity"
+            },
+            {
+              "id": "mse_impulse_control_poor",
+              "label": "poor impulse control"
+            },
+            {
+              "id": "mse_decision_making_impaired",
+              "label": "impaired decision making"
+            },
+            {
+              "id": "mse_decision_making_intact",
+              "label": "decision making intact"
+            },
+            {
+              "id": "mse_risk_awareness_limited",
+              "label": "limited risk awareness"
+            },
+            {
+              "id": "mse_treatment_engagement_good",
+              "label": "engaged with treatment"
+            },
+            {
+              "id": "mse_treatment_engagement_poor",
+              "label": "poor engagement with treatment"
+            }
           ]
         }
       ]

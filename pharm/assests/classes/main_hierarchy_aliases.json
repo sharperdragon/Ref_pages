@@ -1,0 +1,46 @@
+{
+  "version": "2",
+  "byDrugClass": {
+    "selective serotonin reuptake inhibitor": "drug_classes.central_nervous_system.psychiatric_agents.antidepressants.ssris",
+    "serotonin norepinephrine reuptake inhibitor": "drug_classes.central_nervous_system.psychiatric_agents.antidepressants.snris",
+    "benzodiazepine": "drug_classes.central_nervous_system.anesthetic_and_sedative_agents.benzodiazepines",
+    "tricyclic antidepressant": "drug_classes.central_nervous_system.psychiatric_agents.antidepressants.tricyclic_antidepressants",
+    "typical antipsychotic": "drug_classes.central_nervous_system.psychiatric_agents.antipsychotics.first_generation",
+    "atypical antipsychotic": "drug_classes.central_nervous_system.psychiatric_agents.antipsychotics.second_generation",
+    "central nervous system stimulant": "drug_classes.central_nervous_system.psychiatric_agents.adhd_agents.stimulants"
+  },
+  "bySpecificClass": {},
+  "byClassCandidate": {},
+  "byClassTag": {},
+  "phraseRules": [
+    {
+      "name": "SSRIs",
+      "source": "all",
+      "contains": [
+        "serotonin",
+        "reuptake",
+        "inhibitor"
+      ],
+      "targetId": "drug_classes.central_nervous_system.psychiatric_agents.antidepressants.ssris"
+    },
+    {
+      "name": "SNRIs",
+      "source": "all",
+      "contains": [
+        "serotonin",
+        "norepinephrine",
+        "reuptake",
+        "inhibitor"
+      ],
+      "targetId": "drug_classes.central_nervous_system.psychiatric_agents.antidepressants.snris"
+    },
+    {
+      "name": "Benzodiazepines",
+      "source": "all",
+      "contains": [
+        "benzodiazepine"
+      ],
+      "targetId": "drug_classes.central_nervous_system.anesthetic_and_sedative_agents.benzodiazepines"
+    }
+  ]
+}
