@@ -35,10 +35,10 @@ This workspace is configured for one-click task runs from VS Code.
 
 Update values only inside each script's `USER SETTINGS` section.
 
-- [setup_check.py](/Users/claytongoddard/Git%20dub/Clerkship_tools_v2/py/setup_check.py)
-- [build_rxclass_medication_catalog.py](/Users/claytongoddard/Git%20dub/Clerkship_tools_v2/pharm/scripts/build_rxclass_medication_catalog.py)
-- [make_tab_manifest.py](/Users/claytongoddard/Git%20dub/Clerkship_tools_v2/py/make_tab_manifest.py)
-- [fill_clinical_todo_from_pdf.py](/Users/claytongoddard/Git%20dub/Clerkship_tools_v2/differentials/fill_clinical_todo_from_pdf.py)
+- [setup_check.py](../py/setup_check.py)
+- [build_rxclass_medication_catalog.py](../pharm/scripts/build_rxclass_medication_catalog.py)
+- [make_tab_manifest.py](../py/make_tab_manifest.py)
+- [fill_clinical_todo_from_pdf.py](../differentials/fill_clinical_todo_from_pdf.py)
 
 ## Notes
 

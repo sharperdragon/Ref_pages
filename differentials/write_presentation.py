@@ -4,19 +4,23 @@ import re
 from typing import Dict, Any, Iterable, Tuple, Optional, List
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DIFFERENTIALS_DIR = REPO_ROOT / "differentials"
+PRESENTATIONS_DIR = DIFFERENTIALS_DIR / "data" / "presentations"
+
 # ! -----------------------------
-# ! Config: paths & behavior (explicit paths; no dry run)
+# ! USER SETTINGS
 # ! -----------------------------
-BASE_DIR = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations"
-PRESENTATION_LIST_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/Presentation_list.json"
-CLINICAL_INDEX_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/clinical_presentation_index.json"
-NONCLINICAL_INDEX_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/non-clinical_presentation_index.json"
-SCHEMA_PATH = "/Users/claytongoddard/Git dub/Clerkship_tools_v2/assets/presentations_schema.json"
+BASE_DIR = PRESENTATIONS_DIR
+PRESENTATION_LIST_PATH = DIFFERENTIALS_DIR / "Presentation_list.json"
+CLINICAL_INDEX_PATH = DIFFERENTIALS_DIR / "clinical_presentation_index.json"
+NONCLINICAL_INDEX_PATH = DIFFERENTIALS_DIR / "non-clinical_presentation_index.json"
+SCHEMA_PATH = REPO_ROOT / "assets" / "presentations_schema.json"
 
 INCLUDE_FREQ = True                  
 LOW_PRIORITY_MODE = "subfolder"        
 REBUILD_EXISTING = True              # Rebuild items array from sources on existing files
-SUMMARY_PATH = "/Users/claytongoddard/Desktop/presentation_build_summary.md"
+SUMMARY_PATH = DIFFERENTIALS_DIR / "presentation_build_summary.md"
 DRY_RUN = False                      # <= per user request
 
 # --- Completion/locking flags ---
@@ -33,63 +37,61 @@ SECTION_FOLDERS: Dict[str, str] = {
 }
 
 # ! -----------------------------
-# ! Already written & low-priority slugs (derived from user-provided paths)
+# ! Already written & low-priority slugs
 # ! -----------------------------
-_WRITTEN_PATHS = [
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/abdominal.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/anorectal-pain.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/arm-pain.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/arm-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/ascites.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/axillary-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/backache.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/breast-lumps.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/breast-pain.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/chest-pain.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/clubbing.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/coma.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/confusion.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/constipation.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/convulsions.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/cough.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/cyanosis.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/deafness.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/diarrhea.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/dizziness.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/dysphagia.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/dyspnea.json',
-]
+WRITTEN_SLUGS = {
+    "abdominal",
+    "anorectal-pain",
+    "arm-pain",
+    "arm-swellings",
+    "ascites",
+    "axillary-swellings",
+    "backache",
+    "breast-lumps",
+    "breast-pain",
+    "chest-pain",
+    "clubbing",
+    "coma",
+    "confusion",
+    "constipation",
+    "convulsions",
+    "cough",
+    "cyanosis",
+    "deafness",
+    "diarrhea",
+    "dizziness",
+    "dysphagia",
+    "dyspnea",
+}
 
-_LOW_PRIORITY_PATHS = [
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/erectile-dysfunction.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/facial-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/facial-ulcers.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/finger-lesions.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/finger-pain.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/foot-and-ankle-deformities.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/groin-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/hand-deformities.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/hemiparesis.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/hiccups.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/jaw-pain-and-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/leg-ulcers.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/mouth-ulcers.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/nasal-discharge.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/penile-lesions.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/popliteal-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/pruritus-ani.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/scalp-lesions.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/scrotal-pain.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/scrotal-swellings.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/stridor.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/sweating-abnormalities.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/thirst.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/tiredness.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/toe-lesions.json',
-    '/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/data/presentations/clinical/other/tongue-disorders.json',
-]
-WRITTEN_SLUGS = {os.path.splitext(os.path.basename(p))[0] for p in _WRITTEN_PATHS}
-LOW_PRIORITY_SLUGS = {os.path.splitext(os.path.basename(p))[0] for p in _LOW_PRIORITY_PATHS}
+LOW_PRIORITY_SLUGS = {
+    "erectile-dysfunction",
+    "facial-swellings",
+    "facial-ulcers",
+    "finger-lesions",
+    "finger-pain",
+    "foot-and-ankle-deformities",
+    "groin-swellings",
+    "hand-deformities",
+    "hemiparesis",
+    "hiccups",
+    "jaw-pain-and-swellings",
+    "leg-ulcers",
+    "mouth-ulcers",
+    "nasal-discharge",
+    "penile-lesions",
+    "popliteal-swellings",
+    "pruritus-ani",
+    "scalp-lesions",
+    "scrotal-pain",
+    "scrotal-swellings",
+    "stridor",
+    "sweating-abnormalities",
+    "thirst",
+    "tiredness",
+    "toe-lesions",
+    "tongue-disorders",
+}
 
 # ! -----------------------------
 # ! Utilities
@@ -174,8 +176,8 @@ def title_case_system(cat: str) -> str:
     return c[:1].upper() + c[1:]
 
 
-def load_json(path: str) -> Any:
-    with open(path, "r") as f:
+def load_json(path: str | os.PathLike[str]) -> Any:
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -308,10 +310,11 @@ def resolve_index_keys(pres_name: str, section: str, clinical_idx: Dict[str, Any
     return matches
 
 
-def write_json_atomically(dest_path: str, data: Dict[str, Any]) -> None:
-    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-    tmp = dest_path + ".tmp"
-    with open(tmp, "w") as f:
+def write_json_atomically(dest_path: str | os.PathLike[str], data: Dict[str, Any]) -> None:
+    dest_path = Path(dest_path)
+    dest_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = dest_path.with_suffix(dest_path.suffix + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     os.replace(tmp, dest_path)
 
@@ -348,8 +351,8 @@ def main() -> None:
             if slug in LOW_PRIORITY_SLUGS and LOW_PRIORITY_MODE == "subfolder":
                 subfolder = "clinical/other"
 
-            dest_path = os.path.join(BASE_DIR, subfolder, f"{slug}.json")
-            os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+            dest_path = BASE_DIR / subfolder / f"{slug}.json"
+            dest_path.parent.mkdir(parents=True, exist_ok=True)
 
             # Resolve which index keys to use
             matched_keys = resolve_index_keys(pres_name, section, clinical_idx, nonclinical_idx)
@@ -393,7 +396,7 @@ def main() -> None:
             }
 
             action = ""
-            if os.path.exists(dest_path):
+            if dest_path.exists():
                 # Load existing once for checks/preservation
                 try:
                     existing = load_json(dest_path)
@@ -454,8 +457,8 @@ def main() -> None:
 
     try:
         if not DRY_RUN:
-            os.makedirs(os.path.dirname(SUMMARY_PATH), exist_ok=True)
-            with open(SUMMARY_PATH, "w") as f:
+            SUMMARY_PATH.parent.mkdir(parents=True, exist_ok=True)
+            with open(SUMMARY_PATH, "w", encoding="utf-8") as f:
                 f.write("".join(lines))
     except Exception as e:
         print(f"! Failed to write summary: {e}")

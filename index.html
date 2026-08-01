@@ -1,27 +1,24 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Home Clerkship Tools</title>
+  <title>Home</title>
   <script src="core_app.js"></script>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="core_style.css" />
   <link rel="icon" href="ct_icon.svg">
 </head>
+
 <body>
   <header class="appbar">
     <h1 class="site-title">
       <img class="site-title__icon" src="ct_icon.svg" alt="" aria-hidden="true" width="auto" />
       <span>Clerkship Tools</span>
     </h1>
-    <button
-      id="settings-button"
-      class="settings-button"
-      type="button"
-      aria-controls="settings-panel"
-      aria-expanded="false"
-    >
+    <button id="settings-button" class="settings-button" type="button" aria-controls="settings-panel"
+      aria-expanded="false">
       Settings
     </button>
   </header>
@@ -29,63 +26,53 @@
   <main>
     <section class="home-welcome">
       <h2 class="home-welcome-title">Welcome</h2>
-      <p class="home-welcome-copy">Pick a tool to get started.</p>
+      <p class="home-welcome-copy">Choose a tool to open the relevant reference page.</p>
     </section>
 
     <section class="grid">
       <article class="card">
         <h2>NoteWriter</h2>
-        <p>Build structured Subjective, ROS, PE, and MSE and auto-generate the complete note.</p>
+        <p>Build structured SOAP notes with Subjective, ROS, PE, and MSE sections.</p>
         <a class="button" href="v1_writer/writer.html">Launch</a>
       </article>
       <article class="card">
-        <h2>Health Maintanence</h2>
-        <p>USPSTF Reccomendations</p>
+        <h2>Health Maintenance</h2>
+        <p>Review USPSTF preventive screening and counseling recommendations.</p>
         <a class="button" href="Maintenance/USPSTF.html">Launch</a>
       </article>
       <article class="card">
-        <h2>Pediatrics</h2>
-        <p></p>
-        <a class="button" href="pediatrics/peds_index.html">Launch</a>
-      </article>
-      <article class="card">
         <h2>Calculators</h2>
-        <p></p>
+        <p>Run quick bedside calculators and common clinical conversions.</p>
         <a class="button" href="pages/calculators.html">Launch</a>
       </article>
       <article class="card">
-        <h2>Differential Diagnosis</h2>
-        <p></p>
+        <h2>Differential Explorer</h2>
+        <p>Browse symptom-based differentials from curated presentation indexes.</p>
         <a class="button" href="differentials/differentials_index.html">Launch</a>
       </article>
       <article class="card">
         <h2>Pharm Reference</h2>
-        <p></p>
+        <p>Browse medication classes, hierarchy groupings, and drug reference data.</p>
         <a class="button" href="pharm/pharm_index.html">Launch</a>
       </article>
     </section>
   </main>
 
   <footer>© CJG 2026</footer>
-  <div
-    id="settings-panel"
-    class="settings-panel"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="settings-title"
-    aria-hidden="true"
-  >
+  <div id="settings-panel" class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"
+    aria-hidden="true">
     <div class="settings-panel-content">
       <button id="close-settings" class="close-settings" type="button" aria-label="Close settings panel">×</button>
       <h2 id="settings-title">Settings</h2>
       <h3>Appearance</h3>
       <label>
         <input type="radio" name="theme" value="light"> Light Theme
-      </label><br/>
+      </label><br />
       <label>
         <input type="radio" name="theme" value="dark"> Dark Theme
       </label>
     </div>
   </div>
 </body>
+
 </html>

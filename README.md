@@ -8,10 +8,10 @@ Everything runs entirely in the browser with no backend dependencies.
 ### Included Apps
 | Module | Description | Entry Point |
 |:--|:--|:--|
-| **NoteWriter** | Structured SOAP note builder with Subjective, ROS, PE, and MSE tabs. | `writer.html` |
+| **NoteWriter** | Structured SOAP note builder with Subjective, ROS, PE, and MSE tabs. | `v1_writer/writer.html` |
 | **Differential Explorer** | Symptom-based lookup of causes from the *Pocketbook of Differential Diagnosis*. | `differentials/differentials_index.html` |
 | **USPSTF Preventive Care** | Parse chart text or manually enter demographics to retrieve preventive screening recommendations. | `Maintenance/USPSTF.html` |
-| **Calculators (Coming Soon)** | Framework for quick clinical calculators and conversions. | `pages/calculators.html` |
+| **Clinical Calculators** | Quick bedside calculators and common clinical conversions. | `pages/calculators.html` |
 
 ---
 
@@ -27,14 +27,17 @@ Everything runs entirely in the browser with no backend dependencies.
 ## File Structure
 ```
 index.html                        – Home page linking all tools
-js/core_app.js                    – Shared logic (theme, settings, utilities)
-js/app.js                         – NoteWriter logic (rendering, caching)
-writer.html                       – Entry point for NoteWriter
+core_app.js                       – Shared logic (theme, settings, utilities)
+v1_writer/                        – NoteWriter app and templates
+  ├── writer.html
+  └── templates/...
 differentials/                    – Differential Diagnosis Explorer
   ├── differentials_index.html
   ├── differentials_app.js
   └── data/presentations/...
 Maintenance/USPSTF.html           – USPSTF Preventive Care Calculator
+pharm/                            – Pharmacology reference app and datasets
+pages/calculators.html            – Clinical calculators page
 styles.css, core_style.css        – Global styling and layout
 assets/                           – Icons, JSON configs, and metadata
 ```
@@ -69,7 +72,7 @@ To deploy:
 2. Choose “Deploy from branch: main, folder: / (root)”.  
 3. Visit your deployed site:  
    ```
-   https://<username>.github.io/Clerkship_tools_v2/
+   https://<username>.github.io/Ref-pages_v3/
    ```
 
 ---

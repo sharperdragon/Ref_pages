@@ -133,9 +133,9 @@
     }
   ],
   "sourceFiles": {
-    "medications": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_rxclass_enriched.json",
-    "hierarchyIndex": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_index.json",
-    "hierarchyPaths": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_paths.json",
-    "aliases": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_aliases.json"
+    "medications": "pharm/assests/pharm_data_rxclass_enriched.json",
+    "hierarchyIndex": "pharm/assests/classes/main_hierarchy_index.json",
+    "hierarchyPaths": "pharm/assests/classes/main_hierarchy_paths.json",
+    "aliases": "pharm/assests/classes/main_hierarchy_aliases.json"
   }
 }

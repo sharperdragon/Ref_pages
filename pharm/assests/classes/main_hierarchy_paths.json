@@ -1,7 +1,7 @@
 {
   "version": "1",
   "generatedAt": "2026-03-21T15:58:03Z",
-  "sourceFile": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/MAIN_PHARM_CLASS_HIERARCHY.json",
+  "sourceFile": "pharm/assests/MAIN_PHARM_CLASS_HIERARCHY.json",
   "rootId": "drug_classes",
   "fallbackNodeId": "drug_classes.other_classes.unmapped",
   "paths": [

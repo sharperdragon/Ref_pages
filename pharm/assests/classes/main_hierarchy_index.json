@@ -1,8 +1,8 @@
 {
   "version": "1",
   "generatedAt": "2026-03-21T15:58:03Z",
-  "sourceFile": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/MAIN_PHARM_CLASS_HIERARCHY.json",
-  "labelOverridesFile": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/main_hierarchy_label_overrides.json",
+  "sourceFile": "pharm/assests/MAIN_PHARM_CLASS_HIERARCHY.json",
+  "labelOverridesFile": "pharm/assests/classes/main_hierarchy_label_overrides.json",
   "rootId": "drug_classes",
   "topLevelIds": [
     "drug_classes.cardiovascular",

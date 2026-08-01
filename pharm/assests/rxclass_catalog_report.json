@@ -1,14 +1,14 @@
 {
   "generatedAt": "2026-03-21T15:58:03Z",
   "inputFiles": {
-    "seedEpcPool": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/rxclass_seed/prescribable_epc_in_pool_sandbox.csv",
-    "seedNervousSystem": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/rxclass_seed/nervous_system_agents_sandbox.csv",
-    "seedPrescribableEpcAgents": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/rxclass_seed/prescribable_epc_in_agents_sandbox.csv",
-    "psychMeds": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pysch_meds.json"
+    "seedEpcPool": "pharm/assests/rxclass_seed/prescribable_epc_in_pool_sandbox.csv",
+    "seedNervousSystem": "pharm/assests/rxclass_seed/nervous_system_agents_sandbox.csv",
+    "seedPrescribableEpcAgents": "pharm/assests/rxclass_seed/prescribable_epc_in_agents_sandbox.csv",
+    "psychMeds": "pharm/assests/pysch_meds.json"
   },
   "outputFiles": {
-    "dataset": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_rxclass_enriched.json",
-    "report": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/rxclass_catalog_report.json"
+    "dataset": "pharm/assests/pharm_data_rxclass_enriched.json",
+    "report": "pharm/assests/rxclass_catalog_report.json"
   },
   "counts": {
     "sourceRows": 2364,

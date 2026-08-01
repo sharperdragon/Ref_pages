@@ -10,15 +10,14 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
 # -----------------------------
-# Config (edit these in VS Code)
+# USER SETTINGS
+# Update these in VS Code.
 # -----------------------------
-INPUT_PATH = Path(
-    "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/clinical_presentation_index.json"
-)
-OUTPUT_PATH = Path(
-    "/Users/claytongoddard/Git dub/Clerkship_tools_v2/differentials/clinical_presentation_index.json"
-)
+INPUT_PATH = REPO_ROOT / "differentials" / "clinical_presentation_index.json"
+OUTPUT_PATH = REPO_ROOT / "differentials" / "clinical_presentation_index.json"
 APPLY_CHANGES = False  # Set True to write OUTPUT_PATH, False for dry-run.
 JSON_INDENT = 2
 SKIP_AMBIGUOUS_KEYS = {

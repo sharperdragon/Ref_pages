@@ -2,10 +2,10 @@
   "version": "2",
   "generatedAt": "2026-03-11T03:06:40Z",
   "sourceFiles": {
-    "classesSimple": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes_simple.json",
-    "enrichedData": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/pharm_data_rxclass_enriched.json",
-    "familySource": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes/drug_class_families.json",
-    "removeList": "/Users/claytongoddard/Git dub/Clerkship_tools_v2/pharm/assests/classes_remove.txt"
+    "classesSimple": "pharm/assests/classes_simple.json",
+    "enrichedData": "pharm/assests/pharm_data_rxclass_enriched.json",
+    "familySource": "pharm/assests/classes/drug_class_families.json",
+    "removeList": "pharm/assests/classes_remove.txt"
   },
   "fallback": {
     "primaryClass": "Other Classes",
