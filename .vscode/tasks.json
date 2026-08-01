@@ -2,6 +2,17 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Setup: Environment Check",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/py/setup_check.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
       "label": "UI Tests: Install Dependencies",
       "type": "shell",
       "command": "npm install && npm run test:ui:install",
@@ -35,7 +46,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$python"
+      ]
     },
     {
       "label": "Pharm: Compile Main Class Hierarchy",
@@ -44,7 +57,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$python"
+      ]
     },
     {
       "label": "Pharm: Build Main Class Mapping",
@@ -53,7 +68,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$python"
+      ]
     },
     {
       "label": "Pharm: Full Pharm Rebuild",
@@ -81,7 +98,9 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$python"
+      ]
     },
     {
       "label": "Differentials: Fill Clinical Todo From PDF",
@@ -90,18 +109,33 @@
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [
+        "$python"
+      ]
     },
     {
-      "label": "Daily Run: Pharm Rebuild + Smoke",
+      "label": "Daily Run: Quick Smoke",
       "dependsOrder": "sequence",
       "dependsOn": [
-        "Pharm: Full Pharm Rebuild",
+        "Setup: Environment Check",
         "Pharm: Smoke Tests"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Daily Run: Full Rebuild + Smoke",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Setup: Environment Check",
+        "Pharm: Full Pharm Rebuild",
+        "Pharm: Smoke Tests"
+      ],
+      "group": {
+        "kind": "build"
       },
       "problemMatcher": []
     }
