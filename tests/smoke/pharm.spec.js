@@ -33,6 +33,7 @@ const FOOTER_DISCLAIMER = "footer #disclaimerBanner";
 const CLASS_BLOCKS = "#results .class-block";
 const CLASS_TOGGLES = "#results .class-toggle";
 const SUBCLASS_CHIPS = "#results .subclass-chip";
+const SUBCLASS_CHIP_TOGGLE = "#results .subclass-chip-toggle";
 const SUBCLASS_HEADINGS = "#results .subclass-heading";
 const RXNORM_PROXY_ROUTE = "**/api/rxnorm/**";
 const RXNORM_SECTION = '#detailBody [data-section="rxnorm"]';
@@ -287,6 +288,17 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(DETAIL_BODY)).toBeHidden();
   });
 
+  test("desktop keeps the detail panel out of the layout until a medication is selected", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await expect(page.locator(DETAIL_PANEL)).toBeHidden();
+
+    await page.locator(RESULTS_CARDS).first().click();
+    await expect(page.locator(DETAIL_PANEL)).toBeVisible();
+    await expect(page.locator(DETAIL_TITLE)).not.toHaveText("No selection");
+  });
+
   test("search ranking prioritizes exact match and alphabetical fallback", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
@@ -328,6 +340,36 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "compact");
     await expect(page.locator(RESULTS_CARDS).first()).toBeVisible();
     await expect(page.locator(CLASS_TOGGLES)).toHaveCount(0);
+  });
+
+  test("compact mode groups results by real top-level classes instead of the root node", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    const classTitles = page.locator(`${CLASS_BLOCKS} .class-block__title`);
+    await expect.poll(async () => classTitles.count()).toBeGreaterThan(1);
+    await expect(classTitles.first()).not.toHaveText(/^Drug Classes$/i);
+
+    const titles = await classTitles.allInnerTexts();
+    expect(titles).not.toContain("Drug Classes");
+  });
+
+  test("compact mode constrains large subclass chip sets and can reveal the rest", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    const toggle = page.locator(SUBCLASS_CHIP_TOGGLE).first();
+    await expect(toggle).toBeVisible();
+
+    const classBlock = toggle.locator("xpath=ancestor::*[contains(@class,'class-block')][1]");
+    const initialChipCount = await classBlock.locator(".subclass-chip").count();
+    const initialLabel = await toggle.innerText();
+    expect(initialLabel).toMatch(/show \d+ more/i);
+
+    await toggle.click();
+    await expect(classBlock.locator(".subclass-chip-toggle")).toHaveText(/show less/i);
+    const expandedChipCount = await classBlock.locator(".subclass-chip").count();
+    expect(expandedChipCount).toBeGreaterThan(initialChipCount);
   });
 
   test("structured mode shows accordion classes and subclass headings", async ({ page }) => {

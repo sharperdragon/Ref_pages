@@ -25,6 +25,7 @@
     classTreeColumnMinBottomPx: 12,
     classTreeBranchStartDepth: 1,
     classTreeShowPrimaryCarets: false,
+    compactSubclassChipLimit: 10,
     mobileBreakpointPx: 1080,
     emptyStateCopy: "No medications match the current filters.",
     noSelectionTitle: "No selection",
@@ -83,6 +84,7 @@
     clearFiltersButton: "#btnClearFilters",
     resultCount: "#resultCount",
     resultsGrid: "#results",
+    layoutShell: ".layout-shell",
     detailPanel: "#detailPanel",
     detailCloseButton: "#btnCloseDetail",
     detailTitle: "#detailTitle",
@@ -503,6 +505,7 @@
     viewMode: CONFIG.defaultViewMode,
     expandedClassId: null,
     selectedSubclassByClass: {},
+    expandedSubclassChipsByClass: {},
     theme: "light",
     rxnormByMedicationId: {},
   };
@@ -734,6 +737,12 @@
           return;
         }
 
+        const subclassChipToggle = event.target.closest(".subclass-chip-toggle");
+        if (subclassChipToggle) {
+          handleSubclassChipToggleClick(subclassChipToggle.dataset.classId);
+          return;
+        }
+
         const card = event.target.closest(".med-card");
         if (!card) return;
         selectMedication(card.dataset.id, true);
@@ -828,6 +837,16 @@
   function handleSubclassChipClick(classId, subclassId) {
     if (!classId || !subclassId) return;
     STATE.selectedSubclassByClass[classId] = subclassId;
+    renderCards();
+  }
+
+  function handleSubclassChipToggleClick(classId) {
+    if (!classId) return;
+    if (STATE.expandedSubclassChipsByClass[classId]) {
+      delete STATE.expandedSubclassChipsByClass[classId];
+    } else {
+      STATE.expandedSubclassChipsByClass[classId] = true;
+    }
     renderCards();
   }
 
@@ -2211,11 +2230,19 @@
       if (mainHierarchyIndex?.nodeById instanceof Map && !mainHierarchyIndex.nodeById.has(classNodeId)) {
         return;
       }
+      const classPathIds = stripMainHierarchyRootFromPathIds(
+        uniq(toTextArray(entry.classPathIds).map(cleanText).filter(Boolean)),
+        mainHierarchyIndex
+      );
+      const classPathLabels = stripMainHierarchyRootFromPathLabels(
+        uniq(toTextArray(entry.classPathLabels).map(sanitizeClassLabel).filter(Boolean)),
+        mainHierarchyIndex
+      );
       mappingByMedicationId.set(medicationId, {
         medicationId,
         classNodeId,
-        classPathIds: uniq(toTextArray(entry.classPathIds).map(cleanText).filter(Boolean)),
-        classPathLabels: uniq(toTextArray(entry.classPathLabels).map(sanitizeClassLabel).filter(Boolean)),
+        classPathIds,
+        classPathLabels,
         sourceKind: cleanText(entry.sourceKind),
         sourceLabel: cleanText(entry.sourceLabel),
         matchType: cleanText(entry.matchType),
@@ -2225,6 +2252,24 @@
     });
 
     return mappingByMedicationId;
+  }
+
+  function stripMainHierarchyRootFromPathIds(pathIds, mainHierarchyIndex) {
+    const values = Array.isArray(pathIds) ? pathIds.slice() : [];
+    const rootId = cleanText(mainHierarchyIndex?.rootId);
+    if (rootId && values[0] === rootId) {
+      values.shift();
+    }
+    return values;
+  }
+
+  function stripMainHierarchyRootFromPathLabels(pathLabels, mainHierarchyIndex) {
+    const values = Array.isArray(pathLabels) ? pathLabels.slice() : [];
+    const rootLabel = sanitizeClassLabel(mainHierarchyIndex?.nodeById?.get(mainHierarchyIndex?.rootId)?.label);
+    if (rootLabel && values[0] === rootLabel) {
+      values.shift();
+    }
+    return values;
   }
 
   function normalizeMainHierarchyMappingReport(payload) {
@@ -3562,6 +3607,7 @@
     if (classes.length === 0) {
       STATE.expandedClassId = null;
       STATE.selectedSubclassByClass = {};
+      STATE.expandedSubclassChipsByClass = {};
       return;
     }
 
@@ -3582,6 +3628,14 @@
     });
 
     STATE.selectedSubclassByClass = nextSelection;
+
+    const nextExpandedSubclassChips = {};
+    classes.forEach((classGroup) => {
+      if (STATE.expandedSubclassChipsByClass[classGroup.id]) {
+        nextExpandedSubclassChips[classGroup.id] = true;
+      }
+    });
+    STATE.expandedSubclassChipsByClass = nextExpandedSubclassChips;
   }
 
   function renderCompactGroups(index, container) {
@@ -3613,9 +3667,10 @@
         || classGroup.subclasses[0];
 
       if (classGroup.subclasses.length > 1) {
+        const visibleSubclasses = getVisibleCompactSubclasses(classGroup, selectedSubclass?.id);
         const chips = document.createElement("div");
         chips.className = "subclass-chips";
-        classGroup.subclasses.forEach((subclass) => {
+        visibleSubclasses.forEach((subclass) => {
           const chip = document.createElement("button");
           chip.type = "button";
           chip.className = `subclass-chip${subclass.id === selectedSubclass?.id ? " is-active" : ""}`;
@@ -3626,6 +3681,24 @@
           chips.appendChild(chip);
         });
         body.appendChild(chips);
+
+        if (visibleSubclasses.length < classGroup.subclasses.length) {
+          const revealButton = document.createElement("button");
+          revealButton.type = "button";
+          revealButton.className = "subclass-chip-toggle";
+          revealButton.dataset.classId = classGroup.id;
+          revealButton.setAttribute("aria-expanded", "false");
+          revealButton.textContent = `Show ${classGroup.subclasses.length - visibleSubclasses.length} more`;
+          body.appendChild(revealButton);
+        } else if (classGroup.subclasses.length > CONFIG.compactSubclassChipLimit) {
+          const collapseButton = document.createElement("button");
+          collapseButton.type = "button";
+          collapseButton.className = "subclass-chip-toggle";
+          collapseButton.dataset.classId = classGroup.id;
+          collapseButton.setAttribute("aria-expanded", "true");
+          collapseButton.textContent = "Show less";
+          body.appendChild(collapseButton);
+        }
       }
 
       body.appendChild(makeCardsGrid(selectedSubclass ? selectedSubclass.medications : classGroup.medications));
@@ -3685,6 +3758,27 @@
       grid.appendChild(makeMedicationCard(medication));
     });
     return grid;
+  }
+
+  function getVisibleCompactSubclasses(classGroup, selectedSubclassId = "") {
+    const subclasses = Array.isArray(classGroup?.subclasses) ? classGroup.subclasses : [];
+    if (subclasses.length <= CONFIG.compactSubclassChipLimit) {
+      return subclasses;
+    }
+
+    if (STATE.expandedSubclassChipsByClass[classGroup.id]) {
+      return subclasses;
+    }
+
+    const limit = Math.max(1, Number(CONFIG.compactSubclassChipLimit) || 1);
+    const selectedIndex = subclasses.findIndex((subclass) => subclass.id === selectedSubclassId);
+    if (selectedIndex < 0 || selectedIndex < limit) {
+      return subclasses.slice(0, limit);
+    }
+
+    const visible = subclasses.slice(0, Math.max(0, limit - 1));
+    visible.push(subclasses[selectedIndex]);
+    return visible;
   }
 
   function makeStableId(value) {
@@ -3941,6 +4035,7 @@
     EL.detailBody.innerHTML = "";
 
     if (!selected) {
+      syncDetailLayout(false);
       EL.detailTitle.textContent = CONFIG.noSelectionTitle;
       EL.detailMeta.hidden = true;
       EL.detailBody.hidden = true;
@@ -3949,6 +4044,7 @@
       return;
     }
 
+    syncDetailLayout(true);
     EL.detailTitle.textContent = selected.name;
     EL.detailMeta.hidden = false;
     EL.detailMeta.textContent = `${selected.specificClassLabel || selected.displayClassLabel || selected.drugClass} • ${selected.routes.join(", ")}`;
@@ -3974,6 +4070,16 @@
     const fragment = document.createDocumentFragment();
     sections.forEach((section) => fragment.appendChild(section));
     EL.detailBody.appendChild(fragment);
+  }
+
+  function syncDetailLayout(hasSelection) {
+    if (EL.layoutShell) {
+      EL.layoutShell.classList.toggle("has-detail", Boolean(hasSelection));
+    }
+
+    if (EL.detailPanel) {
+      EL.detailPanel.dataset.selectionState = hasSelection ? "selected" : "empty";
+    }
   }
 
   function makeTextSection(title, text, dataSection) {
