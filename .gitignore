@@ -10,6 +10,14 @@
 __pycache__/
 **/__pycache__/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.python-version
+.coverage
+htmlcov/
 
 # Local generated folders
 backups/
@@ -19,7 +27,24 @@ folder/
 node_modules/
 playwright-report/
 test-results/
+blob-report/
+coverage/
 
 # Local sensitive data and quarantine workspace
 assets/KEYS/
 pharm/possible_delete/
+
+# Editor / IDE files
+.vscode/*
+!.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.log
+
+# Temporary deploy excludes for Cloudflare's 25 MiB asset limit
+pharm/assests/DailyMed/rxnorm_mappings.txt
+pharm/assests/FDA/UNII_Records_26Feb2026.txt
