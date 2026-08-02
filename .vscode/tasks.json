@@ -13,6 +13,33 @@
       ]
     },
     {
+      "label": "Deploy: Build Static Bundle",
+      "type": "shell",
+      "command": "npm run build:deploy",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy: Preview (Wrangler)",
+      "type": "shell",
+      "command": "npm run preview",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Deploy: Cloudflare Workers",
+      "type": "shell",
+      "command": "npm run deploy",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "UI Tests: Install Dependencies",
       "type": "shell",
       "command": "npm install && npm run test:ui:install",

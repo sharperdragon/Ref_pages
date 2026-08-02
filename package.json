@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "UI smoke tests for Page-ref",
   "scripts": {
+    "build:deploy": "node ./scripts/build_static_deploy.js",
+    "deploy": "npx wrangler deploy",
+    "preview": "npx wrangler dev",
     "test:ui": "playwright test",
     "test:ui:headed": "playwright test --headed",
     "test:ui:debug": "playwright test --debug",

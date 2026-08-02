@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ref-pages",
+  "compatibility_date": "2026-08-02",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./dist"
+  },
+  "build": {
+    "command": "node ./scripts/build_static_deploy.js",
+    "cwd": ".",
+    "watch_dir": [
+      "index.html",
+      "styles.css",
+      "core_app.js",
+      "core_style.css",
+      "ct_icon.svg",
+      "pages",
+      "pharm",
+      "differentials",
+      "v1_writer",
+      "scripts/build_static_deploy.js"
+    ]
+  }
+}

@@ -29,6 +29,8 @@ playwright-report/
 test-results/
 blob-report/
 coverage/
+dist/
+.wrangler/
 
 # Local sensitive data and quarantine workspace
 assets/KEYS/
