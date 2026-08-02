@@ -5,7 +5,7 @@
         - link "Home" [ref=e5] [cursor=pointer]:
           - /url: ../index.html
         - heading "Pharm Reference" [level=1] [ref=e8]
-        - paragraph [ref=e9]: Rapid medication review for mixed clerkship workflows.
+        - paragraph [ref=e9]: Rapid medication review for mixed workflows.
       - button "Switch to dark mode" [ref=e10] [cursor=pointer]: Dark mode
     - region "Medication search" [ref=e11]:
       - generic [ref=e12]:

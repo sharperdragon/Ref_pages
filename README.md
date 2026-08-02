@@ -1,7 +1,7 @@
 # Ref Pages – Clinical Web Utilities
 
 ## Overview
-**Ref-page** is a collection of browser-based utilities for medical students and clinicians.  
+**Ref-page** is a collection of browser-based utilities for clinicians.  
 It includes multiple standalone web apps—each focused on a distinct clinical workflow—but unified by a shared theme engine (`core_app.js`) and a modular design.  
 Everything runs entirely in the browser with no backend dependencies.
 
@@ -19,7 +19,6 @@ Everything runs entirely in the browser with no backend dependencies.
 - 🧠 **Manifest-based UI** – Each tool loads panels and forms from JSON templates.  
 - 💾 **Offline & Static** – Fully functional without a server; ideal for GitHub Pages.  
 - 🧩 **Unified Framework** – Common layout, app bar, and settings drawer.  
-- 🧰 **Built for Medical Students** – Focused on speed and structure for clerkships and COMAT prep.
 
 ---
 
