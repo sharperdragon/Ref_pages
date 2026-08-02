@@ -1,8 +1,8 @@
 {
-  "name": "clerkship-tools-v2",
+  "name": "ref-pages-v3",
   "private": true,
   "version": "1.0.0",
-  "description": "UI smoke tests for Clerkship Tools",
+  "description": "UI smoke tests for Page-ref",
   "scripts": {
     "test:ui": "playwright test",
     "test:ui:headed": "playwright test --headed",

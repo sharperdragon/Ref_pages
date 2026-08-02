@@ -1,5 +1,5 @@
 (function (global) {
-  const STORAGE_KEY = "clerkship_tools_settings";
+  const STORAGE_KEY = "ref_pages_settings";
   const THEME_KEY = "ui-theme"; // "light" | "dark"
   const THEME_CHANGED_EVENT = "core-theme-changed";
 

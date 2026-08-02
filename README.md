@@ -1,7 +1,7 @@
-# Clerkship Tools – Clinical Web Utilities
+# Ref Pages – Clinical Web Utilities
 
 ## Overview
-**Clerkship Tools** is a collection of browser-based utilities for medical students and clinicians.  
+**Ref-page** is a collection of browser-based utilities for medical students and clinicians.  
 It includes multiple standalone web apps—each focused on a distinct clinical workflow—but unified by a shared theme engine (`core_app.js`) and a modular design.  
 Everything runs entirely in the browser with no backend dependencies.
 
@@ -10,7 +10,6 @@ Everything runs entirely in the browser with no backend dependencies.
 |:--|:--|:--|
 | **NoteWriter** | Structured SOAP note builder with Subjective, ROS, PE, and MSE tabs. | `v1_writer/writer.html` |
 | **Differential Explorer** | Symptom-based lookup of causes from the *Pocketbook of Differential Diagnosis*. | `differentials/differentials_index.html` |
-| **USPSTF Preventive Care** | Parse chart text or manually enter demographics to retrieve preventive screening recommendations. | `Maintenance/USPSTF.html` |
 | **Clinical Calculators** | Quick bedside calculators and common clinical conversions. | `pages/calculators.html` |
 
 ---
@@ -35,7 +34,6 @@ differentials/                    – Differential Diagnosis Explorer
   ├── differentials_index.html
   ├── differentials_app.js
   └── data/presentations/...
-Maintenance/USPSTF.html           – USPSTF Preventive Care Calculator
 pharm/                            – Pharmacology reference app and datasets
 pages/calculators.html            – Clinical calculators page
 styles.css, core_style.css        – Global styling and layout
