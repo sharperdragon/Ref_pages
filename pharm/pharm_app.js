@@ -14,12 +14,13 @@
     warnUnmappedMedicationRatio: 0.25,
     warnTopUnmappedLabelFrequency: 20,
     searchDebounceMs: 170,
-    classTreeHoverOpenEnabled: true,
+    classTreeHoverOpenEnabled: false,
+    classTreeHoverExpandEnabled: false,
     classTreeHoverCloseDelayMs: 140,
     classTreeHoverResumeDelayMs: 180,
-    classTreeColumnAnchorOffsetPx: 6,
+    classTreeColumnAnchorOffsetPx: 4,
     classTreeColumnMinVisibleHeightPx: 180,
-    classTreeColumnGapPx: 14,
+    classTreeColumnGapPx: 8,
     classTreeViewportPaddingPx: 12,
     classTreeColumnMinTopPx: 12,
     classTreeColumnMinBottomPx: 12,
@@ -41,7 +42,12 @@
     themeChangedEvent: "core-theme-changed",
     themeToggleLightLabel: "Light mode",
     themeToggleDarkLabel: "Dark mode",
-    cardSnippetExcludedIndicationPrefixes: [],
+    cardSnippetExcludedIndicationPrefixes: [
+      "Therapeutic indication varies by formulation and clinical context.",
+    ],
+    cardSnippetExcludedMoaPrefixes: [
+      "Mechanism data not available in current static build.",
+    ],
     relevanceWeights: {
       exactName: 100,
       namePrefix: 80,
@@ -584,7 +590,7 @@
 
     if (EL.classTreeColumns) {
       EL.classTreeColumns.addEventListener("scroll", (event) => {
-        if (!CONFIG.classTreeHoverOpenEnabled || !hasHoverPointer()) return;
+        if (!hasHoverPointer()) return;
         const column = event.target.closest(".class-tree-column");
         if (!column) return;
         const columnKey = getClassTreeColumnKey(
@@ -618,7 +624,7 @@
       }, { capture: true, passive: true });
 
       EL.classTreeColumns.addEventListener("mouseover", (event) => {
-        if (!CONFIG.classTreeHoverOpenEnabled || !hasHoverPointer()) return;
+        if (!CONFIG.classTreeHoverExpandEnabled || !hasHoverPointer()) return;
         if (Date.now() < STATE.classTreeHoverGuardUntilMs) return;
         const option = event.target.closest(".class-tree-option");
         if (!option) return;
@@ -3938,17 +3944,22 @@
     const snippet = document.createElement("p");
     snippet.className = "med-card__snippet";
     const snippetValues = getCardSnippetValues(medication);
-    snippet.textContent = snippetValues.join(" • ");
+    if (snippetValues.length > 0) {
+      snippet.textContent = snippetValues.join(" • ");
+      card.appendChild(snippet);
+    }
 
     card.appendChild(title);
     card.appendChild(classText);
     card.appendChild(routeRow);
-    card.appendChild(snippet);
     return card;
   }
 
   function getCardSnippetValues(medication) {
     const excludedPrefixes = CONFIG.cardSnippetExcludedIndicationPrefixes.map((prefix) =>
+      normalizeSearch(prefix)
+    );
+    const excludedMoaPrefixes = CONFIG.cardSnippetExcludedMoaPrefixes.map((prefix) =>
       normalizeSearch(prefix)
     );
     const indicationValues = medication.indications.filter((item) => {
@@ -3961,7 +3972,32 @@
     }
 
     const moa = cleanText(medication.moa);
-    return moa ? [moa] : ["No summary available."];
+    if (moa) {
+      const normalizedMoa = normalizeSearch(moa);
+      const isExcludedMoa = excludedMoaPrefixes.some((prefix) => normalizedMoa.startsWith(prefix));
+      if (!isExcludedMoa) {
+        return [moa];
+      }
+    }
+
+    const secondaryClassHints = [
+      ...toTextArray(medication.classCandidates),
+      ...toTextArray(medication.classTags),
+    ].filter((value, index, array) => {
+      const normalizedValue = normalizeSearch(value);
+      if (!normalizedValue) return false;
+      const normalizedDisplayClass = normalizeSearch(
+        medication.specificClassLabel || medication.displayClassLabel || medication.drugClass
+      );
+      return normalizedValue !== normalizedDisplayClass
+        && array.findIndex((entry) => normalizeSearch(entry) === normalizedValue) === index;
+    });
+
+    if (secondaryClassHints.length > 0) {
+      return secondaryClassHints.slice(0, 2);
+    }
+
+    return [];
   }
 
   function handleResultsGridKeydown(event) {

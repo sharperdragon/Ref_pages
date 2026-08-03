@@ -688,7 +688,7 @@ test.describe("Pharm reference smoke", () => {
       .locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="0"][data-action="node"][data-has-children="true"]`)
       .first();
     await expect(branchableOption).toBeVisible();
-    await branchableOption.hover();
+    await branchableOption.click();
     await expect(page.locator(`${CLASS_TREE_COLUMNS} .class-tree-column[data-depth="1"]`)).toHaveCount(1);
 
     const beforeScrollTop = await primaryColumn.evaluate((el) => el.scrollTop);

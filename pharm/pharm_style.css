@@ -52,7 +52,7 @@
   --tree-column-sibling-surface: color-mix(in oklab, var(--surface), var(--surface-muted) 14%);
   --tree-backdrop-fill: color-mix(in oklab, var(--bg-page), #0b1f35 14%);
   --tree-backdrop-opacity: 0.26;
-  --tree-branch-gap: 14px;
+  --tree-branch-gap: 8px;
   --tree-branch-rail-width: 2px;
 }
 
@@ -124,16 +124,16 @@ body {
   top: 0;
   z-index: 30;
   display: grid;
-  gap: 10px;
-  padding: 10px clamp(12px, 3vw, 24px);
+  gap: 8px;
+  padding: 8px clamp(12px, 3vw, 22px);
   border-bottom: 1px solid color-mix(in oklab, var(--panel-border), transparent 18%);
   background: color-mix(in oklab, var(--surface-panel) 92%, transparent);
   backdrop-filter: blur(12px);
 }
 
-.app-header > *,
-.app-main > *,
-.app-footer > * {
+.app-header>*,
+.app-main>*,
+.app-footer>* {
   width: min(100%, var(--content-max-width));
   margin-inline: auto;
 }
@@ -142,19 +142,19 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: var(--space-3);
+  gap: 10px;
 }
 
 .brand {
   display: grid;
-  gap: 2px;
+  gap: 1px;
 }
 
 .brand__home {
   width: max-content;
   display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 6px;
   color: var(--text-muted);
   font-size: 12px;
   font-weight: 700;
@@ -179,49 +179,55 @@ body {
 .brand__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(20px, 2.3vw, 28px);
+  font-size: clamp(19px, 2.1vw, 26px);
   letter-spacing: -0.02em;
-  line-height: 1.08;
+  line-height: 1.02;
 }
 
 .brand__subtitle {
   margin: 0;
   color: var(--text-muted);
   font-size: 12.5px;
-  max-width: 62ch;
+  max-width: 48ch;
 }
 
 .controls {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .controls--primary {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
-  gap: 10px 14px;
+  gap: 8px 12px;
 }
 
 .controls--secondary {
   grid-template-columns: minmax(300px, 1.5fr) minmax(140px, 180px) auto auto;
   align-items: end;
-  gap: 10px 12px;
-  padding: 12px;
+  gap: 8px 10px;
+  padding: 10px 12px;
   border: 1px solid var(--panel-border);
-  border-radius: var(--radius-lg);
+  border-radius: 16px;
   background: color-mix(in oklab, var(--surface-panel), var(--surface-muted) 18%);
   box-shadow: var(--shadow-sm);
 }
 
 .control {
   display: grid;
-  gap: 5px;
+  gap: 4px;
   min-width: 0;
 }
 
 .control--class-tree {
   position: relative;
   isolation: isolate;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "label toggles"
+    "trigger trigger";
+  align-items: end;
+  gap: 5px 10px;
 }
 
 .control__label {
@@ -229,20 +235,25 @@ body {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+}
+
+#classTreeControlLabel {
+  grid-area: label;
+  align-self: center;
 }
 
 .input,
 .select {
   width: 100%;
-  min-height: 40px;
+  min-height: 38px;
   border: 1px solid var(--panel-border);
   border-radius: 12px;
-  padding: 9px 12px;
+  padding: 8px 11px;
   background: var(--surface-panel-muted);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 14.5px;
   transition:
     border-color var(--motion-fast) ease,
     background-color var(--motion-fast) ease,
@@ -250,24 +261,30 @@ body {
 }
 
 .control--search .input {
-  min-height: 50px;
-  padding: 12px 14px;
-  border-radius: 15px;
+  min-height: 46px;
+  padding: 11px 14px;
+  border-radius: 14px;
   background: var(--surface-panel);
   font-size: 16px;
   box-shadow: inset 0 1px 0 color-mix(in oklab, var(--surface), transparent 18%);
 }
 
+.class-type-toggle,
+.class-type-select {
+  grid-area: toggles;
+}
+
 .class-tree-trigger {
+  grid-area: trigger;
   width: 100%;
-  min-height: 40px;
+  min-height: 38px;
   border: 1px solid var(--panel-border);
   border-radius: 12px;
-  padding: 9px 12px;
+  padding: 8px 11px;
   background: var(--surface-panel-muted);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -334,8 +351,9 @@ body {
 }
 
 .class-tree-menu {
+  grid-column: 1 / -1;
   position: absolute;
-  top: calc(100% + 6px);
+  top: calc(100% + 4px);
   left: 0;
   z-index: 80;
   width: fit-content;
@@ -363,14 +381,14 @@ body {
 }
 
 .class-tree-column {
-  width: clamp(320px, 34vw, 500px);
-  max-width: min(500px, calc(100vw - 40px));
-  max-height: min(64vh, 560px);
+  width: clamp(292px, 30vw, 420px);
+  max-width: min(420px, calc(100vw - 32px));
+  max-height: min(62vh, 520px);
   border: 1px solid color-mix(in oklab, var(--brand), var(--border) 74%);
-  border-radius: 14px;
-  padding: 12px;
+  border-radius: 12px;
+  padding: 10px;
   display: grid;
-  gap: 8px;
+  gap: 7px;
   align-content: start;
   background: var(--tree-column-root-surface);
   position: relative;
@@ -378,7 +396,7 @@ body {
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-sm);
 }
 
 .class-tree-column[data-depth="0"] {
@@ -401,15 +419,14 @@ body {
   position: absolute;
   left: var(--tree-column-left, calc(100% + var(--tree-branch-gap)));
   top: var(--tree-column-offset, 0px);
-  width: clamp(290px, 30vw, 420px);
-  max-width: min(420px, calc(100vw - 28px));
-  max-height: min(52vh, 390px);
+  width: clamp(236px, 24vw, 312px);
+  max-width: min(312px, calc(100vw - 24px));
+  max-height: min(48vh, 360px);
   margin-left: 0;
   border-color: color-mix(in oklab, var(--brand), var(--border) 68%);
   background: var(--tree-column-active-surface);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
   z-index: 6;
-  animation: class-tree-branch-in var(--motion-fast) ease;
 }
 
 .class-tree-column[data-depth]:not([data-depth="0"])::before {
@@ -434,20 +451,9 @@ body {
   opacity: 0.82;
 }
 
-@keyframes class-tree-branch-in {
-  from {
-    opacity: 0.72;
-    transform: translateX(-6px) scale(0.985);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
 .class-tree-column__title {
   margin: 0;
-  padding: 2px 6px 7px;
+  padding: 2px 4px 6px;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -458,13 +464,13 @@ body {
 
 .class-tree-list {
   display: grid;
-  gap: 3px;
+  gap: 2px;
   align-content: start;
 }
 
 .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-list {
   position: relative;
-  padding-left: 12px;
+  padding-left: 10px;
 }
 
 .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-list::before {
@@ -481,15 +487,15 @@ body {
 .class-tree-option {
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 9px;
+  border-radius: 8px;
   background: transparent;
   color: var(--text);
   text-align: left;
-  padding: 8px 10px;
+  padding: 7px 9px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 9px;
+  gap: 8px;
   cursor: pointer;
   position: relative;
   transition:
@@ -517,9 +523,9 @@ body {
 .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option::before {
   content: "";
   position: absolute;
-  left: -11px;
+  left: -9px;
   top: 50%;
-  width: 9px;
+  width: 7px;
   height: var(--tree-branch-rail-width);
   background: var(--tree-branch-line);
   transform: translateY(-50%);
@@ -527,7 +533,7 @@ body {
 
 .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option.is-active,
 .class-tree-column[data-depth]:not([data-depth="0"]) .class-tree-option.is-branch {
-  transform: translateX(2px);
+  transform: none;
 }
 
 .class-tree-option.is-active {
@@ -620,12 +626,13 @@ body {
 }
 
 .control--result-meta {
-  min-width: 128px;
-  padding: 0 2px 2px;
+  min-width: 112px;
+  padding: 0 0 2px 2px;
   border: 0;
   border-radius: 0;
   background: transparent;
   justify-self: end;
+  align-self: center;
 }
 
 .result-count__label {
@@ -633,7 +640,7 @@ body {
   color: var(--text-muted);
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
 }
 
 .result-count {
@@ -657,13 +664,13 @@ body {
   align-items: center;
   width: max-content;
   border: 1px solid var(--panel-border);
-  border-radius: 12px;
+  border-radius: 11px;
   overflow: hidden;
   background: var(--surface-panel-muted);
 }
 
 .class-type-btn {
-  min-height: 36px;
+  min-height: 30px;
   border: 0;
   border-right: 1px solid var(--panel-border);
   background: transparent;
@@ -671,7 +678,7 @@ body {
   font-family: var(--font-body);
   font-size: 12px;
   font-weight: 700;
-  padding: 0 10px;
+  padding: 0 9px;
   cursor: pointer;
 }
 
@@ -693,13 +700,13 @@ body {
   align-items: center;
   width: max-content;
   border: 1px solid var(--panel-border);
-  border-radius: 12px;
+  border-radius: 11px;
   overflow: hidden;
   background: var(--surface-panel-muted);
 }
 
 .view-mode-btn {
-  min-height: 36px;
+  min-height: 34px;
   border: 0;
   border-right: 1px solid var(--panel-border);
   background: transparent;
@@ -733,8 +740,8 @@ body {
   font-weight: 700;
   font-size: 13px;
   line-height: 1;
-  min-height: 38px;
-  padding: 9px 12px;
+  min-height: 36px;
+  padding: 8px 11px;
   cursor: pointer;
   transition:
     border-color var(--motion-fast) ease,
@@ -833,7 +840,7 @@ body {
 
 .class-block {
   border: 1px solid var(--panel-border);
-  border-radius: 16px;
+  border-radius: 15px;
   background: var(--surface-panel);
   box-shadow: var(--shadow-sm);
 }
@@ -843,7 +850,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
-  padding: 12px 14px 2px;
+  padding: 10px 12px 1px;
 }
 
 .class-block__title {
@@ -865,8 +872,8 @@ body {
 
 .class-block__body {
   display: grid;
-  gap: 10px;
-  padding: 10px 14px 14px;
+  gap: 8px;
+  padding: 8px 12px 12px;
 }
 
 .class-toggle {
@@ -880,7 +887,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
-  padding: 12px 14px 11px;
+  padding: 10px 12px 10px;
   cursor: pointer;
 }
 
@@ -906,7 +913,7 @@ body {
 .subclass-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
 }
 
 .subclass-chip {
@@ -914,9 +921,9 @@ body {
   border-radius: var(--radius-pill);
   background: color-mix(in oklab, var(--surface-panel-muted), transparent 4%);
   color: var(--text-muted);
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 700;
-  padding: 4px 8px;
+  padding: 3px 8px;
   cursor: pointer;
   transition:
     border-color var(--motion-fast) ease,
@@ -940,7 +947,7 @@ body {
   border: 0;
   background: transparent;
   color: var(--brand-strong);
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 700;
   padding: 0;
   cursor: pointer;
@@ -962,7 +969,7 @@ body {
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--card-min-width), 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .results-grid[data-view-mode="compact"] .class-block {
@@ -979,15 +986,15 @@ body {
 
 .med-card {
   border: 1px solid var(--panel-border);
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--surface-panel);
   text-align: left;
-  padding: 11px 12px;
+  padding: 10px 11px;
   cursor: pointer;
   display: grid;
-  gap: 7px;
+  gap: 6px;
   align-content: start;
-  min-height: 150px;
+  min-height: 132px;
   transition:
     border-color var(--motion-fast) ease,
     box-shadow var(--motion-medium) ease,
@@ -1013,29 +1020,34 @@ body {
   margin: 0;
   font-family: var(--font-display);
   font-size: 18px;
-  line-height: 1.14;
+  line-height: 1.1;
   letter-spacing: -0.01em;
 }
 
 .med-card__class {
   margin: 0;
   color: var(--text-muted);
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 600;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .pill-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 4px;
 }
 
 .pill {
   border: 1px solid color-mix(in oklab, var(--brand), var(--panel-border) 76%);
   border-radius: var(--radius-pill);
-  padding: 2px 7px;
-  background: color-mix(in oklab, var(--surface-panel-muted), var(--surface) 16%);
-  color: var(--text-soft);
+  padding: 1px 6px;
+  background: color-mix(in oklab, var(--surface-panel-muted), var(--surface) 12%);
+  color: var(--text-muted);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -1045,8 +1057,8 @@ body {
 .med-card__snippet {
   margin: 0;
   color: color-mix(in oklab, var(--text), transparent 22%);
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 13.5px;
+  line-height: 1.3;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -1059,8 +1071,8 @@ body {
   background: var(--surface-panel);
   box-shadow: var(--shadow-md);
   position: sticky;
-  top: 108px;
-  max-height: calc(100dvh - 124px);
+  top: 96px;
+  max-height: calc(100dvh - 108px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1071,7 +1083,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-2);
-  padding: 14px 14px 10px;
+  padding: 12px 13px 9px;
   border-bottom: 1px solid var(--panel-border);
   background: color-mix(in oklab, var(--surface-panel-muted), transparent 4%);
 }
@@ -1098,14 +1110,14 @@ body {
 
 .detail-panel__meta {
   margin: 0;
-  padding: 10px 14px 0;
+  padding: 8px 13px 0;
   color: var(--text-muted);
   font-size: 12px;
   font-weight: 600;
 }
 
 .detail-empty {
-  padding: 14px;
+  padding: 13px;
   color: var(--text-muted);
 }
 
@@ -1115,7 +1127,7 @@ body {
 
 .detail-panel__body {
   overflow-y: auto;
-  padding: 8px 14px 16px;
+  padding: 8px 13px 14px;
   display: grid;
   gap: 10px;
 }
@@ -1146,7 +1158,7 @@ body {
   font-size: 14px;
 }
 
-.detail-section__list li + li {
+.detail-section__list li+li {
   margin-top: 5px;
 }
 
@@ -1223,8 +1235,8 @@ body.detail-open {
   }
 
   .detail-panel {
-    top: 108px;
-    max-height: calc(100dvh - 124px);
+    top: 96px;
+    max-height: calc(100dvh - 108px);
   }
 }
 
@@ -1241,6 +1253,15 @@ body.detail-open {
   .control--view-mode,
   .control--actions {
     grid-column: 1 / -1;
+  }
+
+  .control--class-tree {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "label"
+      "toggles"
+      "trigger";
+    gap: 6px;
   }
 
   .layout-shell {
@@ -1284,6 +1305,7 @@ body.detail-open {
 
   .control--result-meta {
     justify-self: start;
+    padding-left: 0;
   }
 
   .controls--secondary {
@@ -1303,8 +1325,8 @@ body.detail-open {
   .class-tree-columns {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
-    padding: 8px;
+    gap: 8px;
+    padding: 6px;
     min-width: max-content;
     overflow-x: auto;
   }
@@ -1315,8 +1337,8 @@ body.detail-open {
     left: auto;
     top: 0;
     width: auto;
-    min-width: 228px;
-    max-width: 86vw;
+    min-width: 214px;
+    max-width: 82vw;
     max-height: min(52vh, 420px);
     animation: none;
   }
@@ -1339,6 +1361,14 @@ body.detail-open {
 
   .class-type-select {
     display: block;
+  }
+
+  .control--class-tree {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "label"
+      "toggles"
+      "trigger";
   }
 
   .view-mode-toggle {
