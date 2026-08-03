@@ -2,7 +2,7 @@
   "presentation": "Anemia",
   "items": [
     {
-      "name": "Iron deﬁciency",
+      "name": "Iron deficiency",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -436,7 +436,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Drugs (, quinine, sulphonamides)",
+      "name": "Drugs (quinine, sulphonamides)",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -525,7 +525,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Mixed deﬁciencies",
+      "name": "Mixed deficiencies",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -1091,7 +1091,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Marrow inﬁltration",
+      "name": "Marrow infiltration",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -1134,7 +1134,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Examination of the peripheral blood ﬁlm is an important",
+      "name": "Examination of the peripheral blood film is an important",
       "system": "Symptoms And Signs",
       "redFlag": false,
       "hpi": {

@@ -2,7 +2,7 @@
   "presentation": "Fecal incontinence",
   "items": [
     {
-      "name": "Severe Diarrhea, , irritable bowel syndrome",
+      "name": "Severe Diarrhea, irritable bowel syndrome",
       "system": "Normal Sphincters And Pelvic Floor",
       "redFlag": false,
       "hpi": {
@@ -47,7 +47,7 @@
       "freq": "common"
     },
     {
-      "name": "Fecal impaction (‘overﬂow’ Diarrhea)",
+      "name": "Fecal impaction (‘overflow’ Diarrhea)",
       "system": "Normal Sphincters And Pelvic Floor",
       "redFlag": false,
       "hpi": {

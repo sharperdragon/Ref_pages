@@ -674,53 +674,8 @@
       "freq": "common"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "sudden",
-          "acute"
-        ],
-        "progression": [
-          "worsening",
-          "improving"
-        ],
-        "palliate": [
-          "heat"
-        ],
-        "provoke": [
-          "alcohol",
-          "pressure"
-        ],
-        "quality": [
-          "pressure"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "cranial-nerve-exam",
-          "motor-strength-testing"
-        ],
-        "other symptoms": [
-          "altered-mental-status"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
-      "name": "endemic areas)",
-      "system": "Cerebral malaria in the developed world • (common in",
+      "name": "Cerebral malaria",
+      "system": "Cerebral",
       "redFlag": false,
       "hpi": {
         "onset": [

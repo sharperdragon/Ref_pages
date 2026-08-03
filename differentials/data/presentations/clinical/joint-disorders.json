@@ -2,7 +2,7 @@
   "presentation": "Joint disorders",
   "items": [
     {
-      "name": "Achondroplasia (dwarﬁsm)",
+      "name": "Achondroplasia (dwarfism)",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -199,8 +199,8 @@
       "freq": "uncommon"
     },
     {
-      "name": "increase in developed countries)",
-      "system": "TB • (very common in the developing world and on the",
+      "name": "Tuberculosis",
+      "system": "Infectious",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -252,7 +252,7 @@
     },
     {
       "name": "Endocarditis",
-      "system": "Rheumatic fever • (very common in developing countries)",
+      "system": "Infectious",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -300,7 +300,7 @@
     },
     {
       "name": "Brucellosis",
-      "system": "Rheumatic fever • (very common in developing countries)",
+      "system": "Infectious",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -346,8 +346,8 @@
       "freq": "rare"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
+      "name": "Rheumatic fever",
+      "system": "Infectious",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -374,8 +374,7 @@
           "nocturnal"
         ],
         "region": [
-          "n/a",
-          "wrist"
+          "n/a"
         ],
         "radiation": [
           "n/a"
@@ -388,10 +387,11 @@
           "palpation"
         ],
         "other symptoms": [
-          "pain"
+          "pain",
+          "fever"
         ]
       },
-      "freq": "unknown"
+      "freq": "rare"
     },
     {
       "name": "Rheumatoid arthritis",
@@ -1759,7 +1759,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Acute gastrointestinal infections (",
+      "name": "Acute gastrointestinal infections",
       "system": "Enteropathic",
       "redFlag": false,
       "hpi": {
@@ -1810,7 +1810,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Inﬂammatory bowel disease",
+      "name": "Inflammatory bowel disease",
       "system": "Enteropathic",
       "redFlag": false,
       "hpi": {
@@ -2312,8 +2312,8 @@
       "freq": "uncommon"
     },
     {
-      "name": "countries)",
-      "system": "Behçet’s disease • (more common in certain Mediterranean",
+      "name": "Behçet’s disease",
+      "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -2776,7 +2776,7 @@
       "freq": "rare"
     },
     {
-      "name": "Myositis ossiﬁcans",
+      "name": "Myositis ossificans",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
@@ -2826,7 +2826,7 @@
       "freq": "rare"
     },
     {
-      "name": "Distal radial fracture, , Smith’s",
+      "name": "Distal radial fracture, Smith’s",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
@@ -3748,7 +3748,7 @@
       "freq": "rare"
     },
     {
-      "name": "Nerve entrapment, , posterior interosseous and median",
+      "name": "Nerve entrapment, posterior interosseous and median",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {

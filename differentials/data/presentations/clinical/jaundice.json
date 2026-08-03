@@ -95,8 +95,8 @@
       "freq": "rare"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
+      "name": "Malaria",
+      "system": "Hemolytic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -134,14 +134,15 @@
           "shifting-dullness"
         ],
         "other symptoms": [
-          "abdominal-swelling"
+          "abdominal-swelling",
+          "jaundice"
         ]
       },
-      "freq": "unknown"
+      "freq": "rare"
     },
     {
       "name": "Incompatible blood transfusion",
-      "system": "Malaria • (common where malaria is endemic)",
+      "system": "Hemolytic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -187,7 +188,7 @@
     },
     {
       "name": "Autoimmune",
-      "system": "Malaria • (common where malaria is endemic)",
+      "system": "Hemolytic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -233,7 +234,7 @@
     },
     {
       "name": "Hemolytic disease of the newborn",
-      "system": "Malaria • (common where malaria is endemic)",
+      "system": "Hemolytic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -281,7 +282,7 @@
     },
     {
       "name": "Absorbing large hematoma",
-      "system": "Malaria • (common where malaria is endemic)",
+      "system": "Hemolytic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -326,7 +327,7 @@
     },
     {
       "name": "Hypersplenism",
-      "system": "Malaria • (common where malaria is endemic)",
+      "system": "Hemolytic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -561,7 +562,7 @@
       "freq": "rare"
     },
     {
-      "name": "Drugs, , halothane",
+      "name": "Drugs, halothane",
       "system": "Acute Hepatocellular Disease",
       "redFlag": false,
       "hpi": {
@@ -1463,7 +1464,7 @@
       "freq": "rare"
     },
     {
-      "name": "Stricture, , postoperative",
+      "name": "Stricture, postoperative",
       "system": "Extrahepatic (obstructive)",
       "redFlag": false,
       "hpi": {

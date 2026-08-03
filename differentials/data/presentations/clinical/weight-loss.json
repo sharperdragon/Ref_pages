@@ -6,17 +6,43 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue", "anorexia", "night-sweats", "pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "anorexia",
+          "night-sweats",
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +51,44 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "elevation"],
-        "provoke": ["exertion"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["chest"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["jugular-venous-pressure", "auscultation", "inspection"],
-        "other symptoms": ["dyspnea", "orthostasis", "fatigue"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "elevation"
+        ],
+        "provoke": [
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "jugular-venous-pressure",
+          "auscultation",
+          "inspection"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "orthostasis",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +97,42 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["exertion"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["chest"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["lung-auscultation", "chest-percussion", "inspection"],
-        "other symptoms": ["dyspnea", "fatigue"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "lung-auscultation",
+          "chest-percussion",
+          "inspection"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +141,43 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["dehydration"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["flank"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["nausea", "fatigue", "cramps"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "flank"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "nausea",
+          "fatigue",
+          "cramps"
+        ]
       },
       "freq": "common"
     },
@@ -82,17 +186,44 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["ruq"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation", "shifting-dullness"],
-        "other symptoms": ["fatigue", "jaundice", "nausea"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "ruq"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "shifting-dullness"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "jaundice",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -101,36 +232,86 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["meals"],
-        "quality": ["n/a"],
-        "timing": ["postprandial"],
-        "region": ["abdomen"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["diarrhea", "bloating", "fatigue"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "meals"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "postprandial"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "bloating",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Connective tissue disease (, rheumatoid arthritis)",
+      "name": "Connective tissue disease (rheumatoid arthritis)",
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["stress"],
-        "quality": ["aching", "tender"],
-        "timing": ["persistent"],
-        "region": ["joints"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["fatigue", "pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "aching",
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "joints"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -139,17 +320,42 @@
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["diet-control"],
-        "provoke": ["dehydration"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["glucose-fingerstick"],
-        "other symptoms": ["polyuria", "polydipsia", "fatigue", "blurred-vision"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "diet-control"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick"
+        ],
+        "other symptoms": [
+          "polyuria",
+          "polydipsia",
+          "fatigue",
+          "blurred-vision"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +364,42 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["chest"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "lung-auscultation"],
-        "other symptoms": ["night-sweats", "cough", "fatigue"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "lung-auscultation"
+        ],
+        "other symptoms": [
+          "night-sweats",
+          "cough",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -177,17 +408,41 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["night-sweats", "fever", "fatigue"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "night-sweats",
+          "fever",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -196,17 +451,41 @@
       "system": "Infective",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["meals"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["abdomen"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["anemia", "fatigue"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "meals"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "anemia",
+          "fatigue"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +494,41 @@
       "system": "Psychiatric",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["anhedonia", "fatigue", "sleep-disturbance"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "anhedonia",
+          "fatigue",
+          "sleep-disturbance"
+        ]
       },
       "freq": "common"
     },
@@ -234,17 +537,42 @@
       "system": "Psychiatric",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue", "cold-intolerance", "amenorrhea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "cold-intolerance",
+          "amenorrhea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -253,36 +581,82 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue", "pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Substance abuse (, amphetamines, opiates)",
+      "name": "Substance abuse (amphetamines, opiates)",
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue", "anorexia"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "anorexia"
+        ]
       },
       "freq": "common"
     },
@@ -291,36 +665,83 @@
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["medications"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "medications"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Malnutrition \u2022 (common in developing countries)",
+      "name": "Malnutrition (common in developing countries)",
       "system": "Other",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["nutrition"],
-        "provoke": ["poor-intake"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue", "weakness"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "nutrition"
+        ],
+        "provoke": [
+          "poor-intake"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "weakness"
+        ]
       },
       "freq": "unknown"
     }

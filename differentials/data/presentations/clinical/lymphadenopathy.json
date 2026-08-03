@@ -238,7 +238,7 @@
     },
     {
       "name": "Syphilis",
-      "system": "TB • (common in parts of the world where TB is endemic)",
+      "system": "TB (common in parts of the world where TB is endemic)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -285,7 +285,7 @@
     },
     {
       "name": "Brucellosis",
-      "system": "TB • (common in parts of the world where TB is endemic)",
+      "system": "TB (common in parts of the world where TB is endemic)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -332,7 +332,7 @@
     },
     {
       "name": "Cat scratch disease",
-      "system": "TB • (common in parts of the world where TB is endemic)",
+      "system": "TB (common in parts of the world where TB is endemic)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -379,7 +379,7 @@
     },
     {
       "name": "Septicemia",
-      "system": "TB • (common in parts of the world where TB is endemic)",
+      "system": "TB (common in parts of the world where TB is endemic)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -472,7 +472,7 @@
       "freq": "rare"
     },
     {
-      "name": "Filariasis • (common in tropical regions of Asia, Africa)",
+      "name": "Filariasis (common in tropical regions of Asia, Africa)",
       "system": "Parasitic",
       "redFlag": false,
       "hpi": {

@@ -136,7 +136,7 @@
       "freq": "common"
     },
     {
-      "name": "Cervicitis, , Chlamydia, herpes",
+      "name": "Cervicitis, Chlamydia, herpes",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -222,7 +222,7 @@
       "freq": "common"
     },
     {
-      "name": "Retained foreign body, , pessary",
+      "name": "Retained foreign body, pessary",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -398,7 +398,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Neoplasm, , vulva",
+      "name": "Neoplasm, vulva",
       "system": "General",
       "redFlag": false,
       "hpi": {
@@ -489,7 +489,7 @@
       "freq": "rare"
     },
     {
-      "name": "Colovaginal ﬁstula",
+      "name": "Colovaginal fistula",
       "system": "General",
       "redFlag": false,
       "hpi": {

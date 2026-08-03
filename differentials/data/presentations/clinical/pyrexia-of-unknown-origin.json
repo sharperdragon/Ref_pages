@@ -2,7 +2,7 @@
   "presentation": "Pyrexia of unknown origin",
   "items": [
     {
-      "name": "Abscess, , pelvic",
+      "name": "Abscess, pelvic",
       "system": "Bacterial",
       "redFlag": false,
       "hpi": {
@@ -348,7 +348,7 @@
       "freq": "rare"
     },
     {
-      "name": "Inﬂuenza",
+      "name": "Influenza",
       "system": "Bacterial",
       "redFlag": false,
       "hpi": {
@@ -607,7 +607,7 @@
     },
     {
       "name": "Amoebiasis",
-      "system": "Malaria • (common in Africa)",
+      "system": "Malaria (common in Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -649,7 +649,7 @@
     },
     {
       "name": "Toxoplasmosis",
-      "system": "Malaria • (common in Africa)",
+      "system": "Malaria (common in Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [

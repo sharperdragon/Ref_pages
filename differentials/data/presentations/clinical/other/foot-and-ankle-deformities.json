@@ -93,7 +93,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Pes planus (ﬂatfoot)",
+      "name": "Pes planus (flatfoot)",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -724,7 +724,7 @@
       "freq": "rare"
     },
     {
-      "name": "Spina biﬁda",
+      "name": "Spina bifida",
       "system": "Lower Motor Neurone Lesion",
       "redFlag": false,
       "hpi": {

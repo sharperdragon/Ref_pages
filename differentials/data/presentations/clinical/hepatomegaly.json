@@ -199,7 +199,7 @@
       "freq": "rare"
     },
     {
-      "name": "Parasites (hydatid cyst, liver ﬂuke)",
+      "name": "Parasites (hydatid cyst, liver fluke)",
       "system": "Hepatitis/Infection",
       "redFlag": false,
       "hpi": {
@@ -484,7 +484,7 @@
       "freq": "rare"
     },
     {
-      "name": "Extrahepatic obstruction, , bile",
+      "name": "Extrahepatic obstruction, bile",
       "system": "Biliary Tract Disease",
       "redFlag": false,
       "hpi": {
@@ -775,7 +775,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Myeloﬁbrosis",
+      "name": "Myelofibrosis",
       "system": "Malignancy",
       "redFlag": false,
       "hpi": {

@@ -362,7 +362,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Infarction, , mesenteric infarction",
+      "name": "Infarction, mesenteric infarction",
       "system": "Acute Non-Infective Inflammation",
       "redFlag": false,
       "hpi": {
@@ -732,7 +732,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Myeloﬁbrosis",
+      "name": "Myelofibrosis",
       "system": "Chronic Myeloproliferative Disease",
       "redFlag": false,
       "hpi": {
@@ -1326,7 +1326,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Inﬂuenza",
+      "name": "Influenza",
       "system": "Viral Infections",
       "redFlag": false,
       "hpi": {
@@ -2050,7 +2050,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Allergy, , drug reaction",
+      "name": "Allergy, drug reaction",
       "system": "Eosinophilia",
       "redFlag": false,
       "hpi": {
@@ -2186,7 +2186,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Parasitic infections, , schistosomiasis",
+      "name": "Parasitic infections, schistosomiasis",
       "system": "Eosinophilia",
       "redFlag": false,
       "hpi": {

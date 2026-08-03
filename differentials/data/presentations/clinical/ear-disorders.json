@@ -144,7 +144,7 @@
       "freq": "rare"
     },
     {
-      "name": "Malignancy (, squamous cell carcinoma)",
+      "name": "Malignancy (squamous cell carcinoma)",
       "system": "External Ear",
       "redFlag": false,
       "hpi": {
@@ -477,7 +477,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Dental problems (",
+      "name": "Dental problems",
       "system": "Referred",
       "redFlag": false,
       "hpi": {

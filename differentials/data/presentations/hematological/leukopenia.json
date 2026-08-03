@@ -2,7 +2,7 @@
   "presentation": "leukopenia",
   "items": [
     {
-      "name": "Bone marrow depression, , malignant",
+      "name": "Bone marrow depression, malignant",
       "system": "Pancytopenia",
       "redFlag": false,
       "hpi": {
@@ -47,7 +47,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Severe B12 or folate deﬁciency",
+      "name": "Severe B12 or folate deficiency",
       "system": "Pancytopenia",
       "redFlag": false,
       "hpi": {
@@ -610,7 +610,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Drug induced, , carbimazole",
+      "name": "Drug induced, carbimazole",
       "system": "Selective Neutropenia",
       "redFlag": false,
       "hpi": {

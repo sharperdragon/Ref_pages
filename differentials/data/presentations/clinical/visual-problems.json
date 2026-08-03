@@ -382,7 +382,7 @@
       "freq": "common"
     },
     {
-      "name": "Peripheral ﬁeld loss – glaucoma, papilloedema",
+      "name": "Peripheral field loss – glaucoma, papilloedema",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
@@ -429,7 +429,7 @@
       "freq": "common"
     },
     {
-      "name": "Central ﬁeld loss – age-related macular degeneration",
+      "name": "Central field loss – age-related macular degeneration",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
@@ -527,7 +527,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Horizontal ﬁeld loss – retinal vascular occlusion",
+      "name": "Horizontal field loss – retinal vascular occlusion",
       "system": "Partial Loss",
       "redFlag": false,
       "hpi": {
@@ -575,54 +575,8 @@
       "freq": "rare"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "sudden",
-          "acute"
-        ],
-        "progression": [
-          "worsening",
-          "improving"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "movement",
-          "pressure"
-        ],
-        "quality": [
-          "pressure",
-          "throbbing"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "slit-lamp-exam",
-          "visual-field-test"
-        ],
-        "other symptoms": [
-          "visual-problem"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
-      "name": "lesions at the optic chiasma or more posteriorly cause binocular loss",
-      "system": "Vitamin A deﬁciency • (common in underdeveloped countries)",
+      "name": "Vitamin A deficiency",
+      "system": "General",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -667,103 +621,6 @@
         ]
       },
       "freq": "rare"
-    },
-    {
-      "name": "Sudden onset of visual disturbance or loss is an opthalmic",
-      "system": "Vitamin A deﬁciency • (common in underdeveloped countries)",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "sudden",
-          "acute"
-        ],
-        "progression": [
-          "worsening",
-          "improving"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "movement",
-          "pressure"
-        ],
-        "quality": [
-          "pressure",
-          "throbbing"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "fingers",
-          "scalp"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "slit-lamp-exam",
-          "visual-field-test",
-          "reflex-testing"
-        ],
-        "other symptoms": [
-          "visual-problem",
-          "stroke-symptoms"
-        ]
-      },
-      "freq": "common"
-    },
-    {
-      "name": "If temporal arteritis is suspected consider treatment",
-      "system": "Vitamin A deﬁciency • (common in underdeveloped countries)",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "sudden",
-          "acute"
-        ],
-        "progression": [
-          "worsening",
-          "improving"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "movement",
-          "pressure"
-        ],
-        "quality": [
-          "pressure",
-          "throbbing",
-          "tender"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "face",
-          "scalp"
-        ],
-        "radiation": [
-          "jaw"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "slit-lamp-exam",
-          "visual-field-test"
-        ],
-        "other symptoms": [
-          "visual-problem"
-        ]
-      },
-      "freq": "common"
     }
   ],
   "sources": {

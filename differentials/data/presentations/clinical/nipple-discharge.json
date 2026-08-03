@@ -86,7 +86,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Medication (, antidepressants)",
+      "name": "Medication (antidepressants)",
       "system": "Serous",
       "redFlag": false,
       "hpi": {

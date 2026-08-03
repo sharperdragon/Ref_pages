@@ -43,7 +43,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Drugs, , alcohol, cytotoxic agents",
+      "name": "Drugs, alcohol, cytotoxic agents",
       "system": "Reduced Production",
       "redFlag": false,
       "hpi": {
@@ -84,7 +84,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Viral infections, , CMV",
+      "name": "Viral infections, CMV",
       "system": "Reduced Production",
       "redFlag": false,
       "hpi": {
@@ -168,7 +168,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Bone marrow inﬁltration, , leukemia, myeloma",
+      "name": "Bone marrow infiltration, leukemia, myeloma",
       "system": "Reduced Production",
       "redFlag": false,
       "hpi": {
@@ -333,7 +333,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Drugs, , heparins, quinine, sulphonamides",
+      "name": "Drugs, heparins, quinine, sulphonamides",
       "system": "Immune",
       "redFlag": false,
       "hpi": {

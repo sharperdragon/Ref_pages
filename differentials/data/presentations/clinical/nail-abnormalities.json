@@ -6,17 +6,50 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": ["congenital", "infant"],
-        "progression": ["chronic", "recurrent-blisters"],
-        "palliate": ["protective-dressings"],
-        "provoke": ["minor-trauma", "friction"],
-        "quality": ["fragile-skin", "bullae", "erosions"],
-        "timing": ["recurrent"],
-        "region": ["nails", "hands", "feet"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["skin-biopsy", "genetic-testing"],
-        "other symptoms": ["mucosal-blisters", "scarring", "infection"]
+        "onset": [
+          "congenital",
+          "infant"
+        ],
+        "progression": [
+          "chronic",
+          "recurrent-blisters"
+        ],
+        "palliate": [
+          "protective-dressings"
+        ],
+        "provoke": [
+          "minor-trauma",
+          "friction"
+        ],
+        "quality": [
+          "fragile-skin",
+          "bullae",
+          "erosions"
+        ],
+        "timing": [
+          "recurrent"
+        ],
+        "region": [
+          "nails",
+          "hands",
+          "feet"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "skin-biopsy",
+          "genetic-testing"
+        ],
+        "other symptoms": [
+          "mucosal-blisters",
+          "scarring",
+          "infection"
+        ]
       },
       "freq": "rare"
     },
@@ -25,17 +58,40 @@
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
-        "onset": ["congenital"],
-        "progression": ["nonprogressive"],
-        "palliate": ["n/a"],
-        "provoke": ["genetic"],
-        "quality": ["absence-of-nail"],
-        "timing": ["lifelong"],
-        "region": ["fingers", "toes"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["genetic-testing"],
-        "other symptoms": ["none"]
+        "onset": [
+          "congenital"
+        ],
+        "progression": [
+          "nonprogressive"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "genetic"
+        ],
+        "quality": [
+          "absence-of-nail"
+        ],
+        "timing": [
+          "lifelong"
+        ],
+        "region": [
+          "fingers",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "genetic-testing"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "rare"
     },
@@ -44,17 +100,46 @@
       "system": "Infections",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["antifungals"],
-        "provoke": ["humidity", "occlusive-shoes"],
-        "quality": ["thickened", "discolored", "brittle-nails"],
-        "timing": ["persistent"],
-        "region": ["toenails", "fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["koh-prep", "fungal-culture"],
-        "other symptoms": ["itching", "odor"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antifungals"
+        ],
+        "provoke": [
+          "humidity",
+          "occlusive-shoes"
+        ],
+        "quality": [
+          "thickened",
+          "discolored",
+          "brittle-nails"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "toenails",
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "koh-prep",
+          "fungal-culture"
+        ],
+        "other symptoms": [
+          "itching",
+          "odor"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +148,47 @@
       "system": "Infections",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["warm-soaks", "antibiotics"],
-        "provoke": ["trauma", "moisture", "nail-biting"],
-        "quality": ["tender", "red", "swollen"],
-        "timing": ["constant"],
-        "region": ["nail-fold"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["culture", "inspection"],
-        "other symptoms": ["pus-drainage", "pain"]
+        "onset": [
+          "acute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "warm-soaks",
+          "antibiotics"
+        ],
+        "provoke": [
+          "trauma",
+          "moisture",
+          "nail-biting"
+        ],
+        "quality": [
+          "tender",
+          "red",
+          "swollen"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "nail-fold"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "culture",
+          "inspection"
+        ],
+        "other symptoms": [
+          "pus-drainage",
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,55 +197,130 @@
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
-        "onset": ["childhood"],
-        "progression": ["chronic"],
-        "palliate": ["behavioral-therapy"],
-        "provoke": ["stress", "anxiety"],
-        "quality": ["irregular-nail-edges", "short-nails"],
-        "timing": ["habitual"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["paronychia", "nail-deformity"]
+        "onset": [
+          "childhood"
+        ],
+        "progression": [
+          "chronic"
+        ],
+        "palliate": [
+          "behavioral-therapy"
+        ],
+        "provoke": [
+          "stress",
+          "anxiety"
+        ],
+        "quality": [
+          "irregular-nail-edges",
+          "short-nails"
+        ],
+        "timing": [
+          "habitual"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "paronychia",
+          "nail-deformity"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Severe systemic illness (Beau\u2019s lines)",
+      "name": "Severe systemic illness (Beau’s lines)",
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
-        "onset": ["weeks-after-illness"],
-        "progression": ["self-limited"],
-        "palliate": ["n/a"],
-        "provoke": ["systemic-illness", "chemotherapy"],
-        "quality": ["transverse-grooves", "nail-growth-interruption"],
-        "timing": ["after-illness"],
-        "region": ["all-nails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["history", "physical-exam"],
-        "other symptoms": ["recent-severe-illness"]
+        "onset": [
+          "weeks-after-illness"
+        ],
+        "progression": [
+          "self-limited"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "systemic-illness",
+          "chemotherapy"
+        ],
+        "quality": [
+          "transverse-grooves",
+          "nail-growth-interruption"
+        ],
+        "timing": [
+          "after-illness"
+        ],
+        "region": [
+          "all-nails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "history",
+          "physical-exam"
+        ],
+        "other symptoms": [
+          "recent-severe-illness"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Iron de\ufb01ciency anemia (koilonychia)",
+      "name": "Iron deficiency anemia (koilonychia)",
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["iron-supplementation"],
-        "provoke": ["poor-diet", "blood-loss"],
-        "quality": ["spoon-shaped-nails"],
-        "timing": ["progressive"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["cbc", "ferritin"],
-        "other symptoms": ["fatigue", "pallor"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "iron-supplementation"
+        ],
+        "provoke": [
+          "poor-diet",
+          "blood-loss"
+        ],
+        "quality": [
+          "spoon-shaped-nails"
+        ],
+        "timing": [
+          "progressive"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "cbc",
+          "ferritin"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "pallor"
+        ]
       },
       "freq": "common"
     },
@@ -139,17 +329,43 @@
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["gradual"],
-        "palliate": ["treat-underlying"],
-        "provoke": ["liver-dysfunction"],
-        "quality": ["white-nail-beds", "opaque-nails"],
-        "timing": ["persistent"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["lft", "albumin"],
-        "other symptoms": ["jaundice", "ascites", "spider-angiomata"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "gradual"
+        ],
+        "palliate": [
+          "treat-underlying"
+        ],
+        "provoke": [
+          "liver-dysfunction"
+        ],
+        "quality": [
+          "white-nail-beds",
+          "opaque-nails"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "lft",
+          "albumin"
+        ],
+        "other symptoms": [
+          "jaundice",
+          "ascites",
+          "spider-angiomata"
+        ]
       },
       "freq": "common"
     },
@@ -158,17 +374,43 @@
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["gradual"],
-        "palliate": ["glycemic-control"],
-        "provoke": ["poor-glycemic-control"],
-        "quality": ["white-nails", "thickening"],
-        "timing": ["persistent"],
-        "region": ["toenails"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["hba1c", "glucose"],
-        "other symptoms": ["neuropathy", "infections"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "gradual"
+        ],
+        "palliate": [
+          "glycemic-control"
+        ],
+        "provoke": [
+          "poor-glycemic-control"
+        ],
+        "quality": [
+          "white-nails",
+          "thickening"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "toenails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "hba1c",
+          "glucose"
+        ],
+        "other symptoms": [
+          "neuropathy",
+          "infections"
+        ]
       },
       "freq": "common"
     },
@@ -177,36 +419,88 @@
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["topical-steroids"],
-        "provoke": ["trauma"],
-        "quality": ["nail-separation", "pitting"],
-        "timing": ["persistent"],
-        "region": ["fingernails", "toenails"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["x-ray", "rf", "anti-ccp"],
-        "other symptoms": ["joint-pain", "scaly-lesions"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "topical-steroids"
+        ],
+        "provoke": [
+          "trauma"
+        ],
+        "quality": [
+          "nail-separation",
+          "pitting"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "fingernails",
+          "toenails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "x-ray",
+          "rf",
+          "anti-ccp"
+        ],
+        "other symptoms": [
+          "joint-pain",
+          "scaly-lesions"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Plummer\u2013Vinson syndrome (koilonychia)",
+      "name": "Plummer–Vinson syndrome (koilonychia)",
       "system": "Systemic Illness",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["gradual"],
-        "palliate": ["iron-supplementation"],
-        "provoke": ["iron-deficiency"],
-        "quality": ["spoon-nails"],
-        "timing": ["progressive"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["cbc", "iron-studies", "barium-swallow"],
-        "other symptoms": ["dysphagia", "fatigue"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "gradual"
+        ],
+        "palliate": [
+          "iron-supplementation"
+        ],
+        "provoke": [
+          "iron-deficiency"
+        ],
+        "quality": [
+          "spoon-nails"
+        ],
+        "timing": [
+          "progressive"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "cbc",
+          "iron-studies",
+          "barium-swallow"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "fatigue"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +509,45 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["recurrent"],
-        "palliate": ["topical-steroids", "phototherapy"],
-        "provoke": ["stress", "trauma"],
-        "quality": ["pitting", "onycholysis", "subungual-hyperkeratosis"],
-        "timing": ["intermittent"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["skin-biopsy"],
-        "other symptoms": ["plaques", "itching"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "recurrent"
+        ],
+        "palliate": [
+          "topical-steroids",
+          "phototherapy"
+        ],
+        "provoke": [
+          "stress",
+          "trauma"
+        ],
+        "quality": [
+          "pitting",
+          "onycholysis",
+          "subungual-hyperkeratosis"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "skin-biopsy"
+        ],
+        "other symptoms": [
+          "plaques",
+          "itching"
+        ]
       },
       "freq": "common"
     },
@@ -234,17 +556,43 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["intermittent"],
-        "palliate": ["emollients"],
-        "provoke": ["irritants", "allergens"],
-        "quality": ["dry", "brittle", "ridged-nails"],
-        "timing": ["recurrent"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["patch-testing"],
-        "other symptoms": ["itching", "rash"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "intermittent"
+        ],
+        "palliate": [
+          "emollients"
+        ],
+        "provoke": [
+          "irritants",
+          "allergens"
+        ],
+        "quality": [
+          "dry",
+          "brittle",
+          "ridged-nails"
+        ],
+        "timing": [
+          "recurrent"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "patch-testing"
+        ],
+        "other symptoms": [
+          "itching",
+          "rash"
+        ]
       },
       "freq": "common"
     },
@@ -253,36 +601,90 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["nail-trimming"],
-        "provoke": ["trauma", "poor-foot-care"],
-        "quality": ["thickened", "curved-nail"],
-        "timing": ["persistent"],
-        "region": ["toenails"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["pain", "difficulty-walking"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "nail-trimming"
+        ],
+        "provoke": [
+          "trauma",
+          "poor-foot-care"
+        ],
+        "quality": [
+          "thickened",
+          "curved-nail"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "toenails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "pain",
+          "difficulty-walking"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Raynaud\u2019s syndrome",
+      "name": "Raynaud’s syndrome",
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["episodic"],
-        "progression": ["chronic"],
-        "palliate": ["warming"],
-        "provoke": ["cold", "stress"],
-        "quality": ["color-changes", "pain", "numbness"],
-        "timing": ["episodic"],
-        "region": ["fingers"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["nailfold-capillaroscopy", "ana"],
-        "other symptoms": ["pallor", "cyanosis", "redness"]
+        "onset": [
+          "episodic"
+        ],
+        "progression": [
+          "chronic"
+        ],
+        "palliate": [
+          "warming"
+        ],
+        "provoke": [
+          "cold",
+          "stress"
+        ],
+        "quality": [
+          "color-changes",
+          "pain",
+          "numbness"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "fingers"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "nailfold-capillaroscopy",
+          "ana"
+        ],
+        "other symptoms": [
+          "pallor",
+          "cyanosis",
+          "redness"
+        ]
       },
       "freq": "common"
     },
@@ -291,17 +693,44 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["gradual"],
-        "palliate": ["thyroid-treatment"],
-        "provoke": ["metabolic-imbalance"],
-        "quality": ["brittle-nails", "soft-nails"],
-        "timing": ["persistent"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["tsh", "t3", "t4"],
-        "other symptoms": ["weight-change", "fatigue", "dry-skin"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "gradual"
+        ],
+        "palliate": [
+          "thyroid-treatment"
+        ],
+        "provoke": [
+          "metabolic-imbalance"
+        ],
+        "quality": [
+          "brittle-nails",
+          "soft-nails"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "tsh",
+          "t3",
+          "t4"
+        ],
+        "other symptoms": [
+          "weight-change",
+          "fatigue",
+          "dry-skin"
+        ]
       },
       "freq": "common"
     },
@@ -310,17 +739,46 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["variable"],
-        "palliate": ["immunosuppressants"],
-        "provoke": ["autoimmune-flare"],
-        "quality": ["nail-pitting", "ridging", "discoloration"],
-        "timing": ["recurrent"],
-        "region": ["fingernails"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["ana", "esr", "crp"],
-        "other symptoms": ["arthralgia", "rash", "fatigue"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "variable"
+        ],
+        "palliate": [
+          "immunosuppressants"
+        ],
+        "provoke": [
+          "autoimmune-flare"
+        ],
+        "quality": [
+          "nail-pitting",
+          "ridging",
+          "discoloration"
+        ],
+        "timing": [
+          "recurrent"
+        ],
+        "region": [
+          "fingernails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "ana",
+          "esr",
+          "crp"
+        ],
+        "other symptoms": [
+          "arthralgia",
+          "rash",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -329,17 +787,44 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["gradual"],
-        "palliate": ["treat-underlying"],
-        "provoke": ["lymphatic-disorder"],
-        "quality": ["yellow-nails", "slow-growth", "thickening"],
-        "timing": ["persistent"],
-        "region": ["fingernails", "toenails"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["chest-x-ray", "ct-chest"],
-        "other symptoms": ["lymphedema", "pleural-effusion"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "gradual"
+        ],
+        "palliate": [
+          "treat-underlying"
+        ],
+        "provoke": [
+          "lymphatic-disorder"
+        ],
+        "quality": [
+          "yellow-nails",
+          "slow-growth",
+          "thickening"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "fingernails",
+          "toenails"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "chest-x-ray",
+          "ct-chest"
+        ],
+        "other symptoms": [
+          "lymphedema",
+          "pleural-effusion"
+        ]
       },
       "freq": "rare"
     },
@@ -348,17 +833,45 @@
       "system": "Dermatological",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["none"],
-        "provoke": ["uv-exposure", "trauma"],
-        "quality": ["pigmented-band", "ulceration", "bleeding"],
-        "timing": ["progressive"],
-        "region": ["nail-bed"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["biopsy", "dermoscopy"],
-        "other symptoms": ["pain", "nonhealing-lesion", "discoloration"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "none"
+        ],
+        "provoke": [
+          "uv-exposure",
+          "trauma"
+        ],
+        "quality": [
+          "pigmented-band",
+          "ulceration",
+          "bleeding"
+        ],
+        "timing": [
+          "progressive"
+        ],
+        "region": [
+          "nail-bed"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "biopsy",
+          "dermoscopy"
+        ],
+        "other symptoms": [
+          "pain",
+          "nonhealing-lesion",
+          "discoloration"
+        ]
       },
       "freq": "rare"
     }

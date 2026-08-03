@@ -248,7 +248,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Malaria • (common in Africa)",
+      "name": "Malaria (common in Africa)",
       "system": "Protozoal",
       "redFlag": false,
       "hpi": {
@@ -778,7 +778,7 @@
       "freq": "rare"
     },
     {
-      "name": "Myeloﬁbrosis",
+      "name": "Myelofibrosis",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
@@ -1013,7 +1013,7 @@
       "freq": "rare"
     },
     {
-      "name": "Severe iron-deﬁciency anemia",
+      "name": "Severe iron-deficiency anemia",
       "system": "Deficiency Diseases",
       "redFlag": false,
       "hpi": {

@@ -93,7 +93,7 @@
       "freq": "common"
     },
     {
-      "name": "Inﬂammatory bowel disease",
+      "name": "Inflammatory bowel disease",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
@@ -916,7 +916,7 @@
       "freq": "rare"
     },
     {
-      "name": "Folate/B12 deﬁciency",
+      "name": "Folate/B12 deficiency",
       "system": "Connective Tissue Disease",
       "redFlag": false,
       "hpi": {

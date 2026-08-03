@@ -7,17 +7,43 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["vomiting", "fever", "distension"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "fever",
+          "distension"
+        ]
       },
       "freq": "uncommon"
     },
@@ -26,17 +52,46 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["diarrhea", "weight-loss", "fever"]
+        "onset": [
+          "insidious",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "weight-loss",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -45,17 +100,42 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["vomiting", "distension", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "vomiting",
+          "distension",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -64,17 +144,42 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["distension", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "distension",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -83,17 +188,41 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["fever", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "fever",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
@@ -102,17 +231,42 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["hematochezia", "nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "hematochezia",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "rare"
     },
@@ -121,17 +275,43 @@
       "system": "Hepatobiliary",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["npo"],
-        "provoke": ["fatty-meals"],
-        "quality": ["colicky"],
-        "timing": ["constant"],
-        "region": ["ruq"],
-        "radiation": ["right-shoulder", "right-scapula"],
-        "severity": ["moderate"],
-        "clinical tests": ["murphys-sign"],
-        "other symptoms": ["fever", "nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "npo"
+        ],
+        "provoke": [
+          "fatty-meals"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "ruq"
+        ],
+        "radiation": [
+          "right-shoulder",
+          "right-scapula"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "murphys-sign"
+        ],
+        "other symptoms": [
+          "fever",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -140,17 +320,45 @@
       "system": "Hepatobiliary",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["npo"],
-        "provoke": ["fatty-meals"],
-        "quality": ["colicky"],
-        "timing": ["constant"],
-        "region": ["ruq"],
-        "radiation": ["right-shoulder", "right-scapula"],
-        "severity": ["moderate"],
-        "clinical tests": ["murphys-sign"],
-        "other symptoms": ["fever", "nausea", "vomiting"]
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "npo"
+        ],
+        "provoke": [
+          "fatty-meals"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "ruq"
+        ],
+        "radiation": [
+          "right-shoulder",
+          "right-scapula"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "murphys-sign"
+        ],
+        "other symptoms": [
+          "fever",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -159,17 +367,43 @@
       "system": "Hepatobiliary",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["npo"],
-        "provoke": ["fatty-meals"],
-        "quality": ["colicky"],
-        "timing": ["constant"],
-        "region": ["ruq"],
-        "radiation": ["right-shoulder", "right-scapula"],
-        "severity": ["moderate"],
-        "clinical tests": ["murphys-sign"],
-        "other symptoms": ["fever", "nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "npo"
+        ],
+        "provoke": [
+          "fatty-meals"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "ruq"
+        ],
+        "radiation": [
+          "right-shoulder",
+          "right-scapula"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "murphys-sign"
+        ],
+        "other symptoms": [
+          "fever",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -178,17 +412,43 @@
       "system": "Hepatobiliary",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["npo"],
-        "provoke": ["fatty-meals"],
-        "quality": ["colicky"],
-        "timing": ["constant"],
-        "region": ["ruq"],
-        "radiation": ["right-shoulder", "right-scapula"],
-        "severity": ["moderate"],
-        "clinical tests": ["murphys-sign"],
-        "other symptoms": ["fever", "nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "npo"
+        ],
+        "provoke": [
+          "fatty-meals"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "ruq"
+        ],
+        "radiation": [
+          "right-shoulder",
+          "right-scapula"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "murphys-sign"
+        ],
+        "other symptoms": [
+          "fever",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -197,17 +457,42 @@
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["leaning-forward"],
-        "provoke": ["alcohol"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["grey-turner-sign", "cullen-sign"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "grey-turner-sign",
+          "cullen-sign"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -216,17 +501,46 @@
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["leaning-forward"],
-        "provoke": ["alcohol"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["grey-turner-sign", "cullen-sign"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "grey-turner-sign",
+          "cullen-sign"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -235,17 +549,42 @@
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["leaning-forward"],
-        "provoke": ["alcohol"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["grey-turner-sign", "cullen-sign"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "grey-turner-sign",
+          "cullen-sign"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -254,17 +593,42 @@
       "system": "Splenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness"
+        ]
       },
       "freq": "rare"
     },
@@ -273,17 +637,41 @@
       "system": "Splenic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness"
+        ]
       },
       "freq": "rare"
     },
@@ -292,17 +680,44 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -311,17 +726,44 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -330,17 +772,44 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -349,17 +818,42 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -368,17 +862,42 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -387,17 +906,46 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -406,17 +954,42 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "rare"
     },
@@ -425,17 +998,42 @@
       "system": "Urinary tract",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "rare"
     },
@@ -444,17 +1042,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -463,17 +1085,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -482,17 +1128,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -501,17 +1171,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -520,17 +1214,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -539,17 +1257,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -558,17 +1300,41 @@
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -577,17 +1343,42 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["tearing"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["pulsatile-abdominal-mass"],
-        "other symptoms": ["shock", "hematochezia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "tearing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pulsatile-abdominal-mass"
+        ],
+        "other symptoms": [
+          "shock",
+          "hematochezia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -596,17 +1387,42 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["tearing"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["pulsatile-abdominal-mass"],
-        "other symptoms": ["shock", "hematochezia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "tearing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pulsatile-abdominal-mass"
+        ],
+        "other symptoms": [
+          "shock",
+          "hematochezia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -615,17 +1431,45 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["tearing"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["pulsatile-abdominal-mass"],
-        "other symptoms": ["shock", "hematochezia"]
+        "onset": [
+          "sudden",
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "tearing",
+          "aching"
+        ],
+        "timing": [
+          "constant",
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pulsatile-abdominal-mass"
+        ],
+        "other symptoms": [
+          "shock",
+          "hematochezia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -634,17 +1478,42 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["tearing"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["pulsatile-abdominal-mass"],
-        "other symptoms": ["shock", "hematochezia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "tearing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pulsatile-abdominal-mass"
+        ],
+        "other symptoms": [
+          "shock",
+          "hematochezia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -653,17 +1522,42 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["tearing"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["pulsatile-abdominal-mass"],
-        "other symptoms": ["shock", "hematochezia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "tearing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pulsatile-abdominal-mass"
+        ],
+        "other symptoms": [
+          "shock",
+          "hematochezia"
+        ]
       },
       "freq": "rare"
     },
@@ -672,17 +1566,42 @@
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["tearing"],
-        "timing": ["constant"],
-        "region": ["periumbilical"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["pulsatile-abdominal-mass"],
-        "other symptoms": ["shock", "hematochezia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "tearing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pulsatile-abdominal-mass"
+        ],
+        "other symptoms": [
+          "shock",
+          "hematochezia"
+        ]
       },
       "freq": "rare"
     },
@@ -691,17 +1610,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -710,17 +1653,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -729,17 +1696,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -748,17 +1739,46 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute",
+          "sudden"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain"
+        ]
       },
       "freq": "common"
     },
@@ -767,17 +1787,43 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain"
+        ]
       },
       "freq": "common"
     },
@@ -786,17 +1832,43 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -805,17 +1877,43 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -824,17 +1922,43 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -843,36 +1967,93 @@
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Thoracic spine disease, , tumour",
+      "name": "Thoracic spine disease, tumour",
       "system": "Referred",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["deep-breathing"],
-        "quality": ["dull"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["chest", "shoulder-tip"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["shortness-of-breath", "fever", "chest-pain"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "deep-breathing"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "chest",
+          "shoulder-tip"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "chest-pain",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -881,17 +2062,44 @@
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious",
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -900,17 +2108,44 @@
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious",
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -919,17 +2154,44 @@
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious",
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
@@ -938,36 +2200,84 @@
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Addison\u2019s disease",
+      "name": "Addison’s disease",
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
@@ -976,36 +2286,84 @@
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Henoch\u2013Sch\u00f6nlein purpura",
+      "name": "Henoch–Schönlein purpura",
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
@@ -1014,17 +2372,41 @@
       "system": "Medical",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["diffuse"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "diffuse"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise",
+          "nausea"
+        ]
       },
       "freq": "rare"
     },
@@ -1033,17 +2415,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1052,17 +2458,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
@@ -1071,17 +2501,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1090,17 +2544,41 @@
       "system": "Abdominal wall",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["movement", "coughing"],
-        "quality": ["sharp"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["guarding"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement",
+          "coughing"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "guarding"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "rare"
     },
@@ -1109,17 +2587,41 @@
       "system": "Gall Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1128,17 +2630,39 @@
       "system": "Gall Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1147,17 +2671,39 @@
       "system": "Gall Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1166,17 +2712,41 @@
       "system": "Gall Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": [],
-        "progression": [],
-        "palliate": [],
-        "provoke": [],
-        "quality": [],
-        "timing": [],
-        "region": [],
-        "radiation": [],
-        "severity": [],
-        "clinical tests": [],
-        "other symptoms": []
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "n/a"
+        ],
+        "region": [
+          "abdomen"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -1185,17 +2755,48 @@
       "system": "Stomach",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["antacids", "ppi"],
-        "provoke": ["oral-intake", "spicy-food", "large-meals", "caffeine", "nsaids"],
-        "quality": ["burning", "gnawing"],
-        "timing": ["postprandial"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["succussion-splash"],
-        "other symptoms": ["heartburn", "nausea"]
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "spicy-food",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "gnawing"
+        ],
+        "timing": [
+          "postprandial"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "succussion-splash"
+        ],
+        "other symptoms": [
+          "heartburn",
+          "nausea",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1204,17 +2805,45 @@
       "system": "Stomach",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["antacids", "ppi"],
-        "provoke": ["oral-intake", "spicy-food", "large-meals", "caffeine", "nsaids"],
-        "quality": ["burning", "gnawing"],
-        "timing": ["postprandial"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["succussion-splash"],
-        "other symptoms": ["heartburn", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "spicy-food",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "gnawing"
+        ],
+        "timing": [
+          "postprandial"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "succussion-splash"
+        ],
+        "other symptoms": [
+          "heartburn",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -1223,17 +2852,45 @@
       "system": "Stomach",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["antacids", "ppi"],
-        "provoke": ["oral-intake", "spicy-food", "large-meals", "caffeine", "nsaids"],
-        "quality": ["burning", "gnawing"],
-        "timing": ["postprandial"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["succussion-splash"],
-        "other symptoms": ["heartburn", "nausea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "antacids",
+          "ppi"
+        ],
+        "provoke": [
+          "oral-intake",
+          "spicy-food",
+          "large-meals"
+        ],
+        "quality": [
+          "burning",
+          "gnawing"
+        ],
+        "timing": [
+          "postprandial"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "succussion-splash"
+        ],
+        "other symptoms": [
+          "heartburn",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1242,17 +2899,46 @@
       "system": "Pancreas",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["leaning-forward"],
-        "provoke": ["alcohol"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["grey-turner-sign", "cullen-sign"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "grey-turner-sign",
+          "cullen-sign"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1261,17 +2947,42 @@
       "system": "Pancreas",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["leaning-forward"],
-        "provoke": ["alcohol"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["epigastrium"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["grey-turner-sign", "cullen-sign"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "grey-turner-sign",
+          "cullen-sign"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1280,17 +2991,42 @@
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -1299,17 +3035,42 @@
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -1318,17 +3079,46 @@
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1337,17 +3127,42 @@
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1356,17 +3171,44 @@
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1375,36 +3217,92 @@
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Wilms\u2019 tumour (nephroblastoma)",
+      "name": "Wilms’ tumour (nephroblastoma)",
       "system": "Kidney",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["dehydration"],
-        "quality": ["colicky"],
-        "timing": ["intermittent"],
-        "region": ["flank"],
-        "radiation": ["groin"],
-        "severity": ["moderate"],
-        "clinical tests": ["costovertebral-angle-tenderness"],
-        "other symptoms": ["dysuria", "hematuria", "fever"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "colicky"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "groin"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "costovertebral-angle-tenderness"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "hematuria",
+          "fever",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -1413,17 +3311,45 @@
       "system": "Spleen",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -1432,17 +3358,45 @@
       "system": "Spleen",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1451,17 +3405,41 @@
       "system": "Spleen",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness"
+        ]
       },
       "freq": "common"
     },
@@ -1470,17 +3448,41 @@
       "system": "Spleen",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness"
+        ]
       },
       "freq": "common"
     },
@@ -1489,17 +3491,41 @@
       "system": "Spleen",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness"
+        ]
       },
       "freq": "common"
     },
@@ -1508,36 +3534,88 @@
       "system": "Spleen",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["sharp"],
-        "timing": ["constant"],
-        "region": ["luq"],
-        "radiation": ["left-shoulder"],
-        "severity": ["severe"],
-        "clinical tests": ["kehrs-sign"],
-        "other symptoms": ["hypotension", "dizziness"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "luq"
+        ],
+        "radiation": [
+          "left-shoulder"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "kehrs-sign"
+        ],
+        "other symptoms": [
+          "hypotension",
+          "dizziness"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Crohn\u2019s disease",
+      "name": "Crohn’s disease",
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["diarrhea", "weight-loss"]
+        "onset": [
+          "insidious",
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1546,17 +3624,44 @@
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["diarrhea", "weight-loss"]
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1565,17 +3670,42 @@
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["diarrhea", "weight-loss"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -1584,17 +3714,42 @@
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["oral-intake"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["periumbilical"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["guarding", "rebound-tenderness"],
-        "other symptoms": ["diarrhea", "weight-loss"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "oral-intake"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "periumbilical"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "guarding",
+          "rebound-tenderness"
+        ],
+        "other symptoms": [
+          "diarrhea",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -1603,17 +3758,42 @@
       "system": "Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["urination"],
-        "quality": ["pressure"],
-        "timing": ["constant"],
-        "region": ["suprapubic"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["dysuria", "urinary-frequency"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "urination"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-frequency"
+        ]
       },
       "freq": "common"
     },
@@ -1622,17 +3802,42 @@
       "system": "Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["urination"],
-        "quality": ["pressure"],
-        "timing": ["constant"],
-        "region": ["suprapubic"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["dysuria", "urinary-frequency"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "urination"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-frequency"
+        ]
       },
       "freq": "common"
     },
@@ -1641,17 +3846,45 @@
       "system": "Bladder",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["urination"],
-        "quality": ["pressure"],
-        "timing": ["constant"],
-        "region": ["suprapubic"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["dysuria", "urinary-frequency"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "urination"
+        ],
+        "quality": [
+          "pressure"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "dysuria",
+          "urinary-frequency",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1660,17 +3893,41 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -1679,17 +3936,46 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1698,17 +3984,41 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -1717,17 +4027,41 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -1736,17 +4070,45 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -1755,17 +4117,41 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -1774,17 +4160,46 @@
       "system": "Ovary/Uterus/Fallopian Tube",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["menses"],
-        "quality": ["cramping"],
-        "timing": ["intermittent"],
-        "region": ["suprapubic"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pv-bleeding", "nausea"]
+        "onset": [
+          "acute",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "menses"
+        ],
+        "quality": [
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "abdomen",
+          "suprapubic"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "pv-bleeding",
+          "nausea",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1793,17 +4208,43 @@
       "system": "Retroperitoneum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["dull"],
-        "timing": ["constant"],
-        "region": ["flank"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["weight-loss"]
+        "onset": [
+          "insidious",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -1812,36 +4253,84 @@
       "system": "Retroperitoneum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["dull"],
-        "timing": ["constant"],
-        "region": ["flank"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["weight-loss"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Neoplasm of the iliac bone, , Ewing\u2019s",
+      "name": "Neoplasm of the iliac bone, Ewing’s",
       "system": "Retroperitoneum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["dull"],
-        "timing": ["constant"],
-        "region": ["flank"],
-        "radiation": ["back"],
-        "severity": ["moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["weight-loss"]
+        "onset": [
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "flank"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -1850,17 +4339,40 @@
       "system": "Omentum",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["dull"],
-        "timing": ["constant"],
-        "region": ["epigastrium"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["malaise"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "abdomen",
+          "epigastrium"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "malaise"
+        ]
       },
       "freq": "common"
     }

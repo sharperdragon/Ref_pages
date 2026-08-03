@@ -428,7 +428,7 @@
       "freq": "common"
     },
     {
-      "name": "Atrial ﬁbrillation*",
+      "name": "Atrial fibrillation*",
       "system": "Cardiac Arrhythmia",
       "redFlag": false,
       "hpi": {

@@ -3,7 +3,7 @@
   "items": [
     {
       "name": "Escherichia coli",
-      "system": "Salmonella spp • (rare in tropical Africa)",
+      "system": "Salmonella spp (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -53,8 +53,8 @@
       "freq": "common"
     },
     {
-      "name": "Clostridium difﬁcile",
-      "system": "Salmonella spp • (rare in tropical Africa)",
+      "name": "Clostridium difficile",
+      "system": "Salmonella spp (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -104,7 +104,7 @@
     },
     {
       "name": "Staphylococci",
-      "system": "Salmonella spp • (rare in tropical Africa)",
+      "system": "Salmonella spp (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -151,7 +151,7 @@
     },
     {
       "name": "Shigella spp",
-      "system": "Salmonella spp • (rare in tropical Africa)",
+      "system": "Salmonella spp (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -198,7 +198,7 @@
     },
     {
       "name": "Vibrio cholerae",
-      "system": "Salmonella spp • (rare in tropical Africa)",
+      "system": "Salmonella spp (rare in tropical Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -248,7 +248,7 @@
     },
     {
       "name": "Entamoeba histolytica",
-      "system": "Giardia lamblia • (more common in children worldwide)",
+      "system": "Giardia lamblia (more common in children worldwide)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -705,7 +705,7 @@
     },
     {
       "name": "Irritable bowel syndrome",
-      "system": "Diverticular disease • (rare in rural Africa and Asia)",
+      "system": "Diverticular disease (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -756,8 +756,8 @@
       "freq": "common"
     },
     {
-      "name": "Fecal impaction – overﬂow Diarrhea",
-      "system": "Diverticular disease • (rare in rural Africa and Asia)",
+      "name": "Fecal impaction – overflow Diarrhea",
+      "system": "Diverticular disease (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -808,7 +808,7 @@
     },
     {
       "name": "Ischemic colitis",
-      "system": "Diverticular disease • (rare in rural Africa and Asia)",
+      "system": "Diverticular disease (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -858,8 +858,8 @@
       "freq": "uncommon"
     },
     {
-      "name": "Ileocolic ﬁstula",
-      "system": "Diverticular disease • (rare in rural Africa and Asia)",
+      "name": "Ileocolic fistula",
+      "system": "Diverticular disease (rare in rural Africa and Asia)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -1003,7 +1003,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Cystic ﬁbrosis",
+      "name": "Cystic fibrosis",
       "system": "Pancreatic",
       "redFlag": false,
       "hpi": {

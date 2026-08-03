@@ -6,36 +6,101 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["ice", "elevation", "compression", "analgesics"],
-        "provoke": ["movement", "Touch"],
-        "quality": ["tender", "throbbing", "aching"],
-        "timing": ["constant"],
-        "region": ["arm", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["pain", "swelling"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "ice",
+          "elevation",
+          "compression",
+          "analgesics"
+        ],
+        "provoke": [
+          "movement",
+          "Touch"
+        ],
+        "quality": [
+          "tender",
+          "throbbing",
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "arm",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain",
+          "swelling"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Infection, , lymphangitis, phlebitis",
+      "name": "Infection, lymphangitis, phlebitis",
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["worsening"],
-        "palliate": ["elevation", "analgesics"],
-        "provoke": ["Touch"],
-        "quality": ["warm", "tender", "throbbing"],
-        "timing": ["constant"],
-        "region": ["arm", "forearm"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation", "ultrasound", "capillary-refill"],
-        "other symptoms": ["fever", "swelling"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation",
+          "analgesics"
+        ],
+        "provoke": [
+          "Touch"
+        ],
+        "quality": [
+          "warm",
+          "tender",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "ultrasound",
+          "capillary-refill"
+        ],
+        "other symptoms": [
+          "fever",
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -44,17 +109,47 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["compression", "elevation", "massage"],
-        "provoke": ["n/a"],
-        "quality": ["heaviness", "firm"],
-        "timing": ["persistent"],
-        "region": ["arm", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "stemmer-sign", "lymphoscintigraphy"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression",
+          "elevation",
+          "massage"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "heaviness",
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "arm",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "stemmer-sign",
+          "lymphoscintigraphy"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -63,17 +158,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["elevation"],
-        "provoke": ["exertion", "weight-bearing", "walking"],
-        "quality": ["heaviness", "aching"],
-        "timing": ["with-activity"],
-        "region": ["shoulder", "arm"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "ultrasound", "peripheral-pulse-assessment", "capillary-refill"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "exertion",
+          "weight-bearing",
+          "walking"
+        ],
+        "quality": [
+          "heaviness",
+          "aching"
+        ],
+        "timing": [
+          "with-activity"
+        ],
+        "region": [
+          "shoulder",
+          "arm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "ultrasound",
+          "peripheral-pulse-assessment",
+          "capillary-refill"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -82,17 +206,47 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["elevation", "analgesics"],
-        "provoke": ["n/a"],
-        "quality": ["tender", "heaviness", "aching"],
-        "timing": ["constant"],
-        "region": ["arm", "forearm"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "ultrasound", "capillary-refill", "peripheral-pulse-assessment"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation",
+          "analgesics"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender",
+          "heaviness",
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "ultrasound",
+          "capillary-refill",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -101,17 +255,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["compression", "elevation", "massage"],
-        "provoke": ["n/a"],
-        "quality": ["firm", "heaviness"],
-        "timing": ["persistent"],
-        "region": ["arm", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "stemmer-sign", "lymphoscintigraphy"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression",
+          "elevation",
+          "massage"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "arm",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "stemmer-sign",
+          "lymphoscintigraphy"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -120,36 +303,91 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["compression"],
-        "provoke": ["n/a"],
-        "quality": ["fluctuant", "firm"],
-        "timing": ["persistent"],
-        "region": ["arm"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "ultrasound"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "compression"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "fluctuant",
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "arm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Acquired, , infection, lymph node removal",
+      "name": "Acquired, infection, lymph node removal",
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["compression", "elevation", "massage"],
-        "provoke": ["n/a"],
-        "quality": ["firm", "heaviness"],
-        "timing": ["persistent"],
-        "region": ["arm", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "stemmer-sign", "lymphoscintigraphy"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression",
+          "elevation",
+          "massage"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "arm",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "stemmer-sign",
+          "lymphoscintigraphy"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -158,17 +396,48 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["worsening"],
-        "palliate": ["elevation", "analgesics"],
-        "provoke": ["Touch"],
-        "quality": ["warm", "tender", "throbbing"],
-        "timing": ["constant"],
-        "region": ["arm", "forearm"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation", "ultrasound"],
-        "other symptoms": ["fever", "swelling"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation",
+          "analgesics"
+        ],
+        "provoke": [
+          "Touch"
+        ],
+        "quality": [
+          "warm",
+          "tender",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "fever",
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -177,17 +446,47 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["compression", "elevation", "massage"],
-        "provoke": ["n/a"],
-        "quality": ["firm", "heaviness"],
-        "timing": ["persistent"],
-        "region": ["arm", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "stemmer-sign", "lymphoscintigraphy"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression",
+          "elevation",
+          "massage"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "arm",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "stemmer-sign",
+          "lymphoscintigraphy"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -196,17 +495,46 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute", "chronic"],
-        "progression": ["worsening"],
-        "palliate": ["compression", "elevation"],
-        "provoke": ["n/a"],
-        "quality": ["firm", "heaviness"],
-        "timing": ["persistent"],
-        "region": ["arm", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "stemmer-sign", "lymphoscintigraphy"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "compression",
+          "elevation"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm",
+          "heaviness"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "arm",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "stemmer-sign",
+          "lymphoscintigraphy"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -215,17 +543,47 @@
       "system": "General",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["exercise", "movement"],
-        "quality": ["severe", "sharp", "aching"],
-        "timing": ["constant"],
-        "region": ["forearm"],
-        "radiation": ["hand"],
-        "severity": ["severe", "catastrophic"],
-        "clinical tests": ["palpation", "capillary-refill", "peripheral-pulse-assessment"],
-        "other symptoms": ["clammy-skin", "swelling", "pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "movement"
+        ],
+        "quality": [
+          "severe",
+          "sharp",
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "forearm"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "severe",
+          "catastrophic"
+        ],
+        "clinical tests": [
+          "palpation",
+          "capillary-refill",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "clammy-skin",
+          "swelling",
+          "pain"
+        ]
       },
       "freq": "rare"
     }

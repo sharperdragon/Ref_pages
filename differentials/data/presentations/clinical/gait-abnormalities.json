@@ -3,230 +3,501 @@
   "locked": true,
   "items": [
     {
-      "name": "Pain \u2013 antalgic gait",
+      "name": "Pain – antalgic gait",
       "system": "Structural",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["variable"],
-        "palliate": ["rest"],
-        "provoke": ["weight-bearing"],
-        "quality": ["limping"],
-        "timing": ["intermittent"],
-        "region": ["affected-limb"],
-        "radiation": ["none"],
-        "severity": ["moderate"],
-        "clinical tests": ["gait-observation"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "variable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "weight-bearing"
+        ],
+        "quality": [
+          "limping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "affected-limb"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "gait-observation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Length discrepancies \u2013 short leg gait",
+      "name": "Length discrepancies – short leg gait",
       "system": "Structural",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["shoe-lift"],
-        "provoke": ["walking"],
-        "quality": ["limp"],
-        "timing": ["chronic"],
-        "region": ["lower-limb"],
-        "radiation": ["none"],
-        "severity": ["variable"],
-        "clinical tests": ["leg-length-measurement"],
-        "other symptoms": ["pelvic-tilt"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "shoe-lift"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "limp"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "lower-limb"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "variable"
+        ],
+        "clinical tests": [
+          "leg-length-measurement"
+        ],
+        "other symptoms": [
+          "pelvic-tilt"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Weak hip abductors \u2013 Trendelenburg or waddling gait",
+      "name": "Weak hip abductors – Trendelenburg or waddling gait",
       "system": "Structural",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["gradual"],
-        "palliate": ["rest"],
-        "provoke": ["walking"],
-        "quality": ["waddling"],
-        "timing": ["chronic"],
-        "region": ["hip"],
-        "radiation": ["none"],
-        "severity": ["mild"],
-        "clinical tests": ["trendelenburg-test"],
-        "other symptoms": ["hip-weakness"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "gradual"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "waddling"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "hip"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "trendelenburg-test"
+        ],
+        "other symptoms": [
+          "hip-weakness"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Femoral anteversion \u2013 intoe gait",
+      "name": "Femoral anteversion – intoe gait",
       "system": "Structural",
       "redFlag": false,
       "hpi": {
-        "onset": ["childhood"],
-        "progression": ["improves-with-age"],
-        "palliate": ["none"],
-        "provoke": ["walking"],
-        "quality": ["intoe"],
-        "timing": ["chronic"],
-        "region": ["lower-limb"],
-        "radiation": ["none"],
-        "severity": ["mild"],
-        "clinical tests": ["torsional-profile"],
-        "other symptoms": ["none"]
+        "onset": [
+          "childhood"
+        ],
+        "progression": [
+          "improves-with-age"
+        ],
+        "palliate": [
+          "none"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "intoe"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "lower-limb"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "torsional-profile"
+        ],
+        "other symptoms": [
+          "none"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Stroke \u2013 hemiplegic gait",
+      "name": "Stroke – hemiplegic gait",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["improving-or-static"],
-        "palliate": ["rehabilitation"],
-        "provoke": ["none"],
-        "quality": ["circumduction"],
-        "timing": ["chronic"],
-        "region": ["one-side"],
-        "radiation": ["none"],
-        "severity": ["variable"],
-        "clinical tests": ["neuro-exam"],
-        "other symptoms": ["weakness", "spasticity"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving-or-static"
+        ],
+        "palliate": [
+          "rehabilitation"
+        ],
+        "provoke": [
+          "none"
+        ],
+        "quality": [
+          "circumduction"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "one-side"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "variable"
+        ],
+        "clinical tests": [
+          "neuro-exam"
+        ],
+        "other symptoms": [
+          "weakness",
+          "spasticity"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Parkinson\u2019s disease \u2013 festinant gait",
+      "name": "Parkinson’s disease – festinant gait",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["progressive"],
-        "palliate": ["levodopa"],
-        "provoke": ["initiation"],
-        "quality": ["shuffling"],
-        "timing": ["chronic"],
-        "region": ["bilateral-lower-limbs"],
-        "radiation": ["none"],
-        "severity": ["moderate"],
-        "clinical tests": ["pull-test"],
-        "other symptoms": ["bradykinesia", "tremor"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "levodopa"
+        ],
+        "provoke": [
+          "initiation"
+        ],
+        "quality": [
+          "shuffling"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "bilateral-lower-limbs"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "pull-test"
+        ],
+        "other symptoms": [
+          "bradykinesia",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Multiple sclerosis \u2013 scissoring gait",
+      "name": "Multiple sclerosis – scissoring gait",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["relapsing"],
-        "progression": ["variable"],
-        "palliate": ["physiotherapy"],
-        "provoke": ["fatigue"],
-        "quality": ["scissoring"],
-        "timing": ["intermittent"],
-        "region": ["bilateral-limbs"],
-        "radiation": ["none"],
-        "severity": ["variable"],
-        "clinical tests": ["neuro-exam", "MRI"],
-        "other symptoms": ["spasticity", "visual-loss"]
+        "onset": [
+          "relapsing"
+        ],
+        "progression": [
+          "variable"
+        ],
+        "palliate": [
+          "physiotherapy"
+        ],
+        "provoke": [
+          "fatigue"
+        ],
+        "quality": [
+          "scissoring"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "bilateral-limbs"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "variable"
+        ],
+        "clinical tests": [
+          "neuro-exam",
+          "MRI"
+        ],
+        "other symptoms": [
+          "spasticity",
+          "visual-loss"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Peripheral neuropathy \u2013 sensory ataxia",
+      "name": "Peripheral neuropathy – sensory ataxia",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["progressive"],
-        "palliate": ["walking-aid"],
-        "provoke": ["darkness"],
-        "quality": ["stamping"],
-        "timing": ["chronic"],
-        "region": ["lower-limbs"],
-        "radiation": ["none"],
-        "severity": ["moderate"],
-        "clinical tests": ["romberg-test", "nerve-conduction-study"],
-        "other symptoms": ["numbness"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "walking-aid"
+        ],
+        "provoke": [
+          "darkness"
+        ],
+        "quality": [
+          "stamping"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "lower-limbs"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "romberg-test",
+          "nerve-conduction-study"
+        ],
+        "other symptoms": [
+          "numbness"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Cerebellar disease \u2013 cerebellar ataxia",
+      "name": "Cerebellar disease – cerebellar ataxia",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute-or-insidious"],
-        "progression": ["progressive"],
-        "palliate": ["none"],
-        "provoke": ["alcohol"],
-        "quality": ["wide-based"],
-        "timing": ["chronic"],
-        "region": ["bilateral"],
-        "radiation": ["none"],
-        "severity": ["variable"],
-        "clinical tests": ["finger-nose-test", "heel-shin-test"],
-        "other symptoms": ["dysarthria", "nystagmus"]
+        "onset": [
+          "acute-or-insidious"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "none"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "wide-based"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "bilateral"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "variable"
+        ],
+        "clinical tests": [
+          "finger-nose-test",
+          "heel-shin-test"
+        ],
+        "other symptoms": [
+          "dysarthria",
+          "nystagmus"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Peroneal nerve palsy \u2013 foot drop gait",
+      "name": "Peroneal nerve palsy – foot drop gait",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["variable"],
-        "palliate": ["ankle-foot-orthosis"],
-        "provoke": ["walking"],
-        "quality": ["high-stepping"],
-        "timing": ["chronic"],
-        "region": ["lower-limb"],
-        "radiation": ["none"],
-        "severity": ["moderate"],
-        "clinical tests": ["nerve-conduction-study"],
-        "other symptoms": ["foot-drop"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "variable"
+        ],
+        "palliate": [
+          "ankle-foot-orthosis"
+        ],
+        "provoke": [
+          "walking"
+        ],
+        "quality": [
+          "high-stepping"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "lower-limb"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "nerve-conduction-study"
+        ],
+        "other symptoms": [
+          "foot-drop"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Cerebral palsy \u2013 scissoring gait",
+      "name": "Cerebral palsy – scissoring gait",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["childhood"],
-        "progression": ["static-or-slowly-progressive"],
-        "palliate": ["physiotherapy"],
-        "provoke": ["fatigue"],
-        "quality": ["scissoring"],
-        "timing": ["chronic"],
-        "region": ["bilateral-limbs"],
-        "radiation": ["none"],
-        "severity": ["variable"],
-        "clinical tests": ["neuro-exam"],
-        "other symptoms": ["spasticity"]
+        "onset": [
+          "childhood"
+        ],
+        "progression": [
+          "static-or-slowly-progressive"
+        ],
+        "palliate": [
+          "physiotherapy"
+        ],
+        "provoke": [
+          "fatigue"
+        ],
+        "quality": [
+          "scissoring"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "bilateral-limbs"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "variable"
+        ],
+        "clinical tests": [
+          "neuro-exam"
+        ],
+        "other symptoms": [
+          "spasticity"
+        ]
       },
       "freq": "uncommon"
     },
     {
-      "name": "Frontal lobe lesions \u2013 apraxic gait",
+      "name": "Frontal lobe lesions – apraxic gait",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["progressive"],
-        "palliate": ["none"],
-        "provoke": ["dual-task"],
-        "quality": ["magnetic"],
-        "timing": ["chronic"],
-        "region": ["bilateral"],
-        "radiation": ["none"],
-        "severity": ["moderate"],
-        "clinical tests": ["neuroimaging"],
-        "other symptoms": ["dementia"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "none"
+        ],
+        "provoke": [
+          "dual-task"
+        ],
+        "quality": [
+          "magnetic"
+        ],
+        "timing": [
+          "chronic"
+        ],
+        "region": [
+          "bilateral"
+        ],
+        "radiation": [
+          "none"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "neuroimaging"
+        ],
+        "other symptoms": [
+          "dementia"
+        ]
       },
       "freq": "rare"
     }

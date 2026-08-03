@@ -228,7 +228,7 @@
       "freq": "common"
     },
     {
-      "name": "Obstruction to venous return, , pelvic tumors",
+      "name": "Obstruction to venous return, pelvic tumors",
       "system": "Chronic Swelling",
       "redFlag": false,
       "hpi": {
@@ -455,7 +455,7 @@
       "freq": "common"
     },
     {
-      "name": "Hypoproteinemia, , nephrotic syndrome",
+      "name": "Hypoproteinemia, nephrotic syndrome",
       "system": "General",
       "redFlag": false,
       "hpi": {

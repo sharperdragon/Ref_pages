@@ -1,4 +1,3 @@
-
 {
   "presentation": "Dizziness",
   "items": [
@@ -7,17 +6,43 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["movement"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam", "coordination-test", "gait-assessment"],
-        "other symptoms": ["nausea", "vomiting", "gait-abnormality"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "coordination-test",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "gait-abnormality"
+        ]
       },
       "freq": "common"
     },
@@ -26,17 +51,41 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["lying-down"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["coordination-test", "gait-assessment"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "lying-down"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "coordination-test",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -45,17 +94,42 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["exertion"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["peripheral-pulse-assessment", "orthostatic-blood-pressure"],
-        "other symptoms": ["palpitations", "syncope", "dyspnea"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "peripheral-pulse-assessment",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "palpitations",
+          "syncope",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -64,17 +138,40 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["orthostatic-blood-pressure"],
-        "other symptoms": ["syncope", "fatigue"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "syncope",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -83,17 +180,41 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam", "visual-field-test"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "visual-field-test"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -102,17 +223,42 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection", "peripheral-pulse-assessment"],
-        "other symptoms": ["dyspnea", "palpitations", "fatigue"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "palpitations",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -121,17 +267,41 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["orthostatic-blood-pressure", "inspection"],
-        "other symptoms": ["fatigue", "syncope"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "orthostatic-blood-pressure",
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "syncope"
+        ]
       },
       "freq": "common"
     },
@@ -140,17 +310,43 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["empty-stomach"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["orthostatic-blood-pressure", "glucose-fingerstick"],
-        "other symptoms": ["tachycardia", "syncope", "nausea", "fatigue"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "empty-stomach"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "orthostatic-blood-pressure",
+          "glucose-fingerstick"
+        ],
+        "other symptoms": [
+          "tachycardia",
+          "syncope",
+          "nausea",
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -159,17 +355,44 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["improving"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["cranial-nerve-exam", "visual-field-test", "motor-strength-testing", "sensory-testing"],
-        "other symptoms": ["visual-loss", "limb-weakness", "syncope"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "visual-field-test",
+          "motor-strength-testing",
+          "sensory-testing"
+        ],
+        "other symptoms": [
+          "visual-loss",
+          "limb-weakness",
+          "syncope"
+        ]
       },
       "freq": "uncommon"
     },
@@ -178,17 +401,42 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection", "peripheral-pulse-assessment"],
-        "other symptoms": ["palpitations", "dyspnea", "fatigue"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "palpitations",
+          "dyspnea",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -197,17 +445,40 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["improving"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam"],
-        "other symptoms": ["seizure", "fatigue"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "seizure",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -216,17 +487,41 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["nausea", "fatigue", "syncope"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection"
+        ],
+        "other symptoms": [
+          "nausea",
+          "fatigue",
+          "syncope"
+        ]
       },
       "freq": "rare"
     },
@@ -235,17 +530,41 @@
       "system": "Episodic",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["gait-assessment", "coordination-test"],
-        "other symptoms": ["fatigue", "gait-abnormality"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "gait-assessment",
+          "coordination-test"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "gait-abnormality"
+        ]
       },
       "freq": "rare"
     },
@@ -254,17 +573,44 @@
       "system": "Acute Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam", "gait-assessment", "coordination-test", "pupillary-light-reflex"],
-        "other symptoms": ["nausea", "vomiting", "gait-abnormality"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "gait-assessment",
+          "coordination-test",
+          "pupillary-light-reflex"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "gait-abnormality"
+        ]
       },
       "freq": "common"
     },
@@ -273,17 +619,44 @@
       "system": "Acute Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam", "gait-assessment", "coordination-test", "pupillary-light-reflex"],
-        "other symptoms": ["nausea", "vomiting", "gait-abnormality"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "gait-assessment",
+          "coordination-test",
+          "pupillary-light-reflex"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "gait-abnormality"
+        ]
       },
       "freq": "common"
     },
@@ -292,17 +665,43 @@
       "system": "Acute Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["alcohol"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["pupillary-light-reflex", "cranial-nerve-exam"],
-        "other symptoms": ["nausea", "vomiting", "fatigue", "syncope"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "pupillary-light-reflex",
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "fatigue",
+          "syncope"
+        ]
       },
       "freq": "common"
     },
@@ -311,17 +710,44 @@
       "system": "Acute Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["pupillary-light-reflex", "cranial-nerve-exam", "motor-strength-testing", "coordination-test"],
-        "other symptoms": ["nausea", "vomiting", "syncope"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "pupillary-light-reflex",
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "coordination-test"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting",
+          "syncope"
+        ]
       },
       "freq": "uncommon"
     },
@@ -330,17 +756,45 @@
       "system": "Acute Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["cranial-nerve-exam", "visual-field-test", "motor-strength-testing", "sensory-testing"],
-        "other symptoms": ["visual-loss", "limb-weakness", "syncope", "dysphagia"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "visual-field-test",
+          "motor-strength-testing",
+          "sensory-testing"
+        ],
+        "other symptoms": [
+          "visual-loss",
+          "limb-weakness",
+          "syncope",
+          "dysphagia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -349,17 +803,41 @@
       "system": "Gradual Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["orthostatic-blood-pressure", "inspection"],
-        "other symptoms": ["fatigue", "syncope"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "orthostatic-blood-pressure",
+          "inspection"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "syncope"
+        ]
       },
       "freq": "common"
     },
@@ -368,17 +846,40 @@
       "system": "Gradual Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection", "peripheral-pulse-assessment"],
-        "other symptoms": ["fatigue"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "fatigue"
+        ]
       },
       "freq": "common"
     },
@@ -387,17 +888,45 @@
       "system": "Gradual Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam", "motor-strength-testing", "sensory-testing", "coordination-test", "gait-assessment"],
-        "other symptoms": ["gait-abnormality", "limb-weakness", "fatigue"]
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "motor-strength-testing",
+          "sensory-testing",
+          "coordination-test",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "gait-abnormality",
+          "limb-weakness",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -406,17 +935,41 @@
       "system": "Gradual Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["exertion"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["peripheral-pulse-assessment"],
-        "other symptoms": ["syncope", "dyspnea", "fatigue"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "syncope",
+          "dyspnea",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -425,17 +978,42 @@
       "system": "Gradual Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam", "gait-assessment", "coordination-test"],
-        "other symptoms": ["gait-abnormality", "fatigue"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "cranial-nerve-exam",
+          "gait-assessment",
+          "coordination-test"
+        ],
+        "other symptoms": [
+          "gait-abnormality",
+          "fatigue"
+        ]
       },
       "freq": "rare"
     },
@@ -444,23 +1022,50 @@
       "system": "Gradual Onset",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["gait-assessment", "coordination-test", "cranial-nerve-exam"],
-        "other symptoms": ["gait-abnormality", "fatigue"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "gait-assessment",
+          "coordination-test",
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "gait-abnormality",
+          "fatigue"
+        ]
       },
       "freq": "rare"
     }
   ],
   "sources": {
-    "index_keys": ["Dizziness"],
+    "index_keys": [
+      "Dizziness"
+    ],
     "index_type": "clinical"
   },
   "symptoms": {}

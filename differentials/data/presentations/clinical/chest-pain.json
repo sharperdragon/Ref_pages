@@ -7,17 +7,51 @@
       "system": "Cardiovascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "nitrates"],
-        "provoke": ["exertion", "emotional-stress"],
-        "quality": ["pressure", "tightness"],
-        "timing": ["intermittent"],
-        "region": ["retrosternal"],
-        "radiation": ["left-shoulder", "jaw"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["auscultation", "jugular-venous-pressure", "carotid-bruit"],
-        "other symptoms": ["dyspnea", "palpitations", "clammy-skin", "nausea"]
+        "onset": [
+          "gradual",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "nitrates"
+        ],
+        "provoke": [
+          "exertion",
+          "emotional-stress"
+        ],
+        "quality": [
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "retrosternal"
+        ],
+        "radiation": [
+          "left-shoulder",
+          "jaw"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "jugular-venous-pressure",
+          "carotid-bruit"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dyspnea",
+          "palpitations",
+          "clammy-skin"
+        ]
       },
       "freq": "common"
     },
@@ -26,17 +60,47 @@
       "system": "Cardiovascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": [],
-        "provoke": [],
-        "quality": ["crushing", "pressure", "tightness"],
-        "timing": ["constant"],
-        "region": ["retrosternal"],
-        "radiation": ["left-shoulder", "jaw", "back"],
-        "severity": ["severe"],
-        "clinical tests": ["auscultation", "jugular-venous-pressure"],
-        "other symptoms": ["clammy-skin", "nausea", "dyspnea", "tachycardia"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "crushing",
+          "pressure",
+          "tightness"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal"
+        ],
+        "radiation": [
+          "left-shoulder",
+          "jaw"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "jugular-venous-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "clammy-skin",
+          "nausea",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -45,17 +109,50 @@
       "system": "Cardiovascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["worsening"],
-        "palliate": ["leaning-forward"],
-        "provoke": ["lying-down", "deep-breathing", "coughing"],
-        "quality": ["sharp", "pleuritic"],
-        "timing": ["constant"],
-        "region": ["retrosternal"],
-        "radiation": ["back", "neck"],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["auscultation", "jugular-venous-pressure"],
-        "other symptoms": ["fever", "dyspnea", "palpitations"]
+        "onset": [
+          "gradual",
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "leaning-forward"
+        ],
+        "provoke": [
+          "lying-down",
+          "deep-breathing",
+          "coughing"
+        ],
+        "quality": [
+          "sharp",
+          "pleuritic"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal"
+        ],
+        "radiation": [
+          "back",
+          "neck"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "jugular-venous-pressure"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "dyspnea",
+          "palpitations"
+        ]
       },
       "freq": "common"
     },
@@ -64,36 +161,92 @@
       "system": "Cardiovascular",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["progressive"],
-        "palliate": [],
-        "provoke": [],
-        "quality": ["tearing", "ripping"],
-        "timing": ["constant"],
-        "region": ["retrosternal"],
-        "radiation": ["back"],
-        "severity": ["severe"],
-        "clinical tests": ["auscultation"],
-        "other symptoms": ["dyspnea", "clammy-skin"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "progressive",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tearing",
+          "ripping"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal"
+        ],
+        "radiation": [
+          "back"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dyspnea",
+          "clammy-skin"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Gastro-oesophageal re\uFB02ux disease",
+      "name": "Gastro-oesophageal reflux disease",
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["waxing-waning"],
-        "palliate": ["antacids"],
-        "provoke": ["meals", "lying-down"],
-        "quality": ["burning"],
-        "timing": ["intermittent", "constant"],
-        "region": ["retrosternal", "epigastric"],
-        "radiation": [],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["cough", "nausea"]
+        "onset": [
+          "gradual"
+        ],
+        "progression": [
+          "waxing-waning"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "meals",
+          "lying-down"
+        ],
+        "quality": [
+          "burning"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "epigastric"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "cough",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -102,17 +255,46 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["waxing-waning"],
-        "palliate": ["antacids"],
-        "provoke": ["empty-stomach", "stress"],
-        "quality": ["burning", "gnawing"],
-        "timing": ["intermittent"],
-        "region": ["epigastric"],
-        "radiation": [],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["nausea", "vomiting"]
+        "onset": [
+          "gradual"
+        ],
+        "progression": [
+          "waxing-waning"
+        ],
+        "palliate": [
+          "antacids"
+        ],
+        "provoke": [
+          "empty-stomach",
+          "stress"
+        ],
+        "quality": [
+          "burning",
+          "gnawing"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "retrosternal",
+          "epigastric"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -121,17 +303,47 @@
       "system": "Gastrointestinal",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden", "gradual"],
-        "progression": ["waxing-waning"],
-        "palliate": [],
-        "provoke": ["oral-intake", "cold-drinks", "stress"],
-        "quality": ["pressure", "tightness", "cramping"],
-        "timing": ["intermittent"],
-        "region": ["retrosternal"],
-        "radiation": ["jaw", "back"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["n/a"],
-        "other symptoms": []
+        "onset": [
+          "sudden",
+          "gradual"
+        ],
+        "progression": [
+          "waxing-waning"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "oral-intake",
+          "cold-drinks",
+          "stress"
+        ],
+        "quality": [
+          "pressure",
+          "tightness",
+          "cramping"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "retrosternal"
+        ],
+        "radiation": [
+          "jaw",
+          "back"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "uncommon"
     },
@@ -140,17 +352,47 @@
       "system": "Pulmonary",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["progressive"],
-        "palliate": [],
-        "provoke": [],
-        "quality": ["pleuritic", "sharp"],
-        "timing": ["constant"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["mild", "moderate", "severe"],
-        "clinical tests": ["chest-percussion", "lung-auscultation", "egophony"],
-        "other symptoms": ["fever", "cough", "dyspnea"]
+        "onset": [
+          "gradual"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "pleuritic",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "chest-percussion",
+          "lung-auscultation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "fever",
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -159,17 +401,47 @@
       "system": "Pulmonary",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["progressive"],
-        "palliate": [],
-        "provoke": ["deep-breathing", "cough"],
-        "quality": ["pleuritic", "sharp"],
-        "timing": ["constant"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["chest-percussion", "lung-auscultation", "tracheal-deviation"],
-        "other symptoms": ["dyspnea", "tachycardia"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "deep-breathing",
+          "cough"
+        ],
+        "quality": [
+          "pleuritic",
+          "sharp"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "chest-percussion",
+          "lung-auscultation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dyspnea",
+          "tachycardia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -178,17 +450,47 @@
       "system": "Pulmonary",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["progressive"],
-        "palliate": [],
-        "provoke": [],
-        "quality": ["pleuritic"],
-        "timing": ["constant"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["lung-auscultation"],
-        "other symptoms": ["dyspnea", "tachycardia", "cough"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "progressive",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "pleuritic"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "lung-auscultation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "dyspnea",
+          "tachycardia",
+          "cough"
+        ]
       },
       "freq": "common"
     },
@@ -197,17 +499,49 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["improving"],
-        "palliate": [],
-        "provoke": ["movement", "pressure"],
-        "quality": ["sharp", "aching"],
-        "timing": ["constant"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["pain", "swelling"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "aching"
+        ],
+        "timing": [
+          "constant",
+          "post-traumatic"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "pain",
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -216,17 +550,44 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["progressive"],
-        "palliate": [],
-        "provoke": [],
-        "quality": ["burning", "stabbing"],
-        "timing": ["constant"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["n/a"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "gradual"
+        ],
+        "progression": [
+          "progressive"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "burning",
+          "stabbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "n/a"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -235,17 +596,45 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["waxing-waning"],
-        "palliate": [],
-        "provoke": ["pressure", "movement"],
-        "quality": ["sharp", "aching"],
-        "timing": ["intermittent", "constant"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["palpation", "auscultation"],
-        "other symptoms": []
+        "onset": [
+          "gradual"
+        ],
+        "progression": [
+          "waxing-waning"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "pressure",
+          "movement"
+        ],
+        "quality": [
+          "sharp",
+          "aching"
+        ],
+        "timing": [
+          "intermittent",
+          "constant"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath"
+        ]
       },
       "freq": "common"
     },
@@ -254,17 +643,48 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["gradual"],
-        "progression": ["progressive"],
-        "palliate": [],
-        "provoke": [],
-        "quality": ["dull", "aching"],
-        "timing": ["constant", "nocturnal"],
-        "region": ["lower-chest"],
-        "radiation": [],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["palpation"],
-        "other symptoms": ["weight-loss"]
+        "onset": [
+          "gradual",
+          "insidious",
+          "chronic"
+        ],
+        "progression": [
+          "progressive",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "dull",
+          "aching"
+        ],
+        "timing": [
+          "constant",
+          "nocturnal"
+        ],
+        "region": [
+          "retrosternal",
+          "lower-chest"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "palpation"
+        ],
+        "other symptoms": [
+          "shortness-of-breath",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     }

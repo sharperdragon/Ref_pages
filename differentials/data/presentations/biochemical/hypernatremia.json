@@ -44,7 +44,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Gastrointestinal losses (, Diarrhea)",
+      "name": "Gastrointestinal losses (Diarrhea)",
       "system": "Non-Renal Water Losses",
       "redFlag": false,
       "hpi": {
@@ -260,7 +260,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Drugs (",
+      "name": "Drugs",
       "system": "Renal Water Losses",
       "redFlag": false,
       "hpi": {

@@ -226,7 +226,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Vasculitis, , rheumatoid arthritis, scleroderma",
+      "name": "Vasculitis, rheumatoid arthritis, scleroderma",
       "system": "Small Vessel Disease",
       "redFlag": false,
       "hpi": {
@@ -368,7 +368,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Leprosy •JOFOEFNJDBSFBT",
+      "name": "Leprosy",
       "system": "Peripheral Nerve Lesions",
       "redFlag": false,
       "hpi": {
@@ -464,7 +464,7 @@
       "freq": "rare"
     },
     {
-      "name": "Spina biﬁda",
+      "name": "Spina bifida",
       "system": "Spinal Cord Lesions",
       "redFlag": false,
       "hpi": {
@@ -690,7 +690,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Ill-ﬁtting footwear",
+      "name": "Ill-fitting footwear",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {
@@ -738,7 +738,7 @@
       "freq": "common"
     },
     {
-      "name": "Madura foot •FOEFNJDJO\"GSJDB*OEJB",
+      "name": "Madura foot (endemic in Africa and India)",
       "system": "Infective",
       "redFlag": false,
       "hpi": {

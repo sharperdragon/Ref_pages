@@ -472,7 +472,7 @@
       "freq": "common"
     },
     {
-      "name": "Neuropathies (",
+      "name": "Neuropathies",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
@@ -516,7 +516,7 @@
       "freq": "common"
     },
     {
-      "name": "Spina biﬁda",
+      "name": "Spina bifida",
       "system": "Neurological",
       "redFlag": false,
       "hpi": {

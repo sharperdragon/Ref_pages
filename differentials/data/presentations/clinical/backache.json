@@ -246,7 +246,7 @@
     },
     {
       "name": "Discitis",
-      "system": "TB • (common in parts of the world where TB is endemic)",
+      "system": "TB (common in parts of the world where TB is endemic)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -1131,7 +1131,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Inﬂammatory disease",
+      "name": "Inflammatory disease",
       "system": "Vascular",
       "redFlag": false,
       "hpi": {
@@ -1179,7 +1179,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Pelvic inﬂammatory disease",
+      "name": "Pelvic inflammatory disease",
       "system": "Gynecological",
       "redFlag": false,
       "hpi": {

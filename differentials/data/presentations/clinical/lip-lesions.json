@@ -626,7 +626,7 @@
       "freq": "rare"
     },
     {
-      "name": "Trauma, , bites, assault",
+      "name": "Trauma, bites, assault",
       "system": "Swelling",
       "redFlag": false,
       "hpi": {
@@ -808,7 +808,7 @@
       "freq": "rare"
     },
     {
-      "name": "Infection (",
+      "name": "Infection",
       "system": "Cheilitis",
       "redFlag": false,
       "hpi": {
@@ -854,7 +854,7 @@
       "freq": "common"
     },
     {
-      "name": "Contact dermatitis (, pen-sucking)",
+      "name": "Contact dermatitis (pen-sucking)",
       "system": "Cheilitis",
       "redFlag": false,
       "hpi": {

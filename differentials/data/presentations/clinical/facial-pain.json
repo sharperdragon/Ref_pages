@@ -671,51 +671,8 @@
       "freq": "rare"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "n/a"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "movement",
-          "Touch"
-        ],
-        "quality": [
-          "sharp",
-          "dull"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "none"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
       "name": "Chronic paroxysmal hemicrania",
-      "system": "(common in Chinese populations)",
+      "system": "Neurological",
       "redFlag": false,
       "hpi": {
         "onset": [

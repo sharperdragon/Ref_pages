@@ -2,51 +2,8 @@
   "presentation": "Scrotal swellings",
   "items": [
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "chronic",
-          "months"
-        ],
-        "progression": [
-          "n/a"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "coughing"
-        ],
-        "quality": [
-          "dull",
-          "aching"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "none"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
       "name": "Gumma",
-      "system": "TB • (common where TB is endemic)",
+      "system": "Infective",
       "redFlag": false,
       "hpi": {
         "onset": [

@@ -198,7 +198,7 @@
       "freq": "common"
     },
     {
-      "name": "Extrinsic compression, , ovarian tumors",
+      "name": "Extrinsic compression, ovarian tumors",
       "system": "Obstruction",
       "redFlag": false,
       "hpi": {
@@ -926,7 +926,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Dietary changes (i.e. low-ﬁbre diet, dehydration)",
+      "name": "Dietary changes (i.e. low-fibre diet, dehydration)",
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {

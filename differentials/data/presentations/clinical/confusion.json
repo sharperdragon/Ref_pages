@@ -6,17 +6,47 @@
       "system": "Toxins/Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute","hours"],
-        "progression": ["worsening"],
-        "palliate": ["alcohol-cessation","rest"],
-        "provoke": ["alcohol"],
-        "quality": ["n/a"],
-        "timing": ["intermittent","nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["glucose-fingerstick","coordination-test","gait-assessment","pupillary-light-reflex"],
-        "other symptoms": ["confusion","hallucinations","tremor","nausea","vomiting","fatigue"]
+        "onset": [
+          "acute",
+          "hours"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "alcohol-cessation",
+          "rest"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "coordination-test"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "confusion",
+          "hallucinations",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
@@ -25,17 +55,45 @@
       "system": "Toxins/Drugs",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["intermittent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["glucose-fingerstick","pupillary-light-reflex","cranial-nerve-exam"],
-        "other symptoms": ["confusion","nausea","vomiting","syncope"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a",
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "pupillary-light-reflex"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "confusion",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -44,16 +102,46 @@
       "system": "Hypoxia",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute","subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["exertion","lying-down"],
-        "quality": ["n/a"],
-        "timing": ["with-activity","nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["chest"],
-        "severity": ["moderate"],
-        "clinical tests": ["lung-auscultation","orthostatic-blood-pressure","inspection"]
+        "onset": [
+          "acute",
+          "subacute",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exertion",
+          "lying-down"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "with-activity",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "lung-auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status"
+        ]
       },
       "freq": "common"
     },
@@ -62,17 +150,51 @@
       "system": "Hypoxia",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute","months"],
-        "progression": ["worsening"],
-        "palliate": ["elevation","rest"],
-        "provoke": ["exertion","lying-down"],
-        "quality": ["n/a"],
-        "timing": ["with-activity","nocturnal","persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["jugular distension","hepatojugular-reflux","lung-auscultation","peripheral-pulse-assessment"],
-        "other symptoms": ["dyspnea","orthopnea","paroxysmal-nocturnal-dyspnea","edema","fatigue"]
+        "onset": [
+          "subacute",
+          "months",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "elevation",
+          "rest"
+        ],
+        "provoke": [
+          "exertion",
+          "lying-down"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "with-activity",
+          "nocturnal",
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "jugular distension"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "dyspnea",
+          "orthopnea",
+          "paroxysmal-nocturnal-dyspnea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -81,17 +203,51 @@
       "system": "Metabolic Disorder",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute","rapid"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["exercise","empty-stomach","exertion"],
-        "quality": ["n/a"],
-        "timing": ["between-meals","morning","episodic"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["glucose-fingerstick","orthostatic-blood-pressure"],
-        "other symptoms": ["abnormal-sweating","tremor","confusion","syncope","tachycardia","clammy-skin","blurred-vision","fatigue"]
+        "onset": [
+          "acute",
+          "rapid",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exercise",
+          "empty-stomach",
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "between-meals",
+          "morning",
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "abnormal-sweating",
+          "tremor",
+          "confusion"
+        ]
       },
       "freq": "common"
     },
@@ -100,17 +256,48 @@
       "system": "Metabolic Disorder",
       "redFlag": true,
       "hpi": {
-        "onset": ["subacute","days"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["dehydration","stress"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["glucose-fingerstick","urine-dipstick"],
-        "other symptoms": ["polyuria","polydipsia","weight-loss","dehydration","dry-mucous-membranes","fatigue","nausea","vomiting"]
+        "onset": [
+          "subacute",
+          "days",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration",
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "polyuria",
+          "polydipsia",
+          "weight-loss"
+        ]
       },
       "freq": "common"
     },
@@ -119,17 +306,47 @@
       "system": "Metabolic Disorder",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute","days"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["dehydration"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["orthostatic-blood-pressure","chvostek-sign","trousseau-sign"],
-        "other symptoms": ["limb-weakness","paresthesia","cramps","confusion","fatigue"]
+        "onset": [
+          "subacute",
+          "days",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "limb-weakness",
+          "paresthesia",
+          "cramps"
+        ]
       },
       "freq": "uncommon"
     },
@@ -138,17 +355,47 @@
       "system": "Metabolic Disorder",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic","months"],
-        "progression": ["worsening"],
-        "palliate": ["alcohol-cessation"],
-        "provoke": ["alcohol"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["gait-assessment","coordination-test","cranial-nerve-exam"],
-        "other symptoms": ["confusion","nystagmus","neuropathic-pain","fatigue"]
+        "onset": [
+          "chronic",
+          "months",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "alcohol-cessation"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "confusion",
+          "nystagmus",
+          "neuropathic-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -157,17 +404,47 @@
       "system": "Metabolic Disorder",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic","months"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["sensory-testing","reflex-testing","motor-strength-testing"],
-        "other symptoms": ["paresthesia","neuropathic-pain","fatigue","gait-abnormality"]
+        "onset": [
+          "chronic",
+          "months",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "sensory-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "paresthesia",
+          "neuropathic-pain",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -176,17 +453,46 @@
       "system": "Metabolic Disorder",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["fatigue","malaise","weight-loss"]
+        "onset": [
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "inspection"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fatigue",
+          "malaise",
+          "weight-loss"
+        ]
       },
       "freq": "rare"
     },
@@ -195,17 +501,47 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute","chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["dehydration"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["urine-dipstick","inspection","orthostatic-blood-pressure"],
-        "other symptoms": ["edema","fatigue","nausea","vomiting","confusion"]
+        "onset": [
+          "subacute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "dehydration"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "urine-dipstick"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "edema",
+          "fatigue",
+          "nausea"
+        ]
       },
       "freq": "uncommon"
     },
@@ -214,17 +550,45 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["chronic","months"],
-        "progression": ["worsening"],
-        "palliate": ["alcohol-cessation"],
-        "provoke": ["alcohol"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection","scratch-test (liver)"],
-        "other symptoms": ["jaundice","ascites","fatigue","confusion"]
+        "onset": [
+          "chronic",
+          "months"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "alcohol-cessation"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "inspection"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "jaundice",
+          "ascites",
+          "fatigue"
+        ]
       },
       "freq": "uncommon"
     },
@@ -233,17 +597,48 @@
       "system": "Systemic Disease",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute","chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["thyroid-palpation"],
-        "other symptoms": ["fatigue","weight-change","cold-intolerance","tremor","palpitations"]
+        "onset": [
+          "subacute",
+          "chronic",
+          "gradual"
+        ],
+        "progression": [
+          "worsening",
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "thyroid-palpation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fatigue",
+          "weight-change",
+          "cold-intolerance"
+        ]
       },
       "freq": "rare"
     },
@@ -252,17 +647,47 @@
       "system": "Neurological",
       "redFlag": true,
       "hpi": {
-        "onset": ["sudden","acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["post-traumatic","episodic"],
-        "region": ["scalp","face","n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["pupillary-light-reflex","cranial-nerve-exam","motor-strength-testing","coordination-test"],
-        "other symptoms": ["dizziness","nausea","vomiting","visual-problem","syncope","confusion"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "post-traumatic",
+          "episodic"
+        ],
+        "region": [
+          "n/a",
+          "scalp"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "pupillary-light-reflex"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "dizziness",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "common"
     },
@@ -271,17 +696,43 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["improving"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["episodic"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["cranial-nerve-exam"],
-        "other symptoms": ["seizure","fatigue","confusion"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "episodic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "seizure",
+          "fatigue",
+          "confusion"
+        ]
       },
       "freq": "common"
     },
@@ -290,17 +741,45 @@
       "system": "Neurological",
       "redFlag": true,
       "hpi": {
-        "onset": ["sudden","acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["cranial-nerve-exam","motor-strength-testing","sensory-testing","visual-field-test"],
-        "other symptoms": ["stroke-symptoms","limb-weakness","visual-loss","dysphagia","syncope"]
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "stroke-symptoms",
+          "limb-weakness",
+          "visual-loss"
+        ]
       },
       "freq": "uncommon"
     },
@@ -309,17 +788,45 @@
       "system": "Neurological",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute","chronic"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["cranial-nerve-exam","motor-strength-testing"],
-        "other symptoms": ["seizure","nausea","vomiting","fatigue"]
+        "onset": [
+          "subacute",
+          "chronic"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "motor-strength-testing"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "seizure",
+          "nausea",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -328,17 +835,44 @@
       "system": "Neurological",
       "redFlag": true,
       "hpi": {
-        "onset": ["sudden"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["catastrophic"],
-        "clinical tests": ["pupillary-light-reflex","cranial-nerve-exam"],
-        "other symptoms": ["stroke-symptoms","syncope","vomiting"]
+        "onset": [
+          "sudden"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "catastrophic"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "pupillary-light-reflex"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "stroke-symptoms",
+          "syncope",
+          "vomiting"
+        ]
       },
       "freq": "uncommon"
     },
@@ -347,17 +881,48 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute","days"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["suprapubic"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["suprapubic-tenderness","urine-dipstick"],
-        "other symptoms": ["dysuria","fever","malaise","confusion"]
+        "onset": [
+          "acute",
+          "days",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "suprapubic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "suprapubic-tenderness"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "dysuria",
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "common"
     },
@@ -366,17 +931,47 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["exertion"],
-        "quality": ["n/a"],
-        "timing": ["daytime","nocturnal"],
-        "region": ["lower-chest","n/a"],
-        "radiation": ["chest"],
-        "severity": ["moderate"],
-        "clinical tests": ["lung-auscultation"],
-        "other symptoms": ["fever","cough","dyspnea","fatigue"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "exertion"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "daytime",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a",
+          "lower-chest"
+        ],
+        "radiation": [
+          "chest"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "lung-auscultation"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fever",
+          "cough",
+          "dyspnea"
+        ]
       },
       "freq": "common"
     },
@@ -385,17 +980,46 @@
       "system": "Infection",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["orthostatic-blood-pressure","capillary-refill"],
-        "other symptoms": ["fever","hypotension","tachycardia","dyspnea","confusion","malaise"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "orthostatic-blood-pressure"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fever",
+          "hypotension",
+          "tachycardia"
+        ]
       },
       "freq": "common"
     },
@@ -404,17 +1028,47 @@
       "system": "Infection",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["rest"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["neck","n/a"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["pupillary-light-reflex","cranial-nerve-exam"],
-        "other symptoms": ["fever","neck-stiffness","photophobia","nausea","vomiting","confusion"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe",
+          "moderate"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "pupillary-light-reflex"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "fever",
+          "neck-stiffness",
+          "photophobia"
+        ]
       },
       "freq": "uncommon"
     },
@@ -423,17 +1077,47 @@
       "system": "Miscellaneous",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious","chronic","months"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent","daytime"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["cranial-nerve-exam","gait-assessment"],
-        "other symptoms": ["confusion","gait-abnormality","falls","fatigue"]
+        "onset": [
+          "insidious",
+          "chronic",
+          "months"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent",
+          "daytime"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "gait-assessment"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "confusion",
+          "gait-abnormality",
+          "falls"
+        ]
       },
       "freq": "common"
     },
@@ -442,17 +1126,46 @@
       "system": "Miscellaneous",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute","days"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["n/a"],
-        "timing": ["persistent"],
-        "region": ["suprapubic","abdomen"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["digital-rectal-exam","inspection"],
-        "other symptoms": ["constipation","abdominal-pain","nausea","malaise","confusion"]
+        "onset": [
+          "subacute",
+          "days"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a",
+          "suprapubic"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "digital-rectal-exam"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "constipation",
+          "abdominal-pain",
+          "nausea"
+        ]
       },
       "freq": "common"
     },
@@ -461,17 +1174,47 @@
       "system": "Miscellaneous",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute","subacute"],
-        "progression": ["stable"],
-        "palliate": ["rest"],
-        "provoke": ["stress"],
-        "quality": ["n/a"],
-        "timing": ["intermittent","daytime","nocturnal"],
-        "region": ["n/a"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection"],
-        "other symptoms": ["confusion","malaise","fatigue"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "rest"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "intermittent",
+          "daytime",
+          "nocturnal"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "glucose-fingerstick",
+          "cranial-nerve-exam",
+          "inspection"
+        ],
+        "other symptoms": [
+          "altered-mental-status",
+          "confusion",
+          "malaise",
+          "fatigue"
+        ]
       },
       "freq": "common"
     }

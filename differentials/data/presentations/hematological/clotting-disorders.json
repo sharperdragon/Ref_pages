@@ -2,7 +2,7 @@
   "presentation": "Clotting disorders",
   "items": [
     {
-      "name": "Factor V Leiden deﬁciency",
+      "name": "Factor V Leiden deficiency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -45,7 +45,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Protein C deﬁciency",
+      "name": "Protein C deficiency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -88,7 +88,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Protein S deﬁciency",
+      "name": "Protein S deficiency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -131,7 +131,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Antithrombin III deﬁciency",
+      "name": "Antithrombin III deficiency",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -526,7 +526,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Vitamin K deﬁciency",
+      "name": "Vitamin K deficiency",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {

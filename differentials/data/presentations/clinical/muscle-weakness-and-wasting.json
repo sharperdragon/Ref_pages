@@ -281,7 +281,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Previous poliomyelitis • (common in developing",
+      "name": "Previous poliomyelitis (common in developing",
       "system": "Localised",
       "redFlag": false,
       "hpi": {
@@ -325,7 +325,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Vitamin D deﬁciency",
+      "name": "Vitamin D deficiency",
       "system": "Nutritional Deficiency",
       "redFlag": false,
       "hpi": {

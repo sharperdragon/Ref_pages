@@ -2,55 +2,8 @@
   "presentation": "Hematuria",
   "items": [
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "acute",
-          "chronic"
-        ],
-        "progression": [
-          "n/a"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "exercise",
-          "exertion",
-          "urination"
-        ],
-        "quality": [
-          "colicky",
-          "tender"
-        ],
-        "timing": [
-          "intermittent"
-        ],
-        "region": [
-          "suprapubic",
-          "flank"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "urine-dipstick",
-          "suprapubic-tenderness"
-        ],
-        "other symptoms": [
-          "dysuria"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
       "name": "Embolism",
-      "system": "TB • (common in some parts of the world where TB is endemic)",
+      "system": "Kidney",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -248,7 +201,7 @@
       "freq": "common"
     },
     {
-      "name": "Inﬂammatory, , TB, schistosomiasis",
+      "name": "Inflammatory (TB, schistosomiasis)",
       "system": "Bladder",
       "redFlag": false,
       "hpi": {
@@ -973,7 +926,7 @@
       "freq": "rare"
     },
     {
-      "name": "Malaria • (common where malaria is endemic)",
+      "name": "Malaria",
       "system": "General",
       "redFlag": false,
       "hpi": {

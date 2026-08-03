@@ -227,8 +227,8 @@
       "freq": "uncommon"
     },
     {
-      "name": "Africa)",
-      "system": "Basal cell carcinoma (rodent ulcer) • (rare in tropical",
+      "name": "Basal cell carcinoma (rodent ulcer)",
+      "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -273,51 +273,8 @@
       "freq": "uncommon"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "days",
-          "months"
-        ],
-        "progression": [
-          "improving"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "n/a"
-        ],
-        "quality": [
-          "burning",
-          "tender"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "face"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "none"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
-      "name": "OTHER",
-      "system": "Leishmaniasis • (common in tropical and subtropical areas)",
+      "name": "Leishmaniasis",
+      "system": "Infective",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -360,7 +317,7 @@
     },
     {
       "name": "Pyoderma gangrenosum",
-      "system": "Leishmaniasis • (common in tropical and subtropical areas)",
+      "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
         "onset": [

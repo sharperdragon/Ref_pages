@@ -303,7 +303,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Pituitary insufﬁciency",
+      "name": "Pituitary insufficiency",
       "system": "Endocrine",
       "redFlag": false,
       "hpi": {
@@ -441,7 +441,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Non-pancreatic tumors; retroperitoneal ﬁbrosarcoma",
+      "name": "Non-pancreatic tumors; retroperitoneal fibrosarcoma",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
@@ -702,7 +702,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Immune-mediated (",
+      "name": "Immune-mediated",
       "system": "Liver Disease",
       "redFlag": false,
       "hpi": {

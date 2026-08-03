@@ -51,7 +51,7 @@
       "freq": "common"
     },
     {
-      "name": "Bacterial, , gonococcus",
+      "name": "Bacterial, gonococcus",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
@@ -538,7 +538,7 @@
       "freq": "rare"
     },
     {
-      "name": "Larynx • (common in Far East including Hong Kong",
+      "name": "Larynx (common in Far East including Hong Kong",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
@@ -586,7 +586,7 @@
       "freq": "rare"
     },
     {
-      "name": "Hematological disorders (",
+      "name": "Hematological disorders",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
@@ -865,7 +865,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Reﬂux oesophagitis",
+      "name": "Reflux oesophagitis",
       "system": "Referred",
       "redFlag": false,
       "hpi": {

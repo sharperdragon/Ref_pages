@@ -2,7 +2,7 @@
   "presentation": "Hypokalemia",
   "items": [
     {
-      "name": "Potassium-free i.v. ﬂuids",
+      "name": "Potassium-free i.v. fluids",
       "system": "Inadequate Intake",
       "redFlag": false,
       "hpi": {

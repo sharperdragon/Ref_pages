@@ -2,7 +2,7 @@
   "presentation": "Polyuria",
   "items": [
     {
-      "name": "Loop – , bumetanide",
+      "name": "Loop – bumetanide",
       "system": "Therapeutic",
       "redFlag": false,
       "hpi": {
@@ -47,7 +47,7 @@
       "freq": "common"
     },
     {
-      "name": "Thiazide – , metolazone, indapamide",
+      "name": "Thiazide – metolazone, indapamide",
       "system": "Therapeutic",
       "redFlag": false,
       "hpi": {
@@ -322,53 +322,8 @@
       "freq": "rare"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "acute",
-          "chronic"
-        ],
-        "progression": [
-          "improving"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "nsaids",
-          "urination"
-        ],
-        "quality": [
-          "n/a"
-        ],
-        "timing": [
-          "n/a"
-        ],
-        "region": [
-          "suprapubic",
-          "flank"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "urine-dipstick",
-          "suprapubic-tenderness"
-        ],
-        "other symptoms": [
-          "dysuria"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
-      "name": "where TB is endemic)",
-      "system": "Pituitary granulomas, , TB • (more common",
+      "name": "Pituitary granulomas",
+      "system": "Central",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -416,8 +371,8 @@
       "freq": "rare"
     },
     {
-      "name": "Opiates",
-      "system": "Pituitary granulomas, , TB • (more common",
+      "name": "Tuberculosis",
+      "system": "Central",
       "redFlag": false,
       "hpi": {
         "onset": [

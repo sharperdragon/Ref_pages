@@ -362,7 +362,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Chronic inﬂammation, , inﬂammatory",
+      "name": "Chronic inflammation, inflammatory",
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {
@@ -412,7 +412,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Iron deﬁciency anemia",
+      "name": "Iron deficiency anemia",
       "system": "Reactive (secondary)",
       "redFlag": false,
       "hpi": {

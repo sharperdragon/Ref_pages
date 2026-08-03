@@ -7,17 +7,41 @@
       "system": "Simple (non-Toxic) Goitre",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["thyroid-swelling"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "thyroid-swelling"
+        ]
       },
       "freq": "common"
     },
@@ -26,55 +50,131 @@
       "system": "Simple (non-Toxic) Goitre",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["thyroid-swelling"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "thyroid-swelling"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Diffuse goitre (Graves\u2019 disease)",
+      "name": "Diffuse goitre (Graves’ disease)",
       "system": "Toxic Goitre",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["stress"],
-        "quality": ["warm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["weight-loss", "palpitations", "tremor"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "stress"
+        ],
+        "quality": [
+          "warm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "weight-loss",
+          "palpitations",
+          "tremor"
+        ]
       },
       "freq": "common"
     },
     {
-      "name": "Hashimoto\u2019s thyroiditis",
+      "name": "Hashimoto’s thyroiditis",
       "system": "Autoimmune",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["fatigue", "weight-gain", "cold-intolerance"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "fatigue",
+          "weight-gain",
+          "cold-intolerance"
+        ]
       },
       "freq": "common"
     },
@@ -83,17 +183,41 @@
       "system": "Benign",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["stable"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["mild"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["thyroid-swelling"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "stable"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "thyroid-swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -102,17 +226,43 @@
       "system": "Malignant",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["dysphagia", "hoarseness", "neck-pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "hoarseness",
+          "neck-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -121,17 +271,43 @@
       "system": "Malignant",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["dysphagia", "hoarseness", "neck-pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "hoarseness",
+          "neck-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -140,17 +316,43 @@
       "system": "Malignant",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["dysphagia", "hoarseness", "neck-pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "hoarseness",
+          "neck-pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -159,17 +361,43 @@
       "system": "Malignant",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["dysphagia", "hoarseness", "neck-pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "hoarseness",
+          "neck-pain"
+        ]
       },
       "freq": "rare"
     },
@@ -178,55 +406,129 @@
       "system": "Malignant",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "thyroid-palpation", "ultrasound"],
-        "other symptoms": ["dysphagia", "hoarseness", "neck-pain"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation",
+          "ultrasound"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "hoarseness",
+          "neck-pain"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "de Quervain\u2019s thyroiditis",
+      "name": "de Quervain’s thyroiditis",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["analgesics"],
-        "provoke": ["n/a"],
-        "quality": ["tender"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["jaw"],
-        "severity": ["moderate"],
-        "clinical tests": ["thyroid-palpation", "palpation"],
-        "other symptoms": ["fever", "malaise"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "analgesics"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "tender"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "jaw"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "thyroid-palpation",
+          "palpation"
+        ],
+        "other symptoms": [
+          "fever",
+          "malaise"
+        ]
       },
       "freq": "rare"
     },
     {
-      "name": "Riedel\u2019s thyroiditis",
+      "name": "Riedel’s thyroiditis",
       "system": "Inflammatory",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["n/a"],
-        "quality": ["firm"],
-        "timing": ["persistent"],
-        "region": ["neck"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["inspection", "thyroid-palpation"],
-        "other symptoms": ["dysphagia", "dyspnea"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "firm"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "neck"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "thyroid-palpation"
+        ],
+        "other symptoms": [
+          "dysphagia",
+          "dyspnea"
+        ]
       },
       "freq": "rare"
     }

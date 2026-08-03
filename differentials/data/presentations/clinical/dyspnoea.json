@@ -411,7 +411,7 @@
       "freq": "common"
     },
     {
-      "name": "Chronic airﬂow limitation (COPD)",
+      "name": "Chronic airflow limitation (COPD)",
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
@@ -637,7 +637,7 @@
       "freq": "common"
     },
     {
-      "name": "Cystic ﬁbrosis",
+      "name": "Cystic fibrosis",
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {
@@ -681,7 +681,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Idiopathic pulmonary ﬁbrosis",
+      "name": "Idiopathic pulmonary fibrosis",
       "system": "Chronic (months To Years)",
       "redFlag": false,
       "hpi": {

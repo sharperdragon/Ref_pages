@@ -311,7 +311,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Osteomalacia (inc. Vit D deﬁciency)",
+      "name": "Osteomalacia (inc. Vit D deficiency)",
       "system": "Associated With High Serum Phosphate",
       "redFlag": false,
       "hpi": {
@@ -440,7 +440,7 @@
       "freq": "unknown"
     },
     {
-      "name": "The ﬁrst symptom of hypocalcemia is circumoral",
+      "name": "The first symptom of hypocalcemia is circumoral",
       "system": "Symptoms And Signs",
       "redFlag": false,
       "hpi": {

@@ -223,7 +223,7 @@
       "freq": "common"
     },
     {
-      "name": "Inﬂammatory bowel disease",
+      "name": "Inflammatory bowel disease",
       "system": "Colon And Rectum",
       "redFlag": false,
       "hpi": {
@@ -719,7 +719,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Aortoenteric ﬁstula",
+      "name": "Aortoenteric fistula",
       "system": "Small Bowel",
       "redFlag": false,
       "hpi": {

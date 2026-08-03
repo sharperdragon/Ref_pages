@@ -129,15 +129,17 @@
       "freq": "common"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
+      "name": "Tuberculosis",
+      "system": "In The Wall",
       "redFlag": false,
       "hpi": {
         "onset": [
-          "n/a"
+          "acute",
+          "subacute",
+          "insidious"
         ],
         "progression": [
-          "n/a"
+          "worsening"
         ],
         "palliate": [
           "n/a"
@@ -147,32 +149,36 @@
         ],
         "quality": [
           "colicky",
-          "sharp"
+          "sharp",
+          "tender"
         ],
         "timing": [
           "constant"
         ],
         "region": [
-          "n/a"
+          "rectum"
         ],
         "radiation": [
           "n/a"
         ],
         "severity": [
-          "moderate"
+          "moderate",
+          "severe"
         ],
         "clinical tests": [
           "n/a"
         ],
         "other symptoms": [
-          "none"
+          "fever",
+          "malaise",
+          "weight-loss"
         ]
       },
-      "freq": "unknown"
+      "freq": "rare"
     },
     {
-      "name": "Tumour, , carcinoma",
-      "system": "TB • (common in areas of the world where TB is endemic)",
+      "name": "Tumour (carcinoma)",
+      "system": "In The Wall",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -563,7 +569,7 @@
       "freq": "rare"
     },
     {
-      "name": "Drugs, , anticholinergics",
+      "name": "Drugs, anticholinergics",
       "system": "Outside The Wall",
       "redFlag": false,
       "hpi": {

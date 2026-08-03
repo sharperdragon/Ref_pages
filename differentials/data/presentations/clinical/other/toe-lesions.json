@@ -545,7 +545,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Vasculitis (, SLE, rheumatoid)",
+      "name": "Vasculitis (SLE, rheumatoid)",
       "system": "Ischemic",
       "redFlag": false,
       "hpi": {
@@ -592,52 +592,8 @@
       "freq": "rare"
     },
     {
-      "name": "uncommon",
-      "system": "Freq",
-      "redFlag": false,
-      "hpi": {
-        "onset": [
-          "chronic"
-        ],
-        "progression": [
-          "n/a"
-        ],
-        "palliate": [
-          "n/a"
-        ],
-        "provoke": [
-          "walking",
-          "pressure"
-        ],
-        "quality": [
-          "sharp",
-          "pressure"
-        ],
-        "timing": [
-          "intermittent",
-          "nocturnal"
-        ],
-        "region": [
-          "n/a"
-        ],
-        "radiation": [
-          "n/a"
-        ],
-        "severity": [
-          "moderate"
-        ],
-        "clinical tests": [
-          "n/a"
-        ],
-        "other symptoms": [
-          "none"
-        ]
-      },
-      "freq": "unknown"
-    },
-    {
-      "name": "Spinal cord lesions",
-      "system": "Leprosy • (common where leprosy is endemic)",
+      "name": "Leprosy",
+      "system": "Neurological",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -681,8 +637,53 @@
       "freq": "rare"
     },
     {
-      "name": "Spina biﬁda",
-      "system": "Leprosy • (common where leprosy is endemic)",
+      "name": "Spinal cord lesions",
+      "system": "Neurological",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "chronic"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "walking",
+          "pressure"
+        ],
+        "quality": [
+          "sharp",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "nocturnal"
+        ],
+        "region": [
+          "foot",
+          "toes"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "none"
+        ]
+      },
+      "freq": "rare"
+    },
+    {
+      "name": "Spina bifida",
+      "system": "Neurological",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -726,7 +727,7 @@
     },
     {
       "name": "Spinal injuries",
-      "system": "Leprosy • (common where leprosy is endemic)",
+      "system": "Neurological",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -770,7 +771,7 @@
     },
     {
       "name": "Syringomyelia",
-      "system": "Leprosy • (common where leprosy is endemic)",
+      "system": "Neurological",
       "redFlag": false,
       "hpi": {
         "onset": [

@@ -1,8 +1,438 @@
 {
   "presentation": "Uremia",
-  "items": [],
+  "items": [
+    {
+      "name": "Chronic kidney disease",
+      "system": "Reduced Renal Clearance",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Acute kidney injury",
+      "system": "Reduced Renal Clearance",
+      "redFlag": true,
+      "hpi": {
+        "onset": [
+          "sudden",
+          "acute"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "n/a",
+          "sharp"
+        ],
+        "timing": [
+          "persistent",
+          "post-traumatic"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Obstructive uropathy",
+      "system": "Postrenal",
+      "redFlag": true,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent",
+          "constant"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Glomerulonephritis",
+      "system": "Intrinsic Renal",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Diabetic kidney disease",
+      "system": "Systemic Renal Disease",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Heart failure",
+      "system": "Prerenal",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Hypovolemia / dehydration",
+      "system": "Prerenal",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "gradual",
+          "chronic"
+        ],
+        "progression": [
+          "stable",
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Septic shock",
+      "system": "Prerenal",
+      "redFlag": true,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "uncommon"
+    },
+    {
+      "name": "Nephrotoxic medications",
+      "system": "Medication Related",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "alcohol"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "common"
+    },
+    {
+      "name": "Rhabdomyolysis",
+      "system": "Intrinsic Renal",
+      "redFlag": false,
+      "hpi": {
+        "onset": [
+          "n/a"
+        ],
+        "progression": [
+          "n/a"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "n/a"
+        ],
+        "quality": [
+          "n/a"
+        ],
+        "timing": [
+          "persistent"
+        ],
+        "region": [
+          "n/a"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "n/a"
+        ],
+        "other symptoms": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      "freq": "uncommon"
+    }
+  ],
   "sources": {
     "index_keys": [],
-    "index_type": "non-clinical"
+    "index_type": "non-clinical",
+    "manual_completion": "Completed 2026-08-03 from nephrology differential review."
   }
 }

@@ -267,7 +267,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Osmotic diuresis (",
+      "name": "Osmotic diuresis",
       "system": "Hypovolaemic",
       "redFlag": false,
       "hpi": {
@@ -915,7 +915,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Pulmonary disease (, lung cancer)",
+      "name": "Pulmonary disease (lung cancer)",
       "system": "Euvolaemic",
       "redFlag": false,
       "hpi": {
@@ -959,7 +959,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Drugs (",
+      "name": "Drugs",
       "system": "Euvolaemic",
       "redFlag": false,
       "hpi": {
@@ -1001,7 +1001,7 @@
       "freq": "unknown"
     },
     {
-      "name": "Intracranial disease (, head injuries)",
+      "name": "Intracranial disease (head injuries)",
       "system": "Euvolaemic",
       "redFlag": false,
       "hpi": {

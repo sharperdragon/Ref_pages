@@ -46,7 +46,7 @@
       "freq": "rare"
     },
     {
-      "name": "Cystic ﬁbrosis",
+      "name": "Cystic fibrosis",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -316,7 +316,7 @@
       "freq": "common"
     },
     {
-      "name": "Bacterial infections (",
+      "name": "Bacterial infections",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
@@ -408,7 +408,7 @@
       "freq": "rare"
     },
     {
-      "name": "Chronic infections (",
+      "name": "Chronic infections",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
@@ -454,7 +454,7 @@
       "freq": "rare"
     },
     {
-      "name": "AIDS • (common in certain developing countries)",
+      "name": "AIDS (common in certain developing countries)",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
@@ -771,7 +771,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Nasopharynx • (common in South east Asia)",
+      "name": "Nasopharynx (common in South east Asia)",
       "system": "Neoplastic",
       "redFlag": false,
       "hpi": {
@@ -1087,7 +1087,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Irritant gases, , tobacco smoke",
+      "name": "Irritant gases, tobacco smoke",
       "system": "Traumatic",
       "redFlag": false,
       "hpi": {

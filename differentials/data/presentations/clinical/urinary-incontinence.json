@@ -700,7 +700,7 @@
       "freq": "common"
     },
     {
-      "name": "Sacral nerve injury (",
+      "name": "Sacral nerve injury",
       "system": "Lower Motor Neurone Lesions",
       "redFlag": false,
       "hpi": {
@@ -1363,7 +1363,7 @@
       "freq": "rare"
     },
     {
-      "name": "Vesicovaginal ﬁstula",
+      "name": "Vesicovaginal fistula",
       "system": "Anatomical",
       "redFlag": false,
       "hpi": {

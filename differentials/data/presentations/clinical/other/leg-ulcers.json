@@ -48,7 +48,7 @@
       "freq": "rare"
     },
     {
-      "name": "TB • (common where TB is endemic)",
+      "name": "TB (common where TB is endemic)",
       "system": "Infective",
       "redFlag": false,
       "hpi": {
@@ -625,7 +625,7 @@
       "freq": "rare"
     },
     {
-      "name": "Dermatitis artefacta (self-inﬂicted)",
+      "name": "Dermatitis artefacta (self-inflicted)",
       "system": "Hematological",
       "redFlag": false,
       "hpi": {

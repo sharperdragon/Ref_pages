@@ -609,7 +609,7 @@
     },
     {
       "name": "Secondary deposits",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -654,7 +654,7 @@
     },
     {
       "name": "Paget’s disease",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -698,8 +698,8 @@
       "freq": "rare"
     },
     {
-      "name": "Referred pain (",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "name": "Referred pain",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -747,7 +747,7 @@
     },
     {
       "name": "Giant cell (temporal) arteritis",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -796,7 +796,7 @@
     },
     {
       "name": "Post-herpetic neuralgia",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -841,7 +841,7 @@
     },
     {
       "name": "Osteonecrosis of the mandible (steroid therapy",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [
@@ -889,7 +889,7 @@
     },
     {
       "name": "Systemic conditions (RA, lupus, syphilis)",
-      "system": "Burkitt’s lymphoma • (endemic in equatorial Africa)",
+      "system": "Burkitt’s lymphoma (endemic in equatorial Africa)",
       "redFlag": false,
       "hpi": {
         "onset": [

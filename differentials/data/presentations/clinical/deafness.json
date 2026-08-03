@@ -556,7 +556,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Ototoxicity (, aspirin, furosemide and",
+      "name": "Ototoxicity (aspirin, furosemide and",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
@@ -693,7 +693,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Infection (, herpes zoster, meningitis",
+      "name": "Infection (herpes zoster, meningitis",
       "system": "Acquired",
       "redFlag": false,
       "hpi": {
@@ -885,7 +885,7 @@
       "freq": "rare"
     },
     {
-      "name": "Infections (, toxoplasmosis and CMV)",
+      "name": "Infections (toxoplasmosis and CMV)",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {
@@ -933,7 +933,7 @@
       "freq": "rare"
     },
     {
-      "name": "Genetic (",
+      "name": "Genetic",
       "system": "Congenital",
       "redFlag": false,
       "hpi": {

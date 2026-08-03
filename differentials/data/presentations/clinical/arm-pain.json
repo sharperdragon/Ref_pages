@@ -7,17 +7,49 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["improving"],
-        "palliate": ["rest", "ice", "analgesics", "massage"],
-        "provoke": ["movement", "exercise", "Touch"],
-        "quality": ["aching", "sharp", "tender"],
-        "timing": ["intermittent"],
-        "region": ["arm", "forearm"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "improving"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "analgesics",
+          "massage"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "Touch"
+        ],
+        "quality": [
+          "aching",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -26,17 +58,47 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice", "analgesics"],
-        "provoke": ["movement", "exercise", "Touch"],
-        "quality": ["aching", "sharp", "tender"],
-        "timing": ["intermittent"],
-        "region": ["shoulder"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "analgesics"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "Touch"
+        ],
+        "quality": [
+          "aching",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "shoulder"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -45,17 +107,48 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice", "analgesics", "compression"],
-        "provoke": ["movement", "exercise", "Touch"],
-        "quality": ["aching", "sharp", "tender"],
-        "timing": ["intermittent"],
-        "region": ["elbow"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "analgesics",
+          "compression"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "Touch"
+        ],
+        "quality": [
+          "aching",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -64,17 +157,48 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice", "analgesics", "compression"],
-        "provoke": ["movement", "exercise", "Touch"],
-        "quality": ["aching", "sharp", "tender"],
-        "timing": ["intermittent"],
-        "region": ["elbow"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "analgesics",
+          "compression"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "Touch"
+        ],
+        "quality": [
+          "aching",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -83,17 +207,48 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice", "analgesics"],
-        "provoke": ["movement", "exercise", "Touch"],
-        "quality": ["aching", "sharp", "tender"],
-        "timing": ["intermittent"],
-        "region": ["shoulder", "arm"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "analgesics"
+        ],
+        "provoke": [
+          "movement",
+          "exercise",
+          "Touch"
+        ],
+        "quality": [
+          "aching",
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "shoulder",
+          "arm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -102,17 +257,47 @@
       "system": "Musculoskeletal",
       "redFlag": false,
       "hpi": {
-        "onset": ["acute", "subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice", "compression", "analgesics"],
-        "provoke": ["Touch", "movement"],
-        "quality": ["tender", "throbbing"],
-        "timing": ["intermittent"],
-        "region": ["elbow"],
-        "radiation": ["n/a"],
-        "severity": ["moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling", "fever"]
+        "onset": [
+          "acute",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "compression",
+          "analgesics"
+        ],
+        "provoke": [
+          "Touch",
+          "movement"
+        ],
+        "quality": [
+          "tender",
+          "throbbing"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling",
+          "fever"
+        ]
       },
       "freq": "common"
     },
@@ -121,17 +306,47 @@
       "system": "Neurologic",
       "redFlag": true,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "analgesics"],
-        "provoke": ["movement"],
-        "quality": ["sharp", "burning", "tingling"],
-        "timing": ["intermittent"],
-        "region": ["neck", "shoulder", "arm"],
-        "radiation": ["hand"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["reduced-reflexes", "clumsiness"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "analgesics"
+        ],
+        "provoke": [
+          "movement"
+        ],
+        "quality": [
+          "sharp",
+          "burning",
+          "tingling"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "neck",
+          "shoulder",
+          "arm"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "reduced-reflexes",
+          "clumsiness"
+        ]
       },
       "freq": "common"
     },
@@ -140,17 +355,49 @@
       "system": "Neurologic",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice", "compression"],
-        "provoke": ["movement", "Touch"],
-        "quality": ["tingling", "numbness", "aching"],
-        "timing": ["nocturnal", "intermittent"],
-        "region": ["wrist", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["tinel-sign", "phalen-test", "inspection"],
-        "other symptoms": ["clumsiness"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice",
+          "compression"
+        ],
+        "provoke": [
+          "movement",
+          "Touch"
+        ],
+        "quality": [
+          "tingling",
+          "numbness",
+          "aching"
+        ],
+        "timing": [
+          "nocturnal",
+          "intermittent"
+        ],
+        "region": [
+          "wrist",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "tinel-sign",
+          "phalen-test",
+          "inspection"
+        ],
+        "other symptoms": [
+          "clumsiness"
+        ]
       },
       "freq": "common"
     },
@@ -159,17 +406,47 @@
       "system": "Neurologic",
       "redFlag": false,
       "hpi": {
-        "onset": ["insidious"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "ice"],
-        "provoke": ["movement", "Touch"],
-        "quality": ["tingling", "numbness", "aching"],
-        "timing": ["intermittent"],
-        "region": ["elbow", "forearm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["clumsiness"]
+        "onset": [
+          "insidious"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "ice"
+        ],
+        "provoke": [
+          "movement",
+          "Touch"
+        ],
+        "quality": [
+          "tingling",
+          "numbness",
+          "aching"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "elbow",
+          "forearm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "clumsiness"
+        ]
       },
       "freq": "common"
     },
@@ -178,17 +455,47 @@
       "system": "Infection",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["elevation", "analgesics"],
-        "provoke": ["Touch"],
-        "quality": ["warm", "tender", "throbbing"],
-        "timing": ["constant"],
-        "region": ["forearm", "arm", "hand"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["fever", "swelling"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation",
+          "analgesics"
+        ],
+        "provoke": [
+          "Touch"
+        ],
+        "quality": [
+          "warm",
+          "tender",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "forearm",
+          "arm",
+          "hand"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "fever",
+          "swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -197,17 +504,46 @@
       "system": "Vascular",
       "redFlag": true,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["elevation"],
-        "provoke": ["immobility", "exercise"],
-        "quality": ["aching", "heaviness", "tender"],
-        "timing": ["constant"],
-        "region": ["arm", "forearm"],
-        "radiation": ["n/a"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["ultrasound", "capillary-refill", "peripheral-pulse-assessment"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "elevation"
+        ],
+        "provoke": [
+          "immobility",
+          "exercise"
+        ],
+        "quality": [
+          "aching",
+          "heaviness",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "ultrasound",
+          "capillary-refill",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -216,17 +552,46 @@
       "system": "Vascular",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["exercise", "movement"],
-        "quality": ["severe", "sharp", "aching"],
-        "timing": ["constant"],
-        "region": ["forearm"],
-        "radiation": ["hand"],
-        "severity": ["severe", "catastrophic"],
-        "clinical tests": ["palpation", "capillary-refill", "peripheral-pulse-assessment"],
-        "other symptoms": ["clammy-skin", "swelling"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "exercise",
+          "movement"
+        ],
+        "quality": [
+          "severe",
+          "sharp",
+          "aching"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "forearm"
+        ],
+        "radiation": [
+          "hand"
+        ],
+        "severity": [
+          "severe",
+          "catastrophic"
+        ],
+        "clinical tests": [
+          "palpation",
+          "capillary-refill",
+          "peripheral-pulse-assessment"
+        ],
+        "other symptoms": [
+          "clammy-skin",
+          "swelling"
+        ]
       },
       "freq": "rare"
     },
@@ -235,17 +600,48 @@
       "system": "Trauma",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["immobilization", "analgesics"],
-        "provoke": ["movement", "Touch"],
-        "quality": ["sharp", "tender", "throbbing"],
-        "timing": ["constant"],
-        "region": ["shoulder", "arm", "elbow", "forearm", "wrist"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "immobilization",
+          "analgesics"
+        ],
+        "provoke": [
+          "movement",
+          "Touch"
+        ],
+        "quality": [
+          "sharp",
+          "tender",
+          "throbbing"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "shoulder",
+          "arm",
+          "elbow",
+          "forearm",
+          "wrist"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "common"
     },
@@ -254,17 +650,44 @@
       "system": "Trauma",
       "redFlag": true,
       "hpi": {
-        "onset": ["acute"],
-        "progression": ["worsening"],
-        "palliate": ["immobilization", "analgesics"],
-        "provoke": ["movement", "Touch"],
-        "quality": ["sharp", "tender"],
-        "timing": ["constant"],
-        "region": ["shoulder", "elbow"],
-        "radiation": ["n/a"],
-        "severity": ["severe"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["swelling"]
+        "onset": [
+          "acute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "immobilization",
+          "analgesics"
+        ],
+        "provoke": [
+          "movement",
+          "Touch"
+        ],
+        "quality": [
+          "sharp",
+          "tender"
+        ],
+        "timing": [
+          "constant"
+        ],
+        "region": [
+          "shoulder",
+          "elbow"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "severe"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "swelling"
+        ]
       },
       "freq": "uncommon"
     },
@@ -273,17 +696,43 @@
       "system": "Infection",
       "redFlag": false,
       "hpi": {
-        "onset": ["subacute"],
-        "progression": ["worsening"],
-        "palliate": ["n/a"],
-        "provoke": ["Touch"],
-        "quality": ["burning", "tender"],
-        "timing": ["intermittent"],
-        "region": ["arm", "forearm"],
-        "radiation": ["n/a"],
-        "severity": ["mild", "moderate"],
-        "clinical tests": ["inspection", "palpation"],
-        "other symptoms": ["pain"]
+        "onset": [
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "n/a"
+        ],
+        "provoke": [
+          "Touch"
+        ],
+        "quality": [
+          "burning",
+          "tender"
+        ],
+        "timing": [
+          "intermittent"
+        ],
+        "region": [
+          "arm",
+          "forearm"
+        ],
+        "radiation": [
+          "n/a"
+        ],
+        "severity": [
+          "mild",
+          "moderate"
+        ],
+        "clinical tests": [
+          "inspection",
+          "palpation"
+        ],
+        "other symptoms": [
+          "pain"
+        ]
       },
       "freq": "uncommon"
     },
@@ -292,17 +741,53 @@
       "system": "Cardiovascular",
       "redFlag": true,
       "hpi": {
-        "onset": ["sudden", "subacute"],
-        "progression": ["worsening"],
-        "palliate": ["rest", "nitrates"],
-        "provoke": ["exertion", "stress"],
-        "quality": ["tightness", "crushing", "pressure"],
-        "timing": ["intermittent", "episodic"],
-        "region": ["chest", "shoulder", "arm"],
-        "radiation": ["left-shoulder", "jaw"],
-        "severity": ["moderate", "severe"],
-        "clinical tests": ["auscultation", "jugular-venous-pressure"],
-        "other symptoms": ["dyspnea", "nausea", "clammy-skin", "tachycardia"]
+        "onset": [
+          "sudden",
+          "subacute"
+        ],
+        "progression": [
+          "worsening"
+        ],
+        "palliate": [
+          "rest",
+          "nitrates"
+        ],
+        "provoke": [
+          "exertion",
+          "stress"
+        ],
+        "quality": [
+          "tightness",
+          "crushing",
+          "pressure"
+        ],
+        "timing": [
+          "intermittent",
+          "episodic"
+        ],
+        "region": [
+          "chest",
+          "shoulder",
+          "arm"
+        ],
+        "radiation": [
+          "left-shoulder",
+          "jaw"
+        ],
+        "severity": [
+          "moderate",
+          "severe"
+        ],
+        "clinical tests": [
+          "auscultation",
+          "jugular-venous-pressure"
+        ],
+        "other symptoms": [
+          "dyspnea",
+          "nausea",
+          "clammy-skin",
+          "tachycardia"
+        ]
       },
       "freq": "uncommon"
     }

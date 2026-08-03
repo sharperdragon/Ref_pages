@@ -183,7 +183,7 @@
       "freq": "common"
     },
     {
-      "name": "White patches, , thrush",
+      "name": "White patches, thrush",
       "system": "Colour Change",
       "redFlag": false,
       "hpi": {
@@ -316,7 +316,7 @@
       "freq": "common"
     },
     {
-      "name": "Red (pernicious anemia, vitamin deﬁciency)",
+      "name": "Red (pernicious anemia, vitamin deficiency)",
       "system": "Colour Change",
       "redFlag": false,
       "hpi": {
@@ -404,7 +404,7 @@
       "freq": "common"
     },
     {
-      "name": "Trauma, , corrosive substances",
+      "name": "Trauma, corrosive substances",
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
@@ -540,7 +540,7 @@
       "freq": "uncommon"
     },
     {
-      "name": "Inﬁltration, , lymphoma",
+      "name": "Infiltration, lymphoma",
       "system": "Swelling (macroglossia)",
       "redFlag": false,
       "hpi": {
