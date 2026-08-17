@@ -5,6 +5,7 @@
 # macOS files
 .DS_Store
 **/.DS_Store
+.__*
 
 # Python caches/artifacts
 __pycache__/
@@ -25,6 +26,7 @@ folder/
 
 # Node / UI test artifacts
 node_modules/
+.npm-cache/
 playwright-report/
 test-results/
 blob-report/

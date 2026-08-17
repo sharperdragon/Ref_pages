@@ -1114,6 +1114,7 @@ function renderOutput(){
   }
 
   if (ta) ta.value = lines.join("\n");
+  updateSectionPreviewScope();
 }
 
 // ====== Patient history (multi-patient cache) ======
@@ -1196,23 +1197,17 @@ async function loadPatientById(id){
 }
 
 function renderPatientControls(){
-  const bar = document.querySelector(".tools");
-  if (!bar) return;
+  const host = document.getElementById("patientToolbar");
+  if (!host) return;
+  host.innerHTML = "";
 
-  let host = bar.querySelector('[data-role="patient-controls"]');
-  if (!host){
-    host = document.createElement("div");
-    host.dataset.role = "patient-controls";
-    host.style.display = "inline-flex";
-    host.style.gap = "8px";
-    host.style.marginLeft = "8px";
-    bar.appendChild(host);
-  } else {
-    host.innerHTML = "";
-  }
+  const label = document.createElement("span");
+  label.className = "toolbar-label";
+  label.textContent = "Patient";
+  host.appendChild(label);
 
   const btn = document.createElement("button");
-  btn.textContent = "New Patient";
+  btn.textContent = "Start New Patient";
   btn.title = "Start a new patient session";
   btn.onclick = ()=>{ createNewPatient(); };
   host.appendChild(btn);
@@ -1223,7 +1218,7 @@ function renderPatientControls(){
 
   const opt0 = document.createElement("option");
   opt0.value = "";
-  opt0.textContent = "Select previous…";
+  opt0.textContent = "Resume saved note…";
   sel.appendChild(opt0);
 
   list.forEach(p=>{
@@ -1239,6 +1234,22 @@ function renderPatientControls(){
     if (id) await loadPatientById(id);
   };
   host.appendChild(sel);
+
+  const clearBtn = document.createElement("button");
+  clearBtn.type = "button";
+  clearBtn.dataset.role = "clear-patients";
+  clearBtn.textContent = "Delete Saved Patients";
+  clearBtn.title = "Delete all saved patients and start fresh";
+  clearBtn.onclick = () => {
+    if (confirm("Delete all saved patients? This cannot be undone.")) {
+      clearAllPatients();
+      renderPatientControls();
+      renderGrid();
+      renderOutput();
+      renderCompleteSoon();
+    }
+  };
+  host.appendChild(clearBtn);
 }
 
 // Completely clear patient history (does NOT touch template cache)
@@ -1724,6 +1735,14 @@ function enhanceCompleteNoteUI(){
 
   // Refit on window resizes
   window.addEventListener('resize', debounce(_autosizeCnTextarea, 120));
+}
+
+function updateSectionPreviewScope(){
+  const scope = document.getElementById("sectionPreviewScope");
+  if (!scope) return;
+  const modeLabel = MODE_LABELS[state.mode] || state.mode || "Section";
+  const sectionLabel = state.activeSection || "No section selected";
+  scope.textContent = `${modeLabel} · ${sectionLabel}`;
 }
 
 function _completeTextToHTML(txt){
@@ -2275,6 +2294,9 @@ function wireHeader(){
   document.getElementById("copyBtn").onclick = ()=>{
     navigator.clipboard.writeText(document.getElementById("out").value);
   };
+  document.getElementById("copyFullBtn").onclick = ()=>{
+    navigator.clipboard.writeText(document.getElementById("completeOut").value);
+  };
   document.getElementById("clearSectionBtn").onclick = ()=>{
     state.sections[`${state.mode}:${state.activeSection}`] = {checkboxes:{}, chips:{}, fields:{}};
     saveStateSoon();
@@ -2287,24 +2309,6 @@ function wireHeader(){
     renderGrid(); renderOutput();
     renderCompleteSoon();
   };
-  // Add a Clear patients button
-  const toolsBar = document.querySelector(".tools");
-  if (toolsBar && !toolsBar.querySelector('[data-role="clear-patients"]')) {
-    const btn = document.createElement("button");
-    btn.dataset.role = "clear-patients";
-    btn.textContent = "Clear patients";
-    btn.title = "Delete all saved patients and start fresh";
-    btn.onclick = () => {
-      if (confirm("Delete all saved patients? This cannot be undone.")) {
-        clearAllPatients();
-        // Rebuild toolbar controls after reset
-        renderPatientControls();
-        renderGrid();
-        renderOutput();
-      }
-    };
-    toolsBar.appendChild(btn);
-  }
   renderPatientControls();
 }
 

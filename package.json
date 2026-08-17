@@ -2,17 +2,19 @@
   "name": "ref-pages-v3",
   "private": true,
   "version": "1.0.0",
-  "description": "UI smoke tests for Page-ref",
+  "description": "Static clinical reference utilities with VS Code task workflows",
   "scripts": {
     "build:deploy": "node ./scripts/build_static_deploy.js",
-    "deploy": "npx wrangler deploy",
-    "preview": "npx wrangler dev",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev",
+    "serve:ui": "python3 ./scripts/run_static_server.py",
     "test:ui": "playwright test",
     "test:ui:headed": "playwright test --headed",
     "test:ui:debug": "playwright test --debug",
     "test:ui:install": "playwright install"
   },
   "devDependencies": {
-    "@playwright/test": "^1.53.0"
+    "@playwright/test": "^1.58.2",
+    "wrangler": "^4.118.0"
   }
 }

@@ -8,9 +8,13 @@ const SUBJECTIVE_TAB = { role: "button", name: "Subjective" };
 const ROS_TAB = { role: "button", name: "ROS" };
 const MSE_TAB = { role: "button", name: "MSE" };
 const CLEAR_SECTION_BUTTON = "#clearSectionBtn";
+const COPY_SECTION_BUTTON = "#copyBtn";
+const COPY_FULL_BUTTON = "#copyFullBtn";
+const CLEAR_NOTE_BUTTON = "#clearAllBtn";
 const COMPLETE_NOTE_TEXTAREA = "#completeOut";
 const COMPLETE_NOTE_VIEW = "#completeOutView";
 const SECTION_OUTPUT_TEXTAREA = "#out";
+const SECTION_PREVIEW_SCOPE = "#sectionPreviewScope";
 const HPI_ONSET_INPUT = '[data-field-id="hpi_onset"]';
 const VISIT_NOTE_INPUT = '[data-field-id="subj_visit_note"]';
 const CHIEF_COMPLAINT_INPUT = '[data-field-id="subj_chief_complaint"]';
@@ -87,6 +91,18 @@ async function readCompleteNote(page) {
 }
 
 test.describe("NoteWriter smoke", () => {
+  test("header exposes distinct note actions and updates section preview scope", async ({ page }) => {
+    await page.goto(NOTEWRITER_PATH);
+
+    await expect(page.locator(COPY_SECTION_BUTTON)).toHaveText("Copy Section");
+    await expect(page.locator(COPY_FULL_BUTTON)).toHaveText("Copy Full Note");
+    await expect(page.locator(CLEAR_NOTE_BUTTON)).toHaveText("Clear Note");
+    await expect(page.locator(SECTION_PREVIEW_SCOPE)).toContainText("Subjective");
+
+    await page.getByRole(MSE_TAB.role, { name: MSE_TAB.name }).click();
+    await expect(page.locator(SECTION_PREVIEW_SCOPE)).toContainText("MSE");
+  });
+
   test("complete note text stays plain text (no HTML tags)", async ({ page }) => {
     await page.goto(NOTEWRITER_PATH);
 

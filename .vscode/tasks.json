@@ -17,7 +17,10 @@
       "type": "shell",
       "command": "npm run build:deploy",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "npm_config_cache": "${workspaceFolder}/.npm-cache"
+        }
       },
       "problemMatcher": []
     },
@@ -26,7 +29,14 @@
       "type": "shell",
       "command": "npm run preview",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "npm_config_cache": "${workspaceFolder}/.npm-cache",
+          "WRANGLER_LOG_PATH": "${workspaceFolder}/.wrangler/logs",
+          "WRANGLER_WRITE_LOGS": "false",
+          "XDG_CONFIG_HOME": "${workspaceFolder}/.config",
+          "XDG_CACHE_HOME": "${workspaceFolder}/.cache"
+        }
       },
       "problemMatcher": []
     },
@@ -35,7 +45,14 @@
       "type": "shell",
       "command": "npm run deploy",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "npm_config_cache": "${workspaceFolder}/.npm-cache",
+          "WRANGLER_LOG_PATH": "${workspaceFolder}/.wrangler/logs",
+          "WRANGLER_WRITE_LOGS": "false",
+          "XDG_CONFIG_HOME": "${workspaceFolder}/.config",
+          "XDG_CACHE_HOME": "${workspaceFolder}/.cache"
+        }
       },
       "problemMatcher": []
     },
@@ -43,6 +60,18 @@
       "label": "UI Tests: Install Dependencies",
       "type": "shell",
       "command": "npm install && npm run test:ui:install",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "npm_config_cache": "${workspaceFolder}/.npm-cache"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "UI Tests: Local Static Server",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/scripts/run_static_server.py",
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -53,7 +82,10 @@
       "type": "shell",
       "command": "npm run test:ui",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "npm_config_cache": "${workspaceFolder}/.npm-cache"
+        }
       },
       "problemMatcher": []
     },
@@ -62,9 +94,45 @@
       "type": "shell",
       "command": "npm run test:ui:headed",
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "npm_config_cache": "${workspaceFolder}/.npm-cache"
+        }
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Pharm: Import DrugBank TSV",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/import_drugbank_tsv.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Pharm: Expand DrugBank Catalog",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/expand_drugbank_catalog.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Pharm: Build Class Subclasses",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/build_class_subclasses.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
     },
     {
       "label": "Pharm: Build RxClass Catalog",
@@ -133,6 +201,28 @@
       "label": "Differentials: Fill Clinical Todo From PDF",
       "type": "shell",
       "command": "python3 ${workspaceFolder}/differentials/fill_clinical_todo_from_pdf.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Differentials: Write Presentation",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/differentials/write_presentation.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Differentials: Fix Parenthetical Etiologies",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/differentials/fix_parenthetical_etiologies.py",
       "options": {
         "cwd": "${workspaceFolder}"
       },

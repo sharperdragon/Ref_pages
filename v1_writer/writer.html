@@ -10,16 +10,24 @@
 <body>
   
 <header class="appbar">
-  <h1>
+  <div class="appbar__brand">
     <a class="app-title-link" href="../index.html">
       <img class="app-title-icon" src="../ct_icon.svg" alt="" aria-hidden="true" width="24" height="24" />
       <span>Home</span>
     </a>
-  </h1>
-  <div class="tools">
-    <button id="copyBtn" title="Copy output">Copy</button>
-    <button id="clearSectionBtn" title="Clear section">Clear Section</button>
-    <button id="clearAllBtn" title="Clear all">Clear All</button>
+    <div class="appbar__title-block">
+      <div class="appbar__eyebrow">NoteWriter</div>
+      <div class="appbar__subtitle">Structured SOAP note builder</div>
+    </div>
+  </div>
+  <div class="appbar__controls">
+    <div class="toolbar-group toolbar-group--actions" aria-label="Note actions">
+      <button id="copyBtn" title="Copy current section preview">Copy Section</button>
+      <button id="copyFullBtn" title="Copy complete note">Copy Full Note</button>
+      <button id="clearSectionBtn" title="Clear current section">Clear Section</button>
+      <button id="clearAllBtn" title="Clear all sections for the current note">Clear Note</button>
+    </div>
+    <div id="patientToolbar" class="toolbar-group toolbar-group--patients" aria-label="Patient session controls"></div>
   </div>
 </header>
   <div class="tab_bar">
@@ -29,14 +37,41 @@
   <div id="headerItems" class="header-items-bar" aria-live="polite"></div>
   <main id="grid" class="section-grid" aria-live="polite"></main>
 
-  <aside class="output">
-    <div class="output-header">Output</div>
-    <textarea id="out" rows="10" spellcheck="false"></textarea>
-  </aside>
-  <div class="out-wrap">
-  <div class="out-head">Complete Note</div>
-  <textarea id="completeOut" rows="12" readonly></textarea>
-  </div>
+  <section class="note-output-layout" aria-label="Note outputs">
+    <div class="out-wrap out-wrap--complete">
+      <div class="out-head">
+        <div>
+          <div class="out-title-row">
+            <span class="out-kicker">Primary Output</span>
+            <h2 class="out-title">Complete Note</h2>
+          </div>
+          <p class="out-copy">Full note assembled from every populated section.</p>
+        </div>
+        <div class="cn-metrics" data-cn="metrics" aria-live="polite"></div>
+      </div>
+      <textarea id="completeOut" rows="12" readonly></textarea>
+    </div>
+
+    <aside class="output out-wrap out-wrap--section">
+      <div class="out-head">
+        <div>
+          <div class="out-title-row">
+            <span class="out-kicker">Working Preview</span>
+            <h2 class="out-title">Current Section Preview</h2>
+          </div>
+          <p class="out-copy">Only the active section. Use this for quick checks before copying the full note.</p>
+        </div>
+        <div id="sectionPreviewScope" class="out-scope" aria-live="polite"></div>
+      </div>
+      <textarea
+        id="out"
+        rows="10"
+        readonly
+        spellcheck="false"
+        placeholder="Section preview appears here as you document."
+      ></textarea>
+    </aside>
+  </section>
 
   <script type="module" src="js/app.js"></script>
   <footer class="app-footer">

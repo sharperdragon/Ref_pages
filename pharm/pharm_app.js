@@ -90,6 +90,7 @@
     clearFiltersButton: "#btnClearFilters",
     resultCount: "#resultCount",
     resultsGrid: "#results",
+    activeFilterSummary: "#activeFilterSummary",
     layoutShell: ".layout-shell",
     detailPanel: "#detailPanel",
     detailCloseButton: "#btnCloseDetail",
@@ -2450,6 +2451,7 @@
     }
 
     renderResultCount();
+    renderActiveFilterSummary();
     renderCards();
     renderDetail();
   }
@@ -3334,7 +3336,60 @@
   function renderResultCount() {
     if (!EL.resultCount) return;
     const count = STATE.filtered.length;
-    EL.resultCount.textContent = `${count} medication${count === 1 ? "" : "s"}`;
+    const groupCount = Array.isArray(STATE.groupingIndex?.classes) ? STATE.groupingIndex.classes.length : 0;
+    const groupLabel = STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY ? "categories" : "classes";
+    EL.resultCount.textContent = groupCount > 0
+      ? `${count} medication${count === 1 ? "" : "s"} in ${groupCount} ${groupLabel}`
+      : `${count} medication${count === 1 ? "" : "s"}`;
+  }
+
+  function renderActiveFilterSummary() {
+    if (!EL.activeFilterSummary) return;
+
+    EL.activeFilterSummary.innerHTML = "";
+    const fragment = document.createDocumentFragment();
+    const count = STATE.filtered.length;
+    const groupCount = Array.isArray(STATE.groupingIndex?.classes) ? STATE.groupingIndex.classes.length : 0;
+    const groupLabel = STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY ? "categories" : "classes";
+
+    fragment.appendChild(
+      makeSummaryPill(
+        groupCount > 0
+          ? `${count} medication${count === 1 ? "" : "s"} in ${groupCount} ${groupLabel}`
+          : `${count} medication${count === 1 ? "" : "s"}`,
+        "count"
+      )
+    );
+
+    if (STATE.query) {
+      fragment.appendChild(makeSummaryPill(`Search: ${STATE.query}`));
+    }
+
+    if (STATE.classFilterNodeId) {
+      const filterLabel = STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY ? "Use category" : "Class";
+      fragment.appendChild(makeSummaryPill(`${filterLabel}: ${STATE.classFilterLabel}`));
+    }
+
+    if (STATE.routeFilter) {
+      fragment.appendChild(makeSummaryPill(`Route: ${STATE.routeFilter}`));
+    }
+
+    if (!hasActiveFilters()) {
+      fragment.appendChild(makeSummaryPill("No filters applied", "muted"));
+    }
+
+    EL.activeFilterSummary.appendChild(fragment);
+  }
+
+  function makeSummaryPill(text, variant = "") {
+    const pill = document.createElement("span");
+    pill.className = `summary-pill${variant ? ` summary-pill--${variant}` : ""}`;
+    pill.textContent = text;
+    return pill;
+  }
+
+  function hasActiveFilters() {
+    return Boolean(STATE.query || STATE.classFilterNodeId || STATE.routeFilter);
   }
 
   function renderCards() {
@@ -3345,7 +3400,9 @@
     if (STATE.filtered.length === 0) {
       const empty = document.createElement("div");
       empty.className = "results-empty";
-      empty.textContent = CONFIG.emptyStateCopy;
+      empty.textContent = hasActiveFilters()
+        ? "No medications match the current filters. Clear a filter or broaden the search."
+        : CONFIG.emptyStateCopy;
       EL.resultsGrid.appendChild(empty);
       return;
     }
@@ -3930,7 +3987,7 @@
 
     const classText = document.createElement("p");
     classText.className = "med-card__class";
-    classText.textContent = medication.specificClassLabel || medication.displayClassLabel || medication.drugClass;
+    classText.textContent = getMedicationClassLabel(medication);
 
     const routeRow = document.createElement("div");
     routeRow.className = "pill-row";
@@ -3940,22 +3997,31 @@
       chip.textContent = route;
       routeRow.appendChild(chip);
     });
-
-    const snippet = document.createElement("p");
-    snippet.className = "med-card__snippet";
-    const snippetValues = getCardSnippetValues(medication);
-    if (snippetValues.length > 0) {
-      snippet.textContent = snippetValues.join(" • ");
-      card.appendChild(snippet);
-    }
+    routeRow.hidden = medication.routes.length === 0;
 
     card.appendChild(title);
     card.appendChild(classText);
     card.appendChild(routeRow);
+
+    const highlight = getMedicationHighlight(medication);
+    if (highlight) {
+      const snippet = document.createElement("p");
+      snippet.className = "med-card__snippet";
+      snippet.textContent = `${highlight.label}: ${highlight.text}`;
+      card.appendChild(snippet);
+    }
+
     return card;
   }
 
-  function getCardSnippetValues(medication) {
+  function getMedicationClassLabel(medication) {
+    return medication.specificClassLabel
+      || medication.displayClassLabel
+      || medication.drugClass
+      || CONFIG.uncategorizedClassLabel;
+  }
+
+  function getMedicationHighlight(medication) {
     const excludedPrefixes = CONFIG.cardSnippetExcludedIndicationPrefixes.map((prefix) =>
       normalizeSearch(prefix)
     );
@@ -3968,7 +4034,10 @@
     });
 
     if (indicationValues.length > 0) {
-      return indicationValues.slice(0, 2);
+      return {
+        label: "Key use",
+        text: indicationValues[0],
+      };
     }
 
     const moa = cleanText(medication.moa);
@@ -3976,7 +4045,10 @@
       const normalizedMoa = normalizeSearch(moa);
       const isExcludedMoa = excludedMoaPrefixes.some((prefix) => normalizedMoa.startsWith(prefix));
       if (!isExcludedMoa) {
-        return [moa];
+        return {
+          label: "MOA",
+          text: moa,
+        };
       }
     }
 
@@ -3994,10 +4066,13 @@
     });
 
     if (secondaryClassHints.length > 0) {
-      return secondaryClassHints.slice(0, 2);
+      return {
+        label: "Class note",
+        text: secondaryClassHints[0],
+      };
     }
 
-    return [];
+    return null;
   }
 
   function handleResultsGridKeydown(event) {
@@ -4076,21 +4151,21 @@
       EL.detailMeta.hidden = true;
       EL.detailBody.hidden = true;
       EL.detailEmpty.hidden = false;
-      EL.detailEmpty.innerHTML = `<p>${CONFIG.noSelectionCopy}</p>`;
+      EL.detailEmpty.innerHTML = `<p>${CONFIG.noSelectionCopy}</p><p>Use search or filters to narrow the list, then open a medication card.</p>`;
       return;
     }
 
     syncDetailLayout(true);
     EL.detailTitle.textContent = selected.name;
-    EL.detailMeta.hidden = false;
-    EL.detailMeta.textContent = `${selected.specificClassLabel || selected.displayClassLabel || selected.drugClass} • ${selected.routes.join(", ")}`;
+    const detailMeta = buildDetailMetaText(selected);
+    EL.detailMeta.hidden = !detailMeta;
+    EL.detailMeta.textContent = detailMeta;
     EL.detailEmpty.hidden = true;
     EL.detailBody.hidden = false;
     const rxNormState = getRxNormStateForMedication(selected.id);
 
     const sections = [
-      makeTextSection("Class", selected.specificClassLabel || selected.displayClassLabel || selected.drugClass, "class"),
-      makeTextSection("Routes", selected.routes.join(", "), "routes"),
+      makeOverviewSection(selected),
       makeTextSection("MOA", selected.moa, "moa"),
       makeListSection("Indications", selected.indications, "indications"),
       makeListSection("Contraindications", selected.contraindications, "contraindications"),
@@ -4116,6 +4191,66 @@
     if (EL.detailPanel) {
       EL.detailPanel.dataset.selectionState = hasSelection ? "selected" : "empty";
     }
+  }
+
+  function buildDetailMetaText(medication) {
+    const parts = [];
+    const primaryClass = cleanText(medication.primaryClass);
+    if (primaryClass) {
+      parts.push(primaryClass);
+    }
+
+    const highlight = getMedicationHighlight(medication);
+    if (highlight) {
+      parts.push(`${highlight.label}: ${highlight.text}`);
+    }
+
+    return parts.join(" • ");
+  }
+
+  function makeOverviewSection(medication) {
+    const section = document.createElement("section");
+    section.className = "detail-section detail-section--overview";
+    section.dataset.section = "overview";
+
+    const heading = document.createElement("h3");
+    heading.className = "detail-section__title";
+    heading.textContent = "Quick View";
+
+    const facts = document.createElement("div");
+    facts.className = "detail-facts";
+    facts.appendChild(makeDetailFact("Class", getMedicationClassLabel(medication)));
+    facts.appendChild(makeDetailFact("Routes", medication.routes.join(", ") || "Not listed"));
+
+    const highlight = getMedicationHighlight(medication);
+    if (highlight) {
+      facts.appendChild(makeDetailFact(highlight.label, highlight.text));
+    }
+
+    if (Array.isArray(medication.brandExamples) && medication.brandExamples.length > 0) {
+      facts.appendChild(makeDetailFact("Brand example", medication.brandExamples[0]));
+    }
+
+    section.appendChild(heading);
+    section.appendChild(facts);
+    return section;
+  }
+
+  function makeDetailFact(label, value) {
+    const fact = document.createElement("div");
+    fact.className = "detail-fact";
+
+    const factLabel = document.createElement("p");
+    factLabel.className = "detail-fact__label";
+    factLabel.textContent = label;
+
+    const factValue = document.createElement("p");
+    factValue.className = "detail-fact__value";
+    factValue.textContent = value || "Not listed";
+
+    fact.appendChild(factLabel);
+    fact.appendChild(factValue);
+    return fact;
   }
 
   function makeTextSection(title, text, dataSection) {

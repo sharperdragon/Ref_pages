@@ -6,7 +6,7 @@ const { defineConfig, devices } = require("@playwright/test");
 const SERVER_PORT = 4173;
 const BASE_URL = process.env.PLAYWRIGHT_BASE_URL || `http://127.0.0.1:${SERVER_PORT}`;
 const WEB_SERVER_COMMAND =
-  process.env.PLAYWRIGHT_WEB_SERVER_CMD || `python3 -m http.server ${SERVER_PORT}`;
+  process.env.PLAYWRIGHT_WEB_SERVER_CMD || "python3 ./scripts/run_static_server.py";
 const TEST_DIR = "./tests/smoke";
 const TEST_TIMEOUT_MS = 30_000;
 const EXPECT_TIMEOUT_MS = 5_000;
@@ -31,6 +31,8 @@ module.exports = defineConfig({
     command: WEB_SERVER_COMMAND,
     url: BASE_URL,
     reuseExistingServer: !process.env.CI,
+    stdout: "ignore",
+    stderr: "pipe",
     timeout: WEB_SERVER_TIMEOUT_MS,
   },
   projects: [

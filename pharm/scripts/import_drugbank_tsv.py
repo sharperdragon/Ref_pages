@@ -17,9 +17,9 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple, TypedDict
 
 
-# ================================================================
-# Configurable values (change here)
-# ================================================================
+# =======================
+# USER SETTINGS (edit)
+# =======================
 PHARM_DIR = Path(__file__).resolve().parents[1]
 DRUGBANK_TSV_PATH = PHARM_DIR / "assests" / "drugbank.tsv"
 INPUT_PHARM_JSON_PATH = PHARM_DIR / "pharm_data.json"

@@ -17,9 +17,9 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 
-# ================================================================
-# Configurable values (change here)
-# ================================================================
+# =======================
+# USER SETTINGS (edit)
+# =======================
 PHARM_DIR = Path(__file__).resolve().parents[1]
 HIERARCHY_SOURCE_PATH = PHARM_DIR / "assests" / "MAIN_PHARM_CLASS_HIERARCHY.json"
 OUTPUT_INDEX_PATH = PHARM_DIR / "assests" / "classes" / "main_hierarchy_index.json"

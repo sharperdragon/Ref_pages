@@ -17,7 +17,7 @@
           <span>Home</span>
         </a>
         <h1 class="brand__title">Pharm Reference</h1>
-        <p class="brand__subtitle">Rapid medication review for mixed workflows.</p>
+        <p class="brand__subtitle">Fast medication review for rounds, clinic, and cross-cover.</p>
       </div>
 
       <button id="btnThemeToggle" class="btn btn--theme" type="button" aria-label="Switch theme">
@@ -33,12 +33,12 @@
           class="input"
           type="search"
           autocomplete="off"
-          placeholder="Search medication, class, indication, adverse effect, interaction..."
+          placeholder="Search medication, class, use, adverse effect, interaction..."
         />
       </label>
 
       <div class="control control--result-meta">
-        <p class="result-count__label">Matches</p>
+        <p class="result-count__label">Showing</p>
         <p id="resultCount" class="result-count" aria-live="polite">0 medications</p>
       </div>
     </section>
@@ -109,6 +109,8 @@
         <button id="btnClearFilters" class="btn ghost" type="button">Clear filters</button>
       </div>
     </section>
+
+    <div id="activeFilterSummary" class="active-filter-summary" aria-live="polite"></div>
   </header>
 
   <main class="app-main">

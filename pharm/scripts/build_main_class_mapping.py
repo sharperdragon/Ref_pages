@@ -18,9 +18,9 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 
-# ================================================================
-# Configurable values (change here)
-# ================================================================
+# =======================
+# USER SETTINGS (edit)
+# =======================
 PHARM_DIR = Path(__file__).resolve().parents[1]
 
 MEDICATIONS_SOURCE_PATH = PHARM_DIR / "assests" / "pharm_data_rxclass_enriched.json"
