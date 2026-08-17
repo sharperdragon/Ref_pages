@@ -20,6 +20,9 @@ venv/
 .coverage
 htmlcov/
 
+.vscode/
+.playwright-cli/
+
 # Local generated folders
 backups/
 folder/

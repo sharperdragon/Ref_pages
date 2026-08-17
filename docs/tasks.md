@@ -36,6 +36,7 @@ This workspace is set up for one-click runs from VS Code. The task list below is
 | `Pharm: Build RxClass Catalog` | Builds `pharm_data_rxclass_enriched.json` and its report. | Writes dataset and report under `pharm/assests/`. |
 | `Pharm: Compile Main Class Hierarchy` | Builds hierarchy index and path artifacts from `MAIN_PHARM_CLASS_HIERARCHY.json`. | Writes files under `pharm/assests/classes/`. |
 | `Pharm: Build Main Class Mapping` | Builds runtime medication-to-class mappings from the compiled hierarchy. | Writes mapping output and mapping report in class assets. |
+| `Pharm: Audit Clinical Fields` | Audits mechanism, indication, and contraindication coverage in the generated pharm dataset. | Writes `clinical_field_audit_report.json` under `pharm/assests/`. |
 | `Pharm: Full Pharm Rebuild` | Runs the standard pharm rebuild sequence used by daily validation. | Full rebuild output from the main pharm build steps. |
 
 ## Other Content Tasks
@@ -59,6 +60,7 @@ Change values only inside each script's `USER SETTINGS` block.
 - [pharm/scripts/expand_drugbank_catalog.py](../pharm/scripts/expand_drugbank_catalog.py)
 - [pharm/scripts/build_class_subclasses.py](../pharm/scripts/build_class_subclasses.py)
 - [pharm/scripts/build_rxclass_medication_catalog.py](../pharm/scripts/build_rxclass_medication_catalog.py)
+- [pharm/scripts/audit_clinical_fields.py](../pharm/scripts/audit_clinical_fields.py)
 - [pharm/scripts/compile_main_hierarchy.py](../pharm/scripts/compile_main_hierarchy.py)
 - [pharm/scripts/build_main_class_mapping.py](../pharm/scripts/build_main_class_mapping.py)
 - [differentials/fill_clinical_todo_from_pdf.py](../differentials/fill_clinical_todo_from_pdf.py)

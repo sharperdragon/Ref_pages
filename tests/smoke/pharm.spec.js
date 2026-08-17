@@ -18,9 +18,11 @@ const CLASS_TYPE_SELECT = "#classTypeSelect";
 const ROUTE_FILTER = "#routeFilter";
 const CLEAR_FILTERS_BUTTON = "#btnClearFilters";
 const RESULT_COUNT = "#resultCount";
+const ACTIVE_FILTER_SUMMARY = "#activeFilterSummary";
 const DETAIL_PANEL = "#detailPanel";
 const DETAIL_TITLE = "#detailTitle";
 const DETAIL_BODY = "#detailBody";
+const DETAIL_OVERVIEW = '#detailBody [data-section="overview"]';
 const DETAIL_SCRIM = "#detailScrim";
 const DETAIL_CLOSE_BUTTON = "#btnCloseDetail";
 const THEME_TOGGLE = "#btnThemeToggle";
@@ -284,6 +286,7 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(CLASS_BLOCKS).first()).toBeVisible();
     await expect(page.locator(RESULTS_CARDS).first()).toBeVisible();
     await expect(page.locator(RESULT_COUNT)).toContainText(`${EXPECTED_TOTAL_MEDICATIONS} medications`);
+    await expect(page.locator(ACTIVE_FILTER_SUMMARY)).toContainText("No filters applied");
     await expect(page.locator(DETAIL_TITLE)).toHaveText("No selection");
     await expect(page.locator(DETAIL_BODY)).toBeHidden();
   });
@@ -297,6 +300,8 @@ test.describe("Pharm reference smoke", () => {
     await page.locator(RESULTS_CARDS).first().click();
     await expect(page.locator(DETAIL_PANEL)).toBeVisible();
     await expect(page.locator(DETAIL_TITLE)).not.toHaveText("No selection");
+    await expect(page.locator(DETAIL_OVERVIEW)).toBeVisible();
+    await expect(page.locator(DETAIL_OVERVIEW)).toContainText("Quick View");
   });
 
   test("search ranking prioritizes exact match and alphabetical fallback", async ({ page }) => {
@@ -310,6 +315,24 @@ test.describe("Pharm reference smoke", () => {
     const albuterolIds = await uniqueVisibleMedicationIds(page);
     expect(albuterolIds.length).toBeGreaterThan(0);
     await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).first()).toContainText(/albuterol/i);
+  });
+
+  test("active filter summary reflects search and route selections", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(SEARCH_INPUT).fill("albuterol");
+    await expect(page.locator(ACTIVE_FILTER_SUMMARY)).toContainText("Search: albuterol");
+
+    const routeValue = await page.locator(ROUTE_FILTER).evaluate((select) => {
+      const option = Array.from(select.options).find((item) => item.value);
+      return option ? option.value : "";
+    });
+
+    if (routeValue) {
+      await page.locator(ROUTE_FILTER).selectOption(routeValue);
+      await expect(page.locator(ACTIVE_FILTER_SUMMARY)).toContainText(`Route: ${routeValue}`);
+    }
   });
 
   test("medication card shows specific class label and hides empty fallback copy", async ({ page }) => {

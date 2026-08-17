@@ -168,6 +168,17 @@
       ]
     },
     {
+      "label": "Pharm: Audit Clinical Fields",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/audit_clinical_fields.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
       "label": "Pharm: Full Pharm Rebuild",
       "dependsOrder": "sequence",
       "dependsOn": [
