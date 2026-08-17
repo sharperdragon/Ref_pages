@@ -12,7 +12,7 @@ The site is static-first and built to run locally or deploy as a static bundle.
 |:--|:--|:--|
 | **NoteWriter** | Structured SOAP note builder with Subjective, ROS, PE, and MSE tabs. | `v1_writer/writer.html` |
 | **Differential Explorer** | Symptom-based lookup of causes from the *Pocketbook of Differential Diagnosis*. | `differentials/differentials_index.html` |
-| **Clinical Calculators** | Quick bedside calculators and common clinical conversions. | `pages/calculators.html` |
+| **Clinical Calculators** | Quick bedside calculators, perioperative risk tools, and common clinical conversions. | `pages/calculators.html` |
 | **Pharm Reference** | Medication browser with hierarchy groupings, class filters, and RxNorm detail support. | `pharm/pharm_index.html` |
 
 ---
@@ -24,6 +24,7 @@ The site is static-first and built to run locally or deploy as a static bundle.
 - Shared app shell, settings behavior, and layout helpers
 - Scripted pharm data build pipeline and Playwright smoke coverage
 - One-click VS Code task workflow for rebuilds, tests, and deployment
+- Perioperative calculator coverage for common adult surgery planning questions
 
 ---
 

@@ -20,9 +20,9 @@ const PATHS = {
 };
 
 const SECTION_META = {
-  "Clinical Presentations": { folder: "clinical", indexSource: "clinical" },
-  "Biochemical Presentations": { folder: "biochemical", indexSource: "nonClinical" },
-  "Hematological Presentations": { folder: "hematological", indexSource: "nonClinical" },
+  "Clinical": { folder: "clinical", indexSource: "clinical" },
+  "Biochemical": { folder: "biochemical", indexSource: "nonClinical" },
+  "Hematological": { folder: "hematological", indexSource: "nonClinical" },
 };
 
 const TITLE_ALIASES = {

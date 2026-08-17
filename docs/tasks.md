@@ -25,6 +25,7 @@ This workspace is set up for one-click runs from VS Code. The task list below is
 | `UI Tests: Smoke (Headless)` | Runs the full Playwright smoke suite. | Pass/fail summary across homepage, NoteWriter, Differentials, and Pharm. |
 | `UI Tests: Smoke (Headed)` | Runs the same suite with a visible browser. | Headed smoke test run for local debugging. |
 | `Pharm: Smoke Tests` | Runs the Pharm-only Playwright suite. | Pass/fail Pharm test summary. |
+| `Calculators: Smoke Tests` | Runs the dedicated calculator smoke suite, including perioperative risk tools. | Pass/fail calculator test summary. |
 
 ## Pharm Tasks
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <title>Clinical Differentials</title>
@@ -7,9 +8,11 @@
   <link rel="icon" href="../ct_icon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
   <script>
-    (function(){
+    (function () {
       const m = localStorage.getItem('ui-theme');
       const mode = (m === 'dark' || m === 'light') ? m : 'light';
       document.documentElement.setAttribute('data-theme', mode);
@@ -18,6 +21,7 @@
   </script>
   <link rel="stylesheet" href="differentials_style.css" />
 </head>
+
 <body>
   <header class="app-header">
     <div class="brand">
@@ -26,20 +30,21 @@
         <span>Home</span>
       </a>
       <h1 class="brand__title">Clinical Differentials</h1>
-      <p class="brand__subtitle">Fast differential lookup across clinical, biochemical, and hematological presentations.</p>
+      <p class="brand__subtitle">Fast differential lookup across clinical, biochemical, and hematological presentations.
+      </p>
     </div>
 
     <div class="controls controls--simple controls--row1">
       <button id="btnOpenFilters" class="btn ghost" aria-haspopup="dialog" aria-controls="drawer">Filters</button>
       <input id="q" class="search" type="text" autocomplete="off"
-             placeholder="Search presentations, etiologies, systems" />
+        placeholder="Search presentations, etiologies, systems" />
       <div class="filters">
         <label class="sr-only" for="section">Section</label>
         <select id="section">
           <option value="">All sections</option>
-          <option>Clinical Presentations</option>
-          <option>Biochemical Presentations</option>
-          <option>Hematological Presentations</option>
+          <option>Clinical</option>
+          <option>Biochemical</option>
+          <option>Hematological</option>
         </select>
       </div>
     </div>
@@ -59,9 +64,9 @@
           <label for="sectionDrawer">Section</label>
           <select id="sectionDrawer">
             <option value="">All sections</option>
-            <option>Clinical Presentations</option>
-            <option>Biochemical Presentations</option>
-            <option>Hematological Presentations</option>
+            <option>Clinical</option>
+            <option>Biochemical</option>
+            <option>Hematological</option>
           </select>
         </div>
 
@@ -115,4 +120,5 @@
 
   <script src="differentials_app.js"></script>
 </body>
+
 </html>

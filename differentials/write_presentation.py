@@ -1,7 +1,7 @@
 import os
 import json
 import re
-from typing import Dict, Any, Iterable, Tuple, Optional, List
+from typing import Dict, Any, Iterable, Tuple, Optional, List, Union
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -31,9 +31,9 @@ COMPLETENESS_STRICT = True       # All HPI keys must be non-empty for every item
 # ! Section → folder mapping
 # ! -----------------------------
 SECTION_FOLDERS: Dict[str, str] = {
-    "Clinical Presentations": "clinical",
-    "Biochemical Presentations": "biochemical",
-    "Hematological Presentations": "hematological",
+    "Clinical": "clinical",
+    "Biochemical": "biochemical",
+    "Hematological": "hematological",
 }
 
 # ! -----------------------------
@@ -116,9 +116,9 @@ ALIAS_MAP = {
 }
 
 SECTION_INDEX_TYPE = {
-    "Clinical Presentations": "clinical",
-    "Biochemical Presentations": "non-clinical",
-    "Hematological Presentations": "non-clinical",
+    "Clinical": "clinical",
+    "Biochemical": "non-clinical",
+    "Hematological": "non-clinical",
 }
 
 
@@ -176,7 +176,7 @@ def title_case_system(cat: str) -> str:
     return c[:1].upper() + c[1:]
 
 
-def load_json(path: str | os.PathLike[str]) -> Any:
+def load_json(path: Union[str, os.PathLike[str]]) -> Any:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -310,7 +310,7 @@ def resolve_index_keys(pres_name: str, section: str, clinical_idx: Dict[str, Any
     return matches
 
 
-def write_json_atomically(dest_path: str | os.PathLike[str], data: Dict[str, Any]) -> None:
+def write_json_atomically(dest_path: Union[str, os.PathLike[str]], data: Dict[str, Any]) -> None:
     dest_path = Path(dest_path)
     dest_path.parent.mkdir(parents=True, exist_ok=True)
     tmp = dest_path.with_suffix(dest_path.suffix + ".tmp")

@@ -1,5 +1,5 @@
 {
-  "Clinical Presentations": [
+  "Clinical": [
     {"name": "Abdominal"},
     {"name": "Anorectal pain"},
     {"name": "Arm pain"},
@@ -101,7 +101,7 @@
     {"name": "Weight gain"},
     {"name": "Weight loss"}
   ],
-  "Biochemical Presentations": [
+  "Biochemical": [
     {"name": "Hyperglycemia"},
     {"name": "Hypoglycemia"},
     {"name": "Hyperkalemia"},
@@ -117,7 +117,7 @@
     {"name": "Respiratory alkalosis"},
     {"name": "Uremia"}
   ],
-  "Hematological Presentations": [
+  "Hematological": [
     {"name": "Anemia"},
     {"name": "Clotting disorders"},
     {"name": "leukocytosis"},

@@ -54,6 +54,28 @@
     form { display: grid; gap: 10px; padding: 12px 16px; }
     .grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
     .field { display: grid; gap: 6px; }
+    .field-checkbox {
+      grid-column: 1 / -1;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: color-mix(in oklab, var(--accent) 4%, transparent);
+    }
+    .check {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .check input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin: 2px 0 0;
+      accent-color: var(--accent);
+      flex: 0 0 auto;
+    }
+    .hint { color: var(--muted); font-size: 12px; }
     label { font-weight: 600; font-size: 14px; }
     .units { color: var(--muted); font-size: 12px; margin-left: 6px; font-weight: 500; }
     input[type="number"], select { padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: transparent; color: var(--text); }
@@ -154,6 +176,9 @@
     // ? Clamp helper
     const clamp = (n, min, max) => Math.min(Math.max(n, min), max);
 
+    // ? Boolean parse helper for checkbox-backed values
+    const parseBool = (v) => v === true || v === 'true' || v === '1' || v === 1 || v === 'yes' || v === 'on';
+
     // ? Round to fixed decimals without floating point surprises
     const round = (n, d = DEFAULT_PRECISION) => {
       const p = Math.pow(10, d);
@@ -178,13 +203,162 @@
      * id: string key
      * title: string
      * subtitle?: string
-     * fields: array of { key, label, type: 'number'|'select', step?, min?, max?, placeholder?, unit?, options? }
+     * fields: array of { key, label, type: 'number'|'select'|'checkbox', step?, min?, max?, placeholder?, unit?, options?, hint? }
      * compute: (vals:Object) => { value:number|string, extra?:string, warnings?:string[], precision?:number }
      * resultUnit?: string
      * notesHTML?: string (sanitized by author; static content only)
      */
 
     const CALCS = [
+      {
+        id: 'rcri',
+        title: 'Revised Cardiac Risk Index (RCRI)',
+        subtitle: 'Pre-op cardiac event risk for adult noncardiac surgery',
+        fields: [
+          { key: 'high_risk_surgery', label: 'High-risk surgery', type: 'checkbox', hint: 'Intraperitoneal, intrathoracic, or suprainguinal vascular surgery.' },
+          { key: 'ischemic_hd', label: 'History of ischemic heart disease', type: 'checkbox', hint: 'Examples include prior MI, positive stress test, current angina, nitrate use, or pathologic Q waves.' },
+          { key: 'heart_failure', label: 'History of heart failure', type: 'checkbox' },
+          { key: 'cerebrovascular', label: 'History of stroke or TIA', type: 'checkbox' },
+          { key: 'insulin_diabetes', label: 'Diabetes treated with insulin', type: 'checkbox' },
+          { key: 'creatinine_gt_2', label: 'Pre-op creatinine > 2.0 mg/dL', type: 'checkbox' },
+        ],
+        compute: (vals) => {
+          const score = [
+            'high_risk_surgery',
+            'ischemic_hd',
+            'heart_failure',
+            'cerebrovascular',
+            'insulin_diabetes',
+            'creatinine_gt_2',
+          ].reduce((sum, key) => sum + (parseBool(vals[key]) ? 1 : 0), 0);
+
+          let riskClass = 'Class I';
+          let riskText = 'Estimated major cardiac complication risk ~0.4%';
+          if (score === 1) {
+            riskClass = 'Class II';
+            riskText = 'Estimated major cardiac complication risk ~0.9%';
+          } else if (score === 2) {
+            riskClass = 'Class III';
+            riskText = 'Estimated major cardiac complication risk ~6.6%';
+          } else if (score >= 3) {
+            riskClass = 'Class IV';
+            riskText = 'Estimated major cardiac complication risk ~11%';
+          }
+
+          return {
+            value: `${score} point${score === 1 ? '' : 's'}`,
+            extra: `${riskClass} · ${riskText}`,
+          };
+        },
+        notesHTML: 'Validated for adult <strong>noncardiac</strong> surgery. Use alongside current perioperative guideline assessment rather than as a stand-alone clearance tool.'
+      },
+      {
+        id: 'stop_bang',
+        title: 'STOP-Bang',
+        subtitle: 'Pre-op obstructive sleep apnea screening',
+        fields: [
+          { key: 'snoring', label: 'Snoring', type: 'checkbox', hint: 'Loud snoring loud enough to be heard through closed doors or to disturb others.' },
+          { key: 'tired', label: 'Tiredness', type: 'checkbox', hint: 'Frequent daytime tiredness, fatigue, or sleepiness.' },
+          { key: 'observed_apnea', label: 'Observed apnea', type: 'checkbox', hint: 'Witnessed breathing pauses, choking, or gasping during sleep.' },
+          { key: 'pressure', label: 'Pressure', type: 'checkbox', hint: 'Known hypertension or treatment for hypertension.' },
+          { key: 'bmi', label: 'Body Mass Index', type: 'number', min: 10, max: 80, step: 0.1, unit: 'kg/m²' },
+          { key: 'age', label: 'Age', type: 'number', min: 18, max: 120, step: 1, unit: 'yr' },
+          { key: 'neck_cm', label: 'Neck circumference', type: 'number', min: 20, max: 80, step: 0.1, unit: 'cm' },
+          { key: 'sex', label: 'Sex', type: 'select', options: [ ['female','Female'], ['male','Male'] ] },
+        ],
+        compute: ({ snoring, tired, observed_apnea, pressure, bmi, age, neck_cm, sex }) => {
+          const bmiValue = parseNum(bmi);
+          const ageValue = parseNum(age);
+          const neckValue = parseNum(neck_cm);
+          if (bmiValue == null || ageValue == null || neckValue == null || !sex) return { value: '—' };
+
+          const stopCount = [snoring, tired, observed_apnea, pressure].reduce((sum, value) => sum + (parseBool(value) ? 1 : 0), 0);
+          const score = stopCount
+            + (bmiValue > 35 ? 1 : 0)
+            + (ageValue > 50 ? 1 : 0)
+            + (neckValue > 40 ? 1 : 0)
+            + (sex === 'male' ? 1 : 0);
+
+          let risk = 'Low risk for OSA';
+          if (score >= 5) {
+            risk = 'High risk for OSA';
+          } else if (score >= 3) {
+            const upgradedHighRisk = stopCount >= 2 && (sex === 'male' || bmiValue > 35 || neckValue > 40);
+            risk = upgradedHighRisk ? 'High risk for OSA' : 'Intermediate risk for OSA';
+          }
+
+          return {
+            value: `${score} / 8`,
+            extra: risk,
+          };
+        },
+        notesHTML: 'STOP-Bang is a <strong>screening</strong> tool, not a diagnosis. This implementation uses the commonly used 0-2 low, 3-4 intermediate, and 5-8 high framework, with the usual high-risk upgrade for selected 3-4 patients.'
+      },
+      {
+        id: 'apfel_ponv',
+        title: 'Apfel PONV Score',
+        subtitle: 'Post-op nausea and vomiting risk (adult)',
+        fields: [
+          { key: 'female', label: 'Female sex', type: 'checkbox' },
+          { key: 'history', label: 'History of PONV or motion sickness', type: 'checkbox' },
+          { key: 'nonsmoker', label: 'Nonsmoker', type: 'checkbox' },
+          { key: 'postop_opioids', label: 'Post-op opioids planned', type: 'checkbox' },
+        ],
+        compute: (vals) => {
+          const score = ['female', 'history', 'nonsmoker', 'postop_opioids']
+            .reduce((sum, key) => sum + (parseBool(vals[key]) ? 1 : 0), 0);
+
+          const risks = [10, 21, 39, 61, 79];
+          const tiers = ['Low risk', 'Low risk', 'Moderate risk', 'High risk', 'High risk'];
+          return {
+            value: `${score} / 4`,
+            extra: `Estimated PONV risk ~${risks[score]}% · ${tiers[score]}`,
+          };
+        },
+        notesHTML: 'Simplified adult Apfel score: female sex, prior PONV or motion sickness, nonsmoking, and postoperative opioids. Risk estimates are approximate and intended to guide prophylaxis planning.'
+      },
+      {
+        id: 'child_pugh',
+        title: 'Child-Pugh',
+        subtitle: 'Severity classification for cirrhosis before surgery',
+        fields: [
+          { key: 'bilirubin', label: 'Total bilirubin', type: 'number', min: 0, max: 40, step: 0.1, unit: 'mg/dL' },
+          { key: 'albumin', label: 'Albumin', type: 'number', min: 0, max: 8, step: 0.1, unit: 'g/dL' },
+          { key: 'inr', label: 'INR', type: 'number', min: 0.5, max: 10, step: 0.1 },
+          { key: 'ascites', label: 'Ascites', type: 'select', options: [ ['none','None'], ['mild','Mild / controlled'], ['severe','Moderate-severe / refractory'] ] },
+          { key: 'encephalopathy', label: 'Encephalopathy', type: 'select', options: [ ['none','None'], ['mild','Grade I-II'], ['severe','Grade III-IV'] ] },
+        ],
+        resultUnit: 'points',
+        compute: ({ bilirubin, albumin, inr, ascites, encephalopathy }) => {
+          const bili = parseNum(bilirubin);
+          const alb = parseNum(albumin);
+          const inrValue = parseNum(inr);
+          if (bili == null || alb == null || inrValue == null || !ascites || !encephalopathy) return { value: '—' };
+
+          const biliPoints = bili < 2 ? 1 : (bili <= 3 ? 2 : 3);
+          const albuminPoints = alb > 3.5 ? 1 : (alb >= 2.8 ? 2 : 3);
+          const inrPoints = inrValue < 1.7 ? 1 : (inrValue <= 2.3 ? 2 : 3);
+          const ascitesPoints = ascites === 'none' ? 1 : (ascites === 'mild' ? 2 : 3);
+          const encephalopathyPoints = encephalopathy === 'none' ? 1 : (encephalopathy === 'mild' ? 2 : 3);
+          const score = biliPoints + albuminPoints + inrPoints + ascitesPoints + encephalopathyPoints;
+
+          let grade = 'Class A';
+          let riskText = 'Lowest hepatic reserve impairment in this scale.';
+          if (score >= 7 && score <= 9) {
+            grade = 'Class B';
+            riskText = 'Intermediate hepatic reserve impairment; perioperative risk is meaningfully higher.';
+          } else if (score >= 10) {
+            grade = 'Class C';
+            riskText = 'Advanced hepatic dysfunction; perioperative risk is high.';
+          }
+
+          return {
+            value: score,
+            extra: `${grade} · ${riskText}`,
+          };
+        },
+        notesHTML: 'Use Child-Pugh with procedure context, portal hypertension status, and a liver-specific risk tool such as MELD. This score supports perioperative discussion but does not replace hepatology or anesthesia assessment.'
+      },
       {
         id: 'bmi',
         title: 'Body Mass Index (BMI)',
@@ -358,18 +532,33 @@
         const wrap = document.createElement('div');
         wrap.className = 'field';
 
-        const lab = document.createElement('label');
-        lab.setAttribute('for', `${calc.id}_${f.key}`);
-        lab.innerHTML = `${f.label}${f.unit ? `<span class="units">(${f.unit})</span>` : ''}`;
-        wrap.appendChild(lab);
-
         let input;
+        if (f.type === 'checkbox') {
+          wrap.classList.add('field-checkbox');
+          const row = document.createElement('label');
+          row.className = 'check';
+          input = document.createElement('input');
+          input.type = 'checkbox';
+          input.checked = parseBool(state.values[f.key]);
+          row.appendChild(input);
+
+          const text = document.createElement('span');
+          text.textContent = f.label;
+          row.appendChild(text);
+          wrap.appendChild(row);
+        } else {
+          const lab = document.createElement('label');
+          lab.setAttribute('for', `${calc.id}_${f.key}`);
+          lab.innerHTML = `${f.label}${f.unit ? `<span class="units">(${f.unit})</span>` : ''}`;
+          wrap.appendChild(lab);
+        }
+
         if (f.type === 'select') {
           input = document.createElement('select');
           for (const [val, text] of f.options) {
             const opt = document.createElement('option'); opt.value = val; opt.textContent = text; input.appendChild(opt);
           }
-        } else {
+        } else if (f.type === 'number') {
           input = document.createElement('input'); input.type = 'number';
           if (f.step != null) input.step = String(f.step);
           if (f.min != null) input.min = String(f.min);
@@ -378,8 +567,18 @@
         }
         input.id = `${calc.id}_${f.key}`;
         input.name = f.key;
-        input.addEventListener('input', onInput);
-        wrap.appendChild(input);
+        if (f.type === 'checkbox' || f.type === 'select') {
+          input.addEventListener('change', onInput);
+        } else {
+          input.addEventListener('input', onInput);
+        }
+        if (f.type !== 'checkbox') wrap.appendChild(input);
+        if (f.hint) {
+          const hint = document.createElement('div');
+          hint.className = 'hint';
+          hint.textContent = f.hint;
+          wrap.appendChild(hint);
+        }
         $fields.appendChild(wrap);
       }
 
@@ -394,7 +593,7 @@
       const vals = {};
       for (const f of calc.fields) {
         const el = document.getElementById(`${calc.id}_${f.key}`);
-        vals[f.key] = (f.type === 'select') ? el.value : el.value;
+        vals[f.key] = (f.type === 'checkbox') ? el.checked : el.value;
       }
       state.values = vals;
       updateResult();
@@ -423,6 +622,8 @@
       $msg.textContent = ok ? 'Copied to clipboard' : 'Copy failed';
       setTimeout(() => { $msg.textContent = ''; }, 1500);
     });
+
+    $filter.addEventListener('input', renderList);
 
     // Keyboard: focus search with Cmd/Ctrl+K
     window.addEventListener('keydown', (e) => {
