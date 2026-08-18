@@ -6,7 +6,10 @@ const { test, expect } = require("@playwright/test");
 const NOTEWRITER_PATH = "/v1_writer/writer.html";
 const SUBJECTIVE_TAB = { role: "button", name: "Subjective" };
 const ROS_TAB = { role: "button", name: "ROS" };
+const PE_TAB = { role: "button", name: "Physical Exam" };
 const MSE_TAB = { role: "button", name: "MSE" };
+const NORMAL_ROS_MACRO_BUTTON = { role: "button", name: "Normal ROS" };
+const NORMAL_PE_MACRO_BUTTON = { role: "button", name: "Normal PE" };
 const CLEAR_SECTION_BUTTON = "#clearSectionBtn";
 const COPY_SECTION_BUTTON = "#copyBtn";
 const COPY_FULL_BUTTON = "#copyFullBtn";
@@ -147,6 +150,19 @@ test.describe("NoteWriter smoke", () => {
     await page.locator(FIRST_ROS_CHIP_MINUS).first().click();
 
     await expect(page.locator(FIRST_ROS_CHIP).first()).toHaveAttribute("data-state", "normal");
+  });
+
+  test("ROS and PE macro buttons fill preset findings", async ({ page }) => {
+    await page.goto(NOTEWRITER_PATH);
+
+    await page.getByRole(ROS_TAB.role, { name: ROS_TAB.name }).click();
+    await page.getByRole(NORMAL_ROS_MACRO_BUTTON.role, { name: NORMAL_ROS_MACRO_BUTTON.name }).click();
+    await expect(page.locator("#grid .chip").filter({ hasText: /Fever/i }).first()).toHaveAttribute("data-state", "normal");
+
+    await page.getByRole(PE_TAB.role, { name: PE_TAB.name }).click();
+    await page.getByRole(NORMAL_PE_MACRO_BUTTON.role, { name: NORMAL_PE_MACRO_BUTTON.name }).click();
+    await expect(page.locator('#headerItems .cb:has-text("Vital signs reviewed") input')).toBeChecked();
+    await expect(page.locator("#grid .chip").filter({ hasText: /acute distress/i }).first()).toHaveAttribute("data-state", "normal");
   });
 
   test("MSE tab renders full panels and contributes to section and complete outputs", async ({ page }) => {

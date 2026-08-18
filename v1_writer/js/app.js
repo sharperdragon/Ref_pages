@@ -1,6 +1,6 @@
 
 // ===== Cache config =====
-const APP_VERSION = "2026-03-20-c";          // bump to invalidate everything
+const APP_VERSION = "2026-08-17-a";          // bump to invalidate everything
 const CACHE_ENABLED = true;                   // master switch
 const CACHE_TTL_MS = 1000 * 60 * 60 * 24;     // 24h for templates
 const STATE_AUTOSAVE_MS = 500;               // debounce for state saves
@@ -316,6 +316,114 @@ function applyRosDefaultsIfAny() {
   } catch (e) {
     console.debug("[ROS defaults] skipped:", e?.message || e);
   }
+}
+
+function cloneMacroValue(value) {
+  if (value && typeof value === "object") {
+    return JSON.parse(JSON.stringify(value));
+  }
+  return value;
+}
+
+function getTemplateMacros() {
+  return Array.isArray(Templates?.macros) ? Templates.macros : [];
+}
+
+function macroAppliesToActiveSection(macro) {
+  const sections = Array.isArray(macro?.sections) ? macro.sections : [];
+  return !sections.length || sections.includes(state.activeSection);
+}
+
+function getVisibleMacros() {
+  return getTemplateMacros().filter(macro => macro && macro.label && macroAppliesToActiveSection(macro));
+}
+
+function applyMacroPatchToSection(sec, patch) {
+  if (!sec || !patch) return;
+
+  if (patch.checkboxes && typeof patch.checkboxes === "object") {
+    sec.checkboxes ??= {};
+    Object.entries(patch.checkboxes).forEach(([id, value]) => {
+      if (value === null) {
+        delete sec.checkboxes[id];
+        return;
+      }
+      sec.checkboxes[id] = !!value;
+    });
+  }
+
+  if (patch.fields && typeof patch.fields === "object") {
+    sec.fields ??= {};
+    Object.entries(patch.fields).forEach(([id, value]) => {
+      if (value === null) {
+        delete sec.fields[id];
+        return;
+      }
+      sec.fields[id] = String(value);
+    });
+  }
+
+  if (patch.chips && typeof patch.chips === "object") {
+    sec.chips ??= {};
+    Object.entries(patch.chips).forEach(([id, value]) => {
+      if (value === null || value === "clear") {
+        delete sec.chips[id];
+        return;
+      }
+      if (value === "neg") {
+        sec.chips[id] = "neg";
+        return;
+      }
+      if (value === "pos") {
+        sec.chips[id] = { state: "pos" };
+        return;
+      }
+      sec.chips[id] = cloneMacroValue(value);
+    });
+  }
+}
+
+function runTemplateMacro(macro) {
+  const targets = Array.isArray(macro?.targets) ? macro.targets : [];
+  if (!targets.length) return;
+
+  targets.forEach(target => {
+    const sectionName = target?.section || state.activeSection;
+    if (!sectionName) return;
+    const sec = getSecFor(state.mode, sectionName);
+    applyMacroPatchToSection(sec, target);
+  });
+
+  saveStateSoon();
+  renderHeaderChecks();
+  renderGrid();
+  renderOutput();
+  renderCompleteSoon();
+}
+
+function renderMacroControls(host) {
+  const macros = getVisibleMacros();
+  if (!macros.length) return;
+
+  const wrap = document.createElement("div");
+  wrap.className = "macro-controls";
+
+  const label = document.createElement("span");
+  label.className = "macro-controls__label";
+  label.textContent = "Macros";
+  wrap.appendChild(label);
+
+  macros.forEach(macro => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "btn-mini macro-btn";
+    btn.textContent = macro.label;
+    if (macro.description) btn.title = macro.description;
+    btn.onclick = () => runTemplateMacro(macro);
+    wrap.appendChild(btn);
+  });
+
+  host.appendChild(wrap);
 }
 
 // --- Vital signs parser/scrubber ---
@@ -636,6 +744,7 @@ function appendPanelFields(host, fields){
 function renderHeaderChecks(){
   const host = document.getElementById("headerItems");
   host.innerHTML = "";
+  const visibleMacros = getVisibleMacros();
   // Add an Acute / Non-acute toggle at the very top for subjective
 if (state.mode === "subjective") {
   const acuteWrap = document.createElement("div");
@@ -707,7 +816,7 @@ if (state.mode === "subjective") {
   });
 
   // Hide only if we truly have nothing to show
-  if (!hasChecks && !hasHeaderFields) {
+  if (!hasChecks && !hasHeaderFields && !visibleMacros.length) {
     host.style.display = "none";
     return;
   }
@@ -782,63 +891,7 @@ if (state.mode === "subjective") {
       console.error('[HeaderItems] render header fields failed', e);
     }
   }
-
-  // --- Insert ROS Defaults controls: Fill and Clear ---
-  // Always show in ROS mode, after header items/fields, before applySticky.
-  if (state.mode === "ROS") {
-    // ROS Defaults controls: Fill and Clear
-    const btnWrap = document.createElement("div");
-    btnWrap.className = "ros-defaults-controls";
-    btnWrap.style.display = "inline-flex";
-    btnWrap.style.gap = "6px";
-    btnWrap.style.marginLeft = "8px";
-
-    const fillBtn = document.createElement("button");
-    fillBtn.type = "button";
-    fillBtn.textContent = "Fill Defaults";
-    fillBtn.className = "btn-mini";
-    fillBtn.onclick = () => {
-      try {
-        const def = Templates.sectionDefs["ROS:General"];
-        const negList = (def && def.defaults && Array.isArray(def.defaults.negChips)) ? def.defaults.negChips : [];
-        if (negList.length) {
-          const sec = getSecFor("ROS", state.activeSection);
-          sec.chips = sec.chips || {};
-          negList.forEach(id => { sec.chips[id] = "neg"; });
-          saveStateSoon();
-          renderGrid();
-          renderOutput();
-          renderCompleteSoon();
-        }
-      } catch(e) { console.warn("[ROS Fill Defaults] failed", e); }
-    };
-    btnWrap.appendChild(fillBtn);
-
-    const clearBtn = document.createElement("button");
-    clearBtn.type = "button";
-    clearBtn.textContent = "Clear Defaults";
-    clearBtn.className = "btn-mini";
-    clearBtn.onclick = () => {
-      try {
-        const def = Templates.sectionDefs["ROS:General"];
-        const negList = (def && def.defaults && Array.isArray(def.defaults.negChips)) ? def.defaults.negChips : [];
-        if (negList.length) {
-          const sec = getSecFor("ROS", state.activeSection);
-          sec.chips = sec.chips || {};
-          negList.forEach(id => {
-            if (sec.chips[id] === "neg") delete sec.chips[id];
-          });
-          saveStateSoon();
-          renderGrid();
-          renderOutput();
-          renderCompleteSoon();
-        }
-      } catch(e) { console.warn("[ROS Clear Defaults] failed", e); }
-    };
-    btnWrap.appendChild(clearBtn);
-
-    host.appendChild(btnWrap);
-  }
+  renderMacroControls(host);
 
   applySticky();
 }

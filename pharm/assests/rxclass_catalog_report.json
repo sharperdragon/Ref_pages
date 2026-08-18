@@ -1,31 +1,47 @@
 {
-  "generatedAt": "2026-03-21T15:58:03Z",
+  "generatedAt": "2026-08-18T00:38:31Z",
   "inputFiles": {
-    "seedEpcPool": "pharm/assests/rxclass_seed/prescribable_epc_in_pool_sandbox.csv",
-    "seedNervousSystem": "pharm/assests/rxclass_seed/nervous_system_agents_sandbox.csv",
-    "seedPrescribableEpcAgents": "pharm/assests/rxclass_seed/prescribable_epc_in_agents_sandbox.csv",
-    "psychMeds": "pharm/assests/pysch_meds.json"
+    "seedEpcPool": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_seed/prescribable_epc_in_pool_sandbox.csv",
+    "seedNervousSystem": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_seed/nervous_system_agents_sandbox.csv",
+    "seedPrescribableEpcAgents": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_seed/prescribable_epc_in_agents_sandbox.csv",
+    "psychMeds": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/pysch_meds.json"
   },
   "outputFiles": {
-    "dataset": "pharm/assests/pharm_data_rxclass_enriched.json",
-    "report": "pharm/assests/rxclass_catalog_report.json"
+    "dataset": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/pharm_data_rxclass_enriched.json",
+    "report": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_catalog_report.json"
   },
   "counts": {
-    "sourceRows": 2364,
-    "mergedRows": 2228,
-    "finalRecords": 2228,
-    "fallbackClassRecords": 5,
+    "sourceRows": 2370,
+    "mergedRowsBeforeSurgeryFilter": 2233,
+    "mergedRows": 238,
+    "finalRecords": 238,
+    "fallbackClassRecords": 0,
     "psychHintsLoaded": 146,
     "psychHintsUpdatedExisting": 11,
-    "psychHintsAddedNew": 1,
-    "openfdaEnrichmentHits": 0
+    "psychHintsAddedNew": 0,
+    "generalSurgeryRetained": 238,
+    "generalSurgeryExcluded": 1995,
+    "generalSurgeryExcludedByName": 14,
+    "generalSurgeryExcludedByClass": 921,
+    "generalSurgeryExcludedPsychOnly": 0,
+    "generalSurgeryExcludedNoSignal": 1060,
+    "seedIdentityConflictsCleared": 25,
+    "validatedExistingBrands": 9,
+    "droppedExistingBrands": 6,
+    "addedBrandsFromOpenfda": 0,
+    "recordsWithBrandUpdates": 5,
+    "openfdaEnrichmentHits": 1012
   },
   "toggles": {
     "useSeedEpcPool": true,
     "useSeedNervousSystem": true,
     "useSeedPrescribableEpcAgents": true,
     "enableLiveEpcFetch": false,
-    "enableOpenfdaEnrichment": false,
-    "includeUnresolvedPsychHints": true
+    "enableOpenfdaBrandValidation": true,
+    "enableOpenfdaBrandEnrichment": false,
+    "enableOpenfdaEnrichment": true,
+    "includeUnresolvedPsychHints": false,
+    "generalSurgeryOnly": true,
+    "generalSurgerySupplementalRows": 6
   }
 }

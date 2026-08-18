@@ -1,6 +1,50 @@
 {
-"modes": ["ROS"],
-  "sectionsByMode": { "ROS": ["General"] },
+  "modes": ["ROS"],
+  "sectionsByMode": {
+    "ROS": ["General"]
+  },
+  "macros": [
+    {
+      "id": "ros_normal_defaults",
+      "label": "Normal ROS",
+      "description": "Fill your usual negative ROS items.",
+      "targets": [
+        {
+          "section": "General",
+          "chips": {
+            "ros_const_fever": "neg",
+            "ros_const_chills": "neg",
+            "ros_resp_cough": "neg",
+            "ros_resp_sob": "neg",
+            "ros_cardio_chest_pain": "neg",
+            "ros_gi_nausea": "neg",
+            "ros_gi_diarrhea": "neg",
+            "ros_neuro_headaches": "neg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ros_normal_defaults_clear",
+      "label": "Clear ROS Macro",
+      "description": "Remove the preset negative ROS items.",
+      "targets": [
+        {
+          "section": "General",
+          "chips": {
+            "ros_const_fever": "clear",
+            "ros_const_chills": "clear",
+            "ros_resp_cough": "clear",
+            "ros_resp_sob": "clear",
+            "ros_cardio_chest_pain": "clear",
+            "ros_gi_nausea": "clear",
+            "ros_gi_diarrhea": "clear",
+            "ros_neuro_headaches": "clear"
+          }
+        }
+      ]
+    }
+  ],
   "sectionDefs": {
     "ROS:General": {
       "panels": [
@@ -170,25 +214,24 @@
             { "id": "ros_musc_myalgias", "label": "Myalgias", "type": "toggle", "abnText": "myalgias", "negText": "denies myalgias" }
           ]
         }
-      ]
-    ,
-    "defaults": {
-      "negChips": [
-        "ros_const_fever",
-        "ros_const_chills",
-        "ros_resp_cough",
-        "ros_resp_sob",
-        "ros_cardio_chest_pain",
-        "ros_gi_nausea",
-        "ros_gi_diarrhea",
-        "ros_neuro_headaches"
-      ]
+      ],
+      "defaults": {
+        "negChips": [
+          "ros_const_fever",
+          "ros_const_chills",
+          "ros_resp_cough",
+          "ros_resp_sob",
+          "ros_cardio_chest_pain",
+          "ros_gi_nausea",
+          "ros_gi_diarrhea",
+          "ros_neuro_headaches"
+        ]
       }
-    },
+    }
+  },
   "globals": {
     "ROS": [
       { "id": "ros_aosn", "label": "All other systems negative" }
     ]
-    }
   }
 }

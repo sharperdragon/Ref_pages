@@ -46,8 +46,6 @@ const RXNORM_RXCUI_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="rxcui"]`;
 const RXNORM_CANONICAL_NAME_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="canonical-name"]`;
 const RXNORM_INGREDIENTS_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="ingredients"]`;
 const RXNORM_CLASSES_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="classes"]`;
-const VIEW_MODE_COMPACT = `${VIEW_MODE_CONTROL} [data-view-mode="compact"]`;
-const VIEW_MODE_STRUCTURED = `${VIEW_MODE_CONTROL} [data-view-mode="structured"]`;
 const PHARM_MEDICATIONS = Array.isArray(pharmData) ? pharmData : (pharmData.medications || []);
 const EXPECTED_TOTAL_MEDICATIONS = PHARM_MEDICATIONS.length;
 const MOBILE_WIDTH = 900;
@@ -282,7 +280,7 @@ test.describe("Pharm reference smoke", () => {
     await waitForCards(page);
 
     await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "compact");
-    await expect(page.locator(VIEW_MODE_COMPACT)).toHaveAttribute("aria-pressed", "true");
+    await expect(page.locator(VIEW_MODE_CONTROL)).toHaveCount(0);
     await expect(page.locator(CLASS_BLOCKS).first()).toBeVisible();
     await expect(page.locator(RESULTS_CARDS).first()).toBeVisible();
     await expect(page.locator(RESULT_COUNT)).toContainText(`${EXPECTED_TOTAL_MEDICATIONS} medications`);
@@ -307,8 +305,6 @@ test.describe("Pharm reference smoke", () => {
   test("search ranking prioritizes exact match and alphabetical fallback", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
-    await page.locator(VIEW_MODE_STRUCTURED).click();
-    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
 
     await page.locator(SEARCH_INPUT).fill("albuterol");
     await expect(page.locator(RESULT_COUNT)).toContainText(/medications/i);
@@ -395,23 +391,14 @@ test.describe("Pharm reference smoke", () => {
     expect(expandedChipCount).toBeGreaterThan(initialChipCount);
   });
 
-  test("structured mode shows accordion classes and subclass headings", async ({ page }) => {
+  test("view mode controls are absent", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    await page.locator(VIEW_MODE_STRUCTURED).click();
-    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
-    await expect(page.locator(CLASS_TOGGLES).first()).toBeVisible();
-    await expect(page.locator(CLASS_TOGGLES).first()).toHaveAttribute("aria-expanded", "true");
-    await expect(page.locator(SUBCLASS_HEADINGS).first()).toBeVisible();
-  });
-
-  test("tree mode controls are absent from toggle and select", async ({ page }) => {
-    await page.goto(PHARM_PATH);
-    await waitForCards(page);
-
-    await expect(page.locator(VIEW_MODE_CONTROL).locator("[data-view-mode='tree']")).toHaveCount(0);
-    await expect(page.locator("#viewModeSelect option[value='tree']")).toHaveCount(0);
+    await expect(page.locator(VIEW_MODE_CONTROL)).toHaveCount(0);
+    await expect(page.locator("#viewModeSelect")).toHaveCount(0);
+    await expect(page.locator(CLASS_TOGGLES)).toHaveCount(0);
+    await expect(page.locator(SUBCLASS_HEADINGS)).toHaveCount(0);
   });
 
   test("class filter type supports drug class and use category modes", async ({ page }) => {
@@ -461,35 +448,31 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(selectedLabel);
   });
 
-  test("view mode persists across reload", async ({ page }) => {
+  test("compact view is enforced across reload", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    await page.locator(VIEW_MODE_STRUCTURED).click();
-    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
-
     const storedMode = await page.evaluate((storageKey) => localStorage.getItem(storageKey), VIEW_MODE_KEY);
-    expect(storedMode).toBe("structured");
+    expect(storedMode).toBe("compact");
 
     await page.reload();
     await waitForCards(page);
-    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
-    await expect(page.locator(VIEW_MODE_STRUCTURED)).toHaveAttribute("aria-pressed", "true");
+    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "compact");
   });
 
-  test("legacy stored tree mode migrates to structured", async ({ page }) => {
+  test("stored non-compact modes are reset to compact", async ({ page }) => {
     await page.addInitScript(([storageKey, value]) => {
       localStorage.setItem(storageKey, value);
-    }, [VIEW_MODE_KEY, "tree"]);
+    }, [VIEW_MODE_KEY, "structured"]);
 
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "structured");
-    await expect(page.locator(VIEW_MODE_STRUCTURED)).toHaveAttribute("aria-pressed", "true");
+    await expect(page.locator(RESULTS_GRID)).toHaveAttribute("data-view-mode", "compact");
+    await expect(page.locator(VIEW_MODE_CONTROL)).toHaveCount(0);
 
     const migratedMode = await page.evaluate((storageKey) => localStorage.getItem(storageKey), VIEW_MODE_KEY);
-    expect(migratedMode).toBe("structured");
+    expect(migratedMode).toBe("compact");
   });
 
   test("class tree taxonomy applies primary then subclass narrowing and clear resets", async ({ page }) => {

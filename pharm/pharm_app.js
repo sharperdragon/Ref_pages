@@ -36,7 +36,7 @@
     viewModeKey: "pharm-view-mode",
     classFilterTypeKey: "pharm-class-filter-type",
     defaultViewMode: "compact",
-    viewModes: ["compact", "structured"],
+    viewModes: ["compact"],
     defaultClassFilterType: "drug-class",
     classFilterTypes: ["drug-class", "use-category"],
     themeChangedEvent: "core-theme-changed",
@@ -47,6 +47,15 @@
     ],
     cardSnippetExcludedMoaPrefixes: [
       "Mechanism data not available in current static build.",
+    ],
+    hiddenDetailPlaceholderPrefixes: [
+      "Mechanism data not available in current static build.",
+      "Therapeutic indication varies by formulation and clinical context.",
+      "Review official prescribing information for contraindications.",
+      "Review official prescribing information for adverse-effect profile.",
+      "Review official prescribing information for major drug interactions.",
+      "Monitor based on indication, comorbidities, and concurrent therapy.",
+      "None listed.",
     ],
     relevanceWeights: {
       exactName: 100,
@@ -101,8 +110,6 @@
     detailScrim: "#detailScrim",
     loadError: "#loadError",
     themeToggleButton: "#btnThemeToggle",
-    viewModeControl: "#viewModeControl",
-    viewModeSelect: "#viewModeSelect",
   };
 
   const ROUTE_ENUM = ["PO", "IV", "IM", "SQ", "INH", "IN", "SL", "Topical", "PR"];
@@ -756,20 +763,6 @@
       });
 
       EL.resultsGrid.addEventListener("keydown", handleResultsGridKeydown);
-    }
-
-    if (EL.viewModeControl) {
-      EL.viewModeControl.addEventListener("click", (event) => {
-        const button = event.target.closest("[data-view-mode]");
-        if (!button) return;
-        setViewMode(button.dataset.viewMode, { persist: true, rerender: true });
-      });
-    }
-
-    if (EL.viewModeSelect) {
-      EL.viewModeSelect.addEventListener("change", () => {
-        setViewMode(EL.viewModeSelect.value, { persist: true, rerender: true });
-      });
     }
 
     if (EL.detailCloseButton) {
@@ -3941,33 +3934,15 @@
   }
 
   function syncViewModeFromStorage() {
+    STATE.viewMode = CONFIG.defaultViewMode;
     try {
-      const stored = localStorage.getItem(CONFIG.viewModeKey);
-      if (stored === "tree") {
-        STATE.viewMode = "structured";
-        localStorage.setItem(CONFIG.viewModeKey, "structured");
-      } else {
-        STATE.viewMode = CONFIG.viewModes.includes(stored) ? stored : CONFIG.defaultViewMode;
-      }
+      localStorage.setItem(CONFIG.viewModeKey, CONFIG.defaultViewMode);
     } catch {
       STATE.viewMode = CONFIG.defaultViewMode;
     }
   }
 
   function syncViewModeControls() {
-    if (EL.viewModeControl) {
-      const buttons = EL.viewModeControl.querySelectorAll("[data-view-mode]");
-      buttons.forEach((button) => {
-        const active = button.dataset.viewMode === STATE.viewMode;
-        button.classList.toggle("is-active", active);
-        button.setAttribute("aria-pressed", String(active));
-      });
-    }
-
-    if (EL.viewModeSelect) {
-      EL.viewModeSelect.value = STATE.viewMode;
-    }
-
     if (EL.resultsGrid) {
       EL.resultsGrid.dataset.viewMode = STATE.viewMode;
     }
@@ -4163,20 +4138,29 @@
     EL.detailEmpty.hidden = true;
     EL.detailBody.hidden = false;
     const rxNormState = getRxNormStateForMedication(selected.id);
-
+    let hiddenClinicalSectionCount = 0;
     const sections = [
       makeOverviewSection(selected),
-      makeTextSection("MOA", selected.moa, "moa"),
-      makeListSection("Indications", selected.indications, "indications"),
-      makeListSection("Contraindications", selected.contraindications, "contraindications"),
-      makeListSection("Adverse Effects", selected.adverseEffects, "adverse-effects"),
-      makeListSection("Major Interactions", selected.majorInteractions, "major-interactions"),
-      makeListSection("Monitoring", selected.monitoring, "monitoring"),
+      makeTextSection("MOA", selected.moa, "moa", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
+      makeListSection("Indications", selected.indications, "indications", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
+      makeListSection("Contraindications", selected.contraindications, "contraindications", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
+      makeListSection("Adverse Effects", selected.adverseEffects, "adverse-effects", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
+      makeListSection("Major Interactions", selected.majorInteractions, "major-interactions", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
+      makeListSection("Monitoring", selected.monitoring, "monitoring", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
       makeRxNormSection(rxNormState),
       makeListSection("Pearls", selected.pearls, "pearls"),
       makeListSection("Aliases", selected.aliases, "aliases"),
       makeListSection("Brand Examples", selected.brandExamples, "brand-examples"),
-    ];
+    ].filter(Boolean);
+
+    if (hiddenClinicalSectionCount > 0) {
+      sections.splice(2, 0, makeNoticeSection(
+        hiddenClinicalSectionCount === 1
+          ? "One clinical section is not curated for this medication yet."
+          : `${hiddenClinicalSectionCount} clinical sections are not curated for this medication yet.`,
+        "clinical-note"
+      ));
+    }
 
     const fragment = document.createDocumentFragment();
     sections.forEach((section) => fragment.appendChild(section));
@@ -4253,7 +4237,53 @@
     return fact;
   }
 
-  function makeTextSection(title, text, dataSection) {
+  function isHiddenDetailPlaceholder(text) {
+    const normalizedText = normalizeSearch(text);
+    if (!normalizedText) return true;
+    return CONFIG.hiddenDetailPlaceholderPrefixes.some((prefix) =>
+      normalizedText.startsWith(normalizeSearch(prefix))
+    );
+  }
+
+  function sanitizeDetailText(text, options = {}) {
+    const { hidePlaceholders = false } = options;
+    const cleaned = cleanText(text);
+    if (!cleaned) return "";
+    if (hidePlaceholders && isHiddenDetailPlaceholder(cleaned)) {
+      return "";
+    }
+    return cleaned;
+  }
+
+  function sanitizeDetailList(items, options = {}) {
+    const { hidePlaceholders = false } = options;
+    return toTextArray(items).filter((item) => {
+      if (!hidePlaceholders) return true;
+      return !isHiddenDetailPlaceholder(item);
+    });
+  }
+
+  function makeNoticeSection(text, dataSection = "notice") {
+    const section = document.createElement("section");
+    section.className = "detail-section detail-section--notice";
+    section.dataset.section = dataSection;
+
+    const content = document.createElement("p");
+    content.className = "detail-section__text";
+    content.textContent = text;
+
+    section.appendChild(content);
+    return section;
+  }
+
+  function makeTextSection(title, text, dataSection, options = {}) {
+    const { hidePlaceholders = false, onHidden = null } = options;
+    const sanitizedText = sanitizeDetailText(text, { hidePlaceholders });
+    if (!sanitizedText) {
+      if (typeof onHidden === "function") onHidden();
+      return null;
+    }
+
     const section = document.createElement("section");
     section.className = "detail-section";
     section.dataset.section = dataSection;
@@ -4264,14 +4294,21 @@
 
     const content = document.createElement("p");
     content.className = "detail-section__text";
-    content.textContent = text || "None listed.";
+    content.textContent = sanitizedText;
 
     section.appendChild(heading);
     section.appendChild(content);
     return section;
   }
 
-  function makeListSection(title, items, dataSection) {
+  function makeListSection(title, items, dataSection, options = {}) {
+    const { hidePlaceholders = false, onHidden = null } = options;
+    const values = sanitizeDetailList(items, { hidePlaceholders });
+    if (values.length === 0) {
+      if (typeof onHidden === "function") onHidden();
+      return null;
+    }
+
     const section = document.createElement("section");
     section.className = "detail-section";
     section.dataset.section = dataSection;
@@ -4282,7 +4319,6 @@
 
     const list = document.createElement("ul");
     list.className = "detail-section__list";
-    const values = items.length > 0 ? items : ["None listed."];
 
     values.forEach((item) => {
       const li = document.createElement("li");

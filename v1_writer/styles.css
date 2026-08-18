@@ -593,6 +593,27 @@
   color: var(--cb-text);
 }
 
+.macro-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 4px 6px 8px;
+}
+
+.macro-controls__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.macro-btn {
+  min-height: 30px;
+  padding: 5px 10px;
+}
+
 
 .panel .subhead+.row {
   margin-top: 4px;
@@ -1071,6 +1092,7 @@ button.btn-mini {
   border-radius: 4px;
   border: 1px solid #759dffdb;
   background-color: #f0f2f2;
+  cursor: pointer;
 }
 
 .btn-mini:hover {

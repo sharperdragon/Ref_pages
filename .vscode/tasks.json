@@ -207,6 +207,15 @@
       "problemMatcher": []
     },
     {
+      "label": "Writer: Smoke Tests",
+      "type": "shell",
+      "command": "npx playwright test tests/smoke/notewriter.spec.js",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "Writer: Build Tabs Manifest",
       "type": "shell",
       "command": "python3 ${workspaceFolder}/py/make_tab_manifest.py",

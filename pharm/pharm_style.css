@@ -617,7 +617,6 @@ body {
 .class-tree-trigger:focus-visible,
 .class-tree-option:focus-visible,
 .btn:focus-visible,
-.view-mode-btn:focus-visible,
 .class-toggle:focus-visible,
 .subclass-chip:focus-visible,
 .med-card:focus-visible {
@@ -683,10 +682,6 @@ body {
   justify-items: end;
 }
 
-.control--view-mode {
-  min-width: 0;
-}
-
 .class-type-toggle {
   display: inline-flex;
   align-items: center;
@@ -720,42 +715,6 @@ body {
 }
 
 .class-type-select {
-  display: none;
-}
-
-.view-mode-toggle {
-  display: inline-flex;
-  align-items: center;
-  width: max-content;
-  border: 1px solid var(--panel-border);
-  border-radius: 11px;
-  overflow: hidden;
-  background: var(--surface-panel-muted);
-}
-
-.view-mode-btn {
-  min-height: 34px;
-  border: 0;
-  border-right: 1px solid var(--panel-border);
-  background: transparent;
-  color: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 12px;
-  font-weight: 700;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.view-mode-btn:last-child {
-  border-right: 0;
-}
-
-.view-mode-btn.is-active {
-  background: color-mix(in oklab, var(--brand-soft), var(--surface-panel) 64%);
-  color: var(--brand-strong);
-}
-
-.view-mode-select {
   display: none;
 }
 
@@ -1317,7 +1276,6 @@ body.detail-open {
   }
 
   .control--class-tree,
-  .control--view-mode,
   .control--actions {
     grid-column: 1 / -1;
   }
@@ -1444,14 +1402,6 @@ body.detail-open {
       "label"
       "toggles"
       "trigger";
-  }
-
-  .view-mode-toggle {
-    display: none;
-  }
-
-  .view-mode-select {
-    display: block;
   }
 
   .cards-grid {
