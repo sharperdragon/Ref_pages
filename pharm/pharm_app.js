@@ -9,7 +9,7 @@
     mainHierarchyMappingPath: "./assests/classes/main_class_mapping.json",
     mainHierarchyMappingReportPath: "./assests/classes/main_hierarchy_mapping_report.json",
     mainHierarchySourcePath: "./assests/MAIN_PHARM_CLASS_HIERARCHY.json",
-    useMainHierarchyClassSystem: true,
+    useMainHierarchyClassSystem: false,
     useMainHierarchyCompatibilityFallback: true,
     warnUnmappedMedicationRatio: 0.25,
     warnTopUnmappedLabelFrequency: 20,

@@ -6,6 +6,7 @@ This workspace is set up for one-click runs from VS Code. The task list below is
 
 1. `Daily Run: Quick Smoke`
 2. `Daily Run: Full Rebuild + Smoke`
+3. `Pre-Deploy: Validate + Preview` before publishing
 
 ## Setup, Preview, and Deploy
 
@@ -17,6 +18,7 @@ This workspace is set up for one-click runs from VS Code. The task list below is
 | `Deploy: Build Static Bundle` | Builds the `dist/` folder used for static deploys. | Fresh `dist/` output. |
 | `Deploy: Preview (Wrangler)` | Runs the Cloudflare preview workflow. | Local Wrangler preview session. |
 | `Deploy: Cloudflare Workers` | Deploys the current static bundle through Wrangler. | Cloudflare deployment output. |
+| `Pre-Deploy: Validate + Preview` | Runs setup checks, a fresh static build, the full smoke suite, and Wrangler preview in sequence. | Ready-to-review preview session after validation passes. |
 
 ## UI Tests
 
@@ -45,9 +47,11 @@ This workspace is set up for one-click runs from VS Code. The task list below is
 | Task | Purpose | Typical Result |
 |---|---|---|
 | `Writer: Build Tabs Manifest` | Generates the NoteWriter tabs manifest from templates. | Writes `v1_writer/tabs.json`. |
+| `Writer: Rebuild + Smoke` | Rebuilds the NoteWriter tabs manifest and then runs the full smoke suite. | Updated Writer manifest plus whole-site smoke validation. |
 | `Differentials: Fill Clinical Todo From PDF` | Fills clinical TODO HPI fields from the source PDF when optional source inputs are present. | Updates clinical presentation JSON files. |
 | `Differentials: Write Presentation` | Rebuilds individual differential presentation files from source settings. | Writes updated presentation JSON and a summary report. |
 | `Differentials: Fix Parenthetical Etiologies` | Repairs malformed parenthetical keys in the clinical presentation index. | Dry-run or rewritten clinical index, depending on script settings. |
+| `Differentials: Rebuild + Smoke` | Rebuilds differential presentation outputs, applies parenthetical cleanup, and then runs the full smoke suite. | Updated Differentials data plus whole-site smoke validation. |
 
 ## User-Tunable Script Settings
 
@@ -72,4 +76,7 @@ Change values only inside each script's `USER SETTINGS` block.
 
 - Python tasks publish traceback locations to the Problems panel through task problem matching.
 - npm-based tasks now use a workspace-local cache so they do not depend on a healthy global npm cache.
+- `Daily Run: Quick Smoke` is now the default build task and runs the full Playwright smoke suite, not just Pharm.
+- `Daily Run: Full Rebuild + Smoke` runs `Pharm: Full Pharm Rebuild`, `Pharm: Audit Clinical Fields`, and then the full smoke suite.
+- `Differentials: Fill Clinical Todo From PDF` remains a specialty task because it depends on optional source inputs checked by `py/setup_check.py`.
 - If `Setup: Environment Check` fails, resolve those items first, then rerun the daily tasks.

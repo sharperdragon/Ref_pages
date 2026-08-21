@@ -227,6 +227,15 @@
       ]
     },
     {
+      "label": "Writer: Rebuild + Smoke",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Writer: Build Tabs Manifest",
+        "UI Tests: Smoke (Headless)"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "Differentials: Fill Clinical Todo From PDF",
       "type": "shell",
       "command": "python3 ${workspaceFolder}/differentials/fill_clinical_todo_from_pdf.py",
@@ -260,11 +269,32 @@
       ]
     },
     {
+      "label": "Differentials: Rebuild + Smoke",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Differentials: Write Presentation",
+        "Differentials: Fix Parenthetical Etiologies",
+        "UI Tests: Smoke (Headless)"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Pre-Deploy: Validate + Preview",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Setup: Environment Check",
+        "Deploy: Build Static Bundle",
+        "UI Tests: Smoke (Headless)",
+        "Deploy: Preview (Wrangler)"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "Daily Run: Quick Smoke",
       "dependsOrder": "sequence",
       "dependsOn": [
         "Setup: Environment Check",
-        "Pharm: Smoke Tests"
+        "UI Tests: Smoke (Headless)"
       ],
       "group": {
         "kind": "build",
@@ -278,7 +308,8 @@
       "dependsOn": [
         "Setup: Environment Check",
         "Pharm: Full Pharm Rebuild",
-        "Pharm: Smoke Tests"
+        "Pharm: Audit Clinical Fields",
+        "UI Tests: Smoke (Headless)"
       ],
       "group": {
         "kind": "build"

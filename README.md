@@ -55,8 +55,11 @@ scripts/                          - Static deploy and local server helpers
 1. Open the workspace in VS Code.
 2. Run `Setup: Environment Check`.
 3. Run `UI Tests: Install Dependencies` the first time on a machine.
-4. Use `UI Tests: Local Static Server` or a smoke-test task to launch the site workflow.
-5. Select a module from the home page to open it.
+4. Use `Daily Run: Quick Smoke` for routine update validation.
+5. Use `Daily Run: Full Rebuild + Smoke` after Pharm data changes.
+6. Use `Pre-Deploy: Validate + Preview` before publishing.
+7. Use `UI Tests: Local Static Server` when you want to browse the site manually outside the smoke tasks.
+8. Select a module from the home page to open it.
 
 The current operational runbook lives in `docs/tasks.md`.
 
@@ -83,9 +86,8 @@ Deployment is built around the static bundle in `dist/` plus Cloudflare Wrangler
 
 Recommended path:
 
-1. Run `Deploy: Build Static Bundle`.
-2. Run `Deploy: Preview (Wrangler)` for a local verification pass.
-3. Run `Deploy: Cloudflare Workers` when ready to publish.
+1. Run `Pre-Deploy: Validate + Preview`.
+2. Run `Deploy: Cloudflare Workers` when ready to publish.
 
 `wrangler.jsonc` points Wrangler at the generated `dist/` directory.
 
@@ -95,6 +97,7 @@ Recommended path:
 
 - Direct-run scripts are expected to expose a `USER SETTINGS` block near the top.
 - Optional differentials source inputs are checked by `py/setup_check.py` but are not required for routine smoke runs.
+- The default daily VS Code build task now runs the full Playwright smoke suite across the site.
 - Pharm data build steps and content maintenance tasks are intentionally exposed through VS Code tasks so routine work does not depend on terminal commands.
 
 ---
