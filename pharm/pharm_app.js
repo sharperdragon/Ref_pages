@@ -26,7 +26,7 @@
     classTreeColumnMinBottomPx: 12,
     classTreeBranchStartDepth: 1,
     classTreeShowPrimaryCarets: false,
-    compactSubclassChipLimit: 10,
+    compactSubclassChipLimit: 5,
     mobileBreakpointPx: 1080,
     emptyStateCopy: "No medications match the current filters.",
     noSelectionTitle: "No selection",
@@ -55,6 +55,13 @@
       "Review official prescribing information for adverse-effect profile.",
       "Review official prescribing information for major drug interactions.",
       "Monitor based on indication, comorbidities, and concurrent therapy.",
+      "Check clinically significant interactions during order review and medication reconciliation.",
+      "Monitor response, route appropriateness, vitals, and relevant labs for the intended inpatient use.",
+      "Review patient-specific allergies, organ function, indication, and formulation before use.",
+      "Monitor for medication-specific adverse effects based on dose, route, and clinical context.",
+      "Monitor per indication, route, and patient-specific risk factors.",
+      "Therapy class and common inpatient use:",
+      "Common inpatient use:",
       "None listed.",
     ],
     relevanceWeights: {
@@ -352,6 +359,105 @@
       match: /(anti-allergic|immunologic|immunosuppressive|histamine|mast cell|tnf inhibitor|adjuvants?)/i,
     },
   ];
+  const LEGACY_TAXONOMY_CLASS_ALIASES = [
+    ["analgesic", ["Analgesics"]],
+    ["analgesic antipyretic", ["Analgesics", "Antipyretics"]],
+    ["antipyretic", ["Antipyretics"]],
+    ["pain", ["Analgesics"]],
+    ["nsaid", ["Cyclooxygenase Inhibitors"]],
+    ["intravenous or intramuscular nsaid", ["Cyclooxygenase Inhibitors"]],
+    ["iv im nsaid", ["Cyclooxygenase Inhibitors"]],
+    ["opioid", ["Narcotics"]],
+    ["opioid analgesic", ["Narcotics"]],
+    ["opioid reversal", ["Narcotic Antagonists"]],
+    ["local analgesia", ["Anesthetics, Local"]],
+    ["neuropathic pain", ["Neurologic Agents"]],
+    ["antiemetic", ["Antiemetics"]],
+    ["antiemetic antihistamine", ["Antiemetics", "Histamine H1 Antagonists"]],
+    ["antiemetic prokinetic", ["Antiemetics", "Prokinetic Agents"]],
+    ["ppi", ["Proton Pump Inhibitors"]],
+    ["proton pump inhibitor", ["Proton Pump Inhibitors"]],
+    ["h2 blocker", ["Histamine H2 Antagonists"]],
+    ["histamine 2 blocker", ["Histamine H2 Antagonists"]],
+    ["osmotic laxative", ["Laxatives"]],
+    ["stimulant laxative", ["Laxatives"]],
+    ["stool softener", ["Laxatives"]],
+    ["laxative", ["Laxatives"]],
+    ["hepatic encephalopathy", ["Laxatives"]],
+    ["lmwh", ["Heparins"]],
+    ["low molecular weight heparin", ["Heparins"]],
+    ["anticoagulant", ["Anticoagulants"]],
+    ["factor xa inhibitor", ["Anticoagulants"]],
+    ["vitamin k antagonist", ["Anticoagulants"]],
+    ["antiplatelet", ["Platelet Aggregation Inhibitors"]],
+    ["p2y12 inhibitor", ["Platelet Aggregation Inhibitors"]],
+    ["statin", ["Hypolipidemic Agents"]],
+    ["beta 1 blocker", ["Adrenergic beta-1 Receptor Antagonists"]],
+    ["alpha beta blocker", ["Adrenergic alpha-1 Receptor Antagonists", "Adrenergic beta-Antagonists"]],
+    ["ccb", ["Calcium Channel Blockers"]],
+    ["calcium channel blocker", ["Calcium Channel Blockers"]],
+    ["non dhp ccb", ["Calcium Channel Blockers"]],
+    ["non dhp calcium channel blocker", ["Calcium Channel Blockers"]],
+    ["ace inhibitor", ["Angiotensin-Converting Enzyme Inhibitors"]],
+    ["arb", ["Angiotensin II Type 1 Receptor Blockers"]],
+    ["angiotensin receptor blocker", ["Angiotensin II Type 1 Receptor Blockers"]],
+    ["arni", ["Angiotensin Receptor Antagonists"]],
+    ["angiotensin receptor neprilysin inhibitor", ["Angiotensin Receptor Antagonists"]],
+    ["k sparing mra", ["Mineralocorticoid Receptor Antagonists"]],
+    ["potassium sparing diuretic mineralocorticoid receptor antagonist", ["Mineralocorticoid Receptor Antagonists"]],
+    ["loop diuretic", ["Diuretics"]],
+    ["thiazide", ["Diuretics"]],
+    ["nitrate", ["Nitric Oxide Donors"]],
+    ["antiarrhythmic", ["Cardiovascular Agents"]],
+    ["cardiac glycoside", ["Cardiotonic Agents"]],
+    ["vasodilator", ["Vasodilator Agents"]],
+    ["vasopressor", ["Vasoconstrictor Agents"]],
+    ["inotrope", ["Cardiotonic Agents"]],
+    ["vasopressor inotrope", ["Vasoconstrictor Agents", "Cardiotonic Agents"]],
+    ["long acting insulin", ["Hormones"]],
+    ["rapid acting insulin", ["Hormones"]],
+    ["hypoglycemia", ["Hormones"]],
+    ["thyroid hormone", ["Hormones"]],
+    ["potassium replacement", ["Trace Elements"]],
+    ["antihistamine", ["Histamine H1 Antagonists"]],
+    ["antimuscarinic", ["Muscarinic Antagonists"]],
+    ["beta 2 agonist", ["Adrenergic beta-2 Receptor Agonists"]],
+    ["saba sama", ["Bronchodilator Agents", "Muscarinic Antagonists", "Adrenergic beta-2 Receptor Agonists"]],
+    ["short acting beta agonist plus short acting muscarinic antagonist bronchodilator", ["Bronchodilator Agents", "Muscarinic Antagonists", "Adrenergic beta-2 Receptor Agonists"]],
+    ["alpha 1 agonist", ["Adrenergic alpha-1 Receptor Agonists"]],
+    ["alpha 1a blocker", ["Adrenergic alpha-1 Receptor Antagonists"]],
+    ["corticosteroid", ["Corticosteroids"]],
+    ["inhaled steroid", ["Corticosteroids"]],
+    ["iv corticosteroid", ["Corticosteroids"]],
+    ["oral corticosteroid", ["Corticosteroids"]],
+    ["1st gen cephalosporin", ["Cephalosporins"]],
+    ["3rd gen cephalosporin", ["Cephalosporins"]],
+    ["4th gen cephalosporin", ["Cephalosporins"]],
+    ["penicillin beta lactamase inhibitor", ["Penicillins"]],
+    ["macrolide", ["Macrolides"]],
+    ["fluoroquinolone", ["Fluoroquinolones"]],
+    ["carbapenem", ["Antibiotics"]],
+    ["broad spectrum antibiotic", ["Antibiotics"]],
+    ["gram positive mrsa coverage", ["Antibiotics"]],
+    ["lincosamide", ["Antibiotics"]],
+    ["anaerobes protozoa", ["Antiprotozoal Agents"]],
+    ["antifungal", ["Antifungal Agents"]],
+    ["benzodiazepine", ["Benzodiazepines"]],
+    ["benzodiazepine reversal", ["Antidotes"]],
+    ["antipsychotic", ["Antipsychotic Agents"]],
+    ["icu sedative", ["Hypnotics and Sedatives"]],
+    ["sedative anesthetic", ["Anesthetics"]],
+    ["gastrointestinal", ["Gastrointestinal Agents"]],
+    ["infectious disease", ["Anti-infective Agents"]],
+    ["psychiatric", ["Psychiatric Agents"]],
+    ["neurology", ["Neurologic Agents"]],
+    ["endocrine", ["Endocrine and Hormonal Agents"]],
+    ["cardiovascular", ["Cardiovascular Agents"]],
+    ["respiratory", ["Respiratory Agents"]],
+  ];
+  const LEGACY_TAXONOMY_CLASS_ALIAS_MAP = new Map(
+    LEGACY_TAXONOMY_CLASS_ALIASES.map(([label, aliases]) => [normalizeSearch(label), aliases])
+  );
   const RXNORM_STATUS = {
     IDLE: "idle",
     LOADING: "loading",
@@ -1193,18 +1299,25 @@
     const taxonomyFallback = classTaxonomy?.fallback && typeof classTaxonomy.fallback === "object"
       ? classTaxonomy.fallback
       : null;
-    const fallbackPath = taxonomyFallback
+    const derivedFallbackPath = deriveClassPath({
+      name: payload?.name,
+      drugClass: payload?.fallbackLabel,
+      aliases: payload?.aliases,
+      brandExamples: payload?.brandExamples,
+      indications: payload?.indications,
+    });
+    const shouldUseTaxonomyFallback = (
+      Array.isArray(derivedFallbackPath)
+      && derivedFallbackPath.length > 0
+      && normalizeSearch(derivedFallbackPath[0]) === normalizeSearch(CONFIG.uncategorizedClassLabel)
+      && taxonomyFallback
+    );
+    const fallbackPath = shouldUseTaxonomyFallback
       ? [
         cleanText(taxonomyFallback.primaryClass) || CONFIG.uncategorizedClassLabel,
         cleanText(taxonomyFallback.subclass) || "Unmapped",
       ]
-      : deriveClassPath({
-        name: payload?.name,
-        drugClass: payload?.fallbackLabel,
-        aliases: payload?.aliases,
-        brandExamples: payload?.brandExamples,
-        indications: payload?.indications,
-      });
+      : derivedFallbackPath;
 
     const fallbackModel = buildClassModelFromPath(fallbackPath, payload?.fallbackLabel);
     return {
@@ -1335,6 +1448,16 @@
     return canonicalClassModel;
   }
 
+  function collectLegacyTaxonomyAliasTags(labels) {
+    const resolved = [];
+    toTextArray(labels).forEach((label) => {
+      const aliases = LEGACY_TAXONOMY_CLASS_ALIAS_MAP.get(normalizeSearch(label));
+      if (!Array.isArray(aliases) || aliases.length === 0) return;
+      resolved.push(...aliases);
+    });
+    return uniq(resolved.map((label) => sanitizeClassLabel(label)).filter(Boolean));
+  }
+
   function deriveMedicationClassTags(record, drugClass, classLabelMap = null) {
     const raw = [];
     const classValue = sanitizeClassLabel(drugClass);
@@ -1346,14 +1469,15 @@
     }
 
     const deduped = uniq(raw.map((item) => sanitizeClassLabel(item)).filter(Boolean));
+    const aliasExpanded = collectLegacyTaxonomyAliasTags(deduped);
     if (!(classLabelMap instanceof Map) || classLabelMap.size === 0) {
-      return deduped;
+      return uniq([...deduped, ...aliasExpanded]);
     }
 
-    const mapped = deduped
+    const mapped = [...deduped, ...aliasExpanded]
       .map((item) => classLabelMap.get(normalizeSearch(item)))
       .filter(Boolean);
-    return uniq(mapped);
+    return uniq([...deduped, ...aliasExpanded, ...mapped]);
   }
 
   function deriveMedicationClassModel(classTags, classTaxonomy = null, sourceDrugClass = "") {
@@ -2462,6 +2586,13 @@
     }
     if (isMainHierarchyClassSystemActive()) {
       return Array.isArray(medication.classPathIds) ? medication.classPathIds : [];
+    }
+    if (hasActiveClassTaxonomy()) {
+      return Array.isArray(medication.classPath) && medication.classPath.length > 0
+        ? medication.classPath
+        : Array.isArray(medication.classTags)
+          ? medication.classTags
+          : [];
     }
     return Array.isArray(medication.classTags) ? medication.classTags : [];
   }
@@ -4138,29 +4269,19 @@
     EL.detailEmpty.hidden = true;
     EL.detailBody.hidden = false;
     const rxNormState = getRxNormStateForMedication(selected.id);
-    let hiddenClinicalSectionCount = 0;
     const sections = [
       makeOverviewSection(selected),
-      makeTextSection("MOA", selected.moa, "moa", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
-      makeListSection("Indications", selected.indications, "indications", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
-      makeListSection("Contraindications", selected.contraindications, "contraindications", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
-      makeListSection("Adverse Effects", selected.adverseEffects, "adverse-effects", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
-      makeListSection("Major Interactions", selected.majorInteractions, "major-interactions", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
-      makeListSection("Monitoring", selected.monitoring, "monitoring", { hidePlaceholders: true, onHidden: () => { hiddenClinicalSectionCount += 1; } }),
+      makeTextSection("MOA", selected.moa, "moa", { hidePlaceholders: true }),
+      makeListSection("Indications", selected.indications, "indications", { hidePlaceholders: true }),
+      makeListSection("Contraindications", selected.contraindications, "contraindications", { hidePlaceholders: true }),
+      makeListSection("Adverse Effects", selected.adverseEffects, "adverse-effects", { hidePlaceholders: true }),
+      makeListSection("Major Interactions", selected.majorInteractions, "major-interactions", { hidePlaceholders: true }),
+      makeListSection("Monitoring", selected.monitoring, "monitoring", { hidePlaceholders: true }),
       makeRxNormSection(rxNormState),
-      makeListSection("Pearls", selected.pearls, "pearls"),
+      makeListSection("Pearls", selected.pearls, "pearls", { hidePlaceholders: true }),
       makeListSection("Aliases", selected.aliases, "aliases"),
       makeListSection("Brand Examples", selected.brandExamples, "brand-examples"),
     ].filter(Boolean);
-
-    if (hiddenClinicalSectionCount > 0) {
-      sections.splice(2, 0, makeNoticeSection(
-        hiddenClinicalSectionCount === 1
-          ? "One clinical section is not curated for this medication yet."
-          : `${hiddenClinicalSectionCount} clinical sections are not curated for this medication yet.`,
-        "clinical-note"
-      ));
-    }
 
     const fragment = document.createDocumentFragment();
     sections.forEach((section) => fragment.appendChild(section));

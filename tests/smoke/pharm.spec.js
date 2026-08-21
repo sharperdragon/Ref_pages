@@ -46,6 +46,7 @@ const RXNORM_RXCUI_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="rxcui"]`;
 const RXNORM_CANONICAL_NAME_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="canonical-name"]`;
 const RXNORM_INGREDIENTS_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="ingredients"]`;
 const RXNORM_CLASSES_FIELD = `${RXNORM_SECTION} [data-rxnorm-field="classes"]`;
+const PHARM_DATA_ROUTE = "**/pharm/assests/pharm_data_rxclass_enriched.json";
 const PHARM_MEDICATIONS = Array.isArray(pharmData) ? pharmData : (pharmData.medications || []);
 const EXPECTED_TOTAL_MEDICATIONS = PHARM_MEDICATIONS.length;
 const MOBILE_WIDTH = 900;
@@ -300,6 +301,35 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(DETAIL_TITLE)).not.toHaveText("No selection");
     await expect(page.locator(DETAIL_OVERVIEW)).toBeVisible();
     await expect(page.locator(DETAIL_OVERVIEW)).toContainText("Quick View");
+  });
+
+  test("detail panel omits generic clinical fallback copy", async ({ page }) => {
+    const medications = structuredClone(PHARM_MEDICATIONS);
+    medications.forEach((medication) => {
+      medication.moa = "Review patient-specific allergies, organ function, indication, and formulation before use.";
+      medication.majorInteractions = ["Check clinically significant interactions during order review and medication reconciliation."];
+      medication.monitoring = ["Monitor response, route appropriateness, vitals, and relevant labs for the intended inpatient use."];
+      medication.adverseEffects = ["Monitor for medication-specific adverse effects based on dose, route, and clinical context."];
+      medication.pearls = ["Common inpatient use: Analgesic, antipyretic."];
+    });
+
+    await page.route(PHARM_DATA_ROUTE, async (route) => {
+      await route.fulfill({
+        contentType: "application/json",
+        body: JSON.stringify(medications),
+      });
+    });
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(RESULTS_CARDS).first().click();
+
+    await expect(page.locator('#detailBody [data-section="moa"]')).toHaveCount(0);
+    await expect(page.locator('#detailBody [data-section="adverse-effects"]')).toHaveCount(0);
+    await expect(page.locator('#detailBody [data-section="major-interactions"]')).toHaveCount(0);
+    await expect(page.locator('#detailBody [data-section="monitoring"]')).toHaveCount(0);
+    await expect(page.locator('#detailBody [data-section="pearls"]')).toHaveCount(0);
+    await expect(page.locator('#detailBody [data-section="clinical-note"]')).toHaveCount(0);
   });
 
   test("search ranking prioritizes exact match and alphabetical fallback", async ({ page }) => {
