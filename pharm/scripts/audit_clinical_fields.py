@@ -1,226 +1,133 @@
 #!/usr/bin/env python3
-"""
-Audit the pharm catalog for clinical-field quality issues.
-
-This script is designed for VS Code task execution and writes:
-1) a JSON audit report for mechanism, indication, and contraindication coverage
-"""
+"""Audit the single Pharm runtime dataset for clinical-data quality."""
 
 from __future__ import annotations
 
 import json
 import re
-import time
+from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Sequence
+from typing import Any
 
 
 # ================================================================
 # USER SETTINGS (edit)
 # ================================================================
 PHARM_DIR = Path(__file__).resolve().parents[1]
-
 INPUT_DATASET_PATH = PHARM_DIR / "assests" / "pharm_data_rxclass_enriched.json"
 OUTPUT_REPORT_PATH = PHARM_DIR / "assests" / "clinical_field_audit_report.json"
-
-FALLBACK_MOA = "Mechanism data not available in current static build."
-FALLBACK_INDICATION = "Therapeutic indication varies by formulation and clinical context."
-FALLBACK_CONTRAINDICATION = "Review official prescribing information for contraindications."
-
-MAX_EXAMPLES_PER_SECTION = 40
-MAX_SUSPICIOUS_MOA = 60
+CLINICAL_FIELDS = ("moa", "indications", "contraindications", "adverseEffects", "majorInteractions", "monitoring", "pearls")
+FALLBACK_PREFIXES = ("therapy class and common inpatient use:", "common inpatient use:", "therapeutic indication varies by formulation and clinical context.", "review official prescribing information", "monitor for medication-specific adverse effects", "monitor based on indication", "monitor per indication", "none listed.")
+MAX_EXAMPLES = 50
 
 
-def clean_text(value: Any) -> str:
+def text(value: Any) -> str:
     return str(value or "").strip()
 
 
-def normalize_text(value: Any) -> str:
-    return re.sub(r"\s+", " ", clean_text(value).casefold()).strip()
+def normalized(value: Any) -> str:
+    value = text(value).casefold().replace("_", " ")
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", value)).strip()
 
 
-def to_text_list(value: Any) -> List[str]:
-    if isinstance(value, list):
-        return [clean_text(item) for item in value if clean_text(item)]
-    text = clean_text(value)
-    return [text] if text else []
+def text_list(value: Any) -> list[str]:
+    values = value if isinstance(value, list) else [value]
+    return [text(item) for item in values]
 
 
-def load_medications(path: Path) -> List[Dict[str, Any]]:
-    payload = json.loads(path.read_text(encoding="utf-8"))
-    if isinstance(payload, list):
-        return [item for item in payload if isinstance(item, dict)]
-    medications = payload.get("medications", [])
-    if isinstance(medications, list):
-        return [item for item in medications if isinstance(item, dict)]
-    return []
+def is_fallback(value: Any) -> bool:
+    value = normalized(value)
+    return not value or any(value.startswith(normalized(prefix)) for prefix in FALLBACK_PREFIXES)
 
 
-def build_fallback_report(medications: Sequence[Dict[str, Any]]) -> Dict[str, Any]:
-    exact_fallback_moa = 0
-    exact_fallback_indications = 0
-    exact_fallback_contraindications = 0
-
-    fallback_examples: List[Dict[str, Any]] = []
-
-    for medication in medications:
-        moa = clean_text(medication.get("moa"))
-        indications = to_text_list(medication.get("indications"))
-        contraindications = to_text_list(medication.get("contraindications"))
-
-        reasons: List[str] = []
-
-        if moa == FALLBACK_MOA:
-            exact_fallback_moa += 1
-            reasons.append("fallback_moa")
-
-        if indications == [FALLBACK_INDICATION]:
-            exact_fallback_indications += 1
-            reasons.append("fallback_indications")
-
-        if contraindications == [FALLBACK_CONTRAINDICATION]:
-            exact_fallback_contraindications += 1
-            reasons.append("fallback_contraindications")
-
-        if reasons and len(fallback_examples) < MAX_EXAMPLES_PER_SECTION:
-            fallback_examples.append(
-                {
-                    "name": clean_text(medication.get("name")),
-                    "id": clean_text(medication.get("id")),
-                    "reasons": reasons,
-                    "moa": moa,
-                    "indications": indications,
-                    "contraindications": contraindications,
-                }
-            )
-
-    total = len(medications) or 1
-    return {
-        "totalMedications": len(medications),
-        "exactFallbackCounts": {
-            "moa": exact_fallback_moa,
-            "indications": exact_fallback_indications,
-            "contraindications": exact_fallback_contraindications,
-        },
-        "exactFallbackPercentages": {
-            "moa": round(exact_fallback_moa / total, 4),
-            "indications": round(exact_fallback_indications / total, 4),
-            "contraindications": round(exact_fallback_contraindications / total, 4),
-        },
-        "examples": fallback_examples,
-    }
+def load_medications() -> list[dict[str, Any]]:
+    payload = json.loads(INPUT_DATASET_PATH.read_text(encoding="utf-8"))
+    rows = payload if isinstance(payload, list) else payload.get("medications", []) if isinstance(payload, dict) else []
+    return [row for row in rows if isinstance(row, dict)]
 
 
-def build_catalog_name_index(medications: Sequence[Dict[str, Any]]) -> List[str]:
-    names = {
-        normalize_text(medication.get("name"))
-        for medication in medications
-        if normalize_text(medication.get("name"))
-    }
-    return sorted(names, key=len, reverse=True)
+def add_example(target: list[dict[str, Any]], item: dict[str, Any]) -> None:
+    if len(target) < MAX_EXAMPLES:
+        target.append(item)
 
 
-def is_generic_moa_statement(text: str) -> bool:
-    normalized = normalize_text(text)
-    return (
-        normalized.startswith("the mechanism")
-        or normalized.startswith("its mechanism")
-        or normalized.startswith("mechanism of action")
-        or normalized.startswith("the precise mechanism")
-        or normalized.startswith("drugs that inhibit")
-        or normalized.startswith("barbiturates are")
-        or normalized.startswith("amphetamines are")
-        or normalized.startswith("antihistamines appear")
-    )
-
-
-def build_suspicious_moa_report(medications: Sequence[Dict[str, Any]]) -> Dict[str, Any]:
-    normalized_names = build_catalog_name_index(medications)
-    suspicious: List[Dict[str, Any]] = []
+def audit(medications: list[dict[str, Any]]) -> dict[str, Any]:
+    status_counts = {field: Counter() for field in CLINICAL_FIELDS}
+    fallback_values: list[dict[str, Any]] = []
+    class_as_clinical: list[dict[str, Any]] = []
+    duplicate_clinical_values: list[dict[str, Any]] = []
+    empty_array_values: list[dict[str, Any]] = []
+    missing_provenance: list[dict[str, Any]] = []
+    conflicting_identifiers: list[dict[str, Any]] = []
+    suspicious_duplicates: list[dict[str, Any]] = []
+    rxcui_to_names: dict[str, set[str]] = defaultdict(set)
+    names_to_ids: dict[str, set[str]] = defaultdict(set)
 
     for medication in medications:
-        name = clean_text(medication.get("name"))
-        moa = clean_text(medication.get("moa"))
-        if not moa or moa == FALLBACK_MOA:
-            continue
+        name = text(medication.get("name"))
+        med_id = text(medication.get("id"))
+        name_key = normalized(name)
+        names_to_ids[name_key].add(med_id)
+        rxnorm = medication.get("rxnorm") if isinstance(medication.get("rxnorm"), dict) else {}
+        rxcui = text(rxnorm.get("rxcui"))
+        if rxcui:
+            rxcui_to_names[rxcui].add(name)
+        class_labels = {normalized(value) for path in medication.get("classPaths", []) if isinstance(path, list) for value in path}
+        provenance = medication.get("provenance") if isinstance(medication.get("provenance"), dict) else {}
+        statuses = medication.get("clinicalDataStatus") if isinstance(medication.get("clinicalDataStatus"), dict) else {}
 
-        own_name = normalize_text(name)
-        moa_normalized = normalize_text(moa)
+        for field in CLINICAL_FIELDS:
+            value = medication.get(field, "" if field == "moa" else [])
+            values = [text(value)] if field == "moa" and text(value) else ([] if field == "moa" else text_list(value))
+            status = text(statuses.get(field)) or ("verified" if any(values) else "missing")
+            status_counts[field][status] += 1
+            if any(values) and not text_list(provenance.get(field)):
+                add_example(missing_provenance, {"name": name, "field": field})
+            seen: set[str] = set()
+            for entry in values:
+                key = normalized(entry)
+                if not entry:
+                    add_example(empty_array_values, {"name": name, "field": field})
+                    continue
+                if key in seen:
+                    add_example(duplicate_clinical_values, {"name": name, "field": field, "value": entry})
+                seen.add(key)
+                if is_fallback(entry):
+                    add_example(fallback_values, {"name": name, "field": field, "value": entry})
+                if field in {"moa", "indications"} and key in class_labels:
+                    add_example(class_as_clinical, {"name": name, "field": field, "value": entry})
 
-        matched_other_name = ""
-        for candidate in normalized_names:
-            if candidate == own_name:
-                continue
-            if len(candidate) < 6:
-                continue
-            if candidate in moa_normalized:
-                matched_other_name = candidate
-                break
+    for rxcui, names in rxcui_to_names.items():
+        if len(names) > 1:
+            add_example(conflicting_identifiers, {"rxcui": rxcui, "names": sorted(names)})
+    for name_key, ids in names_to_ids.items():
+        if len(ids) > 1:
+            add_example(suspicious_duplicates, {"normalizedName": name_key, "ids": sorted(ids)})
 
-        reasons: List[str] = []
-        if matched_other_name:
-            reasons.append("mentions_other_catalog_drug")
-        if not any(token in moa_normalized for token in own_name.split()[:2]) and not is_generic_moa_statement(moa):
-            reasons.append("does_not_reference_own_drug_name")
-
-        if reasons:
-            suspicious.append(
-                {
-                    "name": name,
-                    "id": clean_text(medication.get("id")),
-                    "reasons": reasons,
-                    "matchedOtherDrugName": matched_other_name,
-                    "moa": moa,
-                }
-            )
-
+    field_statuses = {field: dict(counter) for field, counter in status_counts.items()}
+    has_legacy = any(counter.get("legacy-unverified", 0) for counter in status_counts.values())
+    valid = not any((fallback_values, class_as_clinical, duplicate_clinical_values, empty_array_values, missing_provenance, conflicting_identifiers, suspicious_duplicates))
     return {
-        "count": len(suspicious),
-        "examples": suspicious[:MAX_SUSPICIOUS_MOA],
+        "totalMedications": len(medications), "clinicalFieldStatuses": field_statuses,
+        "verifiedData": {field: counter.get("verified", 0) for field, counter in status_counts.items()},
+        "missingData": {field: counter.get("missing", 0) for field, counter in status_counts.items()},
+        "legacyUnverifiedData": {field: counter.get("legacy-unverified", 0) for field, counter in status_counts.items()},
+        "invalidFallbackData": fallback_values, "classLabelsMasqueradingAsClinicalData": class_as_clinical,
+        "duplicateClinicalListEntries": duplicate_clinical_values, "emptyStringsInsideClinicalArrays": empty_array_values,
+        "missingProvenanceForNonEmptyClinicalFields": missing_provenance, "conflictingMedicationIdentifiers": conflicting_identifiers,
+        "suspiciousDuplicateMedicationRecords": suspicious_duplicates, "hasLegacyUnverifiedData": has_legacy, "passesStrictAudit": valid,
     }
 
 
-def build_summary(fallback_report: Dict[str, Any], suspicious_report: Dict[str, Any]) -> Dict[str, Any]:
-    return {
-        "passesStrictAudit": (
-            fallback_report["exactFallbackCounts"]["indications"] == 0
-            and fallback_report["exactFallbackCounts"]["contraindications"] == 0
-            and fallback_report["exactFallbackCounts"]["moa"] == 0
-            and suspicious_report["count"] == 0
-        ),
-        "headline": (
-            "Clinical fields are not fully populated; fallback copy is still present in the generated catalog."
-        ),
-    }
-
-
-def write_json(path: Path, payload: Dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
-
-
-def run() -> None:
-    medications = load_medications(INPUT_DATASET_PATH)
-    fallback_report = build_fallback_report(medications)
-    suspicious_report = build_suspicious_moa_report(medications)
-
-    report = {
-        "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "inputDatasetPath": str(INPUT_DATASET_PATH),
-        "summary": build_summary(fallback_report, suspicious_report),
-        "fallbackAudit": fallback_report,
-        "suspiciousMechanismAudit": suspicious_report,
-    }
-
-    write_json(OUTPUT_REPORT_PATH, report)
-
-    print(f"Audited medications: {fallback_report['totalMedications']}")
-    print(f"Fallback MOA count: {fallback_report['exactFallbackCounts']['moa']}")
-    print(f"Fallback indication count: {fallback_report['exactFallbackCounts']['indications']}")
-    print(f"Fallback contraindication count: {fallback_report['exactFallbackCounts']['contraindications']}")
-    print(f"Suspicious MOA count: {suspicious_report['count']}")
-    print(f"Wrote report: {OUTPUT_REPORT_PATH}")
+def main() -> None:
+    report = audit(load_medications())
+    output = {"generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"), "inputDatasetPath": str(INPUT_DATASET_PATH.relative_to(PHARM_DIR)), "report": report}
+    OUTPUT_REPORT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"Audited medications: {report['totalMedications']}")
+    print(f"Strict audit passed: {report['passesStrictAudit']}")
+    print(f"Wrote {OUTPUT_REPORT_PATH.relative_to(PHARM_DIR)}")
 
 
 if __name__ == "__main__":
-    run()
+    main()

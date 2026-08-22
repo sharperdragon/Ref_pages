@@ -17,6 +17,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
+from class_blacklist import (
+    blacklist_vocabulary_audit,
+    filter_class_candidates,
+    is_broad_class,
+    load_class_blacklist,
+    top_labels,
+)
+
 
 # =======================
 # USER SETTINGS (edit)
@@ -27,6 +35,7 @@ MEDICATIONS_SOURCE_PATH = PHARM_DIR / "assests" / "pharm_data_rxclass_enriched.j
 HIERARCHY_INDEX_PATH = PHARM_DIR / "assests" / "classes" / "main_hierarchy_index.json"
 HIERARCHY_PATHS_PATH = PHARM_DIR / "assests" / "classes" / "main_hierarchy_paths.json"
 ALIASES_PATH = PHARM_DIR / "assests" / "classes" / "main_hierarchy_aliases.json"
+CLASS_BLACKLIST_PATH = PHARM_DIR / "assests" / "classes" / "class_blacklist.json"
 
 OUTPUT_MAPPING_PATH = PHARM_DIR / "assests" / "classes" / "main_class_mapping.json"
 OUTPUT_REPORT_PATH = PHARM_DIR / "assests" / "classes" / "main_hierarchy_mapping_report.json"
@@ -238,7 +247,9 @@ def build_label_lookup(paths: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, 
     return lookup
 
 
-def extract_source_labels(medication: Dict[str, Any]) -> List[Tuple[str, str, int]]:
+def extract_source_labels(
+    medication: Dict[str, Any], blacklist: Dict[str, Any]
+) -> List[Tuple[str, str, int]]:
     labels: List[Tuple[str, str, int]] = []
 
     drug_class = clean_text(medication.get("drugClass"))
@@ -264,7 +275,31 @@ def extract_source_labels(medication: Dict[str, Any]) -> List[Tuple[str, str, in
         seen.add(key)
         deduped.append((source_kind, source_label, source_weight))
 
-    return deduped
+    valid_labels, _, _ = filter_class_candidates(
+        [source_label for _, source_label, _ in deduped], blacklist
+    )
+    valid_normalized = {normalize_text(label) for label in valid_labels}
+    filtered = [item for item in deduped if normalize_text(item[1]) in valid_normalized]
+
+    # Broad labels remain usable when they are the only signal, but must not
+    # outweigh a specific valid candidate when choosing a display mapping.
+    if any(not is_broad_class(source_label, blacklist) for _, source_label, _ in filtered):
+        filtered = [item for item in filtered if not is_broad_class(item[1], blacklist)]
+    return filtered
+
+
+def raw_class_labels(medication: Dict[str, Any]) -> List[str]:
+    return [
+        label
+        for label in [
+            clean_text(medication.get("drugClass")),
+            clean_text(medication.get("specificClassLabel")),
+            *to_text_list(medication.get("classCandidates")),
+            *to_text_list(medication.get("classTags")),
+            *to_text_list(medication.get("externalClassCandidates")),
+        ]
+        if label
+    ]
 
 
 def alias_target_id_for_label(
@@ -345,10 +380,11 @@ def choose_mapping_for_medication(
     hierarchy_paths: List[Dict[str, Any]],
     hierarchy_index: Dict[str, Any],
     aliases_payload: Dict[str, Any],
+    blacklist: Dict[str, Any],
 ) -> Tuple[Dict[str, Any], Optional[Tuple[str, str]]]:
     medication_id = clean_text(medication.get("id"))
 
-    source_labels = extract_source_labels(medication)
+    source_labels = extract_source_labels(medication, blacklist)
     best_entry: Optional[Dict[str, Any]] = None
 
     for source_kind, source_label, source_weight in source_labels:
@@ -467,17 +503,38 @@ def build_mapping() -> None:
     hierarchy_index = load_hierarchy_index(HIERARCHY_INDEX_PATH)
     hierarchy_paths = load_hierarchy_paths(HIERARCHY_PATHS_PATH)
     aliases_payload = ensure_aliases_payload(ALIASES_PATH)
+    blacklist = load_class_blacklist(CLASS_BLACKLIST_PATH)
 
     label_lookup = build_label_lookup(hierarchy_paths)
 
     mappings: List[Dict[str, Any]] = []
     by_medication_id: Dict[str, Dict[str, Any]] = {}
     unmapped_counter: Counter[str] = Counter()
+    blacklist_audit: Dict[str, List[str]] = {
+        "knownLabels": [],
+        "hardRemoved": [],
+        "broadSuppressed": [],
+        "onlyBlacklisted": [],
+        "hardMedicationExamples": [],
+        "broadMedicationExamples": [],
+    }
 
     for medication in medications:
         medication_id = clean_text(medication.get("id"))
         if not medication_id:
             continue
+
+        raw_labels = raw_class_labels(medication)
+        valid_labels, hard_removed, broad_labels = filter_class_candidates(raw_labels, blacklist)
+        blacklist_audit["knownLabels"].extend(raw_labels)
+        blacklist_audit["hardRemoved"].extend(hard_removed)
+        if hard_removed:
+            blacklist_audit["hardMedicationExamples"].append(clean_text(medication.get("name")) or medication_id)
+        if raw_labels and not valid_labels:
+            blacklist_audit["onlyBlacklisted"].append(clean_text(medication.get("name")) or medication_id)
+        if broad_labels and any(not is_broad_class(label, blacklist) for label in valid_labels):
+            blacklist_audit["broadSuppressed"].extend(broad_labels)
+            blacklist_audit["broadMedicationExamples"].append(clean_text(medication.get("name")) or medication_id)
 
         mapping_entry, unmapped = choose_mapping_for_medication(
             medication=medication,
@@ -485,6 +542,7 @@ def build_mapping() -> None:
             hierarchy_paths=hierarchy_paths,
             hierarchy_index=hierarchy_index,
             aliases_payload=aliases_payload,
+            blacklist=blacklist,
         )
         mappings.append(mapping_entry)
         by_medication_id[medication_id] = mapping_entry
@@ -517,6 +575,7 @@ def build_mapping() -> None:
             "hierarchyIndex": str(HIERARCHY_INDEX_PATH),
             "hierarchyPaths": str(HIERARCHY_PATHS_PATH),
             "aliases": str(ALIASES_PATH),
+            "classBlacklist": str(CLASS_BLACKLIST_PATH),
         },
         "counts": {
             "medicationsTotal": medications_total,
@@ -526,6 +585,21 @@ def build_mapping() -> None:
         },
         "warnings": warnings,
         "topUnmappedSourceLabels": top_unmapped,
+        "classBlacklistAudit": {
+            "hardBlacklistCount": len(blacklist["hardBlacklist"]),
+            "broadBlacklistCount": len(blacklist["broadClassBlacklist"]),
+            "hardBlacklistedAssociationsRemoved": len(blacklist_audit["hardRemoved"]),
+            "broadClassesSuppressedAsSpecificClass": len(blacklist_audit["broadSuppressed"]),
+            "medicationsWithOnlyBlacklistedExternalClasses": len(set(blacklist_audit["onlyBlacklisted"])),
+            "topHardBlacklistedLabels": top_labels(blacklist_audit["hardRemoved"]),
+            "topSuppressedBroadLabels": top_labels(blacklist_audit["broadSuppressed"]),
+            "hardBlacklistMedicationExamples": list(dict.fromkeys(blacklist_audit["hardMedicationExamples"]))[:20],
+            "broadSuppressionMedicationExamples": list(dict.fromkeys(blacklist_audit["broadMedicationExamples"]))[:20],
+            "blacklistVocabularyValidation": blacklist_vocabulary_audit(
+                blacklist,
+                [*blacklist_audit["knownLabels"], *(clean_text(item.get("label")) for item in hierarchy_paths)],
+            ),
+        },
         "byMedicationId": by_medication_id,
         "mappings": mappings,
     }
@@ -535,6 +609,7 @@ def build_mapping() -> None:
         "counts": mapping_payload["counts"],
         "warnings": mapping_payload["warnings"],
         "topUnmappedSourceLabels": mapping_payload["topUnmappedSourceLabels"],
+        "classBlacklistAudit": mapping_payload["classBlacklistAudit"],
         "sourceFiles": mapping_payload["sourceFiles"],
     }
 

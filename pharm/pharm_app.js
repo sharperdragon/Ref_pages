@@ -4,15 +4,7 @@
   // ================================================================
   const CONFIG = {
     dataPath: "./assests/pharm_data_rxclass_enriched.json",
-    classTaxonomyPath: "./assests/classes/class_subclasses_index.json",
-    mainHierarchyIndexPath: "./assests/classes/main_hierarchy_index.json",
-    mainHierarchyMappingPath: "./assests/classes/main_class_mapping.json",
-    mainHierarchyMappingReportPath: "./assests/classes/main_hierarchy_mapping_report.json",
-    mainHierarchySourcePath: "./assests/MAIN_PHARM_CLASS_HIERARCHY.json",
-    useMainHierarchyClassSystem: false,
-    useMainHierarchyCompatibilityFallback: true,
-    warnUnmappedMedicationRatio: 0.25,
-    warnTopUnmappedLabelFrequency: 20,
+    taxonomyPath: "./assests/pharm_taxonomy.json",
     searchDebounceMs: 170,
     classTreeHoverOpenEnabled: false,
     classTreeHoverExpandEnabled: false,
@@ -34,11 +26,8 @@
     uncategorizedClassLabel: "Other Classes",
     themeKey: "ui-theme",
     viewModeKey: "pharm-view-mode",
-    classFilterTypeKey: "pharm-class-filter-type",
     defaultViewMode: "compact",
     viewModes: ["compact"],
-    defaultClassFilterType: "drug-class",
-    classFilterTypes: ["drug-class", "use-category"],
     themeChangedEvent: "core-theme-changed",
     themeToggleLightLabel: "Light mode",
     themeToggleDarkLabel: "Dark mode",
@@ -77,7 +66,7 @@
 
   const RXNORM_PROXY_BASE_URL = "/api/rxnorm";
   const RXNORM_TIMEOUT_MS = 5500;
-  const RXNORM_FETCH_ENABLED = true;
+  const RXNORM_FETCH_ENABLED = false;
   const RXNORM_ENDPOINTS = {
     rxcuiByName: "/rxcui/by-name",
     relatedByRxcui: "/rxcui/{rxcui}/related",
@@ -95,8 +84,6 @@
     searchInput: "#searchInput",
     classTreeControl: "#classTreeControl",
     classTreeControlLabel: "#classTreeControlLabel",
-    classTypeControl: "#classTypeControl",
-    classTypeSelect: "#classTypeSelect",
     classTreeTrigger: "#classTreeTrigger",
     classTreeTriggerText: "#classTreeTriggerText",
     classTreeMenu: "#classTreeMenu",
@@ -120,10 +107,6 @@
   };
 
   const ROUTE_ENUM = ["PO", "IV", "IM", "SQ", "INH", "IN", "SL", "Topical", "PR"];
-  const CLASS_FILTER_TYPE = {
-    DRUG_CLASS: "drug-class",
-    USE_CATEGORY: "use-category",
-  };
   const MAX_CLASS_PATH_DEPTH = 4;
 
   const CLASS_LABEL_ALIAS_RULES = [
@@ -285,80 +268,6 @@
     },
   ];
 
-  const USE_CATEGORY_RULES = [
-    {
-      label: "Psychiatric",
-      match: /(psychiatr|antipsychotic|antidepressive|anti-anxiety|anxiolytic|mood|bipolar|schizo|adhd|ssri|snri|benzodiazepine|hypnotic|sedative)/i,
-    },
-    {
-      label: "Pain and Analgesics",
-      match: /(analges|pain|opioid|nsaid|anti-inflammatory|antipyretic|migraine|anesthetics?)/i,
-    },
-    {
-      label: "Gout and Rheumatology",
-      match: /(gout|uricosuric|antirheumatic|hyperuricemic|antiresorptive)/i,
-    },
-    {
-      label: "Hypertension",
-      match: /(hypertension|antihypertensive|ace inhibitor|angiotensin|arb|beta-block|calcium channel blocker|diuretic|vasodilator)/i,
-    },
-    {
-      label: "Hyperlipidemia",
-      match: /(hyperlipidem|hypolipidemic|anticholesteremic|statin|hmg-coa|lipid|cholesterol)/i,
-    },
-    {
-      label: "Cardiovascular",
-      match: /(cardiovascular|anti-arrhythmia|antianginal|heart failure|anticoagulant|antithrombin|platelet aggregation|thrombolytic|cardiotonic)/i,
-    },
-    {
-      label: "Diabetes and Endocrine",
-      match: /(diabet|hypoglycemic|insulin|thyroid|glucocorticoid|corticosteroid|hormone|endocrine)/i,
-    },
-    {
-      label: "Women's Health",
-      match: /(women|menopaus|estrogen|progesterone|progestin|endometri|labor induction|tocolytic|uterine)/i,
-    },
-    {
-      label: "Family Planning",
-      match: /(contracept|fertility|postcoital|family planning|gonadotropin)/i,
-    },
-    {
-      label: "Infectious Disease",
-      match: /(anti-bacterial|antibiotic|antifungal|antiviral|anti-infective|antimalarial|antitubercular|antiprotozoal|antiparasitic|hiv|cephalosporin|penicillin|macrolide|quinolone|sulfonamide)/i,
-    },
-    {
-      label: "Oncology and Hematology",
-      match: /(antineoplastic|oncolog|anticarcinogenic|antimetabolite|alkylating|antineutropenic|hematologic|hematopoietic|colony-stimulating|myeloablative)/i,
-    },
-    {
-      label: "Respiratory",
-      match: /(respiratory|bronchodilator|anti-asthmatic|antitussive|leukotriene|pulmonary|nasal decongestant)/i,
-    },
-    {
-      label: "Gastrointestinal",
-      match: /(gastrointestinal|antiemetic|antidiarrheal|anti-ulcer|antacid|proton pump|laxative|prokinetic|bowel)/i,
-    },
-    {
-      label: "Neurology",
-      match: /(neurolog|anticonvulsant|antiparkinson|dyskinesia|neuromuscular|dopamine|serotonin|gaba|nootropic)/i,
-    },
-    {
-      label: "Dermatology",
-      match: /(dermatolog|anti-acne|antipruritic|antipsoriatic|anti-seborrheic|sunscreen|keratolytic|skin and mucous membrane)/i,
-    },
-    {
-      label: "Ophthalmology and ENT",
-      match: /(ophthalmic|anti-glaucoma|mydriatic|miotic|eent)/i,
-    },
-    {
-      label: "Renal and Urology",
-      match: /(renal|urolog|incontinence|urinary|dialysis|electrolyte)/i,
-    },
-    {
-      label: "Allergy and Immunology",
-      match: /(anti-allergic|immunologic|immunosuppressive|histamine|mast cell|tnf inhibitor|adjuvants?)/i,
-    },
-  ];
   const LEGACY_TAXONOMY_CLASS_ALIASES = [
     ["analgesic", ["Analgesics"]],
     ["analgesic antipyretic", ["Analgesics", "Antipyretics"]],
@@ -590,10 +499,6 @@
   const REQUIRED_FIELDS = [
     "id",
     "name",
-    "drugClass",
-    "routes",
-    "moa",
-    "indications",
   ];
 
   // ================================================================
@@ -608,7 +513,7 @@
     classFilterNodeId: "",
     classFilterLabel: "All classes",
     classFilterClassSet: null,
-    classFilterType: CONFIG.defaultClassFilterType,
+    classFilterMedicationIds: null,
     classTreeRoot: null,
     classTreeById: new Map(),
     classTreePath: [],
@@ -617,10 +522,6 @@
     classTreeHoverGuardUntilMs: 0,
     classTreeScrollSyncGuardByColumnKey: new Map(),
     classTaxonomy: null,
-    mainHierarchyIndex: null,
-    mainHierarchyMappingByMedicationId: new Map(),
-    mainHierarchyMappingReport: null,
-    mainHierarchyEnabled: false,
     routeFilter: "",
     viewMode: CONFIG.defaultViewMode,
     expandedClassId: null,
@@ -641,9 +542,7 @@
     setClassTreeMenuVisualState(false);
     syncThemeFromStorage();
     syncViewModeFromStorage();
-    syncClassFilterTypeFromStorage();
     syncViewModeControls();
-    syncClassFilterTypeControls();
     bindEvents();
     loadData();
   }
@@ -815,20 +714,6 @@
       });
     }
 
-    if (EL.classTypeControl) {
-      EL.classTypeControl.addEventListener("click", (event) => {
-        const button = event.target.closest("[data-class-filter-type]");
-        if (!button) return;
-        setClassFilterType(button.dataset.classFilterType, { persist: true, rerender: true });
-      });
-    }
-
-    if (EL.classTypeSelect) {
-      EL.classTypeSelect.addEventListener("change", () => {
-        setClassFilterType(EL.classTypeSelect.value, { persist: true, rerender: true });
-      });
-    }
-
     if (EL.routeFilter) {
       EL.routeFilter.addEventListener("change", () => {
         STATE.routeFilter = EL.routeFilter.value;
@@ -959,10 +844,9 @@
   async function loadData() {
     hideError();
     try {
-      const [payload, classTaxonomy, mainHierarchyArtifacts] = await Promise.all([
+      const [payload, classTaxonomy] = await Promise.all([
         loadMedicationPayload(),
-        loadClassTaxonomyIndex(),
-        loadMainHierarchyArtifacts(),
+        loadPharmTaxonomy(),
       ]);
 
       const records = Array.isArray(payload)
@@ -972,18 +856,8 @@
           : [];
 
       STATE.classTaxonomy = classTaxonomy;
-      STATE.mainHierarchyIndex = mainHierarchyArtifacts?.index || null;
-      STATE.mainHierarchyMappingByMedicationId = mainHierarchyArtifacts?.mappingByMedicationId || new Map();
-      STATE.mainHierarchyMappingReport = mainHierarchyArtifacts?.report || null;
-      STATE.mainHierarchyEnabled = shouldEnableMainHierarchyClassSystem(mainHierarchyArtifacts);
-      maybeWarnOnMainHierarchyMappingQuality(STATE.mainHierarchyMappingReport);
       STATE.medications = records
-        .map((record, index) => normalizeMedication(record, index, {
-          classTaxonomy,
-          mainHierarchyIndex: STATE.mainHierarchyIndex,
-          mainHierarchyMappingByMedicationId: STATE.mainHierarchyMappingByMedicationId,
-          useMainHierarchyClassSystem: STATE.mainHierarchyEnabled,
-        }))
+        .map((record, index) => normalizeMedication(record, index))
         .filter(Boolean)
         .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -994,10 +868,6 @@
       showError(error instanceof Error ? error.message : "Unable to load medication data.");
       STATE.medications = [];
       STATE.classTaxonomy = null;
-      STATE.mainHierarchyIndex = null;
-      STATE.mainHierarchyMappingByMedicationId = new Map();
-      STATE.mainHierarchyMappingReport = null;
-      STATE.mainHierarchyEnabled = false;
       applyFiltersAndRender();
     }
   }
@@ -1010,111 +880,16 @@
     return response.json();
   }
 
-  async function loadClassTaxonomyIndex() {
-    try {
-      const response = await fetch(CONFIG.classTaxonomyPath, { cache: "no-store" });
-      if (!response.ok) {
-        throw new Error(`Failed to load class taxonomy (${response.status})`);
-      }
-
-      const payload = await response.json();
-      const taxonomy = normalizeClassTaxonomyIndex(payload);
-      if (!taxonomy || taxonomy.primaries.length === 0) return null;
-      return taxonomy;
-    } catch (error) {
-      console.warn("Class taxonomy unavailable; falling back to derived class paths.", error);
-      return null;
-    }
-  }
-
-  async function loadMainHierarchyArtifacts() {
-    if (!CONFIG.useMainHierarchyClassSystem) {
-      return null;
-    }
-
-    let fallbackReportPayload = null;
-    try {
-      const [indexPayload, mappingPayload, reportPayload] = await Promise.all([
-        loadMainHierarchyIndex(),
-        loadMainHierarchyMapping(),
-        loadMainHierarchyMappingReport(),
-      ]);
-
-      const index = normalizeMainHierarchyIndex(indexPayload);
-      const mappingByMedicationId = normalizeMainHierarchyMapping(mappingPayload, index);
-      fallbackReportPayload = reportPayload;
-      if (!index || mappingByMedicationId.size === 0) {
-        throw new Error("Compiled main hierarchy artifacts were incomplete.");
-      }
-
-      return {
-        index,
-        mappingByMedicationId,
-        report: normalizeMainHierarchyMappingReport(reportPayload),
-      };
-    } catch (error) {
-      console.warn("Compiled main hierarchy artifacts unavailable; trying source hierarchy definition.", error);
-    }
-
-    try {
-      const sourcePayload = await loadMainHierarchySourceDefinition();
-      const index = normalizeMainHierarchyIndex(sourcePayload);
-      if (!index) {
-        return null;
-      }
-      return {
-        index,
-        mappingByMedicationId: new Map(),
-        report: normalizeMainHierarchyMappingReport(fallbackReportPayload),
-      };
-    } catch (error) {
-      console.warn("Main hierarchy source definition unavailable; falling back to legacy class taxonomy.", error);
-      return null;
-    }
-  }
-
-  async function loadMainHierarchyIndex() {
-    const response = await fetch(CONFIG.mainHierarchyIndexPath, { cache: "no-store" });
+  async function loadPharmTaxonomy() {
+    const response = await fetch(CONFIG.taxonomyPath, { cache: "no-store" });
     if (!response.ok) {
-      throw new Error(`Failed to load main hierarchy index (${response.status})`);
+      throw new Error(`Failed to load taxonomy (${response.status})`);
     }
-    return response.json();
+    return normalizePharmTaxonomy(await response.json());
   }
 
-  async function loadMainHierarchyMapping() {
-    const response = await fetch(CONFIG.mainHierarchyMappingPath, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`Failed to load main hierarchy mapping (${response.status})`);
-    }
-    return response.json();
-  }
-
-  async function loadMainHierarchyMappingReport() {
-    try {
-      const response = await fetch(CONFIG.mainHierarchyMappingReportPath, { cache: "no-store" });
-      if (!response.ok) return null;
-      return response.json();
-    } catch {
-      return null;
-    }
-  }
-
-  async function loadMainHierarchySourceDefinition() {
-    const response = await fetch(CONFIG.mainHierarchySourcePath, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`Failed to load main hierarchy source definition (${response.status})`);
-    }
-    return response.json();
-  }
-
-  function normalizeMedication(record, index, context = {}) {
+  function normalizeMedication(record, index) {
     if (!record || typeof record !== "object") return null;
-    const classTaxonomy = context?.classTaxonomy || null;
-    const mainHierarchyIndex = context?.mainHierarchyIndex || null;
-    const mainHierarchyMappingByMedicationId = context?.mainHierarchyMappingByMedicationId instanceof Map
-      ? context.mainHierarchyMappingByMedicationId
-      : new Map();
-    const useMainHierarchyClassSystem = Boolean(context?.useMainHierarchyClassSystem);
 
     const id = cleanText(record.id) || `med-${index + 1}`;
     const name = cleanText(record.name);
@@ -1129,52 +904,27 @@
     const aliases = toTextArray(record.aliases);
     const brandExamples = toTextArray(record.brandExamples);
     const pearls = toTextArray(record.pearls);
-    const classLabelMap = classTaxonomy?.labelMap instanceof Map
-      ? classTaxonomy.labelMap
-      : null;
-    const classTags = deriveMedicationClassTags(record, drugClass, classLabelMap);
-    const classModel = deriveMedicationClassModel(classTags, classTaxonomy, drugClass);
-    const legacyClassModel = ensureLegacyClassModel({
-      classModel,
-      classTaxonomy,
-      fallbackLabel: drugClass,
-      name,
-      aliases,
-      brandExamples,
-      indications,
-    });
-    const canonicalClassModel = deriveMedicationMainHierarchyClassModel(
-      id,
-      mainHierarchyIndex,
-      mainHierarchyMappingByMedicationId
-    );
-    const activeClassModel = pickActiveDrugClassModel(
-      legacyClassModel,
-      canonicalClassModel,
-      useMainHierarchyClassSystem
-    );
-    const useCategoryTags = deriveMedicationUseCategoryTags({
-      name,
-      drugClass,
-      classTags,
-      moa,
-      indications,
-      aliases,
-      brandExamples,
-    });
-    const specificClassLabel = deriveSpecificClassLabel(record, {
-      name,
-      drugClass,
-      moa,
-      indications,
-      categories: toTextArray(record?.classCandidates),
-      classTags: toTextArray(record?.classTags),
-      atcCodes: toTextArray(record?.atcCodes),
-      descriptionFirstSentence: cleanText(record?.descriptionFirstSentence),
-      displayClassLabel: cleanText(activeClassModel.displayClassLabel),
-      fallbackLabel: cleanText(activeClassModel.displayClassLabel) || drugClass,
-      mainHierarchyIndex,
-    });
+    const searchTerms = toTextArray(record.searchTerms);
+    const suppliedClassPaths = Array.isArray(record.classPaths)
+      ? record.classPaths
+        .filter((path) => Array.isArray(path))
+        .map((path) => path.map(sanitizeClassLabel).filter(Boolean))
+        .filter((path) => path.length > 0)
+      : [];
+    const suppliedClassPath = suppliedClassPaths.slice().sort((left, right) => right.length - left.length)[0] || [];
+    const classTags = suppliedClassPaths.length > 0
+      ? uniq(suppliedClassPaths.flat())
+      : uniq([
+        ...toTextArray(record.classCandidates).map(sanitizeClassLabel),
+        ...toTextArray(record.classTags).map(sanitizeClassLabel),
+      ].filter(Boolean));
+    const classModel = suppliedClassPath.length > 0
+      ? buildClassModelFromPath(suppliedClassPath, drugClass)
+      : buildClassModelFromPath([], drugClass);
+    const activeClassModel = classModel;
+    const specificClassLabel = cleanText(record.specificClassLabel)
+      || cleanText(activeClassModel.displayClassLabel)
+      || drugClass;
 
     const normalized = {
       id,
@@ -1191,6 +941,8 @@
       aliases,
       brandExamples,
       pearls,
+      searchTerms,
+      classPaths: suppliedClassPaths,
       classTags,
       classNodeId: cleanText(activeClassModel.classNodeId),
       classPathIds: Array.isArray(activeClassModel.classPathIds)
@@ -1208,18 +960,11 @@
       subclass3: cleanText(activeClassModel.subclass3),
       displayClassLabel: cleanText(activeClassModel.displayClassLabel),
       classSystem: cleanText(activeClassModel.classSystem) || "legacy",
-      canonicalClassNodeId: cleanText(canonicalClassModel.classNodeId),
-      canonicalClassPathIds: Array.isArray(canonicalClassModel.classPathIds)
-        ? canonicalClassModel.classPathIds.slice()
-        : [],
-      canonicalClassPath: Array.isArray(canonicalClassModel.classPath)
-        ? canonicalClassModel.classPath.slice()
-        : [],
-      legacyClassPath: Array.isArray(legacyClassModel.classPath)
-        ? legacyClassModel.classPath.slice()
-        : [],
-      useCategoryTags,
-      indicationTags: useCategoryTags,
+      canonicalClassNodeId: "",
+      canonicalClassPathIds: [],
+      canonicalClassPath: [],
+      legacyClassPath: Array.isArray(classModel.classPath) ? classModel.classPath.slice() : [],
+      indicationTags: [],
     };
 
     const missing = REQUIRED_FIELDS.filter((field) => {
@@ -1244,6 +989,7 @@
     normalized.adverseEffectsNorm = normalized.adverseEffects.map(normalizeSearch);
     normalized.majorInteractionsNorm = normalized.majorInteractions.map(normalizeSearch);
     normalized.monitoringNorm = normalized.monitoring.map(normalizeSearch);
+    normalized.searchTermsNorm = normalized.searchTerms.map(normalizeSearch);
     normalized.classTagsNorm = normalized.classTags.map(normalizeSearch);
     normalized.classPathIdsNorm = normalized.classPathIds.map(normalizeSearch);
     normalized.indicationTagsNorm = normalized.indicationTags.map(normalizeSearch);
@@ -1266,6 +1012,7 @@
       ...normalized.adverseEffectsNorm,
       ...normalized.majorInteractionsNorm,
       ...normalized.monitoringNorm,
+      ...normalized.searchTermsNorm,
     ].join(" ");
 
     normalized.otherFieldsNorm = [
@@ -1930,26 +1677,6 @@
     return text.replace(/\s+/g, " ").trim();
   }
 
-  function deriveMedicationUseCategoryTags(payload) {
-    const context = normalizeSearch(
-      [
-        payload?.name,
-        payload?.drugClass,
-        payload?.moa,
-        ...(Array.isArray(payload?.indications) ? payload.indications : []),
-        ...(Array.isArray(payload?.aliases) ? payload.aliases : []),
-        ...(Array.isArray(payload?.brandExamples) ? payload.brandExamples : []),
-        ...(Array.isArray(payload?.classTags) ? payload.classTags : []),
-      ].join(" ")
-    );
-
-    const tags = USE_CATEGORY_RULES
-      .filter((rule) => rule.match.test(context))
-      .map((rule) => rule.label);
-
-    return uniq(tags);
-  }
-
   function deriveSpecificClassLabel(record, normalizedContext = {}) {
     const fallbackLabel = sanitizeClassLabel(
       cleanText(normalizedContext?.fallbackLabel)
@@ -2452,6 +2179,44 @@
     }
   }
 
+  function makeTaxonomyPathKey(path) {
+    return toTextArray(path).map(normalizeSearch).filter(Boolean).join("\u001f");
+  }
+
+  function normalizePharmTaxonomy(payload) {
+    const nodes = Array.isArray(payload?.nodes) ? payload.nodes : [];
+    const rootId = cleanText(payload?.rootId);
+    const nodeById = new Map();
+    const pathNodeIdByKey = new Map();
+
+    nodes.forEach((entry) => {
+      const id = cleanText(entry?.id);
+      const label = sanitizeClassLabel(entry?.label);
+      if (!id || !label) return;
+      const path = toTextArray(entry?.path).map(sanitizeClassLabel).filter(Boolean);
+      const node = {
+        id,
+        label,
+        parent: cleanText(entry?.parent),
+        children: toTextArray(entry?.children).map(cleanText).filter(Boolean),
+        path,
+        medicationCount: Number(entry?.medicationCount) || 0,
+        sortOrder: Number.isFinite(entry?.sortOrder) ? Number(entry.sortOrder) : Number.POSITIVE_INFINITY,
+      };
+      nodeById.set(id, node);
+      if (path.length > 0) pathNodeIdByKey.set(makeTaxonomyPathKey(path), id);
+    });
+
+    const root = nodeById.get(rootId);
+    if (!root) return null;
+    return {
+      rootId,
+      topLevelIds: root.children,
+      nodeById,
+      pathNodeIdByKey,
+    };
+  }
+
   function normalizeClassTaxonomyIndex(payload) {
     const entries = Array.isArray(payload?.primaries) ? payload.primaries : [];
     const primaries = [];
@@ -2545,6 +2310,12 @@
     const routeFilter = STATE.routeFilter;
 
     STATE.filtered = STATE.medications.filter((medication) => {
+      if (
+        STATE.classFilterMedicationIds instanceof Set
+        && !STATE.classFilterMedicationIds.has(medication.id)
+      ) {
+        return false;
+      }
       if (classFilterClassSet && !hasClassTagMatch(classFilterClassSet, getMedicationFilterTags(medication))) {
         return false;
       }
@@ -2581,19 +2352,6 @@
 
   function getMedicationFilterTags(medication) {
     if (!medication || typeof medication !== "object") return [];
-    if (STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY) {
-      return Array.isArray(medication.useCategoryTags) ? medication.useCategoryTags : [];
-    }
-    if (isMainHierarchyClassSystemActive()) {
-      return Array.isArray(medication.classPathIds) ? medication.classPathIds : [];
-    }
-    if (hasActiveClassTaxonomy()) {
-      return Array.isArray(medication.classPath) && medication.classPath.length > 0
-        ? medication.classPath
-        : Array.isArray(medication.classTags)
-          ? medication.classTags
-          : [];
-    }
     return Array.isArray(medication.classTags) ? medication.classTags : [];
   }
 
@@ -2670,14 +2428,6 @@
   }
 
   function buildClassFilterTree(medications) {
-    if (STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY) {
-      return buildUseCategoryFilterTree(medications);
-    }
-
-    if (isMainHierarchyClassSystemActive()) {
-      return buildClassFilterTreeFromMainHierarchy(medications, STATE.mainHierarchyIndex);
-    }
-
     if (hasActiveClassTaxonomy()) {
       return buildClassFilterTreeFromTaxonomy(medications, STATE.classTaxonomy);
     }
@@ -2805,131 +2555,61 @@
     return { root, byId, idByNodeId };
   }
 
-  function buildUseCategoryFilterTree(medications) {
-    let nodeSequence = 0;
-    const root = createClassFilterNode("class-tree-root", "All use categories", null, 0);
-    const byId = new Map();
-    const categoryNodes = new Map();
-    const sortOrder = new Map(
-      USE_CATEGORY_RULES.map((rule, index) => [normalizeSearch(rule.label), index])
-    );
-
-    medications.forEach((medication, index) => {
-      const medicationId = cleanText(medication.id) || `med-${index + 1}`;
-      root.medicationSet.add(medicationId);
-
-      const tags = Array.isArray(medication.useCategoryTags) ? medication.useCategoryTags : [];
-      tags.forEach((tag) => {
-        const label = cleanText(tag);
-        if (!label) return;
-        const key = normalizeSearch(label);
-        if (!key) return;
-
-        if (!categoryNodes.has(key)) {
-          nodeSequence += 1;
-          const sortIndex = Number.isFinite(sortOrder.get(key))
-            ? sortOrder.get(key)
-            : Number.POSITIVE_INFINITY;
-          const node = createClassFilterNode(`class-tree-${nodeSequence}`, label, root.id, sortIndex);
-          categoryNodes.set(key, node);
-          root.childMap.set(`category-${key}`, node);
-        }
-
-        const categoryNode = categoryNodes.get(key);
-        categoryNode.classSet.add(label);
-        categoryNode.medicationSet.add(medicationId);
-        root.classSet.add(label);
-      });
-    });
-
-    function finalize(node) {
-      node.children = Array.from(node.childMap.values()).sort(compareClassFilterNodes);
-      node.classValues = Array.from(node.classSet.values());
-      node.medicationCount = node.medicationSet.size;
-      byId.set(node.id, node);
-      node.children.forEach(finalize);
-    }
-
-    finalize(root);
-    return { root, byId };
-  }
-
   function hasActiveClassTaxonomy() {
-    if (STATE.classFilterType !== CLASS_FILTER_TYPE.DRUG_CLASS) return false;
-    if (isMainHierarchyClassSystemActive()) return false;
     return Boolean(
       STATE.classTaxonomy
-      && Array.isArray(STATE.classTaxonomy.primaries)
-      && STATE.classTaxonomy.primaries.length > 0
+      && STATE.classTaxonomy.nodeById instanceof Map
+      && STATE.classTaxonomy.nodeById.size > 0
     );
-  }
-
-  function isMainHierarchyClassSystemActive() {
-    if (STATE.classFilterType !== CLASS_FILTER_TYPE.DRUG_CLASS) return false;
-    if (!STATE.mainHierarchyEnabled) return false;
-    if (!STATE.mainHierarchyIndex || !(STATE.mainHierarchyIndex.nodeById instanceof Map)) return false;
-    return true;
   }
 
   function buildClassFilterTreeFromTaxonomy(medications, taxonomy) {
-    let nodeSequence = 0;
     const root = createClassFilterNode("class-tree-root", "All classes", null, 0);
     const byId = new Map();
-    const nodeLookup = new Map();
-    const fallback = taxonomy?.fallback && typeof taxonomy.fallback === "object"
-      ? taxonomy.fallback
-      : null;
-    const fallbackPath = [
-      cleanText(fallback?.primaryClass) || CONFIG.uncategorizedClassLabel,
-      cleanText(fallback?.subclass) || "Unmapped",
-    ];
-
+    const medicationSetByNodeId = new Map();
     medications.forEach((medication, index) => {
       const medicationId = cleanText(medication.id) || `med-${index + 1}`;
       root.medicationSet.add(medicationId);
-      const pathLevels = getClassLevelsFromPath(
-        Array.isArray(medication.classPath) && medication.classPath.length > 0
-          ? medication.classPath
-          : fallbackPath,
-        fallbackPath[0]
-      );
-      const path = pathLevels.classPath;
-      if (path.length === 0) return;
-
-      path.forEach((label) => root.classSet.add(label));
-
-      let node = root;
-      const primaryLabel = path[0];
-      for (let depth = 0; depth < path.length; depth += 1) {
-        const label = cleanText(path[depth]);
-        if (!label) continue;
-
-        const labelKey = normalizeSearch(label);
-        if (!labelKey) continue;
-
-        const lookupKey = `${node.id}|${labelKey}`;
-        if (!nodeLookup.has(lookupKey)) {
-          nodeSequence += 1;
-          const childNode = createClassFilterNode(
-            `class-tree-${nodeSequence}`,
-            label,
-            node.id,
-            getClassTreeNodeSortIndex(taxonomy, primaryLabel, label, depth)
-          );
-          node.childMap.set(`path-${labelKey}`, childNode);
-          nodeLookup.set(lookupKey, childNode);
+      const paths = Array.isArray(medication.classPaths) ? medication.classPaths : [];
+      paths.forEach((path) => {
+        const labels = Array.isArray(path) ? path.map(sanitizeClassLabel).filter(Boolean) : [];
+        for (let depth = 1; depth <= labels.length; depth += 1) {
+          const sourceNodeId = taxonomy.pathNodeIdByKey.get(makeTaxonomyPathKey(labels.slice(0, depth)));
+          if (!sourceNodeId) continue;
+          if (!medicationSetByNodeId.has(sourceNodeId)) {
+            medicationSetByNodeId.set(sourceNodeId, new Set());
+          }
+          medicationSetByNodeId.get(sourceNodeId).add(medicationId);
         }
-
-        const childNode = nodeLookup.get(lookupKey);
-        childNode.medicationSet.add(medicationId);
-        path.slice(depth).forEach((segment) => childNode.classSet.add(segment));
-        node = childNode;
-      }
+      });
     });
+
+    function buildNode(sourceNodeId, parentTreeNode) {
+      const sourceNode = taxonomy.nodeById.get(sourceNodeId);
+      const medicationSet = medicationSetByNodeId.get(sourceNodeId);
+      if (!sourceNode || !(medicationSet instanceof Set) || medicationSet.size === 0) return null;
+      const treeNode = createClassFilterNode(
+        `class-tree-${sourceNodeId}`,
+        sourceNode.label,
+        parentTreeNode.id,
+        sourceNode.sortOrder
+      );
+      treeNode.sourceNodeId = sourceNodeId;
+      medicationSet.forEach((medicationId) => treeNode.medicationSet.add(medicationId));
+      treeNode.classValues = Array.isArray(sourceNode.path) ? sourceNode.path.slice() : [];
+      sourceNode.children.forEach((childId) => {
+        const childNode = buildNode(childId, treeNode);
+        if (childNode) treeNode.childMap.set(childId, childNode);
+      });
+      parentTreeNode.childMap.set(sourceNodeId, treeNode);
+      return treeNode;
+    }
+
+    taxonomy.topLevelIds.forEach((sourceNodeId) => buildNode(sourceNodeId, root));
 
     function finalize(node) {
       node.children = Array.from(node.childMap.values()).sort(compareClassFilterNodes);
-      node.classValues = Array.from(node.classSet.values());
+      if (node.classValues.length === 0) node.classValues = Array.from(node.classSet.values());
       node.medicationCount = node.medicationSet.size;
       byId.set(node.id, node);
       node.children.forEach(finalize);
@@ -3039,6 +2719,7 @@
     STATE.classFilterNodeId = "";
     STATE.classFilterLabel = getDefaultClassFilterLabel();
     STATE.classFilterClassSet = null;
+    STATE.classFilterMedicationIds = null;
     STATE.classTreePath = [];
     syncClassTreeTrigger();
 
@@ -3057,6 +2738,7 @@
     STATE.classFilterNodeId = node.id;
     STATE.classFilterLabel = buildClassFilterSelectionLabel(node);
     STATE.classFilterClassSet = new Set(node.classValues);
+    STATE.classFilterMedicationIds = new Set(node.medicationSet);
     STATE.classTreePath = getClassTreePath(node.id);
     syncClassTreeTrigger();
 
@@ -3093,23 +2775,11 @@
   }
 
   function getClassFilterTypeMeta() {
-    if (STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY) {
-      return {
-        controlLabel: "Use Category",
-        defaultLabel: "All use categories",
-        allOptionLabel: "All use categories",
-        rootColumnTitle: "Use categories",
-        ariaPrefix: "Use category filter",
-        treeAriaLabel: "Use category filter tree",
-      };
-    }
-
-    const hasHierarchy = isMainHierarchyClassSystemActive() || hasActiveClassTaxonomy();
     return {
       controlLabel: "Drug Class",
-      defaultLabel: hasHierarchy ? "All primary classes" : "All classes",
-      allOptionLabel: hasHierarchy ? "All primary classes" : "All classes",
-      rootColumnTitle: hasHierarchy ? "Primary classes" : "All classes",
+      defaultLabel: "All classes",
+      allOptionLabel: "All classes",
+      rootColumnTitle: "Classes",
       ariaPrefix: "Drug class filter",
       treeAriaLabel: "Drug class filter tree",
     };
@@ -3461,7 +3131,7 @@
     if (!EL.resultCount) return;
     const count = STATE.filtered.length;
     const groupCount = Array.isArray(STATE.groupingIndex?.classes) ? STATE.groupingIndex.classes.length : 0;
-    const groupLabel = STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY ? "categories" : "classes";
+    const groupLabel = "classes";
     EL.resultCount.textContent = groupCount > 0
       ? `${count} medication${count === 1 ? "" : "s"} in ${groupCount} ${groupLabel}`
       : `${count} medication${count === 1 ? "" : "s"}`;
@@ -3474,7 +3144,7 @@
     const fragment = document.createDocumentFragment();
     const count = STATE.filtered.length;
     const groupCount = Array.isArray(STATE.groupingIndex?.classes) ? STATE.groupingIndex.classes.length : 0;
-    const groupLabel = STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY ? "categories" : "classes";
+    const groupLabel = "classes";
 
     fragment.appendChild(
       makeSummaryPill(
@@ -3490,8 +3160,7 @@
     }
 
     if (STATE.classFilterNodeId) {
-      const filterLabel = STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY ? "Use category" : "Class";
-      fragment.appendChild(makeSummaryPill(`${filterLabel}: ${STATE.classFilterLabel}`));
+      fragment.appendChild(makeSummaryPill(`Class: ${STATE.classFilterLabel}`));
     }
 
     if (STATE.routeFilter) {
@@ -3543,12 +3212,6 @@
   }
 
   function buildGroupingIndex(medications, sortByRelevance) {
-    if (STATE.classFilterType === CLASS_FILTER_TYPE.USE_CATEGORY) {
-      return buildUseCategoryGroupingIndex(medications, sortByRelevance);
-    }
-    if (isMainHierarchyClassSystemActive()) {
-      return buildDrugClassGroupingIndexFromMainHierarchy(medications, sortByRelevance);
-    }
     if (hasActiveClassTaxonomy()) {
       return buildDrugClassGroupingIndexFromTaxonomy(medications, sortByRelevance);
     }
@@ -3578,63 +3241,30 @@
     return finalizeGroupingIndex(classMap, sortByRelevance);
   }
 
-  function buildUseCategoryGroupingIndex(medications, sortByRelevance) {
-    const classMap = new Map();
-    medications.forEach((medication, rank) => {
-      const tags = Array.isArray(medication.useCategoryTags) && medication.useCategoryTags.length > 0
-        ? medication.useCategoryTags
-        : ["Other Use Categories"];
-      const seen = new Set();
-      tags.forEach((tag, tagIndex) => {
-        const label = cleanText(tag);
-        if (!label) return;
-        const key = normalizeSearch(label);
-        if (!key || seen.has(key)) return;
-        seen.add(key);
-        addMedicationToClassGroup(
-          classMap,
-          label,
-          label,
-          medication,
-          rank,
-          tagIndex,
-          0
-        );
-      });
-    });
-
-    return finalizeGroupingIndex(classMap, sortByRelevance);
-  }
-
   function buildDrugClassGroupingIndexFromTaxonomy(medications, sortByRelevance) {
     const taxonomy = STATE.classTaxonomy;
-    if (!taxonomy || !Array.isArray(taxonomy.primaries) || taxonomy.primaries.length === 0) {
+    if (!taxonomy || !(taxonomy.nodeById instanceof Map)) {
       return buildLegacyGroupingIndex(medications, sortByRelevance);
     }
 
     const classMap = new Map();
 
-    const fallback = taxonomy.fallback && typeof taxonomy.fallback === "object"
-      ? taxonomy.fallback
-      : null;
-    const fallbackTopLabel = cleanText(fallback?.primaryClass) || CONFIG.uncategorizedClassLabel;
-    const fallbackSubclassLabel = cleanText(fallback?.subclass) || "Unmapped";
-
     medications.forEach((medication, rank) => {
       const classPathLevels = getClassLevelsFromPath(
         Array.isArray(medication.classPath) && medication.classPath.length > 0
           ? medication.classPath
-          : [fallbackTopLabel, fallbackSubclassLabel],
-        fallbackTopLabel
+          : [],
+        CONFIG.uncategorizedClassLabel
       );
 
-      const topLabel = cleanText(classPathLevels.primaryClass) || fallbackTopLabel;
+      const topLabel = cleanText(classPathLevels.primaryClass) || CONFIG.uncategorizedClassLabel;
       const subclassLabel = cleanText(medication.displayClassLabel)
         || cleanText(classPathLevels.displayClassLabel)
-        || fallbackSubclassLabel;
-
-      const classSortIndex = getTaxonomyPrimarySortIndex(taxonomy, topLabel);
-      const subclassSortIndex = getTaxonomySubclassSortIndex(taxonomy, topLabel, subclassLabel);
+        || CONFIG.uncategorizedClassLabel;
+      const primaryNodeId = taxonomy.pathNodeIdByKey.get(makeTaxonomyPathKey([topLabel]));
+      const deepestNodeId = taxonomy.pathNodeIdByKey.get(makeTaxonomyPathKey(classPathLevels.classPath));
+      const classSortIndex = Number(taxonomy.nodeById.get(primaryNodeId)?.sortOrder);
+      const subclassSortIndex = Number(taxonomy.nodeById.get(deepestNodeId)?.sortOrder);
 
       addMedicationToClassGroup(
         classMap,
@@ -3642,8 +3272,8 @@
         subclassLabel,
         medication,
         rank,
-        classSortIndex,
-        subclassSortIndex
+        Number.isFinite(classSortIndex) ? classSortIndex : Number.POSITIVE_INFINITY,
+        Number.isFinite(subclassSortIndex) ? subclassSortIndex : Number.POSITIVE_INFINITY
       );
     });
 
@@ -3975,74 +3605,6 @@
     return normalized || "group";
   }
 
-  function syncClassFilterTypeFromStorage() {
-    try {
-      const stored = localStorage.getItem(CONFIG.classFilterTypeKey);
-      STATE.classFilterType = CONFIG.classFilterTypes.includes(stored)
-        ? stored
-        : CONFIG.defaultClassFilterType;
-    } catch {
-      STATE.classFilterType = CONFIG.defaultClassFilterType;
-    }
-  }
-
-  function syncClassFilterTypeControls() {
-    const meta = getClassFilterTypeMeta();
-
-    if (EL.classTypeControl) {
-      const buttons = EL.classTypeControl.querySelectorAll("[data-class-filter-type]");
-      buttons.forEach((button) => {
-        const active = button.dataset.classFilterType === STATE.classFilterType;
-        button.classList.toggle("is-active", active);
-        button.setAttribute("aria-pressed", String(active));
-      });
-    }
-
-    if (EL.classTypeSelect) {
-      EL.classTypeSelect.value = STATE.classFilterType;
-    }
-
-    if (EL.classTreeControlLabel) {
-      EL.classTreeControlLabel.textContent = meta.controlLabel;
-    }
-
-    if (EL.classTreeColumns) {
-      EL.classTreeColumns.setAttribute("aria-label", meta.treeAriaLabel);
-    }
-
-    if (!STATE.classFilterNodeId) {
-      STATE.classFilterLabel = getDefaultClassFilterLabel();
-    }
-    syncClassTreeTrigger();
-  }
-
-  function setClassFilterType(type, options = {}) {
-    const { persist = true, rerender = true } = options;
-    if (!CONFIG.classFilterTypes.includes(type)) return;
-
-    const hasChanged = STATE.classFilterType !== type;
-    STATE.classFilterType = type;
-    syncClassFilterTypeControls();
-
-    if (persist) {
-      try {
-        localStorage.setItem(CONFIG.classFilterTypeKey, type);
-      } catch {
-        // Non-fatal if storage is unavailable.
-      }
-    }
-
-    if (!hasChanged) return;
-
-    closeClassTreeMenu();
-    resetClassFilter({ rerender: false });
-    populateClassFilter();
-
-    if (rerender) {
-      applyFiltersAndRender();
-    }
-  }
-
   function setViewMode(mode, options = {}) {
     const { persist = true, rerender = true } = options;
     if (!CONFIG.viewModes.includes(mode)) return;
@@ -4128,56 +3690,6 @@
   }
 
   function getMedicationHighlight(medication) {
-    const excludedPrefixes = CONFIG.cardSnippetExcludedIndicationPrefixes.map((prefix) =>
-      normalizeSearch(prefix)
-    );
-    const excludedMoaPrefixes = CONFIG.cardSnippetExcludedMoaPrefixes.map((prefix) =>
-      normalizeSearch(prefix)
-    );
-    const indicationValues = medication.indications.filter((item) => {
-      const normalizedItem = normalizeSearch(item);
-      return !excludedPrefixes.some((prefix) => normalizedItem.startsWith(prefix));
-    });
-
-    if (indicationValues.length > 0) {
-      return {
-        label: "Key use",
-        text: indicationValues[0],
-      };
-    }
-
-    const moa = cleanText(medication.moa);
-    if (moa) {
-      const normalizedMoa = normalizeSearch(moa);
-      const isExcludedMoa = excludedMoaPrefixes.some((prefix) => normalizedMoa.startsWith(prefix));
-      if (!isExcludedMoa) {
-        return {
-          label: "MOA",
-          text: moa,
-        };
-      }
-    }
-
-    const secondaryClassHints = [
-      ...toTextArray(medication.classCandidates),
-      ...toTextArray(medication.classTags),
-    ].filter((value, index, array) => {
-      const normalizedValue = normalizeSearch(value);
-      if (!normalizedValue) return false;
-      const normalizedDisplayClass = normalizeSearch(
-        medication.specificClassLabel || medication.displayClassLabel || medication.drugClass
-      );
-      return normalizedValue !== normalizedDisplayClass
-        && array.findIndex((entry) => normalizeSearch(entry) === normalizedValue) === index;
-    });
-
-    if (secondaryClassHints.length > 0) {
-      return {
-        label: "Class note",
-        text: secondaryClassHints[0],
-      };
-    }
-
     return null;
   }
 
@@ -4235,7 +3747,6 @@
     STATE.selectedId = id;
 
     renderCards();
-    ensureRxNormForMedication(id);
     renderDetail();
 
     if (openOnMobile && isMobileViewport() && EL.detailPanel && EL.detailScrim) {
@@ -4268,7 +3779,6 @@
     EL.detailMeta.textContent = detailMeta;
     EL.detailEmpty.hidden = true;
     EL.detailBody.hidden = false;
-    const rxNormState = getRxNormStateForMedication(selected.id);
     const sections = [
       makeOverviewSection(selected),
       makeTextSection("MOA", selected.moa, "moa", { hidePlaceholders: true }),
@@ -4277,7 +3787,6 @@
       makeListSection("Adverse Effects", selected.adverseEffects, "adverse-effects", { hidePlaceholders: true }),
       makeListSection("Major Interactions", selected.majorInteractions, "major-interactions", { hidePlaceholders: true }),
       makeListSection("Monitoring", selected.monitoring, "monitoring", { hidePlaceholders: true }),
-      makeRxNormSection(rxNormState),
       makeListSection("Pearls", selected.pearls, "pearls", { hidePlaceholders: true }),
       makeListSection("Aliases", selected.aliases, "aliases"),
       makeListSection("Brand Examples", selected.brandExamples, "brand-examples"),

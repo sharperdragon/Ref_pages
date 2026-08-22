@@ -12,14 +12,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 2,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular"],
+      "pathLabels": ["Drug Classes", "Cardiovascular"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives",
@@ -28,16 +22,8 @@
       "parentId": "drug_classes.cardiovascular",
       "depth": 2,
       "sortOrder": 3,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular",
-        "drug_classes.cardiovascular.antihypertensives"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular", "drug_classes.cardiovascular.antihypertensives"],
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.renin_angiotensin_system_agents",
@@ -52,12 +38,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.renin_angiotensin_system_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Renin Angiotensin System Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Renin Angiotensin System Agents"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.renin_angiotensin_system_agents.ace_inhibitors",
@@ -138,12 +119,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.beta_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Beta Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Beta Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.beta_blockers.nonselective_beta_blockers",
@@ -203,13 +179,7 @@
         "drug_classes.cardiovascular.antihypertensives.beta_blockers",
         "drug_classes.cardiovascular.antihypertensives.beta_blockers.sympathomimetic_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Beta Blockers",
-        "Sympathomimetic Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Beta Blockers", "Sympathomimetic Agents"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.beta_blockers.alpha_beta_blockers",
@@ -225,13 +195,7 @@
         "drug_classes.cardiovascular.antihypertensives.beta_blockers",
         "drug_classes.cardiovascular.antihypertensives.beta_blockers.alpha_beta_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Beta Blockers",
-        "Alpha Beta Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Beta Blockers", "Alpha Beta Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.beta_blockers.vasodilating_beta_blockers",
@@ -268,12 +232,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.calcium_channel_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Calcium Channel Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Calcium Channel Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.calcium_channel_blockers.dihydropyridines",
@@ -380,12 +339,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.diuretics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Diuretics"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Diuretics"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.diuretics.loop_diuretics",
@@ -401,13 +355,7 @@
         "drug_classes.cardiovascular.antihypertensives.diuretics",
         "drug_classes.cardiovascular.antihypertensives.diuretics.loop_diuretics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Diuretics",
-        "Loop Diuretics"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Diuretics", "Loop Diuretics"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.diuretics.thiazide_and_thiazide_like_diuretics",
@@ -445,13 +393,7 @@
         "drug_classes.cardiovascular.antihypertensives.diuretics",
         "drug_classes.cardiovascular.antihypertensives.diuretics.potassium_sparing_diuretics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Diuretics",
-        "Potassium Sparing Diuretics"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Diuretics", "Potassium Sparing Diuretics"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.diuretics.potassium_sparing_diuretics.aldosterone_antagonists",
@@ -537,13 +479,7 @@
         "drug_classes.cardiovascular.antihypertensives.diuretics",
         "drug_classes.cardiovascular.antihypertensives.diuretics.osmotic_diuretics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Diuretics",
-        "Osmotic Diuretics"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Diuretics", "Osmotic Diuretics"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.vasodilators",
@@ -558,12 +494,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.vasodilators"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Vasodilators"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Vasodilators"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.vasodilators.direct_arteriolar_vasodilators",
@@ -601,13 +532,7 @@
         "drug_classes.cardiovascular.antihypertensives.vasodilators",
         "drug_classes.cardiovascular.antihypertensives.vasodilators.organic_nitrates"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Vasodilators",
-        "Organic Nitrates"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Vasodilators", "Organic Nitrates"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.vasodilators.organic_nitrates.short_acting",
@@ -671,13 +596,7 @@
         "drug_classes.cardiovascular.antihypertensives.vasodilators",
         "drug_classes.cardiovascular.antihypertensives.vasodilators.nitric_oxide_donors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Vasodilators",
-        "Nitric Oxide Donors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Vasodilators", "Nitric Oxide Donors"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.central_sympatholytics",
@@ -692,12 +611,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.central_sympatholytics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Central Sympatholytics"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Central Sympatholytics"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.central_sympatholytics.alpha2_agonists",
@@ -713,13 +627,7 @@
         "drug_classes.cardiovascular.antihypertensives.central_sympatholytics",
         "drug_classes.cardiovascular.antihypertensives.central_sympatholytics.alpha2_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Central Sympatholytics",
-        "Alpha2 Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Central Sympatholytics", "Alpha2 Agonists"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.central_sympatholytics.imidazoline_receptor_agonists",
@@ -756,12 +664,7 @@
         "drug_classes.cardiovascular.antihypertensives",
         "drug_classes.cardiovascular.antihypertensives.alpha_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antihypertensives",
-        "Alpha Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antihypertensives", "Alpha Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antihypertensives.alpha_blockers.nonselective_alpha_blockers",
@@ -814,16 +717,8 @@
       "parentId": "drug_classes.cardiovascular",
       "depth": 2,
       "sortOrder": 39,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular",
-        "drug_classes.cardiovascular.antiarrhythmics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular", "drug_classes.cardiovascular.antiarrhythmics"],
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers",
@@ -838,12 +733,7 @@
         "drug_classes.cardiovascular.antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class I Sodium Channel Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class I Sodium Channel Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers.class_ia",
@@ -859,13 +749,7 @@
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers",
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers.class_ia"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class I Sodium Channel Blockers",
-        "Class Ia"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class I Sodium Channel Blockers", "Class Ia"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers.class_ib",
@@ -881,13 +765,7 @@
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers",
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers.class_ib"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class I Sodium Channel Blockers",
-        "Class Ib"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class I Sodium Channel Blockers", "Class Ib"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers.class_ic",
@@ -903,13 +781,7 @@
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers",
         "drug_classes.cardiovascular.antiarrhythmics.class_i_sodium_channel_blockers.class_ic"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class I Sodium Channel Blockers",
-        "Class Ic"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class I Sodium Channel Blockers", "Class Ic"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_ii_beta_blockers",
@@ -924,12 +796,7 @@
         "drug_classes.cardiovascular.antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.class_ii_beta_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class II Beta Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class II Beta Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_iii_potassium_channel_blockers",
@@ -944,12 +811,7 @@
         "drug_classes.cardiovascular.antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.class_iii_potassium_channel_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class III Potassium Channel Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class III Potassium Channel Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.class_iv_calcium_channel_blockers",
@@ -964,12 +826,7 @@
         "drug_classes.cardiovascular.antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.class_iv_calcium_channel_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Class IV Calcium Channel Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Class IV Calcium Channel Blockers"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics",
@@ -984,12 +841,7 @@
         "drug_classes.cardiovascular.antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Miscellaneous Antiarrhythmics"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Miscellaneous Antiarrhythmics"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics.adenosine",
@@ -1005,13 +857,7 @@
         "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics.adenosine"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Miscellaneous Antiarrhythmics",
-        "Adenosine"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Miscellaneous Antiarrhythmics", "Adenosine"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics.magnesium",
@@ -1027,13 +873,7 @@
         "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics",
         "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics.magnesium"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiarrhythmics",
-        "Miscellaneous Antiarrhythmics",
-        "Magnesium"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiarrhythmics", "Miscellaneous Antiarrhythmics", "Magnesium"]
     },
     {
       "id": "drug_classes.cardiovascular.antiarrhythmics.miscellaneous_antiarrhythmics.cardiac_glycosides",
@@ -1086,16 +926,8 @@
       "parentId": "drug_classes.cardiovascular",
       "depth": 2,
       "sortOrder": 52,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular",
-        "drug_classes.cardiovascular.lipid_lowering_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular", "drug_classes.cardiovascular.lipid_lowering_agents"],
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.statins",
@@ -1110,12 +942,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.statins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Statins"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Statins"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.cholesterol_absorption_inhibitors",
@@ -1130,12 +957,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.cholesterol_absorption_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Cholesterol Absorption Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Cholesterol Absorption Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.pcsk9_inhibitors",
@@ -1150,12 +972,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.pcsk9_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "PCSK9 Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "PCSK9 Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.bempedoic_acid",
@@ -1170,12 +987,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.bempedoic_acid"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Bempedoic Acid"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Bempedoic Acid"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.bile_acid_sequestrants",
@@ -1190,12 +1002,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.bile_acid_sequestrants"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Bile Acid Sequestrants"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Bile Acid Sequestrants"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.fibrates",
@@ -1210,12 +1017,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.fibrates"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Fibrates"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Fibrates"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.omega3_fatty_acids",
@@ -1230,12 +1032,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.omega3_fatty_acids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Omega3 Fatty Acids"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Omega3 Fatty Acids"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.omega3_fatty_acids.epa_products",
@@ -1251,13 +1048,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents.omega3_fatty_acids",
         "drug_classes.cardiovascular.lipid_lowering_agents.omega3_fatty_acids.epa_products"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Omega3 Fatty Acids",
-        "EPA Products"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Omega3 Fatty Acids", "EPA Products"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.omega3_fatty_acids.epa_dha_products",
@@ -1294,12 +1085,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.antisense_and_rnai_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Antisense And RNAi Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Antisense And RNAi Agents"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.antisense_and_rnai_agents.apob_antisense",
@@ -1358,12 +1144,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.mtp_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "MTP Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "MTP Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.lipid_lowering_agents.thyroid_hormone_analogs",
@@ -1378,12 +1159,7 @@
         "drug_classes.cardiovascular.lipid_lowering_agents",
         "drug_classes.cardiovascular.lipid_lowering_agents.thyroid_hormone_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Lipid Lowering Agents",
-        "Thyroid Hormone Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Lipid Lowering Agents", "Thyroid Hormone Analogs"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants",
@@ -1392,16 +1168,8 @@
       "parentId": "drug_classes.cardiovascular",
       "depth": 2,
       "sortOrder": 67,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular",
-        "drug_classes.cardiovascular.anticoagulants"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular", "drug_classes.cardiovascular.anticoagulants"],
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.heparins",
@@ -1416,12 +1184,7 @@
         "drug_classes.cardiovascular.anticoagulants",
         "drug_classes.cardiovascular.anticoagulants.heparins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Heparins"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Heparins"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.heparins.unfractionated_heparin",
@@ -1437,13 +1200,7 @@
         "drug_classes.cardiovascular.anticoagulants.heparins",
         "drug_classes.cardiovascular.anticoagulants.heparins.unfractionated_heparin"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Heparins",
-        "Unfractionated Heparin"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Heparins", "Unfractionated Heparin"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.heparins.low_molecular_weight_heparins",
@@ -1459,13 +1216,7 @@
         "drug_classes.cardiovascular.anticoagulants.heparins",
         "drug_classes.cardiovascular.anticoagulants.heparins.low_molecular_weight_heparins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Heparins",
-        "Low Molecular Weight Heparins"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Heparins", "Low Molecular Weight Heparins"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors",
@@ -1480,12 +1231,7 @@
         "drug_classes.cardiovascular.anticoagulants",
         "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Direct Thrombin Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Direct Thrombin Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors.parenteral",
@@ -1501,13 +1247,7 @@
         "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors",
         "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors.parenteral"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Direct Thrombin Inhibitors",
-        "Parenteral"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Direct Thrombin Inhibitors", "Parenteral"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors.oral",
@@ -1523,13 +1263,7 @@
         "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors",
         "drug_classes.cardiovascular.anticoagulants.direct_thrombin_inhibitors.oral"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Direct Thrombin Inhibitors",
-        "Oral"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Direct Thrombin Inhibitors", "Oral"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors",
@@ -1544,12 +1278,7 @@
         "drug_classes.cardiovascular.anticoagulants",
         "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Factor Xa Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Factor Xa Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors.oral",
@@ -1565,13 +1294,7 @@
         "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors",
         "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors.oral"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Factor Xa Inhibitors",
-        "Oral"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Factor Xa Inhibitors", "Oral"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors.parenteral",
@@ -1587,13 +1310,7 @@
         "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors",
         "drug_classes.cardiovascular.anticoagulants.factor_xa_inhibitors.parenteral"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Factor Xa Inhibitors",
-        "Parenteral"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Factor Xa Inhibitors", "Parenteral"]
     },
     {
       "id": "drug_classes.cardiovascular.anticoagulants.vitamin_k_antagonists",
@@ -1608,12 +1325,7 @@
         "drug_classes.cardiovascular.anticoagulants",
         "drug_classes.cardiovascular.anticoagulants.vitamin_k_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Anticoagulants",
-        "Vitamin K Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Anticoagulants", "Vitamin K Antagonists"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets",
@@ -1622,16 +1334,8 @@
       "parentId": "drug_classes.cardiovascular",
       "depth": 2,
       "sortOrder": 78,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular",
-        "drug_classes.cardiovascular.antiplatelets"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular", "drug_classes.cardiovascular.antiplatelets"],
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets.cox_inhibitors",
@@ -1646,12 +1350,7 @@
         "drug_classes.cardiovascular.antiplatelets",
         "drug_classes.cardiovascular.antiplatelets.cox_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets",
-        "Cox Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets", "Cox Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets.cox_inhibitors.irreversible_cox1_inhibitors",
@@ -1688,12 +1387,7 @@
         "drug_classes.cardiovascular.antiplatelets",
         "drug_classes.cardiovascular.antiplatelets.p2y12_receptor_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets",
-        "P2Y12 Receptor Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets", "P2Y12 Receptor Antagonists"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets.p2y12_receptor_antagonists.thienopyridines",
@@ -1709,13 +1403,7 @@
         "drug_classes.cardiovascular.antiplatelets.p2y12_receptor_antagonists",
         "drug_classes.cardiovascular.antiplatelets.p2y12_receptor_antagonists.thienopyridines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets",
-        "P2Y12 Receptor Antagonists",
-        "Thienopyridines"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets", "P2Y12 Receptor Antagonists", "Thienopyridines"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets.p2y12_receptor_antagonists.cyclopentyl_triazolo_pyrimidines",
@@ -1742,7 +1430,7 @@
     {
       "id": "drug_classes.cardiovascular.antiplatelets.gp_iib_iiia_inhibitors",
       "key": "gp_iib_iiia_inhibitors",
-      "label": "GP Iib Iiia Inhibitors",
+      "label": "GP IIb-IIIa Inhibitors",
       "parentId": "drug_classes.cardiovascular.antiplatelets",
       "depth": 3,
       "sortOrder": 84,
@@ -1752,12 +1440,7 @@
         "drug_classes.cardiovascular.antiplatelets",
         "drug_classes.cardiovascular.antiplatelets.gp_iib_iiia_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets",
-        "GP Iib Iiia Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets", "GP IIb-IIIa Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets.phosphodiesterase_inhibitors",
@@ -1772,12 +1455,7 @@
         "drug_classes.cardiovascular.antiplatelets",
         "drug_classes.cardiovascular.antiplatelets.phosphodiesterase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets",
-        "Phosphodiesterase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets", "Phosphodiesterase Inhibitors"]
     },
     {
       "id": "drug_classes.cardiovascular.antiplatelets.par1_antagonists",
@@ -1792,12 +1470,7 @@
         "drug_classes.cardiovascular.antiplatelets",
         "drug_classes.cardiovascular.antiplatelets.par1_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Antiplatelets",
-        "PAR1 Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Antiplatelets", "PAR1 Antagonists"]
     },
     {
       "id": "drug_classes.cardiovascular.thrombolytics",
@@ -1806,16 +1479,8 @@
       "parentId": "drug_classes.cardiovascular",
       "depth": 2,
       "sortOrder": 87,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.cardiovascular",
-        "drug_classes.cardiovascular.thrombolytics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Thrombolytics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.cardiovascular", "drug_classes.cardiovascular.thrombolytics"],
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Thrombolytics"]
     },
     {
       "id": "drug_classes.cardiovascular.thrombolytics.tpa_analogs",
@@ -1830,12 +1495,7 @@
         "drug_classes.cardiovascular.thrombolytics",
         "drug_classes.cardiovascular.thrombolytics.tpa_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Thrombolytics",
-        "tPA Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Thrombolytics", "tPA Analogs"]
     },
     {
       "id": "drug_classes.cardiovascular.thrombolytics.plasminogen_activators",
@@ -1850,12 +1510,7 @@
         "drug_classes.cardiovascular.thrombolytics",
         "drug_classes.cardiovascular.thrombolytics.plasminogen_activators"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Cardiovascular",
-        "Thrombolytics",
-        "Plasminogen Activators"
-      ]
+      "pathLabels": ["Drug Classes", "Cardiovascular", "Thrombolytics", "Plasminogen Activators"]
     },
     {
       "id": "drug_classes.central_nervous_system",
@@ -1864,14 +1519,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 90,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.central_nervous_system"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.central_nervous_system"],
+      "pathLabels": ["Drug Classes", "Central Nervous System"]
     },
     {
       "id": "drug_classes.central_nervous_system.antidepressants",
@@ -1885,11 +1534,7 @@
         "drug_classes.central_nervous_system",
         "drug_classes.central_nervous_system.antidepressants"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antidepressants"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antidepressants"]
     },
     {
       "id": "drug_classes.central_nervous_system.antidepressants.monoamine_reuptake_inhibitors",
@@ -1904,12 +1549,7 @@
         "drug_classes.central_nervous_system.antidepressants",
         "drug_classes.central_nervous_system.antidepressants.monoamine_reuptake_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antidepressants",
-        "Monoamine Reuptake Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antidepressants", "Monoamine Reuptake Inhibitors"]
     },
     {
       "id": "drug_classes.central_nervous_system.antidepressants.monoamine_reuptake_inhibitors.ssris",
@@ -2012,12 +1652,7 @@
         "drug_classes.central_nervous_system.antidepressants",
         "drug_classes.central_nervous_system.antidepressants.monoamine_oxidase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antidepressants",
-        "Monoamine Oxidase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antidepressants", "Monoamine Oxidase Inhibitors"]
     },
     {
       "id": "drug_classes.central_nervous_system.antidepressants.monoamine_oxidase_inhibitors.nonselective_irreversible_maoi",
@@ -2076,12 +1711,7 @@
         "drug_classes.central_nervous_system.antidepressants",
         "drug_classes.central_nervous_system.antidepressants.atypical_antidepressants"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antidepressants",
-        "Atypical Antidepressants"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antidepressants", "Atypical Antidepressants"]
     },
     {
       "id": "drug_classes.central_nervous_system.antidepressants.atypical_antidepressants.dopamine_norepinephrine_reuptake_inhibitors",
@@ -2183,11 +1813,7 @@
         "drug_classes.central_nervous_system",
         "drug_classes.central_nervous_system.antipsychotics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antipsychotics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antipsychotics"]
     },
     {
       "id": "drug_classes.central_nervous_system.antipsychotics.typical_antipsychotics",
@@ -2202,12 +1828,7 @@
         "drug_classes.central_nervous_system.antipsychotics",
         "drug_classes.central_nervous_system.antipsychotics.typical_antipsychotics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antipsychotics",
-        "Typical Antipsychotics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antipsychotics", "Typical Antipsychotics"]
     },
     {
       "id": "drug_classes.central_nervous_system.antipsychotics.typical_antipsychotics.low_potency",
@@ -2266,12 +1887,7 @@
         "drug_classes.central_nervous_system.antipsychotics",
         "drug_classes.central_nervous_system.antipsychotics.atypical_antipsychotics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antipsychotics",
-        "Atypical Antipsychotics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antipsychotics", "Atypical Antipsychotics"]
     },
     {
       "id": "drug_classes.central_nervous_system.antipsychotics.atypical_antipsychotics.serotonin_dopamine_antagonists",
@@ -2329,11 +1945,7 @@
         "drug_classes.central_nervous_system",
         "drug_classes.central_nervous_system.antiepileptics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antiepileptics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antiepileptics"]
     },
     {
       "id": "drug_classes.central_nervous_system.antiepileptics.sodium_channel_blockers",
@@ -2348,12 +1960,7 @@
         "drug_classes.central_nervous_system.antiepileptics",
         "drug_classes.central_nervous_system.antiepileptics.sodium_channel_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antiepileptics",
-        "Sodium Channel Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antiepileptics", "Sodium Channel Blockers"]
     },
     {
       "id": "drug_classes.central_nervous_system.antiepileptics.calcium_channel_modulators",
@@ -2368,12 +1975,7 @@
         "drug_classes.central_nervous_system.antiepileptics",
         "drug_classes.central_nervous_system.antiepileptics.calcium_channel_modulators"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antiepileptics",
-        "Calcium Channel Modulators"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antiepileptics", "Calcium Channel Modulators"]
     },
     {
       "id": "drug_classes.central_nervous_system.antiepileptics.calcium_channel_modulators.t_type_calcium_channel_agents",
@@ -2432,12 +2034,7 @@
         "drug_classes.central_nervous_system.antiepileptics",
         "drug_classes.central_nervous_system.antiepileptics.gabaergic_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antiepileptics",
-        "Gabaergic Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antiepileptics", "Gabaergic Agents"]
     },
     {
       "id": "drug_classes.central_nervous_system.antiepileptics.gabaergic_agents.gaba_a_positive_allosteric_modulators",
@@ -2518,12 +2115,7 @@
         "drug_classes.central_nervous_system.antiepileptics",
         "drug_classes.central_nervous_system.antiepileptics.sv2a_ligands"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antiepileptics",
-        "SV2A Ligands"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antiepileptics", "SV2A Ligands"]
     },
     {
       "id": "drug_classes.central_nervous_system.antiepileptics.glutamate_modulators",
@@ -2538,12 +2130,7 @@
         "drug_classes.central_nervous_system.antiepileptics",
         "drug_classes.central_nervous_system.antiepileptics.glutamate_modulators"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Antiepileptics",
-        "Glutamate Modulators"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Antiepileptics", "Glutamate Modulators"]
     },
     {
       "id": "drug_classes.central_nervous_system.antiepileptics.glutamate_modulators.ampa_antagonists",
@@ -2601,11 +2188,7 @@
         "drug_classes.central_nervous_system",
         "drug_classes.central_nervous_system.analgesics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics",
@@ -2620,12 +2203,7 @@
         "drug_classes.central_nervous_system.analgesics",
         "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Nonopioid Analgesics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Nonopioid Analgesics"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics.nsaids",
@@ -2641,13 +2219,7 @@
         "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics",
         "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics.nsaids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Nonopioid Analgesics",
-        "NSAIDs"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Nonopioid Analgesics", "NSAIDs"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics.nsaids.nonselective_cox_inhibitors",
@@ -2711,13 +2283,7 @@
         "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics",
         "drug_classes.central_nervous_system.analgesics.nonopioid_analgesics.acetaminophen"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Nonopioid Analgesics",
-        "Acetaminophen"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Nonopioid Analgesics", "Acetaminophen"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.opioid_analgesics",
@@ -2732,12 +2298,7 @@
         "drug_classes.central_nervous_system.analgesics",
         "drug_classes.central_nervous_system.analgesics.opioid_analgesics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Opioid Analgesics"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Opioid Analgesics"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.opioid_analgesics.full_mu_agonists",
@@ -2753,13 +2314,7 @@
         "drug_classes.central_nervous_system.analgesics.opioid_analgesics",
         "drug_classes.central_nervous_system.analgesics.opioid_analgesics.full_mu_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Opioid Analgesics",
-        "Full Mu Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Opioid Analgesics", "Full Mu Agonists"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.opioid_analgesics.partial_mu_agonists",
@@ -2775,13 +2330,7 @@
         "drug_classes.central_nervous_system.analgesics.opioid_analgesics",
         "drug_classes.central_nervous_system.analgesics.opioid_analgesics.partial_mu_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Opioid Analgesics",
-        "Partial Mu Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Opioid Analgesics", "Partial Mu Agonists"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.opioid_analgesics.mixed_agonist_antagonists",
@@ -2818,12 +2367,7 @@
         "drug_classes.central_nervous_system.analgesics",
         "drug_classes.central_nervous_system.analgesics.migraine_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Migraine Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Migraine Agents"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.migraine_agents.triptans",
@@ -2839,13 +2383,7 @@
         "drug_classes.central_nervous_system.analgesics.migraine_agents",
         "drug_classes.central_nervous_system.analgesics.migraine_agents.triptans"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Migraine Agents",
-        "Triptans"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Migraine Agents", "Triptans"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.migraine_agents.cgrp_receptor_antagonists",
@@ -2883,13 +2421,7 @@
         "drug_classes.central_nervous_system.analgesics.migraine_agents",
         "drug_classes.central_nervous_system.analgesics.migraine_agents.ditans"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Migraine Agents",
-        "Ditans"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Migraine Agents", "Ditans"]
     },
     {
       "id": "drug_classes.central_nervous_system.analgesics.migraine_agents.ergot_derivatives",
@@ -2905,13 +2437,7 @@
         "drug_classes.central_nervous_system.analgesics.migraine_agents",
         "drug_classes.central_nervous_system.analgesics.migraine_agents.ergot_derivatives"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Central Nervous System",
-        "Analgesics",
-        "Migraine Agents",
-        "Ergot Derivatives"
-      ]
+      "pathLabels": ["Drug Classes", "Central Nervous System", "Analgesics", "Migraine Agents", "Ergot Derivatives"]
     },
     {
       "id": "drug_classes.gastrointestinal",
@@ -2920,14 +2446,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 140,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.gastrointestinal"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.gastrointestinal"],
+      "pathLabels": ["Drug Classes", "Gastrointestinal"]
     },
     {
       "id": "drug_classes.gastrointestinal.acid_related_disorders",
@@ -2941,11 +2461,7 @@
         "drug_classes.gastrointestinal",
         "drug_classes.gastrointestinal.acid_related_disorders"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Acid Related Disorders"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Acid Related Disorders"]
     },
     {
       "id": "drug_classes.gastrointestinal.acid_related_disorders.proton_pump_inhibitors",
@@ -2960,12 +2476,7 @@
         "drug_classes.gastrointestinal.acid_related_disorders",
         "drug_classes.gastrointestinal.acid_related_disorders.proton_pump_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Acid Related Disorders",
-        "Proton Pump Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Acid Related Disorders", "Proton Pump Inhibitors"]
     },
     {
       "id": "drug_classes.gastrointestinal.acid_related_disorders.h2_receptor_antagonists",
@@ -2980,12 +2491,7 @@
         "drug_classes.gastrointestinal.acid_related_disorders",
         "drug_classes.gastrointestinal.acid_related_disorders.h2_receptor_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Acid Related Disorders",
-        "H2 Receptor Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Acid Related Disorders", "H2 Receptor Antagonists"]
     },
     {
       "id": "drug_classes.gastrointestinal.acid_related_disorders.antacids",
@@ -3000,12 +2506,7 @@
         "drug_classes.gastrointestinal.acid_related_disorders",
         "drug_classes.gastrointestinal.acid_related_disorders.antacids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Acid Related Disorders",
-        "Antacids"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Acid Related Disorders", "Antacids"]
     },
     {
       "id": "drug_classes.gastrointestinal.acid_related_disorders.mucosal_protective_agents",
@@ -3020,12 +2521,7 @@
         "drug_classes.gastrointestinal.acid_related_disorders",
         "drug_classes.gastrointestinal.acid_related_disorders.mucosal_protective_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Acid Related Disorders",
-        "Mucosal Protective Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Acid Related Disorders", "Mucosal Protective Agents"]
     },
     {
       "id": "drug_classes.gastrointestinal.acid_related_disorders.prostaglandin_analogs",
@@ -3040,12 +2536,7 @@
         "drug_classes.gastrointestinal.acid_related_disorders",
         "drug_classes.gastrointestinal.acid_related_disorders.prostaglandin_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Acid Related Disorders",
-        "Prostaglandin Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Acid Related Disorders", "Prostaglandin Analogs"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics",
@@ -3054,16 +2545,8 @@
       "parentId": "drug_classes.gastrointestinal",
       "depth": 2,
       "sortOrder": 147,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.gastrointestinal",
-        "drug_classes.gastrointestinal.antiemetics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.gastrointestinal", "drug_classes.gastrointestinal.antiemetics"],
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics.5ht3_antagonists",
@@ -3078,12 +2561,7 @@
         "drug_classes.gastrointestinal.antiemetics",
         "drug_classes.gastrointestinal.antiemetics.5ht3_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics",
-        "5HT3 Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics", "5HT3 Antagonists"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics.dopamine_antagonists",
@@ -3098,12 +2576,7 @@
         "drug_classes.gastrointestinal.antiemetics",
         "drug_classes.gastrointestinal.antiemetics.dopamine_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics",
-        "Dopamine Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics", "Dopamine Antagonists"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics.nk1_antagonists",
@@ -3118,12 +2591,7 @@
         "drug_classes.gastrointestinal.antiemetics",
         "drug_classes.gastrointestinal.antiemetics.nk1_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics",
-        "NK1 Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics", "NK1 Antagonists"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics.antihistamines",
@@ -3138,12 +2606,7 @@
         "drug_classes.gastrointestinal.antiemetics",
         "drug_classes.gastrointestinal.antiemetics.antihistamines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics",
-        "Antihistamines"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics", "Antihistamines"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics.anticholinergics",
@@ -3158,12 +2621,7 @@
         "drug_classes.gastrointestinal.antiemetics",
         "drug_classes.gastrointestinal.antiemetics.anticholinergics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics",
-        "Anticholinergics"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics", "Anticholinergics"]
     },
     {
       "id": "drug_classes.gastrointestinal.antiemetics.cannabinoids",
@@ -3178,12 +2636,7 @@
         "drug_classes.gastrointestinal.antiemetics",
         "drug_classes.gastrointestinal.antiemetics.cannabinoids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antiemetics",
-        "Cannabinoids"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antiemetics", "Cannabinoids"]
     },
     {
       "id": "drug_classes.gastrointestinal.prokinetic_agents",
@@ -3192,16 +2645,8 @@
       "parentId": "drug_classes.gastrointestinal",
       "depth": 2,
       "sortOrder": 154,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.gastrointestinal",
-        "drug_classes.gastrointestinal.prokinetic_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Prokinetic Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.gastrointestinal", "drug_classes.gastrointestinal.prokinetic_agents"],
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Prokinetic Agents"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives",
@@ -3210,16 +2655,8 @@
       "parentId": "drug_classes.gastrointestinal",
       "depth": 2,
       "sortOrder": 155,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.gastrointestinal",
-        "drug_classes.gastrointestinal.laxatives"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.gastrointestinal", "drug_classes.gastrointestinal.laxatives"],
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives.bulk_forming",
@@ -3234,12 +2671,7 @@
         "drug_classes.gastrointestinal.laxatives",
         "drug_classes.gastrointestinal.laxatives.bulk_forming"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives",
-        "Bulk Forming"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives", "Bulk Forming"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives.osmotic",
@@ -3254,12 +2686,7 @@
         "drug_classes.gastrointestinal.laxatives",
         "drug_classes.gastrointestinal.laxatives.osmotic"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives",
-        "Osmotic"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives", "Osmotic"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives.stimulant",
@@ -3274,12 +2701,7 @@
         "drug_classes.gastrointestinal.laxatives",
         "drug_classes.gastrointestinal.laxatives.stimulant"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives",
-        "Stimulant"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives", "Stimulant"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives.stool_softeners",
@@ -3294,12 +2716,7 @@
         "drug_classes.gastrointestinal.laxatives",
         "drug_classes.gastrointestinal.laxatives.stool_softeners"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives",
-        "Stool Softeners"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives", "Stool Softeners"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives.secretagogues",
@@ -3314,12 +2731,7 @@
         "drug_classes.gastrointestinal.laxatives",
         "drug_classes.gastrointestinal.laxatives.secretagogues"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives",
-        "Secretagogues"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives", "Secretagogues"]
     },
     {
       "id": "drug_classes.gastrointestinal.laxatives.peripherally_acting_mu_opioid_antagonists",
@@ -3334,12 +2746,7 @@
         "drug_classes.gastrointestinal.laxatives",
         "drug_classes.gastrointestinal.laxatives.peripherally_acting_mu_opioid_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Laxatives",
-        "Peripherally Acting Mu Opioid Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Laxatives", "Peripherally Acting Mu Opioid Antagonists"]
     },
     {
       "id": "drug_classes.gastrointestinal.antidiarrheals",
@@ -3348,16 +2755,8 @@
       "parentId": "drug_classes.gastrointestinal",
       "depth": 2,
       "sortOrder": 162,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.gastrointestinal",
-        "drug_classes.gastrointestinal.antidiarrheals"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antidiarrheals"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.gastrointestinal", "drug_classes.gastrointestinal.antidiarrheals"],
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antidiarrheals"]
     },
     {
       "id": "drug_classes.gastrointestinal.antidiarrheals.peripheral_opioid_agonists",
@@ -3372,12 +2771,7 @@
         "drug_classes.gastrointestinal.antidiarrheals",
         "drug_classes.gastrointestinal.antidiarrheals.peripheral_opioid_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antidiarrheals",
-        "Peripheral Opioid Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antidiarrheals", "Peripheral Opioid Agonists"]
     },
     {
       "id": "drug_classes.gastrointestinal.antidiarrheals.bismuth_agents",
@@ -3392,12 +2786,7 @@
         "drug_classes.gastrointestinal.antidiarrheals",
         "drug_classes.gastrointestinal.antidiarrheals.bismuth_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antidiarrheals",
-        "Bismuth Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antidiarrheals", "Bismuth Agents"]
     },
     {
       "id": "drug_classes.gastrointestinal.antidiarrheals.somatostatin_analogs",
@@ -3412,12 +2801,7 @@
         "drug_classes.gastrointestinal.antidiarrheals",
         "drug_classes.gastrointestinal.antidiarrheals.somatostatin_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Antidiarrheals",
-        "Somatostatin Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Antidiarrheals", "Somatostatin Analogs"]
     },
     {
       "id": "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents",
@@ -3431,11 +2815,7 @@
         "drug_classes.gastrointestinal",
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Inflammatory Bowel Disease Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Inflammatory Bowel Disease Agents"]
     },
     {
       "id": "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.5_aminosalicylates",
@@ -3450,12 +2830,7 @@
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents",
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.5_aminosalicylates"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Inflammatory Bowel Disease Agents",
-        "5 Aminosalicylates"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Inflammatory Bowel Disease Agents", "5 Aminosalicylates"]
     },
     {
       "id": "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.corticosteroids",
@@ -3470,12 +2845,7 @@
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents",
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.corticosteroids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Inflammatory Bowel Disease Agents",
-        "Corticosteroids"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Inflammatory Bowel Disease Agents", "Corticosteroids"]
     },
     {
       "id": "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.immunomodulators",
@@ -3490,12 +2860,7 @@
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents",
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.immunomodulators"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Inflammatory Bowel Disease Agents",
-        "Immunomodulators"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Inflammatory Bowel Disease Agents", "Immunomodulators"]
     },
     {
       "id": "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.biologics",
@@ -3510,12 +2875,7 @@
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents",
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.biologics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Inflammatory Bowel Disease Agents",
-        "Biologics"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Inflammatory Bowel Disease Agents", "Biologics"]
     },
     {
       "id": "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.biologics.anti_tnf_agents",
@@ -3596,12 +2956,7 @@
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents",
         "drug_classes.gastrointestinal.inflammatory_bowel_disease_agents.jak_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Gastrointestinal",
-        "Inflammatory Bowel Disease Agents",
-        "JAK Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Gastrointestinal", "Inflammatory Bowel Disease Agents", "JAK Inhibitors"]
     },
     {
       "id": "drug_classes.endocrine",
@@ -3610,14 +2965,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 175,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.endocrine"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.endocrine"],
+      "pathLabels": ["Drug Classes", "Endocrine"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents",
@@ -3626,16 +2975,8 @@
       "parentId": "drug_classes.endocrine",
       "depth": 2,
       "sortOrder": 176,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.endocrine",
-        "drug_classes.endocrine.antidiabetic_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.endocrine", "drug_classes.endocrine.antidiabetic_agents"],
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.insulins",
@@ -3650,12 +2991,7 @@
         "drug_classes.endocrine.antidiabetic_agents",
         "drug_classes.endocrine.antidiabetic_agents.insulins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Insulins"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Insulins"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.insulins.rapid_acting",
@@ -3671,13 +3007,7 @@
         "drug_classes.endocrine.antidiabetic_agents.insulins",
         "drug_classes.endocrine.antidiabetic_agents.insulins.rapid_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Insulins",
-        "Rapid Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Insulins", "Rapid Acting"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.insulins.short_acting",
@@ -3693,13 +3023,7 @@
         "drug_classes.endocrine.antidiabetic_agents.insulins",
         "drug_classes.endocrine.antidiabetic_agents.insulins.short_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Insulins",
-        "Short Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Insulins", "Short Acting"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.insulins.intermediate_acting",
@@ -3715,13 +3039,7 @@
         "drug_classes.endocrine.antidiabetic_agents.insulins",
         "drug_classes.endocrine.antidiabetic_agents.insulins.intermediate_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Insulins",
-        "Intermediate Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Insulins", "Intermediate Acting"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.insulins.long_acting",
@@ -3737,13 +3055,7 @@
         "drug_classes.endocrine.antidiabetic_agents.insulins",
         "drug_classes.endocrine.antidiabetic_agents.insulins.long_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Insulins",
-        "Long Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Insulins", "Long Acting"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.insulins.ultra_long_acting",
@@ -3759,13 +3071,7 @@
         "drug_classes.endocrine.antidiabetic_agents.insulins",
         "drug_classes.endocrine.antidiabetic_agents.insulins.ultra_long_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Insulins",
-        "Ultra Long Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Insulins", "Ultra Long Acting"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
@@ -3780,12 +3086,7 @@
         "drug_classes.endocrine.antidiabetic_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.biguanides",
@@ -3801,13 +3102,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.biguanides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "Biguanides"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "Biguanides"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.sulfonylureas",
@@ -3823,13 +3118,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.sulfonylureas"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "Sulfonylureas"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "Sulfonylureas"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.meglitinides",
@@ -3845,13 +3134,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.meglitinides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "Meglitinides"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "Meglitinides"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.thiazolidinediones",
@@ -3867,13 +3150,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.thiazolidinediones"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "Thiazolidinediones"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "Thiazolidinediones"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.dpp4_inhibitors",
@@ -3889,13 +3166,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.dpp4_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "DPP4 Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "DPP4 Inhibitors"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.glp1_receptor_agonists",
@@ -3911,13 +3182,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.glp1_receptor_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "GLP1 Receptor Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "GLP1 Receptor Agonists"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.sglt2_inhibitors",
@@ -3933,13 +3198,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.sglt2_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "SGLT2 Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "SGLT2 Inhibitors"]
     },
     {
       "id": "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.alpha_glucosidase_inhibitors",
@@ -3977,13 +3236,7 @@
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents",
         "drug_classes.endocrine.antidiabetic_agents.non_insulin_agents.amylin_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Antidiabetic Agents",
-        "Non Insulin Agents",
-        "Amylin Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Antidiabetic Agents", "Non Insulin Agents", "Amylin Analogs"]
     },
     {
       "id": "drug_classes.endocrine.thyroid_agents",
@@ -3992,16 +3245,8 @@
       "parentId": "drug_classes.endocrine",
       "depth": 2,
       "sortOrder": 193,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.endocrine",
-        "drug_classes.endocrine.thyroid_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Thyroid Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.endocrine", "drug_classes.endocrine.thyroid_agents"],
+      "pathLabels": ["Drug Classes", "Endocrine", "Thyroid Agents"]
     },
     {
       "id": "drug_classes.endocrine.thyroid_agents.thyroid_hormones",
@@ -4016,12 +3261,7 @@
         "drug_classes.endocrine.thyroid_agents",
         "drug_classes.endocrine.thyroid_agents.thyroid_hormones"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Thyroid Agents",
-        "Thyroid Hormones"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Thyroid Agents", "Thyroid Hormones"]
     },
     {
       "id": "drug_classes.endocrine.thyroid_agents.antithyroid_agents",
@@ -4036,12 +3276,7 @@
         "drug_classes.endocrine.thyroid_agents",
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Thyroid Agents",
-        "Antithyroid Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Thyroid Agents", "Antithyroid Agents"]
     },
     {
       "id": "drug_classes.endocrine.thyroid_agents.antithyroid_agents.thionamides",
@@ -4057,13 +3292,7 @@
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents",
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents.thionamides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Thyroid Agents",
-        "Antithyroid Agents",
-        "Thionamides"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Thyroid Agents", "Antithyroid Agents", "Thionamides"]
     },
     {
       "id": "drug_classes.endocrine.thyroid_agents.antithyroid_agents.iodine_agents",
@@ -4079,13 +3308,7 @@
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents",
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents.iodine_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Thyroid Agents",
-        "Antithyroid Agents",
-        "Iodine Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Thyroid Agents", "Antithyroid Agents", "Iodine Agents"]
     },
     {
       "id": "drug_classes.endocrine.thyroid_agents.antithyroid_agents.radioactive_iodine",
@@ -4101,13 +3324,7 @@
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents",
         "drug_classes.endocrine.thyroid_agents.antithyroid_agents.radioactive_iodine"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Thyroid Agents",
-        "Antithyroid Agents",
-        "Radioactive Iodine"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Thyroid Agents", "Antithyroid Agents", "Radioactive Iodine"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators",
@@ -4116,16 +3333,8 @@
       "parentId": "drug_classes.endocrine",
       "depth": 2,
       "sortOrder": 199,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.endocrine",
-        "drug_classes.endocrine.sex_hormones_and_modulators"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.endocrine", "drug_classes.endocrine.sex_hormones_and_modulators"],
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.estrogens",
@@ -4140,12 +3349,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.estrogens"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "Estrogens"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "Estrogens"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.progestins",
@@ -4160,12 +3364,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.progestins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "Progestins"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "Progestins"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.androgens",
@@ -4180,12 +3379,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.androgens"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "Androgens"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "Androgens"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.serms",
@@ -4200,12 +3394,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.serms"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "SERMs"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "SERMs"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.sarms",
@@ -4220,12 +3409,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.sarms"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "SARMs"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "SARMs"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.aromatase_inhibitors",
@@ -4240,12 +3424,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.aromatase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "Aromatase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "Aromatase Inhibitors"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.antiandrogens",
@@ -4260,12 +3439,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.antiandrogens"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "Antiandrogens"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "Antiandrogens"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents",
@@ -4280,12 +3454,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators",
         "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "GnRH Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "GnRH Agents"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents.gnrh_agonists",
@@ -4301,13 +3470,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents",
         "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents.gnrh_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "GnRH Agents",
-        "GnRH Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "GnRH Agents", "GnRH Agonists"]
     },
     {
       "id": "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents.gnrh_antagonists",
@@ -4323,13 +3486,7 @@
         "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents",
         "drug_classes.endocrine.sex_hormones_and_modulators.gnrh_agents.gnrh_antagonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Sex Hormones And Modulators",
-        "GnRH Agents",
-        "GnRH Antagonists"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Sex Hormones And Modulators", "GnRH Agents", "GnRH Antagonists"]
     },
     {
       "id": "drug_classes.endocrine.corticosteroids",
@@ -4338,16 +3495,8 @@
       "parentId": "drug_classes.endocrine",
       "depth": 2,
       "sortOrder": 210,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.endocrine",
-        "drug_classes.endocrine.corticosteroids"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Corticosteroids"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.endocrine", "drug_classes.endocrine.corticosteroids"],
+      "pathLabels": ["Drug Classes", "Endocrine", "Corticosteroids"]
     },
     {
       "id": "drug_classes.endocrine.corticosteroids.glucocorticoids",
@@ -4362,12 +3511,7 @@
         "drug_classes.endocrine.corticosteroids",
         "drug_classes.endocrine.corticosteroids.glucocorticoids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Corticosteroids",
-        "Glucocorticoids"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Corticosteroids", "Glucocorticoids"]
     },
     {
       "id": "drug_classes.endocrine.corticosteroids.mineralocorticoids",
@@ -4382,12 +3526,7 @@
         "drug_classes.endocrine.corticosteroids",
         "drug_classes.endocrine.corticosteroids.mineralocorticoids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Endocrine",
-        "Corticosteroids",
-        "Mineralocorticoids"
-      ]
+      "pathLabels": ["Drug Classes", "Endocrine", "Corticosteroids", "Mineralocorticoids"]
     },
     {
       "id": "drug_classes.anti_infectives",
@@ -4396,14 +3535,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 213,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anti_infectives"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anti_infectives"],
+      "pathLabels": ["Drug Classes", "Anti Infectives"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials",
@@ -4412,16 +3545,8 @@
       "parentId": "drug_classes.anti_infectives",
       "depth": 2,
       "sortOrder": 214,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anti_infectives",
-        "drug_classes.anti_infectives.antibacterials"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anti_infectives", "drug_classes.anti_infectives.antibacterials"],
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.beta_lactams",
@@ -4436,12 +3561,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.beta_lactams"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Beta Lactams"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Beta Lactams"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.beta_lactams.penicillins",
@@ -4457,13 +3577,7 @@
         "drug_classes.anti_infectives.antibacterials.beta_lactams",
         "drug_classes.anti_infectives.antibacterials.beta_lactams.penicillins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Beta Lactams",
-        "Penicillins"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Beta Lactams", "Penicillins"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.beta_lactams.penicillins.natural_penicillins",
@@ -4599,13 +3713,7 @@
         "drug_classes.anti_infectives.antibacterials.beta_lactams",
         "drug_classes.anti_infectives.antibacterials.beta_lactams.cephalosporins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Beta Lactams",
-        "Cephalosporins"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Beta Lactams", "Cephalosporins"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.beta_lactams.cephalosporins.first_generation",
@@ -4741,13 +3849,7 @@
         "drug_classes.anti_infectives.antibacterials.beta_lactams",
         "drug_classes.anti_infectives.antibacterials.beta_lactams.carbapenems"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Beta Lactams",
-        "Carbapenems"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Beta Lactams", "Carbapenems"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.beta_lactams.monobactams",
@@ -4763,13 +3865,7 @@
         "drug_classes.anti_infectives.antibacterials.beta_lactams",
         "drug_classes.anti_infectives.antibacterials.beta_lactams.monobactams"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Beta Lactams",
-        "Monobactams"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Beta Lactams", "Monobactams"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.glycopeptides",
@@ -4784,12 +3880,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.glycopeptides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Glycopeptides"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Glycopeptides"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.lipoglycopeptides",
@@ -4804,12 +3895,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.lipoglycopeptides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Lipoglycopeptides"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Lipoglycopeptides"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.protein_synthesis_inhibitors",
@@ -4824,12 +3910,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.protein_synthesis_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Protein Synthesis Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Protein Synthesis Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.protein_synthesis_inhibitors.aminoglycosides",
@@ -4937,13 +4018,7 @@
         "drug_classes.anti_infectives.antibacterials.protein_synthesis_inhibitors",
         "drug_classes.anti_infectives.antibacterials.protein_synthesis_inhibitors.macrolides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Protein Synthesis Inhibitors",
-        "Macrolides"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Protein Synthesis Inhibitors", "Macrolides"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.protein_synthesis_inhibitors.lincosamides",
@@ -5046,12 +4121,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.nucleic_acid_synthesis_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Nucleic Acid Synthesis Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Nucleic Acid Synthesis Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.nucleic_acid_synthesis_inhibitors.fluoroquinolones",
@@ -5132,12 +4202,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.antimetabolites"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Antimetabolites"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Antimetabolites"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.antimetabolites.folate_synthesis_inhibitors",
@@ -5222,12 +4287,7 @@
         "drug_classes.anti_infectives.antibacterials",
         "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Cell Membrane Disruptors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Cell Membrane Disruptors"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors.lipopeptides",
@@ -5243,13 +4303,7 @@
         "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors",
         "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors.lipopeptides"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Cell Membrane Disruptors",
-        "Lipopeptides"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Cell Membrane Disruptors", "Lipopeptides"]
     },
     {
       "id": "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors.polymyxins",
@@ -5265,13 +4319,7 @@
         "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors",
         "drug_classes.anti_infectives.antibacterials.cell_membrane_disruptors.polymyxins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antibacterials",
-        "Cell Membrane Disruptors",
-        "Polymyxins"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antibacterials", "Cell Membrane Disruptors", "Polymyxins"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals",
@@ -5280,16 +4328,8 @@
       "parentId": "drug_classes.anti_infectives",
       "depth": 2,
       "sortOrder": 253,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anti_infectives",
-        "drug_classes.anti_infectives.antivirals"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anti_infectives", "drug_classes.anti_infectives.antivirals"],
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.herpesvirus_agents",
@@ -5304,12 +4344,7 @@
         "drug_classes.anti_infectives.antivirals",
         "drug_classes.anti_infectives.antivirals.herpesvirus_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Herpesvirus Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Herpesvirus Agents"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.herpesvirus_agents.nucleoside_polymerase_inhibitors",
@@ -5347,13 +4382,7 @@
         "drug_classes.anti_infectives.antivirals.herpesvirus_agents",
         "drug_classes.anti_infectives.antivirals.herpesvirus_agents.pyrophosphate_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Herpesvirus Agents",
-        "Pyrophosphate Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Herpesvirus Agents", "Pyrophosphate Analogs"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hiv_agents",
@@ -5368,12 +4397,7 @@
         "drug_classes.anti_infectives.antivirals",
         "drug_classes.anti_infectives.antivirals.hiv_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "HIV Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "HIV Agents"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hiv_agents.nrtis",
@@ -5389,13 +4413,7 @@
         "drug_classes.anti_infectives.antivirals.hiv_agents",
         "drug_classes.anti_infectives.antivirals.hiv_agents.nrtis"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "HIV Agents",
-        "NRTIs"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "HIV Agents", "NRTIs"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hiv_agents.nnrtis",
@@ -5411,13 +4429,7 @@
         "drug_classes.anti_infectives.antivirals.hiv_agents",
         "drug_classes.anti_infectives.antivirals.hiv_agents.nnrtis"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "HIV Agents",
-        "NNRTIs"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "HIV Agents", "NNRTIs"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hiv_agents.protease_inhibitors",
@@ -5433,13 +4445,7 @@
         "drug_classes.anti_infectives.antivirals.hiv_agents",
         "drug_classes.anti_infectives.antivirals.hiv_agents.protease_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "HIV Agents",
-        "Protease Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "HIV Agents", "Protease Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hiv_agents.integrase_inhibitors",
@@ -5455,13 +4461,7 @@
         "drug_classes.anti_infectives.antivirals.hiv_agents",
         "drug_classes.anti_infectives.antivirals.hiv_agents.integrase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "HIV Agents",
-        "Integrase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "HIV Agents", "Integrase Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hiv_agents.entry_inhibitors",
@@ -5477,13 +4477,7 @@
         "drug_classes.anti_infectives.antivirals.hiv_agents",
         "drug_classes.anti_infectives.antivirals.hiv_agents.entry_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "HIV Agents",
-        "Entry Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "HIV Agents", "Entry Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hepatitis_agents",
@@ -5498,12 +4492,7 @@
         "drug_classes.anti_infectives.antivirals",
         "drug_classes.anti_infectives.antivirals.hepatitis_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Hepatitis Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Hepatitis Agents"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hepatitis_agents.direct_acting_antivirals",
@@ -5519,13 +4508,7 @@
         "drug_classes.anti_infectives.antivirals.hepatitis_agents",
         "drug_classes.anti_infectives.antivirals.hepatitis_agents.direct_acting_antivirals"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Hepatitis Agents",
-        "Direct Acting Antivirals"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Hepatitis Agents", "Direct Acting Antivirals"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.hepatitis_agents.direct_acting_antivirals.ns3_protease_inhibitors",
@@ -5612,12 +4595,7 @@
         "drug_classes.anti_infectives.antivirals",
         "drug_classes.anti_infectives.antivirals.influenza_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Influenza Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Influenza Agents"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.influenza_agents.neuraminidase_inhibitors",
@@ -5633,13 +4611,7 @@
         "drug_classes.anti_infectives.antivirals.influenza_agents",
         "drug_classes.anti_infectives.antivirals.influenza_agents.neuraminidase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Influenza Agents",
-        "Neuraminidase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Influenza Agents", "Neuraminidase Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antivirals.influenza_agents.endonuclease_inhibitors",
@@ -5655,13 +4627,7 @@
         "drug_classes.anti_infectives.antivirals.influenza_agents",
         "drug_classes.anti_infectives.antivirals.influenza_agents.endonuclease_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antivirals",
-        "Influenza Agents",
-        "Endonuclease Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antivirals", "Influenza Agents", "Endonuclease Inhibitors"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals",
@@ -5670,16 +4636,8 @@
       "parentId": "drug_classes.anti_infectives",
       "depth": 2,
       "sortOrder": 271,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anti_infectives",
-        "drug_classes.anti_infectives.antifungals"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anti_infectives", "drug_classes.anti_infectives.antifungals"],
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.polyenes",
@@ -5694,12 +4652,7 @@
         "drug_classes.anti_infectives.antifungals",
         "drug_classes.anti_infectives.antifungals.polyenes"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Polyenes"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Polyenes"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.azoles",
@@ -5714,12 +4667,7 @@
         "drug_classes.anti_infectives.antifungals",
         "drug_classes.anti_infectives.antifungals.azoles"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Azoles"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Azoles"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.azoles.imidazoles",
@@ -5735,13 +4683,7 @@
         "drug_classes.anti_infectives.antifungals.azoles",
         "drug_classes.anti_infectives.antifungals.azoles.imidazoles"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Azoles",
-        "Imidazoles"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Azoles", "Imidazoles"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.azoles.triazoles",
@@ -5757,13 +4699,7 @@
         "drug_classes.anti_infectives.antifungals.azoles",
         "drug_classes.anti_infectives.antifungals.azoles.triazoles"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Azoles",
-        "Triazoles"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Azoles", "Triazoles"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.echinocandins",
@@ -5778,12 +4714,7 @@
         "drug_classes.anti_infectives.antifungals",
         "drug_classes.anti_infectives.antifungals.echinocandins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Echinocandins"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Echinocandins"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.allylamines",
@@ -5798,12 +4729,7 @@
         "drug_classes.anti_infectives.antifungals",
         "drug_classes.anti_infectives.antifungals.allylamines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Allylamines"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Allylamines"]
     },
     {
       "id": "drug_classes.anti_infectives.antifungals.antimetabolites",
@@ -5818,12 +4744,7 @@
         "drug_classes.anti_infectives.antifungals",
         "drug_classes.anti_infectives.antifungals.antimetabolites"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antifungals",
-        "Antimetabolites"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antifungals", "Antimetabolites"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics",
@@ -5832,16 +4753,8 @@
       "parentId": "drug_classes.anti_infectives",
       "depth": 2,
       "sortOrder": 279,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anti_infectives",
-        "drug_classes.anti_infectives.antiparasitics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anti_infectives", "drug_classes.anti_infectives.antiparasitics"],
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antimalarials",
@@ -5856,12 +4769,7 @@
         "drug_classes.anti_infectives.antiparasitics",
         "drug_classes.anti_infectives.antiparasitics.antimalarials"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antimalarials"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antimalarials"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antimalarials.quinoline_derivatives",
@@ -5877,13 +4785,7 @@
         "drug_classes.anti_infectives.antiparasitics.antimalarials",
         "drug_classes.anti_infectives.antiparasitics.antimalarials.quinoline_derivatives"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antimalarials",
-        "Quinoline Derivatives"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antimalarials", "Quinoline Derivatives"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antimalarials.artemisinin_derivatives",
@@ -5899,13 +4801,7 @@
         "drug_classes.anti_infectives.antiparasitics.antimalarials",
         "drug_classes.anti_infectives.antiparasitics.antimalarials.artemisinin_derivatives"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antimalarials",
-        "Artemisinin Derivatives"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antimalarials", "Artemisinin Derivatives"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antihelminthics",
@@ -5920,12 +4816,7 @@
         "drug_classes.anti_infectives.antiparasitics",
         "drug_classes.anti_infectives.antiparasitics.antihelminthics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antihelminthics"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antihelminthics"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antihelminthics.benzimidazoles",
@@ -5941,13 +4832,7 @@
         "drug_classes.anti_infectives.antiparasitics.antihelminthics",
         "drug_classes.anti_infectives.antiparasitics.antihelminthics.benzimidazoles"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antihelminthics",
-        "Benzimidazoles"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antihelminthics", "Benzimidazoles"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antihelminthics.avermectins",
@@ -5963,13 +4848,7 @@
         "drug_classes.anti_infectives.antiparasitics.antihelminthics",
         "drug_classes.anti_infectives.antiparasitics.antihelminthics.avermectins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antihelminthics",
-        "Avermectins"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antihelminthics", "Avermectins"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antihelminthics.nicotinic_agonists",
@@ -5985,13 +4864,7 @@
         "drug_classes.anti_infectives.antiparasitics.antihelminthics",
         "drug_classes.anti_infectives.antiparasitics.antihelminthics.nicotinic_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antihelminthics",
-        "Nicotinic Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antihelminthics", "Nicotinic Agonists"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antiprotozoals",
@@ -6006,12 +4879,7 @@
         "drug_classes.anti_infectives.antiparasitics",
         "drug_classes.anti_infectives.antiparasitics.antiprotozoals"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antiprotozoals"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antiprotozoals"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antiprotozoals.nitroimidazoles",
@@ -6027,13 +4895,7 @@
         "drug_classes.anti_infectives.antiparasitics.antiprotozoals",
         "drug_classes.anti_infectives.antiparasitics.antiprotozoals.nitroimidazoles"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antiprotozoals",
-        "Nitroimidazoles"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antiprotozoals", "Nitroimidazoles"]
     },
     {
       "id": "drug_classes.anti_infectives.antiparasitics.antiprotozoals.antifolates",
@@ -6049,13 +4911,7 @@
         "drug_classes.anti_infectives.antiparasitics.antiprotozoals",
         "drug_classes.anti_infectives.antiparasitics.antiprotozoals.antifolates"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anti Infectives",
-        "Antiparasitics",
-        "Antiprotozoals",
-        "Antifolates"
-      ]
+      "pathLabels": ["Drug Classes", "Anti Infectives", "Antiparasitics", "Antiprotozoals", "Antifolates"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology",
@@ -6064,14 +4920,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 290,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.rheumatology_and_immunology"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.rheumatology_and_immunology"],
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards",
@@ -6085,11 +4935,7 @@
         "drug_classes.rheumatology_and_immunology",
         "drug_classes.rheumatology_and_immunology.dmards"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.conventional_synthetic_dmards",
@@ -6104,12 +4950,7 @@
         "drug_classes.rheumatology_and_immunology.dmards",
         "drug_classes.rheumatology_and_immunology.dmards.conventional_synthetic_dmards"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards",
-        "Conventional Synthetic Dmards"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards", "Conventional Synthetic Dmards"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards",
@@ -6124,12 +4965,7 @@
         "drug_classes.rheumatology_and_immunology.dmards",
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards",
-        "Biologic Dmards"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards", "Biologic Dmards"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.anti_tnf_agents",
@@ -6145,13 +4981,7 @@
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards",
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.anti_tnf_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards",
-        "Biologic Dmards",
-        "Anti Tnf Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards", "Biologic Dmards", "Anti Tnf Agents"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.anti_il6_agents",
@@ -6167,13 +4997,7 @@
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards",
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.anti_il6_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards",
-        "Biologic Dmards",
-        "Anti IL6 Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards", "Biologic Dmards", "Anti IL6 Agents"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.anti_cd20_agents",
@@ -6189,13 +5013,7 @@
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards",
         "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.anti_cd20_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards",
-        "Biologic Dmards",
-        "Anti CD20 Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards", "Biologic Dmards", "Anti CD20 Agents"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.biologic_dmards.t_cell_costimulation_modulators",
@@ -6232,12 +5050,7 @@
         "drug_classes.rheumatology_and_immunology.dmards",
         "drug_classes.rheumatology_and_immunology.dmards.targeted_synthetic_dmards"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Dmards",
-        "Targeted Synthetic Dmards"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Dmards", "Targeted Synthetic Dmards"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.dmards.targeted_synthetic_dmards.jak_inhibitors",
@@ -6273,11 +5086,7 @@
         "drug_classes.rheumatology_and_immunology",
         "drug_classes.rheumatology_and_immunology.gout_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Gout Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Gout Agents"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.gout_agents.xanthine_oxidase_inhibitors",
@@ -6292,12 +5101,7 @@
         "drug_classes.rheumatology_and_immunology.gout_agents",
         "drug_classes.rheumatology_and_immunology.gout_agents.xanthine_oxidase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Gout Agents",
-        "Xanthine Oxidase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Gout Agents", "Xanthine Oxidase Inhibitors"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.gout_agents.uricosurics",
@@ -6312,12 +5116,7 @@
         "drug_classes.rheumatology_and_immunology.gout_agents",
         "drug_classes.rheumatology_and_immunology.gout_agents.uricosurics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Gout Agents",
-        "Uricosurics"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Gout Agents", "Uricosurics"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.gout_agents.uricase_agents",
@@ -6332,12 +5131,7 @@
         "drug_classes.rheumatology_and_immunology.gout_agents",
         "drug_classes.rheumatology_and_immunology.gout_agents.uricase_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Gout Agents",
-        "Uricase Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Gout Agents", "Uricase Agents"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.gout_agents.anti_inflammatory_gout_agents",
@@ -6352,12 +5146,7 @@
         "drug_classes.rheumatology_and_immunology.gout_agents",
         "drug_classes.rheumatology_and_immunology.gout_agents.anti_inflammatory_gout_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Gout Agents",
-        "Anti Inflammatory Gout Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Gout Agents", "Anti Inflammatory Gout Agents"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.gout_agents.anti_inflammatory_gout_agents.nsaids",
@@ -6437,11 +5226,7 @@
         "drug_classes.rheumatology_and_immunology",
         "drug_classes.rheumatology_and_immunology.immunosuppressants"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Immunosuppressants"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Immunosuppressants"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.immunosuppressants.calcineurin_inhibitors",
@@ -6456,12 +5241,7 @@
         "drug_classes.rheumatology_and_immunology.immunosuppressants",
         "drug_classes.rheumatology_and_immunology.immunosuppressants.calcineurin_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Immunosuppressants",
-        "Calcineurin Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Immunosuppressants", "Calcineurin Inhibitors"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.immunosuppressants.mtor_inhibitors",
@@ -6476,12 +5256,7 @@
         "drug_classes.rheumatology_and_immunology.immunosuppressants",
         "drug_classes.rheumatology_and_immunology.immunosuppressants.mtor_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Immunosuppressants",
-        "mTOR Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Immunosuppressants", "mTOR Inhibitors"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.immunosuppressants.antimetabolites",
@@ -6496,12 +5271,7 @@
         "drug_classes.rheumatology_and_immunology.immunosuppressants",
         "drug_classes.rheumatology_and_immunology.immunosuppressants.antimetabolites"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Immunosuppressants",
-        "Antimetabolites"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Immunosuppressants", "Antimetabolites"]
     },
     {
       "id": "drug_classes.rheumatology_and_immunology.immunosuppressants.biologic_immunosuppressants",
@@ -6516,12 +5286,7 @@
         "drug_classes.rheumatology_and_immunology.immunosuppressants",
         "drug_classes.rheumatology_and_immunology.immunosuppressants.biologic_immunosuppressants"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Rheumatology And Immunology",
-        "Immunosuppressants",
-        "Biologic Immunosuppressants"
-      ]
+      "pathLabels": ["Drug Classes", "Rheumatology And Immunology", "Immunosuppressants", "Biologic Immunosuppressants"]
     },
     {
       "id": "drug_classes.respiratory",
@@ -6530,14 +5295,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 313,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.respiratory"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.respiratory"],
+      "pathLabels": ["Drug Classes", "Respiratory"]
     },
     {
       "id": "drug_classes.respiratory.bronchodilators",
@@ -6546,16 +5305,8 @@
       "parentId": "drug_classes.respiratory",
       "depth": 2,
       "sortOrder": 314,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.respiratory",
-        "drug_classes.respiratory.bronchodilators"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Bronchodilators"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.respiratory", "drug_classes.respiratory.bronchodilators"],
+      "pathLabels": ["Drug Classes", "Respiratory", "Bronchodilators"]
     },
     {
       "id": "drug_classes.respiratory.bronchodilators.beta2_agonists",
@@ -6570,12 +5321,7 @@
         "drug_classes.respiratory.bronchodilators",
         "drug_classes.respiratory.bronchodilators.beta2_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Bronchodilators",
-        "Beta2 Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Bronchodilators", "Beta2 Agonists"]
     },
     {
       "id": "drug_classes.respiratory.bronchodilators.beta2_agonists.short_acting",
@@ -6591,13 +5337,7 @@
         "drug_classes.respiratory.bronchodilators.beta2_agonists",
         "drug_classes.respiratory.bronchodilators.beta2_agonists.short_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Bronchodilators",
-        "Beta2 Agonists",
-        "Short Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Bronchodilators", "Beta2 Agonists", "Short Acting"]
     },
     {
       "id": "drug_classes.respiratory.bronchodilators.beta2_agonists.long_acting",
@@ -6613,13 +5353,7 @@
         "drug_classes.respiratory.bronchodilators.beta2_agonists",
         "drug_classes.respiratory.bronchodilators.beta2_agonists.long_acting"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Bronchodilators",
-        "Beta2 Agonists",
-        "Long Acting"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Bronchodilators", "Beta2 Agonists", "Long Acting"]
     },
     {
       "id": "drug_classes.respiratory.bronchodilators.anticholinergics",
@@ -6634,12 +5368,7 @@
         "drug_classes.respiratory.bronchodilators",
         "drug_classes.respiratory.bronchodilators.anticholinergics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Bronchodilators",
-        "Anticholinergics"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Bronchodilators", "Anticholinergics"]
     },
     {
       "id": "drug_classes.respiratory.bronchodilators.anticholinergics.short_acting_muscarinic_antagonists",
@@ -6698,12 +5427,7 @@
         "drug_classes.respiratory.bronchodilators",
         "drug_classes.respiratory.bronchodilators.methylxanthines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Bronchodilators",
-        "Methylxanthines"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Bronchodilators", "Methylxanthines"]
     },
     {
       "id": "drug_classes.respiratory.anti_inflammatory_agents",
@@ -6712,16 +5436,8 @@
       "parentId": "drug_classes.respiratory",
       "depth": 2,
       "sortOrder": 322,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.respiratory",
-        "drug_classes.respiratory.anti_inflammatory_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Anti Inflammatory Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.respiratory", "drug_classes.respiratory.anti_inflammatory_agents"],
+      "pathLabels": ["Drug Classes", "Respiratory", "Anti Inflammatory Agents"]
     },
     {
       "id": "drug_classes.respiratory.anti_inflammatory_agents.inhaled_corticosteroids",
@@ -6736,12 +5452,7 @@
         "drug_classes.respiratory.anti_inflammatory_agents",
         "drug_classes.respiratory.anti_inflammatory_agents.inhaled_corticosteroids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Anti Inflammatory Agents",
-        "Inhaled Corticosteroids"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Anti Inflammatory Agents", "Inhaled Corticosteroids"]
     },
     {
       "id": "drug_classes.respiratory.anti_inflammatory_agents.leukotriene_modifiers",
@@ -6756,12 +5467,7 @@
         "drug_classes.respiratory.anti_inflammatory_agents",
         "drug_classes.respiratory.anti_inflammatory_agents.leukotriene_modifiers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Anti Inflammatory Agents",
-        "Leukotriene Modifiers"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Anti Inflammatory Agents", "Leukotriene Modifiers"]
     },
     {
       "id": "drug_classes.respiratory.anti_inflammatory_agents.leukotriene_modifiers.leukotriene_receptor_antagonists",
@@ -6820,12 +5526,7 @@
         "drug_classes.respiratory.anti_inflammatory_agents",
         "drug_classes.respiratory.anti_inflammatory_agents.mast_cell_stabilizers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Anti Inflammatory Agents",
-        "Mast Cell Stabilizers"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Anti Inflammatory Agents", "Mast Cell Stabilizers"]
     },
     {
       "id": "drug_classes.respiratory.biologics_for_asthma",
@@ -6834,16 +5535,8 @@
       "parentId": "drug_classes.respiratory",
       "depth": 2,
       "sortOrder": 328,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.respiratory",
-        "drug_classes.respiratory.biologics_for_asthma"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Biologics For Asthma"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.respiratory", "drug_classes.respiratory.biologics_for_asthma"],
+      "pathLabels": ["Drug Classes", "Respiratory", "Biologics For Asthma"]
     },
     {
       "id": "drug_classes.respiratory.biologics_for_asthma.anti_ige_antibodies",
@@ -6858,12 +5551,7 @@
         "drug_classes.respiratory.biologics_for_asthma",
         "drug_classes.respiratory.biologics_for_asthma.anti_ige_antibodies"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Biologics For Asthma",
-        "Anti Ige Antibodies"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Biologics For Asthma", "Anti Ige Antibodies"]
     },
     {
       "id": "drug_classes.respiratory.biologics_for_asthma.anti_il5_agents",
@@ -6878,12 +5566,7 @@
         "drug_classes.respiratory.biologics_for_asthma",
         "drug_classes.respiratory.biologics_for_asthma.anti_il5_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Biologics For Asthma",
-        "Anti IL5 Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Biologics For Asthma", "Anti IL5 Agents"]
     },
     {
       "id": "drug_classes.respiratory.biologics_for_asthma.anti_il4_il13_agents",
@@ -6898,12 +5581,7 @@
         "drug_classes.respiratory.biologics_for_asthma",
         "drug_classes.respiratory.biologics_for_asthma.anti_il4_il13_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Respiratory",
-        "Biologics For Asthma",
-        "Anti IL4 IL13 Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Respiratory", "Biologics For Asthma", "Anti IL4 IL13 Agents"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive",
@@ -6912,14 +5590,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 332,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.genitourinary_and_reproductive"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.genitourinary_and_reproductive"],
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.benign_prostatic_hyperplasia_agents",
@@ -6933,11 +5605,7 @@
         "drug_classes.genitourinary_and_reproductive",
         "drug_classes.genitourinary_and_reproductive.benign_prostatic_hyperplasia_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Benign Prostatic Hyperplasia Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Benign Prostatic Hyperplasia Agents"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.benign_prostatic_hyperplasia_agents.alpha1_blockers",
@@ -6991,11 +5659,7 @@
         "drug_classes.genitourinary_and_reproductive",
         "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Overactive Bladder Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Overactive Bladder Agents"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents.antimuscarinics",
@@ -7010,12 +5674,7 @@
         "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents",
         "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents.antimuscarinics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Overactive Bladder Agents",
-        "Antimuscarinics"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Overactive Bladder Agents", "Antimuscarinics"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents.beta3_agonists",
@@ -7030,12 +5689,7 @@
         "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents",
         "drug_classes.genitourinary_and_reproductive.overactive_bladder_agents.beta3_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Overactive Bladder Agents",
-        "Beta3 Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Overactive Bladder Agents", "Beta3 Agonists"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.erectile_dysfunction_agents",
@@ -7049,11 +5703,7 @@
         "drug_classes.genitourinary_and_reproductive",
         "drug_classes.genitourinary_and_reproductive.erectile_dysfunction_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Erectile Dysfunction Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Erectile Dysfunction Agents"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.erectile_dysfunction_agents.pde5_inhibitors",
@@ -7068,12 +5718,7 @@
         "drug_classes.genitourinary_and_reproductive.erectile_dysfunction_agents",
         "drug_classes.genitourinary_and_reproductive.erectile_dysfunction_agents.pde5_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Erectile Dysfunction Agents",
-        "PDE5 Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Erectile Dysfunction Agents", "PDE5 Inhibitors"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.erectile_dysfunction_agents.prostaglandin_analogs",
@@ -7107,11 +5752,7 @@
         "drug_classes.genitourinary_and_reproductive",
         "drug_classes.genitourinary_and_reproductive.contraceptives"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Contraceptives"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Contraceptives"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.contraceptives.combined_hormonal_contraceptives",
@@ -7166,12 +5807,7 @@
         "drug_classes.genitourinary_and_reproductive.contraceptives",
         "drug_classes.genitourinary_and_reproductive.contraceptives.emergency_contraceptives"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Contraceptives",
-        "Emergency Contraceptives"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Contraceptives", "Emergency Contraceptives"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics",
@@ -7185,11 +5821,7 @@
         "drug_classes.genitourinary_and_reproductive",
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Uterotonics And Tocolytics"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Uterotonics And Tocolytics"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.oxytocics",
@@ -7204,12 +5836,7 @@
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics",
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.oxytocics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Uterotonics And Tocolytics",
-        "Oxytocics"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Uterotonics And Tocolytics", "Oxytocics"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.prostaglandins",
@@ -7224,12 +5851,7 @@
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics",
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.prostaglandins"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Uterotonics And Tocolytics",
-        "Prostaglandins"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Uterotonics And Tocolytics", "Prostaglandins"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.beta2_agonists",
@@ -7244,12 +5866,7 @@
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics",
         "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.beta2_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Genitourinary And Reproductive",
-        "Uterotonics And Tocolytics",
-        "Beta2 Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Genitourinary And Reproductive", "Uterotonics And Tocolytics", "Beta2 Agonists"]
     },
     {
       "id": "drug_classes.genitourinary_and_reproductive.uterotonics_and_tocolytics.calcium_channel_blockers",
@@ -7278,14 +5895,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 351,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.bone_and_mineral"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.bone_and_mineral"],
+      "pathLabels": ["Drug Classes", "Bone And Mineral"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents",
@@ -7294,16 +5905,8 @@
       "parentId": "drug_classes.bone_and_mineral",
       "depth": 2,
       "sortOrder": 352,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.bone_and_mineral",
-        "drug_classes.bone_and_mineral.osteoporosis_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.bone_and_mineral", "drug_classes.bone_and_mineral.osteoporosis_agents"],
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents.bisphosphonates",
@@ -7318,12 +5921,7 @@
         "drug_classes.bone_and_mineral.osteoporosis_agents",
         "drug_classes.bone_and_mineral.osteoporosis_agents.bisphosphonates"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents",
-        "Bisphosphonates"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents", "Bisphosphonates"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents.rankl_inhibitors",
@@ -7338,12 +5936,7 @@
         "drug_classes.bone_and_mineral.osteoporosis_agents",
         "drug_classes.bone_and_mineral.osteoporosis_agents.rankl_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents",
-        "Rankl Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents", "Rankl Inhibitors"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents.parathyroid_hormone_analogs",
@@ -7358,12 +5951,7 @@
         "drug_classes.bone_and_mineral.osteoporosis_agents",
         "drug_classes.bone_and_mineral.osteoporosis_agents.parathyroid_hormone_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents",
-        "Parathyroid Hormone Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents", "Parathyroid Hormone Analogs"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents.sclerostin_inhibitors",
@@ -7378,12 +5966,7 @@
         "drug_classes.bone_and_mineral.osteoporosis_agents",
         "drug_classes.bone_and_mineral.osteoporosis_agents.sclerostin_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents",
-        "Sclerostin Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents", "Sclerostin Inhibitors"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents.serms",
@@ -7398,12 +5981,7 @@
         "drug_classes.bone_and_mineral.osteoporosis_agents",
         "drug_classes.bone_and_mineral.osteoporosis_agents.serms"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents",
-        "SERMs"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents", "SERMs"]
     },
     {
       "id": "drug_classes.bone_and_mineral.osteoporosis_agents.calcitonin",
@@ -7418,12 +5996,7 @@
         "drug_classes.bone_and_mineral.osteoporosis_agents",
         "drug_classes.bone_and_mineral.osteoporosis_agents.calcitonin"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Osteoporosis Agents",
-        "Calcitonin"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Osteoporosis Agents", "Calcitonin"]
     },
     {
       "id": "drug_classes.bone_and_mineral.calcium_and_vitamin_d_agents",
@@ -7437,11 +6010,7 @@
         "drug_classes.bone_and_mineral",
         "drug_classes.bone_and_mineral.calcium_and_vitamin_d_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Calcium And Vitamin D Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Calcium And Vitamin D Agents"]
     },
     {
       "id": "drug_classes.bone_and_mineral.phosphate_binders",
@@ -7450,16 +6019,8 @@
       "parentId": "drug_classes.bone_and_mineral",
       "depth": 2,
       "sortOrder": 360,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.bone_and_mineral",
-        "drug_classes.bone_and_mineral.phosphate_binders"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Phosphate Binders"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.bone_and_mineral", "drug_classes.bone_and_mineral.phosphate_binders"],
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Phosphate Binders"]
     },
     {
       "id": "drug_classes.bone_and_mineral.calcimimetics",
@@ -7468,16 +6029,8 @@
       "parentId": "drug_classes.bone_and_mineral",
       "depth": 2,
       "sortOrder": 361,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.bone_and_mineral",
-        "drug_classes.bone_and_mineral.calcimimetics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Bone And Mineral",
-        "Calcimimetics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.bone_and_mineral", "drug_classes.bone_and_mineral.calcimimetics"],
+      "pathLabels": ["Drug Classes", "Bone And Mineral", "Calcimimetics"]
     },
     {
       "id": "drug_classes.dermatologic",
@@ -7486,14 +6039,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 362,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.dermatologic"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.dermatologic"],
+      "pathLabels": ["Drug Classes", "Dermatologic"]
     },
     {
       "id": "drug_classes.dermatologic.topical_anti_inflammatory_agents",
@@ -7507,11 +6054,7 @@
         "drug_classes.dermatologic",
         "drug_classes.dermatologic.topical_anti_inflammatory_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Topical Anti Inflammatory Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Topical Anti Inflammatory Agents"]
     },
     {
       "id": "drug_classes.dermatologic.topical_anti_inflammatory_agents.topical_corticosteroids",
@@ -7526,12 +6069,7 @@
         "drug_classes.dermatologic.topical_anti_inflammatory_agents",
         "drug_classes.dermatologic.topical_anti_inflammatory_agents.topical_corticosteroids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Topical Anti Inflammatory Agents",
-        "Topical Corticosteroids"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Topical Anti Inflammatory Agents", "Topical Corticosteroids"]
     },
     {
       "id": "drug_classes.dermatologic.topical_anti_inflammatory_agents.topical_calcineurin_inhibitors",
@@ -7566,12 +6104,7 @@
         "drug_classes.dermatologic.topical_anti_inflammatory_agents",
         "drug_classes.dermatologic.topical_anti_inflammatory_agents.pde4_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Topical Anti Inflammatory Agents",
-        "PDE4 Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Topical Anti Inflammatory Agents", "PDE4 Inhibitors"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents",
@@ -7580,16 +6113,8 @@
       "parentId": "drug_classes.dermatologic",
       "depth": 2,
       "sortOrder": 367,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.dermatologic",
-        "drug_classes.dermatologic.acne_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.dermatologic", "drug_classes.dermatologic.acne_agents"],
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents.topical_retinoids",
@@ -7604,12 +6129,7 @@
         "drug_classes.dermatologic.acne_agents",
         "drug_classes.dermatologic.acne_agents.topical_retinoids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents",
-        "Topical Retinoids"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents", "Topical Retinoids"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents.systemic_retinoids",
@@ -7624,12 +6144,7 @@
         "drug_classes.dermatologic.acne_agents",
         "drug_classes.dermatologic.acne_agents.systemic_retinoids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents",
-        "Systemic Retinoids"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents", "Systemic Retinoids"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents.benzoyl_peroxide",
@@ -7644,12 +6159,7 @@
         "drug_classes.dermatologic.acne_agents",
         "drug_classes.dermatologic.acne_agents.benzoyl_peroxide"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents",
-        "Benzoyl Peroxide"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents", "Benzoyl Peroxide"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents.topical_antibiotics",
@@ -7664,12 +6174,7 @@
         "drug_classes.dermatologic.acne_agents",
         "drug_classes.dermatologic.acne_agents.topical_antibiotics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents",
-        "Topical Antibiotics"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents", "Topical Antibiotics"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents.oral_antibiotics",
@@ -7684,12 +6189,7 @@
         "drug_classes.dermatologic.acne_agents",
         "drug_classes.dermatologic.acne_agents.oral_antibiotics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents",
-        "Oral Antibiotics"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents", "Oral Antibiotics"]
     },
     {
       "id": "drug_classes.dermatologic.acne_agents.antiandrogens",
@@ -7704,12 +6204,7 @@
         "drug_classes.dermatologic.acne_agents",
         "drug_classes.dermatologic.acne_agents.antiandrogens"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Acne Agents",
-        "Antiandrogens"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Acne Agents", "Antiandrogens"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents",
@@ -7718,16 +6213,8 @@
       "parentId": "drug_classes.dermatologic",
       "depth": 2,
       "sortOrder": 374,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.dermatologic",
-        "drug_classes.dermatologic.psoriasis_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.dermatologic", "drug_classes.dermatologic.psoriasis_agents"],
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.topical_agents",
@@ -7742,12 +6229,7 @@
         "drug_classes.dermatologic.psoriasis_agents",
         "drug_classes.dermatologic.psoriasis_agents.topical_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Topical Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Topical Agents"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.topical_agents.corticosteroids",
@@ -7763,13 +6245,7 @@
         "drug_classes.dermatologic.psoriasis_agents.topical_agents",
         "drug_classes.dermatologic.psoriasis_agents.topical_agents.corticosteroids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Topical Agents",
-        "Corticosteroids"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Topical Agents", "Corticosteroids"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.topical_agents.vitamin_d_analogs",
@@ -7785,13 +6261,7 @@
         "drug_classes.dermatologic.psoriasis_agents.topical_agents",
         "drug_classes.dermatologic.psoriasis_agents.topical_agents.vitamin_d_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Topical Agents",
-        "Vitamin D Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Topical Agents", "Vitamin D Analogs"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.systemic_agents",
@@ -7806,12 +6276,7 @@
         "drug_classes.dermatologic.psoriasis_agents",
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Systemic Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Systemic Agents"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.systemic_agents.methotrexate",
@@ -7827,13 +6292,7 @@
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents",
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents.methotrexate"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Systemic Agents",
-        "Methotrexate"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Systemic Agents", "Methotrexate"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.systemic_agents.retinoids",
@@ -7849,13 +6308,7 @@
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents",
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents.retinoids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Systemic Agents",
-        "Retinoids"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Systemic Agents", "Retinoids"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.systemic_agents.biologics",
@@ -7871,13 +6324,7 @@
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents",
         "drug_classes.dermatologic.psoriasis_agents.systemic_agents.biologics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Dermatologic",
-        "Psoriasis Agents",
-        "Systemic Agents",
-        "Biologics"
-      ]
+      "pathLabels": ["Drug Classes", "Dermatologic", "Psoriasis Agents", "Systemic Agents", "Biologics"]
     },
     {
       "id": "drug_classes.dermatologic.psoriasis_agents.systemic_agents.biologics.anti_tnf_agents",
@@ -7958,14 +6405,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 385,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.ophthalmic_and_otic"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.ophthalmic_and_otic"],
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents",
@@ -7979,11 +6420,7 @@
         "drug_classes.ophthalmic_and_otic",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents.prostaglandin_analogs",
@@ -7998,12 +6435,7 @@
         "drug_classes.ophthalmic_and_otic.glaucoma_agents",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents.prostaglandin_analogs"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents",
-        "Prostaglandin Analogs"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents", "Prostaglandin Analogs"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents.beta_blockers",
@@ -8018,12 +6450,7 @@
         "drug_classes.ophthalmic_and_otic.glaucoma_agents",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents.beta_blockers"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents",
-        "Beta Blockers"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents", "Beta Blockers"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents.alpha2_agonists",
@@ -8038,12 +6465,7 @@
         "drug_classes.ophthalmic_and_otic.glaucoma_agents",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents.alpha2_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents",
-        "Alpha2 Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents", "Alpha2 Agonists"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents.carbonic_anhydrase_inhibitors",
@@ -8058,12 +6480,7 @@
         "drug_classes.ophthalmic_and_otic.glaucoma_agents",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents.carbonic_anhydrase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents",
-        "Carbonic Anhydrase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents", "Carbonic Anhydrase Inhibitors"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents.cholinergic_agents",
@@ -8078,12 +6495,7 @@
         "drug_classes.ophthalmic_and_otic.glaucoma_agents",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents.cholinergic_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents",
-        "Cholinergic Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents", "Cholinergic Agents"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.glaucoma_agents.rho_kinase_inhibitors",
@@ -8098,12 +6510,7 @@
         "drug_classes.ophthalmic_and_otic.glaucoma_agents",
         "drug_classes.ophthalmic_and_otic.glaucoma_agents.rho_kinase_inhibitors"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Glaucoma Agents",
-        "Rho Kinase Inhibitors"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Glaucoma Agents", "Rho Kinase Inhibitors"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.ophthalmic_anti_infectives",
@@ -8117,11 +6524,7 @@
         "drug_classes.ophthalmic_and_otic",
         "drug_classes.ophthalmic_and_otic.ophthalmic_anti_infectives"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Ophthalmic Anti Infectives"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Ophthalmic Anti Infectives"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.ophthalmic_anti_inflammatory_agents",
@@ -8135,11 +6538,7 @@
         "drug_classes.ophthalmic_and_otic",
         "drug_classes.ophthalmic_and_otic.ophthalmic_anti_inflammatory_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Ophthalmic Anti Inflammatory Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Ophthalmic Anti Inflammatory Agents"]
     },
     {
       "id": "drug_classes.ophthalmic_and_otic.mydriatics_and_cycloplegics",
@@ -8153,11 +6552,7 @@
         "drug_classes.ophthalmic_and_otic",
         "drug_classes.ophthalmic_and_otic.mydriatics_and_cycloplegics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Ophthalmic And Otic",
-        "Mydriatics And Cycloplegics"
-      ]
+      "pathLabels": ["Drug Classes", "Ophthalmic And Otic", "Mydriatics And Cycloplegics"]
     },
     {
       "id": "drug_classes.hematology",
@@ -8166,14 +6561,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 396,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.hematology"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.hematology"],
+      "pathLabels": ["Drug Classes", "Hematology"]
     },
     {
       "id": "drug_classes.hematology.hematopoietic_growth_factors",
@@ -8182,16 +6571,8 @@
       "parentId": "drug_classes.hematology",
       "depth": 2,
       "sortOrder": 397,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.hematology",
-        "drug_classes.hematology.hematopoietic_growth_factors"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hematopoietic Growth Factors"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.hematology", "drug_classes.hematology.hematopoietic_growth_factors"],
+      "pathLabels": ["Drug Classes", "Hematology", "Hematopoietic Growth Factors"]
     },
     {
       "id": "drug_classes.hematology.hematopoietic_growth_factors.erythropoiesis_stimulating_agents",
@@ -8206,12 +6587,7 @@
         "drug_classes.hematology.hematopoietic_growth_factors",
         "drug_classes.hematology.hematopoietic_growth_factors.erythropoiesis_stimulating_agents"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hematopoietic Growth Factors",
-        "Erythropoiesis Stimulating Agents"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Hematopoietic Growth Factors", "Erythropoiesis Stimulating Agents"]
     },
     {
       "id": "drug_classes.hematology.hematopoietic_growth_factors.granulocyte_colony_stimulating_factors",
@@ -8246,12 +6622,7 @@
         "drug_classes.hematology.hematopoietic_growth_factors",
         "drug_classes.hematology.hematopoietic_growth_factors.thrombopoietin_receptor_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hematopoietic Growth Factors",
-        "Thrombopoietin Receptor Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Hematopoietic Growth Factors", "Thrombopoietin Receptor Agonists"]
     },
     {
       "id": "drug_classes.hematology.hemostatic_agents",
@@ -8260,16 +6631,8 @@
       "parentId": "drug_classes.hematology",
       "depth": 2,
       "sortOrder": 401,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.hematology",
-        "drug_classes.hematology.hemostatic_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hemostatic Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.hematology", "drug_classes.hematology.hemostatic_agents"],
+      "pathLabels": ["Drug Classes", "Hematology", "Hemostatic Agents"]
     },
     {
       "id": "drug_classes.hematology.hemostatic_agents.antifibrinolytics",
@@ -8284,12 +6647,7 @@
         "drug_classes.hematology.hemostatic_agents",
         "drug_classes.hematology.hemostatic_agents.antifibrinolytics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hemostatic Agents",
-        "Antifibrinolytics"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Hemostatic Agents", "Antifibrinolytics"]
     },
     {
       "id": "drug_classes.hematology.hemostatic_agents.factor_replacement_products",
@@ -8304,12 +6662,7 @@
         "drug_classes.hematology.hemostatic_agents",
         "drug_classes.hematology.hemostatic_agents.factor_replacement_products"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hemostatic Agents",
-        "Factor Replacement Products"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Hemostatic Agents", "Factor Replacement Products"]
     },
     {
       "id": "drug_classes.hematology.hemostatic_agents.desmopressin",
@@ -8324,12 +6677,7 @@
         "drug_classes.hematology.hemostatic_agents",
         "drug_classes.hematology.hemostatic_agents.desmopressin"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Hemostatic Agents",
-        "Desmopressin"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Hemostatic Agents", "Desmopressin"]
     },
     {
       "id": "drug_classes.hematology.iron_agents",
@@ -8338,16 +6686,8 @@
       "parentId": "drug_classes.hematology",
       "depth": 2,
       "sortOrder": 405,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.hematology",
-        "drug_classes.hematology.iron_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Iron Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.hematology", "drug_classes.hematology.iron_agents"],
+      "pathLabels": ["Drug Classes", "Hematology", "Iron Agents"]
     },
     {
       "id": "drug_classes.hematology.iron_agents.oral_iron",
@@ -8362,12 +6702,7 @@
         "drug_classes.hematology.iron_agents",
         "drug_classes.hematology.iron_agents.oral_iron"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Iron Agents",
-        "Oral Iron"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Iron Agents", "Oral Iron"]
     },
     {
       "id": "drug_classes.hematology.iron_agents.parenteral_iron",
@@ -8382,12 +6717,7 @@
         "drug_classes.hematology.iron_agents",
         "drug_classes.hematology.iron_agents.parenteral_iron"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Hematology",
-        "Iron Agents",
-        "Parenteral Iron"
-      ]
+      "pathLabels": ["Drug Classes", "Hematology", "Iron Agents", "Parenteral Iron"]
     },
     {
       "id": "drug_classes.anesthetics",
@@ -8396,14 +6726,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 408,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anesthetics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anesthetics"],
+      "pathLabels": ["Drug Classes", "Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.general_anesthetics",
@@ -8412,16 +6736,8 @@
       "parentId": "drug_classes.anesthetics",
       "depth": 2,
       "sortOrder": 409,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anesthetics",
-        "drug_classes.anesthetics.general_anesthetics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "General Anesthetics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anesthetics", "drug_classes.anesthetics.general_anesthetics"],
+      "pathLabels": ["Drug Classes", "Anesthetics", "General Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.general_anesthetics.inhaled_anesthetics",
@@ -8436,12 +6752,7 @@
         "drug_classes.anesthetics.general_anesthetics",
         "drug_classes.anesthetics.general_anesthetics.inhaled_anesthetics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "General Anesthetics",
-        "Inhaled Anesthetics"
-      ]
+      "pathLabels": ["Drug Classes", "Anesthetics", "General Anesthetics", "Inhaled Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.general_anesthetics.intravenous_anesthetics",
@@ -8456,12 +6767,7 @@
         "drug_classes.anesthetics.general_anesthetics",
         "drug_classes.anesthetics.general_anesthetics.intravenous_anesthetics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "General Anesthetics",
-        "Intravenous Anesthetics"
-      ]
+      "pathLabels": ["Drug Classes", "Anesthetics", "General Anesthetics", "Intravenous Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.local_anesthetics",
@@ -8470,16 +6776,8 @@
       "parentId": "drug_classes.anesthetics",
       "depth": 2,
       "sortOrder": 412,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anesthetics",
-        "drug_classes.anesthetics.local_anesthetics"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "Local Anesthetics"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anesthetics", "drug_classes.anesthetics.local_anesthetics"],
+      "pathLabels": ["Drug Classes", "Anesthetics", "Local Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.local_anesthetics.amide_local_anesthetics",
@@ -8494,12 +6792,7 @@
         "drug_classes.anesthetics.local_anesthetics",
         "drug_classes.anesthetics.local_anesthetics.amide_local_anesthetics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "Local Anesthetics",
-        "Amide Local Anesthetics"
-      ]
+      "pathLabels": ["Drug Classes", "Anesthetics", "Local Anesthetics", "Amide Local Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.local_anesthetics.ester_local_anesthetics",
@@ -8514,12 +6807,7 @@
         "drug_classes.anesthetics.local_anesthetics",
         "drug_classes.anesthetics.local_anesthetics.ester_local_anesthetics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "Local Anesthetics",
-        "Ester Local Anesthetics"
-      ]
+      "pathLabels": ["Drug Classes", "Anesthetics", "Local Anesthetics", "Ester Local Anesthetics"]
     },
     {
       "id": "drug_classes.anesthetics.neuromuscular_blocking_agents",
@@ -8528,16 +6816,8 @@
       "parentId": "drug_classes.anesthetics",
       "depth": 2,
       "sortOrder": 415,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.anesthetics",
-        "drug_classes.anesthetics.neuromuscular_blocking_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "Neuromuscular Blocking Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.anesthetics", "drug_classes.anesthetics.neuromuscular_blocking_agents"],
+      "pathLabels": ["Drug Classes", "Anesthetics", "Neuromuscular Blocking Agents"]
     },
     {
       "id": "drug_classes.anesthetics.neuromuscular_blocking_agents.depolarizing",
@@ -8552,12 +6832,7 @@
         "drug_classes.anesthetics.neuromuscular_blocking_agents",
         "drug_classes.anesthetics.neuromuscular_blocking_agents.depolarizing"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "Neuromuscular Blocking Agents",
-        "Depolarizing"
-      ]
+      "pathLabels": ["Drug Classes", "Anesthetics", "Neuromuscular Blocking Agents", "Depolarizing"]
     },
     {
       "id": "drug_classes.anesthetics.neuromuscular_blocking_agents.nondepolarizing",
@@ -8572,12 +6847,7 @@
         "drug_classes.anesthetics.neuromuscular_blocking_agents",
         "drug_classes.anesthetics.neuromuscular_blocking_agents.nondepolarizing"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Anesthetics",
-        "Neuromuscular Blocking Agents",
-        "Nondepolarizing"
-      ]
+      "pathLabels": ["Drug Classes", "Anesthetics", "Neuromuscular Blocking Agents", "Nondepolarizing"]
     },
     {
       "id": "drug_classes.allergy_and_ent",
@@ -8586,14 +6856,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 418,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.allergy_and_ent"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.allergy_and_ent"],
+      "pathLabels": ["Drug Classes", "Allergy And Ent"]
     },
     {
       "id": "drug_classes.allergy_and_ent.antihistamines",
@@ -8602,16 +6866,8 @@
       "parentId": "drug_classes.allergy_and_ent",
       "depth": 2,
       "sortOrder": 419,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.allergy_and_ent",
-        "drug_classes.allergy_and_ent.antihistamines"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Antihistamines"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.allergy_and_ent", "drug_classes.allergy_and_ent.antihistamines"],
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Antihistamines"]
     },
     {
       "id": "drug_classes.allergy_and_ent.antihistamines.first_generation_h1_antihistamines",
@@ -8626,12 +6882,7 @@
         "drug_classes.allergy_and_ent.antihistamines",
         "drug_classes.allergy_and_ent.antihistamines.first_generation_h1_antihistamines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Antihistamines",
-        "First Generation H1 Antihistamines"
-      ]
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Antihistamines", "First Generation H1 Antihistamines"]
     },
     {
       "id": "drug_classes.allergy_and_ent.antihistamines.second_generation_h1_antihistamines",
@@ -8646,12 +6897,7 @@
         "drug_classes.allergy_and_ent.antihistamines",
         "drug_classes.allergy_and_ent.antihistamines.second_generation_h1_antihistamines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Antihistamines",
-        "Second Generation H1 Antihistamines"
-      ]
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Antihistamines", "Second Generation H1 Antihistamines"]
     },
     {
       "id": "drug_classes.allergy_and_ent.decongestants",
@@ -8660,16 +6906,8 @@
       "parentId": "drug_classes.allergy_and_ent",
       "depth": 2,
       "sortOrder": 422,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.allergy_and_ent",
-        "drug_classes.allergy_and_ent.decongestants"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Decongestants"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.allergy_and_ent", "drug_classes.allergy_and_ent.decongestants"],
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Decongestants"]
     },
     {
       "id": "drug_classes.allergy_and_ent.decongestants.alpha_agonists",
@@ -8684,12 +6922,7 @@
         "drug_classes.allergy_and_ent.decongestants",
         "drug_classes.allergy_and_ent.decongestants.alpha_agonists"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Decongestants",
-        "Alpha Agonists"
-      ]
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Decongestants", "Alpha Agonists"]
     },
     {
       "id": "drug_classes.allergy_and_ent.intranasal_agents",
@@ -8698,16 +6931,8 @@
       "parentId": "drug_classes.allergy_and_ent",
       "depth": 2,
       "sortOrder": 424,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.allergy_and_ent",
-        "drug_classes.allergy_and_ent.intranasal_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Intranasal Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.allergy_and_ent", "drug_classes.allergy_and_ent.intranasal_agents"],
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Intranasal Agents"]
     },
     {
       "id": "drug_classes.allergy_and_ent.intranasal_agents.intranasal_corticosteroids",
@@ -8722,12 +6947,7 @@
         "drug_classes.allergy_and_ent.intranasal_agents",
         "drug_classes.allergy_and_ent.intranasal_agents.intranasal_corticosteroids"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Intranasal Agents",
-        "Intranasal Corticosteroids"
-      ]
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Intranasal Agents", "Intranasal Corticosteroids"]
     },
     {
       "id": "drug_classes.allergy_and_ent.intranasal_agents.intranasal_antihistamines",
@@ -8742,12 +6962,7 @@
         "drug_classes.allergy_and_ent.intranasal_agents",
         "drug_classes.allergy_and_ent.intranasal_agents.intranasal_antihistamines"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Intranasal Agents",
-        "Intranasal Antihistamines"
-      ]
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Intranasal Agents", "Intranasal Antihistamines"]
     },
     {
       "id": "drug_classes.allergy_and_ent.intranasal_agents.intranasal_anticholinergics",
@@ -8762,12 +6977,7 @@
         "drug_classes.allergy_and_ent.intranasal_agents",
         "drug_classes.allergy_and_ent.intranasal_agents.intranasal_anticholinergics"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Allergy And Ent",
-        "Intranasal Agents",
-        "Intranasal Anticholinergics"
-      ]
+      "pathLabels": ["Drug Classes", "Allergy And Ent", "Intranasal Agents", "Intranasal Anticholinergics"]
     },
     {
       "id": "drug_classes.oncology",
@@ -8776,14 +6986,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 428,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.oncology"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Oncology"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.oncology"],
+      "pathLabels": ["Drug Classes", "Oncology"]
     },
     {
       "id": "drug_classes.oncology.cytotoxic_agents",
@@ -8792,16 +6996,8 @@
       "parentId": "drug_classes.oncology",
       "depth": 2,
       "sortOrder": 429,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.oncology",
-        "drug_classes.oncology.cytotoxic_agents"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Oncology",
-        "Cytotoxic Agents"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.oncology", "drug_classes.oncology.cytotoxic_agents"],
+      "pathLabels": ["Drug Classes", "Oncology", "Cytotoxic Agents"]
     },
     {
       "id": "drug_classes.oncology.cytotoxic_agents.antimetabolites",
@@ -8816,12 +7012,7 @@
         "drug_classes.oncology.cytotoxic_agents",
         "drug_classes.oncology.cytotoxic_agents.antimetabolites"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Oncology",
-        "Cytotoxic Agents",
-        "Antimetabolites"
-      ]
+      "pathLabels": ["Drug Classes", "Oncology", "Cytotoxic Agents", "Antimetabolites"]
     },
     {
       "id": "drug_classes.unclassified_source_labels",
@@ -8830,14 +7021,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 431,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.unclassified_source_labels"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Unclassified Source Labels"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.unclassified_source_labels"],
+      "pathLabels": ["Drug Classes", "Unclassified Source Labels"]
     },
     {
       "id": "drug_classes.unclassified_source_labels.source_status_labels",
@@ -8851,11 +7036,7 @@
         "drug_classes.unclassified_source_labels",
         "drug_classes.unclassified_source_labels.source_status_labels"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Unclassified Source Labels",
-        "Source Status Labels"
-      ]
+      "pathLabels": ["Drug Classes", "Unclassified Source Labels", "Source Status Labels"]
     },
     {
       "id": "drug_classes.unclassified_source_labels.source_domain_labels",
@@ -8869,11 +7050,7 @@
         "drug_classes.unclassified_source_labels",
         "drug_classes.unclassified_source_labels.source_domain_labels"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Unclassified Source Labels",
-        "Source Domain Labels"
-      ]
+      "pathLabels": ["Drug Classes", "Unclassified Source Labels", "Source Domain Labels"]
     },
     {
       "id": "drug_classes.unclassified_source_labels.broad_therapeutic_labels",
@@ -8887,11 +7064,7 @@
         "drug_classes.unclassified_source_labels",
         "drug_classes.unclassified_source_labels.broad_therapeutic_labels"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Unclassified Source Labels",
-        "Broad Therapeutic Labels"
-      ]
+      "pathLabels": ["Drug Classes", "Unclassified Source Labels", "Broad Therapeutic Labels"]
     },
     {
       "id": "drug_classes.unclassified_source_labels.review_required_labels",
@@ -8905,11 +7078,7 @@
         "drug_classes.unclassified_source_labels",
         "drug_classes.unclassified_source_labels.review_required_labels"
       ],
-      "pathLabels": [
-        "Drug Classes",
-        "Unclassified Source Labels",
-        "Review Required Labels"
-      ]
+      "pathLabels": ["Drug Classes", "Unclassified Source Labels", "Review Required Labels"]
     },
     {
       "id": "drug_classes.other_classes",
@@ -8918,14 +7087,8 @@
       "parentId": "drug_classes",
       "depth": 1,
       "sortOrder": 436,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.other_classes"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Other Classes"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.other_classes"],
+      "pathLabels": ["Drug Classes", "Other Classes"]
     },
     {
       "id": "drug_classes.other_classes.unmapped",
@@ -8934,16 +7097,8 @@
       "parentId": "drug_classes.other_classes",
       "depth": 2,
       "sortOrder": 437,
-      "pathIds": [
-        "drug_classes",
-        "drug_classes.other_classes",
-        "drug_classes.other_classes.unmapped"
-      ],
-      "pathLabels": [
-        "Drug Classes",
-        "Other Classes",
-        "Unmapped"
-      ]
+      "pathIds": ["drug_classes", "drug_classes.other_classes", "drug_classes.other_classes.unmapped"],
+      "pathLabels": ["Drug Classes", "Other Classes", "Unmapped"]
     }
   ]
 }

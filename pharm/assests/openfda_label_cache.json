@@ -143,9 +143,7 @@
         "(1.3) \u2022 the prophylaxis of acute graft versus host disease (aGVHD), in combination with a calcineurin inhibitor and methotrexate, in adults and pediatric patients 2 years of age and older undergoing hematopoietic stem cell transplantation (HSCT) from a matc...",
         "(1.4) Limitations of Use: Concomitant use of ORENCIA with other immunosuppressives [e.g., biologic disease-modifying antirheumatic drugs (bDMARDS), Janus kinase (JAK) inhibitors] is not recommended."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: \u2022 Increased Risk of Infection with Concomitant Use with TNF Antagonists, Other Biologic RA/PsA Therapy, or JAK Inhibitors [see Warnings and P...",
         "(6.1) \u2022 Most common adverse reactions (\u226510%) in prophylaxis of aGVHD are anemia, hypertension, CMV reactivation/CMV infection, pyrexia, pneumonia, epistaxis, CD4 lymphocytes decreased, hypermagnesemia, and acute kidney injury.",
@@ -173,9 +171,7 @@
         "( 1.2 ) as monotherapy for the treatment of adult patients with HR-positive, HER2-negative advanced or metastatic breast cancer with disease progression following endocrine therapy and prior chemotherapy in the metastatic setting.",
         "( 1.2 ) 1.1 Early Breast Cancer VERZENIO \u00ae (abemaciclib) is indicated: in combination with endocrine therapy (tamoxifen or an aromatase inhibitor) for the adjuvant treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth facto..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are discussed in greater detail in other sections of the labeling: Diarrhea [see Warnings and Precautions ( 5.1 )] .",
         "Neutropenia [see Warnings and Precautions ( 5.2 )] .",
@@ -200,9 +196,7 @@
         "1 INDICATIONS AND USAGE Abiraterone acetate tablets are indicated in combination with prednisone for the treatment of patients with Metastatic castration-resistant prostate cancer (CRPC) Metastatic high-risk castration-sensitive prostate cancer (CSPC) Abira...",
         "( 1) metastatic high-risk castration-sensitive prostate cancer (CSPC)."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following are discussed in more detail in other sections of the labeling: Hypokalemia, Fluid Retention, and Cardiovascular Adverse Reactions due to Mineralocorticoid Excess [see Warnings and Precautions ( 5.1 )].",
         "Adrenocortical Insufficiency [see Warnings and Precautions ( 5.2 )].",
@@ -280,9 +274,7 @@
         "( 1.3 ) 1.1 Previously Untreated Mantle Cell Lymphoma CALQUENCE in combination with bendamustine and rituximab is indicated for the treatment of adult patients with previously untreated mantle cell lymphoma (MCL) who are ineligible for autologous hematopoie...",
         "1.2 Previously Treated Mantle Cell Lymphoma CALQUENCE is indicated for the treatment of adult patients with MCL who have received at least one prior therapy."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are discussed in greater detail in other sections of the labeling: \u2022 Serious and Opportunistic Infections [see Warnings and Precautions (5.1) ] \u2022 Hemorrhage [see Warnings and Precaut...",
         "The most common Grade 3 or 4 laboratory abnormalities (\u2265 10%) are absolute neutrophil count decreased, uric acid increased, absolute lymphocyte count decreased, and platelets decreased.",
@@ -368,9 +360,7 @@
         "1 INDICATIONS AND USAGE VIZZ is indicated for the treatment of presbyopia in adults.",
         "VIZZ is a cholinergic agonist indicated for the treatment of presbyopia in adults ( 1 )."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reactions were instillation site irritation (20%), dim vision (16%), and headache (13%) ( 6.1 ).",
         "To report SUSPECTED ADVERSE REACTIONS, contact LENZ Therapeutics, Inc.",
@@ -639,9 +629,7 @@
         "The 589 control patients receiving intermittent treatment of recurrences with acyclovir for 1 year reported diarrhea (2.7%), nausea (2.4%), and headache (2.2%).",
         "Herpes Zoster : The most frequent adverse event reported during 3 clinical trials of treatment of herpes zoster (shingles) with 800 mg of oral acyclovir 5 times daily for 7 to 10 days in 323 patients was malaise (11.5%)."
       ],
-      "major_interactions": [
-        "Drug Interactions: See CLINICAL PHARMACOLOGY: Pharmacokinetics ."
-      ],
+      "major_interactions": ["Drug Interactions: See CLINICAL PHARMACOLOGY: Pharmacokinetics ."],
       "monitoring": []
     },
     "adalimumab": {
@@ -655,9 +643,7 @@
         "(1.3) \u2022 Reducing signs and symptoms in adult patients with active ankylosing spondylitis.",
         "(1.4) \u2022 Treatment of moderately to severely active Crohn\u2019s disease in adults and pediatric patients 6 years of age and older."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: \u2022 Serious Infections [see Warnings and Precautions (5.1) ] \u2022 Malignancies [see Warnings and Precautions (5.2) ] \u2022 Hypersensitivity Reactions...",
         "upper respiratory, sinusitis), injection site reactions, headache and rash (6.1) To report SUSPECTED ADVERSE REACTIONS, contact Sandoz Inc.",
@@ -678,9 +664,7 @@
       "fetchedAt": "2026-08-18T00:21:46Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Use For the treatment of acne"
-      ],
+      "indications": ["Use For the treatment of acne"],
       "contraindications": [
         "Do not use \u25aaon damaged skin (cuts, abrasions, eczema, sunburn) \u25aa if you are allergic to adapalene or any of the ingredients in this product"
       ],
@@ -739,9 +723,7 @@
         "Limitations of Use : The safety and efficacy of GILOTRIF have not been established in patients whose tumors have resistant EGFR mutations [see Clinical Studies (14.1) ].",
         "1.2 Previously Treated, Metastatic Squamous NSCLC GILOTRIF is indicated for the treatment of patients with metastatic squamous NSCLC progressing after platinum-based chemotherapy ."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Diarrhea [see Warnings and Precautions (5.1) ] Bullous and Exfoliative Skin Disorders [see Warnings and Precautions (5.2) ] Interstitial Lung...",
         "To report SUSPECTED ADVERSE REACTIONS, contact Boehringer Ingelheim Pharmaceuticals, Inc.",
@@ -789,9 +771,7 @@
         "1 INDICATIONS AND USAGE FABRAZYME \u00ae is indicated for the treatment of adult and pediatric patients 2 years of age and older with confirmed Fabry disease.",
         "FABRAZYME is a hydrolytic lysosomal neutral glycosphingolipid-specific enzyme indicated for the treatment of adult and pediatric patients 2 years of age and older with confirmed Fabry disease."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in labeling: Hypersensitivity Reactions Including Anaphylaxis [see Warnings and Precautions (5.1) ] Infusion-Associated Reactions [see Warnings and Precaution...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Genzyme at 1-800-633-1610 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -966,9 +946,7 @@
       "fetchedAt": "2026-08-18T00:21:49Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Take 15 minutes before meals"
-      ],
+      "indications": ["Take 15 minutes before meals"],
       "contraindications": [],
       "adverse_effects": [],
       "major_interactions": [],
@@ -984,9 +962,7 @@
         "( 1.2 ) 1.1 Adjuvant Treatment of Resected ALK-Positive Non-Small Cell Lung Cancer (NSCLC) ALECENSA is indicated as adjuvant treatment in adult patients following tumor resection of anaplastic lymphoma kinase (ALK)-positive non-small cell lung cancer (NSCLC...",
         "1.2 Treatment of Metastatic ALK-Positive NSCLC ALECENSA is indicated for the treatment of adult patients with ALK-positive metastatic NSCLC as detected by an FDA-approved test [see Dosage & Administration (2.1) ] ."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are discussed in greater detail in other sections of the label: Hepatotoxicity [see Warnings and Precautions (5.1) ] Interstitial Lung Disease (ILD)/Pneumonitis [see Warnings and Precautions (5.2) ] Renal...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Genentech at 1-888-835-2555 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch .",
@@ -1005,9 +981,7 @@
         "1 INDICATIONS AND USAGE CAMPATH is indicated as a single agent for the treatment of B-cell chronic lymphocytic leukemia (B-CLL).",
         "CAMPATH is a CD52-directed cytolytic antibody indicated as a single agent for the treatment of B-cell chronic lymphocytic leukemia (B-CLL)."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are discussed in greater detail in other sections of the label: Cytopenias [see Warnings and Precautions (5.1) ] Infusion-Related Reactions [see Warnings and Precautions (5.2) ] Immu...",
         "( 6 ) To report SUSPECTED ADVERSE REACTIONS, contact Genzyme Corporation at 1-877-4-CAMPATH (1-877-422-6728) or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -1091,9 +1065,7 @@
         "1 INDICATIONS AND USAGE LUMIZYME \u00ae is a hydrolytic lysosomal glycogen-specific enzyme indicated for patients with Pompe disease (acid \u03b1-glucosidase [GAA] deficiency).",
         "LUMIZYME \u00ae is a hydrolytic lysosomal glycogen-specific enzyme indicated for patients with Pompe disease (GAA deficiency)."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following serious adverse reactions are described below and elsewhere in the labeling: Hypersensitivity Reactions Including Anaphylaxis [see Warnings and Precautions (5.1) ] The most frequently reported adverse reactions (\u22655%) in cli...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Genzyme at 1-800-633-1610, option 1 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -1375,9 +1347,7 @@
     },
     "alprazolam": {
       "fetchedAt": "2026-08-18T00:21:53Z",
-      "brandQuery": [
-        "XANAX"
-      ],
+      "brandQuery": ["XANAX"],
       "mechanism": "12.1 Mechanism of Action Alprazolam is a 1,4 benzodiazepine. Alprazolam exerts its effect for the acute treatment of generalized anxiety disorder and panic disorder through binding to the benzodiazepine site of gamma-aminobutyric acid-A (GABA A ) receptors in the brain and enhances GABA-mediated synaptic inhibition.",
       "indications": [
         "1 INDICATIONS AND USAGE Alprazolam tablets are indicated for the: acute treatment of generalized anxiety disorder (GAD) in adults.",
@@ -1418,9 +1388,7 @@
         "that is, patients with low pO 2 values respond best, and patients with pO 2 values of 40 torr or more usually have little response.",
         "Alprostadil injection, USP should be administered only by trained personnel in facilities that provide pediatric intensive care."
       ],
-      "contraindications": [
-        "CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["CONTRAINDICATIONS None."],
       "adverse_effects": [
         "ADVERSE REACTIONS Central Nervous System Apnea has been reported in about 12% of the neonates treated (see WARNING box).",
         "Other common adverse reactions reported have been fever in about 14% of the patients treated and seizures in about 4%.",
@@ -1449,9 +1417,7 @@
     },
     "amantadine": {
       "fetchedAt": "2026-08-18T00:21:53Z",
-      "brandQuery": [
-        "GOCOVRI"
-      ],
+      "brandQuery": ["GOCOVRI"],
       "mechanism": "CLINICAL PHARMACOLOGY Pharmacodynamics Mechanism of Action Antiviral The mechanism by which amantadine exerts its antiviral activity is not clearly understood. It appears to mainly prevent the release of infectious viral nucleic acid into the host cell by interfering with the function of the transmembrane domain of the viral M2 protein. In certain cases, amantadine is also known to prevent virus assembly during virus replication. It does not appear to interfere with the immunogenicity of inactivated influenza A virus vaccine. Antiviral Activity Amantadine inhibits the replication of influen...",
       "indications": [
         "INDICATIONS AND USAGE Amantadine hydrochloride capsules, USP are indicated for the prophylaxis and treatment of signs and symptoms of infection caused by various strains of influenza A virus.",
@@ -1734,9 +1700,7 @@
     },
     "amisulpride": {
       "fetchedAt": "2026-08-18T00:21:57Z",
-      "brandQuery": [
-        "BARHEMSYS"
-      ],
+      "brandQuery": ["BARHEMSYS"],
       "mechanism": "12.1 Mechanism of Action Amisulpride is a selective dopamine-2 (D 2 ) and dopamine-3 (D 3 ) receptor antagonist. D 2 receptors are located in the chemoreceptor trigger zone (CTZ) and respond to the dopamine released from the nerve endings. Activation of CTZ relays stimuli to the vomiting center which is involved in emesis. Studies in multiple species indicate that D 3 receptors in the area postrema also play a role in emesis. Studies conducted in ferrets have shown that amisulpride inhibits emesis caused by apomorphine, with an estimated ED 50 of less than 1 mcg/kg, subcutaneously; and inhi...",
       "indications": [
         "1 INDICATIONS AND USAGE BARHEMSYS \u00ae is indicated in adults for: prevention of postoperative nausea and vomiting (PONV), either alone or in combination with an antiemetic of a different class.",
@@ -1858,10 +1822,7 @@
     },
     "amphetamine": {
       "fetchedAt": "2026-08-18T00:21:58Z",
-      "brandQuery": [
-        "ADDERALL",
-        "ADZENYS"
-      ],
+      "brandQuery": ["ADDERALL", "ADZENYS"],
       "mechanism": "CLINICAL PHARMACOLOGY Amphetamines are non-catecholamine, sympathomimetic amines with CNS stimulant activity. Peripheral actions include elevations of systolic and diastolic blood pressures, and weak bronchodilator, and respiratory stimulant action. Amphetamine, as the racemic form, differs from dextroamphetamine in a number of ways. The l-isomer is more potent than the d-isomer in cardiovascular activity, but much less potent in causing CNS excitatory effects. The racemic mixture also is less effective as an appetite suppressant when compared to dextroamphetamine. There is neither specific...",
       "indications": [
         "INDICATIONS AND USAGE Amphetamine sulfate tablets are indicated for: Narcolepsy Attention Deficit Disorder with Hyperactivity as an integral part of a total treatment program which typically includes other remedial measures (psychological, educational, soci...",
@@ -1981,9 +1942,7 @@
         "1 INDICATIONS & USAGE Anagrelide capsules are indicated for the treatment of patients with thrombocythemia, secondary to myeloproliferative neoplasms, to reduce the elevated platelet count and the risk of thrombosis and to ameliorate associated symptoms inc...",
         "Anagrelide is a platelet reducing agent indicated for the treatment of thrombocythemia, secondary to myeloproliferative neoplasms, to reduce the elevated platelet count and the risk of thrombosis and to ameliorate associated symptoms including thrombo-hemor..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are discussed in greater detail in other sections of the labeling: Cardiovascular Toxicity [see Warnings and Precautions (5.1)] Pulmonary Hypertension [see Warnings and Precautions (...",
         "(6.1) To report SUSPECTED ADVERSE REACTIONS, contact ANI Pharmaceuticals, Inc.",
@@ -2070,9 +2029,7 @@
         "1 INDICATIONS AND USAGE Angiotensin II Injection increases blood pressure in adults with septic or other distributive shock.",
         "Angiotensin II Injection is a vasoconstrictor to increase blood pressure in adults with septic or other distributive shock."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reactions reported in greater than 10% in Angiotensin II treated patients were thromboembolic events.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Gland Pharma at (609)-250\u20107990 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch .",
@@ -2140,9 +2097,7 @@
         "Adverse Reactions with Intravenous Administration The safety of SAPHNELO was assessed in adult patients with moderate to severe SLE who received SAPHNELO 300 mg by intravenous infusion every 4 weeks (N=459) for 52 weeks, compared to placebo (N=466) in contr...",
         "The population studied had a mean age of 41 years (range: 18 to 69), of which 93% were female, 60% White, 13% Black/African American, and 10% Asian."
       ],
-      "major_interactions": [
-        "7 DRUG INTERACTIONS No formal drug interaction trials have been conducted."
-      ],
+      "major_interactions": ["7 DRUG INTERACTIONS No formal drug interaction trials have been conducted."],
       "monitoring": []
     },
     "anise seed extract": {
@@ -2176,9 +2131,7 @@
         "\u2022 Orthoebolavirus zairense can change over time, and factors such as emergence of resistance or changes in viral virulence could diminish the clinical benefit of antiviral drugs.",
         "Consider available information on drug susceptibility patterns for circulating Orthoebolavirus zairense strains when deciding whether to use EBANGA."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None ."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None ."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: \u2022 Hypersensitivity Reactions Including Infusion-Associated Events [see Warnings and Precautions (5.1) ] The most frequently reported adverse...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Emergent BioSolutions at 1-800-768-2304 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -2281,9 +2234,7 @@
     },
     "apomorphine": {
       "fetchedAt": "2026-08-18T00:37:29Z",
-      "brandQuery": [
-        "APOKYN"
-      ],
+      "brandQuery": ["APOKYN"],
       "mechanism": "",
       "indications": [
         "USES Temporary relief of GERD symptoms such as: Occasional heartburn Acir taste in the mouth Occasional cough at night"
@@ -2330,9 +2281,7 @@
         "Other Taste abnormalities, dry mouth, nasal burning or dryness, headache, head cold sensation, chest heaviness or burning, clammy or sweaty palms, body heat sensation, shortness of breath, increased pharyngeal secretion, extremity pain or numbness, fatigue,...",
         "Clinical Practice The following events have been identified during postmarketing use of IOPIDINE 1% Ophthalmic Solution in clinical practice."
       ],
-      "major_interactions": [
-        "DRUG INTERACTIONS Interactions with other agents have not been investigated."
-      ],
+      "major_interactions": ["DRUG INTERACTIONS Interactions with other agents have not been investigated."],
       "monitoring": []
     },
     "apremilast": {
@@ -2465,10 +2414,7 @@
     },
     "aripiprazole": {
       "fetchedAt": "2026-08-18T00:22:04Z",
-      "brandQuery": [
-        "ABILIFY",
-        "OPIPZA"
-      ],
+      "brandQuery": ["ABILIFY", "OPIPZA"],
       "mechanism": "12.1 Mechanism of Action The mechanism of action of aripiprazole in schizophrenia is unclear. However, the efficacy of aripiprazole in the listed indications could be mediated through a combination of partial agonist activity at D 2 and 5-HT 1A receptors and antagonist activity at 5-HT 2A receptors.",
       "indications": [
         "1 INDICATIONS AND USAGE Aripiprazole is indicated for the treatment of: \u2022 Schizophrenia \u2022 Irritability Associated with Autistic Disorder \u2022 Treatment of Tourette\u2019s Disorder Aripiprazole is an atypical antipsychotic.",
@@ -2601,18 +2547,13 @@
         "Tri-Vite Drops with Fluoride 0.25 mg supply significant amounts of vitamins A, C and D to supplement the diet, and to help assure that nutritional deficiencies of these vitamins will not develop."
       ],
       "contraindications": [],
-      "adverse_effects": [
-        "ADVERSE REACTIONS Allergic rash and other idiosyncrasies have been rarely reported."
-      ],
+      "adverse_effects": ["ADVERSE REACTIONS Allergic rash and other idiosyncrasies have been rarely reported."],
       "major_interactions": [],
       "monitoring": []
     },
     "asenapine": {
       "fetchedAt": "2026-08-18T00:22:05Z",
-      "brandQuery": [
-        "SAPHRIS",
-        "SECUADO"
-      ],
+      "brandQuery": ["SAPHRIS", "SECUADO"],
       "mechanism": "12.1 Mechanism of Action The mechanism of action of asenapine, in schizophrenia and bipolar I disorder, is unknown. It has been suggested that the efficacy of asenapine in schizophrenia could be mediated through a combination of antagonist activity at D 2 and 5-HT 2A receptors.",
       "indications": [
         "1 INDICATIONS AN D USAGE SAPHRIS is indicated for: Schizophrenia in adults [see Clinical Studies ( 14.1 )] Bipolar I disorder [see Clinical Studies ( 14.2 )] \u2022 Acute monotherapy of manic or mixed episodes, in adults and pediatric patients 10 to 17 years of..."
@@ -2648,9 +2589,7 @@
         "1 INDICATIONS AND USAGE STRENSIQ \u00ae is indicated for the treatment of patients with perinatal/infantile- and juvenile-onset hypophosphatasia (HPP).",
         "STRENSIQ is a tissue nonspecific alkaline phosphatase indicated for the treatment of patients with perinatal/infantile- and juvenile-onset hypophosphatasia (HPP)."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are described below and elsewhere in the labeling: Hypersensitivity Reactions [see Warnings and Precautions (5.1) ] Lipodystrophy [see Warnings and Precautions (5.2) ] Ectopic Calcifications [see Warnings...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Alexion Pharmaceuticals, Inc.",
@@ -2895,9 +2834,7 @@
         "( 1.1 ) in combination with paclitaxel protein-bound and carboplatin for the first-line treatment of adult patients with metastatic non-squamous NSCLC with no EGFR or ALK genomic tumor aberrations ( 1.1 ) for the treatment of adult patients with metastatic...",
         "Patients with EGFR or ALK genomic tumor aberrations should have disease progression on FDA-approved therapy for NSCLC harboring these aberrations prior to receiving TECENTRIQ."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Severe and Fatal Immune-Mediated Adverse Reactions [see Warnings and Precautions (5.1) ] Infusion-Related Reactions [see Warnings and Precaut...",
         "( 6.1 ) TECENTRIQ in combination with other antineoplastic drugs Most common adverse reactions (\u2265 20%) in patients with NSCLC and SCLC are fatigue/asthenia, nausea, alopecia, constipation, diarrhea, and decreased appetite.",
@@ -2979,9 +2916,7 @@
     },
     "atomoxetine": {
       "fetchedAt": "2026-08-18T00:22:10Z",
-      "brandQuery": [
-        "STRATTERA"
-      ],
+      "brandQuery": ["STRATTERA"],
       "mechanism": "12.1 Mechanism of Action The precise mechanism by which atomoxetine produces its therapeutic effects in Attention-Deficit/Hyperactivity Disorder (ADHD) is unknown, but is thought to be related to selective inhibition of the pre-synaptic norepinephrine transporter, as determined in ex vivo uptake and neurotransmitter depletion studies.",
       "indications": [
         "1 INDICATIONS AND USAGE Atomoxetine capsule is a selective norepinephrine reuptake inhibitor indicated for the treatment of Attention-Deficit/Hyperactivity Disorder (ADHD).",
@@ -3142,9 +3077,7 @@
       "indications": [
         "1 INDICATIONS & USAGE Atropine Sulfate Injection, USP, is indicated for temporary blockade of severe or life threatening muscarinic effects, e.g., as an antisialagogue, an antivagal agent, an antidote for organophosphorus or muscarinic mushroom poisoning, a..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions have been identified during post-approval use of atropine sulfate.",
         "Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure.",
@@ -3249,9 +3182,7 @@
         "1 INDICATIONS AND USAGE NEXVIAZYME is indicated for the treatment of patients 1 year of age and older with late-onset Pompe disease (lysosomal acid alpha-glucosidase [GAA] deficiency).",
         "NEXVIAZYME is a hydrolytic lysosomal glycogen-specific enzyme indicated for the treatment of patients 1 year of age and older with late-onset Pompe disease (lysosomal acid alpha-glucosidase [GAA] deficiency)."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following serious adverse reactions are discussed in greater detail in other sections of the labeling: Hypersensitivity Reactions Including Anaphylaxis [see Warnings and Precautions (5.1) ] Infusion-Associated Reactions (IARs) [see W...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Genzyme at 1-800-633-1610, option 1 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -3304,9 +3235,7 @@
         "( 1.2 ) Limitations of Use: AYVAKIT is not recommended for the treatment of patients with AdvSM with platelet counts of less than 50 \u00d7 10 9 /L ( 1.2 ) Indolent Systemic Mastocytosis (ISM) the treatment of adult patients with ISM.",
         "( 1.3 ) Limitations of Use: AYVAKIT is not recommended for the treatment of patients with ISM with platelet counts of less than 50 \u00d7 10 9 /L ( 1.2 ) 1.1 PDGFRA Exon 18 Mutation-Positive Unresectable or Metastatic Gastrointestinal Stromal Tumor (GIST) AYVAKI..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Intracranial hemorrhage [see Warnings and Precautions (5.1) ] Cognitive effects [see Warnings and Precautions (5.2) ] Photosensitivity [see W...",
         "( 6.1 ) AdvSM (\u226520% incidence): edema, diarrhea, nausea, and fatigue/asthenia.",
@@ -3334,9 +3263,7 @@
         "( 1.2 , 14.2 ) Have disease progression within 12 months of neoadjuvant or adjuvant treatment with platinum-containing chemotherapy.",
         "( 1.2 , 14.2 ) Renal Cell Carcinoma (RCC) First-line treatment, in combination with axitinib, of patients with advanced RCC."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Severe and fatal immune-mediated adverse reactions [see Warnings and Precautions (5.1) ] Infusion-related reactions [see Warnings and Precaut...",
         "( 6.1 ) UC : Maintenance treatment: fatigue, musculoskeletal pain, urinary tract infection, and rash.",
@@ -3411,9 +3338,7 @@
         "AVMAPKI FAKZYNJA CO-PACK, a combination of avutometinib and defactinib, each kinase inhibitors, is indicated for the treatment of adult patients with KRAS -mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy.",
         "This indication is approved under accelerated approval based on tumor response rate and duration of response."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are discussed in more detail in other sections of the labeling: Ocular Toxicities [see Warnings and Precautions (5.1) ] Serious Skin Toxicities [see Warnings and Precautions (5.2) ] Hepatotoxicity [see War...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Verastem at 1-833-633-8786 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -3438,9 +3363,7 @@
         "1 INDICATIONS AND USAGE NIKTIMVO is indicated for the treatment of chronic graft-versus-host disease (cGVHD) after failure of at least two prior lines of systemic therapy in adult and pediatric patients weighing at least 40 kg.",
         "NIKTIMVO is a colony stimulating factor-1 receptor (CSF-1R)-blocking antibody indicated for the treatment of chronic graft-versus-host disease (cGVHD) after failure of at least two prior lines of systemic therapy in adult and pediatric patients weighing at..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are described elsewhere in the labeling.",
         "Infusion-Related Reactions [see Warnings and Precautions ( 5.1 )] The most common (\u2265 15%) adverse reactions, including laboratory abnormalities, are increased AST, infection (pathogen unspecified), increased ALT, decreased phosphate, decreased hemoglobin, v...",
@@ -3472,9 +3395,7 @@
         "( 1.2 ) 1.1 First-Line Advanced Renal Cell Carcinoma INLYTA in combination with avelumab is indicated for the first-line treatment of patients with advanced renal cell carcinoma (RCC).",
         "INLYTA in combination with pembrolizumab is indicated for the first-line treatment of patients with advanced RCC."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are discussed elsewhere in the labeling [see Warnings and Precautions (5) ] : \u2022 Hypertension [see Warnings and Precautions (5.1) ] \u2022 Arterial thromboembolic events [see Warnings and...",
         "( 6.1 ) INLYTA in combination with pembrolizumab: diarrhea, fatigue/asthenia, hypertension, hepatotoxicity, hypothyroidism, decreased appetite, palmar-plantar erythrodysesthesia, nausea, stomatitis/mucosal inflammation, dysphonia, rash, cough, and constipat...",
@@ -3559,9 +3480,7 @@
         "1 INDICATIONS AND USAGE Azelastine hydrochloride nasal spray is indicated for the treatment of the symptoms of seasonal allergic rhinitis in adults and pediatric patients 5 years and older, and for the treatment of the symptoms of vasomotor rhinitis in adul...",
         "Azelastine hydrochloride nasal spray is an H1-receptor antagonist indicated for the treatment of the symptoms of seasonal allergic rhinitis in adults and pediatric patients 5 years and older and for the treatment of the symptoms of vasomotor rhinitis in adu..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS Use of azelastine hydrochloride nasal spray has been associated with somnolence [see Warnings and Precautions ( 5.1 )].",
         "The most common adverse reactions (\u22652% incidence) are: bitter taste, headache, somnolence, dysesthesia, rhinitis, nasal burning, pharyngitis, epistaxis, sinusitis, paroxysmal sneezing, nausea, dry mouth, fatigue, dizziness, and weight increase.",
@@ -3673,9 +3592,7 @@
         "Baclofen tablets, USP are not indicated in the treatment of skeletal muscle spasm resulting from rheumatic disorders.",
         "The efficacy of baclofen in stroke, cerebral palsy, and Parkinson's disease has not been established and, therefore, it is not recommended for these conditions."
       ],
-      "contraindications": [
-        "CONTRAINDICATIONS Hypersensitivity to baclofen."
-      ],
+      "contraindications": ["CONTRAINDICATIONS Hypersensitivity to baclofen."],
       "adverse_effects": [
         "ADVERSE REACTIONS The most common is transient drowsiness (10 to 63%).",
         "In one controlled study of 175 patients, transient drowsiness was observed in 63% of those receiving baclofen compared to 36% of those in the placebo group.",
@@ -4041,9 +3958,7 @@
         "( 1 ) Limitations of Use Do not use SIRTURO for the treatment of: Latent infection due to Mycobacterium tuberculosis ( M.",
         "tuberculosis ) Drug-sensitive pulmonary TB Extra-pulmonary TB Infections caused by non-tuberculous mycobacteria"
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following serious adverse reactions are discussed elsewhere in the labeling: QTc Prolongation [see Warnings and Precautions (5.1) and Clinical Pharmacology (12.2) ] Mortality Imbalance in Clinical Trials [see Warnings and Precautions...",
         "( 6.1 ) The most common adverse reactions reported in 10% or more adult patients treated with SIRTURO (40-week arm) in Study 4 were QTc prolongation, nausea, vomiting, arthralgia, transaminases increased, abdominal pain, pruritus, dizziness, headache, chest...",
@@ -4105,9 +4020,7 @@
         "( 1 ) Limitations of Use : The safety and effectiveness of ORLADEYO for the treatment of acute HAE attacks have not been established.",
         "ORLADEYO should not be used for treatment of acute HAE attacks."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reaction is described elsewhere in the labeling: QTc Interval Prolongation [see Warnings and Precautions (5.1) ] .",
         "Most common adverse reactions (\u226510%) are abdominal pain, vomiting, diarrhea, back pain, and gastroesophageal reflux disease.",
@@ -4132,9 +4045,7 @@
         "1 INDICATIONS AND USAGE BESIVANCE \u00ae (besifloxacin ophthalmic suspension) 0.6% is indicated for the treatment of bacterial conjunctivitis caused by susceptible isolates of the following bacteria: Aerococcus viridans* CDC coryneform group G Corynebacterium ps...",
         "BESIVANCE \u00ae (besifloxacin ophthalmic suspension) 0.6% is a quinolone antimicrobial indicated for the treatment of bacterial conjunctivitis caused by susceptible isolates of the following bacteria: Aerococcus viridans *, CDC coryneform group G, Corynebacteri..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the r...",
         "The data described below reflect exposure to BESIVANCE in approximately 1,000 patients between 1 and 98 years old with clinical signs and symptoms of bacterial conjunctivitis.",
@@ -4241,9 +4152,7 @@
         "1 INDICATIONS AND USAGE Bromfenac Ophthalmic Solution 0.09% is indicated for the treatment of postoperative inflammation and reduction of ocular pain in patients who have undergone cataract surgery.",
         "Bromfenac is a nonsteroidal anti-inflammatory drug (NSAID) indicated for the treatment of postoperative inflammation and reduction of ocular pain in patients who have undergone cataract extraction (1) ."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most commonly reported adverse reactions in 2-7% of patients were abnormal sensation in eye, conjunctival hyperemia and eye irritation (including burning/stinging) (6.1) .",
         "To report SUSPECTED ADVERSE REACTIONS, contact Sentiss at 1-855-473-6847 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch 6.1 Clinical Trial Experience The most commonly reported adverse experiences reported following use of bromfenac after cataract surgery...",
@@ -4288,10 +4197,7 @@
     },
     "buprenorphine": {
       "fetchedAt": "2026-08-18T00:37:33Z",
-      "brandQuery": [
-        "BELBUCA",
-        "BRIXADI"
-      ],
+      "brandQuery": ["BELBUCA", "BRIXADI"],
       "mechanism": "12.1 Mechanism of Action Buprenorphine is a partial agonist at the mu-opioid receptor and an antagonist at the kappa-opioid receptor.",
       "indications": [
         "1 INDICATIONS AND USAGE BELBUCA is indicated for the management of severe and persistent pain that requires an opioid analgesic and that cannot be adequately treated with alternative options, including immediate-release opioids.",
@@ -4460,9 +4366,7 @@
         "or Isatuximab and dexamethasone.",
         "( 1 , 14 ) as a single agent for the treatment of patients with relapsed or refractory multiple myeloma who have received one or more lines of therapy."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Cardiac Toxicities [see Warnings and Precautions (5.1) ] Acute Renal Failure [see Warnings and Precautions (5.2) ] Tumor Lysis Syndrome [see...",
         "( 6 ) The most common adverse reactions occurring in at least 20% of patients treated with Kyprolis in the combination therapy trials: anemia, diarrhea, hypertension, fatigue, upper respiratory tract infection, thrombocytopenia, pyrexia, cough, dyspnea, and...",
@@ -5190,9 +5094,7 @@
         "Uses Cures athlete\u2019s foot (tinea pedis), jock itch (tinea cruris), ringworm (tinea corporis).",
         "Relieves the itching, irritation, redness, scaling and discomfort which can accompany these conditions."
       ],
-      "contraindications": [
-        "Do Not Use Do not use on children under 2 years of age unless direcgted by a doctor"
-      ],
+      "contraindications": ["Do Not Use Do not use on children under 2 years of age unless direcgted by a doctor"],
       "adverse_effects": [],
       "major_interactions": [],
       "monitoring": []
@@ -5462,9 +5364,7 @@
         "synthetic analogs may be used in conjunction with mineralocorticoids where applicable;",
         "in infancy, mineralocorticoid supplementation is of particular importance) Acute adrenocortical insufficiency (hydrocortisone or cortisone is the drug of choice;"
       ],
-      "contraindications": [
-        "CONTRAINDICATIONS Systemic fungal infections."
-      ],
+      "contraindications": ["CONTRAINDICATIONS Systemic fungal infections."],
       "adverse_effects": [
         "ADVERSE REACTIONS Fluid and electrolyte disturbances: Sodium retention Fluid retention Congestive heart failure in susceptible patients Potassium loss Hypokalemic alkalosis Hypertension Musculoskeletal: Muscle weakness Steroid myopathy Loss of muscle mass O..."
       ],
@@ -5515,9 +5415,7 @@
         "(1.2) 1.1 Intensive Care Unit Sedation Dexmedetomidine Injection and Dexmedetomidine in 5% Dextrose Injection is indicated for sedation of initially intubated and mechanically ventilated adult patients during treatment in an intensive care setting.",
         "Dexmedetomidine Injection and Dexmedetomidine in 5% Dextrose Injection should be administered by continuous infusion not to exceed 24 hours."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: \u2022 Hypotension, bradycardia and sinus arrest [see Warnings and Precautions (5.2)] \u2022 Transient hypertension [see Warnings and Precautions (5.3)...",
         "(6.1) \u2022 Adverse reactions in adults, associated with infusions >24 hours in duration include ARDS, respiratory failure, and agitation.",
@@ -5845,9 +5743,7 @@
         "1 INDICATIONS AND USAGE Ecoza (econazole nitrate) topical foam, 1%, is indicated for the treatment of interdigital tinea pedis caused by Trichophyton rubrum, Trichophyton mentagrophytes, and Epidermophyton floccosum in patients 12 years of age and older.",
         "Ecoza is an azole antifungal indicated for the treatment of interdigital tinea pedis caused by Trichophyton rubrum, Trichophyton mentagrophytes , and Epidermophyton floccosum in patients 12 years of age and older."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS During clinical trials with Ecoza topical foam, the most common adverse reactions were application site reactions which occurred in less than 1% of subjects in both the Ecoza and vehicle arms.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Resilia Pharmaceuticals at 1-888-998-0770 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -5900,9 +5796,7 @@
         "1 INDICATIONS AND USAGE JUBLIA (efinaconazole) topical solution, 10% is an azole antifungal indicated for the topical treatment of onychomycosis of the toenail(s) due to Trichophyton rubrum and Trichophyton mentagrophytes .",
         "JUBLIA is an azole antifungal indicated for the topical treatment of onychomycosis of the toenail(s) due to Trichophyton rubrum and Trichophyton mentagrophytes ."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reactions (incidence >1%) were ingrown toenails, application site dermatitis, application site vesicles, and application site pain.",
         "(6.1) To report SUSPECTED ADVERSE REACTIONS, contact Bausch Health US, LLC at 1-800-321-4576 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -5923,9 +5817,7 @@
         "1 INDICATIONS AND USAGE IWILFIN (eflornithine) is indicated to reduce the risk of relapse in adult and pediatric patients with high-risk neuroblastoma (HRNB) who have demonstrated at least a partial response to prior multiagent, multimodality therapy includ...",
         "IWILFIN is an ornithine decarboxylase inhibitor indicated to reduce the risk of relapse in adult and pediatric patients with high-risk neuroblastoma (HRNB) who have demonstrated at least a partial response to prior multiagent, multimodality therapy includin..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Myelosuppression [see Warnings and Precautions (5.1) ] Hepatotoxicity [see Warnings and Precautions (5.2) ] Hearing Loss [see Warnings and Pr...",
         "( 6.1 ) Most common Grade 3 or 4 laboratory abnormalities (incidence \u22652%) are increased ALT, increased AST, decreased neutrophil count, and decreased hemoglobin.",
@@ -6059,9 +5951,7 @@
       "fetchedAt": "2026-08-18T00:37:47Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Purpose Bronchodilator"
-      ],
+      "indications": ["Purpose Bronchodilator"],
       "contraindications": [
         "Do not use unless a doctor said you have asthma if you are now taking a prescription monoamine oxidase inhibitor (MAOI) (certain drugs taken for depression, psychiatric or emotional conditions, or Parkinson's disease), or for 2 weeks after stopping the MAOI...",
         "If you do not know if your prescription drug contains an MAOI, ask a doctor or pharmacist before taking this product.",
@@ -6239,9 +6129,7 @@
       "indications": [
         "1 INDICATIONS AND USAGE Etravirine, in combination with other antiretroviral agents, is indicated for the treatment of human immunodeficiency virus type 1 (HIV-1) infection in antiretroviral treatment-experienced adult patients and pediatric patients 2 year..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are described in greater detail in other sections: Severe skin and hypersensitivity reactions [see Warnings and Precautions (5.1) ] .",
         "Immune reconstitution syndrome [see Warnings and Precautions (5.3) ] .",
@@ -7175,9 +7063,7 @@
         "( 1 ) Limitations of Use : NINLARO is not recommended for use in the maintenance setting or in newly diagnosed multiple myeloma in combination with lenalidomide and dexamethasone outside of controlled clinical trials.",
         "( 1 ) Limitations of Use : NINLARO is not recommended for use in the maintenance setting or in newly diagnosed multiple myeloma in combination with lenalidomide and dexamethasone outside of controlled clinical trials [see Warnings and Precautions (5.9) and..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following adverse reactions are described in detail in other sections of the prescribing information: Thrombocytopenia [see Warnings and Precautions (5.1) ] Gastrointestinal Toxicities [see Warnings and Precautions (5.2) ] Peripheral...",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Takeda Pharmaceuticals at 1-844-617-6468 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch .",
@@ -7204,9 +7090,7 @@
     },
     "ketamine": {
       "fetchedAt": "2026-08-18T00:37:57Z",
-      "brandQuery": [
-        "KETALAR"
-      ],
+      "brandQuery": ["KETALAR"],
       "mechanism": "12.1 Mechanism of Action KETALAR, a racemic mixture of ketamine, is a non-selective, non-competitive antagonist of the N-methyl-D-aspartate (NMDA) receptor, an ionotropic glutamate receptor. The major circulating metabolite of ketamine (norketamine) demonstrated activity at the same receptor with less affinity. Norketamine is about 1/3 as active as ketamine in reducing halothane requirements (MAC) of the rat.",
       "indications": [
         "1 INDICATIONS AND USAGE KETALAR (ketamine hydrochloride) injection is indicated: as the sole anesthetic agent for diagnostic and surgical procedures that do not require skeletal muscle relaxation.",
@@ -7327,9 +7211,7 @@
         "1 INDICATIONS AND USAGE TAKHZYRO \u00ae is indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE) in adult and pediatric patients aged 2 years and older.",
         "TAKHZYRO is a plasma kallikrein inhibitor (monoclonal antibody) indicated for prophylaxis to prevent attacks of hereditary angioedema (HAE) in adult and pediatric patients 2 years and older."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reactions (\u226510%) are injection site reactions, upper respiratory infections, headache, rash, dizziness, diarrhea, and myalgia.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Takeda Pharmaceuticals at 1-877-TAKEDA-7 (1-877-825-3327) or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch .",
@@ -7599,10 +7481,7 @@
     },
     "lorazepam": {
       "fetchedAt": "2026-08-18T00:38:00Z",
-      "brandQuery": [
-        "ATIVAN",
-        "LOREEV"
-      ],
+      "brandQuery": ["ATIVAN", "LOREEV"],
       "mechanism": "CLINICAL PHARMACOLOGY Lorazepam interacts with the \u03b3-aminobutyric acid (GABA)-benzodiazepine receptor complex, which is widespread in the brain of humans as well as other species. This interaction is presumed to be responsible for lorazepam\u2019s mechanism of action. Lorazepam exhibits relatively high and specific affinity for its recognition site but does not displace GABA. Attachment to the specific binding site enhances the affinity of GABA for its receptor site on the same receptor complex. The pharmacodynamic consequences of benzodiazepine agonist actions include antianxiety effects, sedat...",
       "indications": [
         "INDICATIONS AND USAGE Status Epilepticus ATIVAN Injection is indicated for the treatment of status epilepticus.",
@@ -7642,9 +7521,7 @@
         "1 INDICATIONS AND USAGE XDEMVY is indicated for the treatment of Demodex blepharitis.",
         "XDEMVY is an ectoparasiticide (anti-parasitic) indicated for the treatment of Demodex blepharitis."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reaction was instillation site stinging and burning (10%).",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Tarsus Pharmaceuticals at 1-888-421-4002 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -7663,9 +7540,7 @@
         "1 INDICATIONS AND USAGE Luliconazole Cream, 1% is indicated for the topical treatment of interdigital tinea pedis, tinea cruris, and tinea corporis caused by the organisms Trichophyton rubrum and Epidermophyton floccosum .",
         "Luliconazole Cream, 1% is an azole antifungal indicated for the topical treatment of interdigital tinea pedis, tinea cruris, and tinea corporis caused by the organisms Trichophyton rubrum and Epidermophyton floccosum."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reactions observed in clinical trials were application site reactions, which occurred in less than 1% of subjects.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Oceanside Pharmaceuticals at 1-800-321-4576 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -7772,9 +7647,7 @@
         "1 INDICATIONS AND USAGE LIVTENCITY \u00ae is indicated for the treatment of adults and pediatric patients (12 years of age and older and weighing at least 35 kg) with post-transplant cytomegalovirus (CMV) infection/disease that is refractory to treatment (with o...",
         "LIVTENCITY is a cytomegalovirus (CMV) pUL97 kinase inhibitor indicated for the treatment of adults and pediatric patients (12 years of age and older and weighing at least 35 kg) with post-transplant CMV infection/disease that is refractory to treatment (wit..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse events (all grades, >10%) in subjects treated with LIVTENCITY were taste disturbance, nausea, diarrhea, vomiting, and fatigue.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Takeda Pharmaceuticals America, Inc.",
@@ -8051,9 +7924,7 @@
     },
     "midazolam": {
       "fetchedAt": "2026-08-18T00:38:04Z",
-      "brandQuery": [
-        "NAYZILAM"
-      ],
+      "brandQuery": ["NAYZILAM"],
       "mechanism": "CLINICAL PHARMACOLOGY Midazolam is a short-acting benzodiazepine central nervous system (CNS) depressant. Pharmacodyncamics: The effects of midazolam on the CNS are dependent on the dose administered, the route of administration, and the presence or absence of other medications. Onset time of sedative effects after IM administration in adults is 15 minutes, with peak sedation occurring 30 to 60 minutes following injection. In one adult study, when tested the following day, 73% of the patients who received midazolam hydrochloride intramuscularly had no recall of memory cards shown 30 minutes...",
       "indications": [
         "INDICATIONS AND USAGE Midazolam injection is indicated: intramuscularly or intravenously for preoperative sedation/anxiolysis/amnesia;",
@@ -8293,9 +8164,7 @@
         "1 INDICATIONS AND USAGE NAFTIN \u00ae Gel is an allylamine antifungal indicated for the treatment of interdigital tinea pedis caused by the organisms Trichophyton rubrum , Trichophyton mentagrophytes , and Epidermophyton floccosum .",
         "NAFTIN \u00ae Gel is an allylamine antifungal indicated for the treatment of interdigital tinea pedis caused by the organisms Trichophyton rubrum, Trichophyton mentagrophytes, and Epidermophyton floccosum ."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reactions are application site reactions (2%).",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Sebela Pharmaceuticals Inc.",
@@ -8337,9 +8206,7 @@
     },
     "naloxone": {
       "fetchedAt": "2026-08-18T00:38:06Z",
-      "brandQuery": [
-        "KLOXXADO"
-      ],
+      "brandQuery": ["KLOXXADO"],
       "mechanism": "12.1 Mechanism of Action Naloxone hydrochloride is an opioid antagonist that antagonizes opioid effects by competing for the same receptor sites. Administration of naloxone hydrochloride reverses the effects of opioids, including respiratory depression, sedation and hypotension. It can also reverse the psychotomimetic and dysphoric effects of agonist-antagonists such as pentazocine.",
       "indications": [
         "1 INDICATIONS AND USAGE KLOXXADO is indicated for the emergency treatment of known or suspected opioid overdose, as manifested by respiratory and/or central nervous system depression, for adult and pediatric patients.",
@@ -8445,9 +8312,7 @@
       "fetchedAt": "2026-08-18T00:38:06Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Uses First aid to help prevent infection in minor cuts, scrapes and burns"
-      ],
+      "indications": ["Uses First aid to help prevent infection in minor cuts, scrapes and burns"],
       "contraindications": [
         "Do not use in eyes over large areas of the body if you are allergic to any of the ingredients longer than 1 week unless directed by a doctor"
       ],
@@ -8731,9 +8596,7 @@
       "fetchedAt": "2026-08-18T00:38:08Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "this drug may take 1 to 4 days for full effect"
-      ],
+      "indications": ["this drug may take 1 to 4 days for full effect"],
       "contraindications": [
         "Do not use if you have: \u2022 trouble or pain swallowing food, vomiting with blood, or bloody or black stools \u2022 heartburn with lightheadedness, sweating or dizziness \u2022 chest pain or shoulder pain with shortness of breath;",
         "pain spreading to arms, neck or shoulders;",
@@ -8967,9 +8830,7 @@
     },
     "oxybate": {
       "fetchedAt": "2026-08-18T00:38:10Z",
-      "brandQuery": [
-        "LUMRYZ"
-      ],
+      "brandQuery": ["LUMRYZ"],
       "mechanism": "12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action LUMRYZ is a CNS depressant. The mechanism of action of LUMRYZ in the treatment of narcolepsy is unknown. Sodium oxybate is the sodium salt of gamma-hydroxybutyrate (GHB), an endogenous compound and metabolite of the neurotransmitter GABA. It is hypothesized that the therapeutic effects of LUMRYZ on cataplexy and excessive daytime sleepiness are mediated through GABA B actions at noradrenergic and dopaminergic neurons, as well as at thalamocortical neurons. 12.3 Pharmacokinetics Following oral administration of LUMRYZ, the plasma levels of GH...",
       "indications": [
         "1 INDICATIONS AND USAGE LUMRYZ is indicated for the treatment of cataplexy or excessive daytime sleepiness (EDS) in patients 7 years of age and older with narcolepsy.",
@@ -9382,9 +9243,7 @@
       "fetchedAt": "2026-08-18T00:38:13Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Uses First aid to help prevent infection in minor cuts, scrapes and burns"
-      ],
+      "indications": ["Uses First aid to help prevent infection in minor cuts, scrapes and burns"],
       "contraindications": [
         "Do not use in eyes over large areas of the body if you are allergic to any of the ingredients longer than 1 week unless directed by a doctor"
       ],
@@ -9428,9 +9287,7 @@
       "fetchedAt": "2026-08-18T00:32:44Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Uses First aid to help prevent infection in minor cuts scrapes burns"
-      ],
+      "indications": ["Uses First aid to help prevent infection in minor cuts scrapes burns"],
       "contraindications": [
         "Do not use in the eyes over large areas of the body If you are allergic to povidone-iodine or any other ingredients in this preparation"
       ],
@@ -9479,9 +9336,7 @@
         "in infancy mineralocorticoid supplementation is of particular importance) Congenital adrenal hyperplasia Hypercalcemia associated with cancer Nonsuppurative thyroiditis 2.",
         "Rheumatic Disorders As adjunctive therapy for short-term administration (to tide the patient over an acute episode or exacerbation) in: Psoriatic arthritis Rheumatoid arthritis, including juvenile rheumatoid arthritis (selected cases may require low-dose ma..."
       ],
-      "contraindications": [
-        "CONTRAINDICATIONS Systemic fungal infections and known hypersensitivity to components."
-      ],
+      "contraindications": ["CONTRAINDICATIONS Systemic fungal infections and known hypersensitivity to components."],
       "adverse_effects": [
         "ADVERSE REACTIONS Fluid and Electrolyte Disturbances Sodium retention Fluid retention Congestive heart failure in susceptible patients Potassium loss Hypokalemic alkalosis Hypertension Musculoskeletal Muscle weakness Steroid myopathy Loss of muscle mass Ost..."
       ],
@@ -9792,10 +9647,7 @@
       "fetchedAt": "2026-08-18T00:38:16Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Uses: See symptoms on front panel.",
-        "Relieves dizziness *"
-      ],
+      "indications": ["Uses: See symptoms on front panel.", "Relieves dizziness *"],
       "contraindications": [],
       "adverse_effects": [],
       "major_interactions": [],
@@ -9845,9 +9697,7 @@
         "Adult Patients: Raltegravir tablets are human immunodeficiency virus integrase strand transfer inhibitors (HIV-1 INSTI) indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection in adult patients ( 1 ).",
         "Pediatric Patients: Raltegravir tablets are indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection in pediatric patients weighing at least 2 kg ( 1 )."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None None ( 4 )."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None None ( 4 )."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the r...",
         "\u2022 The most common adverse reactions of moderate to severe intensity (\u22652%) are insomnia, headache, dizziness, nausea and fatigue ( 6.1 ).",
@@ -9909,9 +9759,7 @@
       "fetchedAt": "2026-08-18T00:38:16Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Purpose Acid reducer"
-      ],
+      "indications": ["Purpose Acid reducer"],
       "contraindications": [
         "Do not use if you have trouble or pain swallowing food, vomiting with blood, or bloody or black stools.These may be signs of a serious condition.",
         "with other acid reducers"
@@ -10334,9 +10182,7 @@
         "1 INDICATIONS AND USAGE EKTERLY\u00ae is indicated for the treatment of acute attacks of hereditary angioedema (HAE) in adult and pediatric patients aged 12 years and older.",
         "EKTERLY \u00ae is a plasma kallikrein inhibitor indicated for the treatment of acute attacks of hereditary angioedema (HAE) in adult and pediatric patients aged 12 years and older."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The most common adverse reaction (incidence \u22652%) is headache.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact KalVista Pharmaceuticals, Inc.",
@@ -10393,9 +10239,7 @@
         "1 INDICATIONS AND USAGE ERTACZO \u00ae cream, 2%, is indicated for the topical treatment of interdigital tinea pedis in immunocompetent adult and pediatric patients 12 years of age and older caused by Trichophyton rubrum , Trichophyton mentagrophytes, and Epider...",
         "ERTACZO cream, 2% is an azole antifungal indicated for the topical treatment of interdigital tinea pedis in immunocompetent adult and pediatric patients 12 years of age and older caused by Trichophyton rubrum, Trichophyton mentagrophytes , and Epidermophyto..."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS Most common adverse reactions observed in clinical trials (incidence >2%) were contact dermatitis, dry skin, burning skin, application site skin tenderness.",
         "( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Lacer Pharma, LLC at 1-888-403-8874 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.",
@@ -10498,9 +10342,7 @@
         "Adjunctive Measures for Head Lice Infestations Spinosad Topical Suspension should be used in the context of an overall lice management program: Wash in hot water or dry-clean all recently worn clothing, hats, used bedding and towels.",
         "Wash personal care items such as combs, brushes and hair clips in hot water."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS Most common adverse events for lice treatment (>1%) were application site erythema and ocular erythema.",
         "( 6.1 ) Most common adverse reactions for scabies treatment (>1%) were application site irritation (pain and burning) and dry skin.",
@@ -10641,10 +10483,7 @@
         "in one case a fatal outcome was reported (see WARNINGS ).",
         "To report a serious adverse event or obtain product information, call 1-844-302-5227."
       ],
-      "major_interactions": [
-        "Drug Interactions: .",
-        "This product is incompatible with silver preparations."
-      ],
+      "major_interactions": ["Drug Interactions: .", "This product is incompatible with silver preparations."],
       "monitoring": []
     },
     "sulfadiazine": {
@@ -10824,9 +10663,7 @@
         "When culture and susceptibility information are available, they should be considered in selecting or modifying antibacterial therapy.",
         "In the absence of such data, local epidemiology and susceptibility patterns may contribute to the empiric selection of therapy."
       ],
-      "contraindications": [
-        "4 CONTRAINDICATIONS None."
-      ],
+      "contraindications": ["4 CONTRAINDICATIONS None."],
       "adverse_effects": [
         "6 ADVERSE REACTIONS The following clinically significant adverse reactions are described elsewhere in the labeling: Serotonin Syndrome [see Warnings and Precautions (5.1) ] Clostridioides difficile -Associated Diarrhea [see Warnings and Precautions (5.3) ]...",
         "( 6.1 ) The most common adverse reactions (>2%) in pediatric patients (12 years to less than 18 years of age) are phlebitis and increased hepatic transaminases.",
@@ -11107,12 +10944,8 @@
       "fetchedAt": "2026-08-18T00:38:26Z",
       "brandQuery": [],
       "mechanism": "",
-      "indications": [
-        "Purpose Vaginal antifungal"
-      ],
-      "contraindications": [
-        "Do not use if you have never had a vaginal yeast infection diagnosed by a doctor"
-      ],
+      "indications": ["Purpose Vaginal antifungal"],
+      "contraindications": ["Do not use if you have never had a vaginal yeast infection diagnosed by a doctor"],
       "adverse_effects": [],
       "major_interactions": [],
       "monitoring": []

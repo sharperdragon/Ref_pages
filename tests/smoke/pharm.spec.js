@@ -1,7 +1,6 @@
 const { test, expect } = require("@playwright/test");
 const path = require("path");
 const pharmData = require(path.resolve(__dirname, "../../pharm/assests/pharm_data_rxclass_enriched.json"));
-const classTaxonomyIndex = require(path.resolve(__dirname, "../../pharm/assests/classes/class_subclasses_index.json"));
 
 // ================================================================
 // Configurable values (change here)
@@ -28,7 +27,6 @@ const DETAIL_CLOSE_BUTTON = "#btnCloseDetail";
 const THEME_TOGGLE = "#btnThemeToggle";
 const THEME_STORAGE_KEY = "ui-theme";
 const VIEW_MODE_KEY = "pharm-view-mode";
-const CLASS_FILTER_TYPE_KEY = "pharm-class-filter-type";
 const VIEW_MODE_CONTROL = "#viewModeControl";
 const RESULTS_GRID = "#results";
 const FOOTER_DISCLAIMER = "footer #disclaimerBanner";
@@ -52,7 +50,6 @@ const EXPECTED_TOTAL_MEDICATIONS = PHARM_MEDICATIONS.length;
 const MOBILE_WIDTH = 900;
 const MOBILE_HEIGHT = 1000;
 const RXNORM_TEST_RXCUI = "435";
-const CLASS_TREE_DATASET = buildClassTreeDataset(PHARM_MEDICATIONS, classTaxonomyIndex);
 
 function normalizeText(value) {
   return String(value || "")
@@ -73,79 +70,6 @@ function toTextArray(value) {
 
 function escapeRegex(value) {
   return String(value || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function buildClassTreeDataset(medications, taxonomyIndex) {
-  const primaries = Array.isArray(taxonomyIndex?.primaries) ? taxonomyIndex.primaries : [];
-  const labelSet = new Set();
-  const normalizedToCanonical = new Map();
-
-  primaries.forEach((primary) => {
-    toTextArray(primary?.subclasses).forEach((subclass) => {
-      labelSet.add(subclass);
-      const key = normalizeText(subclass);
-      if (key && !normalizedToCanonical.has(key)) {
-        normalizedToCanonical.set(key, subclass);
-      }
-    });
-  });
-
-  const medicationTags = medications.map((medication) => {
-    const tags = new Set();
-    const classValue = String(medication?.drugClass || "").trim();
-    const categories = toTextArray(medication?.classCandidates);
-    const classTags = toTextArray(medication?.classTags);
-    const candidates = [classValue, ...categories, ...classTags];
-
-    candidates.forEach((candidate) => {
-      const key = normalizeText(candidate);
-      const canonical = normalizedToCanonical.get(key);
-      if (canonical) tags.add(canonical);
-    });
-
-    return tags;
-  });
-
-  const total = medications.length;
-  const primarySummaries = [];
-
-  primaries.forEach((primary) => {
-    const primaryClass = String(primary?.primaryClass || "").trim();
-    const subclasses = toTextArray(primary?.subclasses);
-    if (!primaryClass || subclasses.length === 0) return;
-
-    let primaryCount = 0;
-    const subclassCounts = new Map(subclasses.map((name) => [name, 0]));
-
-    medicationTags.forEach((tags) => {
-      let hasPrimaryMatch = false;
-      subclasses.forEach((subclass) => {
-        if (!tags.has(subclass)) return;
-        hasPrimaryMatch = true;
-        subclassCounts.set(subclass, (subclassCounts.get(subclass) || 0) + 1);
-      });
-      if (hasPrimaryMatch) primaryCount += 1;
-    });
-
-    if (primaryCount === 0 || primaryCount >= total) return;
-
-    const narrowingSubclass = subclasses.find((subclass) => {
-      const count = subclassCounts.get(subclass) || 0;
-      return count > 0 && count < primaryCount;
-    });
-
-    if (!narrowingSubclass) return;
-
-    primarySummaries.push({
-      primaryClass,
-      primaryCount,
-      subclass: narrowingSubclass,
-      subclassCount: subclassCounts.get(narrowingSubclass) || 0,
-    });
-  });
-
-  const candidate = primarySummaries[0] || null;
-  return { candidate };
 }
 
 async function mockRxNormSuccess(page, { lookupName = "albuterol", responseDelayMs = 0 } = {}) {
@@ -274,6 +198,18 @@ async function uniqueVisibleMedicationIds(page) {
 }
 
 test.describe("Pharm reference smoke", () => {
+  test("loads only the generated Pharm taxonomy runtime asset", async ({ page }) => {
+    const requestedUrls = [];
+    page.on("request", (request) => requestedUrls.push(request.url()));
+
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    expect(requestedUrls.some((url) => url.includes("/pharm/assests/pharm_taxonomy.json"))).toBe(true);
+    expect(requestedUrls.some((url) => /class_subclasses_index|main_hierarchy|MAIN_PHARM_CLASS_HIERARCHY/.test(url))).toBe(false);
+    expect(requestedUrls.some((url) => url.includes("/pharm/assests/hpo_index.json"))).toBe(false);
+  });
+
   test("page loads with compact mode default, disclaimer, cards, and no default selection", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await expect(page.locator(DISCLAIMER_BANNER)).toBeVisible();
@@ -341,6 +277,14 @@ test.describe("Pharm reference smoke", () => {
     const albuterolIds = await uniqueVisibleMedicationIds(page);
     expect(albuterolIds.length).toBeGreaterThan(0);
     await expect(page.locator(`${RESULTS_CARDS} .med-card__title`).first()).toContainText(/albuterol/i);
+  });
+
+  test("search includes build-time HPO synonym aliases without loading HPO", async ({ page }) => {
+    await page.goto(PHARM_PATH);
+    await waitForCards(page);
+
+    await page.locator(SEARCH_INPUT).fill("Quincke edema");
+    await expect(page.locator(RESULTS_CARDS).first()).toContainText(/streptomycin/i);
   });
 
   test("active filter summary reflects search and route selections", async ({ page }) => {
@@ -431,51 +375,14 @@ test.describe("Pharm reference smoke", () => {
     await expect(page.locator(SUBCLASS_HEADINGS)).toHaveCount(0);
   });
 
-  test("class filter type supports drug class and use category modes", async ({ page }) => {
+  test("only the generated drug-class taxonomy filter is available", async ({ page }) => {
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
-    await expect(page.locator(CLASS_TYPE_CONTROL).locator("[data-class-filter-type='drug-class']")).toHaveCount(1);
-    await expect(page.locator(CLASS_TYPE_CONTROL).locator("[data-class-filter-type='use-category']")).toHaveCount(1);
-    await expect(page.locator(`${CLASS_TYPE_SELECT} option[value='drug-class']`)).toHaveCount(1);
-    await expect(page.locator(`${CLASS_TYPE_SELECT} option[value='use-category']`)).toHaveCount(1);
-  });
-
-  test("use category class filter mode narrows results with broad clinical buckets", async ({ page }) => {
-    await page.goto(PHARM_PATH);
-    await waitForCards(page);
-
-    const initialVisibleCardCount = await page.locator(RESULTS_CARDS).count();
-    await page.locator(`${CLASS_TYPE_CONTROL} [data-class-filter-type='use-category']`).click();
-    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(/All use categories/i);
-
-    const storedType = await page.evaluate((storageKey) => localStorage.getItem(storageKey), CLASS_FILTER_TYPE_KEY);
-    expect(storedType).toBe("use-category");
-
-    await page.locator(CLASS_TREE_TRIGGER).click();
-    const broadOptions = page.locator(`${CLASS_TREE_COLUMNS} .class-tree-option[data-depth="0"][data-action="node"]`);
-    await expect(broadOptions.first()).toBeVisible();
-
-    const candidateIndex = await broadOptions.evaluateAll((nodes, totalCount) => {
-      for (let index = 0; index < nodes.length; index += 1) {
-        const countText = nodes[index].querySelector(".class-tree-option__count")?.textContent || "";
-        const count = Number.parseInt(countText, 10);
-        if (Number.isFinite(count) && count > 0 && count < totalCount) {
-          return index;
-        }
-      }
-      return -1;
-    }, initialVisibleCardCount);
-
-    expect(candidateIndex).toBeGreaterThanOrEqual(0);
-    const selectedOption = broadOptions.nth(candidateIndex);
-    const selectedLabel = await selectedOption.locator(".class-tree-option__label").innerText();
-    await selectedOption.click();
-
-    const filteredCount = await page.locator(RESULTS_CARDS).count();
-    expect(filteredCount).toBeGreaterThan(0);
-    expect(filteredCount).toBeLessThan(initialVisibleCardCount);
-    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(selectedLabel);
+    await expect(page.locator(CLASS_TYPE_CONTROL)).toHaveCount(0);
+    await expect(page.locator(CLASS_TYPE_SELECT)).toHaveCount(0);
+    await expect(page.locator("text=Use Category")).toHaveCount(0);
+    await expect(page.locator(CLASS_TREE_TRIGGER)).toContainText(/All classes/i);
   });
 
   test("compact view is enforced across reload", async ({ page }) => {
@@ -772,72 +679,22 @@ test.describe("Pharm reference smoke", () => {
     await expect(html).toHaveAttribute("data-theme", toggledTheme);
   });
 
-  test("auto-loads RxNorm facts when selecting a medication", async ({ page }) => {
+  test("selecting a medication does not request or display RxNorm data", async ({ page }) => {
+    let rxNormRequestCount = 0;
+    await page.route(RXNORM_PROXY_ROUTE, async (route) => {
+      rxNormRequestCount += 1;
+      await route.abort();
+    });
     await page.goto(PHARM_PATH);
     await waitForCards(page);
 
     const targetName = (await page.locator(`${RESULTS_CARDS} .med-card__title`).first().innerText()).trim();
-    await mockRxNormSuccess(page, { lookupName: targetName, responseDelayMs: 250 });
     const targetCard = page.getByRole("button", { name: new RegExp(`^${escapeRegex(targetName)} details$`, "i") }).first();
     await expect(targetCard).toBeVisible();
     await targetCard.click();
 
-    await expect(page.locator(RXNORM_LOADING)).toBeVisible();
-    await expect(page.locator(RXNORM_RXCUI_FIELD)).toContainText(RXNORM_TEST_RXCUI);
-    await expect(page.locator(RXNORM_CANONICAL_NAME_FIELD)).toContainText("Albuterol");
-    await expect(page.locator(RXNORM_INGREDIENTS_FIELD)).toContainText("Albuterol");
-    await expect(page.locator(RXNORM_CLASSES_FIELD)).toContainText("Adrenergic beta-Agonists");
-  });
-
-  test("reuses cached RxNorm data and avoids duplicate fetches", async ({ page }) => {
-    await page.goto(PHARM_PATH);
-    await waitForCards(page);
-
-    const targetName = (await page.locator(`${RESULTS_CARDS} .med-card__title`).first().innerText()).trim();
-    const requestCounts = await mockRxNormSuccess(page, { lookupName: targetName });
-    const targetCard = page.getByRole("button", { name: new RegExp(`^${escapeRegex(targetName)} details$`, "i") }).first();
-    await expect(targetCard).toBeVisible();
-
-    await targetCard.click();
-    await expect(page.locator(RXNORM_RXCUI_FIELD)).toContainText(RXNORM_TEST_RXCUI);
-
-    await targetCard.click();
-    await expect.poll(() => requestCounts.byName).toBe(1);
-    await expect.poll(() => requestCounts.related).toBe(1);
-    await expect.poll(() => requestCounts.properties).toBe(1);
-    await expect.poll(() => requestCounts.classes).toBe(1);
-  });
-
-  test("shows no-match state when RxNorm has no concept for a medication", async ({ page }) => {
-    await mockRxNormNoMatch(page);
-    await page.goto(PHARM_PATH);
-    await waitForCards(page);
-
-    const targetName = (await page.locator(`${RESULTS_CARDS} .med-card__title`).first().innerText()).trim();
-    await page.locator(SEARCH_INPUT).fill(targetName);
-    await expect(page.locator(RESULT_COUNT)).toContainText(/medications/i);
-    const targetCard = page.getByRole("button", { name: new RegExp(`^${escapeRegex(targetName)} details$`, "i") }).first();
-    await expect(targetCard).toBeVisible();
-    await targetCard.click();
-
-    await expect(page.locator(RXNORM_EMPTY)).toBeVisible();
-    await expect(page.locator(RXNORM_EMPTY)).toContainText("No RxNorm match found.");
-  });
-
-  test("shows RxNorm unavailable state when proxy returns errors", async ({ page }) => {
-    await mockRxNormError(page);
-    await page.goto(PHARM_PATH);
-    await waitForCards(page);
-
-    const targetName = (await page.locator(`${RESULTS_CARDS} .med-card__title`).first().innerText()).trim();
-    await page.locator(SEARCH_INPUT).fill(targetName);
-    await expect(page.locator(RESULT_COUNT)).toContainText(/medications/i);
-    const targetCard = page.getByRole("button", { name: new RegExp(`^${escapeRegex(targetName)} details$`, "i") }).first();
-    await expect(targetCard).toBeVisible();
-    await targetCard.click();
-
-    await expect(page.locator(RXNORM_ERROR)).toBeVisible();
-    await expect(page.locator(RXNORM_ERROR)).toContainText("RxNorm unavailable right now.");
+    await expect(page.locator(RXNORM_SECTION)).toHaveCount(0);
+    expect(rxNormRequestCount).toBe(0);
   });
 
   test("mobile drawer opens and closes via escape, scrim, and close button", async ({ page }) => {

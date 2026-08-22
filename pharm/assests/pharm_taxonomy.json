@@ -1,0 +1,5467 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-22T02:11:30Z",
+  "source": "Filled_classes/*.json",
+  "rootId": "taxonomy.root",
+  "root": {
+    "id": "taxonomy.root",
+    "label": "All classes",
+    "parent": null,
+    "children": [
+      "taxonomy.antimicrobials",
+      "taxonomy.antibiotics",
+      "taxonomy.antifungals",
+      "taxonomy.antiparasitics",
+      "taxonomy.antivirals",
+      "taxonomy.cardiovascular",
+      "taxonomy.central-nervous-system",
+      "taxonomy.endocrine",
+      "taxonomy.gastrointestinal",
+      "taxonomy.genitourinary-and-reproductive",
+      "taxonomy.respiratory"
+    ],
+    "path": [],
+    "medicationCount": 740,
+    "sortOrder": 0
+  },
+  "nodes": [
+    {
+      "id": "taxonomy.root",
+      "label": "All classes",
+      "parent": null,
+      "children": [
+        "taxonomy.antimicrobials",
+        "taxonomy.antibiotics",
+        "taxonomy.antifungals",
+        "taxonomy.antiparasitics",
+        "taxonomy.antivirals",
+        "taxonomy.cardiovascular",
+        "taxonomy.central-nervous-system",
+        "taxonomy.endocrine",
+        "taxonomy.gastrointestinal",
+        "taxonomy.genitourinary-and-reproductive",
+        "taxonomy.respiratory"
+      ],
+      "path": [],
+      "medicationCount": 740,
+      "sortOrder": 0
+    },
+    {
+      "id": "taxonomy.antimicrobials",
+      "label": "Antimicrobials",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.antimicrobials.antibiotic-combinations"
+      ],
+      "path": [
+        "Antimicrobials"
+      ],
+      "medicationCount": 13,
+      "sortOrder": 1
+    },
+    {
+      "id": "taxonomy.antimicrobials.antibiotic-combinations",
+      "label": "Antibiotic Combinations",
+      "parent": "taxonomy.antimicrobials",
+      "children": [
+        "taxonomy.antimicrobials.antibiotic-combinations.beta-lactam-beta-lactamase-inhibitor-combinations",
+        "taxonomy.antimicrobials.antibiotic-combinations.carbapenem-combinations",
+        "taxonomy.antimicrobials.antibiotic-combinations.cephalosporin-inhibitor-combinations",
+        "taxonomy.antimicrobials.antibiotic-combinations.antifolate-combinations",
+        "taxonomy.antimicrobials.antibiotic-combinations.antimalarial-combinations"
+      ],
+      "path": [
+        "Antimicrobials",
+        "Antibiotic Combinations"
+      ],
+      "medicationCount": 13,
+      "sortOrder": 2
+    },
+    {
+      "id": "taxonomy.antimicrobials.antibiotic-combinations.beta-lactam-beta-lactamase-inhibitor-combinations",
+      "label": "Beta Lactam Beta Lactamase Inhibitor Combinations",
+      "parent": "taxonomy.antimicrobials.antibiotic-combinations",
+      "children": [],
+      "path": [
+        "Antimicrobials",
+        "Antibiotic Combinations",
+        "Beta Lactam Beta Lactamase Inhibitor Combinations"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 3
+    },
+    {
+      "id": "taxonomy.antimicrobials.antibiotic-combinations.carbapenem-combinations",
+      "label": "Carbapenem Combinations",
+      "parent": "taxonomy.antimicrobials.antibiotic-combinations",
+      "children": [],
+      "path": [
+        "Antimicrobials",
+        "Antibiotic Combinations",
+        "Carbapenem Combinations"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 4
+    },
+    {
+      "id": "taxonomy.antimicrobials.antibiotic-combinations.cephalosporin-inhibitor-combinations",
+      "label": "Cephalosporin Inhibitor Combinations",
+      "parent": "taxonomy.antimicrobials.antibiotic-combinations",
+      "children": [],
+      "path": [
+        "Antimicrobials",
+        "Antibiotic Combinations",
+        "Cephalosporin Inhibitor Combinations"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 5
+    },
+    {
+      "id": "taxonomy.antimicrobials.antibiotic-combinations.antifolate-combinations",
+      "label": "Antifolate Combinations",
+      "parent": "taxonomy.antimicrobials.antibiotic-combinations",
+      "children": [],
+      "path": [
+        "Antimicrobials",
+        "Antibiotic Combinations",
+        "Antifolate Combinations"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 6
+    },
+    {
+      "id": "taxonomy.antimicrobials.antibiotic-combinations.antimalarial-combinations",
+      "label": "Antimalarial Combinations",
+      "parent": "taxonomy.antimicrobials.antibiotic-combinations",
+      "children": [],
+      "path": [
+        "Antimicrobials",
+        "Antibiotic Combinations",
+        "Antimalarial Combinations"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 7
+    },
+    {
+      "id": "taxonomy.antibiotics",
+      "label": "Antibiotics",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.antibiotics.beta-lactams",
+        "taxonomy.antibiotics.glycopeptides",
+        "taxonomy.antibiotics.lipoglycopeptides",
+        "taxonomy.antibiotics.aminoglycosides",
+        "taxonomy.antibiotics.tetracyclines",
+        "taxonomy.antibiotics.glycylcyclines",
+        "taxonomy.antibiotics.macrolides",
+        "taxonomy.antibiotics.lincosamides",
+        "taxonomy.antibiotics.oxazolidinones",
+        "taxonomy.antibiotics.streptogramins",
+        "taxonomy.antibiotics.chloramphenicol",
+        "taxonomy.antibiotics.fluoroquinolones",
+        "taxonomy.antibiotics.rifamycins",
+        "taxonomy.antibiotics.nitroimidazoles",
+        "taxonomy.antibiotics.sulfonamides",
+        "taxonomy.antibiotics.dhfr-inhibitors",
+        "taxonomy.antibiotics.lipopeptides",
+        "taxonomy.antibiotics.polymyxins",
+        "taxonomy.antibiotics.nitrofurans",
+        "taxonomy.antibiotics.phosphonic-acid-derivatives",
+        "taxonomy.antibiotics.pleuromutilins",
+        "taxonomy.antibiotics.antimycobacterials"
+      ],
+      "path": [
+        "Antibiotics"
+      ],
+      "medicationCount": 101,
+      "sortOrder": 8
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams",
+      "label": "Beta Lactams",
+      "parent": "taxonomy.antibiotics",
+      "children": [
+        "taxonomy.antibiotics.beta-lactams.penicillins",
+        "taxonomy.antibiotics.beta-lactams.cephalosporins",
+        "taxonomy.antibiotics.beta-lactams.carbapenems",
+        "taxonomy.antibiotics.beta-lactams.monobactams"
+      ],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams"
+      ],
+      "medicationCount": 39,
+      "sortOrder": 9
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.penicillins",
+      "label": "Penicillins",
+      "parent": "taxonomy.antibiotics.beta-lactams",
+      "children": [
+        "taxonomy.antibiotics.beta-lactams.penicillins.natural-penicillins",
+        "taxonomy.antibiotics.beta-lactams.penicillins.aminopenicillins",
+        "taxonomy.antibiotics.beta-lactams.penicillins.penicillinase-resistant",
+        "taxonomy.antibiotics.beta-lactams.penicillins.antipseudomonal",
+        "taxonomy.antibiotics.beta-lactams.penicillins.beta-lactamase-inhibitor-combinations"
+      ],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Penicillins"
+      ],
+      "medicationCount": 15,
+      "sortOrder": 10
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.penicillins.natural-penicillins",
+      "label": "Natural Penicillins",
+      "parent": "taxonomy.antibiotics.beta-lactams.penicillins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Penicillins",
+        "Natural Penicillins"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 11
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.penicillins.aminopenicillins",
+      "label": "Aminopenicillins",
+      "parent": "taxonomy.antibiotics.beta-lactams.penicillins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Penicillins",
+        "Aminopenicillins"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 12
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.penicillins.penicillinase-resistant",
+      "label": "Penicillinase Resistant",
+      "parent": "taxonomy.antibiotics.beta-lactams.penicillins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Penicillins",
+        "Penicillinase Resistant"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 13
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.penicillins.antipseudomonal",
+      "label": "Antipseudomonal",
+      "parent": "taxonomy.antibiotics.beta-lactams.penicillins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Penicillins",
+        "Antipseudomonal"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 14
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.penicillins.beta-lactamase-inhibitor-combinations",
+      "label": "Beta Lactamase Inhibitor Combinations",
+      "parent": "taxonomy.antibiotics.beta-lactams.penicillins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Penicillins",
+        "Beta Lactamase Inhibitor Combinations"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 15
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.cephalosporins",
+      "label": "Cephalosporins",
+      "parent": "taxonomy.antibiotics.beta-lactams",
+      "children": [
+        "taxonomy.antibiotics.beta-lactams.cephalosporins.first-generation",
+        "taxonomy.antibiotics.beta-lactams.cephalosporins.second-generation",
+        "taxonomy.antibiotics.beta-lactams.cephalosporins.third-generation",
+        "taxonomy.antibiotics.beta-lactams.cephalosporins.fourth-generation",
+        "taxonomy.antibiotics.beta-lactams.cephalosporins.fifth-generation"
+      ],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Cephalosporins"
+      ],
+      "medicationCount": 19,
+      "sortOrder": 16
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.cephalosporins.first-generation",
+      "label": "First Generation",
+      "parent": "taxonomy.antibiotics.beta-lactams.cephalosporins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Cephalosporins",
+        "First Generation"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 17
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.cephalosporins.second-generation",
+      "label": "Second Generation",
+      "parent": "taxonomy.antibiotics.beta-lactams.cephalosporins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Cephalosporins",
+        "Second Generation"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 18
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.cephalosporins.third-generation",
+      "label": "Third Generation",
+      "parent": "taxonomy.antibiotics.beta-lactams.cephalosporins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Cephalosporins",
+        "Third Generation"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 19
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.cephalosporins.fourth-generation",
+      "label": "Fourth Generation",
+      "parent": "taxonomy.antibiotics.beta-lactams.cephalosporins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Cephalosporins",
+        "Fourth Generation"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 20
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.cephalosporins.fifth-generation",
+      "label": "Fifth Generation",
+      "parent": "taxonomy.antibiotics.beta-lactams.cephalosporins",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Cephalosporins",
+        "Fifth Generation"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 21
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.carbapenems",
+      "label": "Carbapenems",
+      "parent": "taxonomy.antibiotics.beta-lactams",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Carbapenems"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 22
+    },
+    {
+      "id": "taxonomy.antibiotics.beta-lactams.monobactams",
+      "label": "Monobactams",
+      "parent": "taxonomy.antibiotics.beta-lactams",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Beta Lactams",
+        "Monobactams"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 23
+    },
+    {
+      "id": "taxonomy.antibiotics.glycopeptides",
+      "label": "Glycopeptides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Glycopeptides"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 24
+    },
+    {
+      "id": "taxonomy.antibiotics.lipoglycopeptides",
+      "label": "Lipoglycopeptides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Lipoglycopeptides"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 25
+    },
+    {
+      "id": "taxonomy.antibiotics.aminoglycosides",
+      "label": "Aminoglycosides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Aminoglycosides"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 26
+    },
+    {
+      "id": "taxonomy.antibiotics.tetracyclines",
+      "label": "Tetracyclines",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Tetracyclines"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 27
+    },
+    {
+      "id": "taxonomy.antibiotics.glycylcyclines",
+      "label": "Glycylcyclines",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Glycylcyclines"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 28
+    },
+    {
+      "id": "taxonomy.antibiotics.macrolides",
+      "label": "Macrolides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Macrolides"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 29
+    },
+    {
+      "id": "taxonomy.antibiotics.lincosamides",
+      "label": "Lincosamides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Lincosamides"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 30
+    },
+    {
+      "id": "taxonomy.antibiotics.oxazolidinones",
+      "label": "Oxazolidinones",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Oxazolidinones"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 31
+    },
+    {
+      "id": "taxonomy.antibiotics.streptogramins",
+      "label": "Streptogramins",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Streptogramins"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 32
+    },
+    {
+      "id": "taxonomy.antibiotics.chloramphenicol",
+      "label": "Chloramphenicol",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Chloramphenicol"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 33
+    },
+    {
+      "id": "taxonomy.antibiotics.fluoroquinolones",
+      "label": "Fluoroquinolones",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Fluoroquinolones"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 34
+    },
+    {
+      "id": "taxonomy.antibiotics.rifamycins",
+      "label": "Rifamycins",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Rifamycins"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 35
+    },
+    {
+      "id": "taxonomy.antibiotics.nitroimidazoles",
+      "label": "Nitroimidazoles",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Nitroimidazoles"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 36
+    },
+    {
+      "id": "taxonomy.antibiotics.sulfonamides",
+      "label": "Sulfonamides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Sulfonamides"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 37
+    },
+    {
+      "id": "taxonomy.antibiotics.dhfr-inhibitors",
+      "label": "Dhfr Inhibitors",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Dhfr Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 38
+    },
+    {
+      "id": "taxonomy.antibiotics.lipopeptides",
+      "label": "Lipopeptides",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Lipopeptides"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 39
+    },
+    {
+      "id": "taxonomy.antibiotics.polymyxins",
+      "label": "Polymyxins",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Polymyxins"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 40
+    },
+    {
+      "id": "taxonomy.antibiotics.nitrofurans",
+      "label": "Nitrofurans",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Nitrofurans"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 41
+    },
+    {
+      "id": "taxonomy.antibiotics.phosphonic-acid-derivatives",
+      "label": "Phosphonic Acid Derivatives",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Phosphonic Acid Derivatives"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 42
+    },
+    {
+      "id": "taxonomy.antibiotics.pleuromutilins",
+      "label": "Pleuromutilins",
+      "parent": "taxonomy.antibiotics",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Pleuromutilins"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 43
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials",
+      "label": "Antimycobacterials",
+      "parent": "taxonomy.antibiotics",
+      "children": [
+        "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents",
+        "taxonomy.antibiotics.antimycobacterials.leprosy-agents",
+        "taxonomy.antibiotics.antimycobacterials.nontuberculous-mycobacteria-agents"
+      ],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials"
+      ],
+      "medicationCount": 23,
+      "sortOrder": 44
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents",
+      "label": "Tuberculosis Agents",
+      "parent": "taxonomy.antibiotics.antimycobacterials",
+      "children": [
+        "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.first-line-agents",
+        "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.second-line-agents",
+        "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.fluoroquinolones-for-tb",
+        "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.newer-tb-agents"
+      ],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Tuberculosis Agents"
+      ],
+      "medicationCount": 19,
+      "sortOrder": 45
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.first-line-agents",
+      "label": "First Line Agents",
+      "parent": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Tuberculosis Agents",
+        "First Line Agents"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 46
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.second-line-agents",
+      "label": "Second Line Agents",
+      "parent": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Tuberculosis Agents",
+        "Second Line Agents"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 47
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.fluoroquinolones-for-tb",
+      "label": "Fluoroquinolones For Tb",
+      "parent": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Tuberculosis Agents",
+        "Fluoroquinolones For Tb"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 48
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents.newer-tb-agents",
+      "label": "Newer Tb Agents",
+      "parent": "taxonomy.antibiotics.antimycobacterials.tuberculosis-agents",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Tuberculosis Agents",
+        "Newer Tb Agents"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 49
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.leprosy-agents",
+      "label": "Leprosy Agents",
+      "parent": "taxonomy.antibiotics.antimycobacterials",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Leprosy Agents"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 50
+    },
+    {
+      "id": "taxonomy.antibiotics.antimycobacterials.nontuberculous-mycobacteria-agents",
+      "label": "Nontuberculous Mycobacteria Agents",
+      "parent": "taxonomy.antibiotics.antimycobacterials",
+      "children": [],
+      "path": [
+        "Antibiotics",
+        "Antimycobacterials",
+        "Nontuberculous Mycobacteria Agents"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 51
+    },
+    {
+      "id": "taxonomy.antifungals",
+      "label": "Antifungals",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.antifungals.polyenes",
+        "taxonomy.antifungals.azoles",
+        "taxonomy.antifungals.echinocandins",
+        "taxonomy.antifungals.allylamines",
+        "taxonomy.antifungals.antimetabolites",
+        "taxonomy.antifungals.mitosis-inhibitors",
+        "taxonomy.antifungals.other-topical-antifungals"
+      ],
+      "path": [
+        "Antifungals"
+      ],
+      "medicationCount": 24,
+      "sortOrder": 52
+    },
+    {
+      "id": "taxonomy.antifungals.polyenes",
+      "label": "Polyenes",
+      "parent": "taxonomy.antifungals",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Polyenes"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 53
+    },
+    {
+      "id": "taxonomy.antifungals.azoles",
+      "label": "Azoles",
+      "parent": "taxonomy.antifungals",
+      "children": [
+        "taxonomy.antifungals.azoles.imidazoles",
+        "taxonomy.antifungals.azoles.triazoles"
+      ],
+      "path": [
+        "Antifungals",
+        "Azoles"
+      ],
+      "medicationCount": 11,
+      "sortOrder": 54
+    },
+    {
+      "id": "taxonomy.antifungals.azoles.imidazoles",
+      "label": "Imidazoles",
+      "parent": "taxonomy.antifungals.azoles",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Azoles",
+        "Imidazoles"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 55
+    },
+    {
+      "id": "taxonomy.antifungals.azoles.triazoles",
+      "label": "Triazoles",
+      "parent": "taxonomy.antifungals.azoles",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Azoles",
+        "Triazoles"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 56
+    },
+    {
+      "id": "taxonomy.antifungals.echinocandins",
+      "label": "Echinocandins",
+      "parent": "taxonomy.antifungals",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Echinocandins"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 57
+    },
+    {
+      "id": "taxonomy.antifungals.allylamines",
+      "label": "Allylamines",
+      "parent": "taxonomy.antifungals",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Allylamines"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 58
+    },
+    {
+      "id": "taxonomy.antifungals.antimetabolites",
+      "label": "Antimetabolites",
+      "parent": "taxonomy.antifungals",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Antimetabolites"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 59
+    },
+    {
+      "id": "taxonomy.antifungals.mitosis-inhibitors",
+      "label": "Mitosis Inhibitors",
+      "parent": "taxonomy.antifungals",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Mitosis Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 60
+    },
+    {
+      "id": "taxonomy.antifungals.other-topical-antifungals",
+      "label": "Other Topical Antifungals",
+      "parent": "taxonomy.antifungals",
+      "children": [],
+      "path": [
+        "Antifungals",
+        "Other Topical Antifungals"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 61
+    },
+    {
+      "id": "taxonomy.antiparasitics",
+      "label": "Antiparasitics",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.antiparasitics.antimalarials",
+        "taxonomy.antiparasitics.antihelminthics",
+        "taxonomy.antiparasitics.antiprotozoals",
+        "taxonomy.antiparasitics.ectoparasiticides"
+      ],
+      "path": [
+        "Antiparasitics"
+      ],
+      "medicationCount": 28,
+      "sortOrder": 62
+    },
+    {
+      "id": "taxonomy.antiparasitics.antimalarials",
+      "label": "Antimalarials",
+      "parent": "taxonomy.antiparasitics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Antimalarials"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 63
+    },
+    {
+      "id": "taxonomy.antiparasitics.antihelminthics",
+      "label": "Antihelminthics",
+      "parent": "taxonomy.antiparasitics",
+      "children": [
+        "taxonomy.antiparasitics.antihelminthics.benzimidazoles",
+        "taxonomy.antiparasitics.antihelminthics.avermectins",
+        "taxonomy.antiparasitics.antihelminthics.nicotinic-agonists",
+        "taxonomy.antiparasitics.antihelminthics.other-antihelminthics"
+      ],
+      "path": [
+        "Antiparasitics",
+        "Antihelminthics"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 64
+    },
+    {
+      "id": "taxonomy.antiparasitics.antihelminthics.benzimidazoles",
+      "label": "Benzimidazoles",
+      "parent": "taxonomy.antiparasitics.antihelminthics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Antihelminthics",
+        "Benzimidazoles"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 65
+    },
+    {
+      "id": "taxonomy.antiparasitics.antihelminthics.avermectins",
+      "label": "Avermectins",
+      "parent": "taxonomy.antiparasitics.antihelminthics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Antihelminthics",
+        "Avermectins"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 66
+    },
+    {
+      "id": "taxonomy.antiparasitics.antihelminthics.nicotinic-agonists",
+      "label": "Nicotinic Agonists",
+      "parent": "taxonomy.antiparasitics.antihelminthics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Antihelminthics",
+        "Nicotinic Agonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 67
+    },
+    {
+      "id": "taxonomy.antiparasitics.antihelminthics.other-antihelminthics",
+      "label": "Other Antihelminthics",
+      "parent": "taxonomy.antiparasitics.antihelminthics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Antihelminthics",
+        "Other Antihelminthics"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 68
+    },
+    {
+      "id": "taxonomy.antiparasitics.antiprotozoals",
+      "label": "Antiprotozoals",
+      "parent": "taxonomy.antiparasitics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Antiprotozoals"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 69
+    },
+    {
+      "id": "taxonomy.antiparasitics.ectoparasiticides",
+      "label": "Ectoparasiticides",
+      "parent": "taxonomy.antiparasitics",
+      "children": [],
+      "path": [
+        "Antiparasitics",
+        "Ectoparasiticides"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 70
+    },
+    {
+      "id": "taxonomy.antivirals",
+      "label": "Antivirals",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.antivirals.herpesvirus-agents",
+        "taxonomy.antivirals.hiv-agents",
+        "taxonomy.antivirals.hepatitis-agents",
+        "taxonomy.antivirals.influenza-agents",
+        "taxonomy.antivirals.respiratory-syncytial-virus-agents",
+        "taxonomy.antivirals.coronavirus-agents",
+        "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals"
+      ],
+      "path": [
+        "Antivirals"
+      ],
+      "medicationCount": 86,
+      "sortOrder": 71
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents",
+      "label": "Herpesvirus Agents",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.herpesvirus-agents.guanosine-nucleoside-analogs",
+        "taxonomy.antivirals.herpesvirus-agents.acyclic-nucleoside-phosphonate-analogs",
+        "taxonomy.antivirals.herpesvirus-agents.pyrophosphate-analogs",
+        "taxonomy.antivirals.herpesvirus-agents.cmv-terminase-inhibitors",
+        "taxonomy.antivirals.herpesvirus-agents.cmv-ul97-kinase-inhibitors",
+        "taxonomy.antivirals.herpesvirus-agents.topical-or-ophthalmic-antiherpes-agents",
+        "taxonomy.antivirals.herpesvirus-agents.legacy-or-rare-antiherpes-agents"
+      ],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents"
+      ],
+      "medicationCount": 15,
+      "sortOrder": 72
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.guanosine-nucleoside-analogs",
+      "label": "Guanosine Nucleoside Analogs",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "Guanosine Nucleoside Analogs"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 73
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.acyclic-nucleoside-phosphonate-analogs",
+      "label": "Acyclic Nucleoside Phosphonate Analogs",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "Acyclic Nucleoside Phosphonate Analogs"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 74
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.pyrophosphate-analogs",
+      "label": "Pyrophosphate Analogs",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "Pyrophosphate Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 75
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.cmv-terminase-inhibitors",
+      "label": "CMV Terminase Inhibitors",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "CMV Terminase Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 76
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.cmv-ul97-kinase-inhibitors",
+      "label": "CMV Ul97 Kinase Inhibitors",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "CMV Ul97 Kinase Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 77
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.topical-or-ophthalmic-antiherpes-agents",
+      "label": "Topical Or Ophthalmic Antiherpes Agents",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "Topical Or Ophthalmic Antiherpes Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 78
+    },
+    {
+      "id": "taxonomy.antivirals.herpesvirus-agents.legacy-or-rare-antiherpes-agents",
+      "label": "Legacy Or Rare Antiherpes Agents",
+      "parent": "taxonomy.antivirals.herpesvirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Herpesvirus Agents",
+        "Legacy Or Rare Antiherpes Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 79
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents",
+      "label": "HIV Agents",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.hiv-agents.nrtis",
+        "taxonomy.antivirals.hiv-agents.nnrtis",
+        "taxonomy.antivirals.hiv-agents.protease-inhibitors",
+        "taxonomy.antivirals.hiv-agents.integrase-strand-transfer-inhibitors",
+        "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors",
+        "taxonomy.antivirals.hiv-agents.capsid-inhibitors",
+        "taxonomy.antivirals.hiv-agents.pharmacokinetic-enhancers"
+      ],
+      "path": [
+        "Antivirals",
+        "HIV Agents"
+      ],
+      "medicationCount": 36,
+      "sortOrder": 80
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.nrtis",
+      "label": "NRTIs",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "NRTIs"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 81
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.nnrtis",
+      "label": "NNRTIs",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "NNRTIs"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 82
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.protease-inhibitors",
+      "label": "Protease Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Protease Inhibitors"
+      ],
+      "medicationCount": 10,
+      "sortOrder": 83
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.integrase-strand-transfer-inhibitors",
+      "label": "Integrase Strand Transfer Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Integrase Strand Transfer Inhibitors"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 84
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors",
+      "label": "Entry And Fusion Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [
+        "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.fusion-inhibitors",
+        "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.ccr5-antagonists",
+        "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.post-attachment-inhibitors",
+        "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.gp120-attachment-inhibitors"
+      ],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Entry And Fusion Inhibitors"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 85
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.fusion-inhibitors",
+      "label": "Fusion Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Entry And Fusion Inhibitors",
+        "Fusion Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 86
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.ccr5-antagonists",
+      "label": "Ccr5 Antagonists",
+      "parent": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Entry And Fusion Inhibitors",
+        "Ccr5 Antagonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 87
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.post-attachment-inhibitors",
+      "label": "Post Attachment Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Entry And Fusion Inhibitors",
+        "Post Attachment Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 88
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors.gp120-attachment-inhibitors",
+      "label": "Gp120 Attachment Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents.entry-and-fusion-inhibitors",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Entry And Fusion Inhibitors",
+        "Gp120 Attachment Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 89
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.capsid-inhibitors",
+      "label": "Capsid Inhibitors",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Capsid Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 90
+    },
+    {
+      "id": "taxonomy.antivirals.hiv-agents.pharmacokinetic-enhancers",
+      "label": "Pharmacokinetic Enhancers",
+      "parent": "taxonomy.antivirals.hiv-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "HIV Agents",
+        "Pharmacokinetic Enhancers"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 91
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents",
+      "label": "Hepatitis Agents",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-d-agents"
+      ],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents"
+      ],
+      "medicationCount": 26,
+      "sortOrder": 92
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents",
+      "label": "Hepatitis B Agents",
+      "parent": "taxonomy.antivirals.hepatitis-agents",
+      "children": [
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents.nucleoside-nucleotide-analogs",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents.interferons"
+      ],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis B Agents"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 93
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents.nucleoside-nucleotide-analogs",
+      "label": "Nucleoside Nucleotide Analogs",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis B Agents",
+        "Nucleoside Nucleotide Analogs"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 94
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents.interferons",
+      "label": "Interferons",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-b-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis B Agents",
+        "Interferons"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 95
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents",
+      "label": "Hepatitis C Agents",
+      "parent": "taxonomy.antivirals.hepatitis-agents",
+      "children": [
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns3-4a-protease-inhibitors",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5a-inhibitors",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.other-hcv-agents"
+      ],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents"
+      ],
+      "medicationCount": 18,
+      "sortOrder": 96
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns3-4a-protease-inhibitors",
+      "label": "Ns3 4a Protease Inhibitors",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents",
+        "Ns3 4a Protease Inhibitors"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 97
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5a-inhibitors",
+      "label": "Ns5a Inhibitors",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents",
+        "Ns5a Inhibitors"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 98
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors",
+      "label": "Ns5b Polymerase Inhibitors",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents",
+      "children": [
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors.nucleoside-nucleotide-polymerase-inhibitors",
+        "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors.non-nucleoside-polymerase-inhibitors"
+      ],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents",
+        "Ns5b Polymerase Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 99
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors.nucleoside-nucleotide-polymerase-inhibitors",
+      "label": "Nucleoside Nucleotide Polymerase Inhibitors",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents",
+        "Ns5b Polymerase Inhibitors",
+        "Nucleoside Nucleotide Polymerase Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 100
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors.non-nucleoside-polymerase-inhibitors",
+      "label": "Non Nucleoside Polymerase Inhibitors",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.ns5b-polymerase-inhibitors",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents",
+        "Ns5b Polymerase Inhibitors",
+        "Non Nucleoside Polymerase Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 101
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents.other-hcv-agents",
+      "label": "Other HCV Agents",
+      "parent": "taxonomy.antivirals.hepatitis-agents.hepatitis-c-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis C Agents",
+        "Other HCV Agents"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 102
+    },
+    {
+      "id": "taxonomy.antivirals.hepatitis-agents.hepatitis-d-agents",
+      "label": "Hepatitis D Agents",
+      "parent": "taxonomy.antivirals.hepatitis-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Hepatitis Agents",
+        "Hepatitis D Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 103
+    },
+    {
+      "id": "taxonomy.antivirals.influenza-agents",
+      "label": "Influenza Agents",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.influenza-agents.neuraminidase-inhibitors",
+        "taxonomy.antivirals.influenza-agents.cap-dependent-endonuclease-inhibitors",
+        "taxonomy.antivirals.influenza-agents.m2-ion-channel-inhibitors"
+      ],
+      "path": [
+        "Antivirals",
+        "Influenza Agents"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 104
+    },
+    {
+      "id": "taxonomy.antivirals.influenza-agents.neuraminidase-inhibitors",
+      "label": "Neuraminidase Inhibitors",
+      "parent": "taxonomy.antivirals.influenza-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Influenza Agents",
+        "Neuraminidase Inhibitors"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 105
+    },
+    {
+      "id": "taxonomy.antivirals.influenza-agents.cap-dependent-endonuclease-inhibitors",
+      "label": "Cap Dependent Endonuclease Inhibitors",
+      "parent": "taxonomy.antivirals.influenza-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Influenza Agents",
+        "Cap Dependent Endonuclease Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 106
+    },
+    {
+      "id": "taxonomy.antivirals.influenza-agents.m2-ion-channel-inhibitors",
+      "label": "M2 Ion Channel Inhibitors",
+      "parent": "taxonomy.antivirals.influenza-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Influenza Agents",
+        "M2 Ion Channel Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 107
+    },
+    {
+      "id": "taxonomy.antivirals.respiratory-syncytial-virus-agents",
+      "label": "Respiratory Syncytial Virus Agents",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.respiratory-syncytial-virus-agents.fusion-inhibiting-monoclonal-antibodies",
+        "taxonomy.antivirals.respiratory-syncytial-virus-agents.other-rsv-agents"
+      ],
+      "path": [
+        "Antivirals",
+        "Respiratory Syncytial Virus Agents"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 108
+    },
+    {
+      "id": "taxonomy.antivirals.respiratory-syncytial-virus-agents.fusion-inhibiting-monoclonal-antibodies",
+      "label": "Fusion Inhibiting Monoclonal Antibodies",
+      "parent": "taxonomy.antivirals.respiratory-syncytial-virus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Respiratory Syncytial Virus Agents",
+        "Fusion Inhibiting Monoclonal Antibodies"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 109
+    },
+    {
+      "id": "taxonomy.antivirals.respiratory-syncytial-virus-agents.other-rsv-agents",
+      "label": "Other RSV Agents",
+      "parent": "taxonomy.antivirals.respiratory-syncytial-virus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Respiratory Syncytial Virus Agents",
+        "Other RSV Agents"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 110
+    },
+    {
+      "id": "taxonomy.antivirals.coronavirus-agents",
+      "label": "Coronavirus Agents",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.coronavirus-agents.sars-cov-2-main-protease-inhibitors",
+        "taxonomy.antivirals.coronavirus-agents.rna-polymerase-inhibitors",
+        "taxonomy.antivirals.coronavirus-agents.pharmacokinetic-enhancers",
+        "taxonomy.antivirals.coronavirus-agents.fixed-combinations"
+      ],
+      "path": [
+        "Antivirals",
+        "Coronavirus Agents"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 111
+    },
+    {
+      "id": "taxonomy.antivirals.coronavirus-agents.sars-cov-2-main-protease-inhibitors",
+      "label": "Sars Cov 2 Main Protease Inhibitors",
+      "parent": "taxonomy.antivirals.coronavirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Coronavirus Agents",
+        "Sars Cov 2 Main Protease Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 112
+    },
+    {
+      "id": "taxonomy.antivirals.coronavirus-agents.rna-polymerase-inhibitors",
+      "label": "Rna Polymerase Inhibitors",
+      "parent": "taxonomy.antivirals.coronavirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Coronavirus Agents",
+        "Rna Polymerase Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 113
+    },
+    {
+      "id": "taxonomy.antivirals.coronavirus-agents.pharmacokinetic-enhancers",
+      "label": "Pharmacokinetic Enhancers",
+      "parent": "taxonomy.antivirals.coronavirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Coronavirus Agents",
+        "Pharmacokinetic Enhancers"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 114
+    },
+    {
+      "id": "taxonomy.antivirals.coronavirus-agents.fixed-combinations",
+      "label": "Fixed Combinations",
+      "parent": "taxonomy.antivirals.coronavirus-agents",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Coronavirus Agents",
+        "Fixed Combinations"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 115
+    },
+    {
+      "id": "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals",
+      "label": "Broad Spectrum Or Miscellaneous Antivirals",
+      "parent": "taxonomy.antivirals",
+      "children": [
+        "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals.nucleoside-analogs",
+        "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals.interferons"
+      ],
+      "path": [
+        "Antivirals",
+        "Broad Spectrum Or Miscellaneous Antivirals"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 116
+    },
+    {
+      "id": "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals.nucleoside-analogs",
+      "label": "Nucleoside Analogs",
+      "parent": "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Broad Spectrum Or Miscellaneous Antivirals",
+        "Nucleoside Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 117
+    },
+    {
+      "id": "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals.interferons",
+      "label": "Interferons",
+      "parent": "taxonomy.antivirals.broad-spectrum-or-miscellaneous-antivirals",
+      "children": [],
+      "path": [
+        "Antivirals",
+        "Broad Spectrum Or Miscellaneous Antivirals",
+        "Interferons"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 118
+    },
+    {
+      "id": "taxonomy.cardiovascular",
+      "label": "Cardiovascular",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives",
+        "taxonomy.cardiovascular.antiarrhythmics",
+        "taxonomy.cardiovascular.lipid-lowering-agents",
+        "taxonomy.cardiovascular.anticoagulants",
+        "taxonomy.cardiovascular.antiplatelets",
+        "taxonomy.cardiovascular.thrombolytics"
+      ],
+      "path": [
+        "Cardiovascular"
+      ],
+      "medicationCount": 155,
+      "sortOrder": 119
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives",
+      "label": "Antihypertensives",
+      "parent": "taxonomy.cardiovascular",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents",
+        "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+        "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers",
+        "taxonomy.cardiovascular.antihypertensives.diuretics",
+        "taxonomy.cardiovascular.antihypertensives.vasodilators",
+        "taxonomy.cardiovascular.antihypertensives.central-sympatholytics",
+        "taxonomy.cardiovascular.antihypertensives.alpha-blockers"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives"
+      ],
+      "medicationCount": 86,
+      "sortOrder": 120
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents",
+      "label": "Renin Angiotensin System Agents",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents.ace-inhibitors",
+        "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents.angiotensin-ii-receptor-blockers",
+        "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents.direct-renin-inhibitors"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Renin Angiotensin System Agents"
+      ],
+      "medicationCount": 19,
+      "sortOrder": 121
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents.ace-inhibitors",
+      "label": "ACE Inhibitors",
+      "parent": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Renin Angiotensin System Agents",
+        "ACE Inhibitors"
+      ],
+      "medicationCount": 10,
+      "sortOrder": 122
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents.angiotensin-ii-receptor-blockers",
+      "label": "Angiotensin II Receptor Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Renin Angiotensin System Agents",
+        "Angiotensin II Receptor Blockers"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 123
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents.direct-renin-inhibitors",
+      "label": "Direct Renin Inhibitors",
+      "parent": "taxonomy.cardiovascular.antihypertensives.renin-angiotensin-system-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Renin Angiotensin System Agents",
+        "Direct Renin Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 124
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+      "label": "Beta Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.beta-blockers.nonselective-beta-blockers",
+        "taxonomy.cardiovascular.antihypertensives.beta-blockers.beta1-selective-blockers",
+        "taxonomy.cardiovascular.antihypertensives.beta-blockers.intrinsic-sympathomimetic-activity-agents",
+        "taxonomy.cardiovascular.antihypertensives.beta-blockers.alpha-beta-blockers",
+        "taxonomy.cardiovascular.antihypertensives.beta-blockers.vasodilating-beta-blockers"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Beta Blockers"
+      ],
+      "medicationCount": 16,
+      "sortOrder": 125
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.beta-blockers.nonselective-beta-blockers",
+      "label": "Nonselective Beta Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Beta Blockers",
+        "Nonselective Beta Blockers"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 126
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.beta-blockers.beta1-selective-blockers",
+      "label": "Beta1 Selective Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Beta Blockers",
+        "Beta1 Selective Blockers"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 127
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.beta-blockers.intrinsic-sympathomimetic-activity-agents",
+      "label": "Intrinsic Sympathomimetic Activity Agents",
+      "parent": "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Beta Blockers",
+        "Intrinsic Sympathomimetic Activity Agents"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 128
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.beta-blockers.alpha-beta-blockers",
+      "label": "Alpha Beta Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Beta Blockers",
+        "Alpha Beta Blockers"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 129
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.beta-blockers.vasodilating-beta-blockers",
+      "label": "Vasodilating Beta Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.beta-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Beta Blockers",
+        "Vasodilating Beta Blockers"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 130
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers",
+      "label": "Calcium Channel Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.dihydropyridines",
+        "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Calcium Channel Blockers"
+      ],
+      "medicationCount": 10,
+      "sortOrder": 131
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.dihydropyridines",
+      "label": "Dihydropyridines",
+      "parent": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Calcium Channel Blockers",
+        "Dihydropyridines"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 132
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines",
+      "label": "Non Dihydropyridines",
+      "parent": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines.phenylalkylamines",
+        "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines.benzothiazepines"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Calcium Channel Blockers",
+        "Non Dihydropyridines"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 133
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines.phenylalkylamines",
+      "label": "Phenylalkylamines",
+      "parent": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Calcium Channel Blockers",
+        "Non Dihydropyridines",
+        "Phenylalkylamines"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 134
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines.benzothiazepines",
+      "label": "Benzothiazepines",
+      "parent": "taxonomy.cardiovascular.antihypertensives.calcium-channel-blockers.non-dihydropyridines",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Calcium Channel Blockers",
+        "Non Dihydropyridines",
+        "Benzothiazepines"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 135
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics",
+      "label": "Diuretics",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.diuretics.loop-diuretics",
+        "taxonomy.cardiovascular.antihypertensives.diuretics.thiazide-and-thiazide-like-diuretics",
+        "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics",
+        "taxonomy.cardiovascular.antihypertensives.diuretics.carbonic-anhydrase-inhibitors",
+        "taxonomy.cardiovascular.antihypertensives.diuretics.osmotic-diuretics"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics"
+      ],
+      "medicationCount": 22,
+      "sortOrder": 136
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.loop-diuretics",
+      "label": "Loop Diuretics",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Loop Diuretics"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 137
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.thiazide-and-thiazide-like-diuretics",
+      "label": "Thiazide And Thiazide Like Diuretics",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Thiazide And Thiazide Like Diuretics"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 138
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics",
+      "label": "Potassium Sparing Diuretics",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics.aldosterone-antagonists",
+        "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics.enac-channel-blockers"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Potassium Sparing Diuretics"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 139
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics.aldosterone-antagonists",
+      "label": "Aldosterone Antagonists",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Potassium Sparing Diuretics",
+        "Aldosterone Antagonists"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 140
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics.enac-channel-blockers",
+      "label": "ENaC Channel Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics.potassium-sparing-diuretics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Potassium Sparing Diuretics",
+        "ENaC Channel Blockers"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 141
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.carbonic-anhydrase-inhibitors",
+      "label": "Carbonic Anhydrase Inhibitors",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Carbonic Anhydrase Inhibitors"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 142
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.diuretics.osmotic-diuretics",
+      "label": "Osmotic Diuretics",
+      "parent": "taxonomy.cardiovascular.antihypertensives.diuretics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Diuretics",
+        "Osmotic Diuretics"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 143
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.vasodilators",
+      "label": "Vasodilators",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.vasodilators.direct-arteriolar-vasodilators",
+        "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates",
+        "taxonomy.cardiovascular.antihypertensives.vasodilators.nitric-oxide-donors"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Vasodilators"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 144
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.vasodilators.direct-arteriolar-vasodilators",
+      "label": "Direct Arteriolar Vasodilators",
+      "parent": "taxonomy.cardiovascular.antihypertensives.vasodilators",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Vasodilators",
+        "Direct Arteriolar Vasodilators"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 145
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates",
+      "label": "Organic Nitrates",
+      "parent": "taxonomy.cardiovascular.antihypertensives.vasodilators",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates.short-acting",
+        "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates.long-acting"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Vasodilators",
+        "Organic Nitrates"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 146
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates.short-acting",
+      "label": "Short Acting",
+      "parent": "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Vasodilators",
+        "Organic Nitrates",
+        "Short Acting"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 147
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates.long-acting",
+      "label": "Long Acting",
+      "parent": "taxonomy.cardiovascular.antihypertensives.vasodilators.organic-nitrates",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Vasodilators",
+        "Organic Nitrates",
+        "Long Acting"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 148
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.vasodilators.nitric-oxide-donors",
+      "label": "Nitric Oxide Donors",
+      "parent": "taxonomy.cardiovascular.antihypertensives.vasodilators",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Vasodilators",
+        "Nitric Oxide Donors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 149
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.central-sympatholytics",
+      "label": "Central Sympatholytics",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.central-sympatholytics.alpha2-agonists",
+        "taxonomy.cardiovascular.antihypertensives.central-sympatholytics.imidazoline-receptor-agonists"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Central Sympatholytics"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 150
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.central-sympatholytics.alpha2-agonists",
+      "label": "Alpha2 Agonists",
+      "parent": "taxonomy.cardiovascular.antihypertensives.central-sympatholytics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Central Sympatholytics",
+        "Alpha2 Agonists"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 151
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.central-sympatholytics.imidazoline-receptor-agonists",
+      "label": "Imidazoline Receptor Agonists",
+      "parent": "taxonomy.cardiovascular.antihypertensives.central-sympatholytics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Central Sympatholytics",
+        "Imidazoline Receptor Agonists"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 152
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.alpha-blockers",
+      "label": "Alpha Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives",
+      "children": [
+        "taxonomy.cardiovascular.antihypertensives.alpha-blockers.nonselective-alpha-blockers",
+        "taxonomy.cardiovascular.antihypertensives.alpha-blockers.alpha1-selective-blockers"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Alpha Blockers"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 153
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.alpha-blockers.nonselective-alpha-blockers",
+      "label": "Nonselective Alpha Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.alpha-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Alpha Blockers",
+        "Nonselective Alpha Blockers"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 154
+    },
+    {
+      "id": "taxonomy.cardiovascular.antihypertensives.alpha-blockers.alpha1-selective-blockers",
+      "label": "Alpha1 Selective Blockers",
+      "parent": "taxonomy.cardiovascular.antihypertensives.alpha-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antihypertensives",
+        "Alpha Blockers",
+        "Alpha1 Selective Blockers"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 155
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics",
+      "label": "Antiarrhythmics",
+      "parent": "taxonomy.cardiovascular",
+      "children": [
+        "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers",
+        "taxonomy.cardiovascular.antiarrhythmics.class-ii-beta-blockers",
+        "taxonomy.cardiovascular.antiarrhythmics.class-iii-potassium-channel-blockers",
+        "taxonomy.cardiovascular.antiarrhythmics.class-iv-calcium-channel-blockers",
+        "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics"
+      ],
+      "medicationCount": 24,
+      "sortOrder": 156
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers",
+      "label": "Class I Sodium Channel Blockers",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics",
+      "children": [
+        "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers.class-ia",
+        "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers.class-ib",
+        "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers.class-ic"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class I Sodium Channel Blockers"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 157
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers.class-ia",
+      "label": "Class Ia",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class I Sodium Channel Blockers",
+        "Class Ia"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 158
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers.class-ib",
+      "label": "Class Ib",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class I Sodium Channel Blockers",
+        "Class Ib"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 159
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers.class-ic",
+      "label": "Class Ic",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.class-i-sodium-channel-blockers",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class I Sodium Channel Blockers",
+        "Class Ic"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 160
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-ii-beta-blockers",
+      "label": "Class II Beta Blockers",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class II Beta Blockers"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 161
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-iii-potassium-channel-blockers",
+      "label": "Class III Potassium Channel Blockers",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class III Potassium Channel Blockers"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 162
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.class-iv-calcium-channel-blockers",
+      "label": "Class IV Calcium Channel Blockers",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Class IV Calcium Channel Blockers"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 163
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics",
+      "label": "Miscellaneous Antiarrhythmics",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics",
+      "children": [
+        "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.adenosine",
+        "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.magnesium",
+        "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.cardiac-glycosides",
+        "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.late-sodium-current-inhibitors"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Miscellaneous Antiarrhythmics"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 164
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.adenosine",
+      "label": "Adenosine",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Miscellaneous Antiarrhythmics",
+        "Adenosine"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 165
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.magnesium",
+      "label": "Magnesium",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Miscellaneous Antiarrhythmics",
+        "Magnesium"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 166
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.cardiac-glycosides",
+      "label": "Cardiac Glycosides",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Miscellaneous Antiarrhythmics",
+        "Cardiac Glycosides"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 167
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics.late-sodium-current-inhibitors",
+      "label": "Late Sodium Current Inhibitors",
+      "parent": "taxonomy.cardiovascular.antiarrhythmics.miscellaneous-antiarrhythmics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiarrhythmics",
+        "Miscellaneous Antiarrhythmics",
+        "Late Sodium Current Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 168
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "label": "Lipid Lowering Agents",
+      "parent": "taxonomy.cardiovascular",
+      "children": [
+        "taxonomy.cardiovascular.lipid-lowering-agents.statins",
+        "taxonomy.cardiovascular.lipid-lowering-agents.cholesterol-absorption-inhibitors",
+        "taxonomy.cardiovascular.lipid-lowering-agents.pcsk9-inhibitors",
+        "taxonomy.cardiovascular.lipid-lowering-agents.bempedoic-acid",
+        "taxonomy.cardiovascular.lipid-lowering-agents.bile-acid-sequestrants",
+        "taxonomy.cardiovascular.lipid-lowering-agents.fibrates",
+        "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids",
+        "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents",
+        "taxonomy.cardiovascular.lipid-lowering-agents.mtp-inhibitors",
+        "taxonomy.cardiovascular.lipid-lowering-agents.thyroid-hormone-analogs"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents"
+      ],
+      "medicationCount": 24,
+      "sortOrder": 169
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.statins",
+      "label": "Statins",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Statins"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 170
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.cholesterol-absorption-inhibitors",
+      "label": "Cholesterol Absorption Inhibitors",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Cholesterol Absorption Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 171
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.pcsk9-inhibitors",
+      "label": "Pcsk9 Inhibitors",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Pcsk9 Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 172
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.bempedoic-acid",
+      "label": "Bempedoic Acid",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Bempedoic Acid"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 173
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.bile-acid-sequestrants",
+      "label": "Bile Acid Sequestrants",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Bile Acid Sequestrants"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 174
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.fibrates",
+      "label": "Fibrates",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Fibrates"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 175
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids",
+      "label": "Omega3 Fatty Acids",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [
+        "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids.epa-products",
+        "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids.epa-dha-products"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Omega3 Fatty Acids"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 176
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids.epa-products",
+      "label": "Epa Products",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Omega3 Fatty Acids",
+        "Epa Products"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 177
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids.epa-dha-products",
+      "label": "Epa Dha Products",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents.omega3-fatty-acids",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Omega3 Fatty Acids",
+        "Epa Dha Products"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 178
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents",
+      "label": "Antisense And Rnai Agents",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [
+        "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents.apob-antisense",
+        "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents.pcsk9-sirna"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Antisense And Rnai Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 179
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents.apob-antisense",
+      "label": "Apob Antisense",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Antisense And Rnai Agents",
+        "Apob Antisense"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 180
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents.pcsk9-sirna",
+      "label": "Pcsk9 Sirna",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents.antisense-and-rnai-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Antisense And Rnai Agents",
+        "Pcsk9 Sirna"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 181
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.mtp-inhibitors",
+      "label": "Mtp Inhibitors",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Mtp Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 182
+    },
+    {
+      "id": "taxonomy.cardiovascular.lipid-lowering-agents.thyroid-hormone-analogs",
+      "label": "Thyroid Hormone Analogs",
+      "parent": "taxonomy.cardiovascular.lipid-lowering-agents",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Lipid Lowering Agents",
+        "Thyroid Hormone Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 183
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants",
+      "label": "Anticoagulants",
+      "parent": "taxonomy.cardiovascular",
+      "children": [
+        "taxonomy.cardiovascular.anticoagulants.heparins",
+        "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors",
+        "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors",
+        "taxonomy.cardiovascular.anticoagulants.vitamin-k-antagonists"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants"
+      ],
+      "medicationCount": 14,
+      "sortOrder": 184
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.heparins",
+      "label": "Heparins",
+      "parent": "taxonomy.cardiovascular.anticoagulants",
+      "children": [
+        "taxonomy.cardiovascular.anticoagulants.heparins.unfractionated-heparin",
+        "taxonomy.cardiovascular.anticoagulants.heparins.low-molecular-weight-heparins"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Heparins"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 185
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.heparins.unfractionated-heparin",
+      "label": "Unfractionated Heparin",
+      "parent": "taxonomy.cardiovascular.anticoagulants.heparins",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Heparins",
+        "Unfractionated Heparin"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 186
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.heparins.low-molecular-weight-heparins",
+      "label": "Low Molecular Weight Heparins",
+      "parent": "taxonomy.cardiovascular.anticoagulants.heparins",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Heparins",
+        "Low Molecular Weight Heparins"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 187
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors",
+      "label": "Direct Thrombin Inhibitors",
+      "parent": "taxonomy.cardiovascular.anticoagulants",
+      "children": [
+        "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors.parenteral",
+        "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors.oral"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Direct Thrombin Inhibitors"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 188
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors.parenteral",
+      "label": "Parenteral",
+      "parent": "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Direct Thrombin Inhibitors",
+        "Parenteral"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 189
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors.oral",
+      "label": "Oral",
+      "parent": "taxonomy.cardiovascular.anticoagulants.direct-thrombin-inhibitors",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Direct Thrombin Inhibitors",
+        "Oral"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 190
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors",
+      "label": "Factor Xa Inhibitors",
+      "parent": "taxonomy.cardiovascular.anticoagulants",
+      "children": [
+        "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors.oral",
+        "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors.parenteral"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Factor Xa Inhibitors"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 191
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors.oral",
+      "label": "Oral",
+      "parent": "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Factor Xa Inhibitors",
+        "Oral"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 192
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors.parenteral",
+      "label": "Parenteral",
+      "parent": "taxonomy.cardiovascular.anticoagulants.factor-xa-inhibitors",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Factor Xa Inhibitors",
+        "Parenteral"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 193
+    },
+    {
+      "id": "taxonomy.cardiovascular.anticoagulants.vitamin-k-antagonists",
+      "label": "Vitamin K Antagonists",
+      "parent": "taxonomy.cardiovascular.anticoagulants",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Anticoagulants",
+        "Vitamin K Antagonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 194
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets",
+      "label": "Antiplatelets",
+      "parent": "taxonomy.cardiovascular",
+      "children": [
+        "taxonomy.cardiovascular.antiplatelets.cox-inhibitors",
+        "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists",
+        "taxonomy.cardiovascular.antiplatelets.gp-iib-iiia-inhibitors",
+        "taxonomy.cardiovascular.antiplatelets.phosphodiesterase-inhibitors",
+        "taxonomy.cardiovascular.antiplatelets.par1-antagonists"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets"
+      ],
+      "medicationCount": 11,
+      "sortOrder": 195
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.cox-inhibitors",
+      "label": "Cox Inhibitors",
+      "parent": "taxonomy.cardiovascular.antiplatelets",
+      "children": [
+        "taxonomy.cardiovascular.antiplatelets.cox-inhibitors.irreversible-cox1-inhibitors"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "Cox Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 196
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.cox-inhibitors.irreversible-cox1-inhibitors",
+      "label": "Irreversible Cox1 Inhibitors",
+      "parent": "taxonomy.cardiovascular.antiplatelets.cox-inhibitors",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "Cox Inhibitors",
+        "Irreversible Cox1 Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 197
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists",
+      "label": "P2y12 Receptor Antagonists",
+      "parent": "taxonomy.cardiovascular.antiplatelets",
+      "children": [
+        "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists.thienopyridines",
+        "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists.cyclopentyl-triazolo-pyrimidines"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "P2y12 Receptor Antagonists"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 198
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists.thienopyridines",
+      "label": "Thienopyridines",
+      "parent": "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "P2y12 Receptor Antagonists",
+        "Thienopyridines"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 199
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists.cyclopentyl-triazolo-pyrimidines",
+      "label": "Cyclopentyl Triazolo Pyrimidines",
+      "parent": "taxonomy.cardiovascular.antiplatelets.p2y12-receptor-antagonists",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "P2y12 Receptor Antagonists",
+        "Cyclopentyl Triazolo Pyrimidines"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 200
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.gp-iib-iiia-inhibitors",
+      "label": "Gp Iib Iiia Inhibitors",
+      "parent": "taxonomy.cardiovascular.antiplatelets",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "Gp Iib Iiia Inhibitors"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 201
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.phosphodiesterase-inhibitors",
+      "label": "Phosphodiesterase Inhibitors",
+      "parent": "taxonomy.cardiovascular.antiplatelets",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "Phosphodiesterase Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 202
+    },
+    {
+      "id": "taxonomy.cardiovascular.antiplatelets.par1-antagonists",
+      "label": "Par1 Antagonists",
+      "parent": "taxonomy.cardiovascular.antiplatelets",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Antiplatelets",
+        "Par1 Antagonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 203
+    },
+    {
+      "id": "taxonomy.cardiovascular.thrombolytics",
+      "label": "Thrombolytics",
+      "parent": "taxonomy.cardiovascular",
+      "children": [
+        "taxonomy.cardiovascular.thrombolytics.tpa-analogs",
+        "taxonomy.cardiovascular.thrombolytics.plasminogen-activators"
+      ],
+      "path": [
+        "Cardiovascular",
+        "Thrombolytics"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 204
+    },
+    {
+      "id": "taxonomy.cardiovascular.thrombolytics.tpa-analogs",
+      "label": "Tpa Analogs",
+      "parent": "taxonomy.cardiovascular.thrombolytics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Thrombolytics",
+        "Tpa Analogs"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 205
+    },
+    {
+      "id": "taxonomy.cardiovascular.thrombolytics.plasminogen-activators",
+      "label": "Plasminogen Activators",
+      "parent": "taxonomy.cardiovascular.thrombolytics",
+      "children": [],
+      "path": [
+        "Cardiovascular",
+        "Thrombolytics",
+        "Plasminogen Activators"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 206
+    },
+    {
+      "id": "taxonomy.central-nervous-system",
+      "label": "Central Nervous System",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.central-nervous-system.antidepressants",
+        "taxonomy.central-nervous-system.antipsychotics",
+        "taxonomy.central-nervous-system.antiepileptics",
+        "taxonomy.central-nervous-system.analgesics"
+      ],
+      "path": [
+        "Central Nervous System"
+      ],
+      "medicationCount": 128,
+      "sortOrder": 207
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants",
+      "label": "Antidepressants",
+      "parent": "taxonomy.central-nervous-system",
+      "children": [
+        "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors",
+        "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors",
+        "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants"
+      ],
+      "medicationCount": 35,
+      "sortOrder": 208
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors",
+      "label": "Monoamine Reuptake Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antidepressants",
+      "children": [
+        "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.ssris",
+        "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.snris",
+        "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.nris",
+        "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.tricyclic-antidepressants"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Reuptake Inhibitors"
+      ],
+      "medicationCount": 23,
+      "sortOrder": 209
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.ssris",
+      "label": "Ssris",
+      "parent": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Reuptake Inhibitors",
+        "Ssris"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 210
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.snris",
+      "label": "Snris",
+      "parent": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Reuptake Inhibitors",
+        "Snris"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 211
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.nris",
+      "label": "Nris",
+      "parent": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Reuptake Inhibitors",
+        "Nris"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 212
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors.tricyclic-antidepressants",
+      "label": "Tricyclic Antidepressants",
+      "parent": "taxonomy.central-nervous-system.antidepressants.monoamine-reuptake-inhibitors",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Reuptake Inhibitors",
+        "Tricyclic Antidepressants"
+      ],
+      "medicationCount": 10,
+      "sortOrder": 213
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors",
+      "label": "Monoamine Oxidase Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antidepressants",
+      "children": [
+        "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors.nonselective-irreversible-maoi",
+        "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors.maob-selective-inhibitors"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Oxidase Inhibitors"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 214
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors.nonselective-irreversible-maoi",
+      "label": "Nonselective Irreversible Maoi",
+      "parent": "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Oxidase Inhibitors",
+        "Nonselective Irreversible Maoi"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 215
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors.maob-selective-inhibitors",
+      "label": "MAO-B Selective Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antidepressants.monoamine-oxidase-inhibitors",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Monoamine Oxidase Inhibitors",
+        "MAO-B Selective Inhibitors"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 216
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants",
+      "label": "Atypical Antidepressants",
+      "parent": "taxonomy.central-nervous-system.antidepressants",
+      "children": [
+        "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.dopamine-norepinephrine-reuptake-inhibitors",
+        "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.serotonin-antagonist-reuptake-inhibitors",
+        "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.noradrenergic-specific-serotonergic-agents",
+        "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.melatonergic-antidepressants"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Atypical Antidepressants"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 217
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.dopamine-norepinephrine-reuptake-inhibitors",
+      "label": "Dopamine Norepinephrine Reuptake Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Atypical Antidepressants",
+        "Dopamine Norepinephrine Reuptake Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 218
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.serotonin-antagonist-reuptake-inhibitors",
+      "label": "Serotonin Antagonist Reuptake Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Atypical Antidepressants",
+        "Serotonin Antagonist Reuptake Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 219
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.noradrenergic-specific-serotonergic-agents",
+      "label": "Noradrenergic Specific Serotonergic Agents",
+      "parent": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Atypical Antidepressants",
+        "Noradrenergic Specific Serotonergic Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 220
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants.melatonergic-antidepressants",
+      "label": "Melatonergic Antidepressants",
+      "parent": "taxonomy.central-nervous-system.antidepressants.atypical-antidepressants",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antidepressants",
+        "Atypical Antidepressants",
+        "Melatonergic Antidepressants"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 221
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics",
+      "label": "Antipsychotics",
+      "parent": "taxonomy.central-nervous-system",
+      "children": [
+        "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics",
+        "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics"
+      ],
+      "medicationCount": 21,
+      "sortOrder": 222
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics",
+      "label": "Typical Antipsychotics",
+      "parent": "taxonomy.central-nervous-system.antipsychotics",
+      "children": [
+        "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics.low-potency",
+        "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics.high-potency"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics",
+        "Typical Antipsychotics"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 223
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics.low-potency",
+      "label": "Low Potency",
+      "parent": "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics",
+        "Typical Antipsychotics",
+        "Low Potency"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 224
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics.high-potency",
+      "label": "High Potency",
+      "parent": "taxonomy.central-nervous-system.antipsychotics.typical-antipsychotics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics",
+        "Typical Antipsychotics",
+        "High Potency"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 225
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics",
+      "label": "Atypical Antipsychotics",
+      "parent": "taxonomy.central-nervous-system.antipsychotics",
+      "children": [
+        "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics.serotonin-dopamine-antagonists",
+        "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics.dopamine-partial-agonists"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics",
+        "Atypical Antipsychotics"
+      ],
+      "medicationCount": 12,
+      "sortOrder": 226
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics.serotonin-dopamine-antagonists",
+      "label": "Serotonin Dopamine Antagonists",
+      "parent": "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics",
+        "Atypical Antipsychotics",
+        "Serotonin Dopamine Antagonists"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 227
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics.dopamine-partial-agonists",
+      "label": "Dopamine Partial Agonists",
+      "parent": "taxonomy.central-nervous-system.antipsychotics.atypical-antipsychotics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antipsychotics",
+        "Atypical Antipsychotics",
+        "Dopamine Partial Agonists"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 228
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics",
+      "label": "Antiepileptics",
+      "parent": "taxonomy.central-nervous-system",
+      "children": [
+        "taxonomy.central-nervous-system.antiepileptics.sodium-channel-blockers",
+        "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators",
+        "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents",
+        "taxonomy.central-nervous-system.antiepileptics.sv2a-ligands",
+        "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics"
+      ],
+      "medicationCount": 26,
+      "sortOrder": 229
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.sodium-channel-blockers",
+      "label": "Sodium Channel Blockers",
+      "parent": "taxonomy.central-nervous-system.antiepileptics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Sodium Channel Blockers"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 230
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators",
+      "label": "Calcium Channel Modulators",
+      "parent": "taxonomy.central-nervous-system.antiepileptics",
+      "children": [
+        "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators.t-type-calcium-channel-agents",
+        "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators.alpha2delta-ligands"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Calcium Channel Modulators"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 231
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators.t-type-calcium-channel-agents",
+      "label": "T Type Calcium Channel Agents",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Calcium Channel Modulators",
+        "T Type Calcium Channel Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 232
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators.alpha2delta-ligands",
+      "label": "Alpha2delta Ligands",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.calcium-channel-modulators",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Calcium Channel Modulators",
+        "Alpha2delta Ligands"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 233
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents",
+      "label": "Gabaergic Agents",
+      "parent": "taxonomy.central-nervous-system.antiepileptics",
+      "children": [
+        "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents.gaba-a-positive-allosteric-modulators",
+        "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents.gaba-reuptake-inhibitors",
+        "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents.gaba-transaminase-inhibitors"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Gabaergic Agents"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 234
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents.gaba-a-positive-allosteric-modulators",
+      "label": "GABA A Positive Allosteric Modulators",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Gabaergic Agents",
+        "GABA A Positive Allosteric Modulators"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 235
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents.gaba-reuptake-inhibitors",
+      "label": "GABA Reuptake Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Gabaergic Agents",
+        "GABA Reuptake Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 236
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents.gaba-transaminase-inhibitors",
+      "label": "GABA Transaminase Inhibitors",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.gabaergic-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Gabaergic Agents",
+        "GABA Transaminase Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 237
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.sv2a-ligands",
+      "label": "SV2A Ligands",
+      "parent": "taxonomy.central-nervous-system.antiepileptics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "SV2A Ligands"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 238
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators",
+      "label": "Glutamate Modulators",
+      "parent": "taxonomy.central-nervous-system.antiepileptics",
+      "children": [
+        "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators.ampa-antagonists",
+        "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators.nmda-antagonists"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Glutamate Modulators"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 239
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators.ampa-antagonists",
+      "label": "Ampa Antagonists",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Glutamate Modulators",
+        "Ampa Antagonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 240
+    },
+    {
+      "id": "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators.nmda-antagonists",
+      "label": "NMDA Antagonists",
+      "parent": "taxonomy.central-nervous-system.antiepileptics.glutamate-modulators",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Antiepileptics",
+        "Glutamate Modulators",
+        "NMDA Antagonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 241
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics",
+      "label": "Analgesics",
+      "parent": "taxonomy.central-nervous-system",
+      "children": [
+        "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics",
+        "taxonomy.central-nervous-system.analgesics.opioid-analgesics",
+        "taxonomy.central-nervous-system.analgesics.migraine-agents"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Analgesics"
+      ],
+      "medicationCount": 46,
+      "sortOrder": 242
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics",
+      "label": "Nonopioid Analgesics",
+      "parent": "taxonomy.central-nervous-system.analgesics",
+      "children": [
+        "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids",
+        "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.acetaminophen"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Nonopioid Analgesics"
+      ],
+      "medicationCount": 18,
+      "sortOrder": 243
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids",
+      "label": "Nsaids",
+      "parent": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics",
+      "children": [
+        "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids.nonselective-cox-inhibitors",
+        "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids.cox2-selective-inhibitors"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Nonopioid Analgesics",
+        "Nsaids"
+      ],
+      "medicationCount": 17,
+      "sortOrder": 244
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids.nonselective-cox-inhibitors",
+      "label": "Nonselective Cox Inhibitors",
+      "parent": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Nonopioid Analgesics",
+        "Nsaids",
+        "Nonselective Cox Inhibitors"
+      ],
+      "medicationCount": 16,
+      "sortOrder": 245
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids.cox2-selective-inhibitors",
+      "label": "Cox2 Selective Inhibitors",
+      "parent": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.nsaids",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Nonopioid Analgesics",
+        "Nsaids",
+        "Cox2 Selective Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 246
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics.acetaminophen",
+      "label": "Acetaminophen",
+      "parent": "taxonomy.central-nervous-system.analgesics.nonopioid-analgesics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Nonopioid Analgesics",
+        "Acetaminophen"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 247
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.opioid-analgesics",
+      "label": "Opioid Analgesics",
+      "parent": "taxonomy.central-nervous-system.analgesics",
+      "children": [
+        "taxonomy.central-nervous-system.analgesics.opioid-analgesics.full-mu-agonists",
+        "taxonomy.central-nervous-system.analgesics.opioid-analgesics.partial-mu-agonists",
+        "taxonomy.central-nervous-system.analgesics.opioid-analgesics.mixed-agonist-antagonists"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Opioid Analgesics"
+      ],
+      "medicationCount": 14,
+      "sortOrder": 248
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.opioid-analgesics.full-mu-agonists",
+      "label": "Full Mu Agonists",
+      "parent": "taxonomy.central-nervous-system.analgesics.opioid-analgesics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Opioid Analgesics",
+        "Full Mu Agonists"
+      ],
+      "medicationCount": 10,
+      "sortOrder": 249
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.opioid-analgesics.partial-mu-agonists",
+      "label": "Partial Mu Agonists",
+      "parent": "taxonomy.central-nervous-system.analgesics.opioid-analgesics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Opioid Analgesics",
+        "Partial Mu Agonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 250
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.opioid-analgesics.mixed-agonist-antagonists",
+      "label": "Mixed Agonist Antagonists",
+      "parent": "taxonomy.central-nervous-system.analgesics.opioid-analgesics",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Opioid Analgesics",
+        "Mixed Agonist Antagonists"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 251
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.migraine-agents",
+      "label": "Migraine Agents",
+      "parent": "taxonomy.central-nervous-system.analgesics",
+      "children": [
+        "taxonomy.central-nervous-system.analgesics.migraine-agents.triptans",
+        "taxonomy.central-nervous-system.analgesics.migraine-agents.cgrp-receptor-antagonists",
+        "taxonomy.central-nervous-system.analgesics.migraine-agents.ditans",
+        "taxonomy.central-nervous-system.analgesics.migraine-agents.ergot-derivatives"
+      ],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Migraine Agents"
+      ],
+      "medicationCount": 14,
+      "sortOrder": 252
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.migraine-agents.triptans",
+      "label": "Triptans",
+      "parent": "taxonomy.central-nervous-system.analgesics.migraine-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Migraine Agents",
+        "Triptans"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 253
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.migraine-agents.cgrp-receptor-antagonists",
+      "label": "Cgrp Receptor Antagonists",
+      "parent": "taxonomy.central-nervous-system.analgesics.migraine-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Migraine Agents",
+        "Cgrp Receptor Antagonists"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 254
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.migraine-agents.ditans",
+      "label": "Ditans",
+      "parent": "taxonomy.central-nervous-system.analgesics.migraine-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Migraine Agents",
+        "Ditans"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 255
+    },
+    {
+      "id": "taxonomy.central-nervous-system.analgesics.migraine-agents.ergot-derivatives",
+      "label": "Ergot Derivatives",
+      "parent": "taxonomy.central-nervous-system.analgesics.migraine-agents",
+      "children": [],
+      "path": [
+        "Central Nervous System",
+        "Analgesics",
+        "Migraine Agents",
+        "Ergot Derivatives"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 256
+    },
+    {
+      "id": "taxonomy.endocrine",
+      "label": "Endocrine",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.endocrine.antidiabetic-agents",
+        "taxonomy.endocrine.thyroid-agents",
+        "taxonomy.endocrine.sex-hormones-and-modulators",
+        "taxonomy.endocrine.corticosteroids"
+      ],
+      "path": [
+        "Endocrine"
+      ],
+      "medicationCount": 74,
+      "sortOrder": 257
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents",
+      "label": "Antidiabetic Agents",
+      "parent": "taxonomy.endocrine",
+      "children": [
+        "taxonomy.endocrine.antidiabetic-agents.insulins",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents"
+      ],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents"
+      ],
+      "medicationCount": 32,
+      "sortOrder": 258
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.insulins",
+      "label": "Insulins",
+      "parent": "taxonomy.endocrine.antidiabetic-agents",
+      "children": [
+        "taxonomy.endocrine.antidiabetic-agents.insulins.rapid-acting",
+        "taxonomy.endocrine.antidiabetic-agents.insulins.short-acting",
+        "taxonomy.endocrine.antidiabetic-agents.insulins.intermediate-acting",
+        "taxonomy.endocrine.antidiabetic-agents.insulins.long-acting",
+        "taxonomy.endocrine.antidiabetic-agents.insulins.ultra-long-acting"
+      ],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Insulins"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 259
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.insulins.rapid-acting",
+      "label": "Rapid Acting",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.insulins",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Insulins",
+        "Rapid Acting"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 260
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.insulins.short-acting",
+      "label": "Short Acting",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.insulins",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Insulins",
+        "Short Acting"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 261
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.insulins.intermediate-acting",
+      "label": "Intermediate Acting",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.insulins",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Insulins",
+        "Intermediate Acting"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 262
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.insulins.long-acting",
+      "label": "Long Acting",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.insulins",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Insulins",
+        "Long Acting"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 263
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.insulins.ultra-long-acting",
+      "label": "Ultra Long Acting",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.insulins",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Insulins",
+        "Ultra Long Acting"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 264
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "label": "Non Insulin Agents",
+      "parent": "taxonomy.endocrine.antidiabetic-agents",
+      "children": [
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.biguanides",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.sulfonylureas",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.meglitinides",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.thiazolidinediones",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.dpp4-inhibitors",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.glp1-receptor-agonists",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.sglt2-inhibitors",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.alpha-glucosidase-inhibitors",
+        "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.amylin-analogs"
+      ],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents"
+      ],
+      "medicationCount": 24,
+      "sortOrder": 265
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.biguanides",
+      "label": "Biguanides",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "Biguanides"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 266
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.sulfonylureas",
+      "label": "Sulfonylureas",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "Sulfonylureas"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 267
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.meglitinides",
+      "label": "Meglitinides",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "Meglitinides"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 268
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.thiazolidinediones",
+      "label": "Thiazolidinediones",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "Thiazolidinediones"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 269
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.dpp4-inhibitors",
+      "label": "DPP4 Inhibitors",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "DPP4 Inhibitors"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 270
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.glp1-receptor-agonists",
+      "label": "GLP-1 Receptor Agonists",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "GLP-1 Receptor Agonists"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 271
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.sglt2-inhibitors",
+      "label": "SGLT2 Inhibitors",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "SGLT2 Inhibitors"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 272
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.alpha-glucosidase-inhibitors",
+      "label": "Alpha Glucosidase Inhibitors",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "Alpha Glucosidase Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 273
+    },
+    {
+      "id": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents.amylin-analogs",
+      "label": "Amylin Analogs",
+      "parent": "taxonomy.endocrine.antidiabetic-agents.non-insulin-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Antidiabetic Agents",
+        "Non Insulin Agents",
+        "Amylin Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 274
+    },
+    {
+      "id": "taxonomy.endocrine.thyroid-agents",
+      "label": "Thyroid Agents",
+      "parent": "taxonomy.endocrine",
+      "children": [
+        "taxonomy.endocrine.thyroid-agents.thyroid-hormones",
+        "taxonomy.endocrine.thyroid-agents.antithyroid-agents"
+      ],
+      "path": [
+        "Endocrine",
+        "Thyroid Agents"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 275
+    },
+    {
+      "id": "taxonomy.endocrine.thyroid-agents.thyroid-hormones",
+      "label": "Thyroid Hormones",
+      "parent": "taxonomy.endocrine.thyroid-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Thyroid Agents",
+        "Thyroid Hormones"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 276
+    },
+    {
+      "id": "taxonomy.endocrine.thyroid-agents.antithyroid-agents",
+      "label": "Antithyroid Agents",
+      "parent": "taxonomy.endocrine.thyroid-agents",
+      "children": [
+        "taxonomy.endocrine.thyroid-agents.antithyroid-agents.thionamides",
+        "taxonomy.endocrine.thyroid-agents.antithyroid-agents.iodine-agents",
+        "taxonomy.endocrine.thyroid-agents.antithyroid-agents.radioactive-iodine"
+      ],
+      "path": [
+        "Endocrine",
+        "Thyroid Agents",
+        "Antithyroid Agents"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 277
+    },
+    {
+      "id": "taxonomy.endocrine.thyroid-agents.antithyroid-agents.thionamides",
+      "label": "Thionamides",
+      "parent": "taxonomy.endocrine.thyroid-agents.antithyroid-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Thyroid Agents",
+        "Antithyroid Agents",
+        "Thionamides"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 278
+    },
+    {
+      "id": "taxonomy.endocrine.thyroid-agents.antithyroid-agents.iodine-agents",
+      "label": "Iodine Agents",
+      "parent": "taxonomy.endocrine.thyroid-agents.antithyroid-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Thyroid Agents",
+        "Antithyroid Agents",
+        "Iodine Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 279
+    },
+    {
+      "id": "taxonomy.endocrine.thyroid-agents.antithyroid-agents.radioactive-iodine",
+      "label": "Radioactive Iodine",
+      "parent": "taxonomy.endocrine.thyroid-agents.antithyroid-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Thyroid Agents",
+        "Antithyroid Agents",
+        "Radioactive Iodine"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 280
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "label": "Sex Hormones And Modulators",
+      "parent": "taxonomy.endocrine",
+      "children": [
+        "taxonomy.endocrine.sex-hormones-and-modulators.estrogens",
+        "taxonomy.endocrine.sex-hormones-and-modulators.progestins",
+        "taxonomy.endocrine.sex-hormones-and-modulators.androgens",
+        "taxonomy.endocrine.sex-hormones-and-modulators.serms",
+        "taxonomy.endocrine.sex-hormones-and-modulators.aromatase-inhibitors",
+        "taxonomy.endocrine.sex-hormones-and-modulators.antiandrogens",
+        "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents"
+      ],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators"
+      ],
+      "medicationCount": 23,
+      "sortOrder": 281
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.estrogens",
+      "label": "Estrogens",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Estrogens"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 282
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.progestins",
+      "label": "Progestins",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Progestins"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 283
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.androgens",
+      "label": "Androgens",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Androgens"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 284
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.serms",
+      "label": "Serms",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Serms"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 285
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.aromatase-inhibitors",
+      "label": "Aromatase Inhibitors",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Aromatase Inhibitors"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 286
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.antiandrogens",
+      "label": "Antiandrogens",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Antiandrogens"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 287
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents",
+      "label": "Gnrh Agents",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators",
+      "children": [
+        "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents.gnrh-agonists",
+        "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents.gnrh-antagonists"
+      ],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Gnrh Agents"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 288
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents.gnrh-agonists",
+      "label": "Gnrh Agonists",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Gnrh Agents",
+        "Gnrh Agonists"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 289
+    },
+    {
+      "id": "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents.gnrh-antagonists",
+      "label": "Gnrh Antagonists",
+      "parent": "taxonomy.endocrine.sex-hormones-and-modulators.gnrh-agents",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Sex Hormones And Modulators",
+        "Gnrh Agents",
+        "Gnrh Antagonists"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 290
+    },
+    {
+      "id": "taxonomy.endocrine.corticosteroids",
+      "label": "Corticosteroids",
+      "parent": "taxonomy.endocrine",
+      "children": [
+        "taxonomy.endocrine.corticosteroids.glucocorticoids",
+        "taxonomy.endocrine.corticosteroids.mineralocorticoids"
+      ],
+      "path": [
+        "Endocrine",
+        "Corticosteroids"
+      ],
+      "medicationCount": 10,
+      "sortOrder": 291
+    },
+    {
+      "id": "taxonomy.endocrine.corticosteroids.glucocorticoids",
+      "label": "Glucocorticoids",
+      "parent": "taxonomy.endocrine.corticosteroids",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Corticosteroids",
+        "Glucocorticoids"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 292
+    },
+    {
+      "id": "taxonomy.endocrine.corticosteroids.mineralocorticoids",
+      "label": "Mineralocorticoids",
+      "parent": "taxonomy.endocrine.corticosteroids",
+      "children": [],
+      "path": [
+        "Endocrine",
+        "Corticosteroids",
+        "Mineralocorticoids"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 293
+    },
+    {
+      "id": "taxonomy.gastrointestinal",
+      "label": "Gastrointestinal",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.gastrointestinal.acid-related-disorders",
+        "taxonomy.gastrointestinal.antiemetics",
+        "taxonomy.gastrointestinal.laxatives",
+        "taxonomy.gastrointestinal.antidiarrheals",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents"
+      ],
+      "path": [
+        "Gastrointestinal"
+      ],
+      "medicationCount": 79,
+      "sortOrder": 294
+    },
+    {
+      "id": "taxonomy.gastrointestinal.acid-related-disorders",
+      "label": "Acid Related Disorders",
+      "parent": "taxonomy.gastrointestinal",
+      "children": [
+        "taxonomy.gastrointestinal.acid-related-disorders.proton-pump-inhibitors",
+        "taxonomy.gastrointestinal.acid-related-disorders.h2-receptor-antagonists",
+        "taxonomy.gastrointestinal.acid-related-disorders.antacids",
+        "taxonomy.gastrointestinal.acid-related-disorders.mucosal-protective-agents",
+        "taxonomy.gastrointestinal.acid-related-disorders.prostaglandin-analogs"
+      ],
+      "path": [
+        "Gastrointestinal",
+        "Acid Related Disorders"
+      ],
+      "medicationCount": 19,
+      "sortOrder": 295
+    },
+    {
+      "id": "taxonomy.gastrointestinal.acid-related-disorders.proton-pump-inhibitors",
+      "label": "Proton Pump Inhibitors",
+      "parent": "taxonomy.gastrointestinal.acid-related-disorders",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Acid Related Disorders",
+        "Proton Pump Inhibitors"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 296
+    },
+    {
+      "id": "taxonomy.gastrointestinal.acid-related-disorders.h2-receptor-antagonists",
+      "label": "H2 Receptor Antagonists",
+      "parent": "taxonomy.gastrointestinal.acid-related-disorders",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Acid Related Disorders",
+        "H2 Receptor Antagonists"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 297
+    },
+    {
+      "id": "taxonomy.gastrointestinal.acid-related-disorders.antacids",
+      "label": "Antacids",
+      "parent": "taxonomy.gastrointestinal.acid-related-disorders",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Acid Related Disorders",
+        "Antacids"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 298
+    },
+    {
+      "id": "taxonomy.gastrointestinal.acid-related-disorders.mucosal-protective-agents",
+      "label": "Mucosal Protective Agents",
+      "parent": "taxonomy.gastrointestinal.acid-related-disorders",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Acid Related Disorders",
+        "Mucosal Protective Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 299
+    },
+    {
+      "id": "taxonomy.gastrointestinal.acid-related-disorders.prostaglandin-analogs",
+      "label": "Prostaglandin Analogs",
+      "parent": "taxonomy.gastrointestinal.acid-related-disorders",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Acid Related Disorders",
+        "Prostaglandin Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 300
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics",
+      "label": "Antiemetics",
+      "parent": "taxonomy.gastrointestinal",
+      "children": [
+        "taxonomy.gastrointestinal.antiemetics.5ht3-antagonists",
+        "taxonomy.gastrointestinal.antiemetics.dopamine-antagonists",
+        "taxonomy.gastrointestinal.antiemetics.nk1-antagonists",
+        "taxonomy.gastrointestinal.antiemetics.antihistamines",
+        "taxonomy.gastrointestinal.antiemetics.anticholinergics",
+        "taxonomy.gastrointestinal.antiemetics.cannabinoids"
+      ],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics"
+      ],
+      "medicationCount": 19,
+      "sortOrder": 301
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics.5ht3-antagonists",
+      "label": "5-HT3 Antagonists",
+      "parent": "taxonomy.gastrointestinal.antiemetics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics",
+        "5-HT3 Antagonists"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 302
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics.dopamine-antagonists",
+      "label": "Dopamine Antagonists",
+      "parent": "taxonomy.gastrointestinal.antiemetics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics",
+        "Dopamine Antagonists"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 303
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics.nk1-antagonists",
+      "label": "NK1 Antagonists",
+      "parent": "taxonomy.gastrointestinal.antiemetics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics",
+        "NK1 Antagonists"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 304
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics.antihistamines",
+      "label": "Antihistamines",
+      "parent": "taxonomy.gastrointestinal.antiemetics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics",
+        "Antihistamines"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 305
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics.anticholinergics",
+      "label": "Anticholinergics",
+      "parent": "taxonomy.gastrointestinal.antiemetics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics",
+        "Anticholinergics"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 306
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antiemetics.cannabinoids",
+      "label": "Cannabinoids",
+      "parent": "taxonomy.gastrointestinal.antiemetics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antiemetics",
+        "Cannabinoids"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 307
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives",
+      "label": "Laxatives",
+      "parent": "taxonomy.gastrointestinal",
+      "children": [
+        "taxonomy.gastrointestinal.laxatives.bulk-forming",
+        "taxonomy.gastrointestinal.laxatives.osmotic",
+        "taxonomy.gastrointestinal.laxatives.stimulant",
+        "taxonomy.gastrointestinal.laxatives.stool-softeners",
+        "taxonomy.gastrointestinal.laxatives.secretagogues",
+        "taxonomy.gastrointestinal.laxatives.peripherally-acting-mu-opioid-antagonists"
+      ],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives"
+      ],
+      "medicationCount": 20,
+      "sortOrder": 308
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives.bulk-forming",
+      "label": "Bulk Forming",
+      "parent": "taxonomy.gastrointestinal.laxatives",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives",
+        "Bulk Forming"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 309
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives.osmotic",
+      "label": "Osmotic",
+      "parent": "taxonomy.gastrointestinal.laxatives",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives",
+        "Osmotic"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 310
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives.stimulant",
+      "label": "Stimulant",
+      "parent": "taxonomy.gastrointestinal.laxatives",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives",
+        "Stimulant"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 311
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives.stool-softeners",
+      "label": "Stool Softeners",
+      "parent": "taxonomy.gastrointestinal.laxatives",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives",
+        "Stool Softeners"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 312
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives.secretagogues",
+      "label": "Secretagogues",
+      "parent": "taxonomy.gastrointestinal.laxatives",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives",
+        "Secretagogues"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 313
+    },
+    {
+      "id": "taxonomy.gastrointestinal.laxatives.peripherally-acting-mu-opioid-antagonists",
+      "label": "Peripherally Acting Mu Opioid Antagonists",
+      "parent": "taxonomy.gastrointestinal.laxatives",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Laxatives",
+        "Peripherally Acting Mu Opioid Antagonists"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 314
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antidiarrheals",
+      "label": "Antidiarrheals",
+      "parent": "taxonomy.gastrointestinal",
+      "children": [
+        "taxonomy.gastrointestinal.antidiarrheals.peripheral-opioid-agonists",
+        "taxonomy.gastrointestinal.antidiarrheals.bismuth-agents",
+        "taxonomy.gastrointestinal.antidiarrheals.somatostatin-analogs"
+      ],
+      "path": [
+        "Gastrointestinal",
+        "Antidiarrheals"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 315
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antidiarrheals.peripheral-opioid-agonists",
+      "label": "Peripheral Opioid Agonists",
+      "parent": "taxonomy.gastrointestinal.antidiarrheals",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antidiarrheals",
+        "Peripheral Opioid Agonists"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 316
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antidiarrheals.bismuth-agents",
+      "label": "Bismuth Agents",
+      "parent": "taxonomy.gastrointestinal.antidiarrheals",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antidiarrheals",
+        "Bismuth Agents"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 317
+    },
+    {
+      "id": "taxonomy.gastrointestinal.antidiarrheals.somatostatin-analogs",
+      "label": "Somatostatin Analogs",
+      "parent": "taxonomy.gastrointestinal.antidiarrheals",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Antidiarrheals",
+        "Somatostatin Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 318
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents",
+      "label": "Inflammatory Bowel Disease Agents",
+      "parent": "taxonomy.gastrointestinal",
+      "children": [
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.5-aminosalicylates",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.corticosteroids",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.immunomodulators",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.jak-inhibitors"
+      ],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents"
+      ],
+      "medicationCount": 19,
+      "sortOrder": 319
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.5-aminosalicylates",
+      "label": "5 Aminosalicylates",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "5 Aminosalicylates"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 320
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.corticosteroids",
+      "label": "Corticosteroids",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Corticosteroids"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 321
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.immunomodulators",
+      "label": "Immunomodulators",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Immunomodulators"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 322
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics",
+      "label": "Biologics",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents",
+      "children": [
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics.anti-tnf-agents",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics.anti-integrin-agents",
+        "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics.anti-il12-il23-agents"
+      ],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Biologics"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 323
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics.anti-tnf-agents",
+      "label": "Anti Tnf Agents",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Biologics",
+        "Anti Tnf Agents"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 324
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics.anti-integrin-agents",
+      "label": "Anti Integrin Agents",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Biologics",
+        "Anti Integrin Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 325
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics.anti-il12-il23-agents",
+      "label": "Anti Il12 Il23 Agents",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.biologics",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Biologics",
+        "Anti Il12 Il23 Agents"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 326
+    },
+    {
+      "id": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents.jak-inhibitors",
+      "label": "Jak Inhibitors",
+      "parent": "taxonomy.gastrointestinal.inflammatory-bowel-disease-agents",
+      "children": [],
+      "path": [
+        "Gastrointestinal",
+        "Inflammatory Bowel Disease Agents",
+        "Jak Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 327
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive",
+      "label": "Genitourinary And Reproductive",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents",
+        "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents",
+        "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents",
+        "taxonomy.genitourinary-and-reproductive.contraceptives",
+        "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+        "taxonomy.genitourinary-and-reproductive.male-reproductive-agents",
+        "taxonomy.genitourinary-and-reproductive.female-reproductive-agents",
+        "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous"
+      ],
+      "path": [
+        "Genitourinary And Reproductive"
+      ],
+      "medicationCount": 53,
+      "sortOrder": 328
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents",
+      "label": "Benign Prostatic Hyperplasia Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents.alpha1-blockers",
+        "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents.5-alpha-reductase-inhibitors",
+        "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents.combination-products"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Benign Prostatic Hyperplasia Agents"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 329
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents.alpha1-blockers",
+      "label": "Alpha1 Blockers",
+      "parent": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Benign Prostatic Hyperplasia Agents",
+        "Alpha1 Blockers"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 330
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents.5-alpha-reductase-inhibitors",
+      "label": "5 Alpha Reductase Inhibitors",
+      "parent": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Benign Prostatic Hyperplasia Agents",
+        "5 Alpha Reductase Inhibitors"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 331
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents.combination-products",
+      "label": "Combination Products",
+      "parent": "taxonomy.genitourinary-and-reproductive.benign-prostatic-hyperplasia-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Benign Prostatic Hyperplasia Agents",
+        "Combination Products"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 332
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents",
+      "label": "Overactive Bladder Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents.antimuscarinics",
+        "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents.beta3-agonists"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Overactive Bladder Agents"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 333
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents.antimuscarinics",
+      "label": "Antimuscarinics",
+      "parent": "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Overactive Bladder Agents",
+        "Antimuscarinics"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 334
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents.beta3-agonists",
+      "label": "Beta3 Agonists",
+      "parent": "taxonomy.genitourinary-and-reproductive.overactive-bladder-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Overactive Bladder Agents",
+        "Beta3 Agonists"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 335
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents",
+      "label": "Erectile Dysfunction Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents.pde5-inhibitors",
+        "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents.prostaglandin-analogs"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Erectile Dysfunction Agents"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 336
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents.pde5-inhibitors",
+      "label": "Pde5 Inhibitors",
+      "parent": "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Erectile Dysfunction Agents",
+        "Pde5 Inhibitors"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 337
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents.prostaglandin-analogs",
+      "label": "Prostaglandin Analogs",
+      "parent": "taxonomy.genitourinary-and-reproductive.erectile-dysfunction-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Erectile Dysfunction Agents",
+        "Prostaglandin Analogs"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 338
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.contraceptives",
+      "label": "Contraceptives",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.contraceptives.combined-hormonal-contraceptives",
+        "taxonomy.genitourinary-and-reproductive.contraceptives.progestin-only-contraceptives",
+        "taxonomy.genitourinary-and-reproductive.contraceptives.emergency-contraceptives"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Contraceptives"
+      ],
+      "medicationCount": 12,
+      "sortOrder": 339
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.contraceptives.combined-hormonal-contraceptives",
+      "label": "Combined Hormonal Contraceptives",
+      "parent": "taxonomy.genitourinary-and-reproductive.contraceptives",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Contraceptives",
+        "Combined Hormonal Contraceptives"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 340
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.contraceptives.progestin-only-contraceptives",
+      "label": "Progestin Only Contraceptives",
+      "parent": "taxonomy.genitourinary-and-reproductive.contraceptives",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Contraceptives",
+        "Progestin Only Contraceptives"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 341
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.contraceptives.emergency-contraceptives",
+      "label": "Emergency Contraceptives",
+      "parent": "taxonomy.genitourinary-and-reproductive.contraceptives",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Contraceptives",
+        "Emergency Contraceptives"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 342
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+      "label": "Uterotonics And Tocolytics",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.oxytocics",
+        "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.prostaglandins",
+        "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.beta2-agonists",
+        "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.calcium-channel-blockers",
+        "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.other-tocolytics"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Uterotonics And Tocolytics"
+      ],
+      "medicationCount": 8,
+      "sortOrder": 343
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.oxytocics",
+      "label": "Oxytocics",
+      "parent": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Uterotonics And Tocolytics",
+        "Oxytocics"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 344
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.prostaglandins",
+      "label": "Prostaglandins",
+      "parent": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Uterotonics And Tocolytics",
+        "Prostaglandins"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 345
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.beta2-agonists",
+      "label": "Beta2 Agonists",
+      "parent": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Uterotonics And Tocolytics",
+        "Beta2 Agonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 346
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.calcium-channel-blockers",
+      "label": "Calcium Channel Blockers",
+      "parent": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Uterotonics And Tocolytics",
+        "Calcium Channel Blockers"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 347
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics.other-tocolytics",
+      "label": "Other Tocolytics",
+      "parent": "taxonomy.genitourinary-and-reproductive.uterotonics-and-tocolytics",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Uterotonics And Tocolytics",
+        "Other Tocolytics"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 348
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.male-reproductive-agents",
+      "label": "Male Reproductive Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.male-reproductive-agents.testosterone-replacement",
+        "taxonomy.genitourinary-and-reproductive.male-reproductive-agents.fertility-agents"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Male Reproductive Agents"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 349
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.male-reproductive-agents.testosterone-replacement",
+      "label": "Testosterone Replacement",
+      "parent": "taxonomy.genitourinary-and-reproductive.male-reproductive-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Male Reproductive Agents",
+        "Testosterone Replacement"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 350
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.male-reproductive-agents.fertility-agents",
+      "label": "Fertility Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive.male-reproductive-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Male Reproductive Agents",
+        "Fertility Agents"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 351
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents",
+      "label": "Female Reproductive Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.female-reproductive-agents.ovulation-induction-agents",
+        "taxonomy.genitourinary-and-reproductive.female-reproductive-agents.gonadotropins",
+        "taxonomy.genitourinary-and-reproductive.female-reproductive-agents.progesterone-support-agents"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Female Reproductive Agents"
+      ],
+      "medicationCount": 7,
+      "sortOrder": 352
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents.ovulation-induction-agents",
+      "label": "Ovulation Induction Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Female Reproductive Agents",
+        "Ovulation Induction Agents"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 353
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents.gonadotropins",
+      "label": "Gonadotropins",
+      "parent": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Female Reproductive Agents",
+        "Gonadotropins"
+      ],
+      "medicationCount": 4,
+      "sortOrder": 354
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents.progesterone-support-agents",
+      "label": "Progesterone Support Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive.female-reproductive-agents",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Female Reproductive Agents",
+        "Progesterone Support Agents"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 355
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous",
+      "label": "Urologic Miscellaneous",
+      "parent": "taxonomy.genitourinary-and-reproductive",
+      "children": [
+        "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous.urinary-analgesics",
+        "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous.cystinuria-agents"
+      ],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Urologic Miscellaneous"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 356
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous.urinary-analgesics",
+      "label": "Urinary Analgesics",
+      "parent": "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Urologic Miscellaneous",
+        "Urinary Analgesics"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 357
+    },
+    {
+      "id": "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous.cystinuria-agents",
+      "label": "Cystinuria Agents",
+      "parent": "taxonomy.genitourinary-and-reproductive.urologic-miscellaneous",
+      "children": [],
+      "path": [
+        "Genitourinary And Reproductive",
+        "Urologic Miscellaneous",
+        "Cystinuria Agents"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 358
+    },
+    {
+      "id": "taxonomy.respiratory",
+      "label": "Respiratory",
+      "parent": "taxonomy.root",
+      "children": [
+        "taxonomy.respiratory.bronchodilators",
+        "taxonomy.respiratory.anti-inflammatory-agents",
+        "taxonomy.respiratory.biologics-for-asthma"
+      ],
+      "path": [
+        "Respiratory"
+      ],
+      "medicationCount": 31,
+      "sortOrder": 359
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators",
+      "label": "Bronchodilators",
+      "parent": "taxonomy.respiratory",
+      "children": [
+        "taxonomy.respiratory.bronchodilators.beta2-agonists",
+        "taxonomy.respiratory.bronchodilators.anticholinergics",
+        "taxonomy.respiratory.bronchodilators.methylxanthines"
+      ],
+      "path": [
+        "Respiratory",
+        "Bronchodilators"
+      ],
+      "medicationCount": 17,
+      "sortOrder": 360
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.beta2-agonists",
+      "label": "Beta2 Agonists",
+      "parent": "taxonomy.respiratory.bronchodilators",
+      "children": [
+        "taxonomy.respiratory.bronchodilators.beta2-agonists.short-acting",
+        "taxonomy.respiratory.bronchodilators.beta2-agonists.long-acting"
+      ],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Beta2 Agonists"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 361
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.beta2-agonists.short-acting",
+      "label": "Short Acting",
+      "parent": "taxonomy.respiratory.bronchodilators.beta2-agonists",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Beta2 Agonists",
+        "Short Acting"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 362
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.beta2-agonists.long-acting",
+      "label": "Long Acting",
+      "parent": "taxonomy.respiratory.bronchodilators.beta2-agonists",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Beta2 Agonists",
+        "Long Acting"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 363
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.anticholinergics",
+      "label": "Anticholinergics",
+      "parent": "taxonomy.respiratory.bronchodilators",
+      "children": [
+        "taxonomy.respiratory.bronchodilators.anticholinergics.short-acting-muscarinic-antagonists",
+        "taxonomy.respiratory.bronchodilators.anticholinergics.long-acting-muscarinic-antagonists"
+      ],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Anticholinergics"
+      ],
+      "medicationCount": 6,
+      "sortOrder": 364
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.anticholinergics.short-acting-muscarinic-antagonists",
+      "label": "Short Acting Muscarinic Antagonists",
+      "parent": "taxonomy.respiratory.bronchodilators.anticholinergics",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Anticholinergics",
+        "Short Acting Muscarinic Antagonists"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 365
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.anticholinergics.long-acting-muscarinic-antagonists",
+      "label": "Long Acting Muscarinic Antagonists",
+      "parent": "taxonomy.respiratory.bronchodilators.anticholinergics",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Anticholinergics",
+        "Long Acting Muscarinic Antagonists"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 366
+    },
+    {
+      "id": "taxonomy.respiratory.bronchodilators.methylxanthines",
+      "label": "Methylxanthines",
+      "parent": "taxonomy.respiratory.bronchodilators",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Bronchodilators",
+        "Methylxanthines"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 367
+    },
+    {
+      "id": "taxonomy.respiratory.anti-inflammatory-agents",
+      "label": "Anti Inflammatory Agents",
+      "parent": "taxonomy.respiratory",
+      "children": [
+        "taxonomy.respiratory.anti-inflammatory-agents.inhaled-corticosteroids",
+        "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers",
+        "taxonomy.respiratory.anti-inflammatory-agents.mast-cell-stabilizers"
+      ],
+      "path": [
+        "Respiratory",
+        "Anti Inflammatory Agents"
+      ],
+      "medicationCount": 9,
+      "sortOrder": 368
+    },
+    {
+      "id": "taxonomy.respiratory.anti-inflammatory-agents.inhaled-corticosteroids",
+      "label": "Inhaled Corticosteroids",
+      "parent": "taxonomy.respiratory.anti-inflammatory-agents",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Anti Inflammatory Agents",
+        "Inhaled Corticosteroids"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 369
+    },
+    {
+      "id": "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers",
+      "label": "Leukotriene Modifiers",
+      "parent": "taxonomy.respiratory.anti-inflammatory-agents",
+      "children": [
+        "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers.leukotriene-receptor-antagonists",
+        "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers.5-lipoxygenase-inhibitors"
+      ],
+      "path": [
+        "Respiratory",
+        "Anti Inflammatory Agents",
+        "Leukotriene Modifiers"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 370
+    },
+    {
+      "id": "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers.leukotriene-receptor-antagonists",
+      "label": "Leukotriene Receptor Antagonists",
+      "parent": "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Anti Inflammatory Agents",
+        "Leukotriene Modifiers",
+        "Leukotriene Receptor Antagonists"
+      ],
+      "medicationCount": 2,
+      "sortOrder": 371
+    },
+    {
+      "id": "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers.5-lipoxygenase-inhibitors",
+      "label": "5 Lipoxygenase Inhibitors",
+      "parent": "taxonomy.respiratory.anti-inflammatory-agents.leukotriene-modifiers",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Anti Inflammatory Agents",
+        "Leukotriene Modifiers",
+        "5 Lipoxygenase Inhibitors"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 372
+    },
+    {
+      "id": "taxonomy.respiratory.anti-inflammatory-agents.mast-cell-stabilizers",
+      "label": "Mast Cell Stabilizers",
+      "parent": "taxonomy.respiratory.anti-inflammatory-agents",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Anti Inflammatory Agents",
+        "Mast Cell Stabilizers"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 373
+    },
+    {
+      "id": "taxonomy.respiratory.biologics-for-asthma",
+      "label": "Biologics For Asthma",
+      "parent": "taxonomy.respiratory",
+      "children": [
+        "taxonomy.respiratory.biologics-for-asthma.anti-ige-antibodies",
+        "taxonomy.respiratory.biologics-for-asthma.anti-il5-agents",
+        "taxonomy.respiratory.biologics-for-asthma.anti-il4-il13-agents"
+      ],
+      "path": [
+        "Respiratory",
+        "Biologics For Asthma"
+      ],
+      "medicationCount": 5,
+      "sortOrder": 374
+    },
+    {
+      "id": "taxonomy.respiratory.biologics-for-asthma.anti-ige-antibodies",
+      "label": "Anti Ige Antibodies",
+      "parent": "taxonomy.respiratory.biologics-for-asthma",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Biologics For Asthma",
+        "Anti Ige Antibodies"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 375
+    },
+    {
+      "id": "taxonomy.respiratory.biologics-for-asthma.anti-il5-agents",
+      "label": "Anti Il5 Agents",
+      "parent": "taxonomy.respiratory.biologics-for-asthma",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Biologics For Asthma",
+        "Anti Il5 Agents"
+      ],
+      "medicationCount": 3,
+      "sortOrder": 376
+    },
+    {
+      "id": "taxonomy.respiratory.biologics-for-asthma.anti-il4-il13-agents",
+      "label": "Anti Il4 Il13 Agents",
+      "parent": "taxonomy.respiratory.biologics-for-asthma",
+      "children": [],
+      "path": [
+        "Respiratory",
+        "Biologics For Asthma",
+        "Anti Il4 Il13 Agents"
+      ],
+      "medicationCount": 1,
+      "sortOrder": 377
+    }
+  ]
+}

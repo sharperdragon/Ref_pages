@@ -1,47 +1,413 @@
 {
-  "generatedAt": "2026-08-18T00:38:31Z",
+  "generatedAt": "2026-08-22T02:16:00Z",
+  "pipeline": [
+    "load taxonomy",
+    "build normalized medication identity list",
+    "filter external class labels",
+    "merge RxNorm/RxClass identity metadata",
+    "merge cached FDA label fields",
+    "annotate verified clinical terminology with HPO",
+    "remove fallback prose",
+    "validate",
+    "write pharm_data_rxclass_enriched.json"
+  ],
   "inputFiles": {
-    "seedEpcPool": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_seed/prescribable_epc_in_pool_sandbox.csv",
-    "seedNervousSystem": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_seed/nervous_system_agents_sandbox.csv",
-    "seedPrescribableEpcAgents": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_seed/prescribable_epc_in_agents_sandbox.csv",
-    "psychMeds": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/pysch_meds.json"
+    "taxonomy": "Filled_classes/*.json",
+    "classBlacklist": "assests/classes/class_blacklist.json",
+    "hpoIndex": "assests/hpo_index.json",
+    "legacyIdentityMetadata": "assests/pharm_data_rxclass_enriched.json",
+    "fdaLabelCache": "assests/openfda_label_cache.json"
   },
   "outputFiles": {
-    "dataset": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/pharm_data_rxclass_enriched.json",
-    "report": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/rxclass_catalog_report.json"
+    "dataset": "assests/pharm_data_rxclass_enriched.json",
+    "report": "assests/rxclass_catalog_report.json"
   },
   "counts": {
-    "sourceRows": 2370,
-    "mergedRowsBeforeSurgeryFilter": 2233,
-    "mergedRows": 238,
-    "finalRecords": 238,
-    "fallbackClassRecords": 0,
-    "psychHintsLoaded": 146,
-    "psychHintsUpdatedExisting": 11,
-    "psychHintsAddedNew": 0,
-    "generalSurgeryRetained": 238,
-    "generalSurgeryExcluded": 1995,
-    "generalSurgeryExcludedByName": 14,
-    "generalSurgeryExcludedByClass": 921,
-    "generalSurgeryExcludedPsychOnly": 0,
-    "generalSurgeryExcludedNoSignal": 1060,
-    "seedIdentityConflictsCleared": 25,
-    "validatedExistingBrands": 9,
-    "droppedExistingBrands": 6,
-    "addedBrandsFromOpenfda": 0,
-    "recordsWithBrandUpdates": 5,
-    "openfdaEnrichmentHits": 1012
+    "totalMedications": 740,
+    "taxonomyMedicationReferences": 820,
+    "medicationsWithTaxonomyMembership": 740,
+    "medicationsWithMultipleTaxonomyMemberships": 69,
+    "unclassifiedTaxonomyMedications": 0,
+    "legacyIdentityRecordsWithoutTaxonomy": [],
+    "moa": 216,
+    "indications": 230,
+    "contraindications": 228,
+    "adverseEffects": 217,
+    "majorInteractions": 184,
+    "monitoring": 30,
+    "pearls": 0,
+    "medicationsWithAnyClinicalInformation": 231,
+    "medicationsWithNoClinicalInformation": 509
   },
-  "toggles": {
-    "useSeedEpcPool": true,
-    "useSeedNervousSystem": true,
-    "useSeedPrescribableEpcAgents": true,
-    "enableLiveEpcFetch": false,
-    "enableOpenfdaBrandValidation": true,
-    "enableOpenfdaBrandEnrichment": false,
-    "enableOpenfdaEnrichment": true,
-    "includeUnresolvedPsychHints": false,
-    "generalSurgeryOnly": true,
-    "generalSurgerySupplementalRows": 6
+  "taxonomyAudit": {
+    "files": [
+      {
+        "file": "antibiotic_combos.json",
+        "parsed": true,
+        "roots": [
+          "antimicrobials"
+        ],
+        "medicationReferenceCount": 13
+      },
+      {
+        "file": "antibiotics.json",
+        "parsed": true,
+        "roots": [
+          "antibiotics"
+        ],
+        "medicationReferenceCount": 115
+      },
+      {
+        "file": "antifungals_antiparasitics.json",
+        "parsed": true,
+        "roots": [
+          "antifungals",
+          "antiparasitics"
+        ],
+        "medicationReferenceCount": 53
+      },
+      {
+        "file": "antivirals.json",
+        "parsed": true,
+        "roots": [
+          "antivirals"
+        ],
+        "medicationReferenceCount": 98
+      },
+      {
+        "file": "cardiovascular.json",
+        "parsed": true,
+        "roots": [
+          "cardiovascular"
+        ],
+        "medicationReferenceCount": 171
+      },
+      {
+        "file": "central_nervous_system.json",
+        "parsed": true,
+        "roots": [
+          "central_nervous_system"
+        ],
+        "medicationReferenceCount": 128
+      },
+      {
+        "file": "dermatologic.json",
+        "parsed": true,
+        "roots": [
+          "antimicrobials"
+        ],
+        "medicationReferenceCount": 71
+      },
+      {
+        "file": "endocrine.json",
+        "parsed": true,
+        "roots": [
+          "endocrine"
+        ],
+        "medicationReferenceCount": 74
+      },
+      {
+        "file": "gastrointestinal.json",
+        "parsed": true,
+        "roots": [
+          "gastrointestinal"
+        ],
+        "medicationReferenceCount": 81
+      },
+      {
+        "file": "genitourinary_repro.json",
+        "parsed": true,
+        "roots": [
+          "genitourinary_and_reproductive"
+        ],
+        "medicationReferenceCount": 56
+      },
+      {
+        "file": "respiratory.json",
+        "parsed": true,
+        "roots": [
+          "respiratory"
+        ],
+        "medicationReferenceCount": 31
+      }
+    ],
+    "excludedFiles": [
+      {
+        "file": "dermatologic.json",
+        "reason": "Expected dermatologic taxonomy, found an antiviral hierarchy instead."
+      }
+    ],
+    "rootMismatches": [
+      {
+        "file": "dermatologic.json",
+        "expectedRoots": [
+          "dermatologic"
+        ],
+        "actualRoots": [
+          "antimicrobials"
+        ]
+      }
+    ],
+    "malformedEntries": [],
+    "emptyBranches": [],
+    "duplicateEntriesWithinIdenticalPaths": [],
+    "identicalCategoryFiles": [],
+    "hardBlacklistedClassPaths": []
+  },
+  "classBlacklistAudit": {
+    "hardBlacklistCount": 29,
+    "broadBlacklistCount": 29,
+    "hardBlacklistedAssociationsRemoved": 0,
+    "broadClassesSuppressedAsSpecificClass": 0,
+    "medicationsWithOnlyBlacklistedExternalClasses": 0,
+    "topHardBlacklistedLabels": [],
+    "topSuppressedBroadLabels": [],
+    "hardBlacklistMedicationExamples": [],
+    "broadSuppressionMedicationExamples": [],
+    "blacklistVocabularyValidation": {
+      "knownClassVocabularyCount": 364,
+      "blacklistEntries": {
+        "hardBlacklist": {
+          "found": [],
+          "notFound": [
+            "Affinity Labels",
+            "Angiography",
+            "Carcinogens",
+            "Chemical Warfare Agents",
+            "Coloring Agents",
+            "Cross-Linking Reagents",
+            "Cryoprotective Agents",
+            "Detergents",
+            "Dyes",
+            "Explosive Agents",
+            "Fluorescent Dyes",
+            "Food Additives",
+            "Growth Inhibitors",
+            "Homeopathic Agents",
+            "Indicators and Reagents",
+            "Insecticides",
+            "Intercalating Agents",
+            "Ionophores",
+            "Irritants",
+            "Mutagens",
+            "Permeabilizing Agents",
+            "Pesticides",
+            "Poisons",
+            "Radiation-Sensitizing Agents",
+            "Sclerosing Solutions",
+            "Solvents",
+            "Sweetening Agents",
+            "Teratogens",
+            "Uncoupling Agents"
+          ],
+          "spellingOrCaseMismatches": [],
+          "nearDuplicateLabels": []
+        },
+        "broadClassBlacklist": {
+          "found": [],
+          "notFound": [
+            "Adjuvants",
+            "Agonists",
+            "Autonomic Agents",
+            "Cardiovascular Agents",
+            "Central Nervous System Agents",
+            "Dermatologic Agents",
+            "EENT Preparations",
+            "Enzyme Inhibitors",
+            "Enzymes",
+            "Gastrointestinal Agents",
+            "Hematologic Agents",
+            "Hematopoietic Agents",
+            "Histamine Agents",
+            "Hormone Antagonists",
+            "Hormone Replacement Agents",
+            "Hormones",
+            "Immunologic Factors",
+            "Neuromuscular Agents",
+            "Neurotransmitter Agents",
+            "Nucleic Acids, Nucleotides, and Nucleosides",
+            "Psychotropic Drugs",
+            "Renal Agents",
+            "Respiratory System Agents",
+            "Sensory System Agents",
+            "Skin and Mucous Membrane Agents",
+            "Steroids",
+            "Stimulants",
+            "Supplements",
+            "Vitamins"
+          ],
+          "spellingOrCaseMismatches": [],
+          "nearDuplicateLabels": [
+            {
+              "blacklistLabel": "Stimulants",
+              "knownLabels": [
+                "Stimulant"
+              ]
+            }
+          ]
+        }
+      },
+      "knownLabelsWithTrailingPunctuation": [],
+      "nearDuplicateKnownLabels": []
+    }
+  },
+  "hpoAudit": {
+    "index": {
+      "totalHpoNodesParsed": 19703,
+      "totalActiveConceptsIndexed": 19178,
+      "conceptsWithSynonyms": 10898,
+      "conceptsWithSnomedMappings": 3456,
+      "conceptsWithUmlsMappings": 11501
+    },
+    "clinicalTermsEvaluated": 2196,
+    "exactLabelMatches": 1,
+    "exactSynonymMatches": 1,
+    "xrefMatches": 0,
+    "ambiguousMatches": 0,
+    "unmatchedTerms": 2194,
+    "ambiguousExamples": [],
+    "unmatchedExamples": [
+      {
+        "medication": "abacavir",
+        "field": "adverseEffects",
+        "text": "6 ADVERSE REACTIONS The following adverse reactions are discussed in other sections of the labeling: Serious and sometimes fatal hypersensitivity reactions [see Boxed Warning , Warnings and Precautions (5.1) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "adverseEffects",
+        "text": "Lactic acidosis and severe hepatomegaly with steatosis [see Warnings and Precautions (5.2) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "adverseEffects",
+        "text": "Immune reconstitution syndrome [see Warnings and Precautions (5.3) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "adverseEffects",
+        "text": "Myocardial infarction [see Warnings and Precautions (5.4) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "indications",
+        "text": "1 INDICATIONS AND USAGE Abacavir tablets, in combination with other antiretroviral agents, are indicated for the treatment of human immunodeficiency virus (HIV-1) infection."
+      },
+      {
+        "medication": "abacavir",
+        "field": "indications",
+        "text": "Abacavir tablets, a nucleoside analogue human immunodeficiency virus (HIV-1) reverse transcriptase inhibitor, are indicated in combination with other antiretroviral agents for the treatment of HIV-1 infection."
+      },
+      {
+        "medication": "abacavir",
+        "field": "contraindications",
+        "text": "4 CONTRAINDICATIONS Abacavir tablets are contraindicated in patients: who have the HLA-B*5701 allele [see Warnings and Precautions (5.1) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "contraindications",
+        "text": "with prior hypersensitivity reaction to abacavir [see Warnings and Precautions (5.1) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "contraindications",
+        "text": "with moderate or severe hepatic impairment [see Use in Specific Populations (8.6) ]."
+      },
+      {
+        "medication": "abacavir",
+        "field": "contraindications",
+        "text": "Presence of HLA-B*5701 allele."
+      },
+      {
+        "medication": "acarbose",
+        "field": "adverseEffects",
+        "text": "ADVERSE REACTIONS Digestive Tract Gastrointestinal symptoms are the most common reactions to acarbose tablets."
+      },
+      {
+        "medication": "acarbose",
+        "field": "adverseEffects",
+        "text": "placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 19%, 31%, and 74% respectively in 1255 patients treated with acarbose tablets 50-300 mg t.i.d., whereas the corresponding incidences were 9%, 12%, and 29% in 999 plac..."
+      },
+      {
+        "medication": "acarbose",
+        "field": "adverseEffects",
+        "text": "In a one-year safety study, during which patients kept diaries of gastrointestinal symptoms, abdominal pain and diarrhea tended to return to pretreatment levels over time, and the frequency and intensity of flatulence tended to abate with time."
+      },
+      {
+        "medication": "acarbose",
+        "field": "adverseEffects",
+        "text": "The increased gastrointestinal tract symptoms in patients treated with acarbose tablets are a manifestation of the mechanism of action of acarbose and are related to the presence of undigested carbohydrate in the lower GI tract."
+      },
+      {
+        "medication": "acarbose",
+        "field": "indications",
+        "text": "INDICATIONS AND USAGE Acarbose tablets, USP are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus."
+      },
+      {
+        "medication": "acarbose",
+        "field": "contraindications",
+        "text": "CONTRAINDICATIONS Acarbose tablets are contraindicated in patients with known hypersensitivity to the drug."
+      },
+      {
+        "medication": "acarbose",
+        "field": "contraindications",
+        "text": "Acarbose tablets are contraindicated in patients with diabetic ketoacidosis or cirrhosis."
+      },
+      {
+        "medication": "acarbose",
+        "field": "contraindications",
+        "text": "Acarbose tablets are also contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or in patients predisposed to intestinal obstruction."
+      },
+      {
+        "medication": "acarbose",
+        "field": "contraindications",
+        "text": "In addition, acarbose tablets are contraindicated in patients who have chronic intestinal diseases associated with marked disorders of digestion or absorption and in patients who have conditions that may deteriorate as a result of increased gas formation in..."
+      },
+      {
+        "medication": "acebutolol",
+        "field": "adverseEffects",
+        "text": "ADVERSE REACTIONS Acebutolol is well tolerated in properly selected patients."
+      },
+      {
+        "medication": "acebutolol",
+        "field": "adverseEffects",
+        "text": "Most adverse reactions have been mild, not required discontinuation of therapy, and tended to decrease as duration of treatment increases."
+      },
+      {
+        "medication": "acebutolol",
+        "field": "adverseEffects",
+        "text": "The following table shows the frequency of treatment-related side effects derived from controlled clinical trials in patients with hypertension, angina pectoris, and arrhythmia."
+      },
+      {
+        "medication": "acebutolol",
+        "field": "adverseEffects",
+        "text": "These patients received acebutolol, propranolol, or hydrochlorothiazide as monotherapy, or placebo."
+      },
+      {
+        "medication": "acebutolol",
+        "field": "indications",
+        "text": "INDICATIONS AND USAGE Hypertension Acebutolol hydrochloride capsules, USP are indicated for the management of hypertension in adults."
+      },
+      {
+        "medication": "acebutolol",
+        "field": "indications",
+        "text": "It may be used alone or in combination with other antihypertensive agents, especially thiazide-type diuretics."
+      }
+    ]
+  },
+  "identifierConflicts": [],
+  "validation": {
+    "clinicalFieldCounts": {
+      "moa": 216,
+      "indications": 230,
+      "contraindications": 228,
+      "adverseEffects": 217,
+      "majorInteractions": 184,
+      "monitoring": 30,
+      "pearls": 0
+    },
+    "fallbackClinicalValues": [],
+    "emptyClinicalArrayValues": [],
+    "missingProvenance": [],
+    "passesValidation": true
   }
 }

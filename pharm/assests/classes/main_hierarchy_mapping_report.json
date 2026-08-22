@@ -1,141 +1,256 @@
 {
-  "generatedAt": "2026-03-21T15:58:04Z",
+  "generatedAt": "2026-08-22T02:00:41Z",
   "counts": {
-    "medicationsTotal": 2228,
-    "medicationsMapped": 1025,
-    "medicationsUnmapped": 1203,
-    "unmappedMedicationRatio": 0.5399
+    "medicationsTotal": 740,
+    "medicationsMapped": 734,
+    "medicationsUnmapped": 6,
+    "unmappedMedicationRatio": 0.0081
   },
   "warnings": {
-    "unmappedMedicationRatioExceeded": true,
-    "topUnmappedLabelFrequencyExceeded": true
+    "unmappedMedicationRatioExceeded": false,
+    "topUnmappedLabelFrequencyExceeded": false
   },
   "topUnmappedSourceLabels": [
     {
-      "label": "Non-Standardized Pollen Allergenic Extract",
-      "count": 233
+      "label": "Cephalosporin Inhibitor Combinations",
+      "count": 2
     },
     {
-      "label": "Non-Standardized Food Allergenic Extract",
-      "count": 167
+      "label": "Carbapenem Combinations",
+      "count": 2
     },
     {
-      "label": "Epidermal and Animal Specific Allergenic Extract",
-      "count": 141
-    },
-    {
-      "label": "Non-Standardized Fungal Allergenic Extract",
-      "count": 98
-    },
-    {
-      "label": "Physical or Chemical Agent",
-      "count": 58
-    },
-    {
-      "label": "Standardized Chemical Allergen",
-      "count": 48
-    },
-    {
-      "label": "Inactivated Pneumococcal Vaccine",
-      "count": 36
-    },
-    {
-      "label": "Antibody or Antibody Fragment",
-      "count": 30
-    },
-    {
-      "label": "Nucleic Acid Related Agent",
-      "count": 27
-    },
-    {
-      "label": "Nonsteroidal Anti-inflammatory Drug",
-      "count": 19
-    },
-    {
-      "label": "Chemical Structure",
-      "count": 16
-    },
-    {
-      "label": "Benzodiazepine",
-      "count": 15
-    },
-    {
-      "label": "Selective serotonin reuptake inhibitor",
-      "count": 13
-    },
-    {
-      "label": "Receptor Interaction",
-      "count": 13
-    },
-    {
-      "label": "Enzyme Interaction",
-      "count": 11
-    },
-    {
-      "label": "Inactivated Meningococcal Vaccine",
-      "count": 9
-    },
-    {
-      "label": "Illicit psychoactive substance",
-      "count": 8
-    },
-    {
-      "label": "Standardized Pollen Allergenic Extract",
-      "count": 8
-    },
-    {
-      "label": "Programmed Death Receptor-1 Blocking Antibody",
-      "count": 7
-    },
-    {
-      "label": "Vitamin or Mineral",
-      "count": 6
-    },
-    {
-      "label": "Muscle Relaxant",
-      "count": 6
-    },
-    {
-      "label": "Mood Stabilizer",
-      "count": 5
-    },
-    {
-      "label": "Unclassified EPC Ingredient",
-      "count": 5
-    },
-    {
-      "label": "Live Rotavirus Vaccine",
-      "count": 5
-    },
-    {
-      "label": "Barbiturate",
-      "count": 4
-    },
-    {
-      "label": "Phosphodiesterase 4 Inhibitor",
-      "count": 4
-    },
-    {
-      "label": "Phosphodiesterase 5 Inhibitor",
-      "count": 4
-    },
-    {
-      "label": "Sodium-Glucose Cotransporter 2 Inhibitor",
-      "count": 4
-    },
-    {
-      "label": "Antimanic Agent",
-      "count": 4
-    },
-    {
-      "label": "Hydrolytic Lysosomal Glycosaminoglycan-specific Enzyme",
-      "count": 4
+      "label": "Antifolate Combinations",
+      "count": 2
     }
   ],
+  "classBlacklistAudit": {
+    "hardBlacklistCount": 29,
+    "broadBlacklistCount": 29,
+    "hardBlacklistedAssociationsRemoved": 0,
+    "broadClassesSuppressedAsSpecificClass": 0,
+    "medicationsWithOnlyBlacklistedExternalClasses": 0,
+    "topHardBlacklistedLabels": [],
+    "topSuppressedBroadLabels": [],
+    "hardBlacklistMedicationExamples": [],
+    "broadSuppressionMedicationExamples": [],
+    "blacklistVocabularyValidation": {
+      "knownClassVocabularyCount": 482,
+      "blacklistEntries": {
+        "hardBlacklist": {
+          "found": [],
+          "notFound": [
+            "Affinity Labels",
+            "Angiography",
+            "Carcinogens",
+            "Chemical Warfare Agents",
+            "Coloring Agents",
+            "Cross-Linking Reagents",
+            "Cryoprotective Agents",
+            "Detergents",
+            "Dyes",
+            "Explosive Agents",
+            "Fluorescent Dyes",
+            "Food Additives",
+            "Growth Inhibitors",
+            "Homeopathic Agents",
+            "Indicators and Reagents",
+            "Insecticides",
+            "Intercalating Agents",
+            "Ionophores",
+            "Irritants",
+            "Mutagens",
+            "Permeabilizing Agents",
+            "Pesticides",
+            "Poisons",
+            "Radiation-Sensitizing Agents",
+            "Sclerosing Solutions",
+            "Solvents",
+            "Sweetening Agents",
+            "Teratogens",
+            "Uncoupling Agents"
+          ],
+          "spellingOrCaseMismatches": [],
+          "nearDuplicateLabels": []
+        },
+        "broadClassBlacklist": {
+          "found": [],
+          "notFound": [
+            "Adjuvants",
+            "Agonists",
+            "Autonomic Agents",
+            "Cardiovascular Agents",
+            "Central Nervous System Agents",
+            "Dermatologic Agents",
+            "EENT Preparations",
+            "Enzyme Inhibitors",
+            "Enzymes",
+            "Gastrointestinal Agents",
+            "Hematologic Agents",
+            "Hematopoietic Agents",
+            "Histamine Agents",
+            "Hormone Antagonists",
+            "Hormone Replacement Agents",
+            "Hormones",
+            "Immunologic Factors",
+            "Neuromuscular Agents",
+            "Neurotransmitter Agents",
+            "Nucleic Acids, Nucleotides, and Nucleosides",
+            "Psychotropic Drugs",
+            "Renal Agents",
+            "Respiratory System Agents",
+            "Sensory System Agents",
+            "Skin and Mucous Membrane Agents",
+            "Steroids",
+            "Stimulants",
+            "Supplements",
+            "Vitamins"
+          ],
+          "spellingOrCaseMismatches": [],
+          "nearDuplicateLabels": [
+            {
+              "blacklistLabel": "Stimulants",
+              "knownLabels": [
+                "Stimulant"
+              ]
+            }
+          ]
+        }
+      },
+      "knownLabelsWithTrailingPunctuation": [],
+      "nearDuplicateKnownLabels": [
+        [
+          "PCSK9 Inhibitors",
+          "Pcsk9 Inhibitors"
+        ],
+        [
+          "Tpa Analogs",
+          "tPA Analogs"
+        ],
+        [
+          "Irreversible COX1 Inhibitors",
+          "Irreversible Cox1 Inhibitors"
+        ],
+        [
+          "NRIs",
+          "Nris"
+        ],
+        [
+          "PDE5 Inhibitors",
+          "Pde5 Inhibitors"
+        ],
+        [
+          "Anti IL5 Agents",
+          "Anti Il5 Agents"
+        ],
+        [
+          "COX2 Selective Inhibitors",
+          "Cox2 Selective Inhibitors"
+        ],
+        [
+          "NSAIDs",
+          "Nsaids"
+        ],
+        [
+          "SSRIs",
+          "Ssris"
+        ],
+        [
+          "GABA A Positive Allosteric Modulators",
+          "Gaba A Positive Allosteric Modulators"
+        ],
+        [
+          "SERMs",
+          "Serms"
+        ],
+        [
+          "P2Y12 Receptor Antagonists",
+          "P2y12 Receptor Antagonists"
+        ],
+        [
+          "NS5A Inhibitors",
+          "Ns5a Inhibitors"
+        ],
+        [
+          "NS5B Polymerase Inhibitors",
+          "Ns5b Polymerase Inhibitors"
+        ],
+        [
+          "GnRH Antagonists",
+          "Gnrh Antagonists"
+        ],
+        [
+          "GnRH Agents",
+          "Gnrh Agents"
+        ],
+        [
+          "SNRIs",
+          "Snris"
+        ],
+        [
+          "Anti IL4 IL13 Agents",
+          "Anti Il4 Il13 Agents"
+        ],
+        [
+          "Alpha2Delta Ligands",
+          "Alpha2delta Ligands"
+        ],
+        [
+          "GnRH Agonists",
+          "Gnrh Agonists"
+        ],
+        [
+          "EPA Products",
+          "Epa Products"
+        ],
+        [
+          "PCSK9 siRNA",
+          "Pcsk9 Sirna"
+        ],
+        [
+          "Antisense And RNAi Agents",
+          "Antisense And Rnai Agents"
+        ],
+        [
+          "MTP Inhibitors",
+          "Mtp Inhibitors"
+        ],
+        [
+          "EPA DHA Products",
+          "Epa Dha Products"
+        ],
+        [
+          "GABA Reuptake Inhibitors",
+          "Gaba Reuptake Inhibitors"
+        ],
+        [
+          "JAK Inhibitors",
+          "Jak Inhibitors"
+        ],
+        [
+          "DHFR Inhibitors",
+          "Dhfr Inhibitors"
+        ],
+        [
+          "Anti IL12 IL23 Agents",
+          "Anti Il12 Il23 Agents"
+        ],
+        [
+          "GABA Transaminase Inhibitors",
+          "Gaba Transaminase Inhibitors"
+        ],
+        [
+          "PAR1 Antagonists",
+          "Par1 Antagonists"
+        ]
+      ]
+    }
+  },
   "sourceFiles": {
-    "medications": "pharm/assests/pharm_data_rxclass_enriched.json",
-    "hierarchyIndex": "pharm/assests/classes/main_hierarchy_index.json",
-    "hierarchyPaths": "pharm/assests/classes/main_hierarchy_paths.json",
-    "aliases": "pharm/assests/classes/main_hierarchy_aliases.json"
+    "medications": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/pharm_data_rxclass_enriched.json",
+    "hierarchyIndex": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/classes/main_hierarchy_index.json",
+    "hierarchyPaths": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/classes/main_hierarchy_paths.json",
+    "aliases": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/classes/main_hierarchy_aliases.json",
+    "classBlacklist": "/Users/claytongoddard/Git dub/Ref-pages_v3/pharm/assests/classes/class_blacklist.json"
   }
 }

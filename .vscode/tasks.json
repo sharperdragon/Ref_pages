@@ -146,6 +146,28 @@
       ]
     },
     {
+      "label": "Pharm: Build Taxonomy",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/build_pharm_taxonomy.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
+      "label": "Pharm: Build HPO Index",
+      "type": "shell",
+      "command": "python3 ${workspaceFolder}/pharm/scripts/build_hpo_index.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$python"
+      ]
+    },
+    {
       "label": "Pharm: Compile Main Class Hierarchy",
       "type": "shell",
       "command": "python3 ${workspaceFolder}/pharm/scripts/compile_main_hierarchy.py",
@@ -182,9 +204,10 @@
       "label": "Pharm: Full Pharm Rebuild",
       "dependsOrder": "sequence",
       "dependsOn": [
+        "Pharm: Build Taxonomy",
+        "Pharm: Build HPO Index",
         "Pharm: Build RxClass Catalog",
-        "Pharm: Compile Main Class Hierarchy",
-        "Pharm: Build Main Class Mapping"
+        "Pharm: Audit Clinical Fields"
       ],
       "problemMatcher": []
     },

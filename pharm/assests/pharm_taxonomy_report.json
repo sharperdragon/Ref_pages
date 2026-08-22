@@ -1,0 +1,129 @@
+{
+  "generatedAt": "2026-08-22T02:11:30Z",
+  "inputFiles": {
+    "taxonomy": "Filled_classes/*.json"
+  },
+  "outputFiles": {
+    "taxonomy": "assests/pharm_taxonomy.json"
+  },
+  "counts": {
+    "totalNodes": 378,
+    "totalMedicationReferences": 820,
+    "totalUniqueMedications": 740,
+    "medicationsWithMultiplePaths": 69
+  },
+  "taxonomyAudit": {
+    "files": [
+      {
+        "file": "antibiotic_combos.json",
+        "parsed": true,
+        "roots": [
+          "antimicrobials"
+        ],
+        "medicationReferenceCount": 13
+      },
+      {
+        "file": "antibiotics.json",
+        "parsed": true,
+        "roots": [
+          "antibiotics"
+        ],
+        "medicationReferenceCount": 115
+      },
+      {
+        "file": "antifungals_antiparasitics.json",
+        "parsed": true,
+        "roots": [
+          "antifungals",
+          "antiparasitics"
+        ],
+        "medicationReferenceCount": 53
+      },
+      {
+        "file": "antivirals.json",
+        "parsed": true,
+        "roots": [
+          "antivirals"
+        ],
+        "medicationReferenceCount": 98
+      },
+      {
+        "file": "cardiovascular.json",
+        "parsed": true,
+        "roots": [
+          "cardiovascular"
+        ],
+        "medicationReferenceCount": 171
+      },
+      {
+        "file": "central_nervous_system.json",
+        "parsed": true,
+        "roots": [
+          "central_nervous_system"
+        ],
+        "medicationReferenceCount": 128
+      },
+      {
+        "file": "dermatologic.json",
+        "parsed": true,
+        "roots": [
+          "antimicrobials"
+        ],
+        "medicationReferenceCount": 71
+      },
+      {
+        "file": "endocrine.json",
+        "parsed": true,
+        "roots": [
+          "endocrine"
+        ],
+        "medicationReferenceCount": 74
+      },
+      {
+        "file": "gastrointestinal.json",
+        "parsed": true,
+        "roots": [
+          "gastrointestinal"
+        ],
+        "medicationReferenceCount": 81
+      },
+      {
+        "file": "genitourinary_repro.json",
+        "parsed": true,
+        "roots": [
+          "genitourinary_and_reproductive"
+        ],
+        "medicationReferenceCount": 56
+      },
+      {
+        "file": "respiratory.json",
+        "parsed": true,
+        "roots": [
+          "respiratory"
+        ],
+        "medicationReferenceCount": 31
+      }
+    ],
+    "excludedFiles": [
+      {
+        "file": "dermatologic.json",
+        "reason": "Expected dermatologic taxonomy, found an antiviral hierarchy instead."
+      }
+    ],
+    "rootMismatches": [
+      {
+        "file": "dermatologic.json",
+        "expectedRoots": [
+          "dermatologic"
+        ],
+        "actualRoots": [
+          "antimicrobials"
+        ]
+      }
+    ],
+    "malformedEntries": [],
+    "emptyBranches": [],
+    "duplicateEntriesWithinIdenticalPaths": [],
+    "identicalCategoryFiles": []
+  }
+}

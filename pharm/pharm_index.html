@@ -46,29 +46,6 @@
     <section class="controls controls--secondary" aria-label="Medication filters">
       <div id="classTreeControl" class="control control--class-tree">
         <span id="classTreeControlLabel" class="control__label">Drug Class</span>
-        <div id="classTypeControl" class="class-type-toggle" role="radiogroup" aria-label="Class filter type">
-          <button
-            type="button"
-            class="class-type-btn is-active"
-            data-class-filter-type="drug-class"
-            aria-pressed="true"
-          >
-            Drug Class
-          </button>
-          <button
-            type="button"
-            class="class-type-btn"
-            data-class-filter-type="use-category"
-            aria-pressed="false"
-          >
-            Use Category
-          </button>
-        </div>
-        <label class="visually-hidden" for="classTypeSelect">Class filter type</label>
-        <select id="classTypeSelect" class="select class-type-select" aria-label="Class filter type">
-          <option value="drug-class">Drug Class</option>
-          <option value="use-category">Use Category</option>
-        </select>
         <button
           id="classTreeTrigger"
           class="class-tree-trigger"
